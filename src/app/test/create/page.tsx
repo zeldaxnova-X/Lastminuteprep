@@ -40,7 +40,6 @@ function TestCreationForm() {
   const [selectedPaperId, setSelectedPaperId] = useState<string>("");
   const [selectedSubject, setSelectedSubject] = useState<Subject>("Quantitative Aptitude");
   const [questionCount, setQuestionCount] = useState<number>(100);
-  const [timeLimitMinutes, setTimeLimitMinutes] = useState<number>(60);
 
   useEffect(() => {
     async function fetchPapers() {
@@ -86,9 +85,9 @@ function TestCreationForm() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5 sm:space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-gray-900 tracking-tight">Choose Your Test Mode</h1>
+        <h1 className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight">Choose Your Test Mode</h1>
         <p className="text-xs text-gray-500 mt-1">Select paper or topic configuration to launch CBT test engine</p>
       </div>
 
@@ -96,7 +95,7 @@ function TestCreationForm() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <button
           onClick={() => setExamType("previous_year_paper")}
-          className={`p-4 rounded-xl border text-left transition-all ${
+          className={`p-4 rounded-xl border text-left transition-all min-h-[72px] ${
             examType === "previous_year_paper"
               ? "bg-blue-50 border-blue-500 shadow-xs"
               : "bg-white border-gray-200 hover:border-gray-300"
@@ -109,7 +108,7 @@ function TestCreationForm() {
 
         <button
           onClick={() => setExamType("subject_test")}
-          className={`p-4 rounded-xl border text-left transition-all ${
+          className={`p-4 rounded-xl border text-left transition-all min-h-[72px] ${
             examType === "subject_test"
               ? "bg-blue-50 border-blue-500 shadow-xs"
               : "bg-white border-gray-200 hover:border-gray-300"
@@ -122,7 +121,7 @@ function TestCreationForm() {
 
         <button
           onClick={() => setExamType("random_test")}
-          className={`p-4 rounded-xl border text-left transition-all ${
+          className={`p-4 rounded-xl border text-left transition-all min-h-[72px] ${
             examType === "random_test"
               ? "bg-blue-50 border-blue-500 shadow-xs"
               : "bg-white border-gray-200 hover:border-gray-300"
@@ -135,7 +134,7 @@ function TestCreationForm() {
       </div>
 
       {/* Configurator Box */}
-      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-5">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 sm:p-5 space-y-5">
         {examType === "previous_year_paper" && (
           <div className="space-y-2">
             <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -150,7 +149,7 @@ function TestCreationForm() {
               <select
                 value={selectedPaperId}
                 onChange={(e) => setSelectedPaperId(e.target.value)}
-                className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-900 focus:outline-none focus:border-blue-500 font-medium"
+                className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-xs sm:text-sm text-gray-900 focus:outline-none focus:border-blue-500 font-medium min-h-[44px]"
               >
                 {papersList.map((p, idx) => (
                   <option key={p.paper_id} value={p.paper_id}>
@@ -173,7 +172,7 @@ function TestCreationForm() {
                   <button
                     key={subj}
                     onClick={() => setSelectedSubject(subj)}
-                    className={`p-3 rounded-lg border text-xs font-semibold text-left transition-all ${
+                    className={`p-3 rounded-lg border text-xs font-semibold text-left transition-all min-h-[44px] ${
                       selectedSubject === subj
                         ? "bg-blue-50 border-blue-500 text-blue-700"
                         : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"
@@ -189,12 +188,12 @@ function TestCreationForm() {
               <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 Number of Questions
               </label>
-              <div className="flex gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {[10, 25, 50, 100].map((cnt) => (
                   <button
                     key={cnt}
                     onClick={() => setQuestionCount(cnt)}
-                    className={`flex-1 py-2 rounded-lg text-xs font-semibold border transition-colors ${
+                    className={`py-2.5 rounded-lg text-xs font-semibold border transition-colors min-h-[44px] ${
                       questionCount === cnt
                         ? "bg-blue-600 border-blue-600 text-white"
                         : "bg-white border-gray-200 text-gray-600 hover:border-gray-300"
@@ -209,7 +208,7 @@ function TestCreationForm() {
         )}
 
         {examType === "random_test" && (
-          <div className="bg-white border border-gray-200 p-4 rounded-lg text-xs text-gray-600 leading-relaxed">
+          <div className="bg-white border border-gray-200 p-4 rounded-lg text-xs text-gray-600 leading-relaxed space-y-1">
             <p className="font-semibold text-gray-900 mb-1">Random Mock Configuration</p>
             <p>• Total Questions: <strong>100 Questions</strong></p>
             <p>• Duration: <strong>60 Minutes</strong></p>
@@ -220,7 +219,7 @@ function TestCreationForm() {
         <div className="pt-2 flex justify-end">
           <button
             onClick={handleProceed}
-            className="px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition-colors flex items-center gap-1.5 shadow-xs"
+            className="w-full sm:w-auto px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition-colors flex items-center justify-center gap-1.5 shadow-xs min-h-[44px]"
           >
             <span>Proceed to Instructions</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -236,7 +235,7 @@ export default function TestCreationPage() {
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col">
       <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <Link href="/dashboard" className="flex items-center gap-2 font-bold text-lg tracking-tight text-gray-900">
+          <Link href="/dashboard" className="flex items-center gap-2 font-bold text-base sm:text-lg tracking-tight text-gray-900">
             <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center">
               <Zap className="w-3.5 h-3.5 text-white fill-white" />
             </div>
@@ -248,7 +247,7 @@ export default function TestCreationPage() {
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-8 flex-1">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8 flex-1 w-full">
         <Suspense fallback={
           <div className="flex items-center justify-center py-20 text-gray-400 gap-2">
             <Loader2 className="w-4 h-4 animate-spin text-blue-600" />

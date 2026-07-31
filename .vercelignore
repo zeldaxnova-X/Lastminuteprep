@@ -1,0 +1,6 @@
+# Vercel ignore configuration
+public/question-images/
+reports/
+scripts/
+scratch/
+supabase/

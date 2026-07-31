@@ -16,7 +16,6 @@ interface CBTQuestionViewProps {
 
 export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
   currentQuestion,
-  questions,
   totalQuestions,
 }) => {
   const {
@@ -69,32 +68,32 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
   return (
     <div className="flex-1 flex flex-col h-full bg-white overflow-hidden select-none">
       {/* Continuous Examination Bar: Question No + Section Badge */}
-      <div className="bg-white border-b border-gray-200 px-5 py-3 flex flex-wrap items-center justify-between gap-3 text-xs shadow-2xs">
-        <div className="flex items-center gap-3">
-          <span className="font-extrabold text-gray-900 text-base sm:text-lg tracking-tight">
+      <div className="bg-white border-b border-gray-200 px-3 sm:px-5 py-2.5 sm:py-3 flex flex-wrap items-center justify-between gap-2 text-xs shadow-2xs">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+          <span className="font-extrabold text-gray-900 text-sm sm:text-lg tracking-tight">
             Question No. {currentQuestionIndex + 1}
           </span>
-          <span className="bg-blue-50 border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+          <span className="bg-blue-50 border border-blue-200 text-blue-800 px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold uppercase tracking-wider truncate max-w-[180px] sm:max-w-none">
             {activeSubject}
           </span>
         </div>
-        <div className="flex items-center gap-3">
-          <span className="text-gray-500 font-mono text-xs">
+        <div className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-xs">
+          <span className="text-gray-500 font-mono">
             Time on Q: <strong className="text-gray-900">{timeSpentOnCurrentQ}s</strong>
           </span>
-          <span className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-2.5 py-1 rounded font-bold text-xs">
+          <span className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-2 py-0.5 rounded font-bold">
             +{currentQuestion.marks?.toFixed(1) || "2.0"} Marks
           </span>
-          <span className="bg-red-50 border border-red-200 text-red-600 px-2.5 py-1 rounded font-bold text-xs">
+          <span className="bg-red-50 border border-red-200 text-red-600 px-2 py-0.5 rounded font-bold">
             −{currentQuestion.negative_marks?.toFixed(2) || "0.50"} Penalty
           </span>
         </div>
       </div>
 
       {/* Question Body Scroll Container */}
-      <div className="flex-1 p-5 sm:p-7 overflow-y-auto space-y-6">
+      <div className="flex-1 p-3.5 sm:p-7 overflow-y-auto space-y-4 sm:space-y-6">
         {/* Question Text (Sanitized) */}
-        <div className="bg-gray-50 border border-gray-300 rounded-xl p-6 text-base sm:text-lg text-gray-900 font-medium leading-relaxed shadow-2xs">
+        <div className="bg-gray-50 border border-gray-300 rounded-xl p-4 sm:p-6 text-sm sm:text-lg text-gray-900 font-medium leading-relaxed shadow-2xs">
           <KaTeXRenderer content={sanitizeQuestionText(currentQuestion.question_text)} />
         </div>
 
@@ -104,7 +103,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             <img
               src={currentQuestion.question_image}
               alt={`Question ${currentQuestionIndex + 1}`}
-              className="max-h-80 w-auto rounded-lg object-contain cursor-pointer"
+              className="max-h-60 sm:max-h-80 w-auto rounded-lg object-contain cursor-pointer"
               onClick={() => setZoomedImage(currentQuestion.question_image)}
             />
             <button
@@ -118,8 +117,8 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         )}
 
         {/* Option Cards */}
-        <div className="space-y-3">
-          <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">
+        <div className="space-y-2.5 sm:space-y-3">
+          <p className="text-[11px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1.5">
             Select Option (Keyboard Shortcuts A / B / C / D):
           </p>
           {optionsList.map((option) => {
@@ -128,14 +127,14 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
               <button
                 key={option.id}
                 onClick={() => selectOption(currentQuestion.id, option.id)}
-                className={`w-full text-left p-4 sm:p-5 rounded-xl border-2 transition-all flex items-center gap-4 ${
+                className={`w-full text-left p-3.5 sm:p-5 rounded-xl border-2 transition-all flex items-center gap-3 sm:gap-4 min-h-[52px] ${
                   isSelected
                     ? "bg-blue-50/80 border-blue-600 text-gray-900 shadow-xs"
                     : "bg-white border-gray-200 text-gray-800 hover:border-gray-400 hover:bg-gray-50"
                 }`}
               >
                 <div
-                  className={`w-7 h-7 rounded-full border-2 font-bold text-xs flex items-center justify-center flex-shrink-0 transition-colors ${
+                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 font-bold text-xs flex items-center justify-center flex-shrink-0 transition-colors ${
                     isSelected
                       ? "bg-blue-600 border-blue-600 text-white"
                       : "border-gray-400 text-gray-600 bg-white"
@@ -144,11 +143,11 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
                   {option.id}
                 </div>
 
-                <div className="flex-1 text-sm sm:text-base font-medium leading-relaxed">
+                <div className="flex-1 text-xs sm:text-base font-medium leading-relaxed">
                   <KaTeXRenderer content={sanitizeQuestionText(option.text)} />
                 </div>
 
-                {isSelected && <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0" />}
+                {isSelected && <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0" />}
               </button>
             );
           })}
@@ -156,38 +155,42 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
       </div>
 
       {/* Bottom SSC Navigation Bar */}
-      <div className="bg-gray-100 border-t border-gray-300 p-3 sm:p-4 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap items-center gap-2">
-          {currentQuestionIndex > 0 && (
+      <div className="bg-gray-100 border-t border-gray-300 p-2.5 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-3 sm:flex sm:flex-wrap items-center gap-2">
+          {currentQuestionIndex > 0 ? (
             <button
               onClick={() => setQuestionIndex(currentQuestionIndex - 1)}
-              className="px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center gap-1.5 shadow-2xs"
+              className="px-3 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
             >
               <ChevronLeft className="w-4 h-4" />
-              <span>Previous</span>
+              <span>Prev</span>
             </button>
+          ) : (
+            <div />
           )}
 
           <button
             onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
-            className="px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center gap-1.5 shadow-2xs"
+            className="px-3 sm:px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
           >
             <Bookmark className="w-4 h-4" />
-            <span>Mark for Review & Next</span>
+            <span className="hidden sm:inline">Mark for Review & Next</span>
+            <span className="sm:hidden">Mark</span>
           </button>
 
           <button
             onClick={() => clearResponse(currentQuestion.id)}
-            className="px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center gap-1.5 shadow-2xs"
+            className="px-3 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>Clear Response</span>
+            <span className="hidden sm:inline">Clear Response</span>
+            <span className="sm:hidden">Clear</span>
           </button>
         </div>
 
         <button
           onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
-          className="px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center gap-2 shadow-xs"
+          className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-xs min-h-[44px]"
         >
           <span>Save & Next</span>
           <ChevronRight className="w-4 h-4" />

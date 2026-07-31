@@ -12,7 +12,6 @@ import {
   Play,
   Loader2,
   BookOpen,
-  Calculator,
   Eye,
   Keyboard,
   ShieldAlert,
@@ -80,12 +79,12 @@ function InstructionsContent() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 space-y-5">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6 space-y-4 sm:space-y-5">
       {/* Title */}
       <div className="border-b border-gray-300 pb-3 text-center">
-        <h1 className="text-xl font-bold text-gray-900 uppercase tracking-wide">STAFF SELECTION COMMISSION</h1>
-        <h2 className="text-sm font-semibold text-gray-700">Combined Graduate Level Examination (CGL)</h2>
-        <p className="text-xs text-gray-500 mt-0.5">Computer Based Test (CBT) Candidate Instructions</p>
+        <h1 className="text-lg sm:text-xl font-bold text-gray-900 uppercase tracking-wide">STAFF SELECTION COMMISSION</h1>
+        <h2 className="text-xs sm:text-sm font-semibold text-gray-700">Combined Graduate Level Examination (CGL)</h2>
+        <p className="text-[11px] sm:text-xs text-gray-500 mt-0.5">Computer Based Test (CBT) Candidate Instructions</p>
       </div>
 
       {error && (
@@ -96,9 +95,9 @@ function InstructionsContent() {
       )}
 
       {/* Grid: Candidate & Paper Details */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         {/* Candidate Details */}
-        <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-2">
+        <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-2">
           <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
             <User className="w-4 h-4 text-blue-600" />
             <span>1. Candidate Details</span>
@@ -113,7 +112,7 @@ function InstructionsContent() {
         </div>
 
         {/* Paper Details */}
-        <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-2">
+        <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-2">
           <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
             <FileText className="w-4 h-4 text-blue-600" />
             <span>2. Paper Details</span>
@@ -129,7 +128,7 @@ function InstructionsContent() {
       </div>
 
       {/* Rules & Marking Scheme */}
-      <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-3">
+      <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-3">
         <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
           <BookOpen className="w-4 h-4 text-blue-600" />
           <span>3. Duration & Marking Scheme</span>
@@ -142,7 +141,7 @@ function InstructionsContent() {
       </div>
 
       {/* Question Palette Colors */}
-      <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-3">
+      <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-3">
         <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
           <Eye className="w-4 h-4 text-blue-600" />
           <span>4. Question Palette Legend</span>
@@ -175,8 +174,8 @@ function InstructionsContent() {
       </div>
 
       {/* Navigation & Shortcuts */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+        <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-2">
           <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
             <FileText className="w-4 h-4 text-blue-600" />
             <span>5. Navigation Controls</span>
@@ -188,7 +187,7 @@ function InstructionsContent() {
           </ul>
         </div>
 
-        <div className="bg-white border border-gray-300 rounded-lg p-4 space-y-2">
+        <div className="bg-white border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-2">
           <div className="flex items-center gap-2 font-bold text-xs text-gray-800 border-b border-gray-200 pb-2">
             <Keyboard className="w-4 h-4 text-blue-600" />
             <span>6. Keyboard Shortcuts</span>
@@ -202,7 +201,7 @@ function InstructionsContent() {
       </div>
 
       {/* Final Warning & Confirmation */}
-      <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 space-y-3">
+      <div className="bg-gray-50 border border-gray-300 rounded-lg p-3.5 sm:p-4 space-y-3">
         <div className="flex items-center gap-2 font-bold text-xs text-amber-800">
           <ShieldAlert className="w-4 h-4 text-amber-600" />
           <span>7. Final Warning & Declaration</span>
@@ -216,24 +215,24 @@ function InstructionsContent() {
             type="checkbox"
             checked={confirmed}
             onChange={(e) => setConfirmed(e.target.checked)}
-            className="mt-0.5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-4 h-4"
+            className="mt-0.5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-4 h-4 flex-shrink-0"
           />
           <span className="text-xs text-gray-900 font-semibold leading-relaxed">
             I have read and understood all instructions. I am ready to begin the examination.
           </span>
         </label>
 
-        <div className="flex items-center gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 pt-2">
           <Link
             href="/test/create"
-            className="px-4 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 font-semibold text-xs transition-colors"
+            className="w-full sm:w-auto px-4 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 font-semibold text-xs transition-colors text-center min-h-[44px] flex items-center justify-center"
           >
             ← Back
           </Link>
           <button
             disabled={!confirmed || starting}
             onClick={handleStartExam}
-            className="flex-1 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-xs"
+            className="w-full sm:flex-1 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-xs min-h-[44px]"
           >
             {starting ? (
               <>
@@ -258,15 +257,15 @@ export default function InstructionsPage() {
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col antialiased">
       <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-lg text-gray-900">
-            <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center">
+          <div className="flex items-center gap-2 font-bold text-base sm:text-lg text-gray-900">
+            <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
               <Zap className="w-3.5 h-3.5 text-white fill-white" />
             </div>
-            <span>Staff Selection Commission CBT</span>
+            <span className="truncate">Staff Selection Commission CBT</span>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
             <Clock className="w-4 h-4" />
-            <span>Instructions</span>
+            <span className="hidden sm:inline">Instructions</span>
           </div>
         </div>
       </header>
