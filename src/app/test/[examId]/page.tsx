@@ -8,7 +8,7 @@ import { CBTQuestionView } from "@/components/cbt/cbt-question-view";
 import { CBTPalette } from "@/components/cbt/cbt-palette";
 import { CBTSubmitModal } from "@/components/cbt/cbt-submit-modal";
 import type { ValidatedQuestion, Subject } from "@/types/database.types";
-import { X, Loader2 } from "lucide-react";
+import { X, Loader2, LayoutGrid } from "lucide-react";
 
 export default function CBTTestEnginePage() {
   const params = useParams();
@@ -19,6 +19,7 @@ export default function CBTTestEnginePage() {
   const [error, setError] = useState<string | null>(null);
   const [title, setTitle] = useState<string>("SSC CGL Practice Test");
   const [validatedQuestions, setValidatedQuestions] = useState<ValidatedQuestion[]>([]);
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
   const { initTest, isSubmitted, currentQuestionIndex, submitTest, zoomedImage, setZoomedImage } = useTestStore();
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
@@ -100,6 +101,17 @@ export default function CBTTestEnginePage() {
     }
   }, [isSubmitted, examId, router]);
 
+  // Handle ESC key to close mobile drawer
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isMobileDrawerOpen) {
+        setIsMobileDrawerOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isMobileDrawerOpen]);
+
   // Derive unique sections in actual generated question order
   const sections: Subject[] = useMemo(() => {
     const list: Subject[] = [];
@@ -142,10 +154,10 @@ export default function CBTTestEnginePage() {
   };
 
   return (
-    <div className="h-screen w-screen flex flex-col bg-white text-gray-900 overflow-hidden font-sans select-none antialiased">
+    <div className="h-screen w-screen flex flex-col bg-white text-gray-900 overflow-hidden font-sans select-none antialiased relative">
       <CBTHeader title={title} totalQuestions={validatedQuestions.length} />
 
-      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden relative">
         <CBTQuestionView
           sections={sections}
           currentQuestion={currentQuestion}
@@ -153,12 +165,49 @@ export default function CBTTestEnginePage() {
           totalQuestions={validatedQuestions.length}
         />
 
-        <CBTPalette
-          questions={validatedQuestions}
-          onSubmitClick={() => setIsSubmitModalOpen(true)}
-        />
+        {/* Desktop & Tablet Sidebar Palette (≥768px) */}
+        <div className="hidden md:flex w-72 lg:w-80 h-full flex-shrink-0">
+          <CBTPalette
+            questions={validatedQuestions}
+            onSubmitClick={() => setIsSubmitModalOpen(true)}
+          />
+        </div>
       </div>
 
+      {/* Mobile Floating Question Palette Trigger Button (<768px) */}
+      <button
+        onClick={() => setIsMobileDrawerOpen((prev) => !prev)}
+        className="md:hidden fixed bottom-16 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-lg border-2 border-white flex items-center gap-2 text-xs transition-all animate-bounce-subtle min-h-[44px]"
+        aria-label="Toggle Question Palette Drawer"
+        aria-expanded={isMobileDrawerOpen}
+      >
+        <LayoutGrid className="w-4 h-4" />
+        <span>Palette ({currentQuestionIndex + 1}/{validatedQuestions.length})</span>
+      </button>
+
+      {/* Mobile Slide-Out Navigation Drawer (<768px) */}
+      {isMobileDrawerOpen && (
+        <div className="md:hidden fixed inset-0 z-50 flex justify-end" role="dialog" aria-modal="true" aria-label="Question Palette">
+          {/* Backdrop Overlay */}
+          <div
+            className="fixed inset-0 bg-gray-900/60 backdrop-blur-xs transition-opacity duration-300"
+            onClick={() => setIsMobileDrawerOpen(false)}
+          />
+
+          {/* Slide-out Drawer Panel */}
+          <div className="relative w-80 max-w-[85vw] h-full bg-white shadow-2xl z-10 flex flex-col transition-transform duration-300 transform translate-x-0">
+            <CBTPalette
+              questions={validatedQuestions}
+              onSubmitClick={() => setIsSubmitModalOpen(true)}
+              onSelectQuestion={() => setIsMobileDrawerOpen(false)}
+              onCloseDrawer={() => setIsMobileDrawerOpen(false)}
+              isDrawer={true}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Submit Confirmation Modal */}
       {isSubmitModalOpen && (
         <CBTSubmitModal
           questions={validatedQuestions}
