@@ -154,22 +154,19 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         </div>
       </div>
 
-      {/* Always Visible Bottom Action Bar (Row 1: Prev/Mark/Clear, Row 2: Save & Next on Mobile) */}
-      <div className="bg-gray-100 border-t border-gray-300 p-2.5 sm:p-4 flex-shrink-0 z-20 shadow-md space-y-2 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-3">
+      {/* Always Visible Bottom Action Bar — Elevated with extra bottom padding for mobile browser address bars */}
+      <div className="bg-gray-100 border-t border-gray-300 px-3 pt-2.5 pb-6 sm:p-4 flex-shrink-0 z-20 shadow-md space-y-2 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-3">
         {/* Top Row on Mobile / Left Group on Desktop: Prev, Mark, Clear */}
         <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center sm:gap-2">
-          {currentQuestionIndex > 0 ? (
-            <button
-              onClick={() => setQuestionIndex(currentQuestionIndex - 1)}
-              className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
-              title="Previous Question"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              <span>Prev</span>
-            </button>
-          ) : (
-            <div className="min-h-[44px] bg-gray-100 sm:hidden" />
-          )}
+          <button
+            disabled={currentQuestionIndex === 0}
+            onClick={() => currentQuestionIndex > 0 && setQuestionIndex(currentQuestionIndex - 1)}
+            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
+            title="Previous Question"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            <span>Prev</span>
+          </button>
 
           <button
             onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}

@@ -124,7 +124,7 @@ export default function CBTTestEnginePage() {
 
   if (loading) {
     return (
-      <div className="h-screen w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-3 font-sans">
+      <div className="h-screen h-[100dvh] w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-3 font-sans">
         <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
         <span className="text-sm font-bold tracking-wide uppercase">Initializing Staff Selection Commission CBT Portal...</span>
       </div>
@@ -133,7 +133,7 @@ export default function CBTTestEnginePage() {
 
   if (error || validatedQuestions.length === 0) {
     return (
-      <div className="h-screen w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-4 font-sans p-4 text-center">
+      <div className="h-screen h-[100dvh] w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-4 font-sans p-4 text-center">
         <p className="text-sm font-bold text-red-600">{error || "No questions found for this test."}</p>
         <button
           onClick={() => router.push("/dashboard")}
@@ -154,10 +154,10 @@ export default function CBTTestEnginePage() {
   };
 
   return (
-    <div className="h-screen w-screen flex flex-col bg-white text-gray-900 overflow-hidden font-sans select-none antialiased relative">
+    <div className="h-screen h-[100dvh] w-screen flex flex-col bg-white text-gray-900 overflow-hidden font-sans select-none antialiased relative">
       <CBTHeader title={title} totalQuestions={validatedQuestions.length} />
 
-      <div className="flex-1 flex flex-col md:flex-row overflow-hidden relative">
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden relative min-h-0">
         <CBTQuestionView
           sections={sections}
           currentQuestion={currentQuestion}
@@ -174,10 +174,10 @@ export default function CBTTestEnginePage() {
         </div>
       </div>
 
-      {/* Mobile Floating Question Palette Trigger Button (<768px) — Elevated well above two-row action bar */}
+      {/* Mobile Floating Question Palette Trigger Button (<768px) — Positioned high above bottom bar */}
       <button
         onClick={() => setIsMobileDrawerOpen((prev) => !prev)}
-        className="md:hidden fixed bottom-32 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-xl border-2 border-white flex items-center gap-2 text-xs transition-all min-h-[44px]"
+        className="md:hidden fixed bottom-36 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-xl border-2 border-white flex items-center gap-2 text-xs transition-all min-h-[44px]"
         aria-label="Toggle Question Palette Drawer"
         aria-expanded={isMobileDrawerOpen}
       >
