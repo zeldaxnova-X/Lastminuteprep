@@ -1,0 +1,38 @@
+{
+  "row_counts": {
+    "validated_questions": 10614,
+    "raw_questions": 7020,
+    "papers": 138,
+    "dataset_versions": 4,
+    "import_runs": 5,
+    "paper_import_status": 87,
+    "manual_review_queue": 0
+  },
+  "duplicate_uuids_vq": 0,
+  "duplicate_uuids_papers": 0,
+  "duplicate_pid_qnum": 0,
+  "duplicate_pname_qnum": 0,
+  "orphan_paper_refs": 0,
+  "null_question_text": 0,
+  "null_correct_answer": 0,
+  "invalid_answers": 0,
+  "invalid_marks": 0,
+  "invalid_subjects": [],
+  "invalid_paper_types": [],
+  "identical_option_pairs": 45,
+  "images_with_ref": 5005,
+  "images_missing_disk": 0,
+  "orphan_versions": 0,
+  "null_versions": 0,
+  "scores": {
+    "Data Integrity": 100,
+    "Normalization": 100,
+    "Metadata": 100,
+    "Performance": 85,
+    "Scalability": 90,
+    "Versioning": 100,
+    "Maintainability": 95,
+    "CBT Readiness": 90
+  },
+  "total_score": 95.0
+}

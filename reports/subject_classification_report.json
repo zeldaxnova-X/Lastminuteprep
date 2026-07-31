@@ -1,0 +1,153 @@
+{
+  "total_questions": 6133,
+  "original_subject_distribution": {
+    "Quantitative Aptitude": 2393,
+    "General Intelligence & Reasoning": 3718,
+    "General Awareness": 22
+  },
+  "new_subject_distribution": {
+    "Quantitative Aptitude": 1475,
+    "General Intelligence & Reasoning": 3129,
+    "English Comprehension": 1162,
+    "General Awareness": 367
+  },
+  "questions_reclassified": 3099,
+  "questions_requiring_manual_review": 2608,
+  "corrected_examples": [
+    {
+      "id": "45f05e34-ea38-457d-8261-efd784f155f3",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 16,
+      "original_subject": "Quantitative Aptitude",
+      "predicted_subject": "General Intelligence & Reasoning",
+      "confidence": 0.6,
+      "question_text": "Anil and Beena are friends, and the difference between their ages is 5 years. Anil\u2019s fathe..."
+    },
+    {
+      "id": "06568253-8145-44ee-8206-0ac2597aab36",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 20,
+      "original_subject": "Quantitative Aptitude",
+      "predicted_subject": "General Intelligence & Reasoning",
+      "confidence": 0.92,
+      "question_text": "In this question, two statements are followed by four conclusions given as options. Decide..."
+    },
+    {
+      "id": "44111743-5a0c-472f-bd1f-2eaf2857bf5e",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 23,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "Given below is a statement (Cause) followed by possible effects numbered I, II and III. Re..."
+    },
+    {
+      "id": "74219b0b-a5f6-49ef-b889-f63b9792d682",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 30,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.8,
+      "question_text": "The following contains two pairs of words which are related to each other in a certain way..."
+    },
+    {
+      "id": "df10bd94-5a55-4114-8342-4e92ce08a0bf",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 31,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "Read the following information and answer the question which follows. \u201cSimilar to expert p..."
+    },
+    {
+      "id": "74c8265e-167e-41b6-9fd4-d783f498c51b",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 36,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "Each of P, Q, R, S, T, U and V has an exam on a different day of a week, starting from Mon..."
+    },
+    {
+      "id": "3a0bf987-88f3-442e-81a1-3130e63370bd",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 41,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "A question is given, followed by two statements labelled I and II. Identify which of the s..."
+    },
+    {
+      "id": "866ee97d-7b9a-4af7-b0b7-c3ef85cd3901",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 43,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "If \u2018A\u2019 stands for \u2018\u00f7\u2019, \u2018B\u2019 stands for \u2018\u00d7\u2019, \u2018C\u2019 stands for \u2018+\u2019 and \u2018D\u2019 stands for \u2018\u2212\u2019, what..."
+    },
+    {
+      "id": "26b9843a-0bdd-4a8e-ad3d-f5b651909c51",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 44,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "Each of the digits in the number 5238641 is arranged in ascending order from left to right..."
+    },
+    {
+      "id": "f76cad14-d2d0-4d84-94d1-fc57a294b0cf",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 46,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "Quantitative Aptitude",
+      "confidence": 0.95,
+      "question_text": "Which of the following letter-clusters should replace # and % so that the pattern and rela..."
+    },
+    {
+      "id": "543cec66-b63e-45c3-b1af-66cd170d52f8",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 50,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "English Comprehension",
+      "confidence": 0.98,
+      "question_text": "Select the correct spelling of the incorrectly spelt word in the given sentence. The train..."
+    },
+    {
+      "id": "5d867b71-6759-4f03-bad3-8ca2a0fb7d08",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 51,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "English Comprehension",
+      "confidence": 0.98,
+      "question_text": "Select the most appropriate meaning of the underlined word. He walked leisurely towards th..."
+    },
+    {
+      "id": "d5e1d7cc-5c72-4e12-a78c-b6c72f692c0c",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 52,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "General Awareness",
+      "confidence": 0.9,
+      "question_text": "Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the co..."
+    },
+    {
+      "id": "c46701a0-0b0f-4453-99b0-02a1886134b8",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 54,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "English Comprehension",
+      "confidence": 0.98,
+      "question_text": "Select the most appropriate option to fill in the blank. No other book in the series capti..."
+    },
+    {
+      "id": "ffa6248b-d464-4f13-be6c-c49854a8ded0",
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "question_number": 58,
+      "original_subject": "General Intelligence & Reasoning",
+      "predicted_subject": "English Comprehension",
+      "confidence": 0.98,
+      "question_text": "Select the most appropriate homophone from the options to fill in the blank. We should ___..."
+    }
+  ]
+}

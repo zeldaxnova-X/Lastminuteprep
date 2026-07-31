@@ -1,0 +1,1406 @@
+{
+  "ge_95_count": 5,
+  "bt_80_95_count": 52,
+  "lt_80_count": 30,
+  "ge_95": [
+    {
+      "paper_name": "SSC CGL 2020 Tier II Shift 1 (2022-01-29)",
+      "expected": 150,
+      "extracted": 198,
+      "validated": 182,
+      "val_pct": 121.3,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier II Shift 1 (2022-08-08)",
+      "expected": 150,
+      "extracted": 198,
+      "validated": 188,
+      "val_pct": 125.3,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-03-06)",
+      "expected": 100,
+      "extracted": 112,
+      "validated": 112,
+      "val_pct": 112.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-09)",
+      "expected": 100,
+      "extracted": 95,
+      "validated": 95,
+      "val_pct": 95.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2023-10-26)",
+      "expected": 100,
+      "extracted": 114,
+      "validated": 113,
+      "val_pct": 113.0,
+      "reason": "None (Passed)"
+    }
+  ],
+  "bt_80_95": [
+    {
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "expected": 150,
+      "extracted": 139,
+      "validated": 136,
+      "val_pct": 90.7,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-20)",
+      "expected": 150,
+      "extracted": 134,
+      "validated": 132,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-13)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-13)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 94,
+      "val_pct": 94.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-13)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-17)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-17)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-17)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-18)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-18)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-18)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-19)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-19)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-19)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-23)",
+      "expected": 100,
+      "extracted": 95,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-23)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-23)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-24)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-24)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-24)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-26)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-26)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-26)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-10)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-11)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-12)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-10)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-10)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-11)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-11)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-12)",
+      "expected": 100,
+      "extracted": 182,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-12)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-09)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-14)",
+      "expected": 100,
+      "extracted": 84,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-14)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-01)",
+      "expected": 100,
+      "extracted": 87,
+      "validated": 86,
+      "val_pct": 86.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-01)",
+      "expected": 100,
+      "extracted": 85,
+      "validated": 84,
+      "val_pct": 84.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-01)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-01)",
+      "expected": 100,
+      "extracted": 82,
+      "validated": 81,
+      "val_pct": 81.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-02)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-02)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-02)",
+      "expected": 100,
+      "extracted": 82,
+      "validated": 81,
+      "val_pct": 81.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-02)",
+      "expected": 100,
+      "extracted": 80,
+      "validated": 80,
+      "val_pct": 80.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-03)",
+      "expected": 100,
+      "extracted": 84,
+      "validated": 84,
+      "val_pct": 84.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-03)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 82,
+      "val_pct": 82.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-03)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-03)",
+      "expected": 100,
+      "extracted": 81,
+      "validated": 80,
+      "val_pct": 80.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-18)",
+      "expected": 100,
+      "extracted": 86,
+      "validated": 85,
+      "val_pct": 85.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-21)",
+      "expected": 100,
+      "extracted": 87,
+      "validated": 85,
+      "val_pct": 85.0,
+      "reason": "None (Passed)"
+    }
+  ],
+  "lt_80": [
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2025-01-19)",
+      "expected": 100,
+      "extracted": 34,
+      "validated": 34,
+      "val_pct": 34.0,
+      "reason": "Incomplete PDF scan or truncated text (34/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2018 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 33,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (33 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2019 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 48,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (48 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 205,
+      "validated": 53,
+      "val_pct": 53.0,
+      "reason": "Missing official answer key in source PDF (152 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 167,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (167 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 2",
+      "expected": 100,
+      "extracted": 158,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (158 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-19)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-19)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-19)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-00)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-00)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-00)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-00)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-03)",
+      "expected": 150,
+      "extracted": 116,
+      "validated": 115,
+      "val_pct": 76.7,
+      "reason": "Manual review queue flags (1 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-06)",
+      "expected": 150,
+      "extracted": 112,
+      "validated": 112,
+      "val_pct": 74.7,
+      "reason": "Manual review queue flags (0 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-07)",
+      "expected": 150,
+      "extracted": 109,
+      "validated": 108,
+      "val_pct": 72.0,
+      "reason": "Manual review queue flags (1 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 3",
+      "expected": 100,
+      "extracted": 149,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (149 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier II Shift 1 (2023-03-02)",
+      "expected": 150,
+      "extracted": 117,
+      "validated": 112,
+      "val_pct": 74.7,
+      "reason": "Manual review queue flags (5 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-14)",
+      "expected": 100,
+      "extracted": 1,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-14)",
+      "expected": 100,
+      "extracted": 1,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-18)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-18)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-18)",
+      "expected": 100,
+      "extracted": 5,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-01)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 2 (2021-08-13)",
+      "expected": 100,
+      "extracted": 65,
+      "validated": 62,
+      "val_pct": 62.0,
+      "reason": "Incomplete PDF scan or truncated text (65/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 3 (2021-08-16)",
+      "expected": 100,
+      "extracted": 62,
+      "validated": 57,
+      "val_pct": 57.0,
+      "reason": "Incomplete PDF scan or truncated text (62/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 1 (2021-08-16)",
+      "expected": 100,
+      "extracted": 65,
+      "validated": 60,
+      "val_pct": 60.0,
+      "reason": "Incomplete PDF scan or truncated text (65/100 extracted)"
+    }
+  ],
+  "all_rows": [
+    {
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-18)",
+      "expected": 150,
+      "extracted": 139,
+      "validated": 136,
+      "val_pct": 90.7,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2025-01-19)",
+      "expected": 100,
+      "extracted": 34,
+      "validated": 34,
+      "val_pct": 34.0,
+      "reason": "Incomplete PDF scan or truncated text (34/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier II Shift 1 (2025-01-20)",
+      "expected": 150,
+      "extracted": 134,
+      "validated": 132,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2018 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 33,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (33 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2019 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 48,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (48 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 205,
+      "validated": 53,
+      "val_pct": 53.0,
+      "reason": "Missing official answer key in source PDF (152 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 1",
+      "expected": 100,
+      "extracted": 167,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (167 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 2",
+      "expected": 100,
+      "extracted": 158,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (158 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-13)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-13)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 94,
+      "val_pct": 94.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-13)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-17)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-17)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-17)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-18)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-18)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-18)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-19)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-19)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-19)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-19)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-19)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-19)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-00)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-00)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-00)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-00)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2020 Tier II Shift 1 (2022-01-29)",
+      "expected": 150,
+      "extracted": 198,
+      "validated": 182,
+      "val_pct": 121.3,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier II Shift 1 (2022-08-08)",
+      "expected": 150,
+      "extracted": 198,
+      "validated": 188,
+      "val_pct": 125.3,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-03)",
+      "expected": 150,
+      "extracted": 116,
+      "validated": 115,
+      "val_pct": 76.7,
+      "reason": "Manual review queue flags (1 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-06)",
+      "expected": 150,
+      "extracted": 112,
+      "validated": 112,
+      "val_pct": 74.7,
+      "reason": "Manual review queue flags (0 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier II Shift 1 (2023-03-07)",
+      "expected": 150,
+      "extracted": 109,
+      "validated": 108,
+      "val_pct": 72.0,
+      "reason": "Manual review queue flags (1 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-23)",
+      "expected": 100,
+      "extracted": 95,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-23)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-23)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-24)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-24)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-24)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-25)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-26)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-26)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-26)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 89,
+      "val_pct": 89.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-03-06)",
+      "expected": 100,
+      "extracted": 112,
+      "validated": 112,
+      "val_pct": 112.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2025 Tier I Shift 3",
+      "expected": 100,
+      "extracted": 149,
+      "validated": 0,
+      "val_pct": 0.0,
+      "reason": "Missing official answer key in source PDF (149 un-answered questions)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier II Shift 1 (2023-03-02)",
+      "expected": 150,
+      "extracted": 117,
+      "validated": 112,
+      "val_pct": 74.7,
+      "reason": "Manual review queue flags (5 items in review queue)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-10)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-11)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-12)",
+      "expected": 100,
+      "extracted": 92,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-10)",
+      "expected": 100,
+      "extracted": 93,
+      "validated": 92,
+      "val_pct": 92.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-10)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 93,
+      "val_pct": 93.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-11)",
+      "expected": 100,
+      "extracted": 94,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-11)",
+      "expected": 100,
+      "extracted": 88,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2024-09-12)",
+      "expected": 100,
+      "extracted": 182,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-12)",
+      "expected": 100,
+      "extracted": 90,
+      "validated": 90,
+      "val_pct": 90.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 2 (2024-09-09)",
+      "expected": 100,
+      "extracted": 95,
+      "validated": 95,
+      "val_pct": 95.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 3 (2024-09-09)",
+      "expected": 100,
+      "extracted": 91,
+      "validated": 91,
+      "val_pct": 91.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2024 Tier I Shift 1 (2023-10-26)",
+      "expected": 100,
+      "extracted": 114,
+      "validated": 113,
+      "val_pct": 113.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-14)",
+      "expected": 100,
+      "extracted": 84,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-14)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-14)",
+      "expected": 100,
+      "extracted": 1,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-14)",
+      "expected": 100,
+      "extracted": 1,
+      "validated": 1,
+      "val_pct": 1.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-17)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-18)",
+      "expected": 100,
+      "extracted": 2,
+      "validated": 2,
+      "val_pct": 2.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 2 (2023-07-18)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-18)",
+      "expected": 100,
+      "extracted": 5,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 4 (2023-07-01)",
+      "expected": 100,
+      "extracted": 3,
+      "validated": 3,
+      "val_pct": 3.0,
+      "reason": "1-page Answer Key / Candidate Summary PDF (Not a Question Paper)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-01)",
+      "expected": 100,
+      "extracted": 87,
+      "validated": 86,
+      "val_pct": 86.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-01)",
+      "expected": 100,
+      "extracted": 85,
+      "validated": 84,
+      "val_pct": 84.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-01)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-01)",
+      "expected": 100,
+      "extracted": 82,
+      "validated": 81,
+      "val_pct": 81.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-02)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-02)",
+      "expected": 100,
+      "extracted": 89,
+      "validated": 88,
+      "val_pct": 88.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-02)",
+      "expected": 100,
+      "extracted": 82,
+      "validated": 81,
+      "val_pct": 81.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-02)",
+      "expected": 100,
+      "extracted": 80,
+      "validated": 80,
+      "val_pct": 80.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 1 (2022-12-03)",
+      "expected": 100,
+      "extracted": 84,
+      "validated": 84,
+      "val_pct": 84.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 2 (2022-12-03)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 82,
+      "val_pct": 82.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 3 (2022-12-03)",
+      "expected": 100,
+      "extracted": 83,
+      "validated": 83,
+      "val_pct": 83.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2022 Tier I Shift 4 (2022-12-03)",
+      "expected": 100,
+      "extracted": 81,
+      "validated": 80,
+      "val_pct": 80.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 3 (2023-07-18)",
+      "expected": 100,
+      "extracted": 86,
+      "validated": 85,
+      "val_pct": 85.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2023 Tier I Shift 1 (2023-07-21)",
+      "expected": 100,
+      "extracted": 87,
+      "validated": 85,
+      "val_pct": 85.0,
+      "reason": "None (Passed)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 2 (2021-08-13)",
+      "expected": 100,
+      "extracted": 65,
+      "validated": 62,
+      "val_pct": 62.0,
+      "reason": "Incomplete PDF scan or truncated text (65/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 3 (2021-08-16)",
+      "expected": 100,
+      "extracted": 62,
+      "validated": 57,
+      "val_pct": 57.0,
+      "reason": "Incomplete PDF scan or truncated text (62/100 extracted)"
+    },
+    {
+      "paper_name": "SSC CGL 2021 Tier I Shift 1 (2021-08-16)",
+      "expected": 100,
+      "extracted": 65,
+      "validated": 60,
+      "val_pct": 60.0,
+      "reason": "Incomplete PDF scan or truncated text (65/100 extracted)"
+    }
+  ],
+  "recoverable_questions": 448
+}

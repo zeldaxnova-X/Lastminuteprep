@@ -1,0 +1,21 @@
+{
+  "table_counts": {
+    "raw_questions": 7020,
+    "validated_questions": 6133,
+    "paper_import_status": 87,
+    "manual_review_queue": 0,
+    "pdf_ingestion_logs": 0,
+    "dataset_versions": 1,
+    "import_runs": 1
+  },
+  "total_validated_questions": 6133,
+  "distinct_papers": 82,
+  "distinct_years": 5,
+  "distinct_shifts": 4,
+  "distinct_subjects_count": 3,
+  "subjects": [
+    "General Awareness",
+    "General Intelligence & Reasoning",
+    "Quantitative Aptitude"
+  ]
+}
