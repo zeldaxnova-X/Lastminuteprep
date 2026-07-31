@@ -68,7 +68,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
   return (
     <div className="flex-1 flex flex-col h-full bg-white overflow-hidden select-none">
       {/* Continuous Examination Bar: Question No + Section Badge */}
-      <div className="bg-white border-b border-gray-200 px-3 sm:px-5 py-2.5 sm:py-3 flex flex-wrap items-center justify-between gap-2 text-xs shadow-2xs">
+      <div className="bg-white border-b border-gray-200 px-3 sm:px-5 py-2 sm:py-3 flex flex-wrap items-center justify-between gap-2 text-xs shadow-2xs">
         <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
           <span className="font-extrabold text-gray-900 text-sm sm:text-lg tracking-tight">
             Question No. {currentQuestionIndex + 1}
@@ -154,35 +154,34 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         </div>
       </div>
 
-      {/* Bottom SSC Navigation Bar */}
-      <div className="bg-gray-100 border-t border-gray-300 p-2.5 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3">
-        <div className="grid grid-cols-3 sm:flex sm:flex-wrap items-center gap-2">
-          {currentQuestionIndex > 0 ? (
+      {/* Bottom SSC Navigation Bar — ALL BUTTONS ON THE SAME LINE */}
+      <div className="bg-gray-100 border-t border-gray-300 p-2 sm:p-4 flex items-center justify-between gap-1.5 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-2 flex-1 overflow-x-auto no-scrollbar">
+          {currentQuestionIndex > 0 && (
             <button
               onClick={() => setQuestionIndex(currentQuestionIndex - 1)}
-              className="px-3 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
+              className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px] flex-shrink-0"
+              title="Previous Question"
             >
               <ChevronLeft className="w-4 h-4" />
-              <span>Prev</span>
+              <span className="hidden xs:inline">Prev</span>
             </button>
-          ) : (
-            <div />
           )}
 
           <button
             onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
-            className="px-3 sm:px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
+            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px] flex-1 sm:flex-none whitespace-nowrap"
           >
-            <Bookmark className="w-4 h-4" />
+            <Bookmark className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Mark for Review & Next</span>
             <span className="sm:hidden">Mark</span>
           </button>
 
           <button
             onClick={() => clearResponse(currentQuestion.id)}
-            className="px-3 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
+            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px] flex-1 sm:flex-none whitespace-nowrap"
           >
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Clear Response</span>
             <span className="sm:hidden">Clear</span>
           </button>
@@ -190,7 +189,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
 
         <button
           onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
-          className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-xs min-h-[44px]"
+          className="px-3.5 sm:px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-1.5 shadow-xs min-h-[44px] flex-shrink-0 whitespace-nowrap"
         >
           <span>Save & Next</span>
           <ChevronRight className="w-4 h-4" />

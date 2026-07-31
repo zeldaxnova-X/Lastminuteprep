@@ -174,10 +174,10 @@ export default function CBTTestEnginePage() {
         </div>
       </div>
 
-      {/* Mobile Floating Question Palette Trigger Button (<768px) */}
+      {/* Mobile Floating Question Palette Trigger Button (<768px) — Positioned elevated above action bar */}
       <button
         onClick={() => setIsMobileDrawerOpen((prev) => !prev)}
-        className="md:hidden fixed bottom-16 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-lg border-2 border-white flex items-center gap-2 text-xs transition-all animate-bounce-subtle min-h-[44px]"
+        className="md:hidden fixed bottom-24 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-xl border-2 border-white flex items-center gap-2 text-xs transition-all min-h-[44px]"
         aria-label="Toggle Question Palette Drawer"
         aria-expanded={isMobileDrawerOpen}
       >
