@@ -32,10 +32,11 @@ export async function GET(request: NextRequest) {
       query = query.eq("tier", tier);
     }
 
-    // Only return complete, fully validated 100-question papers
-    const includeEmpty = searchParams.get("include_empty") === "true";
-    if (!includeEmpty) {
-      query = query.gte("validated_questions", 100);
+    // Only surface papers from the active v2 (DOCX) dataset. Pre-v2 papers are
+    // retired and their questions no longer exist, so they must not be listed.
+    const includeLegacy = searchParams.get("include_legacy") === "true";
+    if (!includeLegacy) {
+      query = query.eq("dataset_version", "2.0");
     }
 
     const { data, error } = await query;

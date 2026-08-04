@@ -101,16 +101,16 @@ export default function CBTTestEnginePage() {
     }
   }, [isSubmitted, examId, router]);
 
-  // Handle ESC key to close mobile drawer
+  // Handle ESC key to close the mobile drawer or the zoom modal
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isMobileDrawerOpen) {
-        setIsMobileDrawerOpen(false);
-      }
+      if (e.key !== "Escape") return;
+      if (zoomedImage) setZoomedImage(null);
+      else if (isMobileDrawerOpen) setIsMobileDrawerOpen(false);
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isMobileDrawerOpen]);
+  }, [isMobileDrawerOpen, zoomedImage, setZoomedImage]);
 
   // Derive unique sections in actual generated question order
   const sections: Subject[] = useMemo(() => {
@@ -124,20 +124,20 @@ export default function CBTTestEnginePage() {
 
   if (loading) {
     return (
-      <div className="h-screen h-[100dvh] w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-3 font-sans">
-        <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-        <span className="text-sm font-bold tracking-wide uppercase">Initializing Staff Selection Commission CBT Portal...</span>
+      <div className="flex h-screen h-[100dvh] w-screen flex-col items-center justify-center gap-3 bg-slate-50 text-slate-600 dark:bg-slate-950 dark:text-slate-300">
+        <Loader2 className="h-7 w-7 animate-spin text-indigo-500" />
+        <span className="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400">Preparing your test…</span>
       </div>
     );
   }
 
   if (error || validatedQuestions.length === 0) {
     return (
-      <div className="h-screen h-[100dvh] w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-4 font-sans p-4 text-center">
-        <p className="text-sm font-bold text-red-600">{error || "No questions found for this test."}</p>
+      <div className="flex h-screen h-[100dvh] w-screen flex-col items-center justify-center gap-4 bg-slate-50 p-4 text-center dark:bg-slate-950">
+        <p className="text-sm font-medium text-rose-600 dark:text-rose-400">{error || "No questions found for this test."}</p>
         <button
           onClick={() => router.push("/dashboard")}
-          className="px-5 py-2.5 rounded-lg bg-blue-600 text-white font-bold text-xs"
+          className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500"
         >
           Return to Dashboard
         </button>
@@ -154,10 +154,10 @@ export default function CBTTestEnginePage() {
   };
 
   return (
-    <div className="h-screen h-[100dvh] w-screen flex flex-col bg-white text-gray-900 overflow-hidden font-sans select-none antialiased relative">
+    <div className="relative flex h-screen h-[100dvh] w-screen select-none flex-col overflow-hidden bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
       <CBTHeader title={title} totalQuestions={validatedQuestions.length} />
 
-      <div className="flex-1 flex flex-col md:flex-row overflow-hidden relative min-h-0">
+      <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden md:flex-row">
         <CBTQuestionView
           sections={sections}
           currentQuestion={currentQuestion}
@@ -165,8 +165,8 @@ export default function CBTTestEnginePage() {
           totalQuestions={validatedQuestions.length}
         />
 
-        {/* Desktop & Tablet Sidebar Palette (≥768px) */}
-        <div className="hidden md:flex w-72 lg:w-80 h-full flex-shrink-0">
+        {/* Desktop & tablet sidebar palette (≥768px) */}
+        <div className="hidden h-full w-72 flex-shrink-0 md:flex lg:w-80">
           <CBTPalette
             questions={validatedQuestions}
             onSubmitClick={() => setIsSubmitModalOpen(true)}
@@ -174,28 +174,25 @@ export default function CBTTestEnginePage() {
         </div>
       </div>
 
-      {/* Mobile Floating Question Palette Trigger Button (<768px) — Positioned high above bottom bar */}
+      {/* Mobile floating palette trigger (<768px) */}
       <button
         onClick={() => setIsMobileDrawerOpen((prev) => !prev)}
-        className="md:hidden fixed bottom-36 right-4 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold px-3.5 py-2.5 rounded-full shadow-xl border-2 border-white flex items-center gap-2 text-xs transition-all min-h-[44px]"
-        aria-label="Toggle Question Palette Drawer"
+        className="fixed bottom-32 right-4 z-40 flex min-h-[44px] items-center gap-2 rounded-full bg-indigo-600 px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-indigo-600/30 transition-all active:scale-95 hover:bg-indigo-500 md:hidden"
+        aria-label="Toggle question palette"
         aria-expanded={isMobileDrawerOpen}
       >
-        <LayoutGrid className="w-4 h-4" />
-        <span>Palette ({currentQuestionIndex + 1}/{validatedQuestions.length})</span>
+        <LayoutGrid className="h-4 w-4" />
+        <span className="tabular-nums">{currentQuestionIndex + 1}/{validatedQuestions.length}</span>
       </button>
 
-      {/* Mobile Slide-Out Navigation Drawer (<768px) */}
+      {/* Mobile slide-out drawer (<768px) */}
       {isMobileDrawerOpen && (
-        <div className="md:hidden fixed inset-0 z-50 flex justify-end" role="dialog" aria-modal="true" aria-label="Question Palette">
-          {/* Backdrop Overlay */}
+        <div className="fixed inset-0 z-50 flex justify-end md:hidden" role="dialog" aria-modal="true" aria-label="Question palette">
           <div
-            className="fixed inset-0 bg-gray-900/60 backdrop-blur-xs transition-opacity duration-300"
+            className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm"
             onClick={() => setIsMobileDrawerOpen(false)}
           />
-
-          {/* Slide-out Drawer Panel */}
-          <div className="relative w-80 max-w-[85vw] h-full bg-white shadow-2xl z-10 flex flex-col transition-transform duration-300 transform translate-x-0">
+          <div className="relative z-10 flex h-full w-80 max-w-[85vw] flex-col shadow-2xl">
             <CBTPalette
               questions={validatedQuestions}
               onSubmitClick={() => setIsSubmitModalOpen(true)}
@@ -207,7 +204,7 @@ export default function CBTTestEnginePage() {
         </div>
       )}
 
-      {/* Submit Confirmation Modal */}
+      {/* Submit confirmation modal */}
       {isSubmitModalOpen && (
         <CBTSubmitModal
           questions={validatedQuestions}
@@ -216,17 +213,27 @@ export default function CBTTestEnginePage() {
         />
       )}
 
-      {/* Click-to-Zoom Image Modal */}
+      {/* Click-to-zoom image modal */}
       {zoomedImage && (
-        <div className="fixed inset-0 z-50 bg-gray-900/70 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="relative max-w-4xl max-h-[90vh] bg-white border border-gray-300 rounded-2xl p-4 shadow-xl overflow-hidden flex flex-col items-center">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/75 p-4 backdrop-blur-sm"
+          onClick={() => setZoomedImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Figure preview"
+        >
+          <div
+            className="relative flex max-h-[90vh] max-w-4xl flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={() => setZoomedImage(null)}
-              className="absolute top-3 right-3 bg-gray-100 hover:bg-gray-200 text-gray-700 p-2 rounded-full transition-colors z-10"
+              className="absolute right-3 top-3 z-10 rounded-full bg-slate-100 p-2 text-slate-600 transition hover:bg-slate-200"
+              aria-label="Close preview"
             >
-              <X className="w-5 h-5" />
+              <X className="h-5 w-5" />
             </button>
-            <img src={zoomedImage} alt="Zoomed view" className="max-h-[80vh] w-auto object-contain rounded-lg" />
+            <img src={zoomedImage} alt="Figure, enlarged" className="max-h-[80vh] w-auto rounded-lg object-contain" />
           </div>
         </div>
       )}

@@ -4,6 +4,30 @@
 // Dataset v1.2.1 types are READ-ONLY interfaces
 // ============================================================
 
+/**
+ * An ordered, renderable fragment of question content (v2 dataset). Stems and
+ * options are arrays of these so figures, prose and tables keep their order.
+ */
+export interface QuestionContentBlock {
+  kind: "text" | "image" | "table" | "math";
+  text?: string;
+  /** Stable asset key from the ingestion pipeline. */
+  assetId?: string;
+  /** Resolvable public image URL (present for kind === "image"). */
+  url?: string | null;
+  rows?: string[][];
+  latex?: string;
+}
+
+/** A single option with its ordered content blocks (v2 dataset). */
+export interface QuestionOptionRich {
+  key: CorrectAnswer;
+  index: number;
+  text: string;
+  isImage: boolean;
+  blocks: QuestionContentBlock[];
+}
+
 export interface ValidatedQuestion {
   id: string;
   paper_name: string;
@@ -28,6 +52,19 @@ export interface ValidatedQuestion {
   paper_id: string | null;
   created_at: string;
   updated_at: string;
+
+  // ---- v2 rich content (optional; populated by the exam APIs) ----
+  /** Ordered stem content blocks (text + figures). */
+  stem?: QuestionContentBlock[];
+  /** Ordered, structured options (text or image). */
+  rich_options?: QuestionOptionRich[];
+  /** True when any stem/option relies on an image. */
+  has_images?: boolean;
+  /** Source-native id (e.g. TCS Question ID). */
+  external_id?: string | null;
+  /** Canonical section slug (e.g. "reasoning"). */
+  section?: string;
+  topic?: string | null;
 }
 
 export interface Paper {
