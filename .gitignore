@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 /scratch
+
+# generated ingestion output (reproducible via `npm run ingest`)
+/data/ingested
+
+# local machine-specific Claude config
+.claude/settings.local.json
 /logs
 /tmp
 /ssc cgl
