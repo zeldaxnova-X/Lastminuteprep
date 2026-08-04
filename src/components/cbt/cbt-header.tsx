@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useTestStore } from "@/lib/store/use-test-store";
-import { Clock, Maximize2, Minimize2, Activity, Zap, User } from "lucide-react";
+import { Clock, Maximize2, Minimize2, Gauge } from "lucide-react";
 
 interface CBTHeaderProps {
   title: string;
@@ -51,7 +51,6 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) =
 
   let answeredCount = 0;
   let markedCount = 0;
-
   Object.values(questionStatuses).forEach((st) => {
     if (st === "answered" || st === "answered_marked") answeredCount++;
     if (st === "marked" || st === "answered_marked") markedCount++;
@@ -62,74 +61,66 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) =
   const avgPaceSeconds = Math.round(elapsedSeconds / attemptedCount);
 
   return (
-    <header className="bg-white border-b border-gray-300 px-3 sm:px-4 py-2 flex flex-wrap items-center justify-between gap-2 select-none z-30">
-      {/* Left: Logo & Paper Title */}
-      <div className="flex items-center gap-2 sm:gap-3">
-        <div className="flex items-center gap-1.5 font-bold text-gray-900 text-xs sm:text-sm flex-shrink-0">
-          <div className="w-5 h-5 sm:w-6 sm:h-6 rounded bg-blue-600 flex items-center justify-center">
-            <Zap className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white fill-white" />
-          </div>
-          <span>SSC CBT</span>
+    <header className="z-30 flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-white/90 px-3 py-2.5 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90 sm:px-5">
+      {/* Left: brand + paper title */}
+      <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-sm font-bold text-white shadow-sm">
+          L
         </div>
-        <div className="h-4 w-px bg-gray-300 hidden sm:block" />
-        <h1 className="text-xs font-bold text-gray-800 truncate max-w-[140px] xs:max-w-[200px] sm:max-w-xs md:max-w-md">{title}</h1>
+        <div className="hidden h-5 w-px bg-slate-200 dark:bg-slate-700 sm:block" />
+        <h1 className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100 max-w-[150px] sm:max-w-xs md:max-w-md">
+          {title}
+        </h1>
       </div>
 
-      {/* Right: Candidate, Metrics, Live Pace, Clock */}
-      <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-        {/* Candidate Profile */}
-        <div className="hidden xl:flex items-center gap-2 bg-gray-50 border border-gray-200 px-2.5 py-1 rounded text-xs">
-          <div className="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
-            <User className="w-3 h-3" />
-          </div>
-          <span className="font-semibold text-gray-800">SSC Aspirant</span>
+      {/* Right: metrics + pace + fullscreen + clock */}
+      <div className="flex flex-shrink-0 items-center gap-2 sm:gap-2.5">
+        <div className="hidden items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs dark:border-slate-800 dark:bg-slate-800/60 lg:flex">
+          <Metric label="Answered" value={answeredCount} tone="emerald" />
+          <span className="h-6 w-px bg-slate-200 dark:bg-slate-700" />
+          <Metric label="Marked" value={markedCount} tone="violet" />
+          <span className="h-6 w-px bg-slate-200 dark:bg-slate-700" />
+          <Metric label="Left" value={remainingCount} tone="slate" />
         </div>
 
-        {/* Attempt Counters */}
-        <div className="hidden lg:flex items-center gap-2 text-xs bg-gray-50 border border-gray-200 px-3 py-1 rounded">
-          <div>
-            <span className="text-gray-400 text-[10px] uppercase block">Answered</span>
-            <span className="font-bold text-emerald-600">{answeredCount}</span>
-          </div>
-          <div className="w-px h-4 bg-gray-200" />
-          <div>
-            <span className="text-gray-400 text-[10px] uppercase block">Marked</span>
-            <span className="font-bold text-violet-600">{markedCount}</span>
-          </div>
-          <div className="w-px h-4 bg-gray-200" />
-          <div>
-            <span className="text-gray-400 text-[10px] uppercase block">Remaining</span>
-            <span className="font-bold text-gray-700">{remainingCount}</span>
-          </div>
+        <div className="hidden items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-xs font-medium text-slate-600 dark:border-slate-800 dark:bg-slate-800/60 dark:text-slate-300 md:flex">
+          <Gauge className="h-3.5 w-3.5 text-indigo-500" />
+          <span className="tabular-nums">{formatLivePace(avgPaceSeconds)}/Q</span>
         </div>
 
-        {/* Live Average Pace */}
-        <div className="hidden md:flex items-center gap-1.5 text-xs bg-blue-50 border border-blue-200 text-blue-800 px-2.5 py-1 rounded font-medium">
-          <Activity className="w-3.5 h-3.5 text-blue-600" />
-          <span>Pace: <strong className="font-bold">{formatLivePace(avgPaceSeconds)}</strong> / Q</span>
-        </div>
-
-        {/* Fullscreen Toggle */}
         <button
           onClick={toggleFullscreen}
-          className="p-1 rounded border border-gray-300 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center"
-          title="Toggle Fullscreen"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:bg-slate-50 hover:text-slate-800 dark:border-slate-800 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+          title="Toggle fullscreen"
+          aria-label="Toggle fullscreen"
         >
-          {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+          {isFullscreen ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
         </button>
 
-        {/* Large Countdown Clock */}
         <div
-          className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded font-mono font-bold text-xs sm:text-sm transition-colors ${
+          className={`flex items-center gap-1.5 rounded-xl border px-3 py-1.5 font-mono text-sm font-semibold tabular-nums transition-colors ${
             isLowTime
-              ? "bg-red-50 border border-red-300 text-red-600 animate-pulse"
-              : "bg-gray-100 border border-gray-300 text-gray-900"
+              ? "animate-pulse border-rose-300 bg-rose-50 text-rose-600 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-400"
+              : "border-slate-200 bg-slate-50 text-slate-900 dark:border-slate-800 dark:bg-slate-800/60 dark:text-slate-100"
           }`}
         >
-          <Clock className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isLowTime ? "text-red-500" : "text-gray-500"}`} />
+          <Clock className={`h-4 w-4 ${isLowTime ? "text-rose-500" : "text-slate-400"}`} />
           <span>{formatTime(timeRemaining)}</span>
         </div>
       </div>
     </header>
   );
 };
+
+const toneMap: Record<string, string> = {
+  emerald: "text-emerald-600 dark:text-emerald-400",
+  violet: "text-violet-600 dark:text-violet-400",
+  slate: "text-slate-700 dark:text-slate-200",
+};
+
+const Metric: React.FC<{ label: string; value: number; tone: string }> = ({ label, value, tone }) => (
+  <div className="text-center">
+    <span className="block text-[10px] uppercase tracking-wide text-slate-400">{label}</span>
+    <span className={`block font-bold tabular-nums ${toneMap[tone]}`}>{value}</span>
+  </div>
+);

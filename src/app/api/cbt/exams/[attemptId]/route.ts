@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 
 /**
  * GET /api/cbt/exams/[attemptId]
@@ -56,10 +57,13 @@ export async function GET(
       );
     }
 
+    // Enrich with v2 rich content (stem/option blocks + image URLs). While the
+    // attempt is in progress, never send the answer key to the client.
+    let enriched = await enrichWithRichContent(supabase, questions || []);
+    if (attempt.status === "in_progress") enriched = stripAnswerKey(enriched);
+
     // Build a question map for fast lookup
-    const questionMap = new Map(
-      (questions || []).map((q) => [q.id, q])
-    );
+    const questionMap = new Map(enriched.map((q) => [q.id, q]));
 
     // Merge answers with their questions, preserving order
     const answersWithQuestions = (answers || []).map((answer) => ({

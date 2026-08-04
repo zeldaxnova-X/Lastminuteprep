@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 import { useTestStore, type QuestionStatus } from "@/lib/store/use-test-store";
-import { User, CheckCircle2, X } from "lucide-react";
+import { CheckCircle2, X } from "lucide-react";
 import type { ValidatedQuestion } from "@/types/database.types";
 
 interface CBTPaletteProps {
@@ -22,7 +22,7 @@ export const CBTPalette: React.FC<CBTPaletteProps> = ({
 }) => {
   const { currentQuestionIndex, setQuestionIndex, questionStatuses } = useTestStore();
 
-  const statusCounts = useMemo(() => {
+  const counts = useMemo(() => {
     let answered = 0, notAnswered = 0, notVisited = 0, marked = 0, answeredMarked = 0;
     questions.forEach((q) => {
       const st = questionStatuses[q.id] || "not_visited";
@@ -37,128 +37,109 @@ export const CBTPalette: React.FC<CBTPaletteProps> = ({
 
   const handleQuestionClick = (idx: number) => {
     setQuestionIndex(idx);
-    if (onSelectQuestion) {
-      onSelectQuestion();
-    }
+    onSelectQuestion?.();
   };
 
-  const getStatusBadge = (status: QuestionStatus, isCurrent: boolean, num: number) => {
-    let baseStyles = "relative w-9 h-9 sm:w-10 sm:h-10 text-xs font-bold flex items-center justify-center transition-all cursor-pointer select-none border shadow-2xs min-h-[36px] min-w-[36px] ";
-    if (isCurrent) baseStyles += "ring-2 ring-blue-600 ring-offset-2 scale-105 z-10 ";
-
+  const cellClass = (status: QuestionStatus, isCurrent: boolean) => {
+    const base =
+      "relative flex h-9 w-9 items-center justify-center text-xs font-semibold tabular-nums transition-all min-h-[36px] min-w-[36px] focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 dark:focus-visible:ring-offset-slate-900";
+    const ring = isCurrent ? " ring-2 ring-indigo-500 ring-offset-2 dark:ring-offset-slate-900 z-10" : "";
     switch (status) {
       case "answered":
-        return (
-          <button key={num} onClick={() => handleQuestionClick(num - 1)}
-            className={`${baseStyles} bg-emerald-600 border-emerald-700 text-white rounded`} title={`Q${num}: Answered`}>{num}</button>
-        );
+        return `${base} rounded-lg bg-emerald-500 text-white${ring}`;
       case "not_answered":
-        return (
-          <button key={num} onClick={() => handleQuestionClick(num - 1)}
-            className={`${baseStyles} bg-red-600 border-red-700 text-white rounded`} title={`Q${num}: Not Answered`}>{num}</button>
-        );
+        return `${base} rounded-lg bg-rose-500 text-white${ring}`;
       case "marked":
-        return (
-          <button key={num} onClick={() => handleQuestionClick(num - 1)}
-            className={`${baseStyles} bg-purple-600 border-purple-700 text-white rounded-full`} title={`Q${num}: Marked for Review`}>{num}</button>
-        );
+        return `${base} rounded-full bg-violet-500 text-white${ring}`;
       case "answered_marked":
-        return (
-          <button key={num} onClick={() => handleQuestionClick(num - 1)}
-            className={`${baseStyles} bg-purple-600 border-purple-700 text-white rounded-full`} title={`Q${num}: Answered & Marked`}>
-            {num}
-            <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-400 border-2 border-white rounded-full" />
-          </button>
-        );
-      case "not_visited":
+        return `${base} rounded-full bg-violet-500 text-white${ring}`;
       default:
-        return (
-          <button key={num} onClick={() => handleQuestionClick(num - 1)}
-            className={`${baseStyles} bg-white text-gray-700 border-gray-300 rounded hover:bg-gray-100`} title={`Q${num}: Not Visited`}>{num}</button>
-        );
+        return `${base} rounded-lg border border-slate-300 bg-white text-slate-600 hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700${ring}`;
     }
   };
 
   return (
-    <div className="bg-gray-50 border-t lg:border-t-0 lg:border-l border-gray-300 w-full flex flex-col h-full overflow-hidden select-none">
-      {/* Candidate Banner / Close Drawer Header */}
-      <div className="p-3 bg-white border-b border-gray-200 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
-            <User className="w-3.5 h-3.5" />
-          </div>
-          <div>
-            <span className="text-xs font-bold text-gray-900 block">Candidate: SSC Aspirant</span>
-            <span className="text-[10px] text-gray-500">Roll No: 2201948102</span>
-          </div>
+    <div className="flex h-full w-full flex-col overflow-hidden border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 lg:border-l">
+      {/* Header */}
+      <div className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-3 dark:border-slate-800">
+        <div>
+          <h2 className="text-sm font-semibold text-slate-800 dark:text-slate-100">Question Palette</h2>
+          <p className="text-xs text-slate-400">{questions.length} questions</p>
         </div>
-
         {isDrawer && onCloseDrawer && (
           <button
             onClick={onCloseDrawer}
-            className="p-1.5 rounded-lg border border-gray-200 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center"
-            title="Close Drawer"
+            className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 text-slate-500 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
             aria-label="Close question palette"
           >
-            <X className="w-4 h-4" />
+            <X className="h-4 w-4" />
           </button>
         )}
       </div>
 
-      {/* Official SSC Color Legend */}
-      <div className="p-3 bg-white border-b border-gray-200 text-xs space-y-2">
-        <div className="grid grid-cols-2 gap-2 text-[11px]">
-          <div className="flex items-center gap-1.5">
-            <span className="w-4 h-4 sm:w-5 sm:h-5 bg-emerald-600 text-white font-bold rounded flex items-center justify-center text-[10px]">{statusCounts.answered}</span>
-            <span className="text-gray-700 font-medium">Answered</span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <span className="w-4 h-4 sm:w-5 sm:h-5 bg-red-600 text-white font-bold rounded flex items-center justify-center text-[10px]">{statusCounts.notAnswered}</span>
-            <span className="text-gray-700 font-medium">Not Answered</span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <span className="w-4 h-4 sm:w-5 sm:h-5 bg-white border border-gray-300 text-gray-700 font-bold rounded flex items-center justify-center text-[10px]">{statusCounts.notVisited}</span>
-            <span className="text-gray-700 font-medium">Not Visited</span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <span className="w-4 h-4 sm:w-5 sm:h-5 bg-purple-600 text-white font-bold rounded-full flex items-center justify-center text-[10px]">{statusCounts.marked}</span>
-            <span className="text-gray-700 font-medium">Marked</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Palette Title */}
-      <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 text-[11px] font-bold text-gray-600 uppercase tracking-wider flex items-center justify-between">
-        <span>Question Palette</span>
-        <span className="text-blue-700 font-semibold">{questions.length} Questions</span>
+      {/* Legend */}
+      <div className="grid grid-cols-2 gap-2 border-b border-slate-200 px-4 py-3 text-[11px] dark:border-slate-800">
+        <Legend color="bg-emerald-500" label="Answered" count={counts.answered} />
+        <Legend color="bg-rose-500" label="Not answered" count={counts.notAnswered} />
+        <Legend color="border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-800" label="Not visited" count={counts.notVisited} />
+        <Legend color="bg-violet-500" round label="Marked" count={counts.marked + counts.answeredMarked} />
       </div>
 
       {/* Grid */}
-      <div className="flex-1 p-3 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto p-4">
         <div className="grid grid-cols-5 gap-2">
           {questions.map((q, idx) => {
             const st = questionStatuses[q.id] || "not_visited";
-            return getStatusBadge(st, idx === currentQuestionIndex, idx + 1);
+            const isCurrent = idx === currentQuestionIndex;
+            return (
+              <button
+                key={q.id}
+                onClick={() => handleQuestionClick(idx)}
+                className={cellClass(st, isCurrent)}
+                title={`Question ${idx + 1}`}
+                aria-current={isCurrent ? "true" : undefined}
+              >
+                {idx + 1}
+                {st === "answered_marked" && (
+                  <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-emerald-400 dark:border-slate-900" />
+                )}
+              </button>
+            );
           })}
         </div>
       </div>
 
-      {/* Submit CTA */}
-      <div className="p-3 bg-white border-t border-gray-300">
+      {/* Submit */}
+      <div className="border-t border-slate-200 p-4 dark:border-slate-800">
         <button
           onClick={() => {
-            if (onCloseDrawer) onCloseDrawer();
+            onCloseDrawer?.();
             onSubmitClick();
           }}
-          className="w-full py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-xs uppercase tracking-wider min-h-[44px]"
+          className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500 active:scale-[0.99]"
         >
-          <CheckCircle2 className="w-4 h-4" />
+          <CheckCircle2 className="h-4 w-4" />
           <span>Submit Test</span>
         </button>
       </div>
     </div>
   );
 };
+
+const Legend: React.FC<{ color: string; label: string; count: number; round?: boolean }> = ({
+  color,
+  label,
+  count,
+  round,
+}) => (
+  <div className="flex items-center gap-1.5">
+    <span
+      className={`flex h-5 w-5 items-center justify-center text-[10px] font-bold text-white ${color} ${
+        round ? "rounded-full" : "rounded"
+      } ${color.includes("bg-white") || color.includes("dark:bg-slate-800") ? "!text-slate-600 dark:!text-slate-300" : ""}`}
+    >
+      {count}
+    </span>
+    <span className="text-slate-600 dark:text-slate-400">{label}</span>
+  </div>
+);

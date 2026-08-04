@@ -1,17 +1,60 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo, useRef, useCallback } from "react";
 import { useTestStore } from "@/lib/store/use-test-store";
-import { KaTeXRenderer } from "@/components/katex-renderer";
-import { sanitizeQuestionText } from "@/lib/clean-text";
-import { CheckCircle2, RotateCcw, Bookmark, ChevronRight, ChevronLeft, ZoomIn } from "lucide-react";
-import type { ValidatedQuestion, Subject } from "@/types/database.types";
+import { QuestionContent } from "@/components/cbt/question-content";
+import { MentorPanel, TrickPanel, type QuestionTrick } from "@/components/cbt/insight-panels";
+import { sectionLabel } from "@/lib/cbt-questions";
+import {
+  Check,
+  RotateCcw,
+  Flag,
+  ChevronRight,
+  ChevronLeft,
+  Bookmark,
+  Keyboard,
+} from "lucide-react";
+import type {
+  ValidatedQuestion,
+  Subject,
+  QuestionContentBlock,
+  QuestionOptionRich,
+  CorrectAnswer,
+} from "@/types/database.types";
 
 interface CBTQuestionViewProps {
   sections: Subject[];
   currentQuestion: ValidatedQuestion;
   questions: ValidatedQuestion[];
   totalQuestions: number;
+}
+
+const OPTION_KEYS: CorrectAnswer[] = ["A", "B", "C", "D"];
+
+/** Build renderable stem blocks, falling back to legacy flat fields. */
+function useStemBlocks(q: ValidatedQuestion): QuestionContentBlock[] {
+  return useMemo(() => {
+    if (q.stem && q.stem.length > 0) return q.stem;
+    const blocks: QuestionContentBlock[] = [];
+    if (q.question_text?.trim()) blocks.push({ kind: "text", text: q.question_text });
+    if (q.question_image) blocks.push({ kind: "image", url: q.question_image });
+    return blocks;
+  }, [q]);
+}
+
+/** Build renderable options, falling back to legacy flat fields. */
+function useOptions(q: ValidatedQuestion): QuestionOptionRich[] {
+  return useMemo(() => {
+    if (q.rich_options && q.rich_options.length > 0) return q.rich_options;
+    const flat = [q.option_a, q.option_b, q.option_c, q.option_d];
+    return OPTION_KEYS.map((key, i) => ({
+      key,
+      index: i + 1,
+      text: flat[i] ?? "",
+      isImage: false,
+      blocks: flat[i]?.trim() ? [{ kind: "text" as const, text: flat[i]! }] : [],
+    }));
+  }, [q]);
 }
 
 export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
@@ -28,174 +71,292 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
     setQuestionIndex,
     timePerQuestion,
     setZoomedImage,
+    questionStatuses,
   } = useTestStore();
 
   const selectedOption = userResponses[currentQuestion.id] || null;
-  const timeSpentOnCurrentQ = timePerQuestion[currentQuestion.id] || 0;
+  const timeSpent = timePerQuestion[currentQuestion.id] || 0;
+  const status = questionStatuses[currentQuestion.id];
+  const isMarked = status === "marked" || status === "answered_marked";
 
-  // Options list
-  const optionsList: Array<{ id: "A" | "B" | "C" | "D"; text: string }> = [
-    { id: "A", text: currentQuestion.option_a || "" },
-    { id: "B", text: currentQuestion.option_b || "" },
-    { id: "C", text: currentQuestion.option_c || "" },
-    { id: "D", text: currentQuestion.option_d || "" },
-  ];
+  const stemBlocks = useStemBlocks(currentQuestion);
+  const options = useOptions(currentQuestion);
+  const label = sectionLabel(currentQuestion.section || currentQuestion.subject);
 
-  // Derived active subject
-  const activeSubject = currentQuestion.subject || "Quantitative Aptitude";
+  // Bookmark is an extension point: local, optimistic, best-effort persistence.
+  const [bookmarked, setBookmarked] = React.useState(false);
+  useEffect(() => setBookmarked(false), [currentQuestion.id]);
+  const toggleBookmark = useCallback(() => {
+    setBookmarked((b) => !b);
+    // Wire to /api/cbt/bookmarks when auth context is available.
+  }, []);
 
-  // Keyboard Shortcuts Handler
+  const optionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  // Scroll to top when the question changes.
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ top: 0 });
+  }, [currentQuestion.id]);
+
+  // Global keyboard shortcuts (ignored while typing in a field).
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      const target = e.target as HTMLElement;
-      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable))
+        return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
 
-      const key = e.key.toUpperCase();
-      if (key === "A" || key === "B" || key === "C" || key === "D") {
-        selectOption(currentQuestion.id, key as "A" | "B" | "C" | "D");
-      } else if (key === "ENTER") {
+      const key = e.key;
+      const upper = key.toUpperCase();
+
+      if (["A", "B", "C", "D"].includes(upper)) {
+        selectOption(currentQuestion.id, upper as CorrectAnswer);
+      } else if (["1", "2", "3", "4"].includes(key)) {
+        selectOption(currentQuestion.id, OPTION_KEYS[Number(key) - 1]);
+      } else if (key === "Enter") {
         e.preventDefault();
         saveAndNext(currentQuestion.id, totalQuestions);
-      } else if (key === "M") {
+      } else if (upper === "M") {
         markForReviewAndNext(currentQuestion.id, totalQuestions);
+      } else if (upper === "C") {
+        clearResponse(currentQuestion.id);
+      } else if (upper === "B") {
+        toggleBookmark();
+      } else if (key === "ArrowRight") {
+        if (currentQuestionIndex < totalQuestions - 1) setQuestionIndex(currentQuestionIndex + 1);
+      } else if (key === "ArrowLeft") {
+        if (currentQuestionIndex > 0) setQuestionIndex(currentQuestionIndex - 1);
       }
     };
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [currentQuestion.id, selectOption, saveAndNext, markForReviewAndNext, totalQuestions]);
+  }, [
+    currentQuestion.id,
+    currentQuestionIndex,
+    totalQuestions,
+    selectOption,
+    saveAndNext,
+    markForReviewAndNext,
+    clearResponse,
+    setQuestionIndex,
+    toggleBookmark,
+  ]);
+
+  // Roving arrow-key navigation within the option radiogroup.
+  const onOptionKeyDown = (e: React.KeyboardEvent, index: number) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      const dir = e.key === "ArrowDown" ? 1 : -1;
+      const next = (index + dir + options.length) % options.length;
+      optionRefs.current[next]?.focus();
+    } else if (e.key === " " || e.key === "Enter") {
+      e.preventDefault();
+      selectOption(currentQuestion.id, options[index].key);
+    }
+  };
+
+  const tricks = (currentQuestion as unknown as { tricks?: QuestionTrick[] }).tricks;
 
   return (
-    <div className="flex-1 flex flex-col h-full bg-white overflow-hidden select-none relative">
-      {/* Continuous Examination Bar: Question No + Section Badge */}
-      <div className="bg-white border-b border-gray-200 px-3 sm:px-5 py-2 sm:py-3 flex flex-wrap items-center justify-between gap-2 text-xs shadow-2xs flex-shrink-0 z-10">
-        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-          <span className="font-extrabold text-gray-900 text-sm sm:text-lg tracking-tight">
-            Question No. {currentQuestionIndex + 1}
+    <div className="flex h-full min-w-0 flex-1 flex-col bg-slate-50 dark:bg-slate-950">
+      {/* Question meta bar */}
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-white/80 px-4 py-2.5 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/80 sm:px-6">
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-base">
+            Question <span className="tabular-nums">{currentQuestionIndex + 1}</span>
+            <span className="font-normal text-slate-400"> / {totalQuestions}</span>
           </span>
-          <span className="bg-blue-50 border border-blue-200 text-blue-800 px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold uppercase tracking-wider truncate max-w-[180px] sm:max-w-none">
-            {activeSubject}
+          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300 sm:text-xs">
+            {label}
           </span>
         </div>
-        <div className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-xs">
-          <span className="text-gray-500 font-mono">
-            Time on Q: <strong className="text-gray-900">{timeSpentOnCurrentQ}s</strong>
+        <div className="flex items-center gap-2 text-[11px] sm:text-xs">
+          <span className="tabular-nums text-slate-400">{timeSpent}s on this question</span>
+          <span className="rounded-md bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-400">
+            +{(currentQuestion.marks ?? 2).toFixed(1)}
           </span>
-          <span className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-2 py-0.5 rounded font-bold">
-            +{currentQuestion.marks?.toFixed(1) || "2.0"} Marks
+          <span className="rounded-md bg-rose-50 px-1.5 py-0.5 font-semibold text-rose-500 dark:bg-rose-500/10 dark:text-rose-400">
+            −{(currentQuestion.negative_marks ?? 0.5).toFixed(2)}
           </span>
-          <span className="bg-red-50 border border-red-200 text-red-600 px-2 py-0.5 rounded font-bold">
-            −{currentQuestion.negative_marks?.toFixed(2) || "0.50"} Penalty
-          </span>
+          <button
+            type="button"
+            onClick={toggleBookmark}
+            aria-pressed={bookmarked}
+            aria-label={bookmarked ? "Remove bookmark" : "Bookmark this question"}
+            className={`flex h-7 w-7 items-center justify-center rounded-lg border transition ${
+              bookmarked
+                ? "border-amber-300 bg-amber-50 text-amber-500 dark:border-amber-500/40 dark:bg-amber-500/10"
+                : "border-slate-200 text-slate-400 hover:text-slate-600 dark:border-slate-700 dark:hover:text-slate-200"
+            }`}
+          >
+            <Bookmark className={`h-4 w-4 ${bookmarked ? "fill-current" : ""}`} />
+          </button>
         </div>
       </div>
 
-      {/* Internal Scrollable Question Body */}
-      <div className="flex-1 p-3.5 sm:p-7 overflow-y-auto min-h-0 space-y-4 sm:space-y-6">
-        {/* Question Text (Sanitized) */}
-        <div className="bg-gray-50 border border-gray-300 rounded-xl p-4 sm:p-6 text-sm sm:text-lg text-gray-900 font-medium leading-relaxed shadow-2xs">
-          <KaTeXRenderer content={sanitizeQuestionText(currentQuestion.question_text)} />
-        </div>
-
-        {/* Question Image if present */}
-        {currentQuestion.question_image && (
-          <div className="relative group rounded-xl border border-gray-300 bg-gray-50 p-2 overflow-hidden max-w-2xl">
-            <img
-              src={currentQuestion.question_image}
-              alt={`Question ${currentQuestionIndex + 1}`}
-              className="max-h-60 sm:max-h-80 w-auto rounded-lg object-contain cursor-pointer"
-              onClick={() => setZoomedImage(currentQuestion.question_image)}
+      {/* Scrollable body */}
+      <div
+        ref={scrollRef}
+        className="min-h-0 flex-1 overflow-y-auto px-4 py-5 sm:px-6 sm:py-7"
+      >
+        <div className="mx-auto w-full max-w-3xl space-y-6">
+          {/* Stem */}
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+            <QuestionContent
+              blocks={stemBlocks}
+              onZoom={setZoomedImage}
+              textClassName="text-[15px] font-medium leading-relaxed text-slate-800 dark:text-slate-100 sm:text-lg"
+              imageMaxHeight="max-h-96"
             />
-            <button
-              onClick={() => setZoomedImage(currentQuestion.question_image)}
-              className="absolute bottom-3 right-3 bg-white hover:bg-blue-50 text-gray-800 p-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-gray-300 transition-colors shadow-xs"
-            >
-              <ZoomIn className="w-4 h-4 text-blue-600" />
-              <span>Full Screen Zoom</span>
-            </button>
           </div>
-        )}
 
-        {/* Option Cards */}
-        <div className="space-y-2.5 sm:space-y-3">
-          <p className="text-[11px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1.5">
-            Select Option (Keyboard Shortcuts A / B / C / D):
-          </p>
-          {optionsList.map((option) => {
-            const isSelected = selectedOption === option.id;
-            return (
-              <button
-                key={option.id}
-                onClick={() => selectOption(currentQuestion.id, option.id)}
-                className={`w-full text-left p-3.5 sm:p-5 rounded-xl border-2 transition-all flex items-center gap-3 sm:gap-4 min-h-[52px] ${
-                  isSelected
-                    ? "bg-blue-50/80 border-blue-600 text-gray-900 shadow-xs"
-                    : "bg-white border-gray-200 text-gray-800 hover:border-gray-400 hover:bg-gray-50"
-                }`}
-              >
-                <div
-                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 font-bold text-xs flex items-center justify-center flex-shrink-0 transition-colors ${
-                    isSelected
-                      ? "bg-blue-600 border-blue-600 text-white"
-                      : "border-gray-400 text-gray-600 bg-white"
-                  }`}
-                >
-                  {option.id}
-                </div>
+          {/* Options — accessible radio group */}
+          <div>
+            <div
+              role="radiogroup"
+              aria-label="Answer options"
+              className="space-y-2.5"
+            >
+              {options.map((option, i) => {
+                const isSelected = selectedOption === option.key;
+                return (
+                  <div
+                    key={option.key}
+                    ref={(el) => {
+                      optionRefs.current[i] = el;
+                    }}
+                    role="radio"
+                    aria-checked={isSelected}
+                    tabIndex={isSelected || (!selectedOption && i === 0) ? 0 : -1}
+                    onKeyDown={(e) => onOptionKeyDown(e, i)}
+                    onClick={() => selectOption(currentQuestion.id, option.key)}
+                    className={`group flex w-full cursor-pointer items-center gap-3.5 rounded-xl border p-3.5 text-left transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 dark:focus-visible:ring-offset-slate-950 sm:gap-4 sm:p-4 ${
+                      isSelected
+                        ? "border-indigo-500 bg-indigo-50/70 ring-1 ring-indigo-500/30 dark:border-indigo-400 dark:bg-indigo-500/10"
+                        : "border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700 dark:hover:bg-slate-800/50"
+                    }`}
+                  >
+                    <span
+                      className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border text-xs font-bold transition-colors ${
+                        isSelected
+                          ? "border-indigo-500 bg-indigo-500 text-white dark:border-indigo-400 dark:bg-indigo-400 dark:text-slate-900"
+                          : "border-slate-300 text-slate-500 group-hover:border-slate-400 dark:border-slate-600 dark:text-slate-400"
+                      }`}
+                    >
+                      {option.key}
+                    </span>
+                    <span className="min-w-0 flex-1 text-[15px] leading-relaxed text-slate-800 dark:text-slate-100">
+                      {option.isImage ? (
+                        <QuestionContent
+                          blocks={option.blocks}
+                          onZoom={setZoomedImage}
+                          imageMaxHeight="max-h-44"
+                        />
+                      ) : (
+                        <QuestionContent
+                          blocks={option.blocks}
+                          textClassName="text-[15px] leading-relaxed"
+                        />
+                      )}
+                    </span>
+                    {isSelected && (
+                      <Check className="h-5 w-5 flex-shrink-0 text-indigo-500 dark:text-indigo-400" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
 
-                <div className="flex-1 text-xs sm:text-base font-medium leading-relaxed">
-                  <KaTeXRenderer content={sanitizeQuestionText(option.text)} />
-                </div>
+            {/* Keyboard hint */}
+            <p className="mt-3 flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500">
+              <Keyboard className="h-3.5 w-3.5" />
+              <span>
+                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">A–D</kbd> select ·{" "}
+                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">Enter</kbd> save &amp; next ·{" "}
+                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">M</kbd> mark ·{" "}
+                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">←/→</kbd> navigate
+              </span>
+            </p>
+          </div>
 
-                {isSelected && <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0" />}
-              </button>
-            );
-          })}
+          {/* Extension points: Virtual Mentor + Trick to Higher Scores */}
+          <div className="space-y-3 pt-1">
+            <TrickPanel tricks={tricks} />
+            <MentorPanel />
+          </div>
         </div>
       </div>
 
-      {/* Always Visible Bottom Action Bar — Elevated with extra bottom padding for mobile browser address bars */}
-      <div className="bg-gray-100 border-t border-gray-300 px-3 pt-2.5 pb-6 sm:p-4 flex-shrink-0 z-20 shadow-md space-y-2 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-3">
-        {/* Top Row on Mobile / Left Group on Desktop: Prev, Mark, Clear */}
-        <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center sm:gap-2">
-          <button
-            disabled={currentQuestionIndex === 0}
+      {/* Action bar */}
+      <div className="flex flex-col gap-2 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
+          <ActionButton
             onClick={() => currentQuestionIndex > 0 && setQuestionIndex(currentQuestionIndex - 1)}
-            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
-            title="Previous Question"
+            disabled={currentQuestionIndex === 0}
+            variant="ghost"
           >
-            <ChevronLeft className="w-4 h-4" />
+            <ChevronLeft className="h-4 w-4" />
             <span>Prev</span>
-          </button>
-
-          <button
+          </ActionButton>
+          <ActionButton
             onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
-            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
+            variant={isMarked ? "violet-active" : "ghost"}
           >
-            <Bookmark className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Mark for Review & Next</span>
+            <Flag className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Mark &amp; Next</span>
             <span className="sm:hidden">Mark</span>
-          </button>
-
-          <button
-            onClick={() => clearResponse(currentQuestion.id)}
-            className="px-2.5 sm:px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 font-bold text-xs sm:text-sm hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 shadow-2xs min-h-[44px]"
-          >
-            <RotateCcw className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Clear Response</span>
+          </ActionButton>
+          <ActionButton onClick={() => clearResponse(currentQuestion.id)} variant="ghost">
+            <RotateCcw className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Clear</span>
             <span className="sm:hidden">Clear</span>
-          </button>
+          </ActionButton>
         </div>
 
-        {/* Bottom Row on Mobile / Right Group on Desktop: Save & Next */}
-        <button
+        <ActionButton
           onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
-          className="w-full sm:w-auto px-6 py-2.5 sm:py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-xs min-h-[44px]"
+          variant="primary"
+          className="w-full sm:w-auto"
         >
-          <span>Save & Next</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
+          <span>Save &amp; Next</span>
+          <ChevronRight className="h-4 w-4" />
+        </ActionButton>
       </div>
     </div>
+  );
+};
+
+// ---------------------------------------------------------------------------
+
+interface ActionButtonProps {
+  onClick: () => void;
+  disabled?: boolean;
+  variant: "primary" | "ghost" | "violet-active";
+  className?: string;
+  children: React.ReactNode;
+}
+
+const ActionButton: React.FC<ActionButtonProps> = ({
+  onClick,
+  disabled,
+  variant,
+  className = "",
+  children,
+}) => {
+  const base =
+    "flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl px-4 text-sm font-semibold transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900 disabled:cursor-not-allowed disabled:opacity-40";
+  const variants: Record<ActionButtonProps["variant"], string> = {
+    primary:
+      "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 active:scale-[0.98]",
+    ghost:
+      "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-200 dark:hover:bg-slate-800",
+    "violet-active":
+      "border border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-500/40 dark:bg-violet-500/10 dark:text-violet-300",
+  };
+  return (
+    <button type="button" onClick={onClick} disabled={disabled} className={`${base} ${variants[variant]} ${className}`}>
+      {children}
+    </button>
   );
 };

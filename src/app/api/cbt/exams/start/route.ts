@@ -1,35 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
 const DEV_USER_ID = "00000000-0000-0000-0000-000000000001";
 
 /**
- * Validate question completeness & non-placeholder options.
- * Exclude any question with missing/empty/placeholder options.
+ * Validate question completeness for exam inclusion (v2 dataset).
+ * Accepts image-based questions (stem and/or options rendered as images) — the
+ * only hard requirements are four options and a verified answer key. Questions
+ * still flagged `needs_answer_key` (no correct_answer) are excluded so that
+ * unkeyed items never appear in a scored exam.
  */
 function isValidQuestion(q: ValidatedQuestion): boolean {
-  if (!q.id || !q.question_text || !q.question_text.trim()) return false;
-  if (!q.option_a || !q.option_a.trim()) return false;
-  if (!q.option_b || !q.option_b.trim()) return false;
-  if (!q.option_c || !q.option_c.trim()) return false;
-  if (!q.option_d || !q.option_d.trim()) return false;
+  if (!q.id) return false;
   if (!q.correct_answer || !["A", "B", "C", "D"].includes(q.correct_answer)) return false;
 
-  const a = q.option_a.trim();
-  const b = q.option_b.trim();
-  const c = q.option_c.trim();
-  const d = q.option_d.trim();
+  const opts = [q.option_a, q.option_b, q.option_c, q.option_d].map((o) => (o || "").trim());
+  if (opts.some((o) => !o)) return false; // all four options must be present ("[image]" counts)
 
-  // Exclude placeholder text
-  if (
-    a === "Option A" || b === "Option B" || c === "Option C" || d === "Option D" ||
-    a === "Option 1" || b === "Option 2" || c === "Option 3" || d === "Option 4"
-  ) {
-    return false;
-  }
+  // Exclude synthetic placeholder text.
+  const placeholders = new Set([
+    "Option A", "Option B", "Option C", "Option D",
+    "Option 1", "Option 2", "Option 3", "Option 4",
+  ]);
+  if (opts.some((o) => placeholders.has(o))) return false;
 
-  return true;
+  // A question must have either stem text or image content.
+  const hasStem = !!(q.question_text && q.question_text.trim());
+  const hasImageOptions = opts.some((o) => o === "[image]");
+  return hasStem || hasImageOptions || q.has_images === true;
 }
 
 /**
@@ -79,7 +79,9 @@ export async function POST(request: NextRequest) {
         if (error) {
           return NextResponse.json({ error: error.message }, { status: 500 });
         }
-        questions = ((data as ValidatedQuestion[]) || []).filter(isValidQuestion);
+        // Enrich before validating so image-based questions are recognised.
+        const enrichedPaper = await enrichWithRichContent(supabase, (data as ValidatedQuestion[]) || []);
+        questions = (enrichedPaper as ValidatedQuestion[]).filter(isValidQuestion);
         break;
       }
 
@@ -253,6 +255,13 @@ export async function POST(request: NextRequest) {
       await supabase.from("exam_attempts").delete().eq("id", attempt.id);
       return NextResponse.json({ error: answersError.message }, { status: 500 });
     }
+
+    // Ensure rich content is attached (non-paper flows weren't enriched yet),
+    // then remove the answer key before returning to the client.
+    if (questions.length && questions[0].stem === undefined) {
+      questions = (await enrichWithRichContent(supabase, questions)) as ValidatedQuestion[];
+    }
+    questions = stripAnswerKey(questions);
 
     const response: StartExamResponse = {
       attempt_id: attempt.id,
