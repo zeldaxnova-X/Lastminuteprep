@@ -6,7 +6,6 @@ import { QuestionContent } from "@/components/cbt/question-content";
 import { MentorPanel, TrickPanel, type QuestionTrick } from "@/components/cbt/insight-panels";
 import { sectionLabel } from "@/lib/cbt-questions";
 import {
-  Check,
   RotateCcw,
   Flag,
   ChevronRight,
@@ -165,7 +164,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         <div className="flex items-center gap-3">
           <span className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-base">
             Question <span className="tabular-nums">{currentQuestionIndex + 1}</span>
-            <span className="font-normal text-slate-400"> / {totalQuestions}</span>
+            <span className="font-normal text-slate-400"> of {totalQuestions}</span>
           </span>
           <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300 sm:text-xs">
             {label}
@@ -260,9 +259,6 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
                         />
                       )}
                     </span>
-                    {isSelected && (
-                      <Check className="h-5 w-5 flex-shrink-0 text-indigo-500 dark:text-indigo-400" />
-                    )}
                   </div>
                 );
               })}

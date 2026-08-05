@@ -71,13 +71,22 @@ function extractText(xml: string): string {
   return parts.join("").replace(WS, " ").replace(/[ \t]+/g, " ").trim();
 }
 
-/** Extract ordered image relationship ids from a fragment (DrawingML + VML). */
+/**
+ * Extract ordered image relationship ids from a fragment (DrawingML + VML).
+ *
+ * DOCX wraps each image in `<mc:AlternateContent>` with a `<mc:Choice>`
+ * (DrawingML `<a:blip>`) AND a `<mc:Fallback>` (VML `<v:imagedata>`) — the SAME
+ * image in two formats. Extracting both double-counts every figure, so we strip
+ * the Fallback first. Genuine standalone VML (in docs without AlternateContent)
+ * is preserved because it isn't inside a Fallback block.
+ */
 function extractImageRels(xml: string): string[] {
+  const withoutFallback = xml.replace(/<mc:Fallback>[\s\S]*?<\/mc:Fallback>/g, "");
   const rels: string[] = [];
   const re =
     /<a:blip\b[^>]*\br:embed="([^"]+)"|<a:blip\b[^>]*\br:link="([^"]+)"|<v:imagedata\b[^>]*\br:id="([^"]+)"/g;
   let m: RegExpExecArray | null;
-  while ((m = re.exec(xml))) {
+  while ((m = re.exec(withoutFallback))) {
     rels.push(m[1] || m[2] || m[3]);
   }
   return rels;
@@ -190,6 +199,34 @@ export async function readDocx(filePath: string): Promise<DocxDocument> {
     .join("\n");
 
   return { elements, relToMedia, media, fullText };
+}
+
+/**
+ * Read pixel dimensions from a PNG or JPEG buffer header (no decoding). Used to
+ * distinguish tiny UI glyphs (correctness ticks, radio icons) from real
+ * figures. Returns null for unsupported/unknown formats.
+ */
+export function imageDimensions(buf: Buffer): { w: number; h: number } | null {
+  // PNG: 8-byte signature, then IHDR with width/height at bytes 16..24.
+  if (buf.length >= 24 && buf[0] === 0x89 && buf[1] === 0x50) {
+    return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  }
+  // JPEG: scan for a Start-Of-Frame marker (0xFFC0..0xFFC3, C5..C7, C9..CB).
+  if (buf.length >= 4 && buf[0] === 0xff && buf[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < buf.length) {
+      if (buf[i] !== 0xff) { i++; continue; }
+      const marker = buf[i + 1];
+      const isSof =
+        (marker >= 0xc0 && marker <= 0xc3) ||
+        (marker >= 0xc5 && marker <= 0xc7) ||
+        (marker >= 0xc9 && marker <= 0xcb);
+      if (isSof) return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+      if (marker === 0xd8 || marker === 0xd9 || (marker >= 0xd0 && marker <= 0xd7)) { i += 2; continue; }
+      i += 2 + buf.readUInt16BE(i + 2);
+    }
+  }
+  return null;
 }
 
 /**

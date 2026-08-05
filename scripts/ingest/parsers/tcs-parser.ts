@@ -16,8 +16,18 @@
  * The correct answer is taken from `Chosen Option` per an explicit product
  * decision. When a question was not answered, no option is chosen, so we leave
  * `correctOption` null and flag `needsAnswerKey` rather than fabricate a key.
+ *
+ * Two source quirks are handled architecturally so no per-question patching is
+ * ever required:
+ *   1. Decorative glyphs (a red ✗ icon, publisher watermarks, radio glyphs) are
+ *      embedded in many questions. A genuine figure belongs to exactly one
+ *      question, so any media referenced by >1 question is treated as chrome and
+ *      excluded (see `decorativeRelIds`).
+ *   2. Multiple options can share a single paragraph, e.g. "1. a  2. b". Options
+ *      are split on inline numeric markers, not on paragraph boundaries.
  */
 import { AssetRegistry } from "../assets";
+import { imageDimensions } from "../docx-reader";
 import type { DocElement, DocParagraph, DocxDocument } from "../docx-reader";
 import {
   blocksToText,
@@ -44,12 +54,18 @@ const RE_CHOSEN = /^Chosen Option\s*:\s*(\S+)?/i;
 /** Non-answer metadata labels that appear inside the delimiter block. */
 const RE_METADATA_LABEL = /^(Option\s*\d+\s*ID|Question Type|Section\s*Id|Time\s*Taken|Question Number)\s*:/i;
 const RE_QNUM_PREFIX = /^Q\.?\s*(\d+)\s*[.)]?\s*/i;
-/** Inline answer marker: "… Ans 1. <option1>" (option 1 fused into the stem). */
-const RE_ANS_INLINE = /\bAns\s+1\s*[.)]\s*/i;
+/** "Ans " immediately before the first option marker (kept, not consumed). */
+const RE_ANS_INLINE = /\bAns\s+(?=[1-4]\s*[.)])/i;
 /** Standalone answer marker: a paragraph that is just "Ans". */
 const RE_ANS_STANDALONE = /^Ans\s*$/i;
-/** Leading numeric option marker, e.g. "2." or "3)". */
+/** Leading numeric option marker at the start of a piece, e.g. "2." or "3)". */
 const RE_OPTION_START = /^\s*(\d)\s*[.)]\s*/;
+/**
+ * Inline option marker: a 1-4 digit preceded by start/whitespace, a period, and
+ * followed by whitespace. Period-only + lookahead avoids false positives such as
+ * the ")" in "(33, 11, 3)" being read as an option marker.
+ */
+const RE_INLINE_MARKER = /(^|\s)([1-4])\.(?=\s)/g;
 
 interface RawRecord {
   content: DocParagraph[];
@@ -82,7 +98,6 @@ function splitRecords(elements: DocElement[]): RawRecord[] {
   const records: RawRecord[] = [];
   let buffer: DocParagraph[] = [];
   let section: ExamSection = SSC_CGL_TIER1_SECTIONS[0];
-  let sectionSeen = false;
 
   // Drop the TCS candidate/exam header block that precedes the first question.
   const start = firstQuestionIndex(elements);
@@ -90,26 +105,20 @@ function splitRecords(elements: DocElement[]): RawRecord[] {
   for (let i = start; i < elements.length; i++) {
     const el = elements[i];
     if (el.type !== "paragraph") {
-      // Tables are rare in TCS exports; fold their text into the buffer as a
-      // synthetic paragraph so no content is dropped.
       const text = el.rows.map((r) => r.join("  ")).join("\n");
       buffer.push({ type: "paragraph", index: el.index, text, imageRels: el.imageRels });
       continue;
     }
 
-    // Section header?
     const maybeSection = matchSectionHeader(el.text);
     if (maybeSection) {
       section = maybeSection;
-      sectionSeen = true;
       continue;
     }
 
-    // Start of a metadata block => close the current question. The metadata
-    // region is: Question ID, [Option N ID …], [Question Type], Status,
-    // Chosen Option — in that rough order, with blank lines interspersed and
-    // extra label lines in the Tier-II layout. We scan forward, skipping known
-    // label/blank lines, until real content or the next Question ID.
+    // Start of the metadata delimiter => close the current question. Scan
+    // forward past known label/blank lines, capturing Status/Chosen Option,
+    // until real content or the next Question ID.
     const idMatch = RE_QUESTION_ID.exec(el.text);
     if (idMatch) {
       const externalId = idMatch[1];
@@ -123,7 +132,7 @@ function splitRecords(elements: DocElement[]): RawRecord[] {
         if (nx.type !== "paragraph") break;
         const tx = nx.text;
         if (tx === "") { j++; continue; }
-        if (RE_QUESTION_ID.test(tx)) break; // next record
+        if (RE_QUESTION_ID.test(tx)) break;
         const st = RE_STATUS.exec(tx);
         if (st) { status = normaliseStatus(st[1]); j++; continue; }
         const ch = RE_CHOSEN.exec(tx);
@@ -134,72 +143,93 @@ function splitRecords(elements: DocElement[]): RawRecord[] {
           continue;
         }
         if (RE_METADATA_LABEL.test(tx)) { j++; continue; }
-        break; // genuine content — metadata block has ended
+        break;
       }
 
       records.push({ content: buffer, externalId, status, chosen, section });
       buffer = [];
-      i = j - 1; // resume at the first content paragraph of the next question
+      i = j - 1;
       continue;
     }
 
-    // Ordinary content paragraph.
     buffer.push(el);
   }
 
-  // If the document defined no explicit section headers, keep the default.
-  void sectionSeen;
   return records;
 }
 
-/** Convert a run of paragraphs into ordered content blocks via the registry. */
-function paragraphsToBlocks(
-  paras: DocParagraph[],
-  assets: AssetRegistry
-): ContentBlock[] {
-  const blocks: ContentBlock[] = [];
-  for (const p of paras) {
-    if (p.text) blocks.push({ kind: "text", text: p.text });
-    for (const rel of p.imageRels) {
-      const assetId = assets.resolve(rel);
-      if (assetId) blocks.push({ kind: "image", assetId });
-    }
-  }
-  return blocks;
-}
-
-/** A paragraph carries content if it has text or an embedded image. */
+/** A paragraph carries content if it has text or a (non-decorative) image. */
 function hasContent(p: DocParagraph): boolean {
   return p.text.trim() !== "" || p.imageRels.length > 0;
 }
 
 /**
- * Split a question's content paragraphs into stem vs the four options.
- *
- * Handles both TCS layouts:
- *   - Text questions: option 1 is fused into the stem paragraph as
- *     "… Ans 1. <opt1>", and options 2–4 are the following paragraphs whose
- *     numeric markers are rendered as images (so they carry no numeric text).
- *   - Figure questions: a standalone "Ans" paragraph followed by explicitly
- *     numbered "1." … "4." paragraphs (option content is imagery).
+ * Split any paragraph containing more than one inline option marker into one
+ * paragraph per option, e.g. "1. a  2. b" → ["1. a", "2. b"]. Single-marker or
+ * marker-less paragraphs pass through unchanged (their images are preserved).
+ */
+function explodeInlineOptions(paras: DocParagraph[]): DocParagraph[] {
+  const out: DocParagraph[] = [];
+  for (const p of paras) {
+    const text = p.text;
+    RE_INLINE_MARKER.lastIndex = 0;
+    const marks: { start: number; num: string; contentStart: number }[] = [];
+    let m: RegExpExecArray | null;
+    while ((m = RE_INLINE_MARKER.exec(text))) {
+      // start = position of the digit; content begins after "N.".
+      marks.push({ start: m.index + m[1].length, num: m[2], contentStart: m.index + m[1].length + 2 });
+    }
+    if (marks.length <= 1) {
+      out.push(p);
+      continue;
+    }
+    // Multiple markers in one paragraph: split. (Such paragraphs are textual;
+    // any images stay with the pre-marker remnant / first piece.)
+    const pre = text.slice(0, marks[0].start).trim();
+    let imagesAttached = false;
+    if (pre) {
+      out.push({ ...p, text: pre });
+      imagesAttached = true;
+    }
+    for (let k = 0; k < marks.length; k++) {
+      const end = k + 1 < marks.length ? marks[k + 1].start : text.length;
+      const seg = text.slice(marks[k].contentStart, end).trim();
+      out.push({
+        type: "paragraph",
+        index: p.index,
+        text: `${marks[k].num}. ${seg}`.trim(),
+        imageRels: imagesAttached ? [] : p.imageRels,
+      });
+      imagesAttached = true;
+    }
+  }
+  return out;
+}
+
+/**
+ * Split a question's content paragraphs into stem vs the four options, handling
+ * inline option-1 fusion, image options, and options that share a paragraph.
  */
 function splitStemAndOptions(paras: DocParagraph[]): {
   stem: DocParagraph[];
   optionGroups: DocParagraph[][];
+  /** Ordered region paragraphs for image assignment (handles anchor offset). */
+  regionForImages: DocParagraph[];
   warnings: string[];
 } {
   const warnings: string[] = [];
 
-  // 1) Locate the answer marker (inline "Ans 1." or standalone "Ans").
+  // 1) Locate the answer marker.
   let markerIdx = -1;
-  let inline: { stemHead: string; opt1: string } | null = null;
+  let inline: { stemHead: string; optText: string } | null = null;
   for (let i = 0; i < paras.length; i++) {
     const inlineMatch = RE_ANS_INLINE.exec(paras[i].text);
     if (inlineMatch) {
       markerIdx = i;
       inline = {
         stemHead: paras[i].text.slice(0, inlineMatch.index).trim(),
-        opt1: paras[i].text.slice(inlineMatch.index + inlineMatch[0].length).trim(),
+        // Keep the "1." marker so inline splitting can find every option.
+        optText: paras[i].text.slice(inlineMatch.index + inlineMatch[0].length).trim(),
       };
       break;
     }
@@ -209,14 +239,13 @@ function splitStemAndOptions(paras: DocParagraph[]): {
     }
   }
 
-  // Fallback: first bare "1." paragraph (no visible "Ans" at all).
   let impliedStart = false;
   if (markerIdx === -1) {
     markerIdx = paras.findIndex((p) => /^\s*1\s*[.)]/.test(p.text));
     impliedStart = markerIdx !== -1;
     if (markerIdx === -1) {
       warnings.push("no-ans-marker");
-      return { stem: paras, optionGroups: [], warnings };
+      return { stem: paras, optionGroups: [], regionForImages: [], warnings };
     }
   }
 
@@ -229,26 +258,21 @@ function splitStemAndOptions(paras: DocParagraph[]): {
     const stemHadContent = stem.some(hasContent) || inline.stemHead !== "";
     if (inline.stemHead) stem.push({ ...marker, text: inline.stemHead, imageRels: [] });
     if (!stemHadContent && marker.imageRels.length > 0) {
-      // The stem is otherwise empty, so the marker paragraph's images are the
-      // question figure, not option-1 icons: route them to the stem.
       stem.push({ ...marker, text: "", imageRels: marker.imageRels });
-      optionRegion.push({ ...marker, text: inline.opt1, imageRels: [] });
+      optionRegion.push({ ...marker, text: inline.optText, imageRels: [] });
     } else {
-      // Option 1 head keeps the marker paragraph's images (option icons/figures).
-      optionRegion.push({ ...marker, text: inline.opt1 });
+      optionRegion.push({ ...marker, text: inline.optText });
     }
     optionRegion.push(...paras.slice(markerIdx + 1));
   } else if (impliedStart) {
     optionRegion.push(...paras.slice(markerIdx));
   } else {
-    // Standalone "Ans": options are the following paragraphs.
     optionRegion.push(...paras.slice(markerIdx + 1));
   }
 
-  const content = optionRegion.filter(hasContent);
+  // 3) Explode inline multi-option paragraphs, then group into options.
+  const content = explodeInlineOptions(optionRegion).filter(hasContent);
 
-  // 3) Group into options. If explicit 2./3. markers exist, group by number
-  //    (figure questions); otherwise each content paragraph is one option.
   const explicitlyNumbered =
     content.filter((p) => /^\s*[2-4]\s*[.)]/.test(p.text)).length >= 2;
 
@@ -256,8 +280,7 @@ function splitStemAndOptions(paras: DocParagraph[]): {
   if (explicitlyNumbered) {
     let current: DocParagraph[] | null = null;
     for (const p of content) {
-      const nm = RE_OPTION_START.exec(p.text);
-      if (nm) {
+      if (RE_OPTION_START.test(p.text)) {
         current = [{ ...p, text: p.text.replace(RE_OPTION_START, "") }];
         groups.push(current);
       } else if (current) {
@@ -273,16 +296,50 @@ function splitStemAndOptions(paras: DocParagraph[]): {
     }
   }
 
+  // Region used for order-based image assignment. In the standalone-"Ans"
+  // layout the marker paragraph itself can carry option 1's figure (the drawing
+  // anchors one paragraph early), so include it.
+  const regionForImages: DocParagraph[] = [...optionRegion];
+  if (!inline && !impliedStart && marker.imageRels.length > 0) {
+    regionForImages.unshift({ ...marker, text: "", imageRels: marker.imageRels });
+  }
+
   if (groups.length > 4) warnings.push(`option-overflow=${groups.length}`);
   if (groups.length < 4) warnings.push(`option-count=${groups.length}`);
-  return { stem, optionGroups: groups.slice(0, 4), warnings };
+  return { stem, optionGroups: groups.slice(0, 4), regionForImages, warnings };
+}
+
+/**
+ * Convert paragraphs into ordered content blocks, skipping decorative images
+ * and de-duplicating repeated images within the group.
+ */
+function paragraphsToBlocks(
+  paras: DocParagraph[],
+  assets: AssetRegistry,
+  decorativeRelIds: Set<string>
+): ContentBlock[] {
+  const blocks: ContentBlock[] = [];
+  const seen = new Set<string>();
+  for (const p of paras) {
+    if (p.text) blocks.push({ kind: "text", text: p.text });
+    for (const rel of p.imageRels) {
+      if (decorativeRelIds.has(rel)) continue;
+      const assetId = assets.resolve(rel);
+      if (assetId && !seen.has(assetId)) {
+        seen.add(assetId);
+        blocks.push({ kind: "image", assetId });
+      }
+    }
+  }
+  return blocks;
 }
 
 function buildQuestion(
   rec: RawRecord,
   qNumber: number,
   meta: PaperMeta,
-  assets: AssetRegistry
+  assets: AssetRegistry,
+  decorativeRelIds: Set<string>
 ): ParsedQuestion {
   const warnings: string[] = [];
 
@@ -293,7 +350,8 @@ function buildQuestion(
     content[firstTextIdx].text = content[firstTextIdx].text.replace(RE_QNUM_PREFIX, "");
   }
 
-  const { stem, optionGroups, warnings: splitWarnings } = splitStemAndOptions(content);
+  const { stem, optionGroups, regionForImages, warnings: splitWarnings } =
+    splitStemAndOptions(content);
   warnings.push(...splitWarnings);
 
   // Remove a dangling "Ans" left on the stem when option 1 is an image.
@@ -303,7 +361,7 @@ function buildQuestion(
     break;
   }
 
-  const stemBlocks = paragraphsToBlocks(stem, assets);
+  let stemBlocks = paragraphsToBlocks(stem, assets, decorativeRelIds);
   const options: ParsedOption[] = optionGroups.map((group, i) => {
     const key = optionKeyFromIndex(i + 1) as OptionKey;
     const flatText = group
@@ -312,9 +370,8 @@ function buildQuestion(
       .join("\n")
       .trim();
 
-    // A text option is text-only: the images on its line are response-sheet
-    // chrome (radio/number glyphs), not content, so they are not registered.
-    // An option with no text is genuinely image-based; register those images.
+    // Text option: text-only (line images are chrome). Image option: figures,
+    // with decorative glyphs excluded and duplicates removed.
     if (flatText) {
       const blocks: ContentBlock[] = group
         .filter((p) => p.text.trim())
@@ -322,20 +379,57 @@ function buildQuestion(
       return { key, index: i + 1, blocks, text: flatText, isImage: false };
     }
     const blocks: ContentBlock[] = [];
+    const seen = new Set<string>();
     for (const p of group)
       for (const rel of p.imageRels) {
+        if (decorativeRelIds.has(rel)) continue;
         const assetId = assets.resolve(rel);
-        if (assetId) blocks.push({ kind: "image", assetId });
+        if (assetId && !seen.has(assetId)) {
+          seen.add(assetId);
+          blocks.push({ kind: "image", assetId });
+        }
       }
     return { key, index: i + 1, blocks, text: "", isImage: blocks.length > 0 };
   });
 
+  // Image-option offset correction. Figures frequently anchor to an adjacent
+  // paragraph rather than their "N." marker line (sometimes even onto a stem
+  // line). Rather than trust per-paragraph anchoring, gather every
+  // non-decorative figure across the whole question in document order and treat
+  // the LAST N as the N options (N = marker count); anything earlier is stem.
+  const isImageOptionQuestion =
+    options.length > 0 && options.every((o) => o.text.trim() === "");
+  if (isImageOptionQuestion) {
+    void regionForImages;
+    const allImages: string[] = [];
+    const seenAll = new Set<string>();
+    for (const p of content)
+      for (const rel of p.imageRels) {
+        if (decorativeRelIds.has(rel)) continue;
+        const assetId = assets.resolve(rel);
+        if (assetId && !seenAll.has(assetId)) {
+          seenAll.add(assetId);
+          allImages.push(assetId);
+        }
+      }
+    const n = options.length;
+    if (allImages.length >= n) {
+      const optionIds = allImages.slice(allImages.length - n);
+      const stemIds = allImages.slice(0, allImages.length - n);
+      const stemText = stemBlocks.filter((b) => b.kind !== "image");
+      stemBlocks = [...stemText, ...stemIds.map((id) => ({ kind: "image" as const, assetId: id }))];
+      options.forEach((o, i) => {
+        o.blocks = [{ kind: "image", assetId: optionIds[i] }];
+        o.isImage = true;
+      });
+    } else {
+      warnings.push(`image-option-count=${allImages.length}/${n}`);
+    }
+  }
+
   const hasImages =
     stemBlocks.some((b) => b.kind === "image") || options.some((o) => o.isImage);
 
-  // A valid chosen option is the answer (product decision), whether the
-  // candidate left it flagged for review or not. "Not Answered" carries no
-  // choice, so it stays unkeyed and flagged rather than fabricated.
   const correctOption = rec.chosen ? optionKeyFromIndex(rec.chosen) : null;
   const needsAnswerKey = correctOption === null;
   if (needsAnswerKey) warnings.push(`unkeyed:${rec.status}`);
@@ -364,6 +458,71 @@ function buildQuestion(
     negativeMarks: NEG_MARKS_PER_Q,
     warnings,
   };
+}
+
+/** Small glyphs (correctness ticks, radio icons) are at most this many px. */
+const GLYPH_MAX_DIM = 40;
+
+/**
+ * Identify decorative media (glyphs / watermarks / logos) so they are never
+ * rendered as question content. Two content-driven, generalisable signals:
+ *
+ *   1. Shared media: a genuine figure belongs to exactly one question, so any
+ *      media file referenced by >1 question is chrome (e.g. a red ✗ reused via
+ *      one relationship, or a publisher watermark).
+ *   2. Recurring small glyphs: correctness ticks are re-encoded per question
+ *      (unique bytes, so signal 1 misses them) but share exact tiny pixel
+ *      dimensions. A small image whose exact (w×h) recurs across ≥3 questions is
+ *      a glyph. Genuine small images (e.g. a "√3" option) have varied
+ *      dimensions that rarely recur, so they are kept.
+ */
+function findDecorativeRelIds(records: RawRecord[], doc: DocxDocument): Set<string> {
+  const mediaToQuestions = new Map<string, Set<number>>();
+  const dimToQuestions = new Map<string, Set<number>>();
+  const mediaDimKey = new Map<string, string | null>();
+
+  const dimKeyOf = (mp: string): string | null => {
+    if (mediaDimKey.has(mp)) return mediaDimKey.get(mp)!;
+    const bytes = doc.media.get("word/" + mp) ?? doc.media.get(mp);
+    const dim = bytes ? imageDimensions(bytes) : null;
+    const key = dim && dim.w <= GLYPH_MAX_DIM && dim.h <= GLYPH_MAX_DIM ? `${dim.w}x${dim.h}` : null;
+    mediaDimKey.set(mp, key);
+    return key;
+  };
+
+  records.forEach((rec, ri) => {
+    const mediaInRec = new Set<string>();
+    for (const p of rec.content)
+      for (const rel of p.imageRels) {
+        const mp = doc.relToMedia.get(rel);
+        if (mp) mediaInRec.add(mp);
+      }
+    for (const mp of mediaInRec) {
+      if (!mediaToQuestions.has(mp)) mediaToQuestions.set(mp, new Set());
+      mediaToQuestions.get(mp)!.add(ri);
+      const dk = dimKeyOf(mp);
+      if (dk) {
+        if (!dimToQuestions.has(dk)) dimToQuestions.set(dk, new Set());
+        dimToQuestions.get(dk)!.add(ri);
+      }
+    }
+  });
+
+  const decorativeDims = new Set<string>();
+  for (const [dk, qs] of dimToQuestions) if (qs.size >= 3) decorativeDims.add(dk);
+
+  const decorativeMedia = new Set<string>();
+  for (const [mp, qs] of mediaToQuestions) {
+    if (qs.size >= 2) decorativeMedia.add(mp);
+    else {
+      const dk = mediaDimKey.get(mp);
+      if (dk && decorativeDims.has(dk)) decorativeMedia.add(mp);
+    }
+  }
+
+  const decorativeRelIds = new Set<string>();
+  for (const [rel, mp] of doc.relToMedia) if (decorativeMedia.has(mp)) decorativeRelIds.add(rel);
+  return decorativeRelIds;
 }
 
 function computeStats(questions: ParsedQuestion[], totalAssets: number): ParsePaperStats {
@@ -412,8 +571,11 @@ function computeStats(questions: ParsedQuestion[], totalAssets: number): ParsePa
 export function parseTcsResponseSheet(doc: DocxDocument, meta: PaperMeta): ParsedPaper {
   const assets = new AssetRegistry(meta.paperId, doc);
   const records = splitRecords(doc.elements);
+  const decorativeRelIds = findDecorativeRelIds(records, doc);
 
-  const questions = records.map((rec, i) => buildQuestion(rec, i + 1, meta, assets));
+  const questions = records.map((rec, i) =>
+    buildQuestion(rec, i + 1, meta, assets, decorativeRelIds)
+  );
 
   const usedAssets = assets.assets();
   const sectionsOrder = dedupeSections(questions.map((q) => q.section));
