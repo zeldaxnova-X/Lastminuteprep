@@ -3,7 +3,6 @@
 import React from "react";
 import { KaTeXRenderer } from "@/components/katex-renderer";
 import { sanitizeQuestionText } from "@/lib/clean-text";
-import { ZoomIn } from "lucide-react";
 import type { QuestionContentBlock } from "@/types/database.types";
 
 interface QuestionContentProps {
@@ -52,27 +51,19 @@ export const QuestionContent: React.FC<QuestionContentProps> = ({
         }
 
         if (block.kind === "image" && block.url) {
+          // Click the figure itself to zoom — no overlay controls, so nothing
+          // can be mistaken for a correctness indicator during an exam.
           return (
-            <figure key={i} className="group relative inline-block max-w-full">
+            <figure key={i} className="inline-block max-w-full">
               <img
                 src={block.url}
                 alt="Question figure"
                 loading="lazy"
-                onClick={() => onZoom?.(block.url!)}
+                onClick={onZoom ? () => onZoom(block.url!) : undefined}
                 className={`${imageMaxHeight} w-auto max-w-full rounded-xl border border-slate-200 bg-white object-contain dark:border-slate-700 dark:bg-slate-100 ${
                   onZoom ? "cursor-zoom-in" : ""
                 }`}
               />
-              {onZoom && (
-                <button
-                  type="button"
-                  onClick={() => onZoom(block.url!)}
-                  aria-label="View figure full screen"
-                  className="absolute right-2 top-2 hidden rounded-lg border border-slate-200 bg-white/90 p-1.5 text-slate-600 shadow-sm backdrop-blur transition hover:bg-white group-hover:flex dark:border-slate-600 dark:bg-slate-800/90 dark:text-slate-300"
-                >
-                  <ZoomIn className="h-4 w-4" />
-                </button>
-              )}
             </figure>
           );
         }
