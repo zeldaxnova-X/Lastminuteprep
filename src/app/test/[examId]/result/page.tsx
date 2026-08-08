@@ -1,238 +1,668 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { useParams } from "next/navigation";
-import Link from "next/link";
-import type { ExamAnalysis } from "@/lib/analytics/types";
-import { Zap, ArrowRight, Loader2, Brain } from "lucide-react";
+import { TopNav } from "@/components/top-nav";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ButtonLink } from "@/components/ui/button";
+import { Markdown } from "@/components/ui/markdown";
+import { QuestionContent } from "@/components/cbt/question-content";
+import { sectionLabel } from "@/lib/cbt-questions";
+import { cn } from "@/lib/utils";
+import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
+import {
+  Loader2,
+  Sparkles,
+  ArrowRight,
+  TrendingUp,
+  Target,
+  Clock,
+  ChevronDown,
+} from "lucide-react";
+
+interface SessionResult {
+  raw_score: number;
+  net_score: number;
+  correct: number;
+  wrong: number;
+  skipped: number;
+  attempted: number;
+  accuracy: number;
+  section_breakdown: Array<{
+    key: string;
+    name: string;
+    total: number;
+    attempted: number;
+    correct: number;
+    wrong: number;
+    skipped: number;
+    netScore: number;
+    accuracy: number;
+    avgTimeMs: number;
+  }>;
+}
+
+interface ReviewItem {
+  questionId: string;
+  questionNumber: number;
+  section: string;
+  stem: unknown;
+  stemText: string;
+  options: Array<{ key: string; text: string; isImage?: boolean; blocks?: unknown }>;
+  correctOption: string | null;
+  solution: unknown;
+  solutionText: string;
+  selectedOption: string | null;
+  status: string;
+  confidence: string | null;
+  timeSpentMs: number | null;
+  isCorrect: boolean | null;
+  marksAwarded: number | null;
+}
+
+interface ReportData {
+  result: SessionResult;
+  analysis: MentorAnalysis | null;
+  optimalScore: number | null;
+  narrative: string | null;
+  narrationAvailable?: boolean;
+  review: ReviewItem[];
+}
+
+const CONF_TONE: Record<string, string> = {
+  guessed: "danger",
+  unsure: "warning",
+  confident: "success",
+};
+
+function fmtTime(ms: number | null): string {
+  const s = Math.round((ms ?? 0) / 1000);
+  if (s < 60) return `${s}s`;
+  return `${Math.floor(s / 60)}m ${s % 60}s`;
+}
 
 export default function ExamResultPage() {
   const params = useParams();
   const examId = (params?.examId as string) || "";
 
-  const [analysis, setAnalysis] = useState<ExamAnalysis | null>(null);
+  const [data, setData] = useState<ReportData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // The LLM narrative is PURELY ADDITIVE. When the server can't produce one
+  // (no API key), the section is never rendered and never fetched — the
+  // deterministic report stands alone as the complete report.
+  const [narrative, setNarrative] = useState<string | null>(null);
+  // "idle" = decided not to show; "loading"/"done" are the only rendered states.
+  const [narrativeState, setNarrativeState] = useState<"idle" | "loading" | "done">("idle");
+  const [narrationAvailable, setNarrationAvailable] = useState(false);
+
   useEffect(() => {
-    async function fetchAnalysis() {
-      if (!examId) return;
+    if (!examId) return;
+    (async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/cbt/analysis/${examId}`);
-        if (res.ok) {
-          const data: ExamAnalysis = await res.json();
-          setAnalysis(data);
-        } else {
-          setError("Failed to load attempt analysis");
+        const res = await fetch(`/api/cbt/exams/${examId}/report`);
+        if (!res.ok) {
+          setError("Report is not available for this session yet.");
+          return;
         }
-      } catch (err) {
-        console.error("Failed to load analysis:", err);
-        setError("Network error loading analysis");
+        const json: ReportData = await res.json();
+        setData(json);
+        setNarrationAvailable(!!json.narrationAvailable);
+        if (json.narrative) {
+          setNarrative(json.narrative);
+          setNarrativeState("done");
+        }
+      } catch {
+        setError("Network error loading your report.");
       } finally {
         setLoading(false);
       }
-    }
-
-    fetchAnalysis();
+    })();
   }, [examId]);
+
+  const generateNarrative = useCallback(async () => {
+    setNarrativeState("loading");
+    try {
+      const res = await fetch(`/api/cbt/exams/${examId}/report`, { method: "POST" });
+      const json = await res.json();
+      if (json.narrative) {
+        setNarrative(json.narrative);
+        setNarrativeState("done");
+      } else {
+        // No narrative came back — leave it out entirely (no placeholder).
+        setNarrativeState("idle");
+      }
+    } catch {
+      setNarrativeState("idle");
+    }
+  }, [examId]);
+
+  // Only reach out to generate a narrative when the server says it can make one.
+  // With no key, narrationAvailable is false → no fetch, no section.
+  useEffect(() => {
+    if (data && narrationAvailable && !narrative && narrativeState === "idle") {
+      generateNarrative();
+    }
+  }, [data, narrationAvailable, narrative, narrativeState, generateNarrative]);
 
   if (loading) {
     return (
-      <div className="h-screen w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-3 font-sans p-4 text-center">
-        <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-        <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">Generating Single Source of Truth Analytics...</span>
+      <div className="flex min-h-screen items-center justify-center gap-2 bg-bg text-ink-secondary">
+        <Loader2 className="h-5 w-5 animate-spin text-accent" />
+        <span className="text-sm">Building your report…</span>
       </div>
     );
   }
-
-  if (error || !analysis) {
+  if (error || !data) {
     return (
-      <div className="h-screen w-screen flex flex-col items-center justify-center bg-white text-gray-700 gap-4 font-sans p-4 text-center">
-        <p className="text-sm text-red-600 font-bold">{error || "Analysis unavailable"}</p>
-        <Link href="/dashboard" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-semibold">
-          Return to Dashboard
-        </Link>
+      <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-bg px-4 text-center">
+        <p className="text-sm text-danger">{error ?? "Report unavailable."}</p>
+        <ButtonLink href="/dashboard" variant="secondary" size="sm">
+          Back to dashboard
+        </ButtonLink>
       </div>
     );
   }
 
-  const { score, marks, accuracy, pace, sectionPerformance } = analysis;
+  const { result, analysis, optimalScore } = data;
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col antialiased select-none">
-      {/* Top Header */}
-      <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 sm:h-14 flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4">
-          <Link href="/dashboard" className="flex items-center gap-2 font-bold text-base sm:text-lg tracking-tight text-gray-900">
-            <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
-              <Zap className="w-3.5 h-3.5 text-white fill-white" />
-            </div>
-            <span>LastMile<span className="text-blue-600">Prep</span></span>
-          </Link>
-
-          {/* Three Post-Exam Flow Breadcrumb Tabs */}
-          <div className="flex flex-wrap items-center justify-center gap-1 bg-gray-100 p-1 rounded-xl border border-gray-200 text-xs font-semibold w-full sm:w-auto">
-            <span className="bg-white text-blue-600 px-2.5 sm:px-3 py-1.5 rounded-lg shadow-2xs font-bold border border-gray-200 text-center flex-1 sm:flex-none">
-              Page 1: Score Card
-            </span>
-            <Link href={`/test/${examId}/mentor`} className="px-2.5 sm:px-3 py-1.5 rounded-lg text-gray-600 hover:text-gray-900 text-center flex-1 sm:flex-none">
-              Page 2: Virtual Mentor
-            </Link>
-            <Link href={`/test/${examId}/review`} className="px-2.5 sm:px-3 py-1.5 rounded-lg text-gray-600 hover:text-gray-900 text-center flex-1 sm:flex-none">
-              Page 3: Answer Key
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      {/* Main Score Card Container (Apple Style, Minimal, Spacious) */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 flex-1 space-y-6 sm:space-y-10 w-full">
-        {/* Title */}
-        <div className="text-center space-y-1">
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-            Official Diagnostic Score Card
-          </span>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight pt-1">SSC CGL Examination Result</h1>
-          <p className="text-xs text-gray-500">Single Source of Truth Telemetry Engine Output</p>
-        </div>
-
-        {/* Large Hero Card: Your Score */}
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 text-center space-y-3 sm:space-y-4 shadow-2xs">
-          <span className="text-xs font-bold uppercase tracking-wider text-gray-500 block">Your Score</span>
-          <div className="flex items-baseline justify-center gap-1.5 sm:gap-2">
-            <span className="text-4xl sm:text-6xl font-black text-gray-900 tracking-tight">{score.total_score.toFixed(0)}</span>
-            <span className="text-xl sm:text-2xl font-bold text-gray-400">/ {score.max_score}</span>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-            <span className="bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border border-emerald-300">
-              {score.qualification_status}
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border border-blue-300">
-              {score.percentile_rank}
-            </span>
-          </div>
-        </div>
-
-        {/* Four Large Summary Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-          <div className="bg-white border border-gray-200 p-4 sm:p-5 rounded-2xl space-y-1 text-center shadow-2xs">
-            <span className="text-xs font-semibold text-gray-500 block truncate">Correct</span>
-            <span className="text-2xl sm:text-3xl font-extrabold text-emerald-600">{accuracy.correct_count}</span>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-4 sm:p-5 rounded-2xl space-y-1 text-center shadow-2xs">
-            <span className="text-xs font-semibold text-gray-500 block truncate">Incorrect</span>
-            <span className="text-2xl sm:text-3xl font-extrabold text-red-600">{accuracy.incorrect_count}</span>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-4 sm:p-5 rounded-2xl space-y-1 text-center shadow-2xs">
-            <span className="text-xs font-semibold text-gray-500 block truncate">Skipped</span>
-            <span className="text-2xl sm:text-3xl font-extrabold text-gray-400">{accuracy.skipped_count}</span>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-4 sm:p-5 rounded-2xl space-y-1 text-center shadow-2xs">
-            <span className="text-xs font-semibold text-gray-500 block truncate">Accuracy %</span>
-            <span className="text-2xl sm:text-3xl font-extrabold text-blue-600">{accuracy.overall_accuracy.toFixed(1)}%</span>
-          </div>
-        </div>
-
-        {/* Marks & Time Breakdown Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-          {/* Marks Breakdown */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 space-y-3 shadow-2xs">
-            <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Marks Breakdown</h3>
-            <div className="space-y-2 text-xs divide-y divide-gray-100">
-              <div className="flex justify-between py-1.5">
-                <span className="text-gray-600 font-medium">+ Correct Marks</span>
-                <span className="font-bold text-emerald-600">+{marks.positive_marks.toFixed(1)}</span>
-              </div>
-              <div className="flex justify-between py-1.5">
-                <span className="text-gray-600 font-medium">− Negative Marks</span>
-                <span className="font-bold text-red-600">−{marks.negative_marks.toFixed(1)}</span>
-              </div>
-              <div className="flex justify-between py-1.5 pt-2 text-sm">
-                <span className="font-bold text-gray-900">Final Score</span>
-                <span className="font-extrabold text-blue-600">{marks.net_marks.toFixed(1)} / {marks.max_marks}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Time Breakdown */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 space-y-3 shadow-2xs">
-            <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Exam Time</h3>
-            <div className="space-y-2 text-xs divide-y divide-gray-100">
-              <div className="flex justify-between py-1.5">
-                <span className="text-gray-600 font-medium">Time Used</span>
-                <span className="font-bold text-gray-900">
-                  {Math.floor(pace.time_used_seconds / 60)}m {pace.time_used_seconds % 60}s
-                </span>
-              </div>
-              <div className="flex justify-between py-1.5">
-                <span className="text-gray-600 font-medium">Time Remaining</span>
-                <span className="font-bold text-gray-900">
-                  {Math.floor(pace.time_remaining_seconds / 60)}m {pace.time_remaining_seconds % 60}s
-                </span>
-              </div>
-              <div className="flex justify-between py-1.5 pt-2 text-sm">
-                <span className="font-bold text-gray-900">Average Time / Question</span>
-                <span className="font-extrabold text-blue-600">{pace.avg_pace_per_question_seconds}s</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Section Performance with Horizontal Progress Bars */}
-        <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 space-y-5 sm:space-y-6 shadow-2xs">
-          <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Section Performance</h3>
-
-          <div className="space-y-4">
-            {sectionPerformance.map((sec) => (
-              <div key={sec.subject} className="space-y-1.5">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-1">
-                  <span className="font-bold text-gray-900">{sec.subject}</span>
-                  <div className="flex items-center gap-2.5 sm:gap-3 text-gray-500 text-[11px] sm:text-xs">
-                    <span>Score: <strong className="text-blue-600">{sec.net_score.toFixed(1)}</strong></span>
-                    <span>Avg Pace: <strong className="text-gray-900">{sec.avg_time_per_question_seconds}s</strong></span>
-                    <span className="font-bold text-emerald-600">{sec.accuracy}%</span>
-                  </div>
-                </div>
-
-                {/* Horizontal Bar */}
-                <div className="w-full bg-gray-100 rounded-full h-3 overflow-hidden flex">
-                  <div
-                    className="bg-blue-600 h-full rounded-full transition-all duration-500"
-                    style={{ width: `${Math.max(5, sec.accuracy)}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action Banner to Page 2 */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-6 shadow-sm">
-          <div className="space-y-1 text-center sm:text-left">
-            <div className="inline-flex items-center gap-1.5 bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-              <Brain className="w-3.5 h-3.5" />
-              <span>Next Step in Post-Exam Flow</span>
-            </div>
-            <h2 className="text-xl sm:text-2xl font-black tracking-tight">Open Virtual Mentor Analysis</h2>
-            <p className="text-xs text-blue-100 leading-relaxed max-w-xl">
-              Discover your Decision Quality score, score leaks, 7-day study plan, and strategy simulation powered by telemetry.
+    <div className="flex min-h-screen flex-col bg-bg">
+      <TopNav />
+      <main className="mx-auto w-full max-w-5xl flex-1 space-y-8 px-4 py-10 sm:px-6">
+        {/* Hero */}
+        <section className="space-y-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-ink-tertiary">
+              Mock report
             </p>
+            <h1 className="mt-1 font-report text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              You scored{" "}
+              <span className="text-accent tabular">{result.net_score}</span>
+              <span className="text-ink-tertiary"> / 200</span>
+            </h1>
           </div>
 
-          <Link
-            href={`/test/${examId}/mentor`}
-            className="w-full sm:w-auto bg-white text-blue-600 hover:bg-blue-50 font-bold px-6 py-3.5 rounded-xl text-xs transition-colors shadow-sm flex items-center justify-center gap-2 flex-shrink-0 min-h-[44px]"
-          >
-            <span>Proceed to Virtual Mentor (Page 2)</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <StatTile label="Net score" value={`${result.net_score}`} tone="accent" />
+            <StatTile label="Raw score" value={`${result.raw_score}`} />
+            <StatTile label="Accuracy" value={`${result.accuracy}%`} tone="success" />
+            <StatTile
+              label="Correct / Wrong / Skipped"
+              value={`${result.correct} · ${result.wrong} · ${result.skipped}`}
+              small
+            />
+          </div>
+        </section>
+
+        {/* Optimal score */}
+        {analysis && optimalScore != null && (
+          <OptimalScoreCard
+            actual={result.net_score}
+            optimal={optimalScore}
+            gain={analysis.optimal.gain}
+            dropped={analysis.optimal.droppedBuckets}
+            max={result.raw_score > 0 ? 200 : 200}
+          />
+        )}
+
+        {/* Coaching narrative — purely additive. Rendered only while generating
+            or when present; entirely absent when narration isn't available. */}
+        {(narrativeState === "loading" || (narrativeState === "done" && narrative)) && (
+          <section>
+            <SectionHeading icon={Sparkles}>AI Mentor</SectionHeading>
+            <Card className="p-6">
+              {narrativeState === "loading" ? (
+                <div className="flex items-center gap-2 text-sm text-ink-secondary">
+                  <Loader2 className="h-4 w-4 animate-spin text-accent" />
+                  Writing your personalised coaching…
+                </div>
+              ) : (
+                <Markdown content={narrative!} />
+              )}
+            </Card>
+          </section>
+        )}
+
+        {/* Calibration + Sections */}
+        {analysis && (
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <CalibrationCard analysis={analysis} />
+            <SectionPerformanceCard breakdown={result.section_breakdown} />
+          </div>
+        )}
+
+        {/* Score leaks */}
+        {analysis && <ScoreLeaksCard analysis={analysis} />}
+
+        {/* Question review */}
+        <QuestionReview review={data.review} />
       </main>
     </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+
+function SectionHeading({
+  icon: Icon,
+  children,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  children: React.ReactNode;
+}) {
+  return (
+    <h2 className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-ink-tertiary">
+      <Icon className="h-4 w-4 text-accent" />
+      {children}
+    </h2>
+  );
+}
+
+function StatTile({
+  label,
+  value,
+  tone,
+  small,
+}: {
+  label: string;
+  value: string;
+  tone?: "accent" | "success";
+  small?: boolean;
+}) {
+  return (
+    <Card className="p-4">
+      <p className="truncate text-xs font-medium text-ink-tertiary">{label}</p>
+      <p
+        className={cn(
+          "mt-1 font-semibold tabular",
+          small ? "text-base" : "text-2xl",
+          tone === "accent" ? "text-accent" : tone === "success" ? "text-success" : "text-ink"
+        )}
+      >
+        {value}
+      </p>
+    </Card>
+  );
+}
+
+function OptimalScoreCard({
+  actual,
+  optimal,
+  gain,
+  dropped,
+  max,
+}: {
+  actual: number;
+  optimal: number;
+  gain: number;
+  dropped: string[];
+  max: number;
+}) {
+  const pct = (v: number) => `${Math.max(0, Math.min(100, (v / max) * 100))}%`;
+  return (
+    <section>
+      <SectionHeading icon={TrendingUp}>Optimal achievable score</SectionHeading>
+      <Card className="space-y-4 p-6">
+        <p className="text-sm text-ink-secondary">
+          {gain > 0 ? (
+            <>
+              With smarter skip decisions —{" "}
+              <span className="font-medium text-ink">
+                skipping your {dropped.join(" & ") || "lowest-EV"} answers
+              </span>{" "}
+              — you&apos;d have scored{" "}
+              <span className="font-semibold text-success tabular">{optimal}</span> with the
+              same knowledge:{" "}
+              <span className="font-semibold text-success">+{gain} marks</span>.
+            </>
+          ) : (
+            <>Your attempt strategy was already efficient — no easy marks were left on the table by over-guessing.</>
+          )}
+        </p>
+        <div className="space-y-2">
+          <Bar label="You scored" value={actual} display={`${actual}`} pct={pct(actual)} tone="ink" />
+          <Bar label="Achievable" value={optimal} display={`${optimal}`} pct={pct(optimal)} tone="success" />
+        </div>
+      </Card>
+    </section>
+  );
+}
+
+function Bar({
+  label,
+  display,
+  pct,
+  tone,
+}: {
+  label: string;
+  value: number;
+  display: string;
+  pct: string;
+  tone: "ink" | "success" | "accent" | "danger" | "warning";
+}) {
+  const bg =
+    tone === "success"
+      ? "bg-success"
+      : tone === "accent"
+      ? "bg-accent"
+      : tone === "danger"
+      ? "bg-danger"
+      : tone === "warning"
+      ? "bg-warning"
+      : "bg-ink";
+  return (
+    <div className="flex items-center gap-3">
+      <span className="w-24 flex-shrink-0 text-xs text-ink-secondary">{label}</span>
+      <div className="h-6 flex-1 overflow-hidden rounded-md bg-panel">
+        <div
+          className={cn("flex h-full items-center justify-end rounded-md px-2 transition-premium", bg)}
+          style={{ width: pct }}
+        >
+          <span className="text-xs font-semibold tabular text-white">{display}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CalibrationCard({ analysis }: { analysis: MentorAnalysis }) {
+  const { buckets, overconfident, underconfident } = analysis.calibration;
+  return (
+    <section>
+      <SectionHeading icon={Target}>Confidence calibration</SectionHeading>
+      <Card className="space-y-4 p-6">
+        <div className="space-y-3">
+          {buckets.map((b) => (
+            <div key={b.level}>
+              <div className="mb-1 flex items-center justify-between text-xs">
+                <span className="font-medium capitalize text-ink">{b.level}</span>
+                <span className="tabular text-ink-tertiary">
+                  {b.count > 0 ? `${Math.round(b.accuracy * 100)}% · ${b.count} Q` : "not used"}
+                </span>
+              </div>
+              <div className="h-2 overflow-hidden rounded-full bg-panel">
+                <div
+                  className={cn(
+                    "h-full rounded-full",
+                    b.level === "confident" ? "bg-success" : b.level === "unsure" ? "bg-warning" : "bg-danger"
+                  )}
+                  style={{ width: `${Math.round(b.accuracy * 100)}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        {overconfident && (
+          <Badge tone="danger">Overconfident — high certainty, low accuracy</Badge>
+        )}
+        {underconfident && (
+          <Badge tone="success">Underconfident — you know more than you trust</Badge>
+        )}
+      </Card>
+    </section>
+  );
+}
+
+function SectionPerformanceCard({
+  breakdown,
+}: {
+  breakdown: SessionResult["section_breakdown"];
+}) {
+  return (
+    <section>
+      <SectionHeading icon={TrendingUp}>Section performance</SectionHeading>
+      <Card className="space-y-3 p-6">
+        {breakdown.map((s) => (
+          <div key={s.key}>
+            <div className="mb-1 flex items-center justify-between text-xs">
+              <span className="font-medium text-ink">{s.name}</span>
+              <span className="tabular text-ink-tertiary">
+                {s.attempted > 0 ? `${Math.round(s.accuracy * 100)}%` : "—"} · net {s.netScore}
+              </span>
+            </div>
+            <div className="h-2 overflow-hidden rounded-full bg-panel">
+              <div
+                className="h-full rounded-full bg-accent"
+                style={{ width: `${Math.round((s.accuracy || 0) * 100)}%` }}
+              />
+            </div>
+          </div>
+        ))}
+      </Card>
+    </section>
+  );
+}
+
+function ScoreLeaksCard({ analysis }: { analysis: MentorAnalysis }) {
+  const leaks: { label: string; detail: string; marks?: string }[] = [];
+  const skip = analysis.skipStrategy;
+  if (skip.marksLostShouldHaveSkipped > 0) {
+    leaks.push({
+      label: "Guessing on questions you should have skipped",
+      detail: `${skip.shouldHaveSkipped.length} wrong low-confidence answers`,
+      marks: `−${skip.marksLostShouldHaveSkipped}`,
+    });
+  }
+  if (analysis.time.rushedErrors.length > 0) {
+    leaks.push({
+      label: "Rushed errors",
+      detail: `${analysis.time.rushedErrors.length} confident answers, wrong and answered too fast`,
+    });
+  }
+  if (analysis.time.timeSinks.length > 0) {
+    leaks.push({
+      label: "Time sinks",
+      detail: `${analysis.time.timeSinks.length} questions you spent heavily on and still got wrong`,
+    });
+  }
+  const weakest = analysis.weakness.sections.find((s) => s.attempted > 0);
+  if (weakest) {
+    leaks.push({
+      label: `Weakest section — ${weakest.name}`,
+      detail: `${Math.round(weakest.accuracy * 100)}% accuracy · revise this first`,
+    });
+  }
+
+  if (leaks.length === 0) return null;
+
+  return (
+    <section>
+      <SectionHeading icon={Target}>Biggest score leaks</SectionHeading>
+      <Card className="divide-y divide-hairline">
+        {leaks.map((l, i) => (
+          <div key={i} className="flex items-center justify-between gap-4 p-4">
+            <div>
+              <p className="text-sm font-medium text-ink">{l.label}</p>
+              <p className="text-xs text-ink-secondary">{l.detail}</p>
+            </div>
+            {l.marks && (
+              <span className="tabular text-sm font-semibold text-danger">{l.marks}</span>
+            )}
+          </div>
+        ))}
+      </Card>
+    </section>
+  );
+}
+
+type Filter = "all" | "wrong" | "skipped" | "marked";
+
+function QuestionReview({ review }: { review: ReviewItem[] }) {
+  const [filter, setFilter] = useState<Filter>("all");
+  const [openId, setOpenId] = useState<string | null>(null);
+
+  const filtered = useMemo(() => {
+    return review.filter((r) => {
+      if (filter === "wrong") return r.isCorrect === false;
+      if (filter === "skipped") return !r.selectedOption;
+      if (filter === "marked") return r.status === "marked" || r.status === "answered_marked";
+      return true;
+    });
+  }, [review, filter]);
+
+  const counts = useMemo(
+    () => ({
+      all: review.length,
+      wrong: review.filter((r) => r.isCorrect === false).length,
+      skipped: review.filter((r) => !r.selectedOption).length,
+      marked: review.filter((r) => r.status === "marked" || r.status === "answered_marked").length,
+    }),
+    [review]
+  );
+
+  return (
+    <section>
+      <SectionHeading icon={Clock}>Question-by-question review</SectionHeading>
+      <div className="mb-3 flex flex-wrap gap-2">
+        {(["all", "wrong", "skipped", "marked"] as Filter[]).map((f) => (
+          <button
+            key={f}
+            onClick={() => setFilter(f)}
+            className={cn(
+              "rounded-lg border px-3 py-1.5 text-xs font-semibold capitalize transition-premium",
+              filter === f
+                ? "border-accent bg-accent-soft text-accent"
+                : "border-hairline text-ink-secondary hover:bg-panel"
+            )}
+          >
+            {f} <span className="tabular text-ink-tertiary">({counts[f]})</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="space-y-2">
+        {filtered.map((r) => {
+          const open = openId === r.questionId;
+          const answered = !!r.selectedOption;
+          const tone = !answered ? "neutral" : r.isCorrect ? "success" : "danger";
+          return (
+            <Card key={r.questionId} className="overflow-hidden">
+              <button
+                onClick={() => setOpenId(open ? null : r.questionId)}
+                className="flex w-full items-center gap-3 p-4 text-left"
+              >
+                <span
+                  className={cn(
+                    "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg text-xs font-bold tabular",
+                    tone === "success"
+                      ? "bg-success-soft text-success"
+                      : tone === "danger"
+                      ? "bg-danger-soft text-danger"
+                      : "bg-panel text-ink-tertiary"
+                  )}
+                >
+                  {r.questionNumber}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-sm text-ink">
+                    {r.stemText || sectionLabel(r.section)}
+                  </p>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-[11px]">
+                    <span className="text-ink-tertiary">{sectionLabel(r.section)}</span>
+                    {r.confidence && (
+                      <Badge tone={CONF_TONE[r.confidence] as "danger" | "warning" | "success"}>
+                        {r.confidence}
+                      </Badge>
+                    )}
+                    <span className="text-ink-tertiary">· {fmtTime(r.timeSpentMs)}</span>
+                    {r.marksAwarded != null && (
+                      <span
+                        className={cn(
+                          "tabular font-semibold",
+                          r.marksAwarded > 0 ? "text-success" : r.marksAwarded < 0 ? "text-danger" : "text-ink-tertiary"
+                        )}
+                      >
+                        {r.marksAwarded > 0 ? "+" : ""}
+                        {r.marksAwarded}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <ChevronDown
+                  className={cn("h-4 w-4 flex-shrink-0 text-ink-tertiary transition-premium", open && "rotate-180")}
+                />
+              </button>
+
+              {open && (
+                <div className="space-y-4 border-t border-hairline bg-panel/40 p-4">
+                  {Array.isArray(r.stem) && r.stem.length > 0 && (
+                    <QuestionContent
+                      blocks={r.stem as never}
+                      textClassName="text-sm text-ink"
+                      imageMaxHeight="max-h-56"
+                    />
+                  )}
+                  <div className="space-y-1.5">
+                    {r.options.map((o) => {
+                      const isCorrect = o.key === r.correctOption;
+                      const isChosen = o.key === r.selectedOption;
+                      return (
+                        <div
+                          key={o.key}
+                          className={cn(
+                            "flex items-start gap-2 rounded-lg border p-2.5 text-sm",
+                            isCorrect
+                              ? "border-success/40 bg-success-soft"
+                              : isChosen
+                              ? "border-danger/40 bg-danger-soft"
+                              : "border-hairline bg-surface"
+                          )}
+                        >
+                          <span
+                            className={cn(
+                              "flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[11px] font-bold",
+                              isCorrect
+                                ? "bg-success text-white"
+                                : isChosen
+                                ? "bg-danger text-white"
+                                : "bg-panel text-ink-tertiary"
+                            )}
+                          >
+                            {o.key}
+                          </span>
+                          <span className="min-w-0 flex-1 text-ink">
+                            {Array.isArray(o.blocks) && o.blocks.length > 0 ? (
+                              <QuestionContent blocks={o.blocks as never} textClassName="text-sm" imageMaxHeight="max-h-32" />
+                            ) : (
+                              o.text
+                            )}
+                          </span>
+                          {isCorrect && <span className="text-[11px] font-semibold text-success">Correct</span>}
+                          {isChosen && !isCorrect && <span className="text-[11px] font-semibold text-danger">Your answer</span>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {Array.isArray(r.solution) && r.solution.length > 0 && (
+                    <div className="rounded-lg border border-hairline bg-surface p-3">
+                      <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-accent">
+                        Solution
+                      </p>
+                      <QuestionContent blocks={r.solution as never} textClassName="text-sm text-ink-secondary" imageMaxHeight="max-h-56" />
+                    </div>
+                  )}
+                </div>
+              )}
+            </Card>
+          );
+        })}
+        {filtered.length === 0 && (
+          <Card className="p-8 text-center text-sm text-ink-secondary">
+            No questions in this filter.
+          </Card>
+        )}
+      </div>
+
+      <div className="mt-6 flex justify-center">
+        <ButtonLink href="/dashboard" variant="primary" size="md">
+          Back to dashboard
+          <ArrowRight className="h-4 w-4" />
+        </ButtonLink>
+      </div>
+    </section>
   );
 }

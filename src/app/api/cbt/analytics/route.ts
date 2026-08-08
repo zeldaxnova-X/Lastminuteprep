@@ -13,10 +13,12 @@ export async function GET(request: NextRequest) {
     const supabase = createServerSupabaseClient();
     const userId = DEV_USER_ID;
 
-    // Fetch all completed attempts for this user
+    // Fetch all completed attempts for this user.
+    // NOTE: the column is `score` (not `total_score`) — selecting a non-existent
+    // column previously 500'd this endpoint and broke the dashboard.
     const { data: attempts, error } = await supabase
       .from("exam_attempts")
-      .select("id, total_score, max_score, total_questions, time_spent_seconds, created_at, section_breakdown")
+      .select("id, score, max_score, total_questions, time_spent_seconds, created_at, section_breakdown")
       .eq("user_id", userId)
       .in("status", ["completed", "auto_submitted"]);
 
@@ -26,12 +28,12 @@ export async function GET(request: NextRequest) {
 
     if (!attempts || attempts.length === 0) {
       return NextResponse.json({
-        total_questions_practiced: 0,
-        accuracy_percentage: null,
-        average_score: null,
+        unique_questions_practiced: 0,
+        overall_accuracy: 0,
+        avg_score: 0,
         tests_completed: 0,
-        current_streak_days: 0,
-        average_time_per_question_seconds: null,
+        current_streak: 0,
+        avg_time_per_question: 0,
         weakest_subject: null,
         strongest_subject: null,
         has_completed_attempts: false,
@@ -63,7 +65,7 @@ export async function GET(request: NextRequest) {
       totalPracticed = attempts.reduce((sum, a) => sum + (a.total_questions || 0), 0);
     }
 
-    const totalScoreSum = attempts.reduce((sum, a) => sum + (a.total_score || 0), 0);
+    const totalScoreSum = attempts.reduce((sum, a) => sum + (a.score || 0), 0);
     const avgScore = attempts.length > 0 ? Math.round((totalScoreSum / attempts.length) * 10) / 10 : 0;
     const accuracyPct = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 1000) / 10 : 0;
     const avgTimePerQ = totalPracticed > 0 ? Math.round(totalTimeSpent / totalPracticed) : 0;
@@ -91,15 +93,37 @@ export async function GET(request: NextRequest) {
       }
     }
 
+    // Weakest / strongest subject — derived honestly from per-attempt section
+    // breakdowns (accuracy aggregated across attempts), not hardcoded.
+    const subjectAgg: Record<string, { correct: number; answered: number }> = {};
+    for (const a of attempts) {
+      const sb = (a.section_breakdown ?? []) as Array<{
+        subject?: string;
+        correct?: number;
+        answered?: number;
+      }>;
+      if (!Array.isArray(sb)) continue;
+      for (const s of sb) {
+        if (!s.subject) continue;
+        const agg = (subjectAgg[s.subject] ??= { correct: 0, answered: 0 });
+        agg.correct += s.correct ?? 0;
+        agg.answered += s.answered ?? 0;
+      }
+    }
+    const ranked = Object.entries(subjectAgg)
+      .filter(([, v]) => v.answered > 0)
+      .map(([subject, v]) => ({ subject, accuracy: v.correct / v.answered }))
+      .sort((x, y) => x.accuracy - y.accuracy);
+
     return NextResponse.json({
-      total_questions_practiced: totalPracticed,
-      accuracy_percentage: accuracyPct,
-      average_score: avgScore,
+      unique_questions_practiced: totalPracticed,
+      overall_accuracy: accuracyPct,
+      avg_score: avgScore,
       tests_completed: attempts.length,
-      current_streak_days: streak,
-      average_time_per_question_seconds: avgTimePerQ,
-      weakest_subject: "General Awareness",
-      strongest_subject: "Reasoning",
+      current_streak: streak,
+      avg_time_per_question: avgTimePerQ,
+      weakest_subject: ranked.length > 0 ? ranked[0].subject : null,
+      strongest_subject: ranked.length > 0 ? ranked[ranked.length - 1].subject : null,
       has_completed_attempts: true,
     });
   } catch (err) {

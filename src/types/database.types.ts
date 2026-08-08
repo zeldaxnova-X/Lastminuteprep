@@ -283,6 +283,8 @@ export interface SaveAnswerRequest {
   is_marked_for_review?: boolean;
   is_visited?: boolean;
   time_spent_seconds?: number;
+  confidence?: "guessed" | "unsure" | "confident";
+  visit_order?: number | null;
 }
 
 export interface SubmitExamResponse {
