@@ -23,6 +23,7 @@ export default function CBTTestEnginePage() {
 
   const { initTest, isSubmitted, currentQuestionIndex, submitTest, zoomedImage, setZoomedImage } = useTestStore();
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+  const [showMobileWarning, setShowMobileWarning] = useState(true);
 
   useEffect(() => {
     async function loadAttemptData() {
@@ -97,7 +98,12 @@ export default function CBTTestEnginePage() {
 
   useEffect(() => {
     if (isSubmitted && examId) {
-      router.push(`/test/${examId}/result`);
+      // A free sample (?sample=1) routes to the conversion screen; a full
+      // attempt routes to the premium report.
+      const isSample =
+        typeof window !== "undefined" &&
+        new URLSearchParams(window.location.search).get("sample") === "1";
+      router.push(isSample ? `/sample/${examId}` : `/test/${examId}/result`);
     }
   }, [isSubmitted, examId, router]);
 
@@ -156,6 +162,25 @@ export default function CBTTestEnginePage() {
   return (
     <div className="relative flex h-screen h-[100dvh] w-screen select-none flex-col overflow-hidden bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
       <CBTHeader title={title} totalQuestions={validatedQuestions.length} />
+
+      {/* Mobile advisory — the real TCS iON CBT runs on desktop. This layout is
+          faithful but scaled down; warn once, dismissible. (§8) */}
+      {showMobileWarning && (
+        <div className="flex items-start gap-2 border-b border-amber-200 bg-amber-50 px-3 py-2 text-[11px] text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300 md:hidden">
+          <span className="flex-1 leading-snug">
+            The real exam is a desktop computer-based test. This mobile layout is
+            faithful but scaled down — for the most realistic practice, use a laptop
+            or tablet.
+          </span>
+          <button
+            onClick={() => setShowMobileWarning(false)}
+            className="flex-shrink-0 font-semibold underline"
+            aria-label="Dismiss desktop advisory"
+          >
+            Got it
+          </button>
+        </div>
+      )}
 
       <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden md:flex-row">
         <CBTQuestionView

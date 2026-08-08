@@ -1,179 +1,159 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Zap, Bookmark, Trash2, ArrowRight, ExternalLink, Search, Filter } from "lucide-react";
+import { useState, useEffect, useMemo } from "react";
+import { TopNav } from "@/components/top-nav";
+import { Card } from "@/components/ui/card";
+import { ButtonLink } from "@/components/ui/button";
 import { KaTeXRenderer } from "@/components/katex-renderer";
+import { sectionLabel } from "@/lib/cbt-questions";
+import { cn } from "@/lib/utils";
+import { Bookmark, Search, Loader2 } from "lucide-react";
 
-interface BookmarkItem {
+interface BookmarkRow {
   id: string;
   question_id: string;
-  question_text: string;
-  subject: string;
-  paper_name: string;
+  note?: string | null;
   created_at: string;
-  note?: string;
+  question: {
+    question_text?: string;
+    subject?: string;
+    paper_name?: string;
+  } | null;
 }
 
+const SUBJECTS = [
+  "ALL",
+  "reasoning",
+  "general_awareness",
+  "quantitative_aptitude",
+  "english_comprehension",
+];
+
 export default function BookmarksPage() {
-  const [bookmarks, setBookmarks] = useState<BookmarkItem[]>([]);
+  const [bookmarks, setBookmarks] = useState<BookmarkRow[]>([]);
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedSubject, setSelectedSubject] = useState<string>("ALL");
+  const [query, setQuery] = useState("");
+  const [subject, setSubject] = useState("ALL");
 
   useEffect(() => {
-    async function fetchBookmarks() {
+    (async () => {
       try {
         const res = await fetch("/api/cbt/bookmarks");
         const json = await res.json();
-        if (json.bookmarks) {
-          setBookmarks(json.bookmarks);
-        } else {
-          // Fallback sample bookmarks for illustration
-          setBookmarks([
-            {
-              id: "bm-1",
-              question_id: "vq-101",
-              question_text: "If $a + b + c = 0$, then find the value of $\\frac{a^2}{bc} + \\frac{b^2}{ca} + \\frac{c^2}{ab}$.",
-              subject: "Quantitative Aptitude",
-              paper_name: "SSC CGL Tier I 2023 Shift 1",
-              created_at: "2026-07-30T10:00:00Z",
-              note: "Identity: $a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$. Answer is 3.",
-            },
-            {
-              id: "bm-2",
-              question_id: "vq-102",
-              question_text: "Select the most appropriate synonym of the given word: **APEX**",
-              subject: "English Comprehension",
-              paper_name: "SSC CGL Tier I 2023 Shift 2",
-              created_at: "2026-07-30T11:30:00Z",
-              note: "Apex = Pinnacle / Zenith / Acme.",
-            },
-          ]);
-        }
-      } catch (e) {
-        console.error("Error fetching bookmarks", e);
+        setBookmarks(Array.isArray(json.bookmarks) ? json.bookmarks : []);
+      } catch {
+        setBookmarks([]);
       } finally {
         setLoading(false);
       }
-    }
-    fetchBookmarks();
+    })();
   }, []);
 
-  const handleRemoveBookmark = (id: string) => {
-    setBookmarks((prev) => prev.filter((b) => b.id !== id));
-  };
-
-  const filtered = bookmarks.filter((b) => {
-    const matchSubj = selectedSubject === "ALL" || b.subject === selectedSubject;
-    const matchSearch =
-      searchQuery.trim() === "" ||
-      b.question_text.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (b.note && b.note.toLowerCase().includes(searchQuery.toLowerCase()));
-    return matchSubj && matchSearch;
-  });
+  const filtered = useMemo(() => {
+    return bookmarks.filter((b) => {
+      const secKey = b.question?.subject ?? "";
+      const matchSubj = subject === "ALL" || secKey === subject;
+      const text = `${b.question?.question_text ?? ""} ${b.note ?? ""}`.toLowerCase();
+      const matchSearch = query.trim() === "" || text.includes(query.toLowerCase());
+      return matchSubj && matchSearch;
+    });
+  }, [bookmarks, query, subject]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-950 flex flex-col">
-      {/* Header */}
-      <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/dashboard" className="flex items-center gap-2.5 font-black text-xl tracking-tight text-white">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center">
-              <Zap className="w-4 h-4 text-slate-950 fill-slate-950" />
-            </div>
-            <span>LastMile<span className="text-amber-400">Prep</span></span>
-          </Link>
-          <Link href="/dashboard" className="text-xs text-slate-400 hover:text-white transition-colors font-semibold">
-            ← Back to Dashboard
-          </Link>
-        </div>
-      </header>
-
-      {/* Main Container */}
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex-1 space-y-6">
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2.5">
-            <Bookmark className="w-7 h-7 text-amber-400 fill-amber-400" />
-            <span>Bookmarked Questions Library</span>
+    <div className="flex min-h-screen flex-col bg-bg">
+      <TopNav />
+      <main className="mx-auto w-full max-w-4xl flex-1 space-y-6 px-4 py-10 sm:px-6">
+        <div className="space-y-1.5">
+          <h1 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            <Bookmark className="h-6 w-6 text-accent" />
+            Bookmarks
           </h1>
-          <p className="text-slate-400 text-sm mt-1">
-            Review tricky questions, personal solution notes, and formulas saved during exam attempts.
+          <p className="text-sm text-ink-secondary">
+            Questions you saved during mocks, with your revision notes.
           </p>
         </div>
 
-        {/* Filter Controls */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5 space-y-3">
+        {/* Filters */}
+        <Card className="space-y-3 p-4">
           <div className="relative">
-            <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-tertiary" />
             <input
               type="text"
-              placeholder="Search saved notes or question text..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 rounded-xl pl-10 pr-4 py-2 text-xs sm:text-sm focus:outline-none focus:border-amber-400"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search saved questions or notes…"
+              className="w-full rounded-lg border border-hairline bg-panel py-2 pl-9 pr-3 text-sm text-ink placeholder:text-ink-tertiary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
             />
           </div>
-
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
-            {["ALL", "Quantitative Aptitude", "General Intelligence & Reasoning", "General Awareness", "English Comprehension"].map((subj) => (
+          <div className="flex flex-wrap gap-2">
+            {SUBJECTS.map((s) => (
               <button
-                key={subj}
-                onClick={() => setSelectedSubject(subj)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
-                  selectedSubject === subj
-                    ? "bg-amber-400 text-slate-950 font-bold"
-                    : "bg-slate-950 border border-slate-800 text-slate-400 hover:text-white"
-                }`}
+                key={s}
+                onClick={() => setSubject(s)}
+                className={cn(
+                  "rounded-lg border px-3 py-1.5 text-xs font-semibold transition-premium",
+                  subject === s
+                    ? "border-accent bg-accent-soft text-accent"
+                    : "border-hairline text-ink-secondary hover:bg-panel"
+                )}
               >
-                {subj}
+                {s === "ALL" ? "All" : sectionLabel(s)}
               </button>
             ))}
           </div>
-        </div>
+        </Card>
 
-        {/* Bookmark Cards */}
-        {filtered.length === 0 ? (
-          <div className="text-center py-16 bg-slate-900 border border-slate-800 rounded-2xl">
-            <p className="text-slate-400 font-medium text-sm">No bookmarked questions match your criteria.</p>
+        {/* List */}
+        {loading ? (
+          <div className="flex items-center justify-center gap-2 py-16 text-ink-secondary">
+            <Loader2 className="h-4 w-4 animate-spin text-accent" />
+            <span className="text-sm">Loading bookmarks…</span>
           </div>
+        ) : filtered.length === 0 ? (
+          <Card className="flex flex-col items-center gap-2 px-6 py-16 text-center">
+            <Bookmark className="h-6 w-6 text-ink-tertiary" />
+            <p className="text-sm font-medium text-ink">
+              {bookmarks.length === 0 ? "No bookmarks yet" : "Nothing matches your filters"}
+            </p>
+            <p className="max-w-sm text-sm text-ink-secondary">
+              {bookmarks.length === 0
+                ? "Bookmark a question during a mock to save it here for revision."
+                : "Try a different subject or search term."}
+            </p>
+            {bookmarks.length === 0 && (
+              <ButtonLink href="/test/create?mode=pyp" variant="secondary" size="sm" className="mt-2">
+                Start a mock
+              </ButtonLink>
+            )}
+          </Card>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-3">
             {filtered.map((b) => (
-              <div
-                key={b.id}
-                className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 shadow-lg hover:border-slate-700 transition-colors"
-              >
-                <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-                  <div className="flex items-center gap-2">
-                    <span className="bg-slate-950 border border-slate-800 text-amber-400 font-bold px-2.5 py-1 rounded-md">
-                      {b.subject}
+              <Card key={b.id} className="space-y-3 p-5">
+                <div className="flex items-center gap-2 text-xs">
+                  {b.question?.subject && (
+                    <span className="rounded-md bg-accent-soft px-2 py-0.5 font-semibold text-accent">
+                      {sectionLabel(b.question.subject)}
                     </span>
-                    <span className="text-slate-400">{b.paper_name}</span>
+                  )}
+                  {b.question?.paper_name && (
+                    <span className="text-ink-tertiary">{b.question.paper_name}</span>
+                  )}
+                </div>
+                {b.question?.question_text && (
+                  <div className="rounded-lg border border-hairline bg-panel p-3.5 text-sm text-ink">
+                    <KaTeXRenderer content={b.question.question_text} />
                   </div>
-
-                  <button
-                    onClick={() => handleRemoveBookmark(b.id)}
-                    className="text-slate-500 hover:text-red-400 transition-colors p-1"
-                    title="Remove Bookmark"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                </div>
-
-                <div className="text-sm sm:text-base text-slate-100 font-medium leading-relaxed bg-slate-950 border border-slate-800/80 rounded-xl p-4">
-                  <KaTeXRenderer content={b.question_text} />
-                </div>
-
+                )}
                 {b.note && (
-                  <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-3.5 text-xs text-amber-300 space-y-1">
-                    <span className="font-bold uppercase tracking-wider text-[10px] block text-amber-400">
-                      Personal Revision Note
+                  <div className="rounded-lg bg-accent-soft p-3 text-xs text-accent">
+                    <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider">
+                      Your note
                     </span>
                     <KaTeXRenderer content={b.note} />
                   </div>
                 )}
-              </div>
+              </Card>
             ))}
           </div>
         )}

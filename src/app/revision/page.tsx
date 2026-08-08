@@ -1,146 +1,150 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { Zap, RotateCcw, CheckCircle2, XCircle, ChevronRight, Filter, RefreshCw } from "lucide-react";
+import { useState, useEffect, useMemo } from "react";
+import { TopNav } from "@/components/top-nav";
+import { Card } from "@/components/ui/card";
+import { ButtonLink } from "@/components/ui/button";
 import { KaTeXRenderer } from "@/components/katex-renderer";
+import { sectionLabel } from "@/lib/cbt-questions";
+import { cn } from "@/lib/utils";
+import { RotateCcw, Loader2 } from "lucide-react";
 
-interface RevisionItem {
+interface RevisionQuestion {
   id: string;
-  question_number: number;
-  question_text: string;
-  user_answer: string;
-  correct_answer: string;
-  explanation: string;
-  subject: string;
-  paper_name: string;
+  subject?: string;
+  question_text?: string;
+  correct_answer?: string;
+  paper_name?: string;
+  times_wrong?: number;
 }
 
-export default function RevisionQueuePage() {
-  const [items, setItems] = useState<RevisionItem[]>([
-    {
-      id: "rev-1",
-      question_number: 14,
-      question_text: "In a triangle $ABC$, the bisector of $\\angle A$ intersects $BC$ at $D$. If $AB = 12$ cm, $AC = 15$ cm, and $BD = 6$ cm, find $DC$.",
-      user_answer: "B (8 cm)",
-      correct_answer: "A (7.5 cm)",
-      explanation: "By Angle Bisector Theorem: $\\frac{AB}{AC} = \\frac{BD}{DC} \\Rightarrow \\frac{12}{15} = \\frac{6}{DC} \\Rightarrow 12 \\cdot DC = 90 \\Rightarrow DC = 7.5$ cm.",
-      subject: "Quantitative Aptitude",
-      paper_name: "SSC CGL 2023 Shift 1",
-    },
-    {
-      id: "rev-2",
-      question_number: 32,
-      question_text: "Four letter-clusters have been given, out of which three are alike in some manner and one is different. Select the odd one: **PK, GT, MN, IR, HS, XC**",
-      user_answer: "C (HS)",
-      correct_answer: "D (XC)",
-      explanation: "All pairs except XC are reverse opposite letter pairs ($P\\leftrightarrow K, G\\leftrightarrow T, M\\leftrightarrow N, I\\leftrightarrow R, H\\leftrightarrow S$). X opposite is C is false ($X\\leftrightarrow C$ is correct, but let's check alphabetical position difference).",
-      subject: "General Intelligence & Reasoning",
-      paper_name: "SSC CGL 2023 Shift 2",
-    },
-  ]);
+const SUBJECTS = [
+  "ALL",
+  "reasoning",
+  "general_awareness",
+  "quantitative_aptitude",
+  "english_comprehension",
+];
 
-  const [filter, setFilter] = useState("ALL");
+export default function RevisionQueuePage() {
+  const [questions, setQuestions] = useState<RevisionQuestion[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [subject, setSubject] = useState("ALL");
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch("/api/cbt/analytics/revision-queue");
+        const json = await res.json();
+        setQuestions(Array.isArray(json.questions) ? json.questions : []);
+      } catch {
+        setQuestions([]);
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, []);
+
+  const filtered = useMemo(
+    () => questions.filter((q) => subject === "ALL" || q.subject === subject),
+    [questions, subject]
+  );
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col">
-      {/* Header */}
-      <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/dashboard" className="flex items-center gap-2.5 font-black text-xl tracking-tight text-white">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-red-600 to-amber-500 flex items-center justify-center">
-              <Zap className="w-4 h-4 text-white fill-white" />
-            </div>
-            <span>LastMile<span className="text-red-400">Prep</span></span>
-          </Link>
-          <Link href="/dashboard" className="text-xs text-slate-400 hover:text-white transition-colors font-semibold">
-            ← Back to Dashboard
-          </Link>
-        </div>
-      </header>
-
-      {/* Main Container */}
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex-1 space-y-6">
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2.5">
-            <RotateCcw className="w-7 h-7 text-red-400" />
-            <span>Wrong Answer Revision Queue</span>
+    <div className="flex min-h-screen flex-col bg-bg">
+      <TopNav />
+      <main className="mx-auto w-full max-w-4xl flex-1 space-y-6 px-4 py-10 sm:px-6">
+        <div className="space-y-1.5">
+          <h1 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            <RotateCcw className="h-6 w-6 text-accent" />
+            Revision
           </h1>
-          <p className="text-slate-400 text-sm mt-1">
-            Systematic spaced-repetition queue of missed questions across your mock exam history.
+          <p className="text-sm text-ink-secondary">
+            Questions you&apos;ve missed across your mocks — revise the ones you get
+            wrong most first.
           </p>
         </div>
 
-        {/* Filter Bar */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2 overflow-x-auto text-xs font-semibold">
-            {["ALL", "Quantitative Aptitude", "General Intelligence & Reasoning", "General Awareness", "English Comprehension"].map((subj) => (
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap gap-2">
+            {SUBJECTS.map((s) => (
               <button
-                key={subj}
-                onClick={() => setFilter(subj)}
-                className={`px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors ${
-                  filter === subj
-                    ? "bg-red-600 text-white font-bold"
-                    : "bg-slate-950 border border-slate-800 text-slate-400 hover:text-white"
-                }`}
+                key={s}
+                onClick={() => setSubject(s)}
+                className={cn(
+                  "rounded-lg border px-3 py-1.5 text-xs font-semibold transition-premium",
+                  subject === s
+                    ? "border-accent bg-accent-soft text-accent"
+                    : "border-hairline text-ink-secondary hover:bg-panel"
+                )}
               >
-                {subj}
+                {s === "ALL" ? "All" : sectionLabel(s)}
               </button>
             ))}
           </div>
-
-          <span className="text-xs text-slate-400 flex-shrink-0">
-            {items.length} Items Pending Revision
-          </span>
+          {!loading && (
+            <span className="text-xs text-ink-tertiary">
+              {filtered.length} to revise
+            </span>
+          )}
         </div>
 
-        {/* Revision Items */}
-        <div className="space-y-6">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-4"
-            >
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-                <div className="flex items-center gap-2">
-                  <span className="bg-slate-950 border border-slate-800 text-red-400 font-bold px-2.5 py-1 rounded-md">
-                    {item.subject}
-                  </span>
-                  <span className="text-slate-400">{item.paper_name}</span>
+        {loading ? (
+          <div className="flex items-center justify-center gap-2 py-16 text-ink-secondary">
+            <Loader2 className="h-4 w-4 animate-spin text-accent" />
+            <span className="text-sm">Loading your revision queue…</span>
+          </div>
+        ) : filtered.length === 0 ? (
+          <Card className="flex flex-col items-center gap-2 px-6 py-16 text-center">
+            <RotateCcw className="h-6 w-6 text-ink-tertiary" />
+            <p className="text-sm font-medium text-ink">
+              {questions.length === 0 ? "Nothing to revise yet" : "No misses in this section"}
+            </p>
+            <p className="max-w-sm text-sm text-ink-secondary">
+              {questions.length === 0
+                ? "Complete a mock — the questions you get wrong will collect here for focused revision."
+                : "You haven't missed any questions in this section. Nice."}
+            </p>
+            {questions.length === 0 && (
+              <ButtonLink href="/test/create?mode=pyp" variant="secondary" size="sm" className="mt-2">
+                Take a mock
+              </ButtonLink>
+            )}
+          </Card>
+        ) : (
+          <div className="space-y-3">
+            {filtered.map((q) => (
+              <Card key={q.id} className="space-y-3 p-5">
+                <div className="flex items-center justify-between gap-2 text-xs">
+                  <div className="flex items-center gap-2">
+                    {q.subject && (
+                      <span className="rounded-md bg-accent-soft px-2 py-0.5 font-semibold text-accent">
+                        {sectionLabel(q.subject)}
+                      </span>
+                    )}
+                    {q.paper_name && <span className="text-ink-tertiary">{q.paper_name}</span>}
+                  </div>
+                  {q.times_wrong && q.times_wrong > 1 && (
+                    <span className="rounded-md bg-danger-soft px-2 py-0.5 font-semibold text-danger">
+                      Missed {q.times_wrong}×
+                    </span>
+                  )}
                 </div>
-
-                <span className="text-red-400 font-bold bg-red-500/10 border border-red-500/30 px-2.5 py-0.5 rounded-md">
-                  Missed in Mock
-                </span>
-              </div>
-
-              <div className="text-base text-slate-100 font-medium leading-relaxed bg-slate-950 border border-slate-800/80 rounded-xl p-4">
-                <KaTeXRenderer content={item.question_text} />
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold">
-                <div className="bg-red-500/10 border border-red-500/30 p-3 rounded-xl flex items-center justify-between text-red-300">
-                  <span>Your Previous Option:</span>
-                  <span className="font-bold">{item.user_answer}</span>
-                </div>
-
-                <div className="bg-emerald-500/10 border border-emerald-500/30 p-3 rounded-xl flex items-center justify-between text-emerald-300">
-                  <span>Correct Option:</span>
-                  <span className="font-bold">{item.correct_answer}</span>
-                </div>
-              </div>
-
-              <div className="bg-slate-950 border border-blue-500/30 rounded-2xl p-4 space-y-2 text-xs">
-                <span className="font-bold text-blue-400 uppercase tracking-wider block text-[10px]">
-                  Step-by-Step LaTeX Explanation
-                </span>
-                <div className="text-slate-300 leading-relaxed">
-                  <KaTeXRenderer content={item.explanation} />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+                {q.question_text && (
+                  <div className="rounded-lg border border-hairline bg-panel p-3.5 text-sm text-ink">
+                    <KaTeXRenderer content={q.question_text} />
+                  </div>
+                )}
+                {q.correct_answer && (
+                  <div className="flex items-center gap-2 rounded-lg bg-success-soft px-3 py-2 text-xs">
+                    <span className="font-medium text-ink-secondary">Correct answer</span>
+                    <span className="font-semibold text-success">{q.correct_answer}</span>
+                  </div>
+                )}
+              </Card>
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );

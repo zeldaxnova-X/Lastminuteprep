@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -11,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "LastMilePrep — SSC CGL Practice Platform",
   description:
-    "Practice SSC CGL previous year papers with 10,614 verified questions, authentic CBT interface, and AI-powered analytics.",
+    "Practice SSC CGL previous year papers with a faithful TCS iON CBT interface and an AI Mentor that shows you exactly how to score more marks.",
 };
 
 export default function RootLayout({
@@ -20,10 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-white text-gray-900 antialiased font-sans">
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full`}
+    >
+      <body className="min-h-full bg-bg text-ink antialiased">{children}</body>
     </html>
   );
 }

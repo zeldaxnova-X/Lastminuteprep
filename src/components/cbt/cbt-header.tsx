@@ -47,6 +47,8 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) =
     return `${secs}s`;
   };
 
+  // §4: amber under 5:00, red under 1:00.
+  const isCritical = timeRemaining <= 60;
   const isLowTime = timeRemaining <= 300;
 
   let answeredCount = 0;
@@ -99,12 +101,18 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) =
 
         <div
           className={`flex items-center gap-1.5 rounded-xl border px-3 py-1.5 font-mono text-sm font-semibold tabular-nums transition-colors ${
-            isLowTime
+            isCritical
               ? "animate-pulse border-rose-300 bg-rose-50 text-rose-600 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-400"
+              : isLowTime
+              ? "border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-400"
               : "border-slate-200 bg-slate-50 text-slate-900 dark:border-slate-800 dark:bg-slate-800/60 dark:text-slate-100"
           }`}
         >
-          <Clock className={`h-4 w-4 ${isLowTime ? "text-rose-500" : "text-slate-400"}`} />
+          <Clock
+            className={`h-4 w-4 ${
+              isCritical ? "text-rose-500" : isLowTime ? "text-amber-500" : "text-slate-400"
+            }`}
+          />
           <span>{formatTime(timeRemaining)}</span>
         </div>
       </div>

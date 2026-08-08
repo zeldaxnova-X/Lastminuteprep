@@ -1,5 +1,107 @@
 import { NextRequest, NextResponse } from "next/server";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { buildAndStoreReport } from "@/lib/exam/build-report";
+
+type ResponseStatus =
+  | "not_visited"
+  | "not_answered"
+  | "answered"
+  | "marked"
+  | "answered_marked";
+
+const EXAM_TYPE_TO_MODE: Record<string, string> = {
+  previous_year_paper: "pyp",
+  subject_test: "subject",
+  random_test: "random",
+  custom_test: "custom",
+};
+
+/** Derive the 5-state response status from the legacy attempt_answers flags. */
+function deriveStatus(a: {
+  selected_option: string | null;
+  is_marked_for_review: boolean | null;
+  is_visited: boolean | null;
+}): ResponseStatus {
+  const answered = !!a.selected_option;
+  const marked = !!a.is_marked_for_review;
+  if (answered && marked) return "answered_marked";
+  if (answered) return "answered";
+  if (marked) return "marked";
+  if (a.is_visited) return "not_answered";
+  return "not_visited";
+}
+
+/**
+ * Project a finished exam_attempts row + its attempt_answers into the canonical
+ * test_sessions + responses tables (§7). Idempotent via upserts.
+ */
+async function mirrorToCanonical(
+  supabase: SupabaseClient,
+  attempt: {
+    id: string;
+    user_id: string;
+    exam_type: string;
+    started_at: string;
+  },
+  answers: Array<{
+    id: string;
+    question_id: string;
+    selected_option: string | null;
+    is_marked_for_review: boolean | null;
+    is_visited: boolean | null;
+    confidence: string | null;
+    time_spent_seconds: number | null;
+    question_index: number | null;
+  }>,
+  marksById: Map<string, { is_correct: boolean | null; marks_awarded: number }>
+) {
+  const { data: exam } = await supabase
+    .from("exams")
+    .select("id")
+    .eq("slug", "ssc-cgl-tier-1")
+    .single();
+
+  const nowIso = new Date().toISOString();
+
+  await supabase.from("test_sessions").upsert(
+    {
+      id: attempt.id, // reuse the attempt uuid so URLs/lookups stay 1:1
+      user_id: attempt.user_id,
+      exam_id: exam?.id ?? null,
+      template_id: null,
+      mode: EXAM_TYPE_TO_MODE[attempt.exam_type] ?? "custom",
+      status: "submitted",
+      started_at: attempt.started_at,
+      submitted_at: nowIso,
+      time_remaining_ms: 0,
+      updated_at: nowIso,
+    },
+    { onConflict: "id" }
+  );
+
+  const responseRows = answers.map((a) => {
+    const scored = marksById.get(a.id);
+    return {
+      session_id: attempt.id,
+      question_id: a.question_id,
+      selected_option: a.selected_option,
+      status: deriveStatus(a),
+      confidence: a.confidence ?? "unsure",
+      time_spent_ms: (a.time_spent_seconds ?? 0) * 1000,
+      visit_order: a.question_index != null ? a.question_index + 1 : null,
+      is_correct: scored?.is_correct ?? null,
+      marks_awarded: scored?.marks_awarded ?? null,
+      updated_at: nowIso,
+    };
+  });
+
+  if (responseRows.length) {
+    await supabase
+      .from("responses")
+      .upsert(responseRows, { onConflict: "session_id,question_id" });
+  }
+}
 
 /**
  * POST /api/cbt/exams/[attemptId]/submit
@@ -119,6 +221,11 @@ export async function POST(
       };
     }).filter(Boolean);
 
+    // Keyed by attempt_answers.id for the canonical mirror below.
+    const marksAwardedById = new Map(
+      answerUpdates.filter(Boolean).map((u) => [u!.id, u!])
+    );
+
     // Batch update answers
     for (const update of answerUpdates) {
       if (!update) continue;
@@ -179,6 +286,21 @@ export async function POST(
 
     if (updateError) {
       return NextResponse.json({ error: updateError.message }, { status: 500 });
+    }
+
+    // ------------------------------------------------------------------
+    // Mirror the finished attempt into the canonical M2 model
+    // (test_sessions + responses, incl. confidence) so the scorer (M4) and
+    // AI Mentor (M5/M6) read from the spec's §7 tables. Best-effort: a
+    // failure here must not break the legacy result path.
+    // ------------------------------------------------------------------
+    try {
+      await mirrorToCanonical(supabase, attempt, answers || [], marksAwardedById);
+      // Deterministic scoring + Mentor analysis → session_results + mentor_reports.
+      const report = await buildAndStoreReport(supabase, attempt.id);
+      if (!report.ok) console.warn("Report build skipped:", report.reason);
+    } catch (mirrorErr) {
+      console.error("Canonical mirror/report failed (non-fatal):", mirrorErr);
     }
 
     return NextResponse.json({

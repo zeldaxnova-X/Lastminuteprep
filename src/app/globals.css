@@ -1,43 +1,185 @@
 @import "tailwindcss";
 @import "katex/dist/katex.min.css";
 
+/* ============================================================
+   LastMilePrep — design tokens (single source of truth).
+   Premium white base. EMERALD is the workhorse accent; GOLD is
+   reserved for the AI Mentor / ₹49 tier / blurred "+X" reveal.
+   Swap --accent-* to re-hue the entire product.
+   Applies everywhere EXCEPT the live CBT test screen, which stays
+   an intentionally institutional TCS iON replica.
+   ============================================================ */
+
 :root {
-  --background: #FFFFFF;
-  --foreground: #111827;
+  /* Surfaces */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --panel: #fafaf9;          /* warm recessed panel */
+  --border: #e7e7e4;         /* warm hairline */
+  --border-strong: #d6d3d1;
+  --panel-dark: #0b0b0c;     /* near-black spotlight panel (NOT dark mode) */
+  --panel-dark-2: #17171a;
+
+  /* Ink */
+  --ink: #0a0a0a;
+  --ink-secondary: #525252;
+  --ink-tertiary: #a3a3a3;
+
+  /* Brand accent — deep emerald (workhorse) */
+  --accent: #047857;
+  --accent-hover: #065f46;
+  --accent-soft: #ecfdf5;
+
+  /* Premium accent — warm gold (rare; Mentor / ₹49 / +X reveal) */
+  --gold: #b45309;
+  --gold-bright: #d97706;
+  --gold-soft: #fef3c7;
+
+  /* Semantic */
+  --success: #047857;        /* emerald */
+  --success-soft: #ecfdf5;
+  --warning: #d97706;        /* gold */
+  --warning-soft: #fef3c7;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+
+  /* Elevation */
+  --shadow-soft: 0 1px 2px rgba(10, 10, 10, 0.05);
+  --shadow-card: 0 1px 3px rgba(10, 10, 10, 0.07), 0 1px 2px rgba(10, 10, 10, 0.04);
+  --shadow-lift: 0 24px 60px -24px rgba(10, 10, 10, 0.28);
+
+  --background: var(--bg);
+  --foreground: var(--ink);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-panel-dark: var(--panel-dark);
+  --color-panel-dark-2: var(--panel-dark-2);
+  --color-hairline: var(--border);
+  --color-hairline-strong: var(--border-strong);
+
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-soft: var(--gold-soft);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-lift: var(--shadow-lift);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Inter', var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* Light scrollbar */
+/* Numerals never jitter. */
+.tabular,
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+/* Restrained serif for big display headings. */
+.font-report {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
-  border-radius: 4px;
+  background: #e5e5e2;
+  border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: var(--border-strong);
 }
 
-/* Selection */
 ::selection {
-  background: #DBEAFE;
-  color: #1E40AF;
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+}
+
+.transition-premium {
+  transition-property: color, background-color, border-color, box-shadow,
+    transform, opacity, filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 180ms;
+}
+
+/* ---- Landing craft utilities (light, hand-rolled) ---- */
+
+/* Fine grid backdrop for the hero. */
+.bg-grid {
+  background-image: linear-gradient(to right, rgba(10, 10, 10, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 78%);
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 78%);
+}
+
+/* Slow-drifting soft emerald radial wash (very low opacity). */
+.hero-wash {
+  background: radial-gradient(60% 50% at 20% 10%, rgba(4, 120, 87, 0.1), transparent 60%),
+    radial-gradient(50% 45% at 85% 20%, rgba(180, 83, 9, 0.06), transparent 60%);
+  animation: washDrift 22s ease-in-out infinite alternate;
+}
+@keyframes washDrift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(0, -3%, 0) scale(1.08); }
+}
+
+/* Infinite marquee track (two copies inside, translate -50%). */
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-wash,
+  .marquee-track {
+    animation: none !important;
+  }
 }

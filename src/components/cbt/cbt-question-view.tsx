@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useCallback } from "react";
-import { useTestStore } from "@/lib/store/use-test-store";
+import { useTestStore, type Confidence } from "@/lib/store/use-test-store";
 import { QuestionContent } from "@/components/cbt/question-content";
 import { MentorPanel, TrickPanel, type QuestionTrick } from "@/components/cbt/insight-panels";
 import { sectionLabel } from "@/lib/cbt-questions";
@@ -71,9 +71,12 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
     timePerQuestion,
     setZoomedImage,
     questionStatuses,
+    confidences,
+    setConfidence,
   } = useTestStore();
 
   const selectedOption = userResponses[currentQuestion.id] || null;
+  const confidence = confidences[currentQuestion.id] ?? "unsure";
   const timeSpent = timePerQuestion[currentQuestion.id] || 0;
   const status = questionStatuses[currentQuestion.id];
   const isMarked = status === "marked" || status === "answered_marked";
@@ -285,45 +288,94 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
       </div>
 
       {/* Action bar */}
-      <div className="flex flex-col gap-2 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
+      <div className="flex flex-col gap-2.5 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:px-6">
+        {/* Confidence capture — subtle, always present, powers the AI Mentor */}
+        <ConfidenceControl
+          value={confidence}
+          onChange={(c) => setConfidence(currentQuestion.id, c)}
+        />
+
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
+            <ActionButton
+              onClick={() => currentQuestionIndex > 0 && setQuestionIndex(currentQuestionIndex - 1)}
+              disabled={currentQuestionIndex === 0}
+              variant="ghost"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              <span>Prev</span>
+            </ActionButton>
+            <ActionButton
+              onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
+              variant={isMarked ? "violet-active" : "ghost"}
+            >
+              <Flag className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Mark &amp; Next</span>
+              <span className="sm:hidden">Mark</span>
+            </ActionButton>
+            <ActionButton onClick={() => clearResponse(currentQuestion.id)} variant="ghost">
+              <RotateCcw className="h-3.5 w-3.5" />
+              <span>Clear</span>
+            </ActionButton>
+          </div>
+
           <ActionButton
-            onClick={() => currentQuestionIndex > 0 && setQuestionIndex(currentQuestionIndex - 1)}
-            disabled={currentQuestionIndex === 0}
-            variant="ghost"
+            onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
+            variant="primary"
+            className="w-full sm:w-auto"
           >
-            <ChevronLeft className="h-4 w-4" />
-            <span>Prev</span>
-          </ActionButton>
-          <ActionButton
-            onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
-            variant={isMarked ? "violet-active" : "ghost"}
-          >
-            <Flag className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Mark &amp; Next</span>
-            <span className="sm:hidden">Mark</span>
-          </ActionButton>
-          <ActionButton onClick={() => clearResponse(currentQuestion.id)} variant="ghost">
-            <RotateCcw className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Clear</span>
-            <span className="sm:hidden">Clear</span>
+            <span>Save &amp; Next</span>
+            <ChevronRight className="h-4 w-4" />
           </ActionButton>
         </div>
-
-        <ActionButton
-          onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
-          variant="primary"
-          className="w-full sm:w-auto"
-        >
-          <span>Save &amp; Next</span>
-          <ChevronRight className="h-4 w-4" />
-        </ActionButton>
       </div>
     </div>
   );
 };
 
 // ---------------------------------------------------------------------------
+
+const CONFIDENCE_OPTIONS: { value: Confidence; label: string; active: string }[] = [
+  { value: "guessed", label: "Guessed", active: "border-rose-300 bg-rose-50 text-rose-600 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-300" },
+  { value: "unsure", label: "Unsure", active: "border-amber-300 bg-amber-50 text-amber-600 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-300" },
+  { value: "confident", label: "Confident", active: "border-emerald-300 bg-emerald-50 text-emerald-600 dark:border-emerald-500/40 dark:bg-emerald-500/10 dark:text-emerald-300" },
+];
+
+/**
+ * Compact 3-way confidence control shown near Save (§4). Defaults to "Unsure",
+ * never blocks flow, and is the single most important input for the AI Mentor.
+ */
+const ConfidenceControl: React.FC<{
+  value: Confidence;
+  onChange: (c: Confidence) => void;
+}> = ({ value, onChange }) => (
+  <div className="flex items-center gap-2">
+    <span className="text-[11px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+      Confidence
+    </span>
+    <div className="flex flex-1 items-center gap-1.5 sm:flex-none" role="radiogroup" aria-label="Answer confidence">
+      {CONFIDENCE_OPTIONS.map((opt) => {
+        const isActive = value === opt.value;
+        return (
+          <button
+            key={opt.value}
+            type="button"
+            role="radio"
+            aria-checked={isActive}
+            onClick={() => onChange(opt.value)}
+            className={`flex-1 rounded-lg border px-2.5 py-1 text-xs font-semibold transition-all sm:flex-none ${
+              isActive
+                ? opt.active
+                : "border-slate-200 bg-white text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-400 dark:hover:bg-slate-800"
+            }`}
+          >
+            {opt.label}
+          </button>
+        );
+      })}
+    </div>
+  </div>
+);
 
 interface ActionButtonProps {
   onClick: () => void;
