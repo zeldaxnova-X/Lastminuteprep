@@ -6,7 +6,7 @@ export default function RefundPolicyPage() {
   return (
     <PolicyStub
       title="Refund Policy"
-      blurb="Our refund terms are being finalised ahead of launch. Plans are a one-time pass for your exam cycle — not a recurring subscription."
+      blurb="Our refund terms are being finalised ahead of launch. Pro and AI Mentor are simple monthly plans you can cancel anytime."
     />
   );
 }

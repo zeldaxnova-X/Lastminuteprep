@@ -3,6 +3,7 @@ import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { narrateMentorReport } from "@/lib/exam/anthropic-narrate";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
+import { getViewer, canSeeReport, canSeeMentor } from "@/lib/auth/plan";
 
 interface ReviewRow {
   question_id: string;
@@ -101,16 +102,52 @@ export async function GET(
     })
     .sort((a, b) => a.questionNumber - b.questionNumber);
 
+  // ------------------------------------------------------------------
+  // PAYWALL SEAM (M9). Gate the report by the viewer's plan:
+  //   free   → net score + section breakdown + a blurred "+X" tease only
+  //            (the conversion screen shows these, values masked client-side).
+  //   pro    → full deterministic report (review), NO Mentor engine.
+  //   mentor → everything, incl. analysis + narrative.
+  // Session ownership isn't enforced yet (sessions still use permissive RLS +
+  // service role). // TODO: check session.user_id === viewer.userId once the
+  // anonymous sample sessions are claimed at first login.
+  // ------------------------------------------------------------------
+  const viewer = await getViewer();
+  const reportAllowed = canSeeReport(viewer.plan);
+  const mentorAllowed = canSeeMentor(viewer.plan);
+
+  const analysis = (report?.analysis ?? null) as MentorAnalysis | null;
+  const netScore = (result as { net_score?: number } | null)?.net_score ?? 0;
+  const optimalScore = report?.optimal_score ?? null;
+  // The single "+X marks" figure — always returned so the conversion screen can
+  // blur-tease it without exposing the rest of the Mentor analysis.
+  const teaseGain =
+    (analysis?.optimal?.gain as number | undefined) ??
+    (optimalScore != null ? Math.max(0, Math.round(optimalScore - netScore)) : 0);
+
+  const r = result as {
+    correct?: number;
+    wrong?: number;
+    skipped?: number;
+  } | null;
+  const totalQuestions = (r?.correct ?? 0) + (r?.wrong ?? 0) + (r?.skipped ?? 0);
+
   return NextResponse.json({
     result,
-    analysis: report?.analysis ?? null,
-    optimalScore: report?.optimal_score ?? null,
-    narrative: report?.narrative_md ?? null,
+    plan: viewer.plan,
+    canReport: reportAllowed,
+    canMentor: mentorAllowed,
+    teaseGain,
+    totalQuestions,
+    maxScore: totalQuestions * 2,
+    // Full-report data — only for plan >= pro.
+    review: reportAllowed ? review : [],
+    // Mentor engine — only for plan == mentor.
+    analysis: mentorAllowed ? analysis : null,
+    optimalScore: mentorAllowed ? optimalScore : null,
+    narrative: mentorAllowed ? (report?.narrative_md ?? null) : null,
     // Whether the server can produce the (purely additive) LLM narrative at all.
-    // When false, the client renders no narrative section — the deterministic
-    // report stands alone as the complete report.
-    narrationAvailable: !!process.env.ANTHROPIC_API_KEY,
-    review,
+    narrationAvailable: mentorAllowed && !!process.env.ANTHROPIC_API_KEY,
   });
 }
 

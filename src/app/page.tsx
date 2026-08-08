@@ -11,8 +11,17 @@ import {
   Layers,
   LineChart,
   BrainCircuit,
+  Gauge,
+  SkipForward,
+  Scale,
+  TrendingUp,
+  Clock,
+  ListFilter,
+  Repeat,
 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
+import { BrandLogo } from "@/components/brand-logo";
+import { AuthNav } from "@/components/auth/auth-nav";
 import { Reveal, CountUp } from "@/components/landing/motion";
 import { HeroVisual } from "@/components/landing/hero-visual";
 import { ExamMarquee, Faq } from "@/components/landing/interactive";
@@ -29,21 +38,74 @@ import { cn } from "@/lib/utils";
 export const metadata = {
   title: "LastMilePrep — The last mile is where exams are won",
   description:
-    "Real CBT mocks for SSC CGL, 10,000+ questions, and an AI Strategy Mentor that reads your confidence and tells you exactly how to score more.",
+    "Real CBT mocks for SSC CGL, 10,000+ questions, and the LastMilePrep Mentor Engine — a proprietary method that reads your confidence and tells you exactly how to score more. No sign-up to try.",
 };
 
-const EXAMS = [
-  { name: "SSC CGL", status: "live" as const, note: "Tier 1 · live now", img: "/images/goal-secretariat.jpg" },
-  { name: "NEET", status: "soon" as const, note: "Coming soon", img: null },
-  { name: "JEE", status: "soon" as const, note: "Coming soon", img: null },
-  { name: "NEET PG", status: "soon" as const, note: "Coming soon", img: null },
-  { name: "UPSC", status: "soon" as const, note: "Coming soon", img: "/images/goal-india-gate.jpg" },
+/* The full Mentor Engine benefit set — every item is something the deterministic
+   analysis already computes. Honest by construction (no invented capabilities). */
+const MENTOR_BENEFITS = [
+  {
+    icon: Gauge,
+    title: "Confidence calibration",
+    body: "Where you were sure but wrong (overconfidence) and unsure but right — the marks you left on the table.",
+  },
+  {
+    icon: SkipForward,
+    title: "Exact skip strategy",
+    body: "The specific questions you should have skipped under negative marking. Named, not generic advice.",
+  },
+  {
+    icon: Scale,
+    title: "Your personal guess rule",
+    body: "Your own break-even — guess only when your odds beat the −0.5 penalty, computed for you, not a rule of thumb.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Optimal-score gap",
+    body: "Same knowledge, smarter decisions → the exact “+X marks” you could have scored this attempt.",
+  },
+  {
+    icon: Clock,
+    title: "Pacing & attempt order",
+    body: "Where you burned time and where you rushed into errors, so the clock stops quietly costing you marks.",
+  },
+  {
+    icon: ListFilter,
+    title: "Weakness ranking",
+    body: "Section and topic weaknesses ranked — you always know exactly what to revise next.",
+  },
+  {
+    icon: Repeat,
+    title: "Improvement tracking",
+    body: "Every decision, every attempt, tracked over time — watch the gap close mock after mock.",
+  },
 ];
+
+const EXAMS_SOON = ["NEET", "JEE", "NEET PG", "UPSC"];
 
 const STEPS = [
   { n: "01", icon: Timer, title: "Sit a real CBT mock", body: "The exact interface — five-state palette, live timer, free navigation. No training wheels." },
   { n: "02", icon: Compass, title: "Get your confidence-calibrated analysis", body: "We capture how sure you were on every question, then read it back against how you actually did." },
   { n: "03", icon: Target, title: "Know exactly what to fix", body: "Which questions to skip, how to guess under negative marking, and the marks each decision was worth." },
+];
+
+/* Shared pricing feature stacks (re-used across cards so lower tiers can SEE
+   exactly what's locked). */
+const PRO_ROWS = [
+  "10,000+ real questions",
+  "Full 100-Q mocks & section drills",
+  "Unlimited attempts · exact CBT interface",
+  "Full report: accuracy, timing, sections",
+  "Confidence capture on every question",
+];
+const MENTOR_ROWS = [
+  "Confidence calibration (sure-but-wrong)",
+  "Exact skip strategy under −0.5",
+  "Your personal break-even guess rule",
+  "Optimal-score gap: same knowledge, +X marks",
+  "Pacing & attempt-order analysis",
+  "Section & topic weakness ranking",
+  "Improvement tracking across attempts",
 ];
 
 export default function LandingPage() {
@@ -77,17 +139,14 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-hairline bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Logo />
+        <BrandLogo priority />
         <nav className="hidden items-center gap-7 text-sm text-ink-secondary md:flex">
           <a href="#how" className="transition-premium hover:text-ink">The Method</a>
           <a href="#exams" className="transition-premium hover:text-ink">Exams</a>
-          <a href="#features" className="transition-premium hover:text-ink">Features</a>
+          <a href="#mentor" className="transition-premium hover:text-ink">AI Mentor</a>
           <a href="#pricing" className="transition-premium hover:text-ink">Pricing</a>
         </nav>
-        <ButtonLink href="/sample" variant="primary" size="sm">
-          Try free
-          <ArrowRight className="h-3.5 w-3.5" />
-        </ButtonLink>
+        <AuthNav />
       </div>
     </header>
   );
@@ -115,15 +174,17 @@ function Hero() {
             <Reveal>The last mile is</Reveal>
             <Reveal delay={110}>where exams are</Reveal>
             <Reveal delay={220}>
-              <span className="text-accent">won.</span>
+              <span className="bg-gradient-to-r from-accent to-violet bg-clip-text text-transparent">
+                won.
+              </span>
             </Reveal>
           </h1>
 
           <Reveal delay={300}>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-secondary">
-              Exact CBT mocks, 10,000+ real questions, and an AI Strategy Mentor
-              that reads your confidence on every question — built for the final
-              stretch, when marks are won or lost on decisions, not just knowledge.
+              Exact CBT mocks, 10,000+ real questions, and the LastMilePrep
+              Mentor Engine — a proprietary method that reads your confidence on
+              every question and tells you exactly how to score more.
             </p>
           </Reveal>
 
@@ -137,9 +198,17 @@ function Hero() {
                 See how it works
               </ButtonLink>
             </div>
-            <p className="mt-4 text-xs text-ink-tertiary">
-              One-time sample · real CBT · no signup to try.
-            </p>
+          </Reveal>
+
+          <Reveal delay={440}>
+            <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-ink-secondary">
+              {["No sign-up to try", "Real CBT interface", "One-time free sample"].map((t) => (
+                <li key={t} className="inline-flex items-center gap-1.5">
+                  <Check className="h-3.5 w-3.5 text-success" />
+                  {t}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
 
@@ -159,7 +228,7 @@ function Tension() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl ring-1 ring-hairline lg:max-w-none">
             <Image
               src="/images/tension-focus.jpg"
-              alt="An aspirant deep in concentration"
+              alt="An aspirant deep in concentration during a mock test"
               fill
               sizes="(max-width: 1024px) 80vw, 30vw"
               loading="lazy"
@@ -181,7 +250,7 @@ function Tension() {
           </p>
           <p className="mt-6 max-w-xl text-base text-ink-secondary lg:mx-0">
             Under negative marking, a wrong guess costs you twice. That single
-            decision — attempt or skip — is where the Mentor lives.
+            decision — attempt or skip — is where the Mentor Engine lives.
           </p>
         </Reveal>
       </div>
@@ -193,53 +262,73 @@ function ExamBreadth() {
   return (
     <section id="exams" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
       <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-        <Eyebrow>One platform, every exam</Eyebrow>
+        <Eyebrow>SSC CGL now · more later</Eyebrow>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          Built to scale across India&apos;s exams
+          Built for SSC CGL first — the rest is an honest roadmap
         </h2>
         <p className="mt-3 text-base text-ink-secondary">
-          SSC CGL is live today. The rest is an honest roadmap — the engine is
-          config-driven, so more exams arrive without compromise.
+          SSC CGL Tier 1 is fully live today. The engine is config-driven, so
+          more exams arrive without compromise — but only when they&apos;re real.
         </p>
       </Reveal>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-        {EXAMS.map((e, i) => (
-          <Reveal key={e.name} delay={i * 60}>
-            {e.img ? (
-              <div className="relative flex h-full min-h-[168px] flex-col justify-between overflow-hidden rounded-2xl p-5 ring-1 ring-hairline">
-                <GhostImage
-                  src={e.img}
-                  sizes="(max-width: 640px) 50vw, 20vw"
-                  overlay="strong"
-                  position="center"
-                />
-                <span
-                  className={cn(
-                    "relative self-start rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide",
-                    e.status === "live" ? "bg-success text-white" : "bg-white/15 text-white backdrop-blur-sm"
-                  )}
+      <div className="grid gap-4 lg:grid-cols-3">
+        {/* SSC CGL — the dominant, full-colour LIVE hero card */}
+        <Reveal className="lg:col-span-2">
+          <div className="group relative flex min-h-[340px] flex-col justify-between overflow-hidden rounded-3xl p-6 ring-1 ring-hairline sm:p-8">
+            <Image
+              src="/images/goal-secretariat.jpg"
+              alt="A government secretariat building — the goal SSC CGL leads to"
+              fill
+              sizes="(max-width: 1024px) 100vw, 66vw"
+              loading="lazy"
+              className="object-cover"
+              style={{ objectPosition: "center" }}
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,10,10,0.92),rgba(10,10,10,0.35))]" />
+
+            <div className="relative flex items-center gap-2 self-start rounded-full bg-success px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-white" />
+              Live now
+            </div>
+
+            <div className="relative">
+              <p className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                SSC CGL
+              </p>
+              <p className="mt-1 text-sm text-white/75">
+                Tier 1 · 100 questions · 4 sections · full CBT + AI Mentor
+              </p>
+              <div className="mt-5">
+                <ButtonLink
+                  href="/sample"
+                  size="md"
+                  className="bg-white text-ink hover:bg-white/90"
                 >
-                  {e.status === "live" ? "Live" : "Soon"}
-                </span>
-                <div className="relative mt-6">
-                  <p className="text-lg font-semibold text-white">{e.name}</p>
-                  <p className="text-xs text-white/70">{e.note}</p>
-                </div>
+                  Start a free mock
+                  <ArrowRight className="h-4 w-4" />
+                </ButtonLink>
               </div>
-            ) : (
-              <div className="flex h-full min-h-[168px] flex-col justify-between rounded-2xl border border-hairline bg-surface p-5">
-                <span className="self-start rounded-md bg-panel px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink-tertiary">
+            </div>
+          </div>
+        </Reveal>
+
+        {/* Coming soon — clearly subordinate chips */}
+        <Reveal delay={80}>
+          <div className="grid h-full grid-cols-2 gap-3 lg:grid-cols-1">
+            {EXAMS_SOON.map((name) => (
+              <div
+                key={name}
+                className="flex items-center justify-between rounded-2xl border border-dashed border-hairline-strong bg-panel/60 px-4 py-4 lg:flex-1"
+              >
+                <span className="text-sm font-semibold text-ink-secondary">{name}</span>
+                <span className="rounded-md bg-surface px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink-tertiary ring-1 ring-hairline">
                   Soon
                 </span>
-                <div className="mt-6">
-                  <p className="text-lg font-semibold text-ink">{e.name}</p>
-                  <p className="text-xs text-ink-tertiary">{e.note}</p>
-                </div>
               </div>
-            )}
-          </Reveal>
-        ))}
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -252,7 +341,7 @@ function CbtRealism() {
         <div className="relative overflow-hidden rounded-3xl bg-panel-dark p-6 ring-1 ring-white/10 sm:p-10 lg:p-14">
           <div
             className="pointer-events-none absolute inset-0 opacity-60"
-            style={{ background: "radial-gradient(60% 60% at 15% 0%, rgba(4,120,87,0.18), transparent 60%)" }}
+            style={{ background: "radial-gradient(60% 60% at 15% 0%, rgba(79,70,229,0.20), transparent 60%)" }}
             aria-hidden
           />
           <div className="relative grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -301,7 +390,7 @@ function Features() {
           <div className="relative">
             <Framed
               src="/images/feature-questions.jpg"
-              alt="A student working through practice questions"
+              alt="A student working through practice questions on a laptop"
               aspect="4 / 3"
               position="center"
             />
@@ -330,8 +419,8 @@ function Features() {
       <FeatureRow
         n="03"
         icon={BrainCircuit}
-        title="An AI mentor in your corner"
-        body="Your exact skip strategy, how to guess when you must under negative marking, a score-maximisation plan, and improvement tracking across every attempt. Not a scorecard — a plan."
+        title="The Mentor Engine in your corner"
+        body="Your exact skip strategy, your own break-even guess rule under negative marking, a score-maximisation plan, and improvement tracking across every attempt. Not a scorecard — a plan."
         visual={<MentorFeatureVisual />}
       />
     </section>
@@ -340,37 +429,70 @@ function Features() {
 
 function MentorSection() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+    <section id="mentor" className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <Reveal>
         <div className="relative overflow-hidden rounded-3xl bg-panel-dark p-6 ring-1 ring-white/10 sm:p-10 lg:p-14">
-          <Duotone src="/images/ai-mentor.jpg" opacity={0.38} position="center 18%" />
-          <div className="relative grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-            <div>
-              <p className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold-bright">
-                <Sparkles className="h-3.5 w-3.5" /> The AI Mentor
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                It reads every attempt — and finds the marks you left behind
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-white/70">
-                Where you guessed, what you should have skipped, how to pace, and
-                exactly how you could have scored more. It shows you the shape of
-                your report — the substance is yours once you unlock it.
-              </p>
-              <ul className="mt-6 space-y-2.5">
-                {[
-                  "Your exact skip strategy under negative marking",
-                  "When a guess is worth the −0.5 risk",
-                  "Optimal-score plan and improvement tracking",
-                ].map((t) => (
-                  <li key={t} className="flex gap-2.5 text-sm text-white/70">
-                    <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold-bright" />
-                    <span>{t}</span>
-                  </li>
-                ))}
-              </ul>
+          <Duotone src="/images/ai-mentor.jpg" opacity={0.32} position="center 18%" />
+
+          <div className="relative">
+            {/* Header + the approved locked-report anchor (ss9) */}
+            <div className="grid items-start gap-10 lg:grid-cols-[1fr_0.82fr] lg:gap-14">
+              <div>
+                <p className="inline-flex items-center gap-1.5 rounded-full bg-gold-bright/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-gold-bright ring-1 ring-gold-bright/25">
+                  <Sparkles className="h-3.5 w-3.5" /> The LastMilePrep Mentor Engine&trade;
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                  A proprietary engine that turns your attempt into a scoring plan
+                </h2>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70">
+                  It reads how sure you were on every question against how you
+                  actually did, then tells you which questions to skip, when a
+                  guess beats the penalty, and exactly how many marks smarter
+                  decisions were worth. You see the shape of your report here — the
+                  numbers are yours the moment you unlock it.
+                </p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Link
+                    href="/sample"
+                    className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-gold-bright px-6 py-3 text-base font-semibold text-white transition-premium hover:bg-gold"
+                  >
+                    <Sparkles className="h-4 w-4" />
+                    Unlock the Mentor — ₹49
+                  </Link>
+                  <span className="text-xs text-white/45">
+                    ₹49/mo · founding price · goes to ₹149 as we grow
+                  </span>
+                </div>
+              </div>
+
+              <MentorSilhouette />
             </div>
-            <MentorSilhouette />
+
+            {/* The full benefit set — marketed as distinct value props */}
+            <div className="mt-12 border-t border-white/10 pt-10">
+              <p className="mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-gold-bright/80">
+                Everything inside the engine
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {MENTOR_BENEFITS.map((b, i) => (
+                  <div
+                    key={b.title}
+                    className={cn(
+                      "flex gap-3.5 rounded-2xl bg-white/[0.04] p-4 ring-1 ring-white/10 sm:p-5",
+                      i === MENTOR_BENEFITS.length - 1 && "sm:col-span-2"
+                    )}
+                  >
+                    <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-gold-bright/12 text-gold-bright ring-1 ring-gold-bright/20">
+                      <b.icon className="h-5 w-5" />
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{b.title}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-white/60">{b.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>
@@ -415,11 +537,21 @@ function HowItWorks() {
 function Stats() {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
+      <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+        <Eyebrow>SSC CGL Tier 1 — the real exam</Eyebrow>
+        <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          Built to SSC CGL&apos;s exact shape
+        </h2>
+        <p className="mt-3 text-base text-ink-secondary">
+          Every number below is SSC CGL Tier 1&apos;s own — including the +2 / −0.5
+          marking scheme the whole platform is scored against.
+        </p>
+      </Reveal>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
         <Stat value={<CountUp end={10000} suffix="+" />} label="Questions in the bank" />
         <Stat value={<CountUp end={100} />} label="Questions per full mock" />
-        <Stat value="4" label="Sections, 60-minute timer" />
-        <Stat value={<>+2 / <span className="text-danger">−0.5</span></>} label="Real SSC marking scheme" />
+        <Stat value="4" label="Sections · 60-minute timer" />
+        <Stat value={<>+2 / <span className="text-danger">−0.5</span></>} label="SSC CGL marking scheme" />
       </div>
       <Reveal>
         <p className="mt-6 text-center text-xs text-ink-tertiary">
@@ -436,58 +568,107 @@ function Pricing() {
       <div className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
         <Reveal className="mx-auto mb-10 max-w-2xl text-center">
           <Eyebrow>Pricing</Eyebrow>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Pay once for your exam cycle
+          <h2 className="mt-3 font-report text-4xl font-medium tracking-tight text-ink sm:text-5xl">
+            Simple monthly pricing
           </h2>
-          <p className="mt-3 text-base text-ink-secondary">
-            The only thing that changes between paid tiers is the Mentor.
+          <p className="mt-4 text-base text-ink-secondary">
+            Founding prices while we&apos;re young — the only thing that changes
+            between paid tiers is the Mentor Engine.
           </p>
+        </Reveal>
+
+        {/* Warm human band — imagery only, no fabricated quotes */}
+        <Reveal className="mx-auto mb-12 grid max-w-3xl gap-4 sm:grid-cols-2">
+          <Framed
+            src="/images/add1.jpg"
+            alt="Two aspirants preparing together at a laptop"
+            aspect="16 / 10"
+            position="center"
+          />
+          <Framed
+            src="/images/add2.jpg"
+            alt="A young aspirant on a college campus"
+            aspect="16 / 10"
+            position="center 30%"
+          />
         </Reveal>
 
         <div className="grid items-stretch gap-4 lg:grid-cols-3">
           <PriceCard
-            name="Sample"
+            name="Free"
             price="₹0"
             priceNote="one-time"
             cta="Start free"
             href="/sample"
-            features={["20 questions", "Real CBT interface", "One attempt · your net score"]}
-            muted={["No performance report", "No AI Mentor"]}
-          />
-          <PriceCard
-            name="Practice"
-            price="₹19"
-            priceNote="Season pass — SSC CGL cycle"
-            cta="Get Practice"
-            href="/sample"
-            features={[
-              "10,000+ questions",
-              "Real CBT · unlimited attempts",
-              "Full report: accuracy, timing, section breakdown",
+            groups={[
+              {
+                heading: "Included",
+                rows: [
+                  { label: "20-question sample" },
+                  { label: "Exact CBT interface" },
+                  { label: "Your net score at the end" },
+                ],
+              },
+              {
+                heading: "Full report — locked",
+                rows: [
+                  { label: "Accuracy, timing & section breakdown", locked: true },
+                  { label: "10,000+ questions · unlimited attempts", locked: true },
+                ],
+              },
+              {
+                heading: "AI Mentor — locked",
+                rows: MENTOR_ROWS.map((label) => ({ label, locked: true })),
+              },
             ]}
-            muted={["No AI Mentor"]}
           />
+
           <PriceCard
-            name="Mentor"
-            price="₹49"
-            priceNote="Season pass — SSC CGL cycle"
+            name="Pro"
+            price="₹19/mo"
+            strike="₹99"
+            subNote="Founding price — goes to ₹99 as we grow."
+            cta="Get Pro"
+            href="/sample"
+            groups={[
+              {
+                heading: "Everything you get",
+                rows: PRO_ROWS.map((label) => ({ label })),
+              },
+              {
+                heading: "AI Mentor — locked",
+                rows: MENTOR_ROWS.map((label) => ({ label, locked: true })),
+              },
+            ]}
+          />
+
+          <PriceCard
+            name="AI Mentor"
+            price="₹49/mo"
+            strike="₹149"
+            subNote="Founding price — goes to ₹149 as we grow."
             cta="Unlock AI Mentor"
             href="/sample"
             gold
-            badge="Most complete"
-            features={[
-              "Everything in Practice",
-              "Proprietary AI Strategy Mentor",
-              "Exact skip strategy · guess under negative marking",
-              "Score-maximisation plan · improvement tracking",
+            badges={["Proprietary engine", "Most complete"]}
+            groups={[
+              {
+                heading: "Everything in Pro",
+                rows: PRO_ROWS.map((label) => ({ label })),
+              },
+              {
+                heading: "The Mentor Engine™",
+                rows: MENTOR_ROWS.map((label) => ({ label })),
+              },
             ]}
           />
         </div>
 
         <Reveal>
           <p className="mt-6 flex items-center justify-center gap-2 text-center text-xs text-ink-tertiary">
-            <Check className="h-3.5 w-3.5 text-accent" />
-            No subscriptions, no clutter — pay once for your exam cycle.
+            <Check className="h-3.5 w-3.5 text-success" />
+            Honest founding pricing — ₹99 and ₹149 are the real prices we grow
+            into, not fake &ldquo;discounts.&rdquo;
           </p>
         </Reveal>
       </div>
@@ -515,26 +696,45 @@ function FinalCta() {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
       <Reveal>
-        <div className="relative overflow-hidden rounded-3xl px-6 py-24 text-center ring-1 ring-white/10 sm:px-10 sm:py-32">
-          <GhostImage
-            src="/images/goal-india-gate.jpg"
-            sizes="(max-width: 1152px) 100vw, 1152px"
-            overlay="strong"
-            position="center"
+        <div className="relative grid overflow-hidden rounded-3xl bg-panel-dark ring-1 ring-white/10 lg:grid-cols-2">
+          <div
+            className="pointer-events-none absolute inset-0 opacity-70"
+            style={{ background: "radial-gradient(70% 80% at 0% 0%, rgba(79,70,229,0.22), transparent 60%)" }}
+            aria-hidden
           />
-          <div className="relative">
+          <div className="relative flex flex-col justify-center p-8 sm:p-12 lg:p-14">
             <h2 className="font-report text-4xl font-medium tracking-tight text-white sm:text-5xl">
               Your last mile starts here.
             </h2>
-            <p className="mx-auto mt-4 max-w-lg text-base text-white/75">
-              Take the free 20-question mock and see exactly where your marks are hiding.
+            <p className="mt-4 max-w-md text-base text-white/75">
+              Take the free 20-question mock — no sign-up — and see exactly where
+              your marks are hiding.
             </p>
-            <div className="mt-8 flex justify-center">
-              <ButtonLink href="/sample" variant="primary" size="lg">
-                Start free
+            <div className="mt-8">
+              <Link
+                href="/sample"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 text-base font-semibold text-ink transition-premium hover:bg-white/90"
+              >
+                Start free — no sign-up
                 <ArrowRight className="h-4 w-4" />
-              </ButtonLink>
+              </Link>
             </div>
+            <p className="mt-4 text-xs text-white/45">
+              One-time free sample · real CBT interface.
+            </p>
+          </div>
+
+          <div className="relative min-h-[240px] lg:min-h-full">
+            <Image
+              src="/images/cheerful-attractive-young-woman-with-black-hair-walking.jpg"
+              alt="A cheerful aspirant walking with her phone"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              loading="lazy"
+              className="object-cover"
+              style={{ objectPosition: "center 25%" }}
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(11,11,12,0.85),transparent_45%)] lg:bg-[linear-gradient(to_right,rgba(11,11,12,0.95),transparent_55%)]" />
           </div>
         </div>
       </Reveal>
@@ -546,7 +746,7 @@ function Footer() {
   return (
     <footer className="border-t border-hairline">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:flex-row sm:px-6">
-        <Logo />
+        <BrandLogo />
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-ink-secondary">
           <Link href="/terms" className="transition-premium hover:text-ink">Terms</Link>
           <Link href="/privacy-policy" className="transition-premium hover:text-ink">Privacy</Link>
@@ -560,19 +760,6 @@ function Footer() {
 }
 
 /* ------------------------------------------------------------------ */
-
-function Logo() {
-  return (
-    <Link href="/" className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-ink">
-      <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-xs font-bold text-white">
-        LM
-      </span>
-      <span>
-        LastMile<span className="text-accent">Prep</span>
-      </span>
-    </Link>
-  );
-}
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -678,79 +865,140 @@ function Stat({ value, label }: { value: React.ReactNode; label: string }) {
   );
 }
 
+type PriceRow = { label: string; locked?: boolean };
+type PriceGroup = { heading?: string; rows: PriceRow[] };
+
 function PriceCard({
   name,
   price,
   priceNote,
+  strike,
+  subNote,
   cta,
   href,
-  features,
-  muted = [],
+  groups,
   gold = false,
-  badge,
+  badges = [],
 }: {
   name: string;
   price: string;
-  priceNote: string;
+  priceNote?: string;
+  strike?: string;
+  subNote?: string;
   cta: string;
   href: string;
-  features: string[];
-  muted?: string[];
+  groups: PriceGroup[];
   gold?: boolean;
-  badge?: string;
+  badges?: string[];
 }) {
   return (
     <div
       className={cn(
-        "flex h-full flex-col rounded-2xl p-6",
+        "relative flex h-full flex-col rounded-2xl p-6 sm:p-7",
         gold
-          ? "bg-panel-dark text-white ring-1 ring-gold-bright/40 shadow-lift"
+          ? "bg-panel-dark text-white ring-1 ring-gold-bright/40 shadow-lift lg:-mt-4 lg:mb-4"
           : "border border-hairline bg-surface shadow-soft"
       )}
     >
-      <div className="flex items-center justify-between">
+      {gold && (
+        <div
+          className="pointer-events-none absolute inset-0 rounded-2xl opacity-70"
+          style={{ background: "radial-gradient(80% 55% at 85% 0%, rgba(217,119,6,0.16), transparent 60%)" }}
+          aria-hidden
+        />
+      )}
+
+      <div className="relative flex flex-1 flex-col">
+        {badges.length > 0 && (
+          <div className="mb-3 flex flex-wrap gap-1.5">
+            {badges.map((b) => (
+              <span
+                key={b}
+                className="rounded-md bg-gold-bright/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-gold-bright"
+              >
+                {b}
+              </span>
+            ))}
+          </div>
+        )}
+
         <h3 className={cn("text-base font-semibold", gold ? "text-white" : "text-ink")}>{name}</h3>
-        {badge && (
-          <span className="rounded-md bg-gold-bright/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-gold-bright">
-            {badge}
+
+        <div className="mt-3 flex items-baseline gap-2">
+          <span className={cn("text-4xl font-semibold tracking-tight tabular", gold ? "text-white" : "text-ink")}>
+            {price}
           </span>
+          {strike && (
+            <span
+              className={cn(
+                "text-base font-medium tabular line-through",
+                gold ? "text-white/40" : "text-ink-tertiary"
+              )}
+            >
+              {strike}
+            </span>
+          )}
+          {priceNote && (
+            <span className={cn("text-xs font-medium", gold ? "text-white/50" : "text-ink-tertiary")}>{priceNote}</span>
+          )}
+        </div>
+        {subNote && (
+          <p className={cn("mt-1 text-xs font-semibold", gold ? "text-gold-bright" : "text-ink-tertiary")}>{subNote}</p>
+        )}
+
+        <div className="mt-5 flex-1 space-y-4">
+          {groups.map((g, gi) => (
+            <div key={gi} className="space-y-2">
+              {g.heading && (
+                <p
+                  className={cn(
+                    "text-[11px] font-semibold uppercase tracking-wider",
+                    gold ? "text-gold-bright/80" : "text-ink-tertiary"
+                  )}
+                >
+                  {g.heading}
+                </p>
+              )}
+              {g.rows.map((r) => (
+                <div
+                  key={r.label}
+                  className={cn(
+                    "flex gap-2.5 text-sm",
+                    r.locked
+                      ? gold
+                        ? "text-white/35"
+                        : "text-ink-tertiary"
+                      : gold
+                        ? "text-white/85"
+                        : "text-ink-secondary"
+                  )}
+                >
+                  {r.locked ? (
+                    <Lock className="mt-0.5 h-4 w-4 flex-shrink-0 opacity-70" />
+                  ) : (
+                    <Check className={cn("mt-0.5 h-4 w-4 flex-shrink-0", gold ? "text-gold-bright" : "text-success")} />
+                  )}
+                  <span>{r.label}</span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        {gold ? (
+          <Link
+            href={href}
+            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold"
+          >
+            <Sparkles className="h-4 w-4" />
+            {cta}
+          </Link>
+        ) : (
+          <ButtonLink href={href} variant="secondary" size="md" className="mt-6 w-full">
+            {cta}
+          </ButtonLink>
         )}
       </div>
-      <div className="mt-4 flex items-baseline gap-2">
-        <span className={cn("text-3xl font-semibold tracking-tight tabular", gold ? "text-white" : "text-ink")}>
-          {price}
-        </span>
-        <span className={cn("text-xs font-medium", gold ? "text-white/50" : "text-ink-tertiary")}>{priceNote}</span>
-      </div>
-
-      <ul className="mt-5 flex-1 space-y-2.5">
-        {features.map((f) => (
-          <li key={f} className={cn("flex gap-2.5 text-sm", gold ? "text-white/80" : "text-ink-secondary")}>
-            <Check className={cn("mt-0.5 h-4 w-4 flex-shrink-0", gold ? "text-gold-bright" : "text-accent")} />
-            <span>{f}</span>
-          </li>
-        ))}
-        {muted.map((f) => (
-          <li key={f} className={cn("flex gap-2.5 text-sm", gold ? "text-white/40" : "text-ink-tertiary")}>
-            <span className="mt-0.5 h-4 w-4 flex-shrink-0 text-center">–</span>
-            <span>{f}</span>
-          </li>
-        ))}
-      </ul>
-
-      {gold ? (
-        <Link
-          href={href}
-          className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold"
-        >
-          <Sparkles className="h-4 w-4" />
-          {cta}
-        </Link>
-      ) : (
-        <ButtonLink href={href} variant="secondary" size="md" className="mt-6 w-full">
-          {cta}
-        </ButtonLink>
-      )}
     </div>
   );
 }

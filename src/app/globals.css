@@ -3,9 +3,13 @@
 
 /* ============================================================
    LastMilePrep — design tokens (single source of truth).
-   Premium white base. EMERALD is the workhorse accent; GOLD is
-   reserved for the AI Mentor / ₹49 tier / blurred "+X" reveal.
-   Swap --accent-* to re-hue the entire product.
+   Premium white base. Two-accent system:
+     INDIGO (--accent) = brand identity + action (matches the logo),
+       with VIOLET (--violet) used SPARINGLY in gradients only.
+     GOLD (--gold-*) = reserved for the AI Mentor / ₹49 tier /
+       blurred "+X" locked reveal.
+   GREEN / RED are SEMANTIC ONLY (correct / +marks / success and
+   wrong / −0.5) — never brand. Swap --accent* to re-hue identity.
    Applies everywhere EXCEPT the live CBT test screen, which stays
    an intentionally institutional TCS iON replica.
    ============================================================ */
@@ -25,22 +29,23 @@
   --ink-secondary: #525252;
   --ink-tertiary: #a3a3a3;
 
-  /* Brand accent — deep emerald (workhorse) */
-  --accent: #047857;
-  --accent-hover: #065f46;
-  --accent-soft: #ecfdf5;
+  /* Brand accent — indigo (identity + action; matches the logo) */
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-soft: #eef2ff;
+  --violet: #7c3aed;         /* second brand hue — gradients only, sparingly */
 
   /* Premium accent — warm gold (rare; Mentor / ₹49 / +X reveal) */
   --gold: #b45309;
   --gold-bright: #d97706;
   --gold-soft: #fef3c7;
 
-  /* Semantic */
-  --success: #047857;        /* emerald */
+  /* Semantic — performance only (never brand) */
+  --success: #059669;        /* green: correct / +marks / gains */
   --success-soft: #ecfdf5;
   --warning: #d97706;        /* gold */
   --warning-soft: #fef3c7;
-  --danger: #dc2626;
+  --danger: #dc2626;         /* red: wrong / −0.5 */
   --danger-soft: #fef2f2;
 
   /* Elevation */
@@ -68,6 +73,7 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-soft: var(--accent-soft);
+  --color-violet: var(--violet);
 
   --color-gold: var(--gold);
   --color-gold-bright: var(--gold-bright);
@@ -157,10 +163,10 @@ body {
   mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 78%);
 }
 
-/* Slow-drifting soft emerald radial wash (very low opacity). */
+/* Slow-drifting soft indigo→violet radial wash (very low opacity). */
 .hero-wash {
-  background: radial-gradient(60% 50% at 20% 10%, rgba(4, 120, 87, 0.1), transparent 60%),
-    radial-gradient(50% 45% at 85% 20%, rgba(180, 83, 9, 0.06), transparent 60%);
+  background: radial-gradient(60% 50% at 20% 10%, rgba(79, 70, 229, 0.1), transparent 60%),
+    radial-gradient(50% 45% at 85% 20%, rgba(124, 58, 237, 0.07), transparent 60%);
   animation: washDrift 22s ease-in-out infinite alternate;
 }
 @keyframes washDrift {

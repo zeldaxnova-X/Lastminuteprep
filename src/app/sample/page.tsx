@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTestStore } from "@/lib/store/use-test-store";
 import { Card } from "@/components/ui/card";
 import { Button, ButtonLink } from "@/components/ui/button";
+import { BrandLogo } from "@/components/brand-logo";
 import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lucide-react";
 
 // Stub for the one-time-per-account/device guard. // TODO: replace with an
@@ -61,12 +62,7 @@ export default function SamplePage() {
     <div className="flex min-h-screen flex-col bg-bg">
       <header className="border-b border-hairline">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-ink">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-xs font-bold text-white">
-              LM
-            </span>
-            LastMile<span className="-ml-1.5 text-accent">Prep</span>
-          </Link>
+          <BrandLogo />
           <Link href="/#pricing" className="text-sm text-ink-secondary transition-premium hover:text-ink">
             Pricing
           </Link>
