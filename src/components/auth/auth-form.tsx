@@ -27,8 +27,10 @@ export function AuthForm() {
   const searchParams = useSearchParams();
   const next = safeNext(searchParams.get("next"));
   const oauthError = searchParams.get("error") === "oauth";
+  // Open in sign-up mode when reached via /login?mode=signup.
+  const initialMode: Mode = searchParams.get("mode") === "signup" ? "signup" : "signin";
 
-  const [mode, setMode] = useState<Mode>("signin");
+  const [mode, setMode] = useState<Mode>(initialMode);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
