@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
+// Anonymous fallback identity for signed-out sample attempts.
+//   // TODO: replace with a null user_id + device_id once sample sessions are
+//   //       claimed onto a real account at first login.
 const DEV_USER_ID = "00000000-0000-0000-0000-000000000001";
 
 /**
@@ -42,7 +46,14 @@ export async function POST(request: NextRequest) {
   try {
     const supabase = createServerSupabaseClient();
     const body: StartExamRequest = await request.json();
-    const userId = DEV_USER_ID;
+
+    // Wire the attempt to the signed-in user when present; fall back to the
+    // anonymous demo identity so the frictionless (no-login) sample still works.
+    const authClient = await createSupabaseServerClient();
+    const {
+      data: { user },
+    } = await authClient.auth.getUser();
+    const userId = user?.id ?? DEV_USER_ID;
 
     let questions: ValidatedQuestion[] = [];
     let title = body.title || "";

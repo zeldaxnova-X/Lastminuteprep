@@ -48,11 +48,14 @@ import { matchSectionHeader, SSC_CGL_TIER1_SECTIONS } from "../sections";
 const MARKS_PER_Q = 2;
 const NEG_MARKS_PER_Q = 0.5;
 
-const RE_QUESTION_ID = /^Question ID\s*:\s*(\S+)/i;
+// Labels tolerate run-split whitespace ("QuestionID" vs "Question ID").
+const RE_QUESTION_ID = /^Question\s*ID\s*:\s*(\S+)/i;
 const RE_STATUS = /^Status\s*:\s*(.+)$/i;
-const RE_CHOSEN = /^Chosen Option\s*:\s*(\S+)?/i;
+const RE_CHOSEN = /^Chosen\s*Option\s*:\s*(\S+)?/i;
 /** Non-answer metadata labels that appear inside the delimiter block. */
-const RE_METADATA_LABEL = /^(Option\s*\d+\s*ID|Question Type|Section\s*Id|Time\s*Taken|Question Number)\s*:/i;
+const RE_METADATA_LABEL = /^(Option\s*\d+\s*ID|Question\s*Type|Section\s*Id|Time\s*Taken|Question\s*Number)\s*:/i;
+/** Candidate/exam header labels that precede the first question. */
+const RE_HEADER_MARKER = /^(Roll\s*Number|Candidate\s*Name|Venue|Exam\s*Date|Exam\s*Time|Subject|Combined\s+Graduate|Registration)/i;
 const RE_QNUM_PREFIX = /^Q\.?\s*(\d+)\s*[.)]?\s*/i;
 /** "Ans " immediately before the first option marker (kept, not consumed). */
 const RE_ANS_INLINE = /\bAns\s+(?=[1-4]\s*[.)])/i;
@@ -84,13 +87,24 @@ function normaliseStatus(s: string): AnswerStatus {
   return "unknown";
 }
 
-/** Index of the first "Q.N" heading, used to strip the candidate/exam header. */
-function firstQuestionIndex(elements: DocElement[]): number {
-  for (let i = 0; i < elements.length; i++) {
+/**
+ * Index where question content begins, i.e. just after the candidate/exam
+ * header. The header is the block of candidate-info labels that precedes the
+ * first "Question ID" delimiter; question 1's content sits between them. Keying
+ * off a "Q.N" text heading is unreliable because some papers' Q1 has no such
+ * marker (its number is an image), which would drop Q1 entirely.
+ */
+function contentStartIndex(elements: DocElement[]): number {
+  const firstQid = elements.findIndex(
+    (el) => el.type === "paragraph" && RE_QUESTION_ID.test(el.text)
+  );
+  if (firstQid === -1) return 0;
+  let headerEnd = 0;
+  for (let i = 0; i < firstQid; i++) {
     const el = elements[i];
-    if (el.type === "paragraph" && RE_QNUM_PREFIX.test(el.text)) return i;
+    if (el.type === "paragraph" && RE_HEADER_MARKER.test(el.text)) headerEnd = i + 1;
   }
-  return 0;
+  return headerEnd;
 }
 
 /** Split the ordered element stream into per-question records. */
@@ -100,7 +114,7 @@ function splitRecords(elements: DocElement[]): RawRecord[] {
   let section: ExamSection = SSC_CGL_TIER1_SECTIONS[0];
 
   // Drop the TCS candidate/exam header block that precedes the first question.
-  const start = firstQuestionIndex(elements);
+  const start = contentStartIndex(elements);
 
   for (let i = start; i < elements.length; i++) {
     const el = elements[i];

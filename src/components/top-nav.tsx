@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { RotateCcw, Bookmark, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonClasses } from "@/components/ui/button";
+import { BrandLogo } from "@/components/brand-logo";
+import { AuthNav } from "@/components/auth/auth-nav";
 
 const NAV_LINKS = [
   { href: "/dashboard", label: "Dashboard" },
@@ -18,17 +20,7 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link
-          href="/dashboard"
-          className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-ink"
-        >
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-xs font-bold text-white">
-            LM
-          </span>
-          <span>
-            LastMile<span className="text-accent">Prep</span>
-          </span>
-        </Link>
+        <BrandLogo href="/dashboard" priority />
 
         <nav className="flex items-center gap-1 sm:gap-2">
           {NAV_LINKS.map(({ href, label, icon: Icon }) => {
@@ -59,6 +51,7 @@ export function TopNav() {
             <span>Start Test</span>
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
+          <AuthNav variant="app" />
         </nav>
       </div>
     </header>

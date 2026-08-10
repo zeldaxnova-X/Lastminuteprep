@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { TopNav } from "@/components/top-nav";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +19,7 @@ import {
   Target,
   Clock,
   ChevronDown,
+  Lock,
 } from "lucide-react";
 
 interface SessionResult {
@@ -68,6 +69,9 @@ interface ReportData {
   narrative: string | null;
   narrationAvailable?: boolean;
   review: ReviewItem[];
+  plan?: "free" | "pro" | "mentor";
+  canReport?: boolean;
+  canMentor?: boolean;
 }
 
 const CONF_TONE: Record<string, string> = {
@@ -84,11 +88,13 @@ function fmtTime(ms: number | null): string {
 
 export default function ExamResultPage() {
   const params = useParams();
+  const router = useRouter();
   const examId = (params?.examId as string) || "";
 
   const [data, setData] = useState<ReportData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [mentorLocked, setMentorLocked] = useState(false);
 
   // The LLM narrative is PURELY ADDITIVE. When the server can't produce one
   // (no API key), the section is never rendered and never fetched — the
@@ -109,6 +115,14 @@ export default function ExamResultPage() {
           return;
         }
         const json: ReportData = await res.json();
+        // Paywall gate: free/unauthed users don't get the full report — send
+        // them to the blurred conversion screen to unlock.
+        if (json.canReport === false) {
+          router.replace(`/sample/${examId}`);
+          return;
+        }
+        // plan == pro sees the deterministic report but not the Mentor engine.
+        setMentorLocked(json.canMentor === false);
         setData(json);
         setNarrationAvailable(!!json.narrationAvailable);
         if (json.narrative) {
@@ -198,7 +212,7 @@ export default function ExamResultPage() {
           </div>
         </section>
 
-        {/* Optimal score */}
+        {/* Optimal score — AI Mentor engine (mentor plan only) */}
         {analysis && optimalScore != null && (
           <OptimalScoreCard
             actual={result.net_score}
@@ -208,6 +222,9 @@ export default function ExamResultPage() {
             max={result.raw_score > 0 ? 200 : 200}
           />
         )}
+
+        {/* Pro plan: has the report, not the Mentor engine — show the upsell. */}
+        {mentorLocked && <MentorLockedCard />}
 
         {/* Coaching narrative — purely additive. Rendered only while generating
             or when present; entirely absent when narration isn't available. */}
@@ -227,15 +244,13 @@ export default function ExamResultPage() {
           </section>
         )}
 
-        {/* Calibration + Sections */}
-        {analysis && (
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <CalibrationCard analysis={analysis} />
-            <SectionPerformanceCard breakdown={result.section_breakdown} />
-          </div>
-        )}
+        {/* Sections (deterministic — every report viewer) + calibration (mentor). */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          {analysis && <CalibrationCard analysis={analysis} />}
+          <SectionPerformanceCard breakdown={result.section_breakdown} />
+        </div>
 
-        {/* Score leaks */}
+        {/* Score leaks — AI Mentor engine (mentor plan only) */}
         {analysis && <ScoreLeaksCard analysis={analysis} />}
 
         {/* Question review */}
@@ -246,6 +261,45 @@ export default function ExamResultPage() {
 }
 
 /* ------------------------------------------------------------------ */
+
+/** Shown to Pro users: they have the report, the Mentor engine is one tier up. */
+function MentorLockedCard() {
+  return (
+    <section>
+      <SectionHeading icon={Sparkles}>AI Mentor</SectionHeading>
+      <div className="relative overflow-hidden rounded-2xl bg-panel-dark p-6 ring-1 ring-gold-bright/30 sm:p-8">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-70"
+          style={{ background: "radial-gradient(70% 60% at 85% 0%, rgba(217,119,6,0.16), transparent 60%)" }}
+          aria-hidden
+        />
+        <div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-gold-bright">
+              <Lock className="h-3.5 w-3.5" /> Locked on your plan
+            </p>
+            <h3 className="mt-2 text-xl font-semibold text-white">
+              Unlock the LastMilePrep Mentor Engine&trade;
+            </h3>
+            <p className="mt-2 max-w-md text-sm text-white/70">
+              Your exact skip strategy, your own break-even guess rule, the
+              optimal-score gap, pacing analysis, and improvement tracking —
+              computed from this attempt.
+            </p>
+          </div>
+          <ButtonLink
+            href="/#pricing"
+            size="md"
+            className="flex-shrink-0 bg-gold-bright text-white hover:bg-gold"
+          >
+            <Sparkles className="h-4 w-4" />
+            Unlock — ₹49/mo
+          </ButtonLink>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function SectionHeading({
   icon: Icon,

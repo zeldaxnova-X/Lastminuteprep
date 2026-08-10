@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { BrandLogo } from "@/components/brand-logo";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
@@ -18,8 +19,9 @@ interface SectionRow {
 }
 interface ReportData {
   result: { net_score: number; section_breakdown: SectionRow[] } | null;
-  analysis: { optimal?: { gain?: number } } | null;
-  review: unknown[];
+  teaseGain: number;
+  maxScore: number;
+  plan: "free" | "pro" | "mentor";
 }
 
 /** Real value concealed behind a blur — the exact figure revealed on unlock. */
@@ -36,9 +38,12 @@ function Masked({ children, className }: { children: React.ReactNode; className?
 
 export default function SampleConversionPage() {
   const params = useParams();
+  const router = useRouter();
   const attemptId = (params?.attemptId as string) || "";
+  const reportHref = `/test/${attemptId}/result`;
 
   const [data, setData] = useState<ReportData | null>(null);
+  const [authed, setAuthed] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(true);
   const [checkout, setCheckout] = useState<null | { tier: "report" | "mentor"; price: string }>(null);
 
@@ -46,19 +51,33 @@ export default function SampleConversionPage() {
     if (!attemptId) return;
     (async () => {
       try {
-        const res = await fetch(`/api/cbt/exams/${attemptId}/report`);
-        if (res.ok) setData(await res.json());
+        const [rep, me] = await Promise.all([
+          fetch(`/api/cbt/exams/${attemptId}/report`),
+          fetch("/api/auth/me"),
+        ]);
+        if (rep.ok) setData(await rep.json());
+        if (me.ok) setAuthed(!!(await me.json()).authenticated);
       } finally {
         setLoading(false);
       }
     })();
   }, [attemptId]);
 
-  // SEAM ONLY — no real payment / gating. // TODO: auth + Razorpay + entitlement.
+  // PAYWALL SEAM — auth is required to unlock, payment is NOT wired.
+  // Not signed in → send to /login, returning to the report afterwards.
+  // Signed in → stubbed checkout (// TODO: Razorpay). No plan mutation here.
   function onUnlock(tier: "report" | "mentor") {
-    setCheckout({ tier, price: tier === "mentor" ? "₹49" : "₹19" });
+    if (!authed) {
+      router.push(`/login?next=${encodeURIComponent(reportHref)}`);
+      return;
+    }
+    startCheckout(tier);
+  }
+
+  function startCheckout(tier: "report" | "mentor") {
+    setCheckout({ tier, price: tier === "mentor" ? "₹49/mo" : "₹19/mo" });
     // eslint-disable-next-line no-console
-    console.log(`[stub] unlock requested: ${tier}`);
+    console.log(`[stub] startCheckout(${tier}) — Razorpay not wired`);
   }
 
   if (loading) {
@@ -71,20 +90,15 @@ export default function SampleConversionPage() {
   }
 
   const net = data?.result?.net_score ?? 0;
-  const max = (data?.review?.length ?? 20) * 2;
+  const max = data?.maxScore || 40;
   const sections = data?.result?.section_breakdown ?? [];
-  const gain = data?.analysis?.optimal?.gain ?? 0;
+  const gain = data?.teaseGain ?? 0;
 
   return (
     <div className="flex min-h-screen flex-col bg-bg">
       <header className="border-b border-hairline">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-ink">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-xs font-bold text-white">
-              LM
-            </span>
-            LastMile<span className="-ml-1.5 text-accent">Prep</span>
-          </Link>
+          <BrandLogo />
           <Link href="/dashboard" className="text-sm text-ink-secondary transition-premium hover:text-ink">
             Dashboard
           </Link>
@@ -148,33 +162,50 @@ export default function SampleConversionPage() {
         {/* The calm offer */}
         <div className="space-y-3">
           <OfferRow
-            title="Full report"
-            price="₹19"
-            note="Launch price"
-            desc="Unlock every section score, accuracy, and timing breakdown — plus the full 10,000+ question bank for your exam cycle."
+            title="Pro — full report"
+            price="₹19/mo"
+            note="Founding price"
+            desc="Unlock every section score, accuracy, and timing breakdown — plus the full 10,000+ question bank."
             cta="Unlock report"
             onClick={() => onUnlock("report")}
           />
           <OfferRow
-            title="Full report + AI Mentor"
-            price="₹49"
+            title="AI Mentor — report + engine"
+            price="₹49/mo"
             note="Founding price"
             featured
-            desc="Everything above, plus the exact skip strategy, how to guess under negative marking, and your score-maximisation plan."
+            desc="Everything above, plus the exact skip strategy, your own break-even guess rule, and your score-maximisation plan."
             cta="Unlock report + Mentor"
             onClick={() => onUnlock("mentor")}
           />
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">
-            <ShieldCheck className="h-3.5 w-3.5 text-accent" />
-            No subscriptions, no clutter — pay once for your exam cycle.
+            <ShieldCheck className="h-3.5 w-3.5 text-success" />
+            Honest founding prices — no fake discounts. Cancel anytime.
           </p>
         </div>
 
         {checkout && (
-          <div className="rounded-xl border border-hairline bg-panel p-4 text-center text-sm text-ink-secondary">
-            Checkout for <span className="font-semibold text-ink">{checkout.price}</span> —
-            payment isn&apos;t wired up yet. This is the seam where secure checkout
-            and unlock will go.
+          <div className="space-y-3 rounded-xl border border-hairline bg-panel p-4 text-center text-sm text-ink-secondary">
+            <p>
+              Checkout for <span className="font-semibold text-ink">{checkout.price}</span> —
+              payment isn&apos;t wired up yet. This is the seam where secure
+              checkout and unlock will go.
+            </p>
+            {process.env.NODE_ENV !== "production" && (
+              <button
+                onClick={async () => {
+                  await fetch("/api/dev/simulate-upgrade", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ tier: checkout.tier === "mentor" ? "mentor" : "pro" }),
+                  });
+                  router.push(reportHref);
+                }}
+                className="mx-auto block rounded-md border border-dashed border-gold-bright/50 bg-gold-soft px-3 py-1.5 text-xs font-semibold text-gold"
+              >
+                ⚙ Dev only: simulate upgrade &amp; open report
+              </button>
+            )}
           </div>
         )}
       </main>

@@ -68,12 +68,12 @@ const FAQS: { q: string; a: string }[] = [
     a: "A one-time 20-question CBT in the real interface, tied to your account. You'll see your net score at the end. It doesn't include the full report — that's what the paid tiers unlock.",
   },
   {
-    q: "What's the difference between ₹19 and ₹49?",
-    a: "Both are season passes for the SSC CGL exam cycle with unlimited attempts on the full question bank. ₹19 gives you the full performance report — accuracy, timing, and section breakdown. ₹49 adds the AI Strategy Mentor: your exact skip strategy, how to guess under negative marking, and your score-maximisation plan.",
+    q: "What's the difference between ₹19/mo and ₹49/mo?",
+    a: "Both are monthly plans with unlimited attempts on the full question bank. Pro (₹19/mo) gives you the full performance report — accuracy, timing, and section breakdown. AI Mentor (₹49/mo) adds the LastMilePrep Mentor Engine: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan.",
   },
   {
-    q: "Is it a subscription?",
-    a: "No. There are no monthly charges and nothing auto-renews. You pay once for your exam cycle — a season pass, not a standing plan.",
+    q: "Why are the prices so low?",
+    a: "They're founding prices while we're young. ₹19/mo and ₹49/mo are honest launch rates — as we grow they'll move toward ₹99 and ₹149. Those aren't fake struck-through 'discounts'; they're where the plans are genuinely headed.",
   },
   {
     q: "Which exams are supported?",

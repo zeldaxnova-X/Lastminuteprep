@@ -49,9 +49,9 @@ export function GhostImage({
 }
 
 /**
- * Duotone treatment (ink → emerald → gold). Tames a neon/high-saturation source
+ * Duotone treatment (ink → indigo → gold). Tames a neon/high-saturation source
  * so it reads as premium AI rather than hacker-Matrix. Used low-opacity behind
- * the dark AI-Mentor panel.
+ * the dark AI-Mentor panel — indigo base (brand) warmed by a gold highlight.
  */
 export function Duotone({
   src,
@@ -79,8 +79,8 @@ export function Duotone({
         className="object-cover [filter:grayscale(1)_contrast(1.15)_brightness(0.78)]"
         style={{ opacity, objectPosition: position }}
       />
-      {/* recolor the mono image toward emerald, then warm it with gold */}
-      <div className="absolute inset-0 bg-[#065f46] opacity-70 mix-blend-color" />
+      {/* recolor the mono image toward indigo, then warm it with gold */}
+      <div className="absolute inset-0 bg-[#3730a3] opacity-70 mix-blend-color" />
       <div className="absolute inset-0 mix-blend-screen bg-[radial-gradient(60%_55%_at_85%_8%,rgba(217,119,6,0.32),transparent_62%)]" />
       <div className="absolute inset-0 bg-panel-dark/55" />
     </div>
@@ -88,7 +88,7 @@ export function Duotone({
 }
 
 /**
- * A framed content photo (real subject) with an emerald ring — used in feature
+ * A framed content photo (real subject) with a hairline ring — used in feature
  * rows and how-it-works steps. Content-bearing, so it takes descriptive alt.
  */
 export function Framed({
