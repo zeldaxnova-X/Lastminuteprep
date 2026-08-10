@@ -1,6 +1,9 @@
 # Vercel ignore configuration
-public/question-images/
-reports/
-scripts/
-scratch/
-supabase/
+# Paths are anchored with a leading "/" so they only match the repo root.
+# (An unanchored "supabase/" also matches src/lib/supabase/ — the auth client —
+# which broke the production build.)
+/public/question-images/
+/reports/
+/scripts/
+/scratch/
+/supabase/
