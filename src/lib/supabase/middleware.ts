@@ -2,10 +2,33 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 
 /**
- * Session-refresh middleware helper. Runs on every request to keep the auth
- * cookies fresh (Supabase tokens rotate). Does NOT gate routes — page/route
- * level checks own that — it only refreshes the session so server components
- * and API routes read a valid `auth.uid()`.
+ * Route prefixes that require an authenticated account. Anonymous visitors are
+ * redirected to /login. The public try-the-sample flow (`/sample` and the
+ * `/test/<id>` runner it launches) is intentionally NOT listed so the one-time
+ * anonymous sample keeps working; premium areas (dashboard, analytics, the AI
+ * Mentor, etc.) are. Plan-level gating (Pro/Mentor) is enforced separately in
+ * the pages/APIs via `getViewer()`.
+ */
+const PROTECTED_PATTERNS: RegExp[] = [
+  /^\/dashboard(\/|$)/,
+  /^\/analytics(\/|$)/,
+  /^\/revision(\/|$)/,
+  /^\/bookmarks(\/|$)/,
+  /^\/admin(\/|$)/,
+  /^\/test\/create(\/|$)/,
+  /^\/test\/[^/]+\/mentor(\/|$)/,
+];
+
+function isProtected(pathname: string): boolean {
+  return PROTECTED_PATTERNS.some((re) => re.test(pathname));
+}
+
+/**
+ * Session-refresh + route-gate middleware helper. Runs on every request to keep
+ * the auth cookies fresh (Supabase tokens rotate) AND to bounce unauthenticated
+ * visitors away from protected areas to /login (with a ?next= return path).
+ * Centralising the gate here means it cannot be bypassed by client-side
+ * navigation to a route whose page never checked auth.
  */
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -31,7 +54,21 @@ export async function updateSession(request: NextRequest) {
 
   // IMPORTANT: refresh the token. Do not run logic between createServerClient
   // and getUser() — it can log users out at random.
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // Gate protected areas: unauthenticated visitors are redirected to /login
+  // with a return path. This closes the bypass where a signed-out user could
+  // reach the dashboard / Mentor directly (e.g. via "Go to dashboard").
+  const { pathname, search } = request.nextUrl;
+  if (!user && isProtected(pathname)) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/login";
+    loginUrl.search = "";
+    loginUrl.searchParams.set("next", pathname + search);
+    return NextResponse.redirect(loginUrl);
+  }
 
   return response;
 }

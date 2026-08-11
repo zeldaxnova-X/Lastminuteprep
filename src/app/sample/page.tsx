@@ -9,9 +9,22 @@ import { Button, ButtonLink } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
 import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lucide-react";
 
-// Stub for the one-time-per-account/device guard. // TODO: replace with an
-// auth + server-side entitlement check so the free sample can't be farmed.
+// One-time-per-device guard for the anonymous sample. Access to premium areas
+// (dashboard, report, AI Mentor) is enforced server-side in middleware +
+// getViewer(), so this local flag is only a UX hint, not a security control.
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
+
+// Founding prices — kept in sync with the landing #pricing section.
+const PRICING_TIERS: {
+  name: string;
+  blurb: string;
+  price: string;
+  strike?: string;
+  highlight?: boolean;
+}[] = [
+  { name: "Pro", blurb: "Full bank · unlimited mocks · report", price: "₹19/mo", strike: "₹99" },
+  { name: "AI Mentor", blurb: "Everything in Pro + the Mentor Engine", price: "₹49/mo", strike: "₹149", highlight: true },
+];
 
 export default function SamplePage() {
   const router = useRouter();
@@ -76,22 +89,53 @@ export default function SamplePage() {
             <span className="text-sm">Loading…</span>
           </div>
         ) : used ? (
-          <Card className="w-full space-y-4 p-8 text-center">
-            <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-panel text-ink-tertiary">
-              <ListChecks className="h-5 w-5" />
-            </span>
-            <h1 className="text-xl font-semibold text-ink">You&apos;ve used your free sample</h1>
-            <p className="text-sm text-ink-secondary">
-              The one-time sample is tied to this device. Unlock the full question
-              bank, report, and AI Mentor for your exam cycle.
-            </p>
-            <div className="flex flex-col gap-2 pt-1 sm:flex-row sm:justify-center">
-              <ButtonLink href="/#pricing" variant="primary" size="md">
-                See pricing
+          <Card className="w-full space-y-6 p-8">
+            <div className="space-y-3 text-center">
+              <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-panel text-ink-tertiary">
+                <ListChecks className="h-5 w-5" />
+              </span>
+              <h1 className="text-xl font-semibold text-ink">You&apos;ve used your free sample</h1>
+              <p className="text-sm text-ink-secondary">
+                The one-time sample is tied to this device. Create an account to
+                unlock the full question bank, report, and AI Mentor.
+              </p>
+            </div>
+
+            {/* Pricing — founding prices */}
+            <div className="space-y-2.5">
+              {PRICING_TIERS.map((tier) => (
+                <div
+                  key={tier.name}
+                  className={`flex items-center justify-between gap-3 rounded-xl border px-4 py-3 ${
+                    tier.highlight
+                      ? "border-accent/30 bg-accent-soft"
+                      : "border-hairline bg-panel"
+                  }`}
+                >
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-ink">{tier.name}</p>
+                    <p className="truncate text-xs text-ink-secondary">{tier.blurb}</p>
+                  </div>
+                  <div className="flex flex-shrink-0 items-baseline gap-1.5">
+                    {tier.strike && (
+                      <span className="text-xs text-ink-tertiary line-through">{tier.strike}</span>
+                    )}
+                    <span className="text-sm font-bold text-ink">{tier.price}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="space-y-2 pt-1">
+              <ButtonLink href="/login?mode=signup&next=/dashboard" variant="primary" size="md" className="w-full">
+                Sign up to unlock
               </ButtonLink>
-              <ButtonLink href="/dashboard" variant="secondary" size="md">
-                Go to dashboard
-              </ButtonLink>
+              <p className="text-center text-xs text-ink-secondary">
+                Already have an account?{" "}
+                <Link href="/login?next=/dashboard" className="font-semibold text-accent transition-premium hover:text-accent-hover">
+                  Sign in
+                </Link>
+              </p>
             </div>
           </Card>
         ) : (
