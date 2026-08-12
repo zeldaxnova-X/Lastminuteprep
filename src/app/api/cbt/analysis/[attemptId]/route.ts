@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { loadOwnedAttempt, json403 } from "@/lib/auth/api-guard";
+import { getViewer, canSeeReport } from "@/lib/auth/plan";
 import { analyzeExamAttempt } from "@/lib/analytics/exam-analyzer";
 import type { ExamAttemptInput, QuestionAttemptInput } from "@/lib/analytics/types";
 import type { ValidatedQuestion } from "@/types/database.types";
@@ -13,19 +14,19 @@ export async function GET(
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
   try {
-    const supabase = createServerSupabaseClient();
     const { attemptId } = await params;
 
-    // Fetch attempt details
-    const { data: attempt, error: attemptError } = await supabase
-      .from("exam_attempts")
-      .select("*")
-      .eq("id", attemptId)
-      .single();
+    // Identity + ownership: only the owner (or the sample's device) may analyse.
+    const access = await loadOwnedAttempt(attemptId);
+    if (!access.ok) return access.res;
+    const { attempt, db: supabase } = access;
 
-    if (attemptError || !attempt) {
-      return NextResponse.json({ error: "Exam attempt not found" }, { status: 404 });
-    }
+    // Server-enforced paywall: the detailed attempt analysis is a paid (>= pro)
+    // deliverable. A free viewer is denied here, not merely in the UI. The
+    // anonymous sample (no session) resolves to `free`, so it is denied too —
+    // the sample's basic result comes from /result, not this deep analysis.
+    const viewer = await getViewer();
+    if (!canSeeReport(viewer.plan)) return json403();
 
     // Fetch all attempt answers with joined question metadata
     const { data: answers, error: answersError } = await supabase

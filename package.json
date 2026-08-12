@@ -10,7 +10,8 @@
     "test": "node --import tsx --test \"src/**/*.test.ts\"",
     "ingest": "tsx scripts/ingest/ingest.ts",
     "ingest:load": "tsx scripts/ingest/loader.ts",
-    "db:exec": "tsx scripts/ingest/db-exec.ts"
+    "db:exec": "tsx scripts/ingest/db-exec.ts",
+    "admin:grant": "tsx scripts/admin/grant-admin.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

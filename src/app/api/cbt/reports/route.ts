@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 
 /**
  * POST /api/cbt/reports
@@ -7,16 +7,10 @@ import { createServerSupabaseClient } from "@/lib/supabase-server";
  */
 export async function POST(request: NextRequest) {
   try {
-    const supabase = createServerSupabaseClient();
+    const { user, supabase } = await getSessionContext();
+    if (!user) return json401();
+    const userId = user.id;
     const body = await request.json();
-
-    const authHeader = request.headers.get("Authorization");
-    let userId = "00000000-0000-0000-0000-000000000000";
-    if (authHeader) {
-      const token = authHeader.replace("Bearer ", "");
-      const { data: { user } } = await supabase.auth.getUser(token);
-      if (user) userId = user.id;
-    }
 
     if (!body.question_id || !body.report_type) {
       return NextResponse.json(

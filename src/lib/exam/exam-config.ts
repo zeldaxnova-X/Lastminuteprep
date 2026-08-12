@@ -126,9 +126,6 @@ export const SSC_CGL_TIER1_CONFIG: ExamConfig = {
   ],
 };
 
-/** Fixed demo user until auth lands (§0). // TODO: replace with auth.uid(). */
-export const DEMO_USER_ID = "00000000-0000-0000-0000-000000000001";
-
 /* ------------------------------------------------------------------ *
  * Pure config readers — the ONLY sanctioned way for engine/scorer/mentor
  * to obtain marking numbers. Never hardcode +2 / −0.5 in those modules.

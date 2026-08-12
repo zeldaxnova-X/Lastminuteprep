@@ -1,17 +1,17 @@
-import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
-
-const DEV_USER_ID = "00000000-0000-0000-0000-000000000001";
+import { NextResponse } from "next/server";
+import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 
 /**
  * GET /api/cbt/analytics
- * Get user's performance analytics dynamically from exam_attempts & attempt_answers.
- * Zero hardcoded analytics.
+ * Get the signed-in user's performance analytics from their own attempts.
+ * Identity is server-derived; the user-scoped client means RLS also restricts
+ * rows to auth.uid() as a backstop.
  */
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
-    const supabase = createServerSupabaseClient();
-    const userId = DEV_USER_ID;
+    const { user, supabase } = await getSessionContext();
+    if (!user) return json401();
+    const userId = user.id;
 
     // Fetch all completed attempts for this user.
     // NOTE: the column is `score` (not `total_score`) — selecting a non-existent

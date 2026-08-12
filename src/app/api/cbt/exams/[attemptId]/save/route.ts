@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { loadOwnedAttempt } from "@/lib/auth/api-guard";
 import type { SaveAnswerRequest } from "@/types/database.types";
 
 /**
@@ -12,23 +12,13 @@ export async function POST(
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
   try {
-    const supabase = createServerSupabaseClient();
     const { attemptId } = await params;
     const body: SaveAnswerRequest = await request.json();
 
-    // Verify attempt is still in progress
-    const { data: attempt, error: attemptError } = await supabase
-      .from("exam_attempts")
-      .select("id, status")
-      .eq("id", attemptId)
-      .single();
-
-    if (attemptError || !attempt) {
-      return NextResponse.json(
-        { error: "Exam attempt not found" },
-        { status: 404 }
-      );
-    }
+    // Identity + ownership before any mutation.
+    const access = await loadOwnedAttempt(attemptId);
+    if (!access.ok) return access.res;
+    const { attempt, db: supabase } = access;
 
     if (attempt.status !== "in_progress") {
       return NextResponse.json(

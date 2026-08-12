@@ -14,10 +14,12 @@ const PROTECTED_PATTERNS: RegExp[] = [
   /^\/analytics(\/|$)/,
   /^\/revision(\/|$)/,
   /^\/bookmarks(\/|$)/,
-  /^\/admin(\/|$)/,
   /^\/test\/create(\/|$)/,
   /^\/test\/[^/]+\/mentor(\/|$)/,
 ];
+// NOTE: /admin is intentionally NOT redirected here. It is gated in
+// src/app/admin/layout.tsx, which returns 404 for anyone who isn't an admin
+// (signed-out included) so the admin area's existence is never revealed.
 
 function isProtected(pathname: string): boolean {
   return PROTECTED_PATTERNS.some((re) => re.test(pathname));

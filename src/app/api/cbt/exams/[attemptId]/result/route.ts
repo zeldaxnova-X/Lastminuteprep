@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { loadOwnedAttempt } from "@/lib/auth/api-guard";
 
 /**
  * GET /api/cbt/exams/[attemptId]/result
@@ -11,22 +11,12 @@ export async function GET(
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
   try {
-    const supabase = createServerSupabaseClient();
     const { attemptId } = await params;
 
-    // Get the exam attempt
-    const { data: attempt, error: attemptError } = await supabase
-      .from("exam_attempts")
-      .select("*")
-      .eq("id", attemptId)
-      .single();
-
-    if (attemptError || !attempt) {
-      return NextResponse.json(
-        { error: "Exam attempt not found" },
-        { status: 404 }
-      );
-    }
+    // Identity + ownership: only the owner (or the sample's device) sees it.
+    const access = await loadOwnedAttempt(attemptId);
+    if (!access.ok) return access.res;
+    const { attempt, db: supabase } = access;
 
     if (attempt.status === "in_progress") {
       return NextResponse.json(

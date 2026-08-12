@@ -1,13 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import {
+  getUserId,
+  readDeviceToken,
+  setDeviceCookie,
+  json401,
+} from "@/lib/auth/api-guard";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
-// Anonymous fallback identity for signed-out sample attempts.
-//   // TODO: replace with a null user_id + device_id once sample sessions are
-//   //       claimed onto a real account at first login.
-const DEV_USER_ID = "00000000-0000-0000-0000-000000000001";
+/** The only anonymous path: the one-time 20-question random sample. */
+function isSampleRequest(body: StartExamRequest): boolean {
+  return body.exam_type === "random_test" && (body.total_questions ?? 100) <= 20;
+}
 
 /**
  * Validate question completeness for exam inclusion (v2 dataset).
@@ -47,13 +53,39 @@ export async function POST(request: NextRequest) {
     const supabase = createServerSupabaseClient();
     const body: StartExamRequest = await request.json();
 
-    // Wire the attempt to the signed-in user when present; fall back to the
-    // anonymous demo identity so the frictionless (no-login) sample still works.
-    const authClient = await createSupabaseServerClient();
-    const {
-      data: { user },
-    } = await authClient.auth.getUser();
-    const userId = user?.id ?? DEV_USER_ID;
+    // Identity is server-derived. Real exams require a signed-in account; only
+    // the one-time 20-Q sample may run anonymously (guarded by a device token).
+    const sessionUserId = await getUserId();
+    const sample = isSampleRequest(body);
+
+    if (!sample && !sessionUserId) return json401();
+
+    // Anonymous-sample guard: one sample per durable device token. Signed-in
+    // users skip the device gate (they own the row via user_id).
+    let deviceToken: string | null = null;
+    let newDeviceToken: string | null = null;
+    if (sample && !sessionUserId) {
+      deviceToken = await readDeviceToken();
+      if (deviceToken) {
+        const { data: prior } = await supabase
+          .from("sample_attempts")
+          .select("device_token")
+          .eq("device_token", deviceToken)
+          .maybeSingle();
+        if (prior) {
+          return NextResponse.json(
+            { error: "sample_used", message: "You've already used your free sample on this device." },
+            { status: 409 }
+          );
+        }
+      } else {
+        newDeviceToken = randomUUID();
+        deviceToken = newDeviceToken;
+      }
+    }
+
+    const userId = sessionUserId ?? null;
+    const deviceId = sessionUserId ? null : deviceToken;
 
     let questions: ValidatedQuestion[] = [];
     let title = body.title || "";
@@ -227,6 +259,7 @@ export async function POST(request: NextRequest) {
       .from("exam_attempts")
       .insert({
         user_id: userId,
+        device_id: deviceId,
         exam_type: body.exam_type,
         paper_id: body.paper_id || null,
         title,
@@ -274,6 +307,21 @@ export async function POST(request: NextRequest) {
     }
     questions = stripAnswerKey(questions);
 
+    // Record the anonymous sample against the device token (the server-side
+    // one-time ledger — resists localStorage clearing).
+    if (sample && !sessionUserId && deviceToken) {
+      const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
+      await supabase.from("sample_attempts").upsert(
+        {
+          device_token: deviceToken,
+          attempt_id: attempt.id,
+          ip,
+          user_agent: request.headers.get("user-agent")?.slice(0, 300) || null,
+        },
+        { onConflict: "device_token" }
+      );
+    }
+
     const response: StartExamResponse = {
       attempt_id: attempt.id,
       exam_type: body.exam_type,
@@ -284,7 +332,9 @@ export async function POST(request: NextRequest) {
       started_at: attempt.started_at,
     };
 
-    return NextResponse.json(response, { status: 201 });
+    const res = NextResponse.json(response, { status: 201 });
+    if (newDeviceToken) setDeviceCookie(res, newDeviceToken);
+    return res;
   } catch (err) {
     console.error("Start exam error:", err);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });

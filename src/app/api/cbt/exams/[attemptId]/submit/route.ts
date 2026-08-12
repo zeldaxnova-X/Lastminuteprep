@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { loadOwnedAttempt } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 
 type ResponseStatus =
@@ -113,22 +113,12 @@ export async function POST(
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
   try {
-    const supabase = createServerSupabaseClient();
     const { attemptId } = await params;
 
-    // Verify attempt exists and is in progress
-    const { data: attempt, error: attemptError } = await supabase
-      .from("exam_attempts")
-      .select("*")
-      .eq("id", attemptId)
-      .single();
-
-    if (attemptError || !attempt) {
-      return NextResponse.json(
-        { error: "Exam attempt not found" },
-        { status: 404 }
-      );
-    }
+    // Identity + ownership before scoring/mutation.
+    const access = await loadOwnedAttempt(attemptId);
+    if (!access.ok) return access.res;
+    const { attempt, db: supabase } = access;
 
     if (attempt.status !== "in_progress") {
       return NextResponse.json(
@@ -295,7 +285,12 @@ export async function POST(
     // failure here must not break the legacy result path.
     // ------------------------------------------------------------------
     try {
-      await mirrorToCanonical(supabase, attempt, answers || [], marksAwardedById);
+      await mirrorToCanonical(
+        supabase,
+        attempt as Parameters<typeof mirrorToCanonical>[1],
+        answers || [],
+        marksAwardedById
+      );
       // Deterministic scoring + Mentor analysis → session_results + mentor_reports.
       const report = await buildAndStoreReport(supabase, attempt.id);
       if (!report.ok) console.warn("Report build skipped:", report.reason);

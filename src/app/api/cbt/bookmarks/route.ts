@@ -1,39 +1,29 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import type { BookmarkRequest } from "@/types/database.types";
 
 /**
- * GET /api/cbt/bookmarks
- * Get all bookmarked questions for the current user.
+ * Bookmarks are per-user and require a signed-in account. Identity comes from
+ * the session (never a client-supplied header); the user-scoped client means
+ * RLS also confines rows to auth.uid().
  */
-export async function GET(request: NextRequest) {
+
+/** GET /api/cbt/bookmarks — the signed-in user's bookmarked questions. */
+export async function GET() {
   try {
-    const supabase = createServerSupabaseClient();
+    const { user, supabase } = await getSessionContext();
+    if (!user) return json401();
 
-    // Get user ID from auth header or use anonymous
-    const authHeader = request.headers.get("Authorization");
-    let userId = "00000000-0000-0000-0000-000000000000";
-    if (authHeader) {
-      const token = authHeader.replace("Bearer ", "");
-      const { data: { user } } = await supabase.auth.getUser(token);
-      if (user) userId = user.id;
-    }
-
-    // Get bookmarks
     const { data: bookmarks, error } = await supabase
       .from("user_bookmarks")
       .select("*")
-      .eq("user_id", userId)
+      .eq("user_id", user.id)
       .order("created_at", { ascending: false });
 
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
-    // Get the associated questions
     const questionIds = (bookmarks || []).map((b) => b.question_id);
     let questions: Record<string, unknown>[] = [];
-
     if (questionIds.length > 0) {
       const { data: qData } = await supabase
         .from("validated_questions")
@@ -41,11 +31,7 @@ export async function GET(request: NextRequest) {
         .in("id", questionIds);
       questions = qData || [];
     }
-
-    const questionMap = new Map(
-      questions.map((q: Record<string, unknown>) => [q.id as string, q])
-    );
-
+    const questionMap = new Map(questions.map((q) => [q.id as string, q]));
     const bookmarksWithQuestions = (bookmarks || []).map((bookmark) => ({
       ...bookmark,
       question: questionMap.get(bookmark.question_id) || null,
@@ -55,119 +41,60 @@ export async function GET(request: NextRequest) {
       bookmarks: bookmarksWithQuestions,
       total: bookmarksWithQuestions.length,
     });
-  } catch (err) {
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
-/**
- * POST /api/cbt/bookmarks
- * Toggle bookmark on a question (add if not exists, remove if exists).
- */
+/** POST /api/cbt/bookmarks — toggle a bookmark for the signed-in user. */
 export async function POST(request: NextRequest) {
   try {
-    const supabase = createServerSupabaseClient();
+    const { user, supabase } = await getSessionContext();
+    if (!user) return json401();
     const body: BookmarkRequest = await request.json();
 
-    const authHeader = request.headers.get("Authorization");
-    let userId = "00000000-0000-0000-0000-000000000000";
-    if (authHeader) {
-      const token = authHeader.replace("Bearer ", "");
-      const { data: { user } } = await supabase.auth.getUser(token);
-      if (user) userId = user.id;
-    }
-
-    // Check if bookmark already exists
     const { data: existing } = await supabase
       .from("user_bookmarks")
       .select("id")
-      .eq("user_id", userId)
+      .eq("user_id", user.id)
       .eq("question_id", body.question_id)
-      .single();
+      .maybeSingle();
 
     if (existing) {
-      // Remove bookmark
-      await supabase
-        .from("user_bookmarks")
-        .delete()
-        .eq("id", existing.id);
-
-      return NextResponse.json({
-        action: "removed",
-        question_id: body.question_id,
-      });
-    } else {
-      // Add bookmark
-      const { data: newBookmark, error } = await supabase
-        .from("user_bookmarks")
-        .insert({
-          user_id: userId,
-          question_id: body.question_id,
-          note: body.note || null,
-        })
-        .select()
-        .single();
-
-      if (error) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
-      }
-
-      return NextResponse.json({
-        action: "added",
-        bookmark: newBookmark,
-      }, { status: 201 });
+      await supabase.from("user_bookmarks").delete().eq("id", existing.id).eq("user_id", user.id);
+      return NextResponse.json({ action: "removed", question_id: body.question_id });
     }
-  } catch (err) {
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+
+    const { data: newBookmark, error } = await supabase
+      .from("user_bookmarks")
+      .insert({ user_id: user.id, question_id: body.question_id, note: body.note || null })
+      .select()
+      .single();
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+
+    return NextResponse.json({ action: "added", bookmark: newBookmark }, { status: 201 });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
-/**
- * DELETE /api/cbt/bookmarks
- * Remove a specific bookmark by question_id.
- */
+/** DELETE /api/cbt/bookmarks?question_id=… — remove one of the user's bookmarks. */
 export async function DELETE(request: NextRequest) {
   try {
-    const supabase = createServerSupabaseClient();
-    const { searchParams } = new URL(request.url);
-    const questionId = searchParams.get("question_id");
-
-    if (!questionId) {
-      return NextResponse.json(
-        { error: "question_id is required" },
-        { status: 400 }
-      );
-    }
-
-    const authHeader = request.headers.get("Authorization");
-    let userId = "00000000-0000-0000-0000-000000000000";
-    if (authHeader) {
-      const token = authHeader.replace("Bearer ", "");
-      const { data: { user } } = await supabase.auth.getUser(token);
-      if (user) userId = user.id;
-    }
+    const { user, supabase } = await getSessionContext();
+    if (!user) return json401();
+    const questionId = new URL(request.url).searchParams.get("question_id");
+    if (!questionId) return NextResponse.json({ error: "question_id is required" }, { status: 400 });
 
     const { error } = await supabase
       .from("user_bookmarks")
       .delete()
-      .eq("user_id", userId)
+      .eq("user_id", user.id)
       .eq("question_id", questionId);
-
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
     return NextResponse.json({ action: "removed", question_id: questionId });
-  } catch (err) {
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }

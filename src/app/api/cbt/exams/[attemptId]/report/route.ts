@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { loadOwnedAttempt, json403 } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { narrateMentorReport } from "@/lib/exam/anthropic-narrate";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
@@ -36,8 +36,13 @@ export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
-  const supabase = createServerSupabaseClient();
   const { attemptId } = await params;
+
+  // Identity + ownership: only the owner (or the sample's device) may fetch a
+  // report. The paywall below further restricts WHAT they get by plan.
+  const access = await loadOwnedAttempt(attemptId);
+  if (!access.ok) return access.res;
+  const supabase = access.db;
 
   // Ensure the deterministic report exists (idempotent).
   let { data: result } = await supabase
@@ -160,8 +165,14 @@ export async function POST(
   _req: NextRequest,
   { params }: { params: Promise<{ attemptId: string }> }
 ) {
-  const supabase = createServerSupabaseClient();
   const { attemptId } = await params;
+
+  // Ownership + paywall: the Mentor narrative is a mentor-plan feature.
+  const access = await loadOwnedAttempt(attemptId);
+  if (!access.ok) return access.res;
+  const supabase = access.db;
+  const viewer = await getViewer();
+  if (!canSeeMentor(viewer.plan)) return json403();
 
   const { data: report } = await supabase
     .from("mentor_reports")
