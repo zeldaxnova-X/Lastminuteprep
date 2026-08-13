@@ -9,6 +9,7 @@ import { BrandLogo } from "@/components/brand-logo";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
+import { startRazorpayCheckout } from "@/lib/payments/razorpay-checkout";
 
 interface SectionRow {
   key: string;
@@ -44,8 +45,11 @@ export default function SampleConversionPage() {
 
   const [data, setData] = useState<ReportData | null>(null);
   const [authed, setAuthed] = useState<boolean | null>(null);
+  const [email, setEmail] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [checkout, setCheckout] = useState<null | { tier: "report" | "mentor"; price: string }>(null);
+  const [paying, setPaying] = useState(false);
+  const [payError, setPayError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!attemptId) return;
@@ -56,7 +60,11 @@ export default function SampleConversionPage() {
           fetch("/api/auth/me"),
         ]);
         if (rep.ok) setData(await rep.json());
-        if (me.ok) setAuthed(!!(await me.json()).authenticated);
+        if (me.ok) {
+          const viewer = await me.json();
+          setAuthed(!!viewer.authenticated);
+          setEmail(viewer.email ?? null);
+        }
       } finally {
         setLoading(false);
       }
@@ -76,8 +84,22 @@ export default function SampleConversionPage() {
 
   function startCheckout(tier: "report" | "mentor") {
     setCheckout({ tier, price: tier === "mentor" ? "₹49/mo" : "₹19/mo" });
-    // eslint-disable-next-line no-console
-    console.log(`[stub] startCheckout(${tier}) — Razorpay not wired`);
+    setPayError(null);
+    setPaying(true);
+    void startRazorpayCheckout({
+      // UI "report" tier maps to the canonical "pro" plan.
+      plan: tier === "mentor" ? "mentor" : "pro",
+      prefill: email ? { email } : undefined,
+      onSuccess: () => {
+        // Plan granted server-side — the report is now unlocked.
+        router.push(reportHref);
+      },
+      onError: (message) => {
+        setPayError(message);
+        setPaying(false);
+      },
+      onDismiss: () => setPaying(false),
+    });
   }
 
   if (loading) {
@@ -186,11 +208,28 @@ export default function SampleConversionPage() {
 
         {checkout && (
           <div className="space-y-3 rounded-xl border border-hairline bg-panel p-4 text-center text-sm text-ink-secondary">
-            <p>
-              Checkout for <span className="font-semibold text-ink">{checkout.price}</span> —
-              payment isn&apos;t wired up yet. This is the seam where secure
-              checkout and unlock will go.
-            </p>
+            {paying ? (
+              <p className="flex items-center justify-center gap-2 text-ink">
+                <Loader2 className="h-4 w-4 animate-spin text-accent" />
+                Opening secure checkout for{" "}
+                <span className="font-semibold">{checkout.price}</span>…
+              </p>
+            ) : payError ? (
+              <div className="space-y-2">
+                <p className="text-danger">{payError}</p>
+                <button
+                  onClick={() => startCheckout(checkout.tier)}
+                  className="mx-auto block rounded-md border border-hairline bg-surface px-3 py-1.5 text-xs font-semibold text-ink transition-premium hover:bg-panel"
+                >
+                  Try again
+                </button>
+              </div>
+            ) : (
+              <p>
+                Secure checkout for{" "}
+                <span className="font-semibold text-ink">{checkout.price}</span> via Razorpay.
+              </p>
+            )}
             {process.env.NODE_ENV !== "production" && (
               <button
                 onClick={async () => {
