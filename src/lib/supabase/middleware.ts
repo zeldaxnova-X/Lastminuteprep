@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
+import { safeNext } from "@/lib/auth/next";
 
 /**
  * Route prefixes that require an authenticated account. Anonymous visitors are
@@ -33,6 +34,26 @@ function isProtected(pathname: string): boolean {
  * navigation to a route whose page never checked auth.
  */
 export async function updateSession(request: NextRequest) {
+  // OAuth code safety net: Supabase falls back to the project's Site URL (often
+  // the root "/") when the `redirectTo` isn't allow-listed, stranding the `?code`
+  // there so it's never exchanged. Forward any stray code to /auth/callback (the
+  // PKCE exchange happens there), preserving ?next. The code-verifier cookie is
+  // same-origin, so it rides along. The proper fix is still to allow-list
+  // /auth/callback in the Supabase dashboard — this just prevents a dead end.
+  {
+    const { pathname, searchParams } = request.nextUrl;
+    if (pathname !== "/auth/callback" && searchParams.has("code")) {
+      const url = request.nextUrl.clone();
+      const code = searchParams.get("code")!;
+      const next = safeNext(searchParams.get("next"));
+      url.pathname = "/auth/callback";
+      url.search = "";
+      url.searchParams.set("code", code);
+      url.searchParams.set("next", next);
+      return NextResponse.redirect(url);
+    }
+  }
+
   let response = NextResponse.next({ request });
 
   const supabase = createServerClient(
