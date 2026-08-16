@@ -41,6 +41,21 @@ function TestCreationForm() {
   const [selectedSubject, setSelectedSubject] = useState<Subject>("Quantitative Aptitude");
   const [questionCount, setQuestionCount] = useState<number>(100);
 
+  // Plan gate: /test/create only offers real (non-sample) modes, so a FREE user
+  // has nothing launchable here. Refuse it and point them to upgrade — the
+  // server also 403s /start, so this is UX, not the enforcement boundary.
+  const [plan, setPlan] = useState<"free" | "pro" | "mentor" | null>(null);
+  useEffect(() => {
+    let alive = true;
+    fetch("/api/auth/me")
+      .then((r) => r.json())
+      .then((v) => alive && setPlan((v?.plan as "free" | "pro" | "mentor") ?? "free"))
+      .catch(() => alive && setPlan("free"));
+    return () => {
+      alive = false;
+    };
+  }, []);
+
   useEffect(() => {
     async function fetchPapers() {
       setLoadingPapers(true);
@@ -83,6 +98,47 @@ function TestCreationForm() {
     
     router.push(`/test/instructions?${params.toString()}`);
   };
+
+  if (plan === null) {
+    return (
+      <div className="flex items-center justify-center py-20 text-gray-400 gap-2">
+        <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
+        <span className="text-xs">Loading…</span>
+      </div>
+    );
+  }
+
+  if (plan === "free") {
+    return (
+      <div className="mx-auto max-w-md rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-xs">
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50">
+          <Zap className="h-6 w-6 text-blue-600" />
+        </div>
+        <h1 className="text-xl font-extrabold tracking-tight text-gray-900">
+          Full tests are a Pro feature
+        </h1>
+        <p className="mx-auto mt-2 max-w-sm text-sm text-gray-500">
+          Your free plan includes the one-time sample. Upgrade to Pro to unlock previous-year
+          papers, topic tests, and unlimited mocks from the full question bank.
+        </p>
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <Link
+            href="/dashboard#upgrade"
+            className="inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+          >
+            See upgrade options
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+          <Link
+            href="/sample"
+            className="inline-flex min-h-[44px] items-center justify-center rounded-lg border border-gray-200 px-5 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-300"
+          >
+            Take the free sample
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-5 sm:space-y-6">

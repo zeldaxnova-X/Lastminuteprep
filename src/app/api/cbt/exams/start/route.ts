@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
-  getUserId,
   readDeviceToken,
   setDeviceCookie,
   json401,
 } from "@/lib/auth/api-guard";
+import { getViewer } from "@/lib/auth/plan";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
@@ -55,10 +56,25 @@ export async function POST(request: NextRequest) {
 
     // Identity is server-derived. Real exams require a signed-in account; only
     // the one-time 20-Q sample may run anonymously (guarded by a device token).
-    const sessionUserId = await getUserId();
+    const viewer = await getViewer();
+    const sessionUserId = viewer.userId;
     const sample = isSampleRequest(body);
 
     if (!sample && !sessionUserId) return json401();
+
+    // Plan gate (paywall at the source): FREE users may ONLY start the sample.
+    // Any real exam (pyp/subject/random/custom) requires a paid plan. Enforced
+    // server-side so a direct /start call can't bypass the gated UI. PRO/MENTOR
+    // are unaffected; the anonymous sample is exempt (sample === true).
+    if (!sample && viewer.plan === "free") {
+      return NextResponse.json(
+        {
+          error: "upgrade_required",
+          message: "Starting full tests requires Pro. Upgrade to unlock the question bank.",
+        },
+        { status: 403 }
+      );
+    }
 
     // Anonymous-sample guard: one sample per durable device token. Signed-in
     // users skip the device gate (they own the row via user_id).
@@ -86,6 +102,14 @@ export async function POST(request: NextRequest) {
 
     const userId = sessionUserId ?? null;
     const deviceId = sessionUserId ? null : deviceToken;
+
+    // Ownership-critical writes: a signed-in user writes through the USER-SCOPED
+    // client so Postgres RLS stamps/enforces user_id = auth.uid() (the own-row
+    // WITH CHECK). The anonymous sample has no session for RLS to key on, so it
+    // writes via the service role (device_id path — the documented exception).
+    // Reference reads + the sample_attempts ledger stay on the service role
+    // (`supabase`).
+    const writeDb = sessionUserId ? await createSupabaseServerClient() : supabase;
 
     let questions: ValidatedQuestion[] = [];
     let title = body.title || "";
@@ -255,7 +279,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create exam attempt
-    const { data: attempt, error: attemptError } = await supabase
+    const { data: attempt, error: attemptError } = await writeDb
       .from("exam_attempts")
       .insert({
         user_id: userId,
@@ -293,10 +317,10 @@ export async function POST(request: NextRequest) {
       time_spent_seconds: 0,
     }));
 
-    const { error: answersError } = await supabase.from("attempt_answers").insert(answerRows);
+    const { error: answersError } = await writeDb.from("attempt_answers").insert(answerRows);
 
     if (answersError) {
-      await supabase.from("exam_attempts").delete().eq("id", attempt.id);
+      await writeDb.from("exam_attempts").delete().eq("id", attempt.id);
       return NextResponse.json({ error: answersError.message }, { status: 500 });
     }
 

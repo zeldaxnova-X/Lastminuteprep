@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { RotateCcw, Bookmark, ArrowRight } from "lucide-react";
+import { RotateCcw, Bookmark, ArrowRight, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonClasses } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
@@ -16,6 +17,21 @@ const NAV_LINKS = [
 
 export function TopNav() {
   const pathname = usePathname();
+
+  // Gate the primary CTA by plan. Default to the free-safe target until the plan
+  // loads, so the full mode picker (/test/create) is never exposed to a free
+  // user, even briefly. PRO/MENTOR get the real "Start Test" entry.
+  const [canPractice, setCanPractice] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    fetch("/api/auth/me")
+      .then((r) => r.json())
+      .then((v) => alive && setCanPractice(v?.plan === "pro" || v?.plan === "mentor"))
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-bg/80 backdrop-blur-md">
@@ -44,13 +60,23 @@ export function TopNav() {
             );
           })}
 
-          <Link
-            href="/test/create"
-            className={cn(buttonClasses("primary", "sm"), "ml-1")}
-          >
-            <span>Start Test</span>
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+          {canPractice ? (
+            <Link
+              href="/test/create"
+              className={cn(buttonClasses("primary", "sm"), "ml-1")}
+            >
+              <span>Start Test</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          ) : (
+            <Link
+              href="/dashboard#upgrade"
+              className={cn(buttonClasses("primary", "sm"), "ml-1")}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              <span>Unlock tests</span>
+            </Link>
+          )}
           <AuthNav variant="app" />
         </nav>
       </div>
