@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
-import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
   readDeviceToken,
   setDeviceCookie,
   json401,
+  attemptWriteClient,
 } from "@/lib/auth/api-guard";
 import { getViewer } from "@/lib/auth/plan";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
@@ -103,13 +103,12 @@ export async function POST(request: NextRequest) {
     const userId = sessionUserId ?? null;
     const deviceId = sessionUserId ? null : deviceToken;
 
-    // Ownership-critical writes: a signed-in user writes through the USER-SCOPED
-    // client so Postgres RLS stamps/enforces user_id = auth.uid() (the own-row
-    // WITH CHECK). The anonymous sample has no session for RLS to key on, so it
-    // writes via the service role (device_id path — the documented exception).
-    // Reference reads + the sample_attempts ledger stay on the service role
-    // (`supabase`).
-    const writeDb = sessionUserId ? await createSupabaseServerClient() : supabase;
+    // Attempt-write client comes from the ONE helper (see attemptWriteClient):
+    // authed → user-scoped (RLS stamps user_id=auth.uid()); anonymous sample →
+    // service role (user_id NULL + device_id; RLS can't key on a no-session
+    // request). Never select this client inline here — that has regressed twice.
+    // Reference reads + the sample_attempts ledger stay on `supabase` (service).
+    const writeDb = await attemptWriteClient(sessionUserId);
 
     let questions: ValidatedQuestion[] = [];
     let title = body.title || "";

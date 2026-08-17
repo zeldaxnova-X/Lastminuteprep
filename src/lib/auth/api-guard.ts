@@ -85,6 +85,31 @@ export function serviceClient() {
   return createServerSupabaseClient();
 }
 
+/**
+ * SINGLE SOURCE OF TRUTH for which Supabase client an `exam_attempts` WRITE
+ * (create / update / delete) must use, chosen by identity. No route may pick
+ * this ad hoc — this exact decision has regressed TWICE, each time an identity
+ * refactor moved a route onto the cookie client and RLS then refused the
+ * anonymous sample insert ("new row violates row-level security policy").
+ *
+ *   • authenticated (sessionUserId set) → USER-SCOPED client: Postgres RLS
+ *     stamps + enforces user_id = auth.uid() (own-row WITH CHECK).
+ *   • anonymous sample (sessionUserId null) → SERVICE-ROLE client: there is NO
+ *     session for RLS to key on, so the row (user_id NULL + device_id) is
+ *     written via the service role and guarded by the device-token check in
+ *     code. This is the DOCUMENTED RLS exception — do NOT switch it to the
+ *     cookie client; RLS would reject the anon insert.
+ *
+ * Mirrors loadOwnedAttempt's read-side client contract.
+ */
+export async function attemptWriteClient(
+  sessionUserId: string | null
+): Promise<SupabaseClient> {
+  return sessionUserId
+    ? ((await createSupabaseServerClient()) as unknown as SupabaseClient)
+    : (serviceClient() as unknown as SupabaseClient);
+}
+
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 // Attempt rows are dynamic Supabase shapes; callers read many columns.
