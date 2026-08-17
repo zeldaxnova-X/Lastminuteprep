@@ -10,12 +10,45 @@ export type PaidPlan = "pro" | "mentor";
 interface CheckoutHandlers {
   plan: PaidPlan;
   prefill?: { name?: string; email?: string };
-  /** Called after the server confirms the signature and grants the plan. */
+  /**
+   * Called once the payment succeeded and its checkout signature verified
+   * server-side. The plan is NOT yet granted at this point — the webhook grants
+   * it independently; callers should poll `waitForPlanUpgrade` to confirm.
+   */
   onSuccess: (plan: string) => void;
   /** Called on any failure (order/verify error, payment.failed, script load). */
   onError: (message: string) => void;
   /** Called when the user closes the modal without paying. */
   onDismiss?: () => void;
+}
+
+const PLAN_RANK: Record<string, number> = { free: 0, pro: 1, mentor: 2 };
+
+/**
+ * Poll /api/auth/me until the account reaches (or exceeds) `target` — i.e. the
+ * webhook has landed and granted the plan. Returns true on upgrade, false on
+ * timeout (payment is still safe; the webhook will have applied it shortly).
+ */
+export async function waitForPlanUpgrade(
+  target: PaidPlan,
+  opts?: { timeoutMs?: number; intervalMs?: number }
+): Promise<boolean> {
+  const timeoutMs = opts?.timeoutMs ?? 20000;
+  const intervalMs = opts?.intervalMs ?? 1500;
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const r = await fetch("/api/auth/me", { cache: "no-store" });
+      if (r.ok) {
+        const v = (await r.json()) as { plan?: string };
+        if ((PLAN_RANK[v.plan ?? "free"] ?? 0) >= PLAN_RANK[target]) return true;
+      }
+    } catch {
+      // transient — keep polling
+    }
+    await new Promise((res) => setTimeout(res, intervalMs));
+  }
+  return false;
 }
 
 // Minimal shape of the global the checkout script installs.

@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ButtonLink } from "@/components/ui/button";
 import { sectionLabel } from "@/lib/cbt-questions";
-import { startRazorpayCheckout } from "@/lib/payments/razorpay-checkout";
+import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
@@ -82,6 +82,7 @@ export default function DashboardPage() {
 
   const [paying, setPaying] = useState<null | Plan>(null);
   const [payError, setPayError] = useState<string | null>(null);
+  const [confirming, setConfirming] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -113,12 +114,28 @@ export default function DashboardPage() {
   const dash = (v: React.ReactNode) => (loading ? "…" : v);
 
   function upgrade(target: Plan) {
+    if (target === "free") return;
+    const paidTarget = target === "mentor" ? "mentor" : "pro";
     setPayError(null);
     setPaying(target);
     void startRazorpayCheckout({
-      plan: target === "mentor" ? "mentor" : "pro",
+      plan: paidTarget,
       prefill: email ? { email } : undefined,
-      onSuccess: () => window.location.reload(),
+      // Payment captured + signature verified — but the plan is granted by the
+      // webhook, not this callback. Show a "confirming" state and poll until the
+      // webhook lands, then reload. On timeout the payment is still safe (the
+      // webhook applies it independently); we just ask the user to refresh.
+      onSuccess: async () => {
+        setPaying(null);
+        setConfirming(true);
+        const upgraded = await waitForPlanUpgrade(paidTarget);
+        setConfirming(false);
+        if (upgraded) window.location.reload();
+        else
+          setPayError(
+            "Payment received — we're confirming your upgrade. It'll appear in a moment; refresh if it doesn't."
+          );
+      },
       onError: (m) => {
         setPayError(m);
         setPaying(null);
@@ -132,6 +149,16 @@ export default function DashboardPage() {
       <TopNav />
 
       <main className="mx-auto w-full max-w-6xl flex-1 space-y-10 px-4 py-10 sm:px-6">
+        {/* Payment confirming — webhook grants the plan asynchronously */}
+        {confirming && (
+          <Card className="flex items-center gap-3 border-accent/30 bg-accent-soft p-4">
+            <Loader2 className="h-5 w-5 flex-shrink-0 animate-spin text-accent" />
+            <p className="text-sm text-ink">
+              Payment received — confirming your upgrade. This takes a few seconds…
+            </p>
+          </Card>
+        )}
+
         {/* Resume banner */}
         {hasActiveAttempt && (
           <Card className="flex flex-col items-start justify-between gap-4 border-warning/30 bg-warning-soft p-5 sm:flex-row sm:items-center">

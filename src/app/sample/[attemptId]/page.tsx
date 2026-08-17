@@ -9,7 +9,7 @@ import { BrandLogo } from "@/components/brand-logo";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
-import { startRazorpayCheckout } from "@/lib/payments/razorpay-checkout";
+import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
 
 interface SectionRow {
   key: string;
@@ -86,13 +86,24 @@ export default function SampleConversionPage() {
     setCheckout({ tier, price: tier === "mentor" ? "₹49/mo" : "₹19/mo" });
     setPayError(null);
     setPaying(true);
+    const plan = tier === "mentor" ? "mentor" : "pro";
     void startRazorpayCheckout({
       // UI "report" tier maps to the canonical "pro" plan.
-      plan: tier === "mentor" ? "mentor" : "pro",
+      plan,
       prefill: email ? { email } : undefined,
-      onSuccess: () => {
-        // Plan granted server-side — the report is now unlocked.
-        router.push(reportHref);
+      // Payment captured + signature verified. The plan is granted by the
+      // webhook (independent of this callback), so wait for it to land before
+      // sending the user to the now-unlocked report.
+      onSuccess: async () => {
+        const upgraded = await waitForPlanUpgrade(plan);
+        if (upgraded) {
+          router.push(reportHref);
+        } else {
+          setPaying(false);
+          setPayError(
+            "Payment received — we're confirming your upgrade. It'll unlock in a moment; refresh if it doesn't."
+          );
+        }
       },
       onError: (message) => {
         setPayError(message);

@@ -16,6 +16,13 @@ export const PLAN_PRICING: Record<PaidPlan, { amount: number; description: strin
 
 export const CURRENCY = "INR";
 
+/**
+ * Entitlement scope stamped on every order + ledger row. Account-wide today
+ * (only SSC CGL is live), but recorded per-payment so the webhook can flip to
+ * per-exam `entitlements[scope]` later without any checkout change.
+ */
+export const EXAM_SCOPE = "ssc-cgl";
+
 export function isPaidPlan(v: unknown): v is PaidPlan {
   return v === "pro" || v === "mentor";
 }

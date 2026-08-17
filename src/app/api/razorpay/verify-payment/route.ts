@@ -1,18 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { getViewer } from "@/lib/auth/plan";
-import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
 
 /**
  * POST /api/razorpay/verify-payment
  *   { razorpay_order_id, razorpay_payment_id, razorpay_signature }
  *
- * Verifies the Razorpay signature (HMAC-SHA256 of "order_id|payment_id" with the
- * KEY_SECRET). Only on a match do we grant the plan — and we grant the plan the
- * ORDER was created for (read back from the order's server-set notes), to the
- * user the order belongs to. The client cannot upgrade a different plan, a
- * different user, or itself without a genuine matching signature.
+ * UX-ONLY. Verifies the checkout signature (HMAC-SHA256 of "order_id|payment_id"
+ * with the KEY_SECRET) so the success screen can show a confident "payment
+ * received, confirming your upgrade" state. It DELIBERATELY does NOT mutate the
+ * plan — the plan is granted solely by the signature-verified webhook
+ * (/api/razorpay/webhook), which is independent of the client (so closing the
+ * tab never loses the entitlement, and a forged client callback can't upgrade).
  */
 export async function POST(req: NextRequest) {
   const viewer = await getViewer();
@@ -56,8 +56,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Payment signature verification failed." }, { status: 400 });
   }
 
-  // Signature is valid. Resolve WHAT was purchased from the order's server-set
-  // notes (never from the client), and confirm the order belongs to this user.
+  // Signature is valid. Read the order's server-set notes for a UX label only
+  // (which plan is being confirmed) and confirm the order belongs to this user.
+  // NO plan mutation happens here — that is the webhook's job.
   let plan: string | undefined;
   let notesUserId: string | undefined;
   try {
@@ -74,17 +75,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Order has no valid plan." }, { status: 400 });
   }
   if (notesUserId !== viewer.userId) {
-    // The paying account must match the account being upgraded.
     return NextResponse.json({ error: "This order belongs to a different account." }, { status: 403 });
   }
 
-  // Grant the plan server-side (service role — plan changes never trust the client).
-  const admin = createServerSupabaseClient();
-  const { error } = await admin.from("profiles").update({ plan }).eq("id", viewer.userId);
-  if (error) {
-    console.error("Plan grant failed after verified payment:", error);
-    return NextResponse.json({ error: "Payment verified but plan update failed." }, { status: 500 });
-  }
-
-  return NextResponse.json({ success: true, plan });
+  // Signature good + order owned by caller. The webhook grants the plan; the
+  // client should now poll for the plan to flip ("confirming your payment…").
+  return NextResponse.json({ verified: true, plan, pending: true });
 }

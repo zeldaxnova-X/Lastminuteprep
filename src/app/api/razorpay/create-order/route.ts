@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getViewer } from "@/lib/auth/plan";
-import { razorpay, PLAN_PRICING, CURRENCY, isPaidPlan } from "@/lib/payments/razorpay";
+import { razorpay, PLAN_PRICING, CURRENCY, EXAM_SCOPE, isPaidPlan } from "@/lib/payments/razorpay";
 
 /**
  * POST /api/razorpay/create-order  { plan: "pro" | "mentor" }
@@ -36,7 +36,9 @@ export async function POST(req: NextRequest) {
       amount,
       currency: CURRENCY,
       receipt: `rcpt_${viewer.userId.slice(0, 8)}_${Date.now()}`,
-      notes: { userId: viewer.userId, plan: body.plan },
+      // scope makes the payment per-exam-ready; the webhook reads these notes as
+      // the source of truth for who/what to grant (never the client).
+      notes: { userId: viewer.userId, plan: body.plan, scope: EXAM_SCOPE },
     });
 
     return NextResponse.json({
