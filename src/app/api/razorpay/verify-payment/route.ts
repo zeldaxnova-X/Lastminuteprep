@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
-import { getViewer } from "@/lib/auth/plan";
+import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
 
 /**
@@ -15,10 +15,9 @@ import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
  * tab never loses the entitlement, and a forged client callback can't upgrade).
  */
 export async function POST(req: NextRequest) {
-  const viewer = await getViewer();
-  if (!viewer.authenticated || !viewer.userId) {
-    return NextResponse.json({ error: "Authentication required." }, { status: 401 });
-  }
+  // Same cookie-aware helper as the CBT routes (getSessionContext).
+  const { user } = await getSessionContext();
+  if (!user) return json401();
 
   const body = (await req.json().catch(() => ({}))) as {
     razorpay_order_id?: string;
@@ -74,7 +73,7 @@ export async function POST(req: NextRequest) {
   if (!isPaidPlan(plan)) {
     return NextResponse.json({ error: "Order has no valid plan." }, { status: 400 });
   }
-  if (notesUserId !== viewer.userId) {
+  if (notesUserId !== user.id) {
     return NextResponse.json({ error: "This order belongs to a different account." }, { status: 403 });
   }
 

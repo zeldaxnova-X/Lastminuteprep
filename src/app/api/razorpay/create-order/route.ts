@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getViewer } from "@/lib/auth/plan";
+import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import { razorpay, PLAN_PRICING, CURRENCY, EXAM_SCOPE, isPaidPlan } from "@/lib/payments/razorpay";
 
 /**
@@ -11,11 +11,11 @@ import { razorpay, PLAN_PRICING, CURRENCY, EXAM_SCOPE, isPaidPlan } from "@/lib/
  * exactly what was paid for, to exactly who paid — no client trust.
  */
 export async function POST(req: NextRequest) {
-  // Identity is server-derived; a real purchase requires a signed-in account.
-  const viewer = await getViewer();
-  if (!viewer.authenticated || !viewer.userId) {
-    return NextResponse.json({ error: "Authentication required." }, { status: 401 });
-  }
+  // Identity is server-derived from the request cookies — the SAME helper the
+  // CBT routes use (getSessionContext -> cookie-aware @supabase/ssr client).
+  const { user } = await getSessionContext();
+  if (!user) return json401();
+  const userId = user.id;
 
   const body = (await req.json().catch(() => ({}))) as { plan?: string };
   if (!isPaidPlan(body.plan)) {
@@ -35,10 +35,10 @@ export async function POST(req: NextRequest) {
     const order = await razorpay().orders.create({
       amount,
       currency: CURRENCY,
-      receipt: `rcpt_${viewer.userId.slice(0, 8)}_${Date.now()}`,
+      receipt: `rcpt_${userId.slice(0, 8)}_${Date.now()}`,
       // scope makes the payment per-exam-ready; the webhook reads these notes as
       // the source of truth for who/what to grant (never the client).
-      notes: { userId: viewer.userId, plan: body.plan, scope: EXAM_SCOPE },
+      notes: { userId, plan: body.plan, scope: EXAM_SCOPE },
     });
 
     return NextResponse.json({
@@ -49,10 +49,20 @@ export async function POST(req: NextRequest) {
       key_id: process.env.RAZORPAY_KEY_ID,
     });
   } catch (err: unknown) {
-    // Razorpay surfaces auth problems as a 401 statusCode on the error.
+    // Razorpay rejecting our API credentials is an UPSTREAM/config failure, not
+    // a user-auth problem — return 502 (never 401) so it can't be mistaken for a
+    // session issue. Almost always a mismatched RAZORPAY_KEY_ID/RAZORPAY_KEY_SECRET
+    // pair or a test/live mode mismatch in the deployment env.
     const statusCode = (err as { statusCode?: number })?.statusCode;
     if (statusCode === 401) {
-      return NextResponse.json({ error: "Payment gateway authentication failed." }, { status: 401 });
+      console.error(
+        "Razorpay rejected the API credentials (401). Check RAZORPAY_KEY_ID and " +
+          "RAZORPAY_KEY_SECRET are a matching pair from the SAME mode (test/live) in this env."
+      );
+      return NextResponse.json(
+        { error: "Payment gateway configuration error. Please try again later or contact support." },
+        { status: 502 }
+      );
     }
     console.error("Razorpay create-order error:", err);
     return NextResponse.json({ error: "Could not create payment order." }, { status: 500 });
