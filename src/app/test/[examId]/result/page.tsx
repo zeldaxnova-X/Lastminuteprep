@@ -293,7 +293,7 @@ function MentorLockedCard() {
             className="flex-shrink-0 bg-gold-bright text-white hover:bg-gold"
           >
             <Sparkles className="h-4 w-4" />
-            Unlock — ₹49/mo
+            Unlock — ₹79/mo
           </ButtonLink>
         </div>
       </div>

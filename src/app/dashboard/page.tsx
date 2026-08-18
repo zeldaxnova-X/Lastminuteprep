@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTestStore } from "@/lib/store/use-test-store";
 import { TopNav } from "@/components/top-nav";
+import { RazorpayBadge } from "@/components/payments/razorpay-badge";
 import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ButtonLink } from "@/components/ui/button";
@@ -330,7 +331,7 @@ export default function DashboardPage() {
                   className="inline-flex min-h-[44px] w-full flex-shrink-0 items-center justify-center gap-2 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold disabled:opacity-60 sm:w-auto"
                 >
                   {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Lock className="h-4 w-4" />}
-                  Unlock Mentor — ₹49
+                  Unlock Mentor — ₹79
                 </button>
               </Card>
             )}
@@ -450,12 +451,13 @@ function UpgradePanel({
           )}
         >
           {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-          {showBoth ? "Go Mentor — ₹49/mo" : "Unlock Mentor — ₹49/mo"}
+          {showBoth ? "Go Mentor — ₹79/mo" : "Unlock Mentor — ₹79/mo"}
         </button>
       </div>
 
       {payError && <p className="text-sm text-danger">{payError}</p>}
       <p className="text-xs text-ink-tertiary">Honest founding prices — no fake discounts. Cancel anytime.</p>
+      <RazorpayBadge className="pt-1" />
     </Card>
   );
 }

@@ -11,7 +11,7 @@ export type PaidPlan = "pro" | "mentor";
 /** Founding prices, in paise. Mirrors the copy on the sample paywall. */
 export const PLAN_PRICING: Record<PaidPlan, { amount: number; description: string }> = {
   pro: { amount: 1900, description: "LastMilePrep Pro — full report" },
-  mentor: { amount: 4900, description: "LastMilePrep Mentor — report + AI engine" },
+  mentor: { amount: 7900, description: "LastMilePrep Mentor — report + AI engine" },
 };
 
 export const CURRENCY = "INR";

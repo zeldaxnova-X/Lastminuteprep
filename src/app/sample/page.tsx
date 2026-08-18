@@ -22,8 +22,8 @@ const PRICING_TIERS: {
   strike?: string;
   highlight?: boolean;
 }[] = [
-  { name: "Pro", blurb: "Full bank · unlimited mocks · report", price: "₹19/mo", strike: "₹99" },
-  { name: "AI Mentor", blurb: "Everything in Pro + the Mentor Engine", price: "₹49/mo", strike: "₹149", highlight: true },
+  { name: "Pro", blurb: "Full bank · unlimited mocks · report", price: "₹19/mo" },
+  { name: "AI Mentor", blurb: "Everything in Pro + the Mentor Engine", price: "₹79/mo", highlight: true },
 ];
 
 export default function SamplePage() {

@@ -68,12 +68,12 @@ const FAQS: { q: string; a: string }[] = [
     a: "A one-time 20-question CBT in the real interface, tied to your account. You'll see your net score at the end. It doesn't include the full report — that's what the paid tiers unlock.",
   },
   {
-    q: "What's the difference between ₹19/mo and ₹49/mo?",
-    a: "Both are monthly plans with unlimited attempts on the full question bank. Pro (₹19/mo) gives you the full performance report — accuracy, timing, and section breakdown. AI Mentor (₹49/mo) adds the LastMilePrep Mentor Engine: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan.",
+    q: "What's the difference between ₹19/mo and ₹79/mo?",
+    a: "Both are monthly plans with unlimited attempts on the full question bank. Pro (₹19/mo) gives you the full performance report — accuracy, timing, and section breakdown. AI Mentor (₹79/mo) adds the LastMilePrep Mentor Engine: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan.",
   },
   {
     q: "Why are the prices so low?",
-    a: "They're founding prices while we're young. ₹19/mo and ₹49/mo are honest launch rates — as we grow they'll move toward ₹99 and ₹149. Those aren't fake struck-through 'discounts'; they're where the plans are genuinely headed.",
+    a: "They're honest founding prices while we're young — ₹19/mo for Pro and ₹79/mo for AI Mentor, with no fake struck-through 'discounts'. What you see is the real price you pay today; we may raise them as the product grows.",
   },
   {
     q: "Which exams are supported?",

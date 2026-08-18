@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
+import { RazorpayBadge } from "@/components/payments/razorpay-badge";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
@@ -83,7 +84,7 @@ export default function SampleConversionPage() {
   }
 
   function startCheckout(tier: "report" | "mentor") {
-    setCheckout({ tier, price: tier === "mentor" ? "₹49/mo" : "₹19/mo" });
+    setCheckout({ tier, price: tier === "mentor" ? "₹79/mo" : "₹19/mo" });
     setPayError(null);
     setPaying(true);
     const plan = tier === "mentor" ? "mentor" : "pro";
@@ -187,7 +188,7 @@ export default function SampleConversionPage() {
               marks
             </p>
             <span className="flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹49
+              <Lock className="h-3 w-3" /> ₹79
             </span>
           </div>
         </Card>
@@ -204,7 +205,7 @@ export default function SampleConversionPage() {
           />
           <OfferRow
             title="AI Mentor — report + engine"
-            price="₹49/mo"
+            price="₹79/mo"
             note="Founding price"
             featured
             desc="Everything above, plus the exact skip strategy, your own break-even guess rule, and your score-maximisation plan."
@@ -215,6 +216,7 @@ export default function SampleConversionPage() {
             <ShieldCheck className="h-3.5 w-3.5 text-success" />
             Honest founding prices — no fake discounts. Cancel anytime.
           </p>
+          <RazorpayBadge className="pt-1" />
         </div>
 
         {checkout && (

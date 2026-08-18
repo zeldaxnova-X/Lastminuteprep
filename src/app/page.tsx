@@ -26,6 +26,7 @@ import { Reveal, CountUp } from "@/components/landing/motion";
 import { HeroVisual } from "@/components/landing/hero-visual";
 import { ExamMarquee, Faq } from "@/components/landing/interactive";
 import { MentorSilhouette } from "@/components/landing/mentor-silhouette";
+import { RazorpayBadge } from "@/components/payments/razorpay-badge";
 import { AspirationBand, GoalMontage } from "@/components/landing/bands";
 import { GhostImage, Duotone, Framed } from "@/components/landing/photo";
 import {
@@ -191,11 +192,11 @@ function Hero() {
           <Reveal delay={380}>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/sample" variant="primary" size="lg">
-                Start with 20 free questions
+                Try free now
                 <ArrowRight className="h-4 w-4" />
               </ButtonLink>
-              <ButtonLink href="#how" variant="secondary" size="lg">
-                See how it works
+              <ButtonLink href="/login?mode=signup" variant="secondary" size="lg">
+                Sign up
               </ButtonLink>
             </div>
           </Reveal>
@@ -457,10 +458,10 @@ function MentorSection() {
                     className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-gold-bright px-6 py-3 text-base font-semibold text-white transition-premium hover:bg-gold"
                   >
                     <Sparkles className="h-4 w-4" />
-                    Unlock the Mentor — ₹49
+                    Unlock the Mentor — ₹79
                   </Link>
                   <span className="text-xs text-white/45">
-                    ₹49/mo · founding price · goes to ₹149 as we grow
+                    ₹79/mo · founding price
                   </span>
                 </div>
               </div>
@@ -626,8 +627,7 @@ function Pricing() {
           <PriceCard
             name="Pro"
             price="₹19/mo"
-            strike="₹99"
-            subNote="Founding price — goes to ₹99 as we grow."
+            subNote="Founding price."
             cta="Get Pro"
             href="/sample"
             groups={[
@@ -644,9 +644,8 @@ function Pricing() {
 
           <PriceCard
             name="AI Mentor"
-            price="₹49/mo"
-            strike="₹149"
-            subNote="Founding price — goes to ₹149 as we grow."
+            price="₹79/mo"
+            subNote="Founding price."
             cta="Unlock AI Mentor"
             href="/sample"
             gold
@@ -667,9 +666,10 @@ function Pricing() {
         <Reveal>
           <p className="mt-6 flex items-center justify-center gap-2 text-center text-xs text-ink-tertiary">
             <Check className="h-3.5 w-3.5 text-success" />
-            Honest founding pricing — ₹99 and ₹149 are the real prices we grow
-            into, not fake &ldquo;discounts.&rdquo;
+            Honest founding prices — no fake discounts. What you see is the real
+            price today. Cancel anytime.
           </p>
+          <RazorpayBadge className="mt-4" />
         </Reveal>
       </div>
     </section>
