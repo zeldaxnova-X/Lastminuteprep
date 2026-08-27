@@ -24,6 +24,11 @@ interface PaperItem {
   validated_questions: number;
 }
 
+interface CoverageData {
+  overall: { total: number; done: number; remaining: number };
+  by_subject: { subject: Subject; total: number; done: number; remaining: number }[];
+}
+
 function TestCreationForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -40,6 +45,21 @@ function TestCreationForm() {
   const [selectedPaperId, setSelectedPaperId] = useState<string>("");
   const [selectedSubject, setSelectedSubject] = useState<Subject>("Quantitative Aptitude");
   const [questionCount, setQuestionCount] = useState<number>(100);
+
+  // Per-user question-bank coverage (done vs remaining unique questions).
+  const [coverage, setCoverage] = useState<CoverageData | null>(null);
+  useEffect(() => {
+    let alive = true;
+    fetch("/api/cbt/analytics/coverage")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((c) => alive && c?.overall && setCoverage(c))
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
+  const remainingBySubject = (subject: Subject): number | null =>
+    coverage?.by_subject.find((s) => s.subject === subject)?.remaining ?? null;
 
   // Plan gate: /test/create only offers real (non-sample) modes, so a FREE user
   // has nothing launchable here. Refuse it and point them to upgrade — the
@@ -147,6 +167,35 @@ function TestCreationForm() {
         <p className="text-xs text-gray-500 mt-1">Select paper or topic configuration to launch CBT test engine</p>
       </div>
 
+      {/* Personal coverage: unique questions done vs remaining. Each test serves
+          questions you haven't seen yet, so this ticks down as you practise. */}
+      {coverage && coverage.overall.total > 0 && (
+        <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-xs">
+          <div className="flex items-baseline justify-between">
+            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+              Your question bank progress
+            </span>
+            <span className="text-xs font-medium text-gray-500">
+              <span className="font-bold text-gray-900">{coverage.overall.done.toLocaleString()}</span> done ·{" "}
+              <span className="font-bold text-blue-600">{coverage.overall.remaining.toLocaleString()}</span> left
+            </span>
+          </div>
+          <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-gray-100">
+            <div
+              className="h-full rounded-full bg-blue-600 transition-all"
+              style={{
+                width: `${Math.min(100, Math.round((coverage.overall.done / coverage.overall.total) * 100))}%`,
+              }}
+            />
+          </div>
+          <p className="mt-1.5 text-[11px] text-gray-400">
+            {coverage.overall.remaining === 0
+              ? "You've practised every unique question — new tests now revisit past ones."
+              : `${coverage.overall.done.toLocaleString()} of ${coverage.overall.total.toLocaleString()} unique questions practised. Every test pulls fresh ones.`}
+          </p>
+        </div>
+      )}
+
       {/* 3 Core Modes */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <button
@@ -224,19 +273,29 @@ function TestCreationForm() {
                 Select Subject
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {(["Quantitative Aptitude", "General Intelligence & Reasoning", "English Comprehension", "General Awareness"] as Subject[]).map((subj) => (
-                  <button
-                    key={subj}
-                    onClick={() => setSelectedSubject(subj)}
-                    className={`p-3 rounded-lg border text-xs font-semibold text-left transition-all min-h-[44px] ${
-                      selectedSubject === subj
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"
-                    }`}
-                  >
-                    {subj}
-                  </button>
-                ))}
+                {(["Quantitative Aptitude", "General Intelligence & Reasoning", "English Comprehension", "General Awareness"] as Subject[]).map((subj) => {
+                  const left = remainingBySubject(subj);
+                  return (
+                    <button
+                      key={subj}
+                      onClick={() => setSelectedSubject(subj)}
+                      className={`flex items-center justify-between gap-2 p-3 rounded-lg border text-xs font-semibold text-left transition-all min-h-[44px] ${
+                        selectedSubject === subj
+                          ? "bg-blue-50 border-blue-500 text-blue-700"
+                          : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"
+                      }`}
+                    >
+                      <span>{subj}</span>
+                      {left !== null && (
+                        <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold ${
+                          left === 0 ? "bg-gray-100 text-gray-400" : "bg-blue-100 text-blue-700"
+                        }`}>
+                          {left.toLocaleString()} left
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 

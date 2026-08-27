@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { randomUUID } from "crypto";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import {
   readDeviceToken,
@@ -161,19 +162,16 @@ export async function POST(request: NextRequest) {
 
         title = title || `${body.subject} — Practice Test`;
 
-        const { data, error } = await supabase
-          .from("validated_questions")
-          .select("*")
-          .eq("subject", body.subject)
-          .limit(totalQuestions * 4);
-
-        if (error) {
-          return NextResponse.json({ error: error.message }, { status: 500 });
-        }
-
-        const validList = ((data as ValidatedQuestion[]) || []).filter(isValidQuestion);
-        const shuffled = shuffleArray(validList);
-        questions = deduplicateQuestions(shuffled).slice(0, totalQuestions);
+        // Topic tests always require a signed-in user (guarded above), so serve
+        // questions this user hasn't done yet.
+        const validList = await pickUniqueQuestions(
+          supabase,
+          sessionUserId as string,
+          body.subject,
+          totalQuestions,
+          null
+        );
+        questions = deduplicateQuestions(validList).slice(0, totalQuestions);
         break;
       }
 
@@ -190,33 +188,53 @@ export async function POST(request: NextRequest) {
         const questionsPerSubject = Math.floor(totalQuestions / 4);
         let collected: ValidatedQuestion[] = [];
 
-        for (const subj of subjects) {
-          const { data, error } = await supabase
-            .from("validated_questions")
-            .select("*")
-            .eq("subject", subj)
-            .limit(150);
-
-          if (!error && data) {
-            const validSubj = (data as ValidatedQuestion[]).filter(isValidQuestion);
-            const shuffledSubj = shuffleArray(validSubj);
-            const uniqueSubj = deduplicateQuestions(shuffledSubj).slice(0, questionsPerSubject);
-            collected = [...collected, ...uniqueSubj];
+        if (sessionUserId) {
+          // Signed-in: balanced pull of questions this user hasn't done yet
+          // (unseen-first per subject), then top up across all subjects.
+          for (const subj of subjects) {
+            const picked = await pickUniqueQuestions(
+              supabase,
+              sessionUserId,
+              subj,
+              questionsPerSubject,
+              null
+            );
+            collected = [...collected, ...deduplicateQuestions(picked).slice(0, questionsPerSubject)];
           }
-        }
-
-        if (collected.length < totalQuestions) {
-          const { data } = await supabase
-            .from("validated_questions")
-            .select("*")
-            .limit(totalQuestions * 3);
-
-          if (data) {
-            const extra = shuffleArray((data as ValidatedQuestion[]).filter(isValidQuestion));
+          if (collected.length < totalQuestions) {
+            const extra = await pickUniqueQuestions(supabase, sessionUserId, null, totalQuestions, null);
             for (const q of extra) {
               if (collected.length >= totalQuestions) break;
-              if (!collected.some((existing) => existing.id === q.id)) {
-                collected.push(q);
+              if (!collected.some((existing) => existing.id === q.id)) collected.push(q);
+            }
+          }
+        } else {
+          // Anonymous 20-Q sample: no per-user history to track, so pull a
+          // balanced random set from the eligible pool.
+          for (const subj of subjects) {
+            const { data, error } = await supabase
+              .from("validated_questions")
+              .select("*")
+              .eq("subject", subj)
+              .limit(150);
+
+            if (!error && data) {
+              const validSubj = (data as ValidatedQuestion[]).filter(isValidQuestion);
+              const uniqueSubj = deduplicateQuestions(shuffleArray(validSubj)).slice(0, questionsPerSubject);
+              collected = [...collected, ...uniqueSubj];
+            }
+          }
+          if (collected.length < totalQuestions) {
+            const { data } = await supabase
+              .from("validated_questions")
+              .select("*")
+              .limit(totalQuestions * 3);
+
+            if (data) {
+              const extra = shuffleArray((data as ValidatedQuestion[]).filter(isValidQuestion));
+              for (const q of extra) {
+                if (collected.length >= totalQuestions) break;
+                if (!collected.some((existing) => existing.id === q.id)) collected.push(q);
               }
             }
           }
@@ -229,20 +247,16 @@ export async function POST(request: NextRequest) {
       case "custom_test": {
         title = title || "Custom Practice Test";
 
-        let query = supabase.from("validated_questions").select("*").limit(totalQuestions * 4);
-
-        if (body.subject) query = query.eq("subject", body.subject);
-        if (body.year) query = query.eq("year", body.year);
-
-        const { data, error } = await query;
-
-        if (error) {
-          return NextResponse.json({ error: error.message }, { status: 500 });
-        }
-
-        const validList = ((data as ValidatedQuestion[]) || []).filter(isValidQuestion);
-        const shuffled = shuffleArray(validList);
-        questions = deduplicateQuestions(shuffled).slice(0, totalQuestions);
+        // Custom tests require a signed-in user (guarded above); serve unseen
+        // questions honouring the optional subject / year filters.
+        const validList = await pickUniqueQuestions(
+          supabase,
+          sessionUserId as string,
+          body.subject || null,
+          totalQuestions,
+          body.year || null
+        );
+        questions = deduplicateQuestions(validList).slice(0, totalQuestions);
         break;
       }
 
@@ -362,6 +376,30 @@ export async function POST(request: NextRequest) {
     console.error("Start exam error:", err);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
+}
+
+/**
+ * Per-user unique-question picker. Delegates to the SQL RPC
+ * `cbt_pick_unique_questions`, which returns exam-eligible questions the user
+ * has NOT done yet (unseen-first, recycling seen ones only when the unseen pool
+ * runs short so a test is never under-filled). isValidQuestion is re-applied as
+ * a defensive net — the RPC's `cbt_valid_questions` view already encodes it.
+ */
+async function pickUniqueQuestions(
+  supabase: SupabaseClient,
+  userId: string,
+  subject: string | null,
+  limit: number,
+  year: number | null
+): Promise<ValidatedQuestion[]> {
+  const { data, error } = await supabase.rpc("cbt_pick_unique_questions", {
+    p_user: userId,
+    p_subject: subject,
+    p_limit: limit,
+    p_year: year,
+  });
+  if (error || !data) return [];
+  return (data as ValidatedQuestion[]).filter(isValidQuestion);
 }
 
 function deduplicateQuestions(array: ValidatedQuestion[]): ValidatedQuestion[] {
