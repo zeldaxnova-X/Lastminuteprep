@@ -23,6 +23,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
 import { AuthNav } from "@/components/auth/auth-nav";
 import { Reveal, CountUp } from "@/components/landing/motion";
+import { LiveQuestionCount } from "@/components/landing/live-stat";
+import { getQuestionCount } from "@/lib/stats";
 import { HeroVisual } from "@/components/landing/hero-visual";
 import { ExamMarquee, Faq } from "@/components/landing/interactive";
 import { MentorSilhouette } from "@/components/landing/mentor-silhouette";
@@ -39,7 +41,7 @@ import { cn } from "@/lib/utils";
 export const metadata = {
   title: "LastMilePrep — The last mile is where exams are won",
   description:
-    "Real CBT mocks for SSC CGL, 10,000+ questions, and the LastMilePrep Mentor Engine — a proprietary method that reads your confidence and tells you exactly how to score more. No sign-up to try.",
+    "Real CBT mocks for SSC CGL, thousands of genuine exam questions, and the LastMilePrep Mentor Engine — a proprietary method that reads your confidence and tells you exactly how to score more. No sign-up to try.",
 };
 
 /* The full Mentor Engine benefit set — every item is something the deterministic
@@ -82,7 +84,22 @@ const MENTOR_BENEFITS = [
   },
 ];
 
-const EXAMS_SOON = ["NEET", "JEE", "NEET PG", "UPSC"];
+/* Exam line-up shown on the landing page. SSC CGL is live; the rest render as
+   greyed-out "Coming soon" placeholders (IBPS Clerk and SBI Clerk are next). */
+const EXAMS: {
+  id: string;
+  name: string;
+  sub: string;
+  logo: string;
+  status: "live" | "soon";
+  href?: string;
+}[] = [
+  { id: "ssc-cgl", name: "SSC CGL", sub: "Tier 1 · full CBT + Mentor", logo: "/images/exams/ssc-cgl.png", status: "live", href: "/sample" },
+  { id: "ibps-clerk", name: "IBPS Clerk", sub: "Prelims + Mains", logo: "/images/exams/ibps-clerk.png", status: "soon" },
+  { id: "sbi-clerk", name: "SBI Clerk", sub: "Prelims + Mains", logo: "/images/exams/sbi.svg", status: "soon" },
+  { id: "jee-main", name: "JEE Main", sub: "Engineering entrance", logo: "/images/exams/jee-main.webp", status: "soon" },
+  { id: "neet-ug", name: "NEET UG", sub: "Medical entrance", logo: "/images/exams/neet-ug.webp", status: "soon" },
+];
 
 const STEPS = [
   { n: "01", icon: Timer, title: "Sit a real CBT mock", body: "The exact interface — five-state palette, live timer, free navigation. No training wheels." },
@@ -109,22 +126,23 @@ const MENTOR_ROWS = [
   "Improvement tracking across attempts",
 ];
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const questionCount = await getQuestionCount();
   return (
     <div className="flex min-h-screen flex-col bg-bg">
       <Nav />
       <main>
-        <Hero />
+        <Hero questionCount={questionCount} />
         <ExamMarquee />
         <Tension />
         <ExamBreadth />
         <CbtRealism />
-        <Features />
+        <Features questionCount={questionCount} />
         <MentorSection />
         <AspirationBand />
         <HowItWorks />
-        <Stats />
-        <Pricing />
+        <Stats questionCount={questionCount} />
+        <Pricing questionCount={questionCount} />
         <FaqSection />
         <GoalMontage />
         <FinalCta />
@@ -153,7 +171,7 @@ function Nav() {
   );
 }
 
-function Hero() {
+function Hero({ questionCount }: { questionCount: number }) {
   return (
     <section className="relative overflow-hidden">
       {/* animated backdrop */}
@@ -183,9 +201,10 @@ function Hero() {
 
           <Reveal delay={300}>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-secondary">
-              Exact CBT mocks, 10,000+ real questions, and the LastMilePrep
-              Mentor Engine — a proprietary method that reads your confidence on
-              every question and tells you exactly how to score more.
+              Exact CBT mocks, {questionCount.toLocaleString("en-IN")}+ real
+              questions, and the LastMilePrep Mentor Engine — a proprietary
+              method that reads your confidence on every question and tells you
+              exactly how to score more.
             </p>
           </Reveal>
 
@@ -263,75 +282,92 @@ function ExamBreadth() {
   return (
     <section id="exams" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
       <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-        <Eyebrow>SSC CGL now · more later</Eyebrow>
+        <Eyebrow>SSC CGL now · more going live</Eyebrow>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          Built for SSC CGL first — the rest is an honest roadmap
+          One engine, every major exam
         </h2>
         <p className="mt-3 text-base text-ink-secondary">
-          SSC CGL Tier 1 is fully live today. The engine is config-driven, so
-          more exams arrive without compromise — but only when they&apos;re real.
+          SSC CGL Tier 1 is fully live today. IBPS Clerk and SBI Clerk are next,
+          with JEE Main and NEET UG on the way — each with the same real CBT
+          engine, not a watered-down clone.
         </p>
       </Reveal>
 
-      <div className="grid gap-4 lg:grid-cols-3">
-        {/* SSC CGL — the dominant, full-colour LIVE hero card */}
-        <Reveal className="lg:col-span-2">
-          <div className="group relative flex min-h-[340px] flex-col justify-between overflow-hidden rounded-3xl p-6 ring-1 ring-hairline sm:p-8">
-            <Image
-              src="/images/goal-secretariat.jpg"
-              alt="A government secretariat building — the goal SSC CGL leads to"
-              fill
-              sizes="(max-width: 1024px) 100vw, 66vw"
-              loading="lazy"
-              className="object-cover"
-              style={{ objectPosition: "center" }}
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,10,10,0.92),rgba(10,10,10,0.35))]" />
-
-            <div className="relative flex items-center gap-2 self-start rounded-full bg-success px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              Live now
-            </div>
-
-            <div className="relative">
-              <p className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                SSC CGL
-              </p>
-              <p className="mt-1 text-sm text-white/75">
-                Tier 1 · 100 questions · 4 sections · full CBT + AI Mentor
-              </p>
-              <div className="mt-5">
-                <ButtonLink
-                  href="/sample"
-                  size="md"
-                  className="bg-white text-ink hover:bg-white/90"
-                >
-                  Start a free mock
-                  <ArrowRight className="h-4 w-4" />
-                </ButtonLink>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        {/* Coming soon — clearly subordinate chips */}
-        <Reveal delay={80}>
-          <div className="grid h-full grid-cols-2 gap-3 lg:grid-cols-1">
-            {EXAMS_SOON.map((name) => (
-              <div
-                key={name}
-                className="flex items-center justify-between rounded-2xl border border-dashed border-hairline-strong bg-panel/60 px-4 py-4 lg:flex-1"
-              >
-                <span className="text-sm font-semibold text-ink-secondary">{name}</span>
-                <span className="rounded-md bg-surface px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink-tertiary ring-1 ring-hairline">
-                  Soon
-                </span>
-              </div>
-            ))}
-          </div>
-        </Reveal>
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
+        {EXAMS.map((exam, i) => (
+          <Reveal key={exam.id} delay={i * 70}>
+            <ExamCard exam={exam} />
+          </Reveal>
+        ))}
       </div>
     </section>
+  );
+}
+
+function ExamCard({ exam }: { exam: (typeof EXAMS)[number] }) {
+  const live = exam.status === "live";
+
+  const inner = (
+    <div
+      className={cn(
+        "group relative flex h-full flex-col items-center rounded-2xl border p-5 text-center transition-all",
+        live
+          ? "border-transparent bg-surface shadow-soft ring-2 ring-success/60 hover:-translate-y-0.5 hover:shadow-lg"
+          : "border-dashed border-hairline-strong bg-panel/50"
+      )}
+    >
+      {/* status badge */}
+      <span
+        className={cn(
+          "absolute right-3 top-3 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide",
+          live
+            ? "bg-success text-white"
+            : "bg-surface text-ink-tertiary ring-1 ring-hairline"
+        )}
+      >
+        {live && <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white" />}
+        {live ? "Live now" : "Coming soon"}
+      </span>
+
+      {/* logo */}
+      <div className="mt-4 flex h-16 w-full items-center justify-center">
+        <div className="relative h-14 w-full">
+          <Image
+            src={exam.logo}
+            alt={`${exam.name} logo`}
+            fill
+            unoptimized
+            sizes="120px"
+            className={cn(
+              "object-contain transition",
+              live ? "" : "opacity-40 grayscale group-hover:opacity-60"
+            )}
+          />
+        </div>
+      </div>
+
+      <p className={cn("mt-4 text-sm font-bold", live ? "text-ink" : "text-ink-secondary")}>
+        {exam.name}
+      </p>
+      <p className="mt-0.5 text-[11px] leading-tight text-ink-tertiary">{exam.sub}</p>
+
+      {live && (
+        <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-accent">
+          Start a free mock
+          <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+        </span>
+      )}
+    </div>
+  );
+
+  return live && exam.href ? (
+    <Link href={exam.href} className="block h-full">
+      {inner}
+    </Link>
+  ) : (
+    <div className="h-full" aria-disabled>
+      {inner}
+    </div>
   );
 }
 
@@ -379,13 +415,14 @@ function CbtRealism() {
   );
 }
 
-function Features() {
+function Features({ questionCount }: { questionCount: number }) {
+  const formatted = questionCount.toLocaleString("en-IN");
   return (
     <section id="features" className="mx-auto w-full max-w-6xl space-y-16 px-4 py-24 sm:space-y-24 sm:px-6 sm:py-28">
       <FeatureRow
         n="01"
         icon={Layers}
-        title="10,000+ real questions"
+        title={`${formatted}+ real questions`}
         body="A deep bank of genuine exam-standard questions — no filler, no padding. Practise full 100-question mocks or drill a single section, as many times as your cycle needs."
         visual={
           <div className="relative">
@@ -396,7 +433,7 @@ function Features() {
               position="center"
             />
             <span className="absolute bottom-3 left-3 rounded-full bg-panel-dark/85 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
-              <span className="tabular text-accent">10,000+</span> questions
+              <span className="tabular text-accent">{formatted}+</span> questions
             </span>
           </div>
         }
@@ -535,7 +572,7 @@ function HowItWorks() {
   );
 }
 
-function Stats() {
+function Stats({ questionCount }: { questionCount: number }) {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
       <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -549,7 +586,7 @@ function Stats() {
         </p>
       </Reveal>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-        <Stat value={<CountUp end={10000} suffix="+" />} label="Questions in the bank" />
+        <Stat value={<LiveQuestionCount initial={questionCount} />} label="Questions in the bank" />
         <Stat value={<CountUp end={100} />} label="Questions per full mock" />
         <Stat value="4" label="Sections · 60-minute timer" />
         <Stat value={<>+2 / <span className="text-danger">−0.5</span></>} label="SSC CGL marking scheme" />
@@ -563,7 +600,10 @@ function Stats() {
   );
 }
 
-function Pricing() {
+function Pricing({ questionCount }: { questionCount: number }) {
+  const proRows = PRO_ROWS.map((r, i) =>
+    i === 0 ? `${questionCount.toLocaleString("en-IN")}+ real questions` : r
+  );
   return (
     <section id="pricing" className="border-t border-hairline bg-panel/40">
       <div className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
@@ -614,7 +654,7 @@ function Pricing() {
                 heading: "Full report — locked",
                 rows: [
                   { label: "Accuracy, timing & section breakdown", locked: true },
-                  { label: "10,000+ questions · unlimited attempts", locked: true },
+                  { label: `${questionCount.toLocaleString("en-IN")}+ questions · unlimited attempts`, locked: true },
                 ],
               },
               {
@@ -633,7 +673,7 @@ function Pricing() {
             groups={[
               {
                 heading: "Everything you get",
-                rows: PRO_ROWS.map((label) => ({ label })),
+                rows: proRows.map((label) => ({ label })),
               },
               {
                 heading: "AI Mentor — locked",
@@ -653,7 +693,7 @@ function Pricing() {
             groups={[
               {
                 heading: "Everything in Pro",
-                rows: PRO_ROWS.map((label) => ({ label })),
+                rows: proRows.map((label) => ({ label })),
               },
               {
                 heading: "The Mentor Engine™",
