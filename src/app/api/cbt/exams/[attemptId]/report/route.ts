@@ -152,7 +152,7 @@ export async function GET(
     optimalScore: mentorAllowed ? optimalScore : null,
     narrative: mentorAllowed ? (report?.narrative_md ?? null) : null,
     // Whether the server can produce the (purely additive) LLM narrative at all.
-    narrationAvailable: mentorAllowed && !!process.env.ANTHROPIC_API_KEY,
+    narrationAvailable: mentorAllowed && !!process.env.DEEPSEEK_API_KEY,
   });
 }
 

@@ -43,7 +43,19 @@ function TestCreationForm() {
   const [loadingPapers, setLoadingPapers] = useState(false);
 
   const [selectedPaperId, setSelectedPaperId] = useState<string>("");
-  const [selectedSubject, setSelectedSubject] = useState<Subject>("Quantitative Aptitude");
+  // A MarksenseAI drill deep-links here with ?subject=<full name>; honour it.
+  const SUBJECTS: Subject[] = [
+    "General Intelligence & Reasoning",
+    "General Awareness",
+    "Quantitative Aptitude",
+    "English Comprehension",
+  ];
+  const subjectParam = searchParams.get("subject");
+  const initialSubject: Subject =
+    subjectParam && (SUBJECTS as string[]).includes(subjectParam)
+      ? (subjectParam as Subject)
+      : "Quantitative Aptitude";
+  const [selectedSubject, setSelectedSubject] = useState<Subject>(initialSubject);
   const [questionCount, setQuestionCount] = useState<number>(100);
 
   // Per-user question-bank coverage (done vs remaining unique questions).

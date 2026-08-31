@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ButtonLink } from "@/components/ui/button";
 import { sectionLabel } from "@/lib/cbt-questions";
+import { MarksenseProfile } from "@/components/marksense/learner-profile";
 import { startRazorpayCheckout, waitForPlanUpgrade, type Billing } from "@/lib/payments/razorpay-checkout";
 import { cn } from "@/lib/utils";
 import {
@@ -257,30 +258,24 @@ export default function DashboardPage() {
           <PlanBadge plan={plan} loading={loading} />
         </div>
 
-        {/* Enhanced MarksenseAI command centre (mentor only) */}
+        {/* Enhanced MarksenseAI command centre (mentor only): the longitudinal
+            AI learner profile up top, then quick actions. */}
         {!loading && plan === "mentor" && (
-          <section className="rounded-2xl border border-gold-bright/30 bg-gradient-to-br from-gold-soft/70 to-surface p-5 shadow-soft sm:p-6">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2.5">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gold-bright/15 text-gold ring-1 ring-gold-bright/30">
-                  <Sparkles className="h-5 w-5" />
-                </span>
-                <div>
-                  <p className="text-sm font-bold text-ink">MarksenseAI active</p>
-                  <p className="text-xs text-ink-tertiary">
-                    {planExpiresAt ? `Renews ${fmtDate(planExpiresAt)}` : "Full access to every exam"}
-                  </p>
-                </div>
-              </div>
-              {hasData && analytics?.weakest_subject && (
-                <ButtonLink href="/test/create?mode=subject" variant="secondary" size="sm">
-                  Drill {sectionLabel(analytics.weakest_subject)}
-                </ButtonLink>
+          <section className="space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="text-xs font-medium text-ink-tertiary">
+                {planExpiresAt ? `MarksenseAI renews ${fmtDate(planExpiresAt)}` : "MarksenseAI, full access to every exam"}
+              </p>
+              {latestAttempt && (
+                <Link href={`/test/${latestAttempt.id}/result`} className="flex items-center gap-1 text-xs font-semibold text-gold">
+                  Your latest mock plan <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
               )}
             </div>
-            <div className="mt-4 grid gap-2.5 sm:grid-cols-3">
+            <MarksenseProfile />
+            <div className="grid gap-2.5 sm:grid-cols-3">
               <QuickAction
-                href={latestAttempt ? `/test/${latestAttempt.id}/result` : "/test/create?mode=random"}
+                href={latestAttempt ? `/test/${latestAttempt.id}/result` : "/test/create?mode=random_test"}
                 icon={Sparkles}
                 title="Your latest plan"
                 desc="Skip strategy & guess rule"

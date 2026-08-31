@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { loadOwnedAttempt } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
+import { markProfileStale } from "@/lib/ai/build-learner-profile";
 
 type ResponseStatus =
   | "not_visited"
@@ -294,6 +295,12 @@ export async function POST(
       // Deterministic scoring + Mentor analysis → session_results + mentor_reports.
       const report = await buildAndStoreReport(supabase, attempt.id);
       if (!report.ok) console.warn("Report build skipped:", report.reason);
+
+      // MarksenseAI: a new analyzed attempt makes the longitudinal profile
+      // stale. Flag it cheaply here (no inline AI call); the dashboard refreshes
+      // it on next load. Owner-only; anonymous samples have no profile.
+      const ownerId = (attempt as { user_id?: string | null }).user_id ?? null;
+      if (ownerId) await markProfileStale(supabase, ownerId);
     } catch (mirrorErr) {
       console.error("Canonical mirror/report failed (non-fatal):", mirrorErr);
     }
