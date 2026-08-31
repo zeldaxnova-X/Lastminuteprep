@@ -51,6 +51,7 @@ export default function SampleConversionPage() {
   const [checkout, setCheckout] = useState<null | { tier: "report" | "mentor"; price: string }>(null);
   const [paying, setPaying] = useState(false);
   const [payError, setPayError] = useState<string | null>(null);
+  const [offer, setOffer] = useState<null | { discount_pct: number; gap: number; expires_at: string }>(null);
 
   useEffect(() => {
     if (!attemptId) return;
@@ -65,6 +66,23 @@ export default function SampleConversionPage() {
           const viewer = await me.json();
           setAuthed(!!viewer.authenticated);
           setEmail(viewer.email ?? null);
+          // Mint/return the score-gap coupon for signed-in free users. It is
+          // applied automatically at checkout; here we just advertise it.
+          if (viewer.authenticated && (viewer.plan ?? "free") === "free") {
+            try {
+              const o = await fetch("/api/offer/score-gap", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ attemptId }),
+              });
+              if (o.ok) {
+                const j = (await o.json()) as { offer?: typeof offer };
+                if (j.offer) setOffer(j.offer);
+              }
+            } catch {
+              /* non-blocking */
+            }
+          }
         }
       } finally {
         setLoading(false);
@@ -193,6 +211,36 @@ export default function SampleConversionPage() {
           </div>
         </Card>
 
+        {/* Score-gap offer: sized by the gap MarksenseAI found, applied at checkout */}
+        {offer && (
+          <div className="rounded-xl border border-success/40 bg-success/10 px-4 py-3.5">
+            <p className="text-sm font-semibold text-ink">
+              {offer.gap >= 1 ? (
+                <>
+                  You left <span className="text-success">{offer.gap} mark{offer.gap === 1 ? "" : "s"}</span> on the
+                  table. Unlock MarksenseAI now and get{" "}
+                  <span className="text-success">{offer.discount_pct}% off</span> your first cycle.
+                </>
+              ) : (
+                <>
+                  Unlock MarksenseAI now and get{" "}
+                  <span className="text-success">{offer.discount_pct}% off</span> your first cycle.
+                </>
+              )}
+            </p>
+            <p className="mt-1 text-xs text-ink-tertiary">
+              Applied automatically at checkout. Offer expires{" "}
+              {new Date(offer.expires_at).toLocaleString("en-IN", {
+                day: "numeric",
+                month: "short",
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+              .
+            </p>
+          </div>
+        )}
+
         {/* The calm offer */}
         <div className="space-y-3">
           <OfferRow
@@ -209,7 +257,7 @@ export default function SampleConversionPage() {
             note="Founding price"
             featured
             desc="Everything above, plus the exact skip strategy, your own break-even guess rule, and your score-maximisation plan."
-            cta="Unlock report + Mentor"
+            cta="Unlock report + MarksenseAI"
             onClick={() => onUnlock("mentor")}
           />
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">

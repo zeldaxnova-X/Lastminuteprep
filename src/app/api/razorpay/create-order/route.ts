@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import { razorpay, CURRENCY, EXAM_SCOPE, isPaidPlan, isBilling, resolvePrice } from "@/lib/payments/razorpay";
+import { applyDiscount } from "@/lib/payments/coupons";
 
 /**
  * POST /api/razorpay/create-order  { plan: "pro" | "mentor" }
@@ -13,7 +14,7 @@ import { razorpay, CURRENCY, EXAM_SCOPE, isPaidPlan, isBilling, resolvePrice } f
 export async function POST(req: NextRequest) {
   // Identity is server-derived from the request cookies, the SAME helper the
   // CBT routes use (getSessionContext -> cookie-aware @supabase/ssr client).
-  const { user } = await getSessionContext();
+  const { user, supabase } = await getSessionContext();
   if (!user) return json401();
   const userId = user.id;
 
@@ -34,10 +35,30 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { amount, days } = entry;
-  if (amount < 100) {
+  const { amount: listAmount, days } = entry;
+  if (listAmount < 100) {
     // Guard against a misconfigured price table (Razorpay minimum is 100 paise).
     return NextResponse.json({ error: "Configured amount is below the minimum." }, { status: 500 });
+  }
+
+  // Apply the user's active score-gap coupon, if any. RLS lets the owner read
+  // only their own coupons; the amount is still decided entirely server-side.
+  let amount = listAmount;
+  let couponCode: string | null = null;
+  let discountPct = 0;
+  const { data: coupon } = await supabase
+    .from("coupons")
+    .select("code, discount_pct")
+    .eq("source", "score_gap")
+    .is("used_at", null)
+    .gt("expires_at", new Date().toISOString())
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+  if (coupon) {
+    discountPct = coupon.discount_pct;
+    couponCode = coupon.code;
+    amount = applyDiscount(listAmount, discountPct);
   }
 
   try {
@@ -48,7 +69,15 @@ export async function POST(req: NextRequest) {
       // scope makes the payment per-exam-ready; the webhook reads these notes as
       // the source of truth for who/what to grant (never the client). `days` is
       // the access window this purchase grants (one-time-with-expiry billing).
-      notes: { userId, plan: body.plan, billing, days: String(days), scope: EXAM_SCOPE },
+      // `coupon` (when present) is marked used by the webhook after the grant.
+      notes: {
+        userId,
+        plan: body.plan,
+        billing,
+        days: String(days),
+        scope: EXAM_SCOPE,
+        ...(couponCode ? { coupon: couponCode } : {}),
+      },
     });
 
     return NextResponse.json({

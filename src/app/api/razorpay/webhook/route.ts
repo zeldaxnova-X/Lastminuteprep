@@ -150,5 +150,15 @@ export async function POST(req: NextRequest) {
     .update({ status: "granted", updated_at: new Date().toISOString() })
     .eq("razorpay_payment_id", paymentId);
 
+  // Burn the coupon (if any) now that the discounted payment has been granted.
+  if (notes.coupon) {
+    await admin
+      .from("coupons")
+      .update({ used_at: new Date().toISOString() })
+      .eq("code", notes.coupon)
+      .eq("user_id", userId)
+      .is("used_at", null);
+  }
+
   return NextResponse.json({ received: true, granted: true, plan });
 }
