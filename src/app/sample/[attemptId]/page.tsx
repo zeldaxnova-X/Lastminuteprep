@@ -211,6 +211,10 @@ export default function SampleConversionPage() {
           </div>
         </Card>
 
+        <p className="text-center text-[11px] text-ink-tertiary">
+          Scored under SSC CGL&apos;s +2 / <span className="text-danger">−0.5</span> marking.
+        </p>
+
         {/* Score-gap offer: sized by the gap MarksenseAI found, applied at checkout */}
         {offer && (
           <div className="rounded-xl border border-success/40 bg-success/10 px-4 py-3.5">

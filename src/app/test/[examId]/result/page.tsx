@@ -379,6 +379,11 @@ function OptimalScoreCard({
           <Bar label="You scored" value={actual} display={`${actual}`} pct={pct(actual)} tone="ink" />
           <Bar label="Achievable" value={optimal} display={`${optimal}`} pct={pct(optimal)} tone="success" />
         </div>
+        {/* Marking scheme is exam-specific. SSC CGL is the only live exam today;
+            derive this from the attempt's exam config once more exams launch. */}
+        <p className="text-[11px] text-ink-tertiary">
+          Computed under SSC CGL&apos;s +2 / <span className="text-danger">−0.5</span> marking, so the break-even for a guess is 1 in 5.
+        </p>
       </Card>
     </section>
   );

@@ -22,6 +22,7 @@ export interface Viewer {
   avatarUrl: string | null;
   plan: Plan;
   planExpiresAt: string | null;
+  selectedExam: string | null;
 }
 
 /**
@@ -44,12 +45,13 @@ export async function getViewer(): Promise<Viewer> {
       avatarUrl: null,
       plan: "free",
       planExpiresAt: null,
+      selectedExam: null,
     };
   }
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("plan, full_name, avatar_url, email, plan_expires_at")
+    .select("plan, full_name, avatar_url, email, plan_expires_at, selected_exam")
     .eq("id", user.id)
     .maybeSingle();
 
@@ -69,6 +71,7 @@ export async function getViewer(): Promise<Viewer> {
     avatarUrl: profile?.avatar_url ?? (user.user_metadata?.avatar_url as string) ?? null,
     plan,
     planExpiresAt: plan !== "free" ? expiresAt : null,
+    selectedExam: (profile?.selected_exam as string | null) ?? null,
   };
 }
 

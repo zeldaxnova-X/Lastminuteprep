@@ -41,6 +41,10 @@ export function AuthForm() {
   const supabase = createSupabaseBrowserClient();
   const origin = typeof window !== "undefined" ? window.location.origin : "";
   const callbackUrl = `${origin}/auth/callback?next=${encodeURIComponent(next)}`;
+  // New signups land on the fork ("Take a free mock" vs "Skip to plans") unless
+  // they arrived with a specific intent (e.g. a checkout link), which we honour.
+  const signupNext = next === "/dashboard" ? "/welcome" : next;
+  const signupCallback = `${origin}/auth/callback?next=${encodeURIComponent(signupNext)}`;
 
   function validate(): string | null {
     if (!EMAIL_RE.test(email)) return "Enter a valid email address.";
@@ -55,7 +59,7 @@ export function AuthForm() {
     setBusy("google");
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo: callbackUrl },
+      options: { redirectTo: mode === "signup" ? signupCallback : callbackUrl },
     });
     if (error) {
       setError(friendlyError(error.message));
@@ -87,7 +91,7 @@ export function AuthForm() {
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
-          options: { data: { full_name: name.trim() }, emailRedirectTo: callbackUrl },
+          options: { data: { full_name: name.trim() }, emailRedirectTo: signupCallback },
         });
         if (error) throw error;
         // Supabase returns an obfuscated user with empty identities when the
@@ -99,7 +103,7 @@ export function AuthForm() {
         }
         if (data.session) {
           // Email confirmation disabled, signed in immediately.
-          window.location.assign(next);
+          window.location.assign(signupNext);
           return;
         }
         setNotice(

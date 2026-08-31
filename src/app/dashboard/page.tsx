@@ -85,6 +85,10 @@ export default function DashboardPage() {
   const [payError, setPayError] = useState<string | null>(null);
   const [confirming, setConfirming] = useState(false);
 
+  // Exam picker: null once loaded means the user hasn't chosen yet.
+  const [selectedExam, setSelectedExam] = useState<string | null>(null);
+  const [savingExam, setSavingExam] = useState(false);
+
   useEffect(() => {
     (async () => {
       try {
@@ -97,6 +101,7 @@ export default function DashboardPage() {
           const viewer = await me.json();
           setPlan((viewer.plan as Plan) ?? "free");
           setEmail(viewer.email ?? null);
+          setSelectedExam((viewer.selectedExam as string | null) ?? null);
         }
         if (an.ok) setAnalytics(await an.json());
         if (hist.ok) {
@@ -168,6 +173,22 @@ export default function DashboardPage() {
     });
   }
 
+  async function saveExam(primary: string, notify: string[] = []) {
+    setSavingExam(true);
+    try {
+      await fetch("/api/exam/preference", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ primary, notify }),
+      });
+      setSelectedExam(primary);
+    } catch {
+      /* non-blocking; they can pick again next visit */
+    } finally {
+      setSavingExam(false);
+    }
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-bg">
       <TopNav />
@@ -181,6 +202,11 @@ export default function DashboardPage() {
               Payment received, confirming your upgrade. This takes a few seconds…
             </p>
           </Card>
+        )}
+
+        {/* First-visit exam picker (builds the per-exam waitlist) */}
+        {!loading && selectedExam === null && (
+          <ExamPicker onPick={saveExam} saving={savingExam} />
         )}
 
         {/* Resume banner */}
@@ -392,6 +418,56 @@ export default function DashboardPage() {
         </section>
       </main>
     </div>
+  );
+}
+
+function ExamPicker({
+  onPick,
+  saving,
+}: {
+  onPick: (primary: string, notify?: string[]) => void;
+  saving: boolean;
+}) {
+  const EXAMS = [
+    { slug: "ssc-cgl", name: "SSC CGL", note: "Live now", live: true, plain: false },
+    { slug: "ibps-clerk", name: "IBPS Clerk", note: "Coming soon", live: false, plain: false },
+    { slug: "sbi-clerk", name: "SBI Clerk", note: "Coming soon", live: false, plain: false },
+    { slug: "undecided", name: "Not sure yet / multiple", note: "", live: false, plain: true },
+  ];
+  return (
+    <Card className="p-5 sm:p-6">
+      <h2 className="text-base font-bold text-ink">Which exam are you preparing for?</h2>
+      <p className="mt-1 text-xs text-ink-secondary">
+        SSC CGL is live today. Pick a coming-soon exam and we&apos;ll notify you the moment it launches.
+      </p>
+      <div className="mt-4 grid gap-2 sm:grid-cols-2">
+        {EXAMS.map((e) => (
+          <button
+            key={e.slug}
+            disabled={saving}
+            onClick={() => onPick(e.slug, e.live || e.plain ? [] : [e.slug])}
+            className="flex items-center justify-between gap-2 rounded-xl border border-hairline bg-surface px-4 py-3 text-left transition-premium hover:border-accent/40 disabled:opacity-60"
+          >
+            <span className="text-sm font-semibold text-ink">{e.name}</span>
+            {e.note && (
+              <span
+                className={cn(
+                  "inline-flex flex-shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide",
+                  e.live ? "bg-success/15 text-success" : "bg-panel text-ink-tertiary ring-1 ring-hairline"
+                )}
+              >
+                {e.live ? <Check className="h-3 w-3" /> : <Lock className="h-3 w-3" />} {e.note}
+              </span>
+            )}
+          </button>
+        ))}
+      </div>
+      {saving && (
+        <p className="mt-3 flex items-center gap-1.5 text-xs text-ink-tertiary">
+          <Loader2 className="h-3.5 w-3.5 animate-spin" /> Saving…
+        </p>
+      )}
+    </Card>
   );
 }
 
