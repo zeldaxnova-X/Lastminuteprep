@@ -289,7 +289,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
 
       {/* Action bar */}
       <div className="flex flex-col gap-2.5 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:px-6">
-        {/* Confidence capture, subtle, always present, powers the AI Mentor */}
+        {/* Confidence capture, subtle, always present, powers the MarksenseAI */}
         <ConfidenceControl
           value={confidence}
           onChange={(c) => setConfidence(currentQuestion.id, c)}
@@ -343,7 +343,7 @@ const CONFIDENCE_OPTIONS: { value: Confidence; label: string; active: string }[]
 
 /**
  * Compact 3-way confidence control shown near Save (§4). Defaults to "Unsure",
- * never blocks flow, and is the single most important input for the AI Mentor.
+ * never blocks flow, and is the single most important input for the MarksenseAI.
  */
 const ConfidenceControl: React.FC<{
   value: Confidence;

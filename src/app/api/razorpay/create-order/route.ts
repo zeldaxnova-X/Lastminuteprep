@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSessionContext, json401 } from "@/lib/auth/api-guard";
-import { razorpay, PLAN_PRICING, CURRENCY, EXAM_SCOPE, isPaidPlan } from "@/lib/payments/razorpay";
+import { razorpay, CURRENCY, EXAM_SCOPE, isPaidPlan, isBilling, resolvePrice } from "@/lib/payments/razorpay";
 
 /**
  * POST /api/razorpay/create-order  { plan: "pro" | "mentor" }
@@ -17,15 +17,24 @@ export async function POST(req: NextRequest) {
   if (!user) return json401();
   const userId = user.id;
 
-  const body = (await req.json().catch(() => ({}))) as { plan?: string };
+  const body = (await req.json().catch(() => ({}))) as { plan?: string; billing?: string };
   if (!isPaidPlan(body.plan)) {
     return NextResponse.json(
       { error: "Invalid plan. Expected 'pro' or 'mentor'." },
       { status: 400 }
     );
   }
+  // Pro is monthly-only; MarksenseAI offers all four. Default to monthly.
+  const billing = isBilling(body.billing) ? body.billing : "monthly";
+  const entry = resolvePrice(body.plan, billing);
+  if (!entry) {
+    return NextResponse.json(
+      { error: `Plan '${body.plan}' is not offered on a ${billing} cycle.` },
+      { status: 400 }
+    );
+  }
 
-  const { amount } = PLAN_PRICING[body.plan];
+  const { amount, days } = entry;
   if (amount < 100) {
     // Guard against a misconfigured price table (Razorpay minimum is 100 paise).
     return NextResponse.json({ error: "Configured amount is below the minimum." }, { status: 500 });
@@ -37,8 +46,9 @@ export async function POST(req: NextRequest) {
       currency: CURRENCY,
       receipt: `rcpt_${userId.slice(0, 8)}_${Date.now()}`,
       // scope makes the payment per-exam-ready; the webhook reads these notes as
-      // the source of truth for who/what to grant (never the client).
-      notes: { userId, plan: body.plan, scope: EXAM_SCOPE },
+      // the source of truth for who/what to grant (never the client). `days` is
+      // the access window this purchase grants (one-time-with-expiry billing).
+      notes: { userId, plan: body.plan, billing, days: String(days), scope: EXAM_SCOPE },
     });
 
     return NextResponse.json({

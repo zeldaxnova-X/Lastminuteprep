@@ -10,7 +10,7 @@ import { safeNext } from "@/lib/auth/next";
 
 export const metadata = {
   title: "Sign in, LastMilePrep",
-  description: "Sign in or create your LastMilePrep account to unlock your report and AI Mentor.",
+  description: "Sign in or create your LastMilePrep account to unlock your report and MarksenseAI.",
 };
 
 export default async function LoginPage({
@@ -77,7 +77,7 @@ export default async function LoginPage({
               </span>
             </p>
             <p className="mt-4 max-w-md text-base text-white/70">
-              Real SSC CGL CBT mocks and a proprietary Mentor Engine that reads
+              Real SSC CGL CBT mocks and a proprietary MarksenseAI that reads
               your confidence and turns every attempt into a scoring plan.
             </p>
           </div>

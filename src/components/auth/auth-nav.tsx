@@ -16,7 +16,7 @@ interface Viewer {
   plan: Plan;
 }
 
-const PLAN_LABEL: Record<Plan, string> = { free: "Free", pro: "Pro", mentor: "AI Mentor" };
+const PLAN_LABEL: Record<Plan, string> = { free: "Free", pro: "Pro", mentor: "MarksenseAI" };
 const PLAN_BADGE: Record<Plan, string> = {
   free: "bg-panel text-ink-secondary ring-1 ring-hairline",
   pro: "bg-accent-soft text-accent ring-1 ring-accent/20",

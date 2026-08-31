@@ -113,10 +113,28 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ received: true, granted: false, reason: "unresolved order notes" });
   }
 
+  // Access window for one-time-with-expiry billing: extend from the later of
+  // now or any still-active expiry, so a renewal stacks instead of resetting.
+  const parsedDays = Number.parseInt(notes.days ?? "", 10);
+  const windowDays = Number.isFinite(parsedDays) && parsedDays > 0 ? parsedDays : 30;
+  const { data: currentProfile } = await admin
+    .from("profiles")
+    .select("plan_expires_at")
+    .eq("id", userId)
+    .maybeSingle();
+  const currentExpiry = currentProfile?.plan_expires_at
+    ? new Date(currentProfile.plan_expires_at).getTime()
+    : 0;
+  const base = Math.max(Date.now(), currentExpiry);
+  const expiresAt = new Date(base + windowDays * 24 * 60 * 60 * 1000).toISOString();
+
   // Grant the account-wide plan (service role, plan changes never trust client).
   // TODO(per-exam): when multi-exam launches, write entitlements[scope] = plan
   //   here instead of the top-level `plan` column. `scope` is already recorded.
-  const { error: grantErr } = await admin.from("profiles").update({ plan }).eq("id", userId);
+  const { error: grantErr } = await admin
+    .from("profiles")
+    .update({ plan, plan_billing: notes.billing ?? null, plan_expires_at: expiresAt })
+    .eq("id", userId);
   if (grantErr) {
     console.error("Plan grant failed in webhook:", grantErr);
     await admin

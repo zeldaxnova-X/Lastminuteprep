@@ -10,7 +10,7 @@ import { BrandLogo } from "@/components/brand-logo";
 import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lucide-react";
 
 // One-time-per-device guard for the anonymous sample. Access to premium areas
-// (dashboard, report, AI Mentor) is enforced server-side in middleware +
+// (dashboard, report, MarksenseAI) is enforced server-side in middleware +
 // getViewer(), so this local flag is only a UX hint, not a security control.
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
 
@@ -23,7 +23,7 @@ const PRICING_TIERS: {
   highlight?: boolean;
 }[] = [
   { name: "Pro", blurb: "Full bank · unlimited mocks · report", price: "₹19/mo" },
-  { name: "AI Mentor", blurb: "Everything in Pro + the Mentor Engine", price: "₹79/mo", highlight: true },
+  { name: "MarksenseAI", blurb: "Everything in Pro + the MarksenseAI", price: "₹79/mo", highlight: true },
 ];
 
 export default function SamplePage() {
@@ -97,7 +97,7 @@ export default function SamplePage() {
               <h1 className="text-xl font-semibold text-ink">You&apos;ve used your free sample</h1>
               <p className="text-sm text-ink-secondary">
                 The one-time sample is tied to this device. Create an account to
-                unlock the full question bank, report, and AI Mentor.
+                unlock the full question bank, report, and MarksenseAI.
               </p>
             </div>
 

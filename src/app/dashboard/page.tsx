@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useTestStore } from "@/lib/store/use-test-store";
 import { TopNav } from "@/components/top-nav";
@@ -9,7 +9,7 @@ import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ButtonLink } from "@/components/ui/button";
 import { sectionLabel } from "@/lib/cbt-questions";
-import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
+import { startRazorpayCheckout, waitForPlanUpgrade, type Billing } from "@/lib/payments/razorpay-checkout";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
@@ -109,18 +109,41 @@ export default function DashboardPage() {
     })();
   }, []);
 
+  // Auto-open checkout when arriving from a pricing CTA (/dashboard?checkout=
+  // <plan>:<billing>), once the account's current plan is known. Runs once.
+  const autoCheckoutRan = useRef(false);
+  useEffect(() => {
+    if (loading || autoCheckoutRan.current) return;
+    const intent = new URLSearchParams(window.location.search).get("checkout");
+    if (!intent) return;
+    autoCheckoutRan.current = true;
+    window.history.replaceState({}, "", "/dashboard");
+    const [p, b] = intent.split(":");
+    const target: Plan | null = p === "mentor" ? "mentor" : p === "pro" ? "pro" : null;
+    if (!target) return;
+    // Don't re-charge an account that already holds this (or a higher) tier.
+    if (target === "mentor" && plan === "mentor") return;
+    if (target === "pro" && (plan === "pro" || plan === "mentor")) return;
+    const valid = ["monthly", "quarterly", "halfyearly", "annual"] as const;
+    const billing: Billing = valid.includes(b as Billing) ? (b as Billing) : "monthly";
+    upgrade(target, billing);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading, plan]);
+
   const canPractice = plan === "pro" || plan === "mentor";
   const canMentor = plan === "mentor";
   const hasData = analytics?.has_completed_attempts ?? false;
   const dash = (v: React.ReactNode) => (loading ? "…" : v);
 
-  function upgrade(target: Plan) {
+  function upgrade(target: Plan, billing: Billing = "monthly") {
     if (target === "free") return;
     const paidTarget = target === "mentor" ? "mentor" : "pro";
     setPayError(null);
     setPaying(target);
     void startRazorpayCheckout({
       plan: paidTarget,
+      // Pro is monthly-only; MarksenseAI honours the chosen duration.
+      billing: paidTarget === "pro" ? "monthly" : billing,
       prefill: email ? { email } : undefined,
       // Payment captured + signature verified, but the plan is granted by the
       // webhook, not this callback. Show a "confirming" state and poll until the
@@ -219,8 +242,8 @@ export default function DashboardPage() {
           )}
           {!loading && plan === "pro" && (
             <UpgradePanel
-              heading="Add the AI Mentor"
-              sub="You have full practice + reports. Upgrade to Mentor for the skip strategy, break-even guess rule, and your score-maximisation plan."
+              heading="Add the MarksenseAI"
+              sub="You have full practice + reports. Upgrade to MarksenseAI for the skip strategy, break-even guess rule, and your score-maximisation plan."
               latestAttempt={null}
               paying={paying}
               payError={payError}
@@ -302,15 +325,15 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* AI Mentor surface */}
+        {/* MarksenseAI surface */}
         {!loading && (
           <section className="space-y-4">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-tertiary">AI Mentor</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-tertiary">MarksenseAI</h2>
             {canMentor ? (
               <Card className="flex items-center gap-3 border-gold-bright/30 bg-gold-soft p-5">
                 <Sparkles className="h-5 w-5 flex-shrink-0 text-gold" />
                 <p className="text-sm text-ink">
-                  AI Mentor is <span className="font-semibold text-gold">active</span>. Open any completed
+                  MarksenseAI is <span className="font-semibold text-gold">active</span>. Open any completed
                   test&apos;s report to see your skip strategy, guess rule, and score-maximisation plan.
                 </p>
               </Card>
@@ -319,7 +342,7 @@ export default function DashboardPage() {
                 <div className="flex items-start gap-3">
                   <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-gold" />
                   <div>
-                    <p className="text-sm font-semibold text-ink">AI Mentor, the score-maximisation engine</p>
+                    <p className="text-sm font-semibold text-ink">MarksenseAI, the score-maximisation engine</p>
                     <p className="mt-0.5 text-sm text-ink-secondary">
                       Your exact skip strategy, break-even guess rule, and the marks you left on the table.
                     </p>
@@ -331,7 +354,7 @@ export default function DashboardPage() {
                   className="inline-flex min-h-[44px] w-full flex-shrink-0 items-center justify-center gap-2 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold disabled:opacity-60 sm:w-auto"
                 >
                   {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Lock className="h-4 w-4" />}
-                  Unlock Mentor, ₹79
+                  Unlock MarksenseAI, ₹99
                 </button>
               </Card>
             )}
@@ -377,7 +400,7 @@ function PlanBadge({ plan, loading }: { plan: Plan; loading: boolean }) {
   const map: Record<Plan, { label: string; cls: string }> = {
     free: { label: "Free", cls: "bg-panel text-ink-secondary border-hairline-strong" },
     pro: { label: "Pro", cls: "bg-accent-soft text-accent border-accent/30" },
-    mentor: { label: "Mentor", cls: "bg-gold-soft text-gold border-gold-bright/40" },
+    mentor: { label: "MarksenseAI", cls: "bg-gold-soft text-gold border-gold-bright/40" },
   };
   const b = map[plan];
   return (
@@ -451,7 +474,7 @@ function UpgradePanel({
           )}
         >
           {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-          {showBoth ? "Go Mentor, ₹79/mo" : "Unlock Mentor, ₹79/mo"}
+          {showBoth ? "Go MarksenseAI, ₹99/mo" : "Unlock MarksenseAI, ₹99/mo"}
         </button>
       </div>
 

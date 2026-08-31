@@ -84,7 +84,7 @@ export default function SampleConversionPage() {
   }
 
   function startCheckout(tier: "report" | "mentor") {
-    setCheckout({ tier, price: tier === "mentor" ? "₹79/mo" : "₹19/mo" });
+    setCheckout({ tier, price: tier === "mentor" ? "₹99/mo" : "₹19/mo" });
     setPayError(null);
     setPaying(true);
     const plan = tier === "mentor" ? "mentor" : "pro";
@@ -181,14 +181,14 @@ export default function SampleConversionPage() {
           <div className="flex items-center justify-between gap-3 rounded-xl border border-gold-bright/30 bg-gold-soft px-4 py-3.5">
             <p className="text-sm text-ink">
               <Sparkles className="mr-1 inline h-4 w-4 text-gold" />
-              AI Mentor: you could have scored{" "}
+              MarksenseAI: you could have scored{" "}
               <span className="font-bold text-gold">
                 +<Masked className="text-gold">{gain}</Masked>
               </span>{" "}
               marks
             </p>
             <span className="flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹79
+              <Lock className="h-3 w-3" /> ₹99
             </span>
           </div>
         </Card>
@@ -204,8 +204,8 @@ export default function SampleConversionPage() {
             onClick={() => onUnlock("report")}
           />
           <OfferRow
-            title="AI Mentor, report + engine"
-            price="₹79/mo"
+            title="MarksenseAI, report + engine"
+            price="₹99/mo"
             note="Founding price"
             featured
             desc="Everything above, plus the exact skip strategy, your own break-even guess rule, and your score-maximisation plan."

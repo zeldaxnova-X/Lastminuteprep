@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LastMilePrep, SSC CGL Practice Platform",
   description:
-    "Practice SSC CGL previous year papers with a faithful TCS iON CBT interface and an AI Mentor that shows you exactly how to score more marks.",
+    "Practice SSC CGL previous year papers with a faithful TCS iON CBT interface and an MarksenseAI that shows you exactly how to score more marks.",
 };
 
 export default function RootLayout({

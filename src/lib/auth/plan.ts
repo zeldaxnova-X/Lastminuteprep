@@ -21,6 +21,7 @@ export interface Viewer {
   fullName: string | null;
   avatarUrl: string | null;
   plan: Plan;
+  planExpiresAt: string | null;
 }
 
 /**
@@ -42,16 +43,24 @@ export async function getViewer(): Promise<Viewer> {
       fullName: null,
       avatarUrl: null,
       plan: "free",
+      planExpiresAt: null,
     };
   }
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("plan, full_name, avatar_url, email")
+    .select("plan, full_name, avatar_url, email, plan_expires_at")
     .eq("id", user.id)
     .maybeSingle();
 
-  const plan = (profile?.plan as Plan) ?? "free";
+  // One-time-with-expiry billing: a lapsed paid plan reverts to `free` at the
+  // paywall. A NULL expiry never lapses (grandfathered plans + comps).
+  let plan = (profile?.plan as Plan) ?? "free";
+  const expiresAt = (profile?.plan_expires_at as string | null) ?? null;
+  if (plan !== "free" && expiresAt && new Date(expiresAt).getTime() < Date.now()) {
+    plan = "free";
+  }
+
   return {
     authenticated: true,
     userId: user.id,
@@ -59,6 +68,7 @@ export async function getViewer(): Promise<Viewer> {
     fullName: profile?.full_name ?? (user.user_metadata?.full_name as string) ?? null,
     avatarUrl: profile?.avatar_url ?? (user.user_metadata?.avatar_url as string) ?? null,
     plan,
+    planExpiresAt: plan !== "free" ? expiresAt : null,
   };
 }
 

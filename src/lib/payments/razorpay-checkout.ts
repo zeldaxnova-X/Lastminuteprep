@@ -6,9 +6,12 @@
  */
 
 export type PaidPlan = "pro" | "mentor";
+export type Billing = "monthly" | "quarterly" | "halfyearly" | "annual";
 
 interface CheckoutHandlers {
   plan: PaidPlan;
+  /** MarksenseAI duration; Pro is always monthly. Defaults to monthly. */
+  billing?: Billing;
   prefill?: { name?: string; email?: string };
   /**
    * Called once the payment succeeded and its checkout signature verified
@@ -109,7 +112,7 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     const res = await fetch("/api/razorpay/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ plan: opts.plan }),
+      body: JSON.stringify({ plan: opts.plan, billing: opts.billing ?? "monthly" }),
     });
     if (res.status === 401) {
       opts.onError("Please sign in to continue.");

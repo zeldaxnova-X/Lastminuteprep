@@ -212,7 +212,7 @@ export default function ExamResultPage() {
           </div>
         </section>
 
-        {/* Optimal score, AI Mentor engine (mentor plan only) */}
+        {/* Optimal score, MarksenseAI engine (mentor plan only) */}
         {analysis && optimalScore != null && (
           <OptimalScoreCard
             actual={result.net_score}
@@ -230,7 +230,7 @@ export default function ExamResultPage() {
             or when present; entirely absent when narration isn't available. */}
         {(narrativeState === "loading" || (narrativeState === "done" && narrative)) && (
           <section>
-            <SectionHeading icon={Sparkles}>AI Mentor</SectionHeading>
+            <SectionHeading icon={Sparkles}>MarksenseAI</SectionHeading>
             <Card className="p-6">
               {narrativeState === "loading" ? (
                 <div className="flex items-center gap-2 text-sm text-ink-secondary">
@@ -250,7 +250,7 @@ export default function ExamResultPage() {
           <SectionPerformanceCard breakdown={result.section_breakdown} />
         </div>
 
-        {/* Score leaks, AI Mentor engine (mentor plan only) */}
+        {/* Score leaks, MarksenseAI engine (mentor plan only) */}
         {analysis && <ScoreLeaksCard analysis={analysis} />}
 
         {/* Question review */}
@@ -266,7 +266,7 @@ export default function ExamResultPage() {
 function MentorLockedCard() {
   return (
     <section>
-      <SectionHeading icon={Sparkles}>AI Mentor</SectionHeading>
+      <SectionHeading icon={Sparkles}>MarksenseAI</SectionHeading>
       <div className="relative overflow-hidden rounded-2xl bg-panel-dark p-6 ring-1 ring-gold-bright/30 sm:p-8">
         <div
           className="pointer-events-none absolute inset-0 opacity-70"
@@ -279,7 +279,7 @@ function MentorLockedCard() {
               <Lock className="h-3.5 w-3.5" /> Locked on your plan
             </p>
             <h3 className="mt-2 text-xl font-semibold text-white">
-              Unlock the LastMilePrep Mentor Engine&trade;
+              Unlock the LastMilePrep MarksenseAI&trade;
             </h3>
             <p className="mt-2 max-w-md text-sm text-white/70">
               Your exact skip strategy, your own break-even guess rule, the

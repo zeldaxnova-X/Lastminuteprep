@@ -128,7 +128,7 @@ export function AuthForm() {
     mode === "signin" ? "Welcome back" : mode === "signup" ? "Create your account" : "Reset your password";
   const subtitle =
     mode === "signin"
-      ? "Sign in to unlock your report and AI Mentor."
+      ? "Sign in to unlock your report and MarksenseAI."
       : mode === "signup"
         ? "Free to start, no card, unlock only when you're ready."
         : "We'll email you a secure link to set a new password.";

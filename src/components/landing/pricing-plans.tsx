@@ -23,7 +23,7 @@ const DURATIONS: Duration[] = [
   { id: "monthly", label: "Monthly", price: 99, regular: 149, months: 1 },
   { id: "quarterly", label: "Quarterly", price: 249, regular: 349, months: 3, tag: "Most popular" },
   { id: "halfyearly", label: "Half-yearly", price: 399, regular: 599, months: 6 },
-  { id: "yearly", label: "Annual", price: 599, regular: 999, months: 12, tag: "Best value" },
+  { id: "annual", label: "Annual", price: 599, regular: 999, months: 12, tag: "Best value" },
 ];
 
 const MONTHLY_BASE = 99;
@@ -85,7 +85,7 @@ export function PricingPlans({ questionCount }: { questionCount: number }) {
             <Feature key={r} tone={i === 0 ? "strong" : "normal"}>{r}</Feature>
           ))}
         </div>
-        <Link href="/login?mode=signup&plan=pro" className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-lg border border-ink/15 bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-premium hover:bg-ink/90">
+        <Link href="/dashboard?checkout=pro:monthly" className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-lg border border-ink/15 bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-premium hover:bg-ink/90">
           Get Pro
         </Link>
       </div>
@@ -160,7 +160,7 @@ export function PricingPlans({ questionCount }: { questionCount: number }) {
           </div>
 
           <Link
-            href={`/login?mode=signup&plan=marksense&billing=${dur.id}`}
+            href={`/dashboard?checkout=mentor:${dur.id}`}
             className="mt-6 inline-flex min-h-[46px] items-center justify-center gap-2 rounded-lg bg-gold-bright px-5 py-2.5 text-sm font-semibold text-white transition-premium hover:bg-gold"
           >
             Get MarksenseAI
