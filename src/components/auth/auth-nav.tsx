@@ -75,14 +75,17 @@ export function AuthNav({ variant = "landing" }: { variant?: "landing" | "app" }
       );
     }
     return (
-      <div className="flex items-center gap-2 sm:gap-3">
-        {/* Sign up, secondary CTA, opens the auth page in sign-up mode. From
-            there, the "Already have an account? Sign in" toggle handles sign-in,
-            so no separate sign-in link is needed in the landing header. */}
+      <div className="flex items-center gap-1.5 sm:gap-2">
+        {/* Sign in, returning users. /login redirects to the dashboard if the
+            session is already valid, so it doubles as "resume my account". */}
+        <Link href="/login" className={buttonClasses("ghost", "sm")}>
+          Sign in
+        </Link>
+        {/* Sign up, new accounts. */}
         <Link href="/login?mode=signup" className={buttonClasses("secondary", "sm")}>
           Sign up
         </Link>
-        {/* Try free, primary CTA, launches the anonymous sample. */}
+        {/* Try free, the anonymous sample. */}
         <Link href="/sample" className={buttonClasses("primary", "sm")}>
           Try free
           <ArrowRight className="h-3.5 w-3.5" />
@@ -142,8 +145,25 @@ export function AuthNav({ variant = "landing" }: { variant?: "landing" | "app" }
               role="menuitem"
             >
               <Sparkles className="h-4 w-4 text-gold-bright" />
-              Upgrade
+              See plans
             </Link>
+          )}
+          {plan === "pro" && (
+            <Link
+              href="/dashboard?checkout=mentor:monthly"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2.5 bg-gold-soft/50 px-4 py-2.5 text-sm font-semibold text-gold transition-premium hover:bg-gold-soft"
+              role="menuitem"
+            >
+              <Sparkles className="h-4 w-4 text-gold-bright" />
+              Upgrade to MarksenseAI
+            </Link>
+          )}
+          {plan === "mentor" && (
+            <div className="flex items-center gap-2.5 px-4 py-2.5 text-xs text-ink-tertiary">
+              <Sparkles className="h-3.5 w-3.5 text-gold-bright" />
+              All features unlocked
+            </div>
           )}
           <button
             onClick={signOut}

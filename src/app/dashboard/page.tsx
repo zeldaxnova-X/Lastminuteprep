@@ -21,6 +21,8 @@ import {
   Sparkles,
   Check,
   Loader2,
+  LineChart,
+  RotateCcw,
 } from "lucide-react";
 
 interface AnalyticsData {
@@ -88,6 +90,7 @@ export default function DashboardPage() {
   // Exam picker: null once loaded means the user hasn't chosen yet.
   const [selectedExam, setSelectedExam] = useState<string | null>(null);
   const [savingExam, setSavingExam] = useState(false);
+  const [planExpiresAt, setPlanExpiresAt] = useState<string | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -102,6 +105,7 @@ export default function DashboardPage() {
           setPlan((viewer.plan as Plan) ?? "free");
           setEmail(viewer.email ?? null);
           setSelectedExam((viewer.selectedExam as string | null) ?? null);
+          setPlanExpiresAt((viewer.planExpiresAt as string | null) ?? null);
         }
         if (an.ok) setAnalytics(await an.json());
         if (hist.ok) {
@@ -253,6 +257,40 @@ export default function DashboardPage() {
           <PlanBadge plan={plan} loading={loading} />
         </div>
 
+        {/* Enhanced MarksenseAI command centre (mentor only) */}
+        {!loading && plan === "mentor" && (
+          <section className="rounded-2xl border border-gold-bright/30 bg-gradient-to-br from-gold-soft/70 to-surface p-5 shadow-soft sm:p-6">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gold-bright/15 text-gold ring-1 ring-gold-bright/30">
+                  <Sparkles className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-ink">MarksenseAI active</p>
+                  <p className="text-xs text-ink-tertiary">
+                    {planExpiresAt ? `Renews ${fmtDate(planExpiresAt)}` : "Full access to every exam"}
+                  </p>
+                </div>
+              </div>
+              {hasData && analytics?.weakest_subject && (
+                <ButtonLink href="/test/create?mode=subject" variant="secondary" size="sm">
+                  Drill {sectionLabel(analytics.weakest_subject)}
+                </ButtonLink>
+              )}
+            </div>
+            <div className="mt-4 grid gap-2.5 sm:grid-cols-3">
+              <QuickAction
+                href={latestAttempt ? `/test/${latestAttempt.id}/result` : "/test/create?mode=random"}
+                icon={Sparkles}
+                title="Your latest plan"
+                desc="Skip strategy & guess rule"
+              />
+              <QuickAction href="/revision" icon={RotateCcw} title="Revision queue" desc="Fix your wrong answers" />
+              <QuickAction href="/analytics" icon={LineChart} title="Full analytics" desc="Trends & weakness ranking" />
+            </div>
+          </section>
+        )}
+
         {/* Plan banner: upgrade path for free/pro */}
         <div id="upgrade" className="scroll-mt-24 empty:hidden">
           {!loading && plan === "free" && (
@@ -351,19 +389,11 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* MarksenseAI surface */}
-        {!loading && (
+        {/* MarksenseAI upsell (mentor users get the command centre up top instead) */}
+        {!loading && !canMentor && (
           <section className="space-y-4">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-tertiary">MarksenseAI</h2>
-            {canMentor ? (
-              <Card className="flex items-center gap-3 border-gold-bright/30 bg-gold-soft p-5">
-                <Sparkles className="h-5 w-5 flex-shrink-0 text-gold" />
-                <p className="text-sm text-ink">
-                  MarksenseAI is <span className="font-semibold text-gold">active</span>. Open any completed
-                  test&apos;s report to see your skip strategy, guess rule, and score-maximisation plan.
-                </p>
-              </Card>
-            ) : (
+            {
               <Card className="flex flex-col items-start justify-between gap-4 p-5 sm:flex-row sm:items-center">
                 <div className="flex items-start gap-3">
                   <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-gold" />
@@ -383,7 +413,7 @@ export default function DashboardPage() {
                   Unlock MarksenseAI, ₹99
                 </button>
               </Card>
-            )}
+            }
           </section>
         )}
 
@@ -418,6 +448,42 @@ export default function DashboardPage() {
         </section>
       </main>
     </div>
+  );
+}
+
+function fmtDate(iso: string): string {
+  try {
+    return new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+  } catch {
+    return "";
+  }
+}
+
+function QuickAction({
+  href,
+  icon: Icon,
+  title,
+  desc,
+}: {
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  desc: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group flex items-start gap-3 rounded-xl border border-hairline bg-surface px-4 py-3 transition-premium hover:border-gold-bright/40"
+    >
+      <span className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-gold-bright/10 text-gold">
+        <Icon className="h-4 w-4" />
+      </span>
+      <div className="min-w-0">
+        <p className="text-sm font-semibold text-ink">{title}</p>
+        <p className="truncate text-xs text-ink-tertiary">{desc}</p>
+      </div>
+      <ArrowRight className="ml-auto mt-1.5 h-4 w-4 flex-shrink-0 text-ink-tertiary transition-premium group-hover:translate-x-0.5" />
+    </Link>
   );
 }
 
