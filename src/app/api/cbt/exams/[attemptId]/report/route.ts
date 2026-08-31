@@ -72,7 +72,7 @@ export async function GET(
     .eq("session_id", attemptId)
     .maybeSingle();
 
-  // Question-by-question review (test is over — answer key + solution allowed).
+  // Question-by-question review (test is over, answer key + solution allowed).
   const { data: rows } = await supabase
     .from("responses")
     .select(
@@ -124,7 +124,7 @@ export async function GET(
   const analysis = (report?.analysis ?? null) as MentorAnalysis | null;
   const netScore = (result as { net_score?: number } | null)?.net_score ?? 0;
   const optimalScore = report?.optimal_score ?? null;
-  // The single "+X marks" figure — always returned so the conversion screen can
+  // The single "+X marks" figure, always returned so the conversion screen can
   // blur-tease it without exposing the rest of the Mentor analysis.
   const teaseGain =
     (analysis?.optimal?.gain as number | undefined) ??
@@ -145,9 +145,9 @@ export async function GET(
     teaseGain,
     totalQuestions,
     maxScore: totalQuestions * 2,
-    // Full-report data — only for plan >= pro.
+    // Full-report data, only for plan >= pro.
     review: reportAllowed ? review : [],
-    // Mentor engine — only for plan == mentor.
+    // Mentor engine, only for plan == mentor.
     analysis: mentorAllowed ? analysis : null,
     optimalScore: mentorAllowed ? optimalScore : null,
     narrative: mentorAllowed ? (report?.narrative_md ?? null) : null,

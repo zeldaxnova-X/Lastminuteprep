@@ -11,7 +11,7 @@ export type QuestionStatus =
 
 export type Option = "A" | "B" | "C" | "D";
 
-/** Confidence signal captured on Save — the AI Mentor's key calibration input (§4). */
+/** Confidence signal captured on Save, the AI Mentor's key calibration input (§4). */
 export type Confidence = "guessed" | "unsure" | "confident";
 
 interface TestState {
@@ -22,12 +22,12 @@ interface TestState {
 
   /**
    * Transient per-question selection (what radio is highlighted). This is NOT
-   * the committed answer — selecting an option does not save it (§4). It is
+   * the committed answer, selecting an option does not save it (§4). It is
    * reset to the saved value when the user navigates away without saving.
    */
   userResponses: Record<string, Option | null>;
   /**
-   * Committed answers — the ONLY values that are persisted and evaluated. Set
+   * Committed answers, the ONLY values that are persisted and evaluated. Set
    * exclusively by Save & Next / Mark for Review & Next / Clear Response.
    */
   savedResponses: Record<string, Option | null>;
@@ -41,7 +41,7 @@ interface TestState {
   visitOrder: Record<string, number>; // questionId -> 1-based order first visited
 
   timeRemaining: number; // seconds (derived from endsAt for display)
-  endsAt: number | null; // epoch ms when the exam expires — wall-clock source of truth
+  endsAt: number | null; // epoch ms when the exam expires, wall-clock source of truth
   isSubmitted: boolean;
   submittedAt: string | null;
   startTime: number | null;
@@ -121,7 +121,7 @@ export const useTestStore = create<TestState>((set, get) => ({
           const parsed = JSON.parse(saved) as TestState;
           if (parsed.examId === examId && !parsed.isSubmitted) {
             // Recompute remaining time from the persisted wall-clock deadline so
-            // a refresh/crash resumes correctly — time keeps running while away.
+            // a refresh/crash resumes correctly, time keeps running while away.
             const endsAt = parsed.endsAt ?? Date.now() + parsed.timeRemaining * 1000;
             const timeRemaining = remainingFrom(endsAt);
             set({
@@ -255,7 +255,7 @@ export const useTestStore = create<TestState>((set, get) => ({
         : state.answerChanges[questionId] || 0;
     const initialOpt = state.initialOptions[questionId] ?? optionId;
 
-    // Transient only — committing happens on Save / Mark (§4).
+    // Transient only, committing happens on Save / Mark (§4).
     set({
       userResponses: { ...state.userResponses, [questionId]: optionId },
       answerChanges: { ...state.answerChanges, [questionId]: changeCount },
@@ -407,8 +407,7 @@ export const useTestStore = create<TestState>((set, get) => ({
 
 /**
  * Commit the current question's transient selection, set its status, then
- * advance. This is the ONLY path (besides Clear) that writes savedResponses —
- * enforcing "selecting an option does not save it" (§4). "Answered & Marked"
+ * advance. This is the ONLY path (besides Clear) that writes savedResponses, * enforcing "selecting an option does not save it" (§4). "Answered & Marked"
  * IS a committed, evaluable answer.
  */
 function commitAndAdvance(

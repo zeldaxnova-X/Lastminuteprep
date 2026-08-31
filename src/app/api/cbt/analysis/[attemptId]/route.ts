@@ -23,8 +23,7 @@ export async function GET(
 
     // Server-enforced paywall: the detailed attempt analysis is a paid (>= pro)
     // deliverable. A free viewer is denied here, not merely in the UI. The
-    // anonymous sample (no session) resolves to `free`, so it is denied too —
-    // the sample's basic result comes from /result, not this deep analysis.
+    // anonymous sample (no session) resolves to `free`, so it is denied too, // the sample's basic result comes from /result, not this deep analysis.
     const viewer = await getViewer();
     if (!canSeeReport(viewer.plan)) return json403();
 

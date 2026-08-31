@@ -26,14 +26,14 @@ interface ReportData {
   plan: "free" | "pro" | "mentor";
 }
 
-/** Real value concealed behind a blur — the exact figure revealed on unlock. */
+/** Real value concealed behind a blur, the exact figure revealed on unlock. */
 function Masked({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
     <>
       <span aria-hidden className={cn("select-none blur-[6px]", className)}>
         {children}
       </span>
-      <span className="sr-only">locked — unlock to reveal</span>
+      <span className="sr-only">locked, unlock to reveal</span>
     </>
   );
 }
@@ -72,7 +72,7 @@ export default function SampleConversionPage() {
     })();
   }, [attemptId]);
 
-  // PAYWALL SEAM — auth is required to unlock, payment is NOT wired.
+  // PAYWALL SEAM, auth is required to unlock, payment is NOT wired.
   // Not signed in → send to /login, returning to the report afterwards.
   // Signed in → stubbed checkout (// TODO: Razorpay). No plan mutation here.
   function onUnlock(tier: "report" | "mentor") {
@@ -102,7 +102,7 @@ export default function SampleConversionPage() {
         } else {
           setPaying(false);
           setPayError(
-            "Payment received — we're confirming your upgrade. It'll unlock in a moment; refresh if it doesn't."
+            "Payment received, we're confirming your upgrade. It'll unlock in a moment; refresh if it doesn't."
           );
         }
       },
@@ -140,7 +140,7 @@ export default function SampleConversionPage() {
       </header>
 
       <main className="mx-auto w-full max-w-lg flex-1 space-y-6 px-4 py-10 sm:px-6">
-        {/* Scoreboard — plain and honest */}
+        {/* Scoreboard, plain and honest */}
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-tertiary">
             Sample complete
@@ -155,7 +155,7 @@ export default function SampleConversionPage() {
           </p>
         </div>
 
-        {/* Report silhouette — real structure, masked real values */}
+        {/* Report silhouette, real structure, masked real values */}
         <Card className="space-y-4 p-6">
           <div className="flex items-center justify-between">
             <p className="text-sm font-semibold text-ink">Section breakdown</p>
@@ -196,15 +196,15 @@ export default function SampleConversionPage() {
         {/* The calm offer */}
         <div className="space-y-3">
           <OfferRow
-            title="Pro — full report"
+            title="Pro, full report"
             price="₹19/mo"
             note="Founding price"
-            desc="Unlock every section score, accuracy, and timing breakdown — plus the full 10,000+ question bank."
+            desc="Unlock every section score, accuracy, and timing breakdown, plus the full 10,000+ question bank."
             cta="Unlock report"
             onClick={() => onUnlock("report")}
           />
           <OfferRow
-            title="AI Mentor — report + engine"
+            title="AI Mentor, report + engine"
             price="₹79/mo"
             note="Founding price"
             featured
@@ -214,7 +214,7 @@ export default function SampleConversionPage() {
           />
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">
             <ShieldCheck className="h-3.5 w-3.5 text-success" />
-            Honest founding prices — no fake discounts. Cancel anytime.
+            Honest founding prices, no fake discounts. Cancel anytime.
           </p>
           <RazorpayBadge className="pt-1" />
         </div>

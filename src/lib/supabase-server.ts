@@ -14,7 +14,7 @@ export function createServerSupabaseClient() {
   }
 
   // FAIL LOUD. This is the SERVICE-ROLE (RLS-bypassing) client. Silently falling
-  // back to the anon key — as this function used to — turns a missing/wrong key
+  // back to the anon key, as this function used to, turns a missing/wrong key
   // into a confusing "new row violates row-level security policy" at write time
   // (it broke the anonymous sample: the "service" client was actually anon, so
   // RLS refused the insert). Refuse to construct a non-service client here so

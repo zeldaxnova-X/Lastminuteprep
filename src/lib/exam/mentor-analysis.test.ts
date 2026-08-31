@@ -99,7 +99,7 @@ test("marks lost: wrong Guessed/Unsure answers, quantified as wrongLowConf × pe
     session([
       ...answered(3, 0, "guessed"), // 3 wrong
       ...answered(2, 0, "unsure"), // 2 wrong
-      ...answered(1, 0, "confident"), // wrong but Confident — excluded
+      ...answered(1, 0, "confident"), // wrong but Confident, excluded
     ]),
     cfg
   );

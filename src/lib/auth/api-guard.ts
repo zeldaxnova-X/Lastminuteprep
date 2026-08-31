@@ -8,7 +8,7 @@ import { createServerSupabaseClient } from "@/lib/supabase-server";
  * Server-side identity + authorization helpers for API routes.
  *
  * The golden rule: identity comes from the Supabase SESSION (auth.uid()),
- * derived server-side — never from a stub, header, query param, or body field
+ * derived server-side, never from a stub, header, query param, or body field
  * the client controls. Row-scoped reads/writes for a signed-in user go through
  * the USER-SCOPED client so Postgres RLS enforces ownership as a backstop; the
  * service-role client is used only for anonymous-sample writes and reference
@@ -79,7 +79,7 @@ export async function isAdmin(): Promise<boolean> {
   return data?.is_admin === true;
 }
 
-/** The service-role client — RLS-bypassing. Use ONLY for anonymous-sample
+/** The service-role client, RLS-bypassing. Use ONLY for anonymous-sample
  *  writes and reference data, never to sidestep an ownership check. */
 export function serviceClient() {
   return createServerSupabaseClient();
@@ -88,7 +88,7 @@ export function serviceClient() {
 /**
  * SINGLE SOURCE OF TRUTH for which Supabase client an `exam_attempts` WRITE
  * (create / update / delete) must use, chosen by identity. No route may pick
- * this ad hoc — this exact decision has regressed TWICE, each time an identity
+ * this ad hoc, this exact decision has regressed TWICE, each time an identity
  * refactor moved a route onto the cookie client and RLS then refused the
  * anonymous sample insert ("new row violates row-level security policy").
  *
@@ -97,7 +97,7 @@ export function serviceClient() {
  *   • anonymous sample (sessionUserId null) → SERVICE-ROLE client: there is NO
  *     session for RLS to key on, so the row (user_id NULL + device_id) is
  *     written via the service role and guarded by the device-token check in
- *     code. This is the DOCUMENTED RLS exception — do NOT switch it to the
+ *     code. This is the DOCUMENTED RLS exception, do NOT switch it to the
  *     cookie client; RLS would reject the anon insert.
  *
  * Mirrors loadOwnedAttempt's read-side client contract.

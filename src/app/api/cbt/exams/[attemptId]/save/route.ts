@@ -44,7 +44,7 @@ export async function POST(
     if (body.time_spent_seconds !== undefined) {
       updateData.time_spent_seconds = body.time_spent_seconds;
     }
-    // Confidence (guessed|unsure|confident) — the AI Mentor's key signal (§4).
+    // Confidence (guessed|unsure|confident), the AI Mentor's key signal (§4).
     if (body.confidence !== undefined) {
       updateData.confidence = body.confidence;
     }

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/* Honest UI mocks used as proof on the landing page — they mirror the real
+/* Honest UI mocks used as proof on the landing page, they mirror the real
    product (five-state palette, calibration, optimal-score gap) without exposing
    the Mentor's method. */
 
@@ -104,7 +104,7 @@ export function OptimalGapBar() {
       <Bar label="You scored" pct={65} display="65" tone="bg-ink" />
       <Bar label="Achievable" pct={72} display="72" tone="bg-success" />
       <p className="pt-1 text-xs text-ink-secondary">
-        Same knowledge, smarter skip decisions —{" "}
+        Same knowledge, smarter skip decisions, {" "}
         <span className="font-semibold text-success">+7 marks</span>.
       </p>
     </div>

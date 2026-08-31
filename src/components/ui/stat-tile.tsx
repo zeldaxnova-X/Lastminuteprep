@@ -5,7 +5,7 @@ interface StatTileProps {
   label: string;
   /** The value to display. Numbers render in tabular-nums so they don't jitter. */
   value: React.ReactNode;
-  /** Shown when there is no data yet — keeps empty states honest (§8). */
+  /** Shown when there is no data yet, keeps empty states honest (§8). */
   empty?: boolean;
   hint?: string;
   className?: string;
@@ -30,7 +30,7 @@ export function StatTile({
           valueClassName
         )}
       >
-        {empty ? "—" : value}
+        {empty ? ", " : value}
       </p>
       {hint ? <p className="mt-1 text-xs text-ink-tertiary">{hint}</p> : null}
     </Card>

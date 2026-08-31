@@ -1,6 +1,6 @@
 import { PolicyStub } from "@/components/policy-stub";
 
-export const metadata = { title: "Refund Policy — LastMilePrep" };
+export const metadata = { title: "Refund Policy, LastMilePrep" };
 
 export default function RefundPolicyPage() {
   return (

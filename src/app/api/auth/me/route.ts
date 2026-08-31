@@ -3,7 +3,7 @@ import { getViewer } from "@/lib/auth/plan";
 import { claimSampleForUser } from "@/lib/auth/api-guard";
 
 /**
- * GET /api/auth/me — the current viewer + plan, for the client nav/account menu.
+ * GET /api/auth/me, the current viewer + plan, for the client nav/account menu.
  * Also the claim seam: when a signed-in user still carries an unclaimed sample
  * device cookie, attach that anonymous sample to their account (idempotent), so
  * the sample result follows them in regardless of signup method.

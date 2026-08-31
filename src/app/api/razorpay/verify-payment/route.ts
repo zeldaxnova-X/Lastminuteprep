@@ -10,7 +10,7 @@ import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
  * UX-ONLY. Verifies the checkout signature (HMAC-SHA256 of "order_id|payment_id"
  * with the KEY_SECRET) so the success screen can show a confident "payment
  * received, confirming your upgrade" state. It DELIBERATELY does NOT mutate the
- * plan — the plan is granted solely by the signature-verified webhook
+ * plan, the plan is granted solely by the signature-verified webhook
  * (/api/razorpay/webhook), which is independent of the client (so closing the
  * tab never loses the entitlement, and a forged client callback can't upgrade).
  */
@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
 
   // Signature is valid. Read the order's server-set notes for a UX label only
   // (which plan is being confirmed) and confirm the order belongs to this user.
-  // NO plan mutation happens here — that is the webhook's job.
+  // NO plan mutation happens here, that is the webhook's job.
   let plan: string | undefined;
   let notesUserId: string | undefined;
   try {

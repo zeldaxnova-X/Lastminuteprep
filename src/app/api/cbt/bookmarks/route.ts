@@ -8,7 +8,7 @@ import type { BookmarkRequest } from "@/types/database.types";
  * RLS also confines rows to auth.uid().
  */
 
-/** GET /api/cbt/bookmarks — the signed-in user's bookmarked questions. */
+/** GET /api/cbt/bookmarks, the signed-in user's bookmarked questions. */
 export async function GET() {
   try {
     const { user, supabase } = await getSessionContext();
@@ -46,7 +46,7 @@ export async function GET() {
   }
 }
 
-/** POST /api/cbt/bookmarks — toggle a bookmark for the signed-in user. */
+/** POST /api/cbt/bookmarks, toggle a bookmark for the signed-in user. */
 export async function POST(request: NextRequest) {
   try {
     const { user, supabase } = await getSessionContext();
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
   }
 }
 
-/** DELETE /api/cbt/bookmarks?question_id=… — remove one of the user's bookmarks. */
+/** DELETE /api/cbt/bookmarks?question_id=…, remove one of the user's bookmarks. */
 export async function DELETE(request: NextRequest) {
   try {
     const { user, supabase } = await getSessionContext();

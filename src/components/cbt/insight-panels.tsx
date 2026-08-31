@@ -127,8 +127,7 @@ export const TrickPanel: React.FC<{ tricks?: QuestionTrick[]; defaultOpen?: bool
       </ul>
     ) : (
       <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-        Strategy notes for this question — fastest method, traps to avoid, and when to skip —
-        will appear here as they’re added.
+        Strategy notes for this question, fastest method, traps to avoid, and when to skip, will appear here as they’re added.
       </p>
     )}
   </InsightPanel>
@@ -152,8 +151,8 @@ export const MentorPanel: React.FC<{ insight?: MentorInsight; defaultOpen?: bool
       </div>
     ) : (
       <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-        Your mentor will weigh in here — pacing on this topic, recurring mistakes to watch, and
-        what to practise next — once enough of your attempts are analysed.
+        Your mentor will weigh in here, pacing on this topic, recurring mistakes to watch, and
+        what to practise next, once enough of your attempts are analysed.
       </p>
     )}
   </InsightPanel>

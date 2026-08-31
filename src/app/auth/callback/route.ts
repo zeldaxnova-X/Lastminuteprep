@@ -3,7 +3,7 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { safeNext } from "@/lib/auth/next";
 
 /**
- * GET /auth/callback — OAuth (Google) + email-confirmation redirect target.
+ * GET /auth/callback, OAuth (Google) + email-confirmation redirect target.
  * Exchanges the `code` for a session (cookies), then returns the user to
  * `next` (same-origin only). Configure this URL in the Supabase dashboard as
  * an allowed redirect: <site>/auth/callback.

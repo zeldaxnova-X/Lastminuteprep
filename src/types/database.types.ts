@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Database TypeScript Types
+// LastMilePrep, Database TypeScript Types
 // Maps to Supabase PostgreSQL schema
 // Dataset v1.2.1 types are READ-ONLY interfaces
 // ============================================================

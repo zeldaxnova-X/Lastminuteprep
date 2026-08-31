@@ -8,9 +8,10 @@ import { cn } from "@/lib/utils";
 
 const MARQUEE = [
   { name: "SSC CGL", live: true },
+  { name: "IBPS Clerk", live: false },
+  { name: "SBI Clerk", live: false },
   { name: "NEET", live: false },
   { name: "JEE", live: false },
-  { name: "NEET PG", live: false },
   { name: "UPSC", live: false },
 ];
 
@@ -61,27 +62,31 @@ export function ExamMarquee() {
 const FAQS: { q: string; a: string }[] = [
   {
     q: "Is this the actual exam interface?",
-    a: "It faithfully replicates the real computer-based test experience — the same five-state question palette, the same countdown timer, and the same free navigation and Save / Mark-for-Review controls. It isn't built from official software, but on exam day the flow will feel familiar.",
+    a: "It faithfully replicates the real computer-based test experience, the same five-state question palette, the same countdown timer, and the same free navigation and Save / Mark-for-Review controls. It isn't built from official software, but on exam day the flow will feel familiar.",
   },
   {
     q: "What exactly is the free sample?",
-    a: "A one-time 20-question CBT in the real interface, tied to your account. You'll see your net score at the end. It doesn't include the full report — that's what the paid tiers unlock.",
+    a: "A one-time 20-question CBT in the real interface, tied to your account. You'll see your net score at the end. It doesn't include the full report, that's what the paid tiers unlock.",
   },
   {
-    q: "What's the difference between ₹19/mo and ₹79/mo?",
-    a: "Both are monthly plans with unlimited attempts on the full question bank. Pro (₹19/mo) gives you the full performance report — accuracy, timing, and section breakdown. AI Mentor (₹79/mo) adds the LastMilePrep Mentor Engine: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan.",
+    q: "What's the difference between Pro and MarksenseAI?",
+    a: "Pro (₹19/month) gives you the practice and the proof: unlimited attempts on the full question bank and the complete performance report (accuracy, timing, section breakdown). MarksenseAI adds the decision engine on top: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan. Both cover every exam on the platform, current and upcoming.",
   },
   {
-    q: "Why are the prices so low?",
-    a: "They're honest founding prices while we're young — ₹19/mo for Pro and ₹79/mo for AI Mentor, with no fake struck-through 'discounts'. What you see is the real price you pay today; we may raise them as the product grows.",
+    q: "How much does it cost?",
+    a: "Three tiers. Free is a one-time 20-question sample. Pro is ₹19/month for unlimited exams and the full report, without MarksenseAI. MarksenseAI is ₹99/month at launch and much less per month on longer plans: ₹249 quarterly, ₹399 half-yearly, or ₹599 a year (about ₹50/month). These are launch prices, locked in while you stay subscribed; the struck-through figure is the regular rate they rise to. Cancel anytime.",
+  },
+  {
+    q: "Does one subscription cover every exam?",
+    a: "Yes. Your MarksenseAI plan covers SSC CGL today and unlocks IBPS Clerk, SBI Clerk, NEET, JEE and UPSC the moment each goes live, no repurchase and no separate accounts.",
   },
   {
     q: "Which exams are supported?",
-    a: "SSC CGL Tier 1 is live now. NEET, JEE, NEET PG and UPSC are on the roadmap — the engine is built to add them, but they aren't available yet.",
+    a: "SSC CGL Tier 1 is live now. IBPS Clerk and SBI Clerk are next, with NEET, JEE and UPSC on the roadmap, the engine is built to add them, and each is included in your subscription the day it launches.",
   },
   {
-    q: "How does the AI Mentor actually help?",
-    a: "It reads how confident you were on every question against how you actually did, then tells you which questions to skip, when a guess is worth the risk under negative marking, and the exact marks each decision was worth — across every attempt, so you can see yourself improve.",
+    q: "How does MarksenseAI actually help?",
+    a: "It reads how confident you were on every question against how you actually did, then tells you which questions to skip, when a guess is worth the risk under negative marking, and the exact marks each decision was worth, across every attempt, so you can see yourself improve.",
   },
 ];
 

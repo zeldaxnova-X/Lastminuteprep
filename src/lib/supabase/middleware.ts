@@ -39,7 +39,7 @@ export async function updateSession(request: NextRequest) {
   // there so it's never exchanged. Forward any stray code to /auth/callback (the
   // PKCE exchange happens there), preserving ?next. The code-verifier cookie is
   // same-origin, so it rides along. The proper fix is still to allow-list
-  // /auth/callback in the Supabase dashboard — this just prevents a dead end.
+  // /auth/callback in the Supabase dashboard, this just prevents a dead end.
   {
     const { pathname, searchParams } = request.nextUrl;
     if (pathname !== "/auth/callback" && searchParams.has("code")) {
@@ -76,7 +76,7 @@ export async function updateSession(request: NextRequest) {
   );
 
   // IMPORTANT: refresh the token. Do not run logic between createServerClient
-  // and getUser() — it can log users out at random.
+  // and getUser(), it can log users out at random.
   const {
     data: { user },
   } = await supabase.auth.getUser();

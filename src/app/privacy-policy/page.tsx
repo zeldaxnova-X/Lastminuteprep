@@ -1,6 +1,6 @@
 import { PolicyStub } from "@/components/policy-stub";
 
-export const metadata = { title: "Privacy — LastMilePrep" };
+export const metadata = { title: "Privacy, LastMilePrep" };
 
 export default function PrivacyPolicyPage() {
   return (

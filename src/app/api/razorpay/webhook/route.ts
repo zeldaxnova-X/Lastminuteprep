@@ -4,10 +4,10 @@ import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
 
 /**
- * POST /api/razorpay/webhook — the ONLY place a real payment grants a plan.
+ * POST /api/razorpay/webhook, the ONLY place a real payment grants a plan.
  *
  * Verifies X-Razorpay-Signature = HMAC-SHA256(rawBody, RAZORPAY_WEBHOOK_SECRET)
- * — the WEBHOOK signing secret, distinct from the API key_secret. A bad/absent
+ *, the WEBHOOK signing secret, distinct from the API key_secret. A bad/absent
  * signature → 400 with no side effect. On a verified payment.captured/order.paid
  * event it reads the ORDER notes ({userId, plan, scope}, set server-side at
  * order creation), records the payment in the ledger (idempotency + audit), and
@@ -113,7 +113,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ received: true, granted: false, reason: "unresolved order notes" });
   }
 
-  // Grant the account-wide plan (service role — plan changes never trust client).
+  // Grant the account-wide plan (service role, plan changes never trust client).
   // TODO(per-exam): when multi-exam launches, write entitlements[scope] = plan
   //   here instead of the top-level `plan` column. `scope` is already recorded.
   const { error: grantErr } = await admin.from("profiles").update({ plan }).eq("id", userId);

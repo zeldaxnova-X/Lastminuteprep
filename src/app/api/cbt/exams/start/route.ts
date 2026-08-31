@@ -19,7 +19,7 @@ function isSampleRequest(body: StartExamRequest): boolean {
 
 /**
  * Validate question completeness for exam inclusion (v2 dataset).
- * Accepts image-based questions (stem and/or options rendered as images) — the
+ * Accepts image-based questions (stem and/or options rendered as images), the
  * only hard requirements are four options and a verified answer key. Questions
  * still flagged `needs_answer_key` (no correct_answer) are excluded so that
  * unkeyed items never appear in a scored exam.
@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
     // Attempt-write client comes from the ONE helper (see attemptWriteClient):
     // authed → user-scoped (RLS stamps user_id=auth.uid()); anonymous sample →
     // service role (user_id NULL + device_id; RLS can't key on a no-session
-    // request). Never select this client inline here — that has regressed twice.
+    // request). Never select this client inline here, that has regressed twice.
     // Reference reads + the sample_attempts ledger stay on `supabase` (service).
     const writeDb = await attemptWriteClient(sessionUserId);
 
@@ -160,7 +160,7 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        title = title || `${body.subject} — Practice Test`;
+        title = title || `${body.subject}, Practice Test`;
 
         // Topic tests always require a signed-in user (guarded above), so serve
         // questions this user hasn't done yet.
@@ -345,7 +345,7 @@ export async function POST(request: NextRequest) {
     questions = stripAnswerKey(questions);
 
     // Record the anonymous sample against the device token (the server-side
-    // one-time ledger — resists localStorage clearing).
+    // one-time ledger, resists localStorage clearing).
     if (sample && !sessionUserId && deviceToken) {
       const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
       await supabase.from("sample_attempts").upsert(
@@ -383,7 +383,7 @@ export async function POST(request: NextRequest) {
  * `cbt_pick_unique_questions`, which returns exam-eligible questions the user
  * has NOT done yet (unseen-first, recycling seen ones only when the unseen pool
  * runs short so a test is never under-filled). isValidQuestion is re-applied as
- * a defensive net — the RPC's `cbt_valid_questions` view already encodes it.
+ * a defensive net, the RPC's `cbt_valid_questions` view already encodes it.
  */
 async function pickUniqueQuestions(
   supabase: SupabaseClient,

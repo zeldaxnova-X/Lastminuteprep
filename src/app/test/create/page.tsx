@@ -62,7 +62,7 @@ function TestCreationForm() {
     coverage?.by_subject.find((s) => s.subject === subject)?.remaining ?? null;
 
   // Plan gate: /test/create only offers real (non-sample) modes, so a FREE user
-  // has nothing launchable here. Refuse it and point them to upgrade — the
+  // has nothing launchable here. Refuse it and point them to upgrade, the
   // server also 403s /start, so this is UX, not the enforcement boundary.
   const [plan, setPlan] = useState<"free" | "pro" | "mentor" | null>(null);
   useEffect(() => {
@@ -190,7 +190,7 @@ function TestCreationForm() {
           </div>
           <p className="mt-1.5 text-[11px] text-gray-400">
             {coverage.overall.remaining === 0
-              ? "You've practised every unique question — new tests now revisit past ones."
+              ? "You've practised every unique question, new tests now revisit past ones."
               : `${coverage.overall.done.toLocaleString()} of ${coverage.overall.total.toLocaleString()} unique questions practised. Every test pulls fresh ones.`}
           </p>
         </div>

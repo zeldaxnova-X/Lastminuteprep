@@ -193,9 +193,9 @@ function InstructionsContent() {
             <span>6. Keyboard Shortcuts</span>
           </div>
           <ul className="text-xs text-gray-700 space-y-1">
-            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">A/B/C/D</kbd> — Select Option</li>
-            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">Enter</kbd> — Save & Next</li>
-            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">M</kbd> — Mark for Review</li>
+            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">A/B/C/D</kbd>, Select Option</li>
+            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">Enter</kbd>, Save & Next</li>
+            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">M</kbd>, Mark for Review</li>
           </ul>
         </div>
       </div>

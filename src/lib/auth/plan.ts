@@ -4,12 +4,12 @@ export type Plan = "free" | "pro" | "mentor";
 
 const RANK: Record<Plan, number> = { free: 0, pro: 1, mentor: 2 };
 
-/** plan >= pro — entitled to the deterministic performance report. */
+/** plan >= pro, entitled to the deterministic performance report. */
 export function canSeeReport(plan: Plan): boolean {
   return RANK[plan] >= RANK.pro;
 }
 
-/** plan == mentor — entitled to the AI Mentor engine (analysis + narrative). */
+/** plan == mentor, entitled to the AI Mentor engine (analysis + narrative). */
 export function canSeeMentor(plan: Plan): boolean {
   return RANK[plan] >= RANK.mentor;
 }

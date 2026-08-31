@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Sprint 2 Virtual Mentor Engine (Complete Spec)
+// LastMilePrep, Sprint 2 Virtual Mentor Engine (Complete Spec)
 // 100% Dynamic, Telemetry-Driven Analytical Engine for SSC CGL CBT
 // Computes:
 // 1. Overall Exam Behaviour & Decision Quality Scores (0-100)
@@ -17,7 +17,7 @@
 // 13. Topic Weakness Detection & 7-Day Dynamic Study Plan
 // 14. Personalized 1-Paragraph Coach Summary
 // 15. Per-Question Personalized Mentor Notes for Answer Key
-// ZERO hardcoded advice — 100% derived from actual candidate telemetry.
+// ZERO hardcoded advice, 100% derived from actual candidate telemetry.
 // ============================================================
 
 import type { ValidatedQuestion, Subject, CorrectAnswer } from "@/types/database.types";
@@ -345,7 +345,7 @@ export function generateVirtualMentorReport(
         time_spent_seconds: t.time_spent_seconds,
         status: "correct",
         confidence: "high",
-        reason: `${pattern} — Answered correctly in ${t.time_spent_seconds}s.`,
+        reason: `${pattern}, Answered correctly in ${t.time_spent_seconds}s.`,
         mentor_note: `Question ${t.question.question_number}: Fast win in ${t.time_spent_seconds}s via ${pattern}.`,
       };
     });

@@ -60,7 +60,7 @@ export default function RevisionQueuePage() {
             Revision
           </h1>
           <p className="text-sm text-ink-secondary">
-            Questions you&apos;ve missed across your mocks — revise the ones you get
+            Questions you&apos;ve missed across your mocks, revise the ones you get
             wrong most first.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function RevisionQueuePage() {
             </p>
             <p className="max-w-sm text-sm text-ink-secondary">
               {questions.length === 0
-                ? "Complete a mock — the questions you get wrong will collect here for focused revision."
+                ? "Complete a mock, the questions you get wrong will collect here for focused revision."
                 : "You haven't missed any questions in this section. Nice."}
             </p>
             {questions.length === 0 && (

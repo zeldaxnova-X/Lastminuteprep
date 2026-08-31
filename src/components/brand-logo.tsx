@@ -20,7 +20,7 @@ export function BrandLogo({
   return (
     <Link
       href={href}
-      aria-label="LastMilePrep — home"
+      aria-label="LastMilePrep, home"
       className={cn("flex items-center gap-2.5", className)}
     >
       <Image

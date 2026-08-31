@@ -76,13 +76,13 @@ export function AuthNav({ variant = "landing" }: { variant?: "landing" | "app" }
     }
     return (
       <div className="flex items-center gap-2 sm:gap-3">
-        {/* Sign up — secondary CTA, opens the auth page in sign-up mode. From
+        {/* Sign up, secondary CTA, opens the auth page in sign-up mode. From
             there, the "Already have an account? Sign in" toggle handles sign-in,
             so no separate sign-in link is needed in the landing header. */}
         <Link href="/login?mode=signup" className={buttonClasses("secondary", "sm")}>
           Sign up
         </Link>
-        {/* Try free — primary CTA, launches the anonymous sample. */}
+        {/* Try free, primary CTA, launches the anonymous sample. */}
         <Link href="/sample" className={buttonClasses("primary", "sm")}>
           Try free
           <ArrowRight className="h-3.5 w-3.5" />

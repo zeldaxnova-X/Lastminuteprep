@@ -1,7 +1,7 @@
 import React from "react";
 
 /**
- * Minimal, safe Markdown renderer for the AI-Mentor narrative — no dependency.
+ * Minimal, safe Markdown renderer for the AI-Mentor narrative, no dependency.
  * Handles the subset the coach prompt emits: ## / ### headings, - / * bullet
  * lists, **bold**, and paragraphs. Renders text nodes only (no raw HTML), so
  * model output can't inject markup.

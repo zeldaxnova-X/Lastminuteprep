@@ -14,7 +14,7 @@ import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lu
 // getViewer(), so this local flag is only a UX hint, not a security control.
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
 
-// Founding prices — kept in sync with the landing #pricing section.
+// Founding prices, kept in sync with the landing #pricing section.
 const PRICING_TIERS: {
   name: string;
   blurb: string;
@@ -48,7 +48,7 @@ export default function SamplePage() {
           exam_type: "random_test",
           total_questions: 20,
           time_limit_minutes: 15,
-          title: "Free Sample — 20 Questions",
+          title: "Free Sample, 20 Questions",
         }),
       });
       const data = await res.json();
@@ -101,7 +101,7 @@ export default function SamplePage() {
               </p>
             </div>
 
-            {/* Pricing — founding prices */}
+            {/* Pricing, founding prices */}
             <div className="space-y-2.5">
               {PRICING_TIERS.map((tier) => (
                 <div
@@ -148,7 +148,7 @@ export default function SamplePage() {
                 20 questions. The real interface.
               </h1>
               <p className="text-sm leading-relaxed text-ink-secondary">
-                A short mock in the exact CBT interface — palette, timer, and
+                A short mock in the exact CBT interface, palette, timer, and
                 confidence capture included. At the end you&apos;ll see your net
                 score and a preview of what the full report reveals.
               </p>

@@ -17,8 +17,8 @@ interface QuestionContentProps {
 }
 
 /**
- * Renders an ordered list of v2 `QuestionContentBlock`s — prose (with inline/
- * block LaTeX), figures (zoomable), and tables — preserving document order.
+ * Renders an ordered list of v2 `QuestionContentBlock`s, prose (with inline/
+ * block LaTeX), figures (zoomable), and tables, preserving document order.
  * Used for both question stems and image-based options so rendering stays
  * consistent everywhere.
  */
@@ -51,7 +51,7 @@ export const QuestionContent: React.FC<QuestionContentProps> = ({
         }
 
         if (block.kind === "image" && block.url) {
-          // Click the figure itself to zoom — no overlay controls, so nothing
+          // Click the figure itself to zoom, no overlay controls, so nothing
           // can be mistaken for a correctness indicator during an exam.
           return (
             <figure key={i} className="inline-block max-w-full">

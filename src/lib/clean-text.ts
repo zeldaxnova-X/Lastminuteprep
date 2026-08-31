@@ -1,5 +1,5 @@
 /**
- * LastMilePrep — Text Artifact Sanitizer & Formatter (Sprint 1.1 Hardened)
+ * LastMilePrep, Text Artifact Sanitizer & Formatter (Sprint 1.1 Hardened)
  * Strips extraction artifacts like `[Official SSC CGL 2024...]`, `[Official PYP...]`,
  * `Official SSC...`, `Official...`, `Practice...`, `PDF...`, `Source...`
  * from question text, option text, and explanations during render.

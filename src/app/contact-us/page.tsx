@@ -1,6 +1,6 @@
 import { PolicyStub } from "@/components/policy-stub";
 
-export const metadata = { title: "Contact — LastMilePrep" };
+export const metadata = { title: "Contact, LastMilePrep" };
 
 export default function ContactUsPage() {
   return (

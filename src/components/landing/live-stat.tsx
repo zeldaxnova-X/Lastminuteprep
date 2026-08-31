@@ -7,7 +7,7 @@ import { useReducedMotion } from "./motion";
 /**
  * Live, animated question-bank counter. Server-renders the real `initial`
  * number, counts up from 0 the first time it scrolls into view, then polls
- * /api/stats/questions and smoothly tweens to any new value — so the metric
+ * /api/stats/questions and smoothly tweens to any new value, so the metric
  * moves on its own as questions are added, without a page reload.
  */
 export function LiveQuestionCount({
@@ -89,7 +89,7 @@ export function LiveQuestionCount({
         targetRef.current = n;
         if (startedRef.current) tweenTo(n, 900);
       } catch {
-        /* transient — keep the last good value */
+        /* transient, keep the last good value */
       }
     };
     const id = setInterval(fetchCount, pollMs);

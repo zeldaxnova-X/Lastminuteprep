@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Root Exam Analyzer Orchestrator
+// LastMilePrep, Root Exam Analyzer Orchestrator
 // Single Source of Truth for all post-exam metrics
 // Orchestrates score, pace, confidence, section, timeline, topic,
 // risk, review, simulation, and mentor analyzers.

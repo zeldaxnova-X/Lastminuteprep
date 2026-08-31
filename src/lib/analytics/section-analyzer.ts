@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Section Analyzer Module
+// LastMilePrep, Section Analyzer Module
 // Pure calculation of per-section performance, marks, accuracy, pace, and ranks
 // ============================================================
 

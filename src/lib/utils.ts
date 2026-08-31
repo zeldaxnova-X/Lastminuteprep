@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Format seconds as M:SS (or H:MM:SS) with zero-padding — for the CBT timer. */
+/** Format seconds as M:SS (or H:MM:SS) with zero-padding, for the CBT timer. */
 export function formatClock(totalSeconds: number): string {
   const s = Math.max(0, Math.floor(totalSeconds));
   const hours = Math.floor(s / 3600);

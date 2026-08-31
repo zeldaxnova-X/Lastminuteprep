@@ -3,7 +3,7 @@ import { createServerClient } from "@supabase/ssr";
 
 /**
  * Auth-aware server Supabase client (Server Components + Route Handlers).
- * Reads/writes the session cookies via @supabase/ssr. Anon key only — RLS
+ * Reads/writes the session cookies via @supabase/ssr. Anon key only, RLS
  * applies, so this client sees exactly what the signed-in user is allowed to.
  *
  * NOTE: distinct from `createServerSupabaseClient()` in supabase-server.ts,

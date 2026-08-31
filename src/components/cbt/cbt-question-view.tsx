@@ -213,7 +213,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             />
           </div>
 
-          {/* Options — accessible radio group */}
+          {/* Options, accessible radio group */}
           <div>
             <div
               role="radiogroup"
@@ -289,7 +289,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
 
       {/* Action bar */}
       <div className="flex flex-col gap-2.5 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:px-6">
-        {/* Confidence capture — subtle, always present, powers the AI Mentor */}
+        {/* Confidence capture, subtle, always present, powers the AI Mentor */}
         <ConfidenceControl
           value={confidence}
           onChange={(c) => setConfidence(currentQuestion.id, c)}

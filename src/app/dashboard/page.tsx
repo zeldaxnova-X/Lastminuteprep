@@ -66,7 +66,7 @@ const MODES = [
     href: "/test/create?mode=random",
     icon: Shuffle,
     title: "Random Mock",
-    desc: "A balanced 100-question mock — 25 per section — drawn from the bank.",
+    desc: "A balanced 100-question mock, 25 per section, drawn from the bank.",
     cta: "Launch mock",
   },
 ];
@@ -122,7 +122,7 @@ export default function DashboardPage() {
     void startRazorpayCheckout({
       plan: paidTarget,
       prefill: email ? { email } : undefined,
-      // Payment captured + signature verified — but the plan is granted by the
+      // Payment captured + signature verified, but the plan is granted by the
       // webhook, not this callback. Show a "confirming" state and poll until the
       // webhook lands, then reload. On timeout the payment is still safe (the
       // webhook applies it independently); we just ask the user to refresh.
@@ -134,7 +134,7 @@ export default function DashboardPage() {
         if (upgraded) window.location.reload();
         else
           setPayError(
-            "Payment received — we're confirming your upgrade. It'll appear in a moment; refresh if it doesn't."
+            "Payment received, we're confirming your upgrade. It'll appear in a moment; refresh if it doesn't."
           );
       },
       onError: (m) => {
@@ -150,12 +150,12 @@ export default function DashboardPage() {
       <TopNav />
 
       <main className="mx-auto w-full max-w-6xl flex-1 space-y-10 px-4 py-10 sm:px-6">
-        {/* Payment confirming — webhook grants the plan asynchronously */}
+        {/* Payment confirming, webhook grants the plan asynchronously */}
         {confirming && (
           <Card className="flex items-center gap-3 border-accent/30 bg-accent-soft p-4">
             <Loader2 className="h-5 w-5 flex-shrink-0 animate-spin text-accent" />
             <p className="text-sm text-ink">
-              Payment received — confirming your upgrade. This takes a few seconds…
+              Payment received, confirming your upgrade. This takes a few seconds…
             </p>
           </Card>
         )}
@@ -233,13 +233,13 @@ export default function DashboardPage() {
         <section className="space-y-3">
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
             <StatTile label="Unique Questions Practised" value={dash(analytics?.unique_questions_practiced ?? 0)} empty={!loading && !hasData} />
-            <StatTile label="Overall Accuracy" value={dash(hasData ? `${analytics!.overall_accuracy.toFixed(1)}%` : "—")} empty={!loading && !hasData} valueClassName={hasData ? "text-success" : undefined} />
-            <StatTile label="Average Score" value={dash(hasData ? `${analytics!.avg_score.toFixed(1)}/200` : "—")} empty={!loading && !hasData} valueClassName={hasData ? "text-accent" : undefined} />
+            <StatTile label="Overall Accuracy" value={dash(hasData ? `${analytics!.overall_accuracy.toFixed(1)}%` : ", ")} empty={!loading && !hasData} valueClassName={hasData ? "text-success" : undefined} />
+            <StatTile label="Average Score" value={dash(hasData ? `${analytics!.avg_score.toFixed(1)}/200` : ", ")} empty={!loading && !hasData} valueClassName={hasData ? "text-accent" : undefined} />
             <StatTile label="Tests Completed" value={dash(analytics?.tests_completed ?? 0)} empty={!loading && !hasData} />
             <StatTile label="Current Streak" value={dash(`${analytics?.current_streak ?? 0}d`)} empty={!loading && !hasData} />
-            <StatTile label="Avg Time / Question" value={dash(hasData ? `${analytics!.avg_time_per_question}s` : "—")} empty={!loading && !hasData} />
-            <StatTile label="Weakest Subject" value={dash(analytics?.weakest_subject ? sectionLabel(analytics.weakest_subject) : "—")} empty={!loading && !hasData} valueClassName="text-base font-semibold text-danger truncate" />
-            <StatTile label="Strongest Subject" value={dash(analytics?.strongest_subject ? sectionLabel(analytics.strongest_subject) : "—")} empty={!loading && !hasData} valueClassName="text-base font-semibold text-success truncate" />
+            <StatTile label="Avg Time / Question" value={dash(hasData ? `${analytics!.avg_time_per_question}s` : ", ")} empty={!loading && !hasData} />
+            <StatTile label="Weakest Subject" value={dash(analytics?.weakest_subject ? sectionLabel(analytics.weakest_subject) : ", ")} empty={!loading && !hasData} valueClassName="text-base font-semibold text-danger truncate" />
+            <StatTile label="Strongest Subject" value={dash(analytics?.strongest_subject ? sectionLabel(analytics.strongest_subject) : ", ")} empty={!loading && !hasData} valueClassName="text-base font-semibold text-success truncate" />
           </div>
           {!loading && !canPractice && (
             <p className="flex items-center gap-1.5 text-xs text-ink-tertiary">
@@ -277,7 +277,7 @@ export default function DashboardPage() {
                   type="button"
                   onClick={() => upgrade("pro")}
                   disabled={paying !== null}
-                  aria-label={`${m.title} — unlock with Pro`}
+                  aria-label={`${m.title}, unlock with Pro`}
                   className="group text-left"
                 >
                   <Card className="relative flex h-full flex-col justify-between overflow-hidden p-6 opacity-90">
@@ -292,7 +292,7 @@ export default function DashboardPage() {
                       <p className="text-sm leading-relaxed text-ink-secondary">{m.desc}</p>
                     </div>
                     <div className="mt-5 flex items-center justify-between border-t border-hairline pt-4 text-sm font-semibold text-gold">
-                      <span>Unlock with Pro — ₹19</span>
+                      <span>Unlock with Pro, ₹19</span>
                       <Lock className="h-4 w-4" />
                     </div>
                   </Card>
@@ -319,7 +319,7 @@ export default function DashboardPage() {
                 <div className="flex items-start gap-3">
                   <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-gold" />
                   <div>
-                    <p className="text-sm font-semibold text-ink">AI Mentor — the score-maximisation engine</p>
+                    <p className="text-sm font-semibold text-ink">AI Mentor, the score-maximisation engine</p>
                     <p className="mt-0.5 text-sm text-ink-secondary">
                       Your exact skip strategy, break-even guess rule, and the marks you left on the table.
                     </p>
@@ -331,7 +331,7 @@ export default function DashboardPage() {
                   className="inline-flex min-h-[44px] w-full flex-shrink-0 items-center justify-center gap-2 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold disabled:opacity-60 sm:w-auto"
                 >
                   {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Lock className="h-4 w-4" />}
-                  Unlock Mentor — ₹79
+                  Unlock Mentor, ₹79
                 </button>
               </Card>
             )}
@@ -439,7 +439,7 @@ function UpgradePanel({
             className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-white shadow-soft transition-premium hover:bg-accent-hover disabled:opacity-60"
           >
             {paying === "pro" ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-            Go Pro — ₹19/mo
+            Go Pro, ₹19/mo
           </button>
         )}
         <button
@@ -451,12 +451,12 @@ function UpgradePanel({
           )}
         >
           {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-          {showBoth ? "Go Mentor — ₹79/mo" : "Unlock Mentor — ₹79/mo"}
+          {showBoth ? "Go Mentor, ₹79/mo" : "Unlock Mentor, ₹79/mo"}
         </button>
       </div>
 
       {payError && <p className="text-sm text-danger">{payError}</p>}
-      <p className="text-xs text-ink-tertiary">Honest founding prices — no fake discounts. Cancel anytime.</p>
+      <p className="text-xs text-ink-tertiary">Honest founding prices, no fake discounts. Cancel anytime.</p>
       <RazorpayBadge className="pt-1" />
     </Card>
   );

@@ -297,7 +297,7 @@ export const EXAMS_LIST: Exam[] = [
   {
     id: "jee-main-2024-jan",
     examCode: "JEE-2024-JAN",
-    title: "JEE Main 2024 — 27th Jan Shift 1",
+    title: "JEE Main 2024, 27th Jan Shift 1",
     category: "JEE Main",
     year: 2024,
     stage: "Prelims",

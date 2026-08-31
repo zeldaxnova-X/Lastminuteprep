@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Topic Analyzer Module
+// LastMilePrep, Topic Analyzer Module
 // Pure metadata-driven topic performance aggregator & weak topic detection
 // ============================================================
 

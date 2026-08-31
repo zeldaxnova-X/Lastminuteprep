@@ -37,7 +37,7 @@ interface RichRow {
  * questions fetched from the `validated_questions` compatibility view.
  *
  * The rich fields live on the canonical `questions` table; this joins them in a
- * single query keyed by id. `correct_option` is intentionally NOT selected — the
+ * single query keyed by id. `correct_option` is intentionally NOT selected, the
  * client never receives the answer key while an exam is in progress.
  */
 export async function enrichWithRichContent<T extends { id: string }>(

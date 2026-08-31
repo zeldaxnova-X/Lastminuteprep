@@ -8,7 +8,7 @@ import { useReducedMotion } from "./motion";
 /**
  * Hero visual: three slightly-tilted floating photo cards with gentle
  * mouse-parallax and a hover lift. Parallax is disabled under reduced motion or
- * coarse (touch) pointers — the base tilt still reads as intentional. Hero
+ * coarse (touch) pointers, the base tilt still reads as intentional. Hero
  * images are priority-loaded.
  */
 export function HeroVisual() {
@@ -112,7 +112,7 @@ export function HeroVisual() {
           <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-panel-dark/85 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-bright" />
             <Sparkles className="h-3.5 w-3.5 text-gold-bright" />
-            AI Mentor · strategising
+            MarksenseAI · strategising
           </div>
         </div>
       </div>

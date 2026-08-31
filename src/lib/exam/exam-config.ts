@@ -1,5 +1,5 @@
 /**
- * ExamConfig — the single source of truth for an exam's rules (§1).
+ * ExamConfig, the single source of truth for an exam's rules (§1).
  *
  * DESIGN RULE: the scorer (M4) and mentor (M5/M6) READ every marking number,
  * duration, and section shape from a config object that ultimately comes from
@@ -13,7 +13,7 @@
  * (same JSON). Keep both in lockstep when either changes.
  */
 
-/** DB `questions.section` slug values — sections join on these. */
+/** DB `questions.section` slug values, sections join on these. */
 export type SectionKey =
   | "reasoning"
   | "general_awareness"
@@ -27,8 +27,8 @@ export type SectionKey =
  */
 export type QuestionType =
   | "single_correct_mcq"
-  | "numerical" // JEE numerical-answer — STUB
-  | "optional_n_of_m"; // NEET "attempt N of M" — STUB
+  | "numerical" // JEE numerical-answer, STUB
+  | "optional_n_of_m"; // NEET "attempt N of M", STUB
 
 export interface SectionConfig {
   /** Must equal the DB `questions.section` slug so questions can be selected. */
@@ -70,7 +70,7 @@ export interface ExamConfig {
   sections: SectionConfig[];
 }
 
-/** Canonical SSC CGL Tier 1 config — the only fully-functional exam for now. */
+/** Canonical SSC CGL Tier 1 config, the only fully-functional exam for now. */
 export const SSC_CGL_TIER1_CONFIG: ExamConfig = {
   schemaVersion: 1,
   examSlug: "ssc-cgl-tier-1",
@@ -127,7 +127,7 @@ export const SSC_CGL_TIER1_CONFIG: ExamConfig = {
 };
 
 /* ------------------------------------------------------------------ *
- * Pure config readers — the ONLY sanctioned way for engine/scorer/mentor
+ * Pure config readers, the ONLY sanctioned way for engine/scorer/mentor
  * to obtain marking numbers. Never hardcode +2 / −0.5 in those modules.
  * ------------------------------------------------------------------ */
 

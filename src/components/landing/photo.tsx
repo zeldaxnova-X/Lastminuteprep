@@ -51,7 +51,7 @@ export function GhostImage({
 /**
  * Duotone treatment (ink → indigo → gold). Tames a neon/high-saturation source
  * so it reads as premium AI rather than hacker-Matrix. Used low-opacity behind
- * the dark AI-Mentor panel — indigo base (brand) warmed by a gold highlight.
+ * the dark AI-Mentor panel, indigo base (brand) warmed by a gold highlight.
  */
 export function Duotone({
   src,
@@ -88,7 +88,7 @@ export function Duotone({
 }
 
 /**
- * A framed content photo (real subject) with a hairline ring — used in feature
+ * A framed content photo (real subject) with a hairline ring, used in feature
  * rows and how-it-works steps. Content-bearing, so it takes descriptive alt.
  */
 export function Framed({

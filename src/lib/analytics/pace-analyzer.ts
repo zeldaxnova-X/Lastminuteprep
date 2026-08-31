@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Pace Analyzer Module
+// LastMilePrep, Pace Analyzer Module
 // Pure calculation of timing, pace per question, time sinks, rapid guesses
 // ============================================================
 

@@ -3,7 +3,7 @@ import { Reveal } from "./motion";
 import { GhostImage } from "./photo";
 
 /**
- * Aspiration band — three warm candid photos + one honest line. NO testimonials,
+ * Aspiration band, three warm candid photos + one honest line. NO testimonials,
  * NO invented user counts or ratings. Imagery and honest copy only.
  */
 export function AspirationBand() {
@@ -51,7 +51,7 @@ const GOALS = [
 ];
 
 /**
- * The goal montage — a slow, cinematic marquee of the institutions the aspirant
+ * The goal montage, a slow, cinematic marquee of the institutions the aspirant
  * is working toward. Ghosted + desaturated, restrained. The marquee freezes
  * under prefers-reduced-motion (handled by the .marquee-track CSS media rule).
  */

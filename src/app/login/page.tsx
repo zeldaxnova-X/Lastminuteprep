@@ -9,7 +9,7 @@ import { getViewer } from "@/lib/auth/plan";
 import { safeNext } from "@/lib/auth/next";
 
 export const metadata = {
-  title: "Sign in — LastMilePrep",
+  title: "Sign in, LastMilePrep",
   description: "Sign in or create your LastMilePrep account to unlock your report and AI Mentor.",
 };
 
@@ -24,7 +24,7 @@ export default async function LoginPage({
 
   return (
     <div className="flex min-h-screen bg-bg">
-      {/* Left — the form */}
+      {/* Left, the form */}
       <div className="flex w-full flex-col px-5 py-8 sm:px-8 lg:w-1/2 lg:px-16">
         <BrandLogo priority />
         <div className="flex flex-1 items-center">
@@ -47,7 +47,7 @@ export default async function LoginPage({
         </p>
       </div>
 
-      {/* Right — warm brand panel (desktop only) */}
+      {/* Right, warm brand panel (desktop only) */}
       <div className="relative hidden lg:block lg:w-1/2">
         <Image
           src="/images/band-aspirants.jpg"

@@ -97,7 +97,7 @@ export default function ExamResultPage() {
   const [mentorLocked, setMentorLocked] = useState(false);
 
   // The LLM narrative is PURELY ADDITIVE. When the server can't produce one
-  // (no API key), the section is never rendered and never fetched — the
+  // (no API key), the section is never rendered and never fetched, the
   // deterministic report stands alone as the complete report.
   const [narrative, setNarrative] = useState<string | null>(null);
   // "idle" = decided not to show; "loading"/"done" are the only rendered states.
@@ -115,7 +115,7 @@ export default function ExamResultPage() {
           return;
         }
         const json: ReportData = await res.json();
-        // Paywall gate: free/unauthed users don't get the full report — send
+        // Paywall gate: free/unauthed users don't get the full report, send
         // them to the blurred conversion screen to unlock.
         if (json.canReport === false) {
           router.replace(`/sample/${examId}`);
@@ -146,7 +146,7 @@ export default function ExamResultPage() {
         setNarrative(json.narrative);
         setNarrativeState("done");
       } else {
-        // No narrative came back — leave it out entirely (no placeholder).
+        // No narrative came back, leave it out entirely (no placeholder).
         setNarrativeState("idle");
       }
     } catch {
@@ -212,7 +212,7 @@ export default function ExamResultPage() {
           </div>
         </section>
 
-        {/* Optimal score — AI Mentor engine (mentor plan only) */}
+        {/* Optimal score, AI Mentor engine (mentor plan only) */}
         {analysis && optimalScore != null && (
           <OptimalScoreCard
             actual={result.net_score}
@@ -223,10 +223,10 @@ export default function ExamResultPage() {
           />
         )}
 
-        {/* Pro plan: has the report, not the Mentor engine — show the upsell. */}
+        {/* Pro plan: has the report, not the Mentor engine, show the upsell. */}
         {mentorLocked && <MentorLockedCard />}
 
-        {/* Coaching narrative — purely additive. Rendered only while generating
+        {/* Coaching narrative, purely additive. Rendered only while generating
             or when present; entirely absent when narration isn't available. */}
         {(narrativeState === "loading" || (narrativeState === "done" && narrative)) && (
           <section>
@@ -244,13 +244,13 @@ export default function ExamResultPage() {
           </section>
         )}
 
-        {/* Sections (deterministic — every report viewer) + calibration (mentor). */}
+        {/* Sections (deterministic, every report viewer) + calibration (mentor). */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {analysis && <CalibrationCard analysis={analysis} />}
           <SectionPerformanceCard breakdown={result.section_breakdown} />
         </div>
 
-        {/* Score leaks — AI Mentor engine (mentor plan only) */}
+        {/* Score leaks, AI Mentor engine (mentor plan only) */}
         {analysis && <ScoreLeaksCard analysis={analysis} />}
 
         {/* Question review */}
@@ -283,8 +283,7 @@ function MentorLockedCard() {
             </h3>
             <p className="mt-2 max-w-md text-sm text-white/70">
               Your exact skip strategy, your own break-even guess rule, the
-              optimal-score gap, pacing analysis, and improvement tracking —
-              computed from this attempt.
+              optimal-score gap, pacing analysis, and improvement tracking, computed from this attempt.
             </p>
           </div>
           <ButtonLink
@@ -293,7 +292,7 @@ function MentorLockedCard() {
             className="flex-shrink-0 bg-gold-bright text-white hover:bg-gold"
           >
             <Sparkles className="h-4 w-4" />
-            Unlock — ₹79/mo
+            Unlock, ₹79/mo
           </ButtonLink>
         </div>
       </div>
@@ -364,17 +363,16 @@ function OptimalScoreCard({
         <p className="text-sm text-ink-secondary">
           {gain > 0 ? (
             <>
-              With smarter skip decisions —{" "}
+              With smarter skip decisions, {" "}
               <span className="font-medium text-ink">
                 skipping your {dropped.join(" & ") || "lowest-EV"} answers
-              </span>{" "}
-              — you&apos;d have scored{" "}
+              </span>{" "}, you&apos;d have scored{" "}
               <span className="font-semibold text-success tabular">{optimal}</span> with the
               same knowledge:{" "}
               <span className="font-semibold text-success">+{gain} marks</span>.
             </>
           ) : (
-            <>Your attempt strategy was already efficient — no easy marks were left on the table by over-guessing.</>
+            <>Your attempt strategy was already efficient, no easy marks were left on the table by over-guessing.</>
           )}
         </p>
         <div className="space-y-2">
@@ -451,10 +449,10 @@ function CalibrationCard({ analysis }: { analysis: MentorAnalysis }) {
           ))}
         </div>
         {overconfident && (
-          <Badge tone="danger">Overconfident — high certainty, low accuracy</Badge>
+          <Badge tone="danger">Overconfident, high certainty, low accuracy</Badge>
         )}
         {underconfident && (
-          <Badge tone="success">Underconfident — you know more than you trust</Badge>
+          <Badge tone="success">Underconfident, you know more than you trust</Badge>
         )}
       </Card>
     </section>
@@ -475,7 +473,7 @@ function SectionPerformanceCard({
             <div className="mb-1 flex items-center justify-between text-xs">
               <span className="font-medium text-ink">{s.name}</span>
               <span className="tabular text-ink-tertiary">
-                {s.attempted > 0 ? `${Math.round(s.accuracy * 100)}%` : "—"} · net {s.netScore}
+                {s.attempted > 0 ? `${Math.round(s.accuracy * 100)}%` : ", "} · net {s.netScore}
               </span>
             </div>
             <div className="h-2 overflow-hidden rounded-full bg-panel">
@@ -516,7 +514,7 @@ function ScoreLeaksCard({ analysis }: { analysis: MentorAnalysis }) {
   const weakest = analysis.weakness.sections.find((s) => s.attempted > 0);
   if (weakest) {
     leaks.push({
-      label: `Weakest section — ${weakest.name}`,
+      label: `Weakest section, ${weakest.name}`,
       detail: `${Math.round(weakest.accuracy * 100)}% accuracy · revise this first`,
     });
   }

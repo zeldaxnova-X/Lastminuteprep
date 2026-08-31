@@ -1,5 +1,5 @@
 /**
- * Server-side Anthropic narration (§6b) via raw fetch — no SDK dependency.
+ * Server-side Anthropic narration (§6b) via raw fetch, no SDK dependency.
  * The API key is read from the environment and NEVER exposed to the client.
  * Graceful degradation: if no key is set (or the call fails), returns null and
  * the caller renders the deterministic report without the narrative.

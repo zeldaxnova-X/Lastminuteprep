@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Sprint 2A Telemetry Engine Types
+// LastMilePrep, Sprint 2A Telemetry Engine Types
 // Single source of truth interfaces for post-exam telemetry & analysis
 // ============================================================
 

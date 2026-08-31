@@ -163,13 +163,13 @@ export default function CBTTestEnginePage() {
     <div className="relative flex h-screen h-[100dvh] w-screen select-none flex-col overflow-hidden bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
       <CBTHeader title={title} totalQuestions={validatedQuestions.length} />
 
-      {/* Mobile advisory — the real TCS iON CBT runs on desktop. This layout is
+      {/* Mobile advisory, the real TCS iON CBT runs on desktop. This layout is
           faithful but scaled down; warn once, dismissible. (§8) */}
       {showMobileWarning && (
         <div className="flex items-start gap-2 border-b border-amber-200 bg-amber-50 px-3 py-2 text-[11px] text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300 md:hidden">
           <span className="flex-1 leading-snug">
             The real exam is a desktop computer-based test. This mobile layout is
-            faithful but scaled down — for the most realistic practice, use a laptop
+            faithful but scaled down, for the most realistic practice, use a laptop
             or tablet.
           </span>
           <button

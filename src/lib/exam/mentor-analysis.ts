@@ -1,5 +1,5 @@
 /**
- * Deterministic AI-Mentor analysis (§6a) — the SOURCE OF TRUTH for every number
+ * Deterministic AI-Mentor analysis (§6a), the SOURCE OF TRUTH for every number
  * the coach reports. Pure and testable: the LLM (M6) only narrates this JSON and
  * must never compute figures itself.
  *
@@ -29,7 +29,7 @@ import {
 
 const CONFIDENCE_LEVELS: Confidence[] = ["guessed", "unsure", "confident"];
 
-/** Heuristic thresholds — exposed in the output so the narrator can cite them. */
+/** Heuristic thresholds, exposed in the output so the narrator can cite them. */
 const OVERCONFIDENCE_ACC = 0.6; // "Confident" accuracy below this = miscalibrated
 const UNDERCONFIDENCE_ACC = 0.6; // low-confidence accuracy above this = too cautious
 const MIN_BUCKET_FOR_FLAG = 3; // need at least this many to call calibration
@@ -70,7 +70,7 @@ export interface SkipStrategy {
   blindGuessEV: number; // EV of a random 1-of-4 guess under this config
   guessed: ConfidenceBucket;
   guessingHelped: boolean; // guess accuracy ≥ break-even
-  /** Wrong answers marked Guessed or Unsure — the classic score leak. */
+  /** Wrong answers marked Guessed or Unsure, the classic score leak. */
   shouldHaveSkipped: FlaggedQuestion[];
   marksLostShouldHaveSkipped: number;
 }
@@ -79,8 +79,8 @@ export interface OptimalScore {
   achievableNet: number;
   actualNet: number;
   gain: number; // achievableNet − actualNet
-  keptBuckets: Confidence[]; // +EV for this student — attempt these
-  droppedBuckets: Confidence[]; // −EV — should have skipped these
+  keptBuckets: Confidence[]; // +EV for this student, attempt these
+  droppedBuckets: Confidence[]; // −EV, should have skipped these
 }
 
 export interface SectionPacing {
@@ -161,7 +161,7 @@ function round3(n: number): number {
 }
 
 /**
- * Build the full deterministic MentorAnalysis. Pure — depends only on the
+ * Build the full deterministic MentorAnalysis. Pure, depends only on the
  * responses and the exam config.
  */
 export function analyzeSession(

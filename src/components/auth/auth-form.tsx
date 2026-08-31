@@ -15,11 +15,11 @@ function friendlyError(message: string): string {
   const m = message.toLowerCase();
   if (m.includes("invalid login")) return "Wrong email or password. Try again.";
   if (m.includes("email not confirmed"))
-    return "Please confirm your email first — check your inbox for the link.";
+    return "Please confirm your email first, check your inbox for the link.";
   if (m.includes("already registered") || m.includes("already been registered"))
     return "That email is already registered. Try signing in instead.";
   if (m.includes("password should be")) return "Password must be at least 6 characters.";
-  if (m.includes("rate limit")) return "Too many attempts — please wait a moment and retry.";
+  if (m.includes("rate limit")) return "Too many attempts, please wait a moment and retry.";
   return message || "Something went wrong. Please try again.";
 }
 
@@ -61,7 +61,7 @@ export function AuthForm() {
       setError(friendlyError(error.message));
       setBusy(null);
     }
-    // On success the browser navigates to Google — no further action here.
+    // On success the browser navigates to Google, no further action here.
   }
 
   async function handleEmail(e: React.FormEvent) {
@@ -98,7 +98,7 @@ export function AuthForm() {
           return;
         }
         if (data.session) {
-          // Email confirmation disabled — signed in immediately.
+          // Email confirmation disabled, signed in immediately.
           window.location.assign(next);
           return;
         }
@@ -130,7 +130,7 @@ export function AuthForm() {
     mode === "signin"
       ? "Sign in to unlock your report and AI Mentor."
       : mode === "signup"
-        ? "Free to start — no card, unlock only when you're ready."
+        ? "Free to start, no card, unlock only when you're ready."
         : "We'll email you a secure link to set a new password.";
 
   return (
@@ -153,7 +153,7 @@ export function AuthForm() {
 
       {mode !== "forgot" && (
         <>
-          {/* Google — the primary, faster path */}
+          {/* Google, the primary, faster path */}
           <button
             type="button"
             onClick={handleGoogle}

@@ -3,7 +3,7 @@
  * (joined to their answer keys), run the pure scorer + mentor analyzer, and
  * persist `session_results` + `mentor_reports.analysis`.
  *
- * The LLM narrative (§6b) is layered on separately in M6 — this only produces
+ * The LLM narrative (§6b) is layered on separately in M6, this only produces
  * the deterministic numbers, and degrades to nothing if the session has no
  * responses yet.
  */

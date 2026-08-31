@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
-/** True when the user asks for reduced motion — we then disable animation. */
+/** True when the user asks for reduced motion, we then disable animation. */
 export function useReducedMotion() {
   const [reduced, setReduced] = useState(false);
   useEffect(() => {
@@ -89,7 +89,9 @@ export function CountUp({
   format?: (n: number) => string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [val, setVal] = useState(0);
+  // Initialise to `end` so the real number is in the server-rendered markup
+  // (never a literal "0" fallback); the count-up animates from 0 on first view.
+  const [val, setVal] = useState(end);
   const reduced = useReducedMotion();
   const started = useRef(false);
 
@@ -104,6 +106,7 @@ export function CountUp({
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
+          setVal(0);
           const t0 = performance.now();
           const tick = (t: number) => {
             const p = Math.min(1, (t - t0) / duration);

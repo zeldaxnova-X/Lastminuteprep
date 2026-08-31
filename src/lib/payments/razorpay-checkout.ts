@@ -1,7 +1,7 @@
 /**
  * Client-side Razorpay Standard Checkout helper. Loads checkout.js on demand,
  * creates an order via our backend, opens the modal, and verifies the result
- * server-side. The KEY_SECRET is never referenced here — only the public key id
+ * server-side. The KEY_SECRET is never referenced here, only the public key id
  * returned by /api/razorpay/create-order.
  */
 
@@ -12,7 +12,7 @@ interface CheckoutHandlers {
   prefill?: { name?: string; email?: string };
   /**
    * Called once the payment succeeded and its checkout signature verified
-   * server-side. The plan is NOT yet granted at this point — the webhook grants
+   * server-side. The plan is NOT yet granted at this point, the webhook grants
    * it independently; callers should poll `waitForPlanUpgrade` to confirm.
    */
   onSuccess: (plan: string) => void;
@@ -25,7 +25,7 @@ interface CheckoutHandlers {
 const PLAN_RANK: Record<string, number> = { free: 0, pro: 1, mentor: 2 };
 
 /**
- * Poll /api/auth/me until the account reaches (or exceeds) `target` — i.e. the
+ * Poll /api/auth/me until the account reaches (or exceeds) `target`, i.e. the
  * webhook has landed and granted the plan. Returns true on upgrade, false on
  * timeout (payment is still safe; the webhook will have applied it shortly).
  */
@@ -44,7 +44,7 @@ export async function waitForPlanUpgrade(
         if ((PLAN_RANK[v.plan ?? "free"] ?? 0) >= PLAN_RANK[target]) return true;
       }
     } catch {
-      // transient — keep polling
+      // transient, keep polling
     }
     await new Promise((res) => setTimeout(res, intervalMs));
   }
@@ -133,7 +133,7 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     amount: order.amount,
     currency: order.currency,
     name: "LastMilePrep",
-    description: opts.plan === "mentor" ? "Mentor — report + AI engine" : "Pro — full report",
+    description: opts.plan === "mentor" ? "Mentor, report + AI engine" : "Pro, full report",
     prefill: opts.prefill,
     theme: { color: "#4f46e5" },
     // 3. On success, verify the signature server-side before trusting anything.
@@ -165,7 +165,7 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
 
   rzp.on("payment.failed", (resp: unknown) => {
     const description = (resp as { error?: { description?: string } })?.error?.description;
-    opts.onError(description || "Payment failed. No charge was made — please try again.");
+    opts.onError(description || "Payment failed. No charge was made, please try again.");
   });
 
   rzp.open();

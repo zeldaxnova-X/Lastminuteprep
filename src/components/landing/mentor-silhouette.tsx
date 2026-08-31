@@ -5,7 +5,7 @@ import { Sparkles, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useReducedMotion } from "./motion";
 
-// Illustrative shapes for a MARKETING mock of the report — not a user's data.
+// Illustrative shapes for a MARKETING mock of the report, not a user's data.
 // (The real, per-user values live behind the paywall on the conversion screen.)
 const ROWS = [
   { label: "General Awareness", v: "9.5" },
@@ -16,7 +16,7 @@ const ROWS = [
 
 /**
  * A live report silhouette: the values render sharp, then "seal" (blur) after a
- * beat — previewing the paywall mechanic. Under reduced motion it renders
+ * beat, previewing the paywall mechanic. Under reduced motion it renders
  * already-sealed (no animation).
  */
 export function MentorSilhouette() {
@@ -99,7 +99,7 @@ export function MentorSilhouette() {
         <div className="mt-4 flex items-center justify-between gap-3 rounded-xl bg-gold-bright/10 px-4 py-3.5 ring-1 ring-gold-bright/25">
           <p className="text-sm text-white">
             <Sparkles className="mr-1 inline h-4 w-4 text-gold-bright" />
-            AI Mentor: you could have scored{" "}
+            MarksenseAI: you could have scored{" "}
             <span className="font-bold text-gold-bright">
               +
               <span

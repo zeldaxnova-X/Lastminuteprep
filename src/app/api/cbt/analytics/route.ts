@@ -14,7 +14,7 @@ export async function GET() {
     const userId = user.id;
 
     // Fetch all completed attempts for this user.
-    // NOTE: the column is `score` (not `total_score`) — selecting a non-existent
+    // NOTE: the column is `score` (not `total_score`), selecting a non-existent
     // column previously 500'd this endpoint and broke the dashboard.
     const { data: attempts, error } = await supabase
       .from("exam_attempts")
@@ -93,7 +93,7 @@ export async function GET() {
       }
     }
 
-    // Weakest / strongest subject — derived honestly from per-attempt section
+    // Weakest / strongest subject, derived honestly from per-attempt section
     // breakdowns (accuracy aggregated across attempts), not hardcoded.
     const subjectAgg: Record<string, { correct: number; answered: number }> = {};
     for (const a of attempts) {

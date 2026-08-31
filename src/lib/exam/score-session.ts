@@ -1,5 +1,5 @@
 /**
- * Deterministic scoring engine (§5) — the trust core of the product.
+ * Deterministic scoring engine (§5), the trust core of the product.
  *
  * `scoreSession(session, config)` is PURE: no I/O, no store, no DB. Every
  * marking number comes from the ExamConfig, so a new exam (NEET +4/−1, etc.)
@@ -11,7 +11,7 @@
  *    "answered_marked" with a selected option. "Answered & Marked for Review"
  *    IS counted (§4/§5).
  *  - "Marked for Review" with no saved answer, "not answered", and "not visited"
- *    are SKIPPED — never penalised (un-attempted = 0).
+ *    are SKIPPED, never penalised (un-attempted = 0).
  *  - netScore applies the (negative) wrong-mark from config; rawScore counts
  *    only the positive marks from correct answers.
  */
@@ -33,7 +33,7 @@ export type ResponseStatus =
 /** One question's outcome, decoupled from the store/DB representation. */
 export interface ResponseInput {
   questionId: string;
-  /** DB section slug — must match an ExamConfig section key for its marking. */
+  /** DB section slug, must match an ExamConfig section key for its marking. */
   section: string;
   selectedOption: Option | null;
   /** The answer key. */
@@ -148,7 +148,7 @@ export function scoreSession(
     a.timeMs += r.timeSpentMs ?? 0;
 
     if (!isEvaluated(r)) {
-      a.skipped += 1; // un-attempted or marked-only — never penalised
+      a.skipped += 1; // un-attempted or marked-only, never penalised
       continue;
     }
 

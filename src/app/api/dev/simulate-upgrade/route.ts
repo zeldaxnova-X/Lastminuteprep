@@ -6,7 +6,7 @@ import { getViewer } from "@/lib/auth/plan";
  * POST /api/dev/simulate-upgrade  { tier: 'pro' | 'mentor' | 'free' }
  *
  * DEV ONLY. Lets you flip your own plan to test gated states without a real
- * payment. Hard-blocked in production. This is NOT the payment path — the real
+ * payment. Hard-blocked in production. This is NOT the payment path, the real
  * upgrade will be a Razorpay webhook flipping `plan` server-side.
  *   // TODO: remove once Razorpay entitlement webhook lands.
  */
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
   const body = (await req.json().catch(() => ({}))) as { tier?: string };
   const tier = body.tier === "mentor" ? "mentor" : body.tier === "free" ? "free" : "pro";
 
-  // Service role (bypasses RLS) — plan changes are always server-only.
+  // Service role (bypasses RLS), plan changes are always server-only.
   const admin = createServerSupabaseClient();
   const { error } = await admin.from("profiles").update({ plan: tier }).eq("id", viewer.userId);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });

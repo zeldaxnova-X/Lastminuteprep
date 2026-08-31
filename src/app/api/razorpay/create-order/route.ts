@@ -8,10 +8,10 @@ import { razorpay, PLAN_PRICING, CURRENCY, EXAM_SCOPE, isPaidPlan } from "@/lib/
  * Creates a Razorpay order for the signed-in user. The amount is chosen
  * server-side from the plan (the client never sends an amount). The buyer's id
  * and target plan are stamped into the order `notes` so verify-payment can grant
- * exactly what was paid for, to exactly who paid — no client trust.
+ * exactly what was paid for, to exactly who paid, no client trust.
  */
 export async function POST(req: NextRequest) {
-  // Identity is server-derived from the request cookies — the SAME helper the
+  // Identity is server-derived from the request cookies, the SAME helper the
   // CBT routes use (getSessionContext -> cookie-aware @supabase/ssr client).
   const { user } = await getSessionContext();
   if (!user) return json401();
@@ -45,12 +45,12 @@ export async function POST(req: NextRequest) {
       order_id: order.id,
       amount: order.amount,
       currency: order.currency,
-      // Public key id only — safe for the browser to open the modal.
+      // Public key id only, safe for the browser to open the modal.
       key_id: process.env.RAZORPAY_KEY_ID,
     });
   } catch (err: unknown) {
     // Razorpay rejecting our API credentials is an UPSTREAM/config failure, not
-    // a user-auth problem — return 502 (never 401) so it can't be mistaken for a
+    // a user-auth problem, return 502 (never 401) so it can't be mistaken for a
     // session issue. Almost always a mismatched RAZORPAY_KEY_ID/RAZORPAY_KEY_SECRET
     // pair or a test/live mode mismatch in the deployment env.
     const statusCode = (err as { statusCode?: number })?.statusCode;

@@ -1,5 +1,5 @@
 /**
- * LastMilePrep — Paper Display Name Formatter
+ * LastMilePrep, Paper Display Name Formatter
  * Hides raw internal filenames, canonical names, PDF filenames, and dataset ingestion labels.
  * Formats as: "SSC CGL {Year} Tier {I/II} Shift {1/2/3/4}"
  */

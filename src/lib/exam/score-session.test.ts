@@ -1,6 +1,6 @@
 /**
  * Unit tests for the deterministic scorer (§5). Run: `npm test`.
- * Uses node:test + node:assert via tsx — no extra test dependency.
+ * Uses node:test + node:assert via tsx, no extra test dependency.
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";

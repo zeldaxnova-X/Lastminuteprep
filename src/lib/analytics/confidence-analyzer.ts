@@ -1,5 +1,5 @@
 // ============================================================
-// LastMilePrep — Confidence Analyzer Module
+// LastMilePrep, Confidence Analyzer Module
 // Pure rule-based calculation of per-question and overall confidence
 // ============================================================
 
