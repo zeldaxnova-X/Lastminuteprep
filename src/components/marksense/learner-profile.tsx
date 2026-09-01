@@ -15,7 +15,7 @@ import {
 import { cn } from "@/lib/utils";
 
 // Mirrors src/lib/ai/learner-profile.ts and learner-signals.ts (client copies).
-interface Weakpoint {
+export interface Weakpoint {
   area: string;
   kind: "topic" | "section" | "strategy";
   severity: "critical" | "high" | "moderate";
@@ -23,7 +23,7 @@ interface Weakpoint {
   drill: string;
   drillSubject: string | null;
 }
-interface Profile {
+export interface Profile {
   persona: string;
   headline: string;
   trajectory: string;
@@ -32,16 +32,26 @@ interface Profile {
   focusPlan: string[];
   projectedGain: number;
 }
-interface Signals {
+export interface Signals {
   attemptsAnalyzed: number;
-  score: { latestNet: number; bestNet: number; avgNet: number; trendPerAttempt: number; maxScore: number };
-  accuracy: { overallPct: number; trendPct: number };
-  sections: Array<{ name: string; accuracyPct: number; trendPct: number }>;
+  score: { firstNet: number; latestNet: number; bestNet: number; avgNet: number; trendPerAttempt: number; maxScore: number };
+  accuracy: { overallPct: number; latestPct: number; trendPct: number };
+  sections: Array<{ name: string; accuracyPct: number; latestAccuracyPct: number; trendPct: number; avgNet: number }>;
   topicWeakpoints: Array<{ topic: string; accuracyPct: number; attempted: number; appearedInAttempts: number }>;
-  consistency: { label: string };
+  topicStrengths: Array<{ topic: string; accuracyPct: number; attempted: number; appearedInAttempts: number }>;
+  tendencies: {
+    calibration: string;
+    overconfidentCount: number;
+    underconfidentCount: number;
+    avgMarksLostToBadGuessing: number;
+    avgOptimalGain: number;
+    pacing: string;
+  };
+  consistency: { label: string; netStdDev: number };
 }
-interface ProfileResponse {
+export interface ProfileResponse {
   locked?: boolean;
+  plan?: string;
   hasProfile?: boolean;
   aiAvailable?: boolean;
   attemptsAnalyzed?: number;
@@ -72,34 +82,50 @@ function drillHref(subject: string | null): string {
   return subject ? `${base}&subject=${encodeURIComponent(subject)}` : base;
 }
 
-export function MarksenseProfile() {
-  const [data, setData] = useState<ProfileResponse | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [refreshing, setRefreshing] = useState(false);
+/**
+ * MarksenseAI profile card. Uncontrolled by default (self-fetches). Pass
+ * `controlled` data + handlers to have a parent own the fetch (so a page can
+ * render this card and other views from a single request without re-triggering
+ * a costly regeneration).
+ */
+export function MarksenseProfile({
+  controlled,
+}: {
+  controlled?: { data: ProfileResponse | null; loading: boolean; refreshing: boolean; onRefresh: () => void };
+} = {}) {
+  const [internal, setInternal] = useState<ProfileResponse | null>(null);
+  const [internalLoading, setInternalLoading] = useState(true);
+  const [internalRefreshing, setInternalRefreshing] = useState(false);
 
   useEffect(() => {
+    if (controlled) return; // parent owns fetching
     let alive = true;
     fetch("/api/marksense/profile")
       .then((r) => r.json())
-      .then((d: ProfileResponse) => alive && setData(d))
-      .catch(() => alive && setData({ hasProfile: false }))
-      .finally(() => alive && setLoading(false));
+      .then((d: ProfileResponse) => alive && setInternal(d))
+      .catch(() => alive && setInternal({ hasProfile: false }))
+      .finally(() => alive && setInternalLoading(false));
     return () => {
       alive = false;
     };
-  }, []);
+  }, [controlled]);
 
-  async function refresh() {
-    setRefreshing(true);
+  async function internalRefresh() {
+    setInternalRefreshing(true);
     try {
       const r = await fetch("/api/marksense/profile", { method: "POST" });
-      if (r.ok) setData(await r.json());
+      if (r.ok) setInternal(await r.json());
     } catch {
       /* keep prior view */
     } finally {
-      setRefreshing(false);
+      setInternalRefreshing(false);
     }
   }
+
+  const data = controlled ? controlled.data : internal;
+  const loading = controlled ? controlled.loading : internalLoading;
+  const refreshing = controlled ? controlled.refreshing : internalRefreshing;
+  const refresh = controlled ? controlled.onRefresh : internalRefresh;
 
   if (loading) {
     return (
@@ -174,6 +200,16 @@ export function MarksenseProfile() {
             </p>
           </div>
         </div>
+        <div className="flex items-center gap-2">
+          {/* On the dashboard (uncontrolled), offer a jump to the full page. */}
+          {!controlled && (
+            <Link
+              href="/marksense/profile"
+              className="inline-flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-semibold text-gold transition-premium hover:bg-gold-soft/60"
+            >
+              Full profile <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          )}
         <button
           onClick={refresh}
           disabled={refreshing}
@@ -182,6 +218,7 @@ export function MarksenseProfile() {
           {refreshing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <RotateCcw className="h-3.5 w-3.5" />}
           Refresh
         </button>
+        </div>
       </div>
 
       <div className="space-y-5 px-5 py-5 sm:px-6">

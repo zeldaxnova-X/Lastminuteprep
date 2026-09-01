@@ -11,6 +11,7 @@ import { QuestionContent } from "@/components/cbt/question-content";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
+import { ProfileTieIn } from "@/components/marksense/profile-tie-in";
 import {
   Loader2,
   Sparkles,
@@ -243,6 +244,10 @@ export default function ExamResultPage() {
             </Card>
           </section>
         )}
+
+        {/* Longitudinal tie-in: connects this attempt to the MarksenseAI profile
+            (self-gates to mentor viewers; also triggers the post-mock refresh). */}
+        {analysis && <ProfileTieIn />}
 
         {/* Sections (deterministic, every report viewer) + calibration (mentor). */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
