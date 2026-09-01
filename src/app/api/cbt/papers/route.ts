@@ -28,8 +28,12 @@ export async function GET(request: NextRequest) {
     if (year) {
       query = query.eq("year", parseInt(year));
     }
+    // Default to Tier 1 so recovered Tier-2 papers never appear in the Tier-1
+    // PYP picker. An explicit ?tier= still allows a future Tier-2 surface.
     if (tier) {
       query = query.eq("tier", tier);
+    } else {
+      query = query.eq("tier", "Tier 1");
     }
 
     // Only surface papers from the active v2 (DOCX) dataset. Pre-v2 papers are
