@@ -37,6 +37,39 @@ interface BuildResult {
 const MODEL = process.env.DEEPSEEK_MODEL || "deepseek-chat";
 
 /**
+ * Append an immutable evolution snapshot. Deduped by (user_id, signals_hash):
+ * a manual refresh at the same signals state is a no-op, so one point lands per
+ * new mock. Chart-ready fields, no joins needed to render the timeline.
+ */
+async function snapshotProfile(
+  supabase: SupabaseClient,
+  userId: string,
+  signals: LearnerSignals,
+  hash: string,
+  profile: LearnerProfile | null
+): Promise<void> {
+  await supabase.from("learner_profile_snapshots").upsert(
+    {
+      user_id: userId,
+      attempts_analyzed: signals.attemptsAnalyzed,
+      signals_hash: hash,
+      persona: profile?.persona ?? null,
+      projected_gain: profile?.projectedGain ?? null,
+      latest_net: signals.score.latestNet,
+      best_net: signals.score.bestNet,
+      avg_net: signals.score.avgNet,
+      overall_accuracy: signals.accuracy.overallPct,
+      calibration: signals.tendencies.calibration,
+      pacing: signals.tendencies.pacing,
+      weak_topics: signals.topicWeakpoints
+        .slice(0, 5)
+        .map((t) => ({ topic: t.topic, accuracyPct: t.accuracyPct })),
+    },
+    { onConflict: "user_id,signals_hash", ignoreDuplicates: true }
+  );
+}
+
+/**
  * Ensure a fresh profile exists for the user.
  * @param force  regenerate the AI profile even if the signals hash is unchanged.
  */
@@ -64,6 +97,7 @@ export async function buildLearnerProfile(
       .from("learner_profiles")
       .update({ signals, stale: false, updated_at: new Date().toISOString() })
       .eq("user_id", userId);
+    await snapshotProfile(supabase, userId, signals, hash, (existing.profile as LearnerProfile) ?? null);
     return {
       ok: true,
       regenerated: false,
@@ -100,6 +134,8 @@ export async function buildLearnerProfile(
 
   const storedProfile =
     profile ?? ((existing?.profile as LearnerProfile | undefined) ?? null);
+
+  await snapshotProfile(supabase, userId, signals, hash, storedProfile);
 
   return {
     ok: true,

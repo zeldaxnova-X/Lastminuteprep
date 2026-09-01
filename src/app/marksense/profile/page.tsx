@@ -6,6 +6,7 @@ import { Sparkles, Lock, ArrowRight, Loader2 } from "lucide-react";
 import { TopNav } from "@/components/top-nav";
 import { MarksenseProfile, type ProfileResponse } from "@/components/marksense/learner-profile";
 import { SignalsDetail } from "@/components/marksense/signals-detail";
+import { MarksenseEvolution } from "@/components/marksense/evolution";
 
 /**
  * Dedicated MarksenseAI profile page. Owns a single fetch so the AI card and the
@@ -72,6 +73,7 @@ export default function MarksenseProfilePage() {
         {!loading && !locked && (
           <>
             <MarksenseProfile controlled={{ data, loading, refreshing, onRefresh }} />
+            {data?.hasProfile && <MarksenseEvolution />}
             {data?.signals && <SignalsDetail signals={data.signals} />}
           </>
         )}
