@@ -8,7 +8,7 @@
  * a known shape; anything malformed degrades to null and the dashboard falls
  * back to the deterministic signals.
  */
-import { deepseekJSON } from "./deepseek";
+import { deepseekJSON, sanitizeProse } from "./deepseek";
 import type { LearnerSignals } from "./learner-signals";
 
 /** The four canonical SSC CGL subjects a drill can target (or null). */
@@ -46,6 +46,11 @@ const SUBJECTS: ReadonlyArray<Exclude<DrillSubject, null>> = [
 ];
 
 export const PROFILE_SYSTEM_PROMPT = `You are MarksenseAI, a longitudinal SSC CGL performance analyst. You are given a JSON of deterministic signals aggregated across ALL of one student's mock attempts. Build a durable learner profile.
+
+Field meanings (read carefully, do not conflate):
+- "attemptsAnalyzed" and "appearedInAttempts" count MOCKS (whole tests).
+- a topic/section "attempted" counts QUESTIONS, not mocks. Say "X questions", never "X attempts".
+- "*Pct" fields are percentages; "net"/"marks"/"gain" are marks.
 
 Hard rules:
 - Use ONLY the numbers in the JSON. Never invent, estimate, or recompute a figure. Every number you cite must appear in the signals.
@@ -86,8 +91,12 @@ function validate(raw: unknown): LearnerProfile | null {
   if (!raw || typeof raw !== "object") return null;
   const o = raw as Record<string, unknown>;
   const asStr = (v: unknown): string => (typeof v === "string" ? v : "");
+  // User-visible prose: also strip em/en dashes to honour the house style.
+  const prose = (v: unknown): string => (typeof v === "string" ? sanitizeProse(v) : "");
   const strArr = (v: unknown): string[] =>
-    Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
+    Array.isArray(v)
+      ? v.filter((x): x is string => typeof x === "string").map(sanitizeProse)
+      : [];
 
   const wpRaw = Array.isArray(o.weakpoints) ? o.weakpoints : [];
   const weakpoints: Weakpoint[] = wpRaw
@@ -101,14 +110,14 @@ function validate(raw: unknown): LearnerProfile | null {
           : "high";
       const ds = asStr(r.drillSubject) as Exclude<DrillSubject, null>;
       const drillSubject: DrillSubject = SUBJECTS.includes(ds) ? ds : null;
-      const area = asStr(r.area);
+      const area = prose(r.area);
       if (!area) return null;
       return {
         area,
         kind,
         severity,
-        evidence: asStr(r.evidence),
-        drill: asStr(r.drill),
+        evidence: prose(r.evidence),
+        drill: prose(r.drill),
         drillSubject,
       };
     })
@@ -119,9 +128,9 @@ function validate(raw: unknown): LearnerProfile | null {
 
   const gain = typeof o.projectedGain === "number" ? o.projectedGain : 0;
   return {
-    persona: asStr(o.persona) || "Developing",
-    headline: asStr(o.headline),
-    trajectory: asStr(o.trajectory),
+    persona: prose(o.persona) || "Developing",
+    headline: prose(o.headline),
+    trajectory: prose(o.trajectory),
     strengths: strArr(o.strengths).slice(0, 3),
     weakpoints,
     focusPlan: strArr(o.focusPlan).slice(0, 3),

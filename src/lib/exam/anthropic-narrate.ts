@@ -8,7 +8,7 @@
  */
 import type { MentorAnalysis } from "./mentor-analysis";
 import { MENTOR_SYSTEM_PROMPT, buildMentorUserMessage } from "./mentor-prompt";
-import { deepseekChat } from "@/lib/ai/deepseek";
+import { deepseekChat, sanitizeProse } from "@/lib/ai/deepseek";
 
 export interface NarrationResult {
   narrative: string | null;
@@ -26,5 +26,5 @@ export async function narrateMentorReport(
     maxTokens: 2000,
     temperature: 0.4,
   });
-  return { narrative: text, degradedReason };
+  return { narrative: text ? sanitizeProse(text) : text, degradedReason };
 }

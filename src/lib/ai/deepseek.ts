@@ -24,6 +24,17 @@ export function aiEnabled(): boolean {
 
 export type ChatMessage = { role: "system" | "user" | "assistant"; content: string };
 
+/**
+ * Strip em/en dashes from model prose to honour the site-wide no-em-dash rule.
+ * Numeric ranges (2020-2024) collapse to a hyphen; every other dash becomes a
+ * comma clause, matching the house style. Apply to any user-visible AI text.
+ */
+export function sanitizeProse(text: string): string {
+  return text
+    .replace(/(\d)\s*[–—]\s*(\d)/g, "$1-$2") // numeric range -> hyphen
+    .replace(/\s*[—–]\s*/g, ", "); // remaining dashes -> comma clause
+}
+
 export type DegradedReason = "no_api_key" | "api_error" | "empty" | "bad_json";
 
 interface ChatOptions {
