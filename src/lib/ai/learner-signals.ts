@@ -10,6 +10,10 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
 
+/** A topic counts as a weakpoint below this accuracy, a strength at/above STRONG. */
+const WEAK_MAX_PCT = 65;
+const STRONG_MIN_PCT = 75;
+
 export interface AttemptDatum {
   id: string;
   createdAt: string;
@@ -155,10 +159,15 @@ export function aggregateSignals(attempts: AttemptDatum[]): LearnerSignals {
     }))
     // Enough exposure to be a real signal, not a one-off.
     .filter((t) => t.attempted >= 3);
+  // A topic is only a weakpoint if accuracy is actually low, and only a strength
+  // if it is actually high. Without these bounds a tiny topic set (or a strong
+  // student) would surface aced topics as "weakpoints" and vice versa.
   const topicWeakpoints = [...topics]
+    .filter((t) => t.accuracyPct < WEAK_MAX_PCT)
     .sort((a, b) => a.accuracyPct - b.accuracyPct || b.attempted - a.attempted)
     .slice(0, 8);
   const topicStrengths = [...topics]
+    .filter((t) => t.accuracyPct >= STRONG_MIN_PCT)
     .sort((a, b) => b.accuracyPct - a.accuracyPct || b.attempted - a.attempted)
     .slice(0, 5);
 

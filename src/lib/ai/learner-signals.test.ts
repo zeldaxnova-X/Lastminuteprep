@@ -78,6 +78,8 @@ test("ranks recurring weak topics with enough exposure, drops thin ones", () => 
   const weakNames = s.topicWeakpoints.map((t) => t.topic);
   assert.ok(weakNames.includes("Time & Work"));
   assert.ok(!weakNames.includes("Boats")); // <3 questions, filtered out
+  assert.ok(!weakNames.includes("Averages")); // 100% accuracy is never a weakpoint
+  assert.ok(s.topicStrengths.some((t) => t.topic === "Averages")); // it is a strength
   assert.equal(s.topicWeakpoints[0].topic, "Time & Work"); // weakest first
   const tw = s.topicWeakpoints.find((t) => t.topic === "Time & Work")!;
   assert.equal(tw.attempted, 10); // summed across both mocks
