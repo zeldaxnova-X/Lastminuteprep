@@ -57,6 +57,54 @@
   --foreground: var(--ink);
 }
 
+/*
+ * MarksenseAI dark-cinematic island. Scoped retheme: every design token flips to
+ * a premium near-black palette, so components built on tokens (bg-surface,
+ * text-ink, border-hairline, and the gold accents) render dark automatically and
+ * consistently. The gold accent is remapped to the brand violet on dark.
+ */
+.ms-dark {
+  --bg: #0a0a0c;
+  --surface: #141418;
+  --panel: #1c1c22;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  --ink: #f4f4f6;
+  --ink-secondary: rgba(244, 244, 246, 0.66);
+  --ink-tertiary: rgba(244, 244, 246, 0.40);
+
+  --accent: #818cf8;
+  --accent-hover: #a5b4fc;
+  --accent-soft: rgba(129, 140, 248, 0.16);
+
+  /* gold accents remap to brand violet on dark */
+  --gold: #d8b4fe;
+  --gold-bright: #a855f7;
+  --gold-soft: rgba(168, 85, 247, 0.16);
+
+  --success: #34d399;
+  --success-soft: rgba(52, 211, 153, 0.15);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.15);
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.15);
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --shadow-lift: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+
+  color: var(--ink);
+}
+
+/* Brand-gradient text lockup used for editorial headings inside the dark island. */
+.ms-grad {
+  background-image: linear-gradient(100deg, #f0abfc 0%, #c084fc 45%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);

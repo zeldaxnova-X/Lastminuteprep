@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Send, Loader2, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MarksenseWordmark } from "./wordmark";
+import { Markdown } from "@/components/ui/markdown";
 
 interface Msg {
   role: "user" | "assistant";
@@ -105,13 +106,13 @@ export function ChatPanel({ persona }: { persona: string | null }) {
           <div key={i} className={cn("flex", m.role === "user" ? "justify-end" : "justify-start")}>
             <div
               className={cn(
-                "max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed",
+                "max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed",
                 m.role === "user"
-                  ? "bg-accent text-white"
-                  : "border border-hairline bg-bg text-ink"
+                  ? "whitespace-pre-wrap bg-accent text-white"
+                  : "border border-hairline bg-bg text-ink [&_p:first-child]:mt-0 [&_p:last-child]:mb-0"
               )}
             >
-              {m.content}
+              {m.role === "user" ? m.content : <Markdown content={m.content} />}
             </div>
           </div>
         ))}

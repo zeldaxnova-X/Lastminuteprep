@@ -11,12 +11,12 @@ export interface TrendPoint {
   sections: Record<string, number>;
 }
 
-// Fixed categorical order + validated CVD-safe hues (dataviz skill, light surface).
+// Fixed categorical order + CVD-safe hues validated on the dark surface (dataviz).
 const SECTION_META: Array<{ name: string; short: string; color: string }> = [
-  { name: "Quantitative Aptitude", short: "Quant", color: "#4f46e5" },
-  { name: "General Awareness", short: "GA", color: "#0891b2" },
-  { name: "General Intelligence & Reasoning", short: "Reasoning", color: "#d97706" },
-  { name: "English Comprehension", short: "English", color: "#db2777" },
+  { name: "Quantitative Aptitude", short: "Quant", color: "#3987e5" },
+  { name: "General Awareness", short: "GA", color: "#d95926" },
+  { name: "General Intelligence & Reasoning", short: "Reasoning", color: "#199e70" },
+  { name: "English Comprehension", short: "English", color: "#c98500" },
 ];
 
 /**
@@ -76,6 +76,15 @@ export function SectionTrendsChart({ points }: { points: TrendPoint[] }) {
             setHover(best);
           }}
         >
+          <defs>
+            <filter id="ms-line-glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2.5" result="b" />
+              <feMerge>
+                <feMergeNode in="b" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
           {/* Gridlines + y labels */}
           {[0, 25, 50, 75, 100].map((gv) => (
             <g key={gv}>
@@ -96,7 +105,7 @@ export function SectionTrendsChart({ points }: { points: TrendPoint[] }) {
             const last = pts[pts.length - 1];
             return (
               <g key={s.name}>
-                <path d={d} fill="none" stroke={s.color} strokeWidth={2.25} strokeLinejoin="round" strokeLinecap="round" />
+                <path d={d} fill="none" stroke={s.color} strokeWidth={2.25} strokeLinejoin="round" strokeLinecap="round" filter="url(#ms-line-glow)" opacity={0.95} />
                 {pts.map((pt) => (
                   <circle key={pt.i} cx={x(pt.i)} cy={y(pt.v)} r={hover === pt.i ? 4 : 2.5} fill={s.color} stroke="var(--surface)" strokeWidth={hover === pt.i ? 1.5 : 0} />
                 ))}

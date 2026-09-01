@@ -64,8 +64,9 @@ export default function MarksenseHubPage() {
     <div className="flex min-h-screen flex-col bg-bg">
       <TopNav />
 
+      <div className="ms-dark flex flex-1 flex-col bg-bg">
       {/* Cinematic hero band */}
-      <div className="relative overflow-hidden bg-panel-dark">
+      <div className="relative overflow-hidden bg-panel-dark border-b border-white/5">
         <div
           className="pointer-events-none absolute inset-0 opacity-70"
           style={{
@@ -139,10 +140,7 @@ export default function MarksenseHubPage() {
             {/* Section progress chart */}
             {hasTrends && (
               <section className="rounded-2xl border border-hairline bg-surface p-5 shadow-soft sm:p-6">
-                <div className="mb-4">
-                  <h2 className="text-sm font-bold text-ink">Section accuracy over time</h2>
-                  <p className="text-xs text-ink-tertiary">Where you are gaining ground, and where you are stuck.</p>
-                </div>
+                <SectionHead eyebrow="Progress" title="Section accuracy over time" sub="Where you are gaining ground, and where you are stuck." />
                 <SectionTrendsChart points={trends!.points} />
               </section>
             )}
@@ -176,6 +174,20 @@ export default function MarksenseHubPage() {
           </div>
         )}
       </main>
+      </div>
+    </div>
+  );
+}
+
+function SectionHead({ eyebrow, title, sub }: { eyebrow: string; title: string; sub?: string }) {
+  return (
+    <div className="mb-5">
+      <div className="flex items-center gap-2">
+        <span className="h-3.5 w-1 rounded-full bg-gradient-to-b from-[#f0abfc] to-[#818cf8]" />
+        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-tertiary">{eyebrow}</p>
+      </div>
+      <h2 className="mt-2 font-report text-xl font-medium tracking-tight text-ink sm:text-2xl">{title}</h2>
+      {sub && <p className="mt-1 text-xs text-ink-tertiary">{sub}</p>}
     </div>
   );
 }
