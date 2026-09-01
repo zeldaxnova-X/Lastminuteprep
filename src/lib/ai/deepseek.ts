@@ -102,6 +102,44 @@ export async function deepseekChat(opts: ChatOptions): Promise<ChatResult> {
 }
 
 /**
+ * Multi-turn chat completion (for the study coach). Takes a full message array
+ * (system + alternating user/assistant). Same graceful degradation.
+ */
+export async function deepseekConverse(
+  messages: ChatMessage[],
+  opts?: { maxTokens?: number; temperature?: number }
+): Promise<ChatResult> {
+  const apiKey = process.env.DEEPSEEK_API_KEY;
+  if (!apiKey) return { text: null, degradedReason: "no_api_key" };
+
+  const baseUrl = (process.env.DEEPSEEK_BASE_URL || DEFAULT_BASE_URL).replace(/\/$/, "");
+  const model = process.env.DEEPSEEK_MODEL || DEFAULT_MODEL;
+
+  try {
+    const res = await fetch(`${baseUrl}/chat/completions`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "content-type": "application/json" },
+      body: JSON.stringify({
+        model,
+        max_tokens: opts?.maxTokens ?? 1200,
+        temperature: opts?.temperature ?? 0.5,
+        messages,
+      }),
+    });
+    if (!res.ok) {
+      console.error("DeepSeek converse failed:", res.status, (await res.text()).slice(0, 300));
+      return { text: null, degradedReason: "api_error" };
+    }
+    const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
+    const text = data.choices?.[0]?.message?.content?.trim() ?? "";
+    return text ? { text } : { text: null, degradedReason: "empty" };
+  } catch (err) {
+    console.error("DeepSeek converse error:", err);
+    return { text: null, degradedReason: "api_error" };
+  }
+}
+
+/**
  * Chat completion that must return a JSON object of shape T. Uses DeepSeek's
  * json_object mode and validates the parse. Returns null on any failure so the
  * caller can fall back to the deterministic layer.
