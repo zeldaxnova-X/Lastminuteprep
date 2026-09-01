@@ -11,10 +11,11 @@ import type { Signals } from "./learner-profile";
  * behavioural tendencies. Pure CSS bars, theme-aware. Shown on the dedicated
  * MarksenseAI profile page beneath the AI card.
  */
-export function SignalsDetail({ signals: s }: { signals: Signals }) {
+export function SignalsDetail({ signals: s, hideScoreJourney = false }: { signals: Signals; hideScoreJourney?: boolean }) {
   return (
     <div className="space-y-6">
-      {/* Score journey */}
+      {/* Score journey (hidden when the hero/progress views already cover it) */}
+      {!hideScoreJourney && (
       <Panel title="Score journey" subtitle={`${s.attemptsAnalyzed} mocks analysed`}>
         <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
           <Stat label="First" value={s.score.firstNet} sub={`/ ${s.score.maxScore}`} />
@@ -36,6 +37,7 @@ export function SignalsDetail({ signals: s }: { signals: Signals }) {
           latest {s.accuracy.latestPct}%
         </div>
       </Panel>
+      )}
 
       {/* Section mastery */}
       <Panel title="Section mastery" subtitle="Accuracy across every mock, with direction">
