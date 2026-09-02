@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "katex/dist/katex.min.css";
 
+/* Force a light UI on every device. `dark:` utilities become class-based (a
+   `.dark` ancestor that the app never sets), so a device in system dark mode no
+   longer flips the CBT test screen (or anything else) to dark. MarksenseAI's
+   intentional dark is a separate `.ms-dark` scope and is unaffected. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root { color-scheme: light; }
+.ms-dark { color-scheme: dark; }
+
 /* ============================================================
    LastMilePrep — design tokens (single source of truth).
    Premium white base. Two-accent system:
