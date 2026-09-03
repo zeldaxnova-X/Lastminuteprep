@@ -34,9 +34,19 @@ def all_q_positions(doc):
         if dedup and dedup[-1][0] == e[0] and abs(dedup[-1][1] - e[1]) < 2 and dedup[-1][3] == e[3]:
             continue
         dedup.append(e)
+    # Map to global via SECTION + printed local n (1..25). Sections are the 4
+    # blocks reasoning/GA/quant/English; a new section begins wherever the local
+    # number stops increasing. Using the printed local n survives a missing label.
     pos = {}
-    for gi, e in enumerate(dedup[:100]):
-        pos[gi + 1] = (e[0], e[4])
+    section, last = 1, 0
+    for e in dedup:
+        n = e[3]
+        if n <= last:
+            section += 1
+        last = n
+        g = (section - 1) * 25 + n
+        if 1 <= g <= 100 and g not in pos:
+            pos[g] = (e[0], e[4])
     return pos
 
 
@@ -69,17 +79,26 @@ def detect(page, top_y, bot_y, page_w):
 
 
 def audit(pdf_path):
+    """Return {n: {'a': answer, 't': source stem text}} for n=1..100. 't' lets a
+    caller verify alignment (source text vs DB stem) before trusting 'a'."""
     doc = fitz.open(pdf_path)
     pos = all_q_positions(doc)
     out = {}
     for n in range(1, 101):
         if n not in pos:
-            out[n] = '-'; continue
+            out[n] = {'a': '-', 't': ''}; continue
         pno, rect = pos[n]
         page = doc[pno]
         nxt = pos.get(n + 1)
         bot = nxt[1].y0 if (nxt and nxt[0] == pno) else page.rect.height
-        out[n] = detect(page, rect.y0, bot, page.rect.width)
+        ans = detect(page, rect.y0, bot, page.rect.width)
+        # stem text = between the Q.N label and the first 'Ans' below it
+        anss = [a for a in page.search_for('Ans') if rect.y0 - 2 <= a.y0 <= bot]
+        ty = min((a.y0 for a in anss), default=bot)
+        txt = page.get_text(clip=fitz.Rect(0, rect.y0 - 1, page.rect.width, ty)).replace('\n', ' ').strip()
+        # strip leading "Q.NN"
+        txt = txt.split(' ', 1)[1] if txt[:2] == 'Q.' and ' ' in txt else txt
+        out[n] = {'a': ans, 't': txt[:120]}
     doc.close()
     return out
 
@@ -87,6 +106,6 @@ def audit(pdf_path):
 if __name__ == '__main__':
     res = audit(sys.argv[1])
     if len(sys.argv) > 2:
-        json.dump({str(k): v for k, v in res.items()}, open(sys.argv[2], 'w'))
-    print('read', sum(1 for v in res.values() if v in 'ABCD'), '/ 100 | unread:',
-          [k for k, v in res.items() if v not in 'ABCD'][:20])
+        json.dump({str(k): v for k, v in res.items()}, open(sys.argv[2], 'w', encoding='utf-8'), ensure_ascii=False)
+    print('read', sum(1 for v in res.values() if v['a'] in 'ABCD'), '/ 100 | unread:',
+          [k for k, v in res.items() if v['a'] not in 'ABCD'][:20])
