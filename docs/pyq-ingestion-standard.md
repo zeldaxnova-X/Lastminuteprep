@@ -57,6 +57,46 @@ python scripts/ingest/figures/clean_lib.py <fig1.png> <fig2.png> ...
   analysis: find horizontal ink bands, cut at the largest vertical gap (text on
   top, figure below), keep the figure band. Author the stem text separately.
 
+### Reasoning figures: RENDER THE REGION, do not extract the raster
+
+Reasoning figures (boxed series, embedded-figure, X-boxes, fold diagrams) are
+usually **part vector, part low-res raster**: the drawn boxes/lines are vector
+(crisp), but the arrows/letters/glyphs and the baked stem sentence sit in a
+~680px raster. **Extracting the raster image alone loses the vector boxes** (the
+series looks like it lost its cell dividers — the "bifurcation") and upscales the
+low-res raster blurry. Fix — render the whole page **region** at high DPI
+(`get_pixmap(matrix=Matrix(9,9), clip=region)`), which rasterizes the vector
+crisply:
+
+1. Stem: render `[Q.N .. Ans]`, then `figonly` (largest horizontal-ink-gap; keep
+   the lower band) to drop the baked sentence. Author the sentence as a separate
+   `text` block — it is NOT in the text layer, so `get_text` returns only `Q.N`.
+2. Remove the page's **vertical border lines** (thin, full-height ink columns at
+   the far left/right edges) before the final whitespace trim.
+3. **Never binarize a region render** — the vector lines are already crisp;
+   `clean_lib.clean()` (upscale+threshold) is for genuinely low-res *raster*
+   line-art only, and it turns crisp vector renders blocky.
+4. Boxed options: the option marker (`1.`-`4.`) sits at the box's **mid-left**,
+   so the box extends above it. Crop each option with a window centered on its
+   marker — `[marker.y0 - 0.32*spacing, marker.y0 + 0.70*spacing]` (spacing =
+   median marker gap) — not `[marker.y0, next_marker.y0]` (which cuts the box top
+   and bleeds the next option in).
+5. **Genuinely low-res raster figures stay soft** (embedded-figure outlines like
+   an irregular polygon "X", mirror-letter strings). Do not trace them by hand
+   (risks changing the shape that the answer depends on). Give the best crop and
+   **flag them in the remaining-images list for external (Gemini/ChatGPT)
+   enhancement**.
+
+### Serving updated figures
+
+Assets live at `question-assets/{paper}/{paper}__q{N}_fig.{ext}` (or
+`__q{N}_opt{i}`). To replace one, **POST to the same storage_path with
+`x-upsert:true`** — the DB block URL is unchanged and the CDN serves the new
+bytes immediately (verify by comparing served `content-length` to the local
+file). The Supabase secret key is the new `sb_secret_...` format: pass it in
+**both** `apikey` and `Authorization: Bearer` headers or the Storage API rejects
+it as "Invalid Compact JWS".
+
 ## Non-negotiable checks (these all regressed once)
 
 1. **LaTeX**: author question JSON in a **file** (`\\` for a backslash) and
