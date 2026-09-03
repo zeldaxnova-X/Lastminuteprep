@@ -72,16 +72,65 @@ def _clean_borders(pil):
     keep = [(s, e) for s, e in cb if not is_border(s, e)]
     if keep:
         pil = pil.crop((max(0, keep[0][0] - 12), 0, min(W, keep[-1][1] + 12), H))
+    pil = _drop_edge_bleed(pil)
     bb = ImageChops.difference(
         pil.convert("RGB"), Image.new("RGB", pil.size, (255, 255, 255))
     ).getbbox()
     if bb:
         x0, y0, x1, y1 = bb
-        p = 14
+        p = 12
         pil = pil.crop(
             (max(0, x0 - p), max(0, y0 - p), min(pil.width, x1 + p), min(pil.height, y1 + p))
         )
     return pil
+
+
+def _max_run(row):
+    m = c = 0
+    for v in row:
+        if v:
+            c += 1
+            m = max(m, c)
+        else:
+            c = 0
+    return m
+
+
+def _drop_edge_bleed(pil):
+    """Drop a top/bottom row-band that is a neighbouring option bleeding in: a
+    horizontal RULE (long continuous ink run = an adjacent box edge) or a narrow
+    TICK (an adjacent diamond's vertex), separated from the figure by a gap. Real
+    content (e.g. an option's own O + letter row) spans wide but not continuously,
+    so it is kept."""
+    a = np.array(pil.convert("L"))
+    ink = a < 175
+    H, W = ink.shape
+    on = ink.sum(axis=1) > max(4, W * 0.012)
+    bs = _bands(on)
+    if len(bs) < 2:
+        return pil
+
+    def is_bleed(s, e):
+        if (e - s) > 0.14 * H:
+            return False
+        sub = ink[s:e]
+        rule = max(_max_run(sub[r]) for r in range(sub.shape[0])) > 0.5 * W
+        nz = np.nonzero(sub.sum(axis=0) > 0)[0]
+        hspan = (nz[-1] - nz[0]) / W if len(nz) else 0
+        tick = (e - s) < 0.10 * H and hspan < 0.30
+        return rule or tick
+
+    changed = True
+    while changed and len(bs) >= 2:
+        changed = False
+        if is_bleed(*bs[0]) and (bs[1][0] - bs[0][1]) > 0.02 * H:
+            bs = bs[1:]
+            changed = True
+            continue
+        if is_bleed(*bs[-1]) and (bs[-1][0] - bs[-2][1]) > 0.02 * H:
+            bs = bs[:-1]
+            changed = True
+    return pil.crop((0, max(0, bs[0][0] - 6), W, min(H, bs[-1][1] + 6)))
 
 
 def _render(page, rect, zoom=ZOOM):
@@ -99,14 +148,22 @@ def extract_stem(page, qm, ans, zoom=ZOOM):
 
 def extract_options(page, ans, qid, markers, zoom=ZOOM):
     """Crisp option figures. `markers` = the sorted `1.`-`4.` rects. Each option
-    is cropped with a window centered on its marker (the marker sits at the box's
-    mid-left, so the box extends above it)."""
-    gaps = [markers[i + 1].y0 - markers[i].y0 for i in range(len(markers) - 1)]
+    is cropped at the MIDPOINTS between consecutive markers, which land in the gap
+    between adjacent figures — so the whole figure is kept (all of its separate
+    elements) without clipping and without the next option bleeding in. Any
+    residual neighbour edge/tick is removed by `_drop_edge_bleed` inside
+    `_clean_borders`. (A marker-offset window fails: box options sit centred on
+    the marker, multi-element options like arrow+circle+letter get split, and
+    tall boxes bleed the neighbour.)"""
+    ys = [m.y0 for m in markers]
+    gaps = [ys[i + 1] - ys[i] for i in range(len(ys) - 1)]
     sp = float(np.median(gaps)) if gaps else 70.0
     out = []
-    for m in markers:
-        y0 = max(m.y0 - 0.32 * sp, ans.y1)
-        y1 = min(m.y0 + 0.70 * sp, qid.y0 - 2)
-        reg = fitz.Rect(m.x1 + 2, y0, page.rect.width, y1)
+    for i, m in enumerate(markers):
+        top = (ys[i - 1] + ys[i]) / 2 if i > 0 else ys[i] - sp * 0.5
+        bot = (ys[i] + ys[i + 1]) / 2 if i + 1 < len(ys) else ys[i] + sp * 0.5
+        top = max(top, ans.y1)
+        bot = min(bot, qid.y0 - 1)
+        reg = fitz.Rect(m.x1 + 2, top, page.rect.width, bot)
         out.append(_clean_borders(_render(page, reg, zoom)))
     return out
