@@ -35,9 +35,13 @@ for (const qn of Object.keys(spec.questions)) {
     options = s.opts.map((t, i) => ({ key: 'ABCD'[i], text: t, index: i + 1, blocks: [{ kind: 'text', text: t }], isImage: false }));
   }
   const stem_text = stem.filter((b) => b.kind === 'text').map((b) => b.text).join('\n');
+  // Read the pre-update key so we can report when the source tick (s.ans) differs.
+  const pre = await c.query('select correct_option from questions where paper_id=$1 and question_number=$2', [paper, Number(qn)]);
+  const oldKey = pre.rows[0] && pre.rows[0].correct_option;
+  // correct_option is set from s.ans (the source green tick, verified per question).
   const r = await c.query(
-    'update questions set stem=$1::jsonb, stem_text=$2, options=$3::jsonb, has_images=$4, rebuilt_at=now() where paper_id=$5 and question_number=$6 returning id, correct_option',
-    [JSON.stringify(stem), stem_text, JSON.stringify(options), hasImg, paper, Number(qn)]
+    'update questions set stem=$1::jsonb, stem_text=$2, options=$3::jsonb, has_images=$4, correct_option=coalesce($5,correct_option), rebuilt_at=now() where paper_id=$6 and question_number=$7 returning id, correct_option',
+    [JSON.stringify(stem), stem_text, JSON.stringify(options), hasImg, s.ans || null, paper, Number(qn)]
   );
   const row = r.rows[0];
   if (!row) { console.log('Q' + qn + ': NOT FOUND'); continue; }
@@ -49,7 +53,7 @@ for (const qn of Object.keys(spec.questions)) {
       [row.id, paper, `${paper}__${n}`, role, ok, sp, `${baseRoot}/${sp}`, e, m.sha, m.len]
     );
   }
-  const ok = row.correct_option === s.ans;
-  console.log('Q' + qn + ': ans=' + row.correct_option + (s.ans ? (ok ? ' OK' : ' !! exp ' + s.ans) : ''));
+  const fixed = s.ans && oldKey && oldKey !== s.ans;
+  console.log('Q' + qn + ': ans=' + row.correct_option + (fixed ? ' (KEY FIXED from ' + oldKey + ')' : s.ans ? ' OK' : ''));
 }
 await c.end();

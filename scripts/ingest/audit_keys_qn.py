@@ -34,10 +34,16 @@ def all_q_positions(doc):
         if dedup and dedup[-1][0] == e[0] and abs(dedup[-1][1] - e[1]) < 2 and dedup[-1][3] == e[3]:
             continue
         dedup.append(e)
-    # Map to global via SECTION + printed local n (1..25). Sections are the 4
-    # blocks reasoning/GA/quant/English; a new section begins wherever the local
-    # number stops increasing. Using the printed local n survives a missing label.
+    # Each paper has exactly 100 questions in reading order. If all 100 labels are
+    # present, map by POSITION (global = index+1): robust to a mis-OCR'd label value
+    # (e.g. 'Q.18' read as 'Q.1', which would otherwise trigger a false section
+    # break). Only when a label is genuinely missing (<100) fall back to SECTION +
+    # printed local n, which survives a dropped label.
     pos = {}
+    if len(dedup) == 100:
+        for i, e in enumerate(dedup):
+            pos[i + 1] = (e[0], e[4])
+        return pos
     section, last = 1, 0
     for e in dedup:
         n = e[3]
