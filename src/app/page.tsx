@@ -455,12 +455,13 @@ function FounderNote() {
       <Reveal>
         <figure className="rounded-2xl border border-hairline bg-surface p-6 text-center shadow-soft sm:p-8">
           <blockquote className="font-report text-lg leading-relaxed text-ink sm:text-xl">
-            &ldquo;I built LastMilePrep to be the best CBT practice software an SSC aspirant
-            can sit in front of, one that turns your own performance into the few decisions
-            that win you the most marks on exam day.&rdquo;
+            &ldquo;I&apos;ve lost marks I should have had, questions I knew, given away to
+            decisions under the clock. I built LastMilePrep to be the best CBT practice an
+            SSC aspirant can sit in front of, one that turns your own performance into the
+            few decisions that win you the most marks on exam day.&rdquo;
           </blockquote>
           <figcaption className="mt-4 text-sm text-ink-secondary">
-            <span className="font-semibold text-ink">[[FOUNDER_NAME]]</span>, Founder ·{" "}
+            <span className="font-semibold text-ink">Founder</span>, a fellow aspirant ·{" "}
             <a href="mailto:hello@lastmileprep.in" className="font-medium text-accent hover:underline">
               hello@lastmileprep.in
             </a>
