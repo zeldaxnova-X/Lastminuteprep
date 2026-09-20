@@ -8,6 +8,7 @@ import { CBTQuestionView } from "@/components/cbt/cbt-question-view";
 import { CBTPalette } from "@/components/cbt/cbt-palette";
 import { CBTSubmitModal } from "@/components/cbt/cbt-submit-modal";
 import type { ValidatedQuestion, Subject } from "@/types/database.types";
+import { sectionsFromQuestions } from "@/lib/cbt-sections";
 import { X, Loader2, LayoutGrid } from "lucide-react";
 
 export default function CBTTestEnginePage() {
@@ -21,7 +22,7 @@ export default function CBTTestEnginePage() {
   const [validatedQuestions, setValidatedQuestions] = useState<ValidatedQuestion[]>([]);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
-  const { initTest, isSubmitted, currentQuestionIndex, submitTest, zoomedImage, setZoomedImage } = useTestStore();
+  const { initTest, isSubmitted, currentQuestionIndex, submitTest, zoomedImage, setZoomedImage, sections: secMeta, activeSectionIndex } = useTestStore();
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [showMobileWarning, setShowMobileWarning] = useState(true);
 
@@ -51,13 +52,11 @@ export default function CBTTestEnginePage() {
             return;
           }
 
-          setValidatedQuestions(qList);
-          initTest(
-            data.attempt.id,
-            data.attempt.id,
-            qList.map((q) => q.id),
-            Math.round((data.time_remaining_seconds || data.attempt.time_limit_seconds) / 60)
-          );
+          // Order into the fixed SSC section sequence and drive the sectional
+          // timer engine (four independent 15-minute sections).
+          const { ordered, sections: secInputs } = sectionsFromQuestions(qList);
+          setValidatedQuestions(ordered);
+          initTest(data.attempt.id, data.attempt.id, secInputs);
         } else {
           // Fallback to launch initial paper
           const papersRes = await fetch("/api/cbt/papers");
@@ -75,13 +74,11 @@ export default function CBTTestEnginePage() {
             const qData = await qRes.json();
             if (qRes.ok && qData.questions) {
               setTitle(qData.title);
-              setValidatedQuestions(qData.questions);
-              initTest(
-                qData.attempt_id,
-                qData.attempt_id,
-                qData.questions.map((q: { id: string }) => q.id),
-                Math.round(qData.time_limit_seconds / 60)
+              const { ordered, sections: secInputs } = sectionsFromQuestions(
+                qData.questions as ValidatedQuestion[]
               );
+              setValidatedQuestions(ordered);
+              initTest(qData.attempt_id, qData.attempt_id, secInputs);
             }
           }
         }
@@ -207,7 +204,14 @@ export default function CBTTestEnginePage() {
         aria-expanded={isMobileDrawerOpen}
       >
         <LayoutGrid className="h-4 w-4" />
-        <span className="tabular-nums">{currentQuestionIndex + 1}/{validatedQuestions.length}</span>
+        <span className="tabular-nums">
+          {(() => {
+            const sec = secMeta[activeSectionIndex];
+            const localIdx = sec ? currentQuestionIndex - sec.startIndex + 1 : currentQuestionIndex + 1;
+            const count = sec ? sec.count : validatedQuestions.length;
+            return `${localIdx}/${count}`;
+          })()}
+        </span>
       </button>
 
       {/* Mobile slide-out drawer (<768px) */}

@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
 import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
+import { LEGAL_VERSION } from "@/lib/legal";
 
 interface SectionRow {
   key: string;
@@ -53,6 +54,24 @@ export default function SampleConversionPage() {
   const [paying, setPaying] = useState(false);
   const [payError, setPayError] = useState<string | null>(null);
   const [offer, setOffer] = useState<null | { discount_pct: number; gap: number; expires_at: string }>(null);
+  const [leadEmail, setLeadEmail] = useState("");
+  const [leadSaved, setLeadSaved] = useState(false);
+
+  // Capture the visitor at the highest-intent moment (best-effort, non-blocking).
+  const captureLead = async () => {
+    const em = leadEmail.trim();
+    if (!em || leadSaved) return;
+    setLeadSaved(true);
+    try {
+      await fetch("/api/sample/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: em, attemptId }),
+      });
+    } catch {
+      /* never block */
+    }
+  };
 
   useEffect(() => {
     if (!attemptId) return;
@@ -95,6 +114,7 @@ export default function SampleConversionPage() {
   // Not signed in → send to /login, returning to the report afterwards.
   // Signed in → stubbed checkout (// TODO: Razorpay). No plan mutation here.
   function onUnlock(tier: "report" | "mentor") {
+    void captureLead(); // grab the contact before we route away
     if (!authed) {
       router.push(`/login?next=${encodeURIComponent(reportHref)}`);
       return;
@@ -110,6 +130,7 @@ export default function SampleConversionPage() {
     const plan = "mentor" as const;
     void startRazorpayCheckout({
       plan,
+      consent: { policyVersion: LEGAL_VERSION, consentAt: new Date().toISOString() },
       prefill: email ? { email } : undefined,
       // Payment captured + signature verified. The plan is granted by the
       // webhook (independent of this callback), so wait for it to land before
@@ -174,42 +195,59 @@ export default function SampleConversionPage() {
           </p>
         </div>
 
-        {/* Report silhouette, real structure, masked real values */}
-        <Card className="space-y-4 p-6">
+        {/* FREE: your section accuracy (real values, from your own attempt). */}
+        <Card className="space-y-3 p-6">
+          <p className="text-sm font-semibold text-ink">Your section accuracy</p>
+          <div className="space-y-2.5">
+            {sections.map((s) => {
+              const acc = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+              return (
+                <div key={s.key} className="rounded-lg border border-hairline bg-panel px-3.5 py-2.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-ink">{sectionLabel(s.name || s.key)}</span>
+                    <span className="text-sm font-semibold tabular text-ink">
+                      {s.correct}/{s.total} · {acc}%
+                    </span>
+                  </div>
+                  <span className="mt-1.5 block h-1.5 w-full overflow-hidden rounded-full bg-surface">
+                    <span className="block h-full rounded-full bg-accent" style={{ width: `${acc}%` }} />
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-ink-tertiary">Net score and section accuracy are always free.</p>
+        </Card>
+
+        {/* LOCKED: the real MarksenseAI report layout, populated with YOUR attempt,
+            values masked (never faked) until unlock. */}
+        <Card className="relative space-y-4 overflow-hidden p-6">
           <div className="flex items-center justify-between">
-            <p className="text-sm font-semibold text-ink">Section breakdown</p>
-            <span className="flex items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹{allAccessPriceInr()}
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-ink">
+              <Sparkles className="h-4 w-4 text-gold" /> Your MarksenseAI report
+            </p>
+            <span className="flex items-center gap-1 rounded-md bg-gold-soft px-2 py-0.5 text-[11px] font-bold text-gold">
+              <Lock className="h-3 w-3" /> Unlock ₹{allAccessPriceInr()}
             </span>
           </div>
           <div className="space-y-2.5">
-            {sections.map((s) => (
-              <div
-                key={s.key}
-                className="flex items-center justify-between rounded-lg border border-hairline bg-panel px-3.5 py-2.5"
-              >
-                <span className="text-sm text-ink">{sectionLabel(s.name || s.key)}</span>
-                <span className="rounded-md bg-surface px-2.5 py-1 text-sm font-semibold tabular text-ink">
-                  <Masked>{s.netScore}</Masked>
-                </span>
+            <div className="flex items-center justify-between gap-3 rounded-xl border border-gold-bright/30 bg-gold-soft px-4 py-3.5">
+              <span className="text-sm text-ink">You could have scored</span>
+              <span className="text-sm font-bold text-gold">+<Masked className="text-gold">{gain}</Masked> marks</span>
+            </div>
+            {[
+              "Marks lost to confident-but-wrong answers",
+              "Your personal break-even guess rule",
+              "Questions you should have skipped",
+              "Optimal-score gap, same knowledge",
+            ].map((label) => (
+              <div key={label} className="flex items-center justify-between gap-3 rounded-lg border border-hairline bg-panel px-3.5 py-2.5">
+                <span className="text-sm text-ink-secondary">{label}</span>
+                <span className="rounded-md bg-surface px-2.5 py-1 text-sm font-semibold text-ink"><Masked>00</Masked></span>
               </div>
             ))}
           </div>
-
-          {/* One hero Mentor verdict, in full, with a masked real value (gold). */}
-          <div className="flex items-center justify-between gap-3 rounded-xl border border-gold-bright/30 bg-gold-soft px-4 py-3.5">
-            <p className="text-sm text-ink">
-              <Sparkles className="mr-1 inline h-4 w-4 text-gold" />
-              MarksenseAI: you could have scored{" "}
-              <span className="font-bold text-gold">
-                +<Masked className="text-gold">{gain}</Masked>
-              </span>{" "}
-              marks
-            </p>
-            <span className="flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹{allAccessPriceInr()}
-            </span>
-          </div>
+          <p className="text-[11px] text-ink-tertiary">Computed from your attempt. Values unlock with All-Access.</p>
         </Card>
 
         <p className="text-center text-[11px] text-ink-tertiary">
@@ -243,6 +281,37 @@ export default function SampleConversionPage() {
               })}
               .
             </p>
+          </div>
+        )}
+
+        {/* Email capture at the unlock step (optional to skip). */}
+        {authed === false && (
+          <div className="rounded-xl border border-hairline bg-surface p-4">
+            <label htmlFor="lead-email" className="text-sm font-semibold text-ink">
+              Want your analysis sent to you?
+            </label>
+            <p className="mt-0.5 text-xs text-ink-tertiary">
+              Drop your email, optional. We&apos;ll send your report link so you can come back to it.
+            </p>
+            <div className="mt-2.5 flex gap-2">
+              <input
+                id="lead-email"
+                type="email"
+                inputMode="email"
+                value={leadEmail}
+                onChange={(e) => setLeadEmail(e.target.value)}
+                placeholder="you@email.com"
+                className="min-h-[44px] flex-1 rounded-lg border border-hairline-strong bg-bg px-3 text-sm text-ink outline-none focus:border-accent"
+              />
+              <button
+                type="button"
+                onClick={captureLead}
+                disabled={leadSaved || !leadEmail.trim()}
+                className="min-h-[44px] rounded-lg border border-hairline-strong px-4 text-sm font-semibold text-ink transition-premium hover:bg-panel disabled:opacity-50"
+              >
+                {leadSaved ? "Saved" : "Save"}
+              </button>
+            </div>
           </div>
         )}
 

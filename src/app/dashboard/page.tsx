@@ -12,6 +12,7 @@ import { sectionLabel } from "@/lib/cbt-questions";
 import { MarksenseEntry } from "@/components/marksense/entry";
 import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
+import { LEGAL_VERSION } from "@/lib/legal";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
@@ -151,6 +152,7 @@ export default function DashboardPage() {
     setPaying(paidTarget);
     void startRazorpayCheckout({
       plan: "mentor",
+      consent: { policyVersion: LEGAL_VERSION, consentAt: new Date().toISOString() },
       prefill: email ? { email } : undefined,
       // Payment captured + signature verified, but the plan is granted by the
       // webhook, not this callback. Show a "confirming" state and poll until the
@@ -522,6 +524,7 @@ function UpgradePanel({
   payError: string | null;
   onUpgrade: () => void;
 }) {
+  const [agreed, setAgreed] = useState(false);
   const ALL_ACCESS_PERKS = [
     "Every exam, current & upcoming",
     "Full 10,000+ question bank · unlimited mocks",
@@ -550,12 +553,29 @@ function UpgradePanel({
         ))}
       </ul>
 
+      {/* Pre-purchase consent (E2): affirmative, unticked by default. */}
+      <label className="flex items-start gap-2.5 text-xs leading-relaxed text-ink-secondary">
+        <input
+          type="checkbox"
+          checked={agreed}
+          onChange={(e) => setAgreed(e.target.checked)}
+          className="mt-0.5 h-4 w-4 flex-shrink-0 rounded border-hairline-strong text-accent focus:ring-accent/30"
+        />
+        <span>
+          I have read and agree to the{" "}
+          <Link href="/terms" target="_blank" className="font-medium text-accent hover:underline">Terms</Link>,{" "}
+          <Link href="/privacy-policy" target="_blank" className="font-medium text-accent hover:underline">Privacy Policy</Link>{" "}
+          and the no-refund{" "}
+          <Link href="/refund-policy" target="_blank" className="font-medium text-accent hover:underline">Cancellation &amp; Refund Policy</Link>.
+        </span>
+      </label>
+
       <div className="flex flex-col gap-3 sm:flex-row">
         <button
           onClick={() => onUpgrade()}
-          disabled={paying !== null}
+          disabled={paying !== null || !agreed}
           className={cn(
-            "inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-premium disabled:opacity-60",
+            "inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-premium disabled:opacity-50",
             "bg-gold-bright text-white hover:bg-gold"
           )}
         >

@@ -12,8 +12,13 @@ import { getViewer } from "@/lib/auth/plan";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
-/** The only anonymous path: the one-time 20-question random sample. */
+/**
+ * The only anonymous path: the one-time free sample. Now a single full timed
+ * section (25 Q / 15 min) flagged `sample:true`; the legacy <=20 random sample
+ * is still recognised for back-compat.
+ */
 function isSampleRequest(body: StartExamRequest): boolean {
+  if (body.sample === true) return true;
   return body.exam_type === "random_test" && (body.total_questions ?? 100) <= 20;
 }
 
@@ -190,6 +195,20 @@ export async function POST(request: NextRequest) {
       }
 
       case "random_test": {
+        // Free sample: one full timed section from a single subject (default
+        // Quantitative Aptitude), runnable anonymously.
+        if (sample && body.subject) {
+          title = title || `Free Section, ${body.subject}`;
+          const { data } = await supabase
+            .from("validated_questions")
+            .select("*")
+            .eq("subject", body.subject)
+            .limit(300);
+          const validSubj = ((data as ValidatedQuestion[]) || []).filter(isValidQuestion);
+          questions = deduplicateQuestions(shuffleArray(validSubj)).slice(0, totalQuestions);
+          break;
+        }
+
         title = title || "SSC CGL Full Length Mock Test";
 
         const subjects: Subject[] = [

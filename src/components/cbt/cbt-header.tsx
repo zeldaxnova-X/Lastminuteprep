@@ -2,77 +2,75 @@
 
 import React, { useEffect, useState } from "react";
 import { useTestStore } from "@/lib/store/use-test-store";
-import { Clock, Maximize2, Minimize2, Gauge } from "lucide-react";
+import { Clock, Maximize2, Minimize2 } from "lucide-react";
 
 interface CBTHeaderProps {
   title: string;
   totalQuestions: number;
 }
 
-export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) => {
+export const CBTHeader: React.FC<CBTHeaderProps> = ({ title }) => {
   const {
     timeRemaining,
     tickTimer,
     isSubmitted,
-    currentQuestionIndex,
     questionStatuses,
     isFullscreen,
     toggleFullscreen,
+    sections,
+    activeSectionIndex,
+    orderedIds,
   } = useTestStore();
-
-  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
 
   useEffect(() => {
     if (isSubmitted) return;
     const interval = setInterval(() => {
       tickTimer();
-      setElapsedSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(interval);
   }, [tickTimer, isSubmitted]);
 
   const formatTime = (seconds: number) => {
-    const hours = Math.floor(seconds / 3600);
-    const mins = Math.floor((seconds % 3600) / 60);
+    const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    if (hours > 0) return `${hours}:${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
     return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   };
 
-  const formatLivePace = (seconds: number) => {
-    if (seconds <= 0) return "0s";
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    if (mins > 0) return `${mins}m ${secs.toString().padStart(2, "0")}s`;
-    return `${secs}s`;
-  };
-
-  // §4: amber under 5:00, red under 1:00.
+  // Per-section: amber under 3:00, red under 1:00.
   const isCritical = timeRemaining <= 60;
-  const isLowTime = timeRemaining <= 300;
+  const isLowTime = timeRemaining <= 180;
 
+  const activeSection = sections[activeSectionIndex];
+  const sectionCount = sections.length || 1;
+  // Answered/marked scoped to the ACTIVE section only.
+  const sectionIds = activeSection
+    ? orderedIds.slice(activeSection.startIndex, activeSection.startIndex + activeSection.count)
+    : orderedIds;
   let answeredCount = 0;
   let markedCount = 0;
-  Object.values(questionStatuses).forEach((st) => {
+  for (const id of sectionIds) {
+    const st = questionStatuses[id];
     if (st === "answered" || st === "answered_marked") answeredCount++;
     if (st === "marked" || st === "answered_marked") markedCount++;
-  });
-
-  const remainingCount = Math.max(0, totalQuestions - answeredCount);
-  const attemptedCount = Math.max(1, currentQuestionIndex + 1);
-  const avgPaceSeconds = Math.round(elapsedSeconds / attemptedCount);
+  }
+  const remainingCount = Math.max(0, sectionIds.length - answeredCount);
 
   return (
     <header className="z-30 flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-white/90 px-3 py-2.5 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90 sm:px-5">
-      {/* Left: brand + paper title */}
+      {/* Left: brand + section indicator (the lock is never a surprise) */}
       <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
         <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-sm font-bold text-white shadow-sm">
           L
         </div>
         <div className="hidden h-5 w-px bg-slate-200 dark:bg-slate-700 sm:block" />
-        <h1 className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100 max-w-[150px] sm:max-w-xs md:max-w-md">
-          {title}
-        </h1>
+        <div className="min-w-0">
+          <p className="text-[10px] font-semibold uppercase tracking-wide text-indigo-500 dark:text-indigo-400">
+            Section {activeSectionIndex + 1} of {sectionCount}
+          </p>
+          <h1 className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100 max-w-[150px] sm:max-w-xs md:max-w-md">
+            {activeSection?.name || title}
+          </h1>
+        </div>
       </div>
 
       {/* Right: metrics + pace + fullscreen + clock */}
@@ -83,11 +81,6 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title, totalQuestions }) =
           <Metric label="Marked" value={markedCount} tone="violet" />
           <span className="h-6 w-px bg-slate-200 dark:bg-slate-700" />
           <Metric label="Left" value={remainingCount} tone="slate" />
-        </div>
-
-        <div className="hidden items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-xs font-medium text-slate-600 dark:border-slate-800 dark:bg-slate-800/60 dark:text-slate-300 md:flex">
-          <Gauge className="h-3.5 w-3.5 text-indigo-500" />
-          <span className="tabular-nums">{formatLivePace(avgPaceSeconds)}/Q</span>
         </div>
 
         <button

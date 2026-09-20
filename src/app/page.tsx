@@ -6,7 +6,6 @@ import {
   Timer,
   Compass,
   Target,
-  Layers,
   Sparkles,
 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
@@ -14,8 +13,8 @@ import { BrandLogo } from "@/components/brand-logo";
 import { AuthNav } from "@/components/auth/auth-nav";
 import { Reveal, CountUp } from "@/components/landing/motion";
 import { LiveQuestionCount } from "@/components/landing/live-stat";
-import { MarksenseReveal } from "@/components/landing/marksense-reveal";
 import { PricingPlans } from "@/components/landing/pricing-plans";
+import { MarksenseProof } from "@/components/landing/marksense-proof";
 import { getQuestionCount } from "@/lib/stats";
 import {
   allAccessPriceInr,
@@ -23,18 +22,32 @@ import {
   ALL_ACCESS_REGULAR_PRICE_INR,
   ALL_ACCESS_OFFER_END_LABEL,
 } from "@/lib/payments/pricing";
-import { HeroVisual } from "@/components/landing/hero-visual";
-import { ExamMarquee, Faq } from "@/components/landing/interactive";
+import { Faq } from "@/components/landing/faq";
 import { RazorpayBadge } from "@/components/payments/razorpay-badge";
-import { AspirationBand, GoalMontage } from "@/components/landing/bands";
-import { Framed } from "@/components/landing/photo";
 import { PalettePreview, CalibrationPreview } from "@/components/landing/previews";
 import { cn } from "@/lib/utils";
+
+const HOME_OG = "/api/og?title=" + encodeURIComponent("Four 15-minute locks. That's the exam now.");
 
 export const metadata = {
   title: "LastMilePrep: The last mile is where exams are won",
   description:
-    "Real CBT mocks for SSC CGL, thousands of genuine exam questions, and MarksenseAI, a proprietary engine that reads your confidence and tells you exactly how to score more. No sign-up to try.",
+    "Real CBT mocks for SSC CGL with the current four 15-minute sectional locks, plus MarksenseAI, our own engine that reads your confidence and shows you exactly how to score more. No sign-up to try.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "LastMilePrep, SSC CGL Tier 1 CBT with the real sectional locks",
+    description:
+      "Take a real four-section timed mock, then MarksenseAI turns your attempt into the decisions worth the most marks.",
+    url: "https://lastmileprep.in/",
+    images: [{ url: HOME_OG, width: 1200, height: 630, alt: "LastMilePrep" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LastMilePrep, SSC CGL Tier 1 CBT with the real sectional locks",
+    description:
+      "Take a real four-section timed mock, then MarksenseAI turns your attempt into the decisions worth the most marks.",
+    images: [HOME_OG],
+  },
 };
 
 /* Exam line-up shown on the landing page. SSC CGL is live; the rest render as
@@ -55,7 +68,7 @@ const EXAMS: {
 ];
 
 const STEPS = [
-  { n: "01", icon: Timer, title: "Sit a real CBT mock", body: "The exact interface, five-state palette, live timer, free navigation. No training wheels." },
+  { n: "01", icon: Timer, title: "Sit a real CBT mock", body: "The exact interface, five-state palette, and four 15-minute sectional locks. No training wheels." },
   { n: "02", icon: Compass, title: "Get your confidence-calibrated analysis", body: "We capture how sure you were on every question, then read it back against how you actually did." },
   { n: "03", icon: Target, title: "Know exactly what to fix", body: "Which questions to skip, how to guess under negative marking, and the marks each decision was worth." },
 ];
@@ -68,19 +81,15 @@ export default async function LandingPage() {
       <Nav />
       <main>
         <Hero />
+        <MarksenseProof />
         <Tension />
-        <MarksenseTeaser />
         <CbtRealism />
-        <Features questionCount={questionCount} />
-        <MultiExam />
         <HowItWorks />
-        <AspirationBand />
         <Stats questionCount={questionCount} />
         <Pricing questionCount={questionCount} />
+        <FounderNote />
         <FaqSection />
-        <ExamMarquee />
         <ExamBreadth />
-        <GoalMontage />
         <FinalCta />
       </main>
       <Footer />
@@ -145,7 +154,7 @@ function Hero() {
         <div className="absolute inset-0 hero-wash" />
       </div>
 
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto w-full max-w-3xl px-4 pb-14 pt-14 sm:px-6 sm:pb-16 sm:pt-20">
         <div>
           <h1 className="font-report text-[2.4rem] font-medium leading-[1.06] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.7rem]">
             <Reveal>You already know more</Reveal>
@@ -198,10 +207,6 @@ function Hero() {
             </ul>
           </Reveal>
         </div>
-
-        <Reveal delay={160}>
-          <HeroVisual />
-        </Reveal>
       </div>
     </section>
   );
@@ -244,63 +249,18 @@ function Tension() {
   );
 }
 
-/* Compact MarksenseAI teaser. Its whole job is to earn the click through to the
-   /marksenseai page, where the full cinematic sequence lives. MarksenseReveal
-   plays the half-moon arc + wordmark pop once on scroll-in; nothing scroll-linked. */
-function MarksenseTeaser() {
-  return (
-    <section className="mx-auto w-full max-w-4xl px-4 py-12 sm:px-6 sm:py-14">
-      <Reveal>
-        <div className="relative overflow-hidden rounded-3xl bg-panel-dark px-8 pb-7 pt-9 text-center ring-1 ring-white/10 sm:px-12">
-          <MarksenseReveal />
-          <div className="relative mt-7">
-            <Link
-              href="/marksenseai"
-              className="group inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.06] px-5 py-2 text-sm font-medium text-white/85 backdrop-blur transition-premium hover:border-white/35 hover:bg-white/10 hover:text-white"
-            >
-              See how it works
-              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-            </Link>
-          </div>
-        </div>
-      </Reveal>
-    </section>
-  );
-}
-
-/* Multi-exam access as a structural product advantage, not a footnote. */
-function MultiExam() {
-  return (
-    <section className="mx-auto w-full max-w-5xl px-4 py-14 sm:px-6 sm:py-16">
-      <Reveal>
-        <div className="rounded-3xl border border-hairline bg-surface p-8 text-center shadow-soft sm:p-10">
-          <Eyebrow>One subscription. Every exam.</Eyebrow>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Built once. Works everywhere.
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-ink-secondary">
-            Your plan covers SSC CGL today, and unlocks IBPS Clerk, SBI Clerk,
-            NEET, JEE, and UPSC the moment each goes live. No repurchase, no
-            separate accounts.
-          </p>
-        </div>
-      </Reveal>
-    </section>
-  );
-}
 
 function ExamBreadth() {
   return (
-    <section id="exams" className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
-      <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-        <Eyebrow>Every exam, one plan</Eyebrow>
+    <section id="exams" className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
+      <Reveal className="mx-auto mb-10 max-w-2xl text-center">
+        <Eyebrow>One pass, every exam</Eyebrow>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
           One engine, every major exam
         </h2>
         <p className="mt-3 text-base text-ink-secondary">
-          SSC CGL Tier 1 is live today. IBPS Clerk and SBI Clerk are next, with
-          JEE Main and NEET UG on the way, every one included in your
-          subscription the day it launches. No repurchase, no separate accounts.
+          SSC CGL Tier 1 is live today; IBPS Clerk, SBI Clerk, JEE Main and NEET UG
+          are on the way, each included the day it launches.
         </p>
       </Reveal>
 
@@ -398,18 +358,21 @@ function CbtRealism() {
                 Exam-day realism
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                The exact CBT interface, down to the muscle memory
+                Four 15-minute locks. That&apos;s the exam now.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-white/70">
-                Same timer, same five-state palette, same navigator. It faithfully
-                replicates the real computer-based test experience, so by exam day
-                it feels like your 40th test, not your first.
+                SSC CGL Tier 1 2026 gives you fifteen minutes per section. When the
+                timer hits zero, that section closes, no carrying time forward, no
+                coming back. Twenty-five questions, thirty-six seconds each. If you&apos;re
+                still practising on a single 60-minute clock, you&apos;re training a
+                reflex the exam no longer rewards.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Five-state palette: answered, not answered, marked, both, unvisited",
-                  "Single 60-minute timer that auto-submits, and survives a refresh",
-                  "Save & Next, Mark for Review, Clear, exactly as they behave in the hall",
+                  "Four separate 15-minute timers, each one locks on its own",
+                  "No carry-over, no returning to a section you've closed",
+                  "Five-state palette, Save & Next, Mark for Review, unchanged",
+                  "Survives a refresh; the clock keeps running, exactly like the hall",
                 ].map((t) => (
                   <li key={t} className="flex gap-2.5 text-sm text-white/70">
                     <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
@@ -422,33 +385,6 @@ function CbtRealism() {
           </div>
         </div>
       </Reveal>
-    </section>
-  );
-}
-
-function Features({ questionCount }: { questionCount: number }) {
-  const formatted = questionCount.toLocaleString("en-IN");
-  return (
-    <section id="features" className="mx-auto w-full max-w-6xl space-y-16 px-4 py-24 sm:space-y-24 sm:px-6 sm:py-28">
-      <FeatureRow
-        n="01"
-        icon={Layers}
-        title={`${formatted}+ real questions`}
-        body="A deep bank of genuine exam-standard questions, no filler, no padding. Practise full 100-question mocks or drill a single section, as many times as your cycle needs."
-        visual={
-          <div className="relative">
-            <Framed
-              src="/images/feature-questions.jpg"
-              alt="A student working through practice questions on a laptop"
-              aspect="4 / 3"
-              position="center"
-            />
-            <span className="absolute bottom-3 left-3 rounded-full bg-panel-dark/85 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm">
-              <span className="tabular text-accent">{formatted}+</span> questions
-            </span>
-          </div>
-        }
-      />
     </section>
   );
 }
@@ -504,13 +440,32 @@ function Stats({ questionCount }: { questionCount: number }) {
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
         <Stat value={<LiveQuestionCount initial={questionCount} />} label="Questions in the bank" />
         <Stat value={<CountUp end={100} />} label="Questions per full mock" />
-        <Stat value="4" label="Sections · 60-minute timer" />
+        <Stat value="4" label="Sections · 15 min each" />
         <Stat value={<>+2 / <span className="text-danger">−0.5</span></>} label="SSC CGL marking, live now" />
       </div>
+    </section>
+  );
+}
+
+/* Founder note in place of manufactured social proof. Name is a placeholder for
+   the founder to fill; the sentence is written from the founder's stated intent. */
+function FounderNote() {
+  return (
+    <section className="mx-auto w-full max-w-3xl px-4 py-14 sm:px-6 sm:py-16">
       <Reveal>
-        <p className="mt-6 text-center text-xs text-ink-tertiary">
-          Real numbers only, no invented user counts, no fabricated reviews.
-        </p>
+        <figure className="rounded-2xl border border-hairline bg-surface p-6 text-center shadow-soft sm:p-8">
+          <blockquote className="font-report text-lg leading-relaxed text-ink sm:text-xl">
+            &ldquo;I built LastMilePrep to be the best CBT practice software an SSC aspirant
+            can sit in front of, one that turns your own performance into the few decisions
+            that win you the most marks on exam day.&rdquo;
+          </blockquote>
+          <figcaption className="mt-4 text-sm text-ink-secondary">
+            <span className="font-semibold text-ink">[[FOUNDER_NAME]]</span>, Founder ·{" "}
+            <a href="mailto:hello@lastmileprep.in" className="font-medium text-accent hover:underline">
+              hello@lastmileprep.in
+            </a>
+          </figcaption>
+        </figure>
       </Reveal>
     </section>
   );
@@ -631,15 +586,22 @@ function FinalCta() {
 function Footer() {
   return (
     <footer className="border-t border-hairline">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:flex-row sm:px-6">
-        <BrandLogo />
-        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-ink-secondary">
-          <Link href="/terms" className="transition-premium hover:text-ink">Terms</Link>
-          <Link href="/privacy-policy" className="transition-premium hover:text-ink">Privacy</Link>
-          <Link href="/refund-policy" className="transition-premium hover:text-ink">Refund</Link>
-          <Link href="/contact-us" className="transition-premium hover:text-ink">Contact</Link>
-        </nav>
-        <p className="text-xs text-ink-tertiary">© {new Date().getFullYear()} LastMilePrep</p>
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 px-4 py-10 sm:px-6">
+        <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
+          <BrandLogo />
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-ink-secondary">
+            <Link href="/terms" className="transition-premium hover:text-ink">Terms</Link>
+            <Link href="/privacy-policy" className="transition-premium hover:text-ink">Privacy</Link>
+            <Link href="/refund-policy" className="transition-premium hover:text-ink">Refund</Link>
+            <Link href="/ethical-ai-policy" className="transition-premium hover:text-ink">Ethical AI</Link>
+            <Link href="/contact-us" className="transition-premium hover:text-ink">Contact</Link>
+          </nav>
+        </div>
+        <p className="text-center text-[11px] leading-relaxed text-ink-tertiary">
+          [[LEGAL_ENTITY_NAME]] · [[REGISTERED_ADDRESS]] ·{" "}
+          <a href="mailto:hello@lastmileprep.in" className="hover:text-ink">hello@lastmileprep.in</a>
+          <br />© {new Date().getFullYear()} LastMilePrep. Not affiliated with SSC, IBPS, SBI, NTA, NBE or UPSC.
+        </p>
       </div>
     </footer>
   );
@@ -652,40 +614,6 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
     <p className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
       {children}
     </p>
-  );
-}
-
-function FeatureRow({
-  n,
-  icon: Icon,
-  title,
-  body,
-  visual,
-  reverse = false,
-}: {
-  n: string;
-  icon: React.ComponentType<{ className?: string }>;
-  title: string;
-  body: string;
-  visual: React.ReactNode;
-  reverse?: boolean;
-}) {
-  return (
-    <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
-      <Reveal className={cn(reverse && "lg:order-2")}>
-        <div className="flex items-center gap-3">
-          <span className="font-report text-3xl font-medium text-ink-tertiary tabular">{n}</span>
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-soft text-accent">
-            <Icon className="h-5 w-5" />
-          </span>
-        </div>
-        <h3 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{title}</h3>
-        <p className="mt-3 max-w-md text-base leading-relaxed text-ink-secondary">{body}</p>
-      </Reveal>
-      <Reveal delay={120} className={cn(reverse && "lg:order-1")}>
-        {visual}
-      </Reveal>
-    </div>
   );
 }
 

@@ -37,6 +37,8 @@ export function AuthForm() {
   const [busy, setBusy] = useState<null | "google" | "email">(null);
   const [error, setError] = useState<string | null>(oauthError ? "Google sign-in failed. Please try again." : null);
   const [notice, setNotice] = useState<string | null>(null);
+  // Age gate (E4): required 18+ confirmation to create an account.
+  const [age18, setAge18] = useState(false);
 
   const supabase = createSupabaseBrowserClient();
   const origin = typeof window !== "undefined" ? window.location.origin : "";
@@ -50,12 +52,22 @@ export function AuthForm() {
     if (!EMAIL_RE.test(email)) return "Enter a valid email address.";
     if (mode !== "forgot" && password.length < 6) return "Password must be at least 6 characters.";
     if (mode === "signup" && !name.trim()) return "Please tell us your name.";
+    if (mode === "signup" && !age18) return "Please confirm you are 18 or older to create an account.";
     return null;
   }
 
   async function handleGoogle() {
     setError(null);
     setNotice(null);
+    if (mode === "signup" && !age18) {
+      setError("Please confirm you are 18 or older to create an account.");
+      return;
+    }
+    // Persisted to the profile after auth (see welcome page); recorded now so an
+    // OAuth round-trip doesn't lose the affirmative act.
+    if (mode === "signup" && typeof window !== "undefined") {
+      try { localStorage.setItem("lmp_age_confirmed", "1"); } catch {}
+    }
     setBusy("google");
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
@@ -88,10 +100,16 @@ export function AuthForm() {
       }
 
       if (mode === "signup") {
+        if (typeof window !== "undefined") {
+          try { localStorage.setItem("lmp_age_confirmed", "1"); } catch {}
+        }
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
-          options: { data: { full_name: name.trim() }, emailRedirectTo: signupCallback },
+          options: {
+            data: { full_name: name.trim(), age_confirmed_at: new Date().toISOString() },
+            emailRedirectTo: signupCallback,
+          },
         });
         if (error) throw error;
         // Supabase returns an obfuscated user with empty identities when the
@@ -227,6 +245,22 @@ export function AuthForm() {
               Forgot password?
             </button>
           </div>
+        )}
+
+        {mode === "signup" && (
+          <label className="flex items-start gap-2.5 text-xs leading-relaxed text-ink-secondary">
+            <input
+              type="checkbox"
+              checked={age18}
+              onChange={(e) => setAge18(e.target.checked)}
+              className="mt-0.5 h-4 w-4 flex-shrink-0 rounded border-hairline-strong text-accent focus:ring-accent/30"
+            />
+            <span>
+              I confirm I am 18 years or older, and I agree to the{" "}
+              <a href="/terms" target="_blank" className="font-medium text-accent hover:underline">Terms</a> and{" "}
+              <a href="/privacy-policy" target="_blank" className="font-medium text-accent hover:underline">Privacy Policy</a>.
+            </span>
+          </label>
         )}
 
         <button

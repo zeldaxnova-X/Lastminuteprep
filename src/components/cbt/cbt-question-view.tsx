@@ -14,6 +14,7 @@ import {
   Keyboard,
   SlidersHorizontal,
   Check,
+  Lock,
 } from "lucide-react";
 import type {
   ValidatedQuestion,
@@ -109,16 +110,28 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
     saveAndNext,
     markForReviewAndNext,
     setQuestionIndex,
+    lockCurrentSection,
     timePerQuestion,
     setZoomedImage,
     questionStatuses,
     confidences,
     setConfidence,
+    sections,
+    activeSectionIndex,
   } = useTestStore();
+
+  // Active section bounds: navigation is scoped to the open section only.
+  const activeSection = sections[activeSectionIndex];
+  const secStart = activeSection ? activeSection.startIndex : 0;
+  const secEnd = activeSection ? activeSection.startIndex + activeSection.count - 1 : totalQuestions - 1;
+  const secCount = activeSection ? activeSection.count : totalQuestions;
+  const localIndex = currentQuestionIndex - secStart; // 0-based within section
+  const isLastSection = activeSectionIndex >= sections.length - 1;
 
   // Optional study aids (all off by default → authentic CBT on first load).
   const [aids, toggleAid] = useStudyAids();
   const [prefsOpen, setPrefsOpen] = React.useState(false);
+  const [confirmLock, setConfirmLock] = React.useState(false);
 
   const selectedOption = userResponses[currentQuestion.id] || null;
   const confidence = confidences[currentQuestion.id] ?? "unsure";
@@ -163,17 +176,17 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         selectOption(currentQuestion.id, OPTION_KEYS[Number(key) - 1]);
       } else if (key === "Enter") {
         e.preventDefault();
-        saveAndNext(currentQuestion.id, totalQuestions);
+        saveAndNext(currentQuestion.id);
       } else if (upper === "M") {
-        markForReviewAndNext(currentQuestion.id, totalQuestions);
+        markForReviewAndNext(currentQuestion.id);
       } else if (upper === "C") {
         clearResponse(currentQuestion.id);
       } else if (upper === "B") {
         toggleBookmark();
       } else if (key === "ArrowRight") {
-        if (currentQuestionIndex < totalQuestions - 1) setQuestionIndex(currentQuestionIndex + 1);
+        if (currentQuestionIndex < secEnd) setQuestionIndex(currentQuestionIndex + 1);
       } else if (key === "ArrowLeft") {
-        if (currentQuestionIndex > 0) setQuestionIndex(currentQuestionIndex - 1);
+        if (currentQuestionIndex > secStart) setQuestionIndex(currentQuestionIndex - 1);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -181,7 +194,8 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
   }, [
     currentQuestion.id,
     currentQuestionIndex,
-    totalQuestions,
+    secStart,
+    secEnd,
     selectOption,
     saveAndNext,
     markForReviewAndNext,
@@ -211,8 +225,8 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-white/80 px-4 py-2.5 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/80 sm:px-6">
         <div className="flex items-center gap-3">
           <span className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-base">
-            Question <span className="tabular-nums">{currentQuestionIndex + 1}</span>
-            <span className="font-normal text-slate-400"> of {totalQuestions}</span>
+            Question <span className="tabular-nums">{localIndex + 1}</span>
+            <span className="font-normal text-slate-400"> of {secCount}</span>
           </span>
           <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300 sm:text-xs">
             {label}
@@ -354,15 +368,15 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
             <ActionButton
-              onClick={() => currentQuestionIndex > 0 && setQuestionIndex(currentQuestionIndex - 1)}
-              disabled={currentQuestionIndex === 0}
+              onClick={() => currentQuestionIndex > secStart && setQuestionIndex(currentQuestionIndex - 1)}
+              disabled={currentQuestionIndex <= secStart}
               variant="ghost"
             >
               <ChevronLeft className="h-4 w-4" />
               <span>Prev</span>
             </ActionButton>
             <ActionButton
-              onClick={() => markForReviewAndNext(currentQuestion.id, totalQuestions)}
+              onClick={() => markForReviewAndNext(currentQuestion.id)}
               variant={isMarked ? "violet-active" : "ghost"}
             >
               <Flag className="h-3.5 w-3.5" />
@@ -375,16 +389,56 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             </ActionButton>
           </div>
 
-          <ActionButton
-            onClick={() => saveAndNext(currentQuestion.id, totalQuestions)}
-            variant="primary"
-            className="w-full sm:w-auto"
-          >
-            <span>Save &amp; Next</span>
-            <ChevronRight className="h-4 w-4" />
-          </ActionButton>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+            <ActionButton
+              onClick={() => saveAndNext(currentQuestion.id)}
+              variant="primary"
+              className="w-full sm:w-auto"
+            >
+              <span>Save &amp; Next</span>
+              <ChevronRight className="h-4 w-4" />
+            </ActionButton>
+            <ActionButton
+              onClick={() => setConfirmLock(true)}
+              variant="ghost"
+              className="w-full sm:w-auto"
+            >
+              <Lock className="h-3.5 w-3.5" />
+              <span>{isLastSection ? "Submit test" : "Submit section"}</span>
+            </ActionButton>
+          </div>
         </div>
       </div>
+
+      {/* Confirm early section lock (forfeits remaining time, no going back). */}
+      {confirmLock && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm" role="dialog" aria-modal="true">
+          <div className="w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-5 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+            <h3 className="text-base font-semibold text-slate-900 dark:text-slate-50">
+              {isLastSection ? "Submit the test?" : `Lock ${activeSection?.name || "this section"} and move on?`}
+            </h3>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              {isLastSection
+                ? "This ends your test and submits all sections for scoring. You cannot return."
+                : "The remaining time in this section is forfeited, not carried forward, and you cannot return to it, exactly like the real exam."}
+            </p>
+            <div className="mt-4 flex gap-2">
+              <button
+                onClick={() => setConfirmLock(false)}
+                className="flex-1 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+              >
+                Keep working
+              </button>
+              <button
+                onClick={() => { setConfirmLock(false); lockCurrentSection(); }}
+                className="flex-1 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500"
+              >
+                {isLastSection ? "Submit test" : "Lock & continue"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -392,7 +446,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
 // ---------------------------------------------------------------------------
 
 const CONFIDENCE_OPTIONS: { value: Confidence; label: string; active: string }[] = [
-  { value: "guessed", label: "Guessed", active: "border-rose-300 bg-rose-50 text-rose-600 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-300" },
+  { value: "guessed", label: "Guessing", active: "border-rose-300 bg-rose-50 text-rose-600 dark:border-rose-500/40 dark:bg-rose-500/10 dark:text-rose-300" },
   { value: "unsure", label: "Unsure", active: "border-amber-300 bg-amber-50 text-amber-600 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-300" },
   { value: "confident", label: "Confident", active: "border-emerald-300 bg-emerald-50 text-emerald-600 dark:border-emerald-500/40 dark:bg-emerald-500/10 dark:text-emerald-300" },
 ];

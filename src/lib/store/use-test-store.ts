@@ -11,37 +11,57 @@ export type QuestionStatus =
 
 export type Option = "A" | "B" | "C" | "D";
 
-/** Confidence signal captured on Save, the AI Mentor's key calibration input (§4). */
+/** Confidence signal captured on Save, the MarksenseAI's key calibration input. */
 export type Confidence = "guessed" | "unsure" | "confident";
+
+/**
+ * A section is a CONTIGUOUS range over the flat ordered question list. SSC CGL
+ * Tier 1 2026 runs four independent 15-minute sectional timers in a fixed order;
+ * only the active section's questions are reachable, and when a section's clock
+ * hits zero it locks permanently and the next one opens. Unused time is never
+ * carried forward.
+ */
+export interface SectionMeta {
+  name: string;
+  startIndex: number; // index into orderedIds where this section begins
+  count: number;
+}
+
+/** Input shape for initTest: each section with its ordered question ids. */
+export interface SectionInput {
+  name: string;
+  questionIds: string[];
+}
+
+/** Minutes each section runs, per the 2026 sectional pattern. */
+export const SECTION_MINUTES = 15;
 
 interface TestState {
   examId: string | null;
   attemptId: string | null;
-  currentSectionIndex: number;
-  currentQuestionIndex: number;
 
-  /**
-   * Transient per-question selection (what radio is highlighted). This is NOT
-   * the committed answer, selecting an option does not save it (§4). It is
-   * reset to the saved value when the user navigates away without saving.
-   */
+  /** Flat, section-contiguous ordered question ids (source of truth for index). */
+  orderedIds: string[];
+  sections: SectionMeta[];
+  activeSectionIndex: number;
+  /** Wall-clock deadline (epoch ms) for each section; null until it starts. */
+  sectionEndsAt: (number | null)[];
+  /** True once a section's time expired or was submitted; never reopens. */
+  sectionLocked: boolean[];
+  perSectionSeconds: number;
+
+  currentQuestionIndex: number; // GLOBAL index; always within the active section
+
   userResponses: Record<string, Option | null>;
-  /**
-   * Committed answers, the ONLY values that are persisted and evaluated. Set
-   * exclusively by Save & Next / Mark for Review & Next / Clear Response.
-   */
   savedResponses: Record<string, Option | null>;
-
   questionStatuses: Record<string, QuestionStatus>;
-  /** Per-question confidence; defaults to "unsure" so it never blocks flow. */
   confidences: Record<string, Confidence>;
-  timePerQuestion: Record<string, number>; // questionId -> total seconds
-  answerChanges: Record<string, number>; // questionId -> count of changes
+  timePerQuestion: Record<string, number>;
+  answerChanges: Record<string, number>;
   initialOptions: Record<string, Option | null>;
-  visitOrder: Record<string, number>; // questionId -> 1-based order first visited
+  visitOrder: Record<string, number>;
 
-  timeRemaining: number; // seconds (derived from endsAt for display)
-  endsAt: number | null; // epoch ms when the exam expires, wall-clock source of truth
+  timeRemaining: number; // seconds left in the ACTIVE section (for display)
   isSubmitted: boolean;
   submittedAt: string | null;
   startTime: number | null;
@@ -54,16 +74,17 @@ interface TestState {
   initTest: (
     examId: string,
     attemptId: string | null,
-    questionIds: string[],
-    timeLimitMinutes: number
+    sections: SectionInput[],
+    perSectionMinutes?: number
   ) => void;
-  setSectionIndex: (index: number) => void;
   setQuestionIndex: (index: number) => void;
   selectOption: (questionId: string, optionId: Option) => void;
   setConfidence: (questionId: string, confidence: Confidence) => void;
   clearResponse: (questionId: string) => void;
-  saveAndNext: (questionId: string, totalQuestions: number) => void;
-  markForReviewAndNext: (questionId: string, totalQuestions: number) => void;
+  saveAndNext: (questionId: string) => void;
+  markForReviewAndNext: (questionId: string) => void;
+  /** Explicit "lock this section now and move on" (forfeits remaining time). */
+  lockCurrentSection: () => void;
   tickTimer: () => void;
   submitTest: () => Promise<void>;
   resetTest: () => void;
@@ -71,7 +92,7 @@ interface TestState {
   toggleFullscreen: () => void;
 }
 
-const LOCAL_STORAGE_KEY = "lastmileprep_active_test_v3";
+const LOCAL_STORAGE_KEY = "lastmileprep_active_test_v4"; // v4: sectional timers
 
 /** Persist the full serialisable slice for crash recovery. */
 function persist(state: Partial<TestState>) {
@@ -83,16 +104,28 @@ function persist(state: Partial<TestState>) {
   }
 }
 
-/** Remaining seconds derived from the wall-clock deadline. */
+/** Remaining seconds derived from a wall-clock deadline. */
 function remainingFrom(endsAt: number | null): number {
   if (!endsAt) return 0;
   return Math.max(0, Math.round((endsAt - Date.now()) / 1000));
 }
 
+/** Inclusive [start, end] global index range of a section. */
+function rangeOf(sections: SectionMeta[], i: number): { start: number; end: number } {
+  const s = sections[i];
+  if (!s) return { start: 0, end: 0 };
+  return { start: s.startIndex, end: s.startIndex + s.count - 1 };
+}
+
 export const useTestStore = create<TestState>((set, get) => ({
   examId: null,
   attemptId: null,
-  currentSectionIndex: 0,
+  orderedIds: [],
+  sections: [],
+  activeSectionIndex: 0,
+  sectionEndsAt: [],
+  sectionLocked: [],
+  perSectionSeconds: SECTION_MINUTES * 60,
   currentQuestionIndex: 0,
   userResponses: {},
   savedResponses: {},
@@ -102,8 +135,7 @@ export const useTestStore = create<TestState>((set, get) => ({
   answerChanges: {},
   initialOptions: {},
   visitOrder: {},
-  timeRemaining: 3600,
-  endsAt: null,
+  timeRemaining: SECTION_MINUTES * 60,
   isSubmitted: false,
   submittedAt: null,
   startTime: null,
@@ -112,31 +144,36 @@ export const useTestStore = create<TestState>((set, get) => ({
   zoomedImage: null,
   isFullscreen: false,
 
-  initTest: (examId, attemptId, questionIds, timeLimitMinutes) => {
+  initTest: (examId, attemptId, sectionInputs, perSectionMinutes = SECTION_MINUTES) => {
+    const perSectionSeconds = perSectionMinutes * 60;
+
     // Resume an in-progress attempt for this exam, if one is saved.
     if (typeof window !== "undefined") {
       try {
         const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
         if (saved) {
           const parsed = JSON.parse(saved) as TestState;
-          if (parsed.examId === examId && !parsed.isSubmitted) {
-            // Recompute remaining time from the persisted wall-clock deadline so
-            // a refresh/crash resumes correctly, time keeps running while away.
-            const endsAt = parsed.endsAt ?? Date.now() + parsed.timeRemaining * 1000;
-            const timeRemaining = remainingFrom(endsAt);
-            set({
-              ...parsed,
-              endsAt,
-              timeRemaining,
-              lastQuestionEnteredAt: Date.now(),
-            });
-            if (timeRemaining <= 0) get().submitTest();
+          if (parsed.examId === examId && !parsed.isSubmitted && parsed.sections?.length) {
+            set({ ...parsed, lastQuestionEnteredAt: Date.now() });
+            // Fast-forward any sections whose wall-clock expired while away.
+            advanceExpiredSections(get, set);
+            if (!get().isSubmitted) {
+              set({ timeRemaining: remainingFrom(get().sectionEndsAt[get().activeSectionIndex]) });
+            }
             return;
           }
         }
       } catch (e) {
         console.error("Error reading saved test state", e);
       }
+    }
+
+    // Fresh start: flatten sections (in order) into the global ordered list.
+    const orderedIds: string[] = [];
+    const sections: SectionMeta[] = [];
+    for (const sec of sectionInputs) {
+      sections.push({ name: sec.name, startIndex: orderedIds.length, count: sec.questionIds.length });
+      orderedIds.push(...sec.questionIds);
     }
 
     const userResponses: Record<string, Option | null> = {};
@@ -148,7 +185,7 @@ export const useTestStore = create<TestState>((set, get) => ({
     const initialOptions: Record<string, Option | null> = {};
     const visitOrder: Record<string, number> = {};
 
-    questionIds.forEach((id, idx) => {
+    orderedIds.forEach((id, idx) => {
       userResponses[id] = null;
       savedResponses[id] = null;
       questionStatuses[id] = idx === 0 ? "not_answered" : "not_visited";
@@ -157,13 +194,22 @@ export const useTestStore = create<TestState>((set, get) => ({
       answerChanges[id] = 0;
       initialOptions[id] = null;
     });
-    if (questionIds[0]) visitOrder[questionIds[0]] = 1;
+    if (orderedIds[0]) visitOrder[orderedIds[0]] = 1;
 
     const now = Date.now();
+    // Only section 0's clock starts now; the rest start when they open.
+    const sectionEndsAt = sections.map((_, i) => (i === 0 ? now + perSectionSeconds * 1000 : null));
+    const sectionLocked = sections.map(() => false);
+
     const newState = {
       examId,
       attemptId: attemptId || examId,
-      currentSectionIndex: 0,
+      orderedIds,
+      sections,
+      activeSectionIndex: 0,
+      sectionEndsAt,
+      sectionLocked,
+      perSectionSeconds,
       currentQuestionIndex: 0,
       userResponses,
       savedResponses,
@@ -173,8 +219,7 @@ export const useTestStore = create<TestState>((set, get) => ({
       answerChanges,
       initialOptions,
       visitOrder,
-      timeRemaining: timeLimitMinutes * 60,
-      endsAt: now + timeLimitMinutes * 60 * 1000,
+      timeRemaining: perSectionSeconds,
       isSubmitted: false,
       submittedAt: null,
       startTime: now,
@@ -188,28 +233,26 @@ export const useTestStore = create<TestState>((set, get) => ({
     persist(newState);
   },
 
-  setSectionIndex: (index) => set({ currentSectionIndex: index }),
-
   setQuestionIndex: (index) => {
     const state = get();
-    const now = Date.now();
-    const qIds = Object.keys(state.questionStatuses);
-    const currentQId = qIds[state.currentQuestionIndex];
-    const targetQId = qIds[index];
+    const { start, end } = rangeOf(state.sections, state.activeSectionIndex);
+    // Only the active section is reachable; ignore out-of-section jumps.
+    if (index < start || index > end) return;
 
-    // Accumulate time on the question being left.
+    const now = Date.now();
+    const currentQId = state.orderedIds[state.currentQuestionIndex];
+    const targetQId = state.orderedIds[index];
+
     const timePerQuestion = { ...state.timePerQuestion };
     if (currentQId && state.lastQuestionEnteredAt) {
       const elapsed = Math.round((now - state.lastQuestionEnteredAt) / 1000);
       timePerQuestion[currentQId] = (timePerQuestion[currentQId] || 0) + Math.max(0, elapsed);
     }
 
-    // Jumping does NOT save (§4): discard any unsaved selection on the question
-    // being left by resetting its transient value back to the committed one.
+    // Jumping does NOT save: discard any unsaved selection on the question left.
     const userResponses = { ...state.userResponses };
     if (currentQId) userResponses[currentQId] = state.savedResponses[currentQId] ?? null;
 
-    // Mark the target visited (grey -> red) and record first-visit order.
     const questionStatuses = { ...state.questionStatuses };
     const visitOrder = { ...state.visitOrder };
     let visitCounter = state.visitCounter;
@@ -234,7 +277,6 @@ export const useTestStore = create<TestState>((set, get) => ({
     set(newState);
     persist(newState);
 
-    // Sync the committed state of the question we left (time, saved answer).
     if (state.attemptId && currentQId) {
       syncAnswer(state.attemptId, currentQId, {
         selected: state.savedResponses[currentQId] ?? null,
@@ -255,7 +297,6 @@ export const useTestStore = create<TestState>((set, get) => ({
         : state.answerChanges[questionId] || 0;
     const initialOpt = state.initialOptions[questionId] ?? optionId;
 
-    // Transient only, committing happens on Save / Mark (§4).
     set({
       userResponses: { ...state.userResponses, [questionId]: optionId },
       answerChanges: { ...state.answerChanges, [questionId]: changeCount },
@@ -268,7 +309,6 @@ export const useTestStore = create<TestState>((set, get) => ({
     const confidences = { ...state.confidences, [questionId]: confidence };
     set({ confidences });
     persist({ ...state, confidences });
-    // If already committed, propagate the updated confidence to the DB.
     const status = state.questionStatuses[questionId];
     if (
       state.attemptId &&
@@ -309,22 +349,24 @@ export const useTestStore = create<TestState>((set, get) => ({
     }
   },
 
-  saveAndNext: (questionId, totalQuestions) => {
-    commitAndAdvance(get, set, questionId, totalQuestions, "save");
+  saveAndNext: (questionId) => {
+    commitAndAdvance(get, set, questionId, "save");
   },
 
-  markForReviewAndNext: (questionId, totalQuestions) => {
-    commitAndAdvance(get, set, questionId, totalQuestions, "mark");
+  markForReviewAndNext: (questionId) => {
+    commitAndAdvance(get, set, questionId, "mark");
+  },
+
+  lockCurrentSection: () => {
+    advanceSection(get, set);
   },
 
   tickTimer: () => {
     const state = get();
     if (state.isSubmitted) return;
-    const timeRemaining = remainingFrom(state.endsAt);
+    const timeRemaining = remainingFrom(state.sectionEndsAt[state.activeSectionIndex]);
 
-    // Accrue time on the current question for pacing analytics.
-    const qIds = Object.keys(state.questionStatuses);
-    const currentQId = qIds[state.currentQuestionIndex];
+    const currentQId = state.orderedIds[state.currentQuestionIndex];
     let timePerQuestion = state.timePerQuestion;
     if (currentQId) {
       timePerQuestion = {
@@ -335,7 +377,7 @@ export const useTestStore = create<TestState>((set, get) => ({
 
     if (timeRemaining <= 0) {
       set({ timeRemaining: 0, timePerQuestion });
-      get().submitTest();
+      advanceSection(get, set); // lock this section; open next, or submit if last
     } else {
       set({ timeRemaining, timePerQuestion });
     }
@@ -368,7 +410,12 @@ export const useTestStore = create<TestState>((set, get) => ({
     set({
       examId: null,
       attemptId: null,
-      currentSectionIndex: 0,
+      orderedIds: [],
+      sections: [],
+      activeSectionIndex: 0,
+      sectionEndsAt: [],
+      sectionLocked: [],
+      perSectionSeconds: SECTION_MINUTES * 60,
       currentQuestionIndex: 0,
       userResponses: {},
       savedResponses: {},
@@ -378,8 +425,7 @@ export const useTestStore = create<TestState>((set, get) => ({
       answerChanges: {},
       initialOptions: {},
       visitOrder: {},
-      timeRemaining: 3600,
-      endsAt: null,
+      timeRemaining: SECTION_MINUTES * 60,
       isSubmitted: false,
       submittedAt: null,
       startTime: null,
@@ -406,15 +452,82 @@ export const useTestStore = create<TestState>((set, get) => ({
 }));
 
 /**
+ * Lock the active section and open the next one (fresh 15-minute clock), or
+ * submit the whole test if the active section was the last. Used by both the
+ * timer expiry and the explicit "lock this section now" action. Unused time on
+ * the section being left is forfeited, never carried forward.
+ */
+function advanceSection(get: () => TestState, set: (partial: Partial<TestState>) => void) {
+  const state = get();
+  if (state.isSubmitted) return;
+  const active = state.activeSectionIndex;
+  const sectionLocked = [...state.sectionLocked];
+  sectionLocked[active] = true;
+
+  const isLast = active >= state.sections.length - 1;
+  if (isLast) {
+    set({ sectionLocked });
+    void get().submitTest();
+    return;
+  }
+
+  const now = Date.now();
+  const next = active + 1;
+  const sectionEndsAt = [...state.sectionEndsAt];
+  sectionEndsAt[next] = now + state.perSectionSeconds * 1000;
+  const { start } = rangeOf(state.sections, next);
+
+  const questionStatuses = { ...state.questionStatuses };
+  const visitOrder = { ...state.visitOrder };
+  let visitCounter = state.visitCounter;
+  const firstId = state.orderedIds[start];
+  if (firstId && questionStatuses[firstId] === "not_visited") questionStatuses[firstId] = "not_answered";
+  if (firstId && visitOrder[firstId] === undefined) {
+    visitCounter += 1;
+    visitOrder[firstId] = visitCounter;
+  }
+
+  const newState = {
+    ...state,
+    sectionLocked,
+    sectionEndsAt,
+    activeSectionIndex: next,
+    currentQuestionIndex: start,
+    questionStatuses,
+    visitOrder,
+    visitCounter,
+    timeRemaining: state.perSectionSeconds,
+    lastQuestionEnteredAt: now,
+  };
+  set(newState);
+  persist(newState);
+}
+
+/**
+ * On resume, fast-forward through any sections whose wall-clock deadline already
+ * passed while the tab was closed. A section that expired is locked; the next
+ * one opens with a fresh clock (it legitimately had not started). If the last
+ * section expired, the test submits.
+ */
+function advanceExpiredSections(get: () => TestState, set: (partial: Partial<TestState>) => void) {
+  let guard = 0;
+  while (guard++ < 8) {
+    const s = get();
+    if (s.isSubmitted) return;
+    const remaining = remainingFrom(s.sectionEndsAt[s.activeSectionIndex]);
+    if (remaining > 0) return;
+    advanceSection(get, set);
+  }
+}
+
+/**
  * Commit the current question's transient selection, set its status, then
- * advance. This is the ONLY path (besides Clear) that writes savedResponses, * enforcing "selecting an option does not save it" (§4). "Answered & Marked"
- * IS a committed, evaluable answer.
+ * advance WITHIN the active section (never across a section boundary).
  */
 function commitAndAdvance(
   get: () => TestState,
   set: (partial: Partial<TestState>) => void,
   questionId: string,
-  totalQuestions: number,
   action: "save" | "mark"
 ) {
   const state = get();
@@ -430,9 +543,9 @@ function commitAndAdvance(
       ? "answered_marked"
       : "marked";
 
-  const qIds = Object.keys(state.questionStatuses);
-  const nextIndex = Math.min(state.currentQuestionIndex + 1, totalQuestions - 1);
-  const nextQId = qIds[nextIndex];
+  const { end } = rangeOf(state.sections, state.activeSectionIndex);
+  const nextIndex = Math.min(state.currentQuestionIndex + 1, end); // clamp to section
+  const nextQId = state.orderedIds[nextIndex];
 
   const elapsed = state.lastQuestionEnteredAt
     ? Math.round((now - state.lastQuestionEnteredAt) / 1000)

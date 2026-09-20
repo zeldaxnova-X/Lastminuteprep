@@ -17,6 +17,7 @@ import {
   ShieldAlert,
 } from "lucide-react";
 import { useTestStore } from "@/lib/store/use-test-store";
+import { sectionsFromQuestions } from "@/lib/cbt-sections";
 
 function InstructionsContent() {
   const router = useRouter();
@@ -64,12 +65,10 @@ function InstructionsContent() {
       }
 
       resetTest();
-      initTest(
-        data.attempt_id,
-        data.attempt_id,
-        data.questions.map((q: { id: string }) => q.id),
-        Math.round(data.time_limit_seconds / 60)
+      const { sections } = sectionsFromQuestions(
+        (data.questions ?? []) as Array<{ id: string; subject?: string | null }>
       );
+      initTest(data.attempt_id, data.attempt_id, sections);
 
       router.push(`/test/${data.attempt_id}`);
     } catch (err: unknown) {
@@ -136,9 +135,10 @@ function InstructionsContent() {
           <span>3. Duration & Marking Scheme</span>
         </div>
         <div className="text-xs text-gray-700 space-y-1.5 leading-relaxed">
-          <p>• Total time limit for the examination is <strong>{timeLimitMinutes} minutes</strong>.</p>
+          <p>• Each section has its own <strong>15-minute</strong> timer, matching the SSC CGL Tier 1 2026 pattern.</p>
+          <p>• When a section&apos;s time ends it <strong>locks permanently</strong>. You cannot return to it, and unused time is not carried to the next section.</p>
           <p>• Correct Answer: <strong>+2.0 Marks</strong> | Incorrect Answer: <strong>−0.50 Negative Marks</strong> | Unanswered: <strong>0 Marks</strong>.</p>
-          <p>• The server clock will count down remaining time at the top right of your screen.</p>
+          <p>• The section clock counts down at the top of your screen; the exam auto-submits when the final section ends.</p>
         </div>
       </div>
 

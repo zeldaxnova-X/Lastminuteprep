@@ -262,6 +262,8 @@ export interface StartExamRequest {
   subject?: Subject;
   /** Optional finer-grained topic within a subject_test (e.g. "Time & Work"). */
   topic?: string;
+  /** Anonymous free sample: one full timed section (subject required). */
+  sample?: boolean;
   year?: number;
   paper_type?: PaperType;
   total_questions?: number;

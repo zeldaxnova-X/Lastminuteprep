@@ -33,7 +33,7 @@ export function PalettePreview({ dark = false }: { dark?: boolean }) {
     >
       <div className="mb-4 flex items-center justify-between">
         <span className={cn("text-xs font-semibold uppercase tracking-wider", dark ? "text-white/50" : "text-ink-tertiary")}>
-          Question palette
+          Section 1 of 4
         </span>
         <span
           className={cn(
@@ -41,7 +41,7 @@ export function PalettePreview({ dark = false }: { dark?: boolean }) {
             dark ? "bg-white/10 text-white" : "bg-panel text-ink"
           )}
         >
-          58:24
+          14:02
         </span>
       </div>
       <div className="grid grid-cols-5 gap-2">

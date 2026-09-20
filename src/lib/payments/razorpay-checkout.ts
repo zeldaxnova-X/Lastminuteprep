@@ -12,6 +12,8 @@ interface CheckoutHandlers {
   plan: PaidPlan;
   /** MarksenseAI duration; Pro is always monthly. Defaults to monthly. */
   billing?: Billing;
+  /** Pre-purchase policy consent, stamped onto the order for enforceability. */
+  consent?: { policyVersion: string; consentAt: string };
   prefill?: { name?: string; email?: string };
   /**
    * Called once the payment succeeded and its checkout signature verified
@@ -112,7 +114,7 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     const res = await fetch("/api/razorpay/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ plan: opts.plan, billing: opts.billing ?? "monthly" }),
+      body: JSON.stringify({ plan: opts.plan, billing: opts.billing ?? "monthly", consent: opts.consent }),
     });
     if (res.status === 401) {
       opts.onError("Please sign in to continue.");

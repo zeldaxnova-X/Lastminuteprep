@@ -21,7 +21,7 @@ export function PricingPlans({ questionCount }: { questionCount: number }) {
 
   const allAccessFeatures = [
     "Every exam, current and upcoming",
-    `${qStr}+ real questions · unlimited attempts`,
+    `${qStr} real questions · unlimited attempts`,
     "Full 100-question mocks & section drills",
     "Exact CBT interface, timer & palette",
     "Full report: accuracy, timing & section breakdown",

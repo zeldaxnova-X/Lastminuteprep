@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import { razorpay, CURRENCY, EXAM_SCOPE } from "@/lib/payments/razorpay";
 import { applyDiscount } from "@/lib/payments/coupons";
@@ -16,12 +16,20 @@ import { allAccessAmountPaise, allAccessAccessDays, isLaunchOffer, ALL_ACCESS_DE
  * plan + days are stamped into the order `notes` so the webhook grants exactly
  * what was paid for, to exactly who paid, no client trust.
  */
-export async function POST() {
+export async function POST(req: NextRequest) {
   // Identity is server-derived from the request cookies, the SAME helper the
   // CBT routes use (getSessionContext -> cookie-aware @supabase/ssr client).
   const { user, supabase } = await getSessionContext();
   if (!user) return json401();
   const userId = user.id;
+
+  // Pre-purchase policy consent (E2), stamped into the order notes so the
+  // accepted policy version + timestamp are provable later.
+  const body = (await req.json().catch(() => ({}))) as {
+    consent?: { policyVersion?: string; consentAt?: string };
+  };
+  const policyVersion = (body.consent?.policyVersion || "").slice(0, 16) || null;
+  const consentAt = (body.consent?.consentAt || "").slice(0, 40) || null;
 
   // Single product: the All-Access pass. `plan` is always granted as `mentor`
   // (unlocks everything). During launch a ₹49 one-time pass runs THROUGH the
@@ -72,6 +80,8 @@ export async function POST() {
         days: String(days),
         scope: EXAM_SCOPE,
         description: ALL_ACCESS_DESCRIPTION,
+        ...(policyVersion ? { policyVersion } : {}),
+        ...(consentAt ? { consentAt } : {}),
         ...(couponCode ? { coupon: couponCode } : {}),
       },
     });

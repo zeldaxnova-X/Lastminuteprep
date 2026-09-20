@@ -14,10 +14,35 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+const SITE_URL = "https://lastmileprep.in";
+const OG_DEFAULT = "/api/og?title=" + encodeURIComponent("Free timed SSC CGL section, real sectional locks");
+
 export const metadata: Metadata = {
-  title: "LastMilePrep, SSC CGL Practice Platform",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "LastMilePrep, SSC CGL Practice Platform",
+    template: "%s · LastMilePrep",
+  },
   description:
-    "Practice SSC CGL previous year papers with a faithful TCS iON CBT interface and an MarksenseAI that shows you exactly how to score more marks.",
+    "Practise SSC CGL Tier 1 on a faithful CBT interface with the real four 15-minute sectional locks, and MarksenseAI that shows you exactly how to score more marks.",
+  applicationName: "LastMilePrep",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "LastMilePrep",
+    url: SITE_URL,
+    title: "LastMilePrep, SSC CGL Practice Platform",
+    description:
+      "A faithful SSC CGL Tier 1 CBT with the real four 15-minute sectional locks, plus MarksenseAI to turn your mock into more marks.",
+    images: [{ url: OG_DEFAULT, width: 1200, height: 630, alt: "LastMilePrep" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LastMilePrep, SSC CGL Practice Platform",
+    description:
+      "A faithful SSC CGL Tier 1 CBT with the real four 15-minute sectional locks, plus MarksenseAI to turn your mock into more marks.",
+    images: [OG_DEFAULT],
+  },
 };
 
 export default function RootLayout({

@@ -26,6 +26,22 @@ interface ReviewRow {
 }
 
 /**
+ * Remove proprietary methodology from the analysis before it leaves the server
+ * (hard rule 4): global calibration thresholds and the blind-guess EV formula
+ * artifact. Per-user computed outputs (scores, gains, weakpoints, the personal
+ * break-even value) are preserved.
+ */
+function stripMethodology(analysis: MentorAnalysis | null): MentorAnalysis | null {
+  if (!analysis) return null;
+  const clone = JSON.parse(JSON.stringify(analysis)) as Record<string, unknown>;
+  const calibration = clone.calibration as Record<string, unknown> | undefined;
+  if (calibration) delete calibration.thresholds;
+  const skip = clone.skipStrategy as Record<string, unknown> | undefined;
+  if (skip) delete skip.blindGuessEV;
+  return clone as unknown as MentorAnalysis;
+}
+
+/**
  * GET /api/cbt/exams/[attemptId]/report
  * Returns everything the premium report UI needs: deterministic scores, the
  * MentorAnalysis JSON, the optimal-score gap, any stored narrative, and the
@@ -121,7 +137,11 @@ export async function GET(
   const reportAllowed = canSeeReport(viewer.plan);
   const mentorAllowed = canSeeMentor(viewer.plan);
 
-  const analysis = (report?.analysis ?? null) as MentorAnalysis | null;
+  const rawAnalysis = (report?.analysis ?? null) as MentorAnalysis | null;
+  // Rule 4: never expose methodology (config thresholds / EV formula artifacts)
+  // in an API response. Strip them; keep the per-user computed outputs the report
+  // legitimately shows.
+  const analysis = stripMethodology(rawAnalysis);
   const netScore = (result as { net_score?: number } | null)?.net_score ?? 0;
   const optimalScore = report?.optimal_score ?? null;
   // The single "+X marks" figure, always returned so the conversion screen can

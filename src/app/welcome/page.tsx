@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
+import { AgeConfirmSync } from "@/components/auth/age-confirm-sync";
 
 export const metadata = { title: "Welcome to LastMilePrep" };
 
@@ -13,6 +14,7 @@ export const metadata = { title: "Welcome to LastMilePrep" };
 export default function WelcomePage() {
   return (
     <div className="flex min-h-screen flex-col bg-bg">
+      <AgeConfirmSync />
       <header className="border-b border-hairline">
         <div className="mx-auto flex h-16 max-w-6xl items-center px-4 sm:px-6">
           <BrandLogo />

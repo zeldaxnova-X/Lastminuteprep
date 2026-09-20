@@ -9,6 +9,7 @@ import { Button, ButtonLink } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
 import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lucide-react";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
+import { sectionsFromQuestions } from "@/lib/cbt-sections";
 
 // One-time-per-device guard for the anonymous sample. Access to premium areas
 // (dashboard, report, MarksenseAI) is enforced server-side in middleware +
@@ -50,14 +51,19 @@ export default function SamplePage() {
     setStarting(true);
     setError(null);
     try {
+      // One full timed section: 25 questions, 15 minutes, one real sectional
+      // lock, exactly like the 2026 pattern. Defaults to Quantitative Aptitude,
+      // where the timer bites hardest.
       const res = await fetch("/api/cbt/exams/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           exam_type: "random_test",
-          total_questions: 20,
+          sample: true,
+          subject: "Quantitative Aptitude",
+          total_questions: 25,
           time_limit_minutes: 15,
-          title: "Free Sample, 20 Questions",
+          title: "Free Section, Quantitative Aptitude",
         }),
       });
       const data = await res.json();
@@ -67,12 +73,10 @@ export default function SamplePage() {
       // Mark the one-time sample as consumed (stubbed identity). // TODO: auth.
       localStorage.setItem(SAMPLE_USED_KEY, "1");
       resetTest();
-      initTest(
-        data.attempt_id,
-        data.attempt_id,
-        data.questions.map((q: { id: string }) => q.id),
-        Math.round(data.time_limit_seconds / 60)
+      const { sections } = sectionsFromQuestions(
+        (data.questions ?? []) as Array<{ id: string; subject?: string | null }>
       );
+      initTest(data.attempt_id, data.attempt_id, sections);
       router.push(`/test/${data.attempt_id}?sample=1`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not start the sample.");
@@ -154,19 +158,19 @@ export default function SamplePage() {
                 Free sample
               </p>
               <h1 className="text-2xl font-semibold tracking-tight text-ink">
-                20 questions. The real interface.
+                One full timed section. The real lock.
               </h1>
               <p className="text-sm leading-relaxed text-ink-secondary">
-                A short mock in the exact CBT interface, the real palette, timer
-                and navigation. At the end you&apos;ll see your net score and a
-                preview of what the full report reveals.
+                25 Quantitative Aptitude questions, 15 minutes, the exact CBT
+                interface with the real sectional lock. At the end you&apos;ll see
+                your net score and a preview of what the full report reveals.
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3">
-              <MiniFact icon={ListChecks} label="20 questions" />
+              <MiniFact icon={ListChecks} label="25 questions" />
               <MiniFact icon={Timer} label="15 minutes" />
-              <MiniFact icon={Gauge} label="Real CBT" />
+              <MiniFact icon={Gauge} label="Real lock" />
             </div>
 
             {error && (

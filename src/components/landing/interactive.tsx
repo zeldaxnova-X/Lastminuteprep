@@ -70,7 +70,7 @@ export function ExamMarquee() {
 const FAQS: { q: string; a: string }[] = [
   {
     q: "Is this the actual exam interface?",
-    a: "It faithfully replicates the real computer-based test experience, the same five-state question palette, the same countdown timer, and the same free navigation and Save / Mark-for-Review controls. It isn't built from official software, but on exam day the flow will feel familiar.",
+    a: "It's a faithful replica, not official software. Same four 15-minute sectional locks, same five-state palette, same countdown, same Save and Mark-for-Review behaviour. We aren't affiliated with the Staff Selection Commission and we don't claim to be. What we can promise is that on exam day the flow won't be new to you.",
   },
   {
     q: "What exactly is the free sample?",

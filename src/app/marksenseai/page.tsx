@@ -14,10 +14,27 @@ import { Reveal } from "@/components/landing/motion";
 import { MarksenseCinematic } from "@/components/landing/marksense-cinematic";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 
+const OG = "/api/og?title=" + encodeURIComponent("MarksenseAI: the marks your score is hiding");
+
 export const metadata = {
   title: "MarksenseAI: the intelligence behind every mark you earn",
   description:
     "MarksenseAI reads your confidence, timing, and decisions against the marks behind them, then shows you exactly how to score more. See how it works.",
+  alternates: { canonical: "/marksenseai" },
+  openGraph: {
+    title: "MarksenseAI, the marks your score is hiding",
+    description:
+      "Our own engine reads your confidence, timing and decisions, then shows the arithmetic of how to score more.",
+    url: "https://lastmileprep.in/marksenseai",
+    images: [{ url: OG, width: 1200, height: 630, alt: "MarksenseAI" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MarksenseAI, the marks your score is hiding",
+    description:
+      "Our own engine reads your confidence, timing and decisions, then shows the arithmetic of how to score more.",
+    images: [OG],
+  },
 };
 
 /* The full engine benefit set. Every item is something the deterministic
