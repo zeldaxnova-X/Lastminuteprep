@@ -8,13 +8,15 @@ import { Card } from "@/components/ui/card";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
 import { ArrowRight, Timer, ListChecks, Gauge, Loader2, AlertTriangle } from "lucide-react";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 
 // One-time-per-device guard for the anonymous sample. Access to premium areas
 // (dashboard, report, MarksenseAI) is enforced server-side in middleware +
 // getViewer(), so this local flag is only a UX hint, not a security control.
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
 
-// Founding prices, kept in sync with the landing #pricing section.
+// Single All-Access pass, kept in sync with the landing #pricing section via
+// pricing.ts (₹49 launch → ₹99 after the offer end date).
 const PRICING_TIERS: {
   name: string;
   blurb: string;
@@ -22,8 +24,15 @@ const PRICING_TIERS: {
   strike?: string;
   highlight?: boolean;
 }[] = [
-  { name: "Pro", blurb: "Full bank · unlimited mocks · report", price: "₹19/mo" },
-  { name: "MarksenseAI", blurb: "Everything in Pro + the MarksenseAI", price: "₹79/mo", highlight: true },
+  {
+    name: "All-Access",
+    blurb: isLaunchOffer()
+      ? `Every exam · MarksenseAI · one-time, until ${ALL_ACCESS_OFFER_END_LABEL}`
+      : "Every exam · unlimited mocks · full report · MarksenseAI",
+    price: `₹${allAccessPriceInr()}`,
+    strike: undefined,
+    highlight: true,
+  },
 ];
 
 export default function SamplePage() {
@@ -148,9 +157,9 @@ export default function SamplePage() {
                 20 questions. The real interface.
               </h1>
               <p className="text-sm leading-relaxed text-ink-secondary">
-                A short mock in the exact CBT interface, palette, timer, and
-                confidence capture included. At the end you&apos;ll see your net
-                score and a preview of what the full report reveals.
+                A short mock in the exact CBT interface, the real palette, timer
+                and navigation. At the end you&apos;ll see your net score and a
+                preview of what the full report reveals.
               </p>
             </div>
 

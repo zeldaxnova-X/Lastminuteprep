@@ -3,6 +3,14 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  allAccessPriceInr,
+  isLaunchOffer,
+  ALL_ACCESS_REGULAR_PRICE_INR,
+  ALL_ACCESS_OFFER_END_LABEL,
+} from "@/lib/payments/pricing";
+
+const AA_PRICE = allAccessPriceInr();
 
 /* ---------------- Exam marquee ---------------- */
 
@@ -69,16 +77,18 @@ const FAQS: { q: string; a: string }[] = [
     a: "A one-time 20-question CBT in the real interface, tied to your account. You'll see your net score at the end. It doesn't include the full report, that's what the paid tiers unlock.",
   },
   {
-    q: "What's the difference between Pro and MarksenseAI?",
-    a: "Pro (₹19/month) gives you the practice and the proof: unlimited attempts on the full question bank and the complete performance report (accuracy, timing, section breakdown). MarksenseAI adds the decision engine on top: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan. Both cover every exam on the platform, current and upcoming.",
+    q: "What do I get with All-Access?",
+    a: `Everything. One All-Access pass gives you unlimited attempts on the full question bank, the complete performance report (accuracy, timing, section breakdown), and the MarksenseAI decision engine on top: your exact skip strategy, your own break-even guess rule under negative marking, and your score-maximisation plan. It covers every exam on the platform, current and upcoming.`,
   },
   {
     q: "How much does it cost?",
-    a: "Three tiers. Free is a one-time 20-question sample. Pro is ₹19/month for unlimited exams and the full report, without MarksenseAI. MarksenseAI is ₹99/month at launch and much less per month on longer plans: ₹249 quarterly, ₹399 half-yearly, or ₹599 a year (about ₹50/month). These are launch prices, locked in while you stay subscribed; the struck-through figure is the regular rate they rise to. Cancel anytime.",
+    a: isLaunchOffer()
+      ? `Two options. Free is a one-time 20-question sample. All-Access will be ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month, but as an early-launch deal you pay ₹${AA_PRICE} once and get full access to every exam plus MarksenseAI until ${ALL_ACCESS_OFFER_END_LABEL}, no recurring charge during launch. After that, All-Access is ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`
+      : `Two options. Free is a one-time 20-question sample. All-Access is ₹${AA_PRICE}/month and unlocks every exam plus MarksenseAI, no separate tiers.`,
   },
   {
-    q: "Does one subscription cover every exam?",
-    a: "Yes. Your MarksenseAI plan covers SSC CGL today and unlocks IBPS Clerk, SBI Clerk, NEET, JEE and UPSC the moment each goes live, no repurchase and no separate accounts.",
+    q: "Does one pass cover every exam?",
+    a: "Yes. Your All-Access pass covers SSC CGL today and unlocks IBPS Clerk, SBI Clerk, NEET, JEE and UPSC the moment each goes live, no repurchase and no separate accounts.",
   },
   {
     q: "Which exams are supported?",

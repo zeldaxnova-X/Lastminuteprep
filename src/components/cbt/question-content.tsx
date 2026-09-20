@@ -13,6 +13,8 @@ interface QuestionContentProps {
   textClassName?: string;
   /** Max height utility class for images (e.g. "max-h-72"). */
   imageMaxHeight?: string;
+  /** Show a "Tap image to enlarge" hint under zoomable figures (stem only). */
+  showZoomHint?: boolean;
   className?: string;
 }
 
@@ -27,6 +29,7 @@ export const QuestionContent: React.FC<QuestionContentProps> = ({
   onZoom,
   textClassName = "",
   imageMaxHeight = "max-h-80",
+  showZoomHint = false,
   className = "",
 }) => {
   if (!blocks || blocks.length === 0) return null;
@@ -53,17 +56,26 @@ export const QuestionContent: React.FC<QuestionContentProps> = ({
         if (block.kind === "image" && block.url) {
           // Click the figure itself to zoom, no overlay controls, so nothing
           // can be mistaken for a correctness indicator during an exam.
+          // Sizing: never distort (object-contain + h-auto/w-auto), never overflow
+          // the column (max-w-full), and stay legible on a phone (a generous
+          // height cap that scales with the viewport). Centered so narrow figures
+          // don't hug the edge.
           return (
-            <figure key={i} className="inline-block max-w-full">
+            <figure key={i} className="flex max-w-full flex-col items-center">
               <img
                 src={block.url}
                 alt="Question figure"
                 loading="lazy"
                 onClick={onZoom ? () => onZoom(block.url!) : undefined}
-                className={`${imageMaxHeight} w-auto max-w-full rounded-xl border border-slate-200 bg-white object-contain dark:border-slate-700 dark:bg-slate-100 ${
+                className={`${imageMaxHeight} h-auto w-auto max-w-full rounded-xl border border-slate-200 bg-white object-contain dark:border-slate-700 dark:bg-slate-100 ${
                   onZoom ? "cursor-zoom-in" : ""
                 }`}
               />
+              {onZoom && showZoomHint && (
+                <figcaption className="mt-1.5 select-none text-[11px] font-medium text-slate-400 dark:text-slate-500">
+                  Tap image to enlarge
+                </figcaption>
+              )}
             </figure>
           );
         }

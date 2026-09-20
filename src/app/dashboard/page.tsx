@@ -10,7 +10,8 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { ButtonLink } from "@/components/ui/button";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { MarksenseEntry } from "@/components/marksense/entry";
-import { startRazorpayCheckout, waitForPlanUpgrade, type Billing } from "@/lib/payments/razorpay-checkout";
+import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
@@ -128,15 +129,14 @@ export default function DashboardPage() {
     if (!intent) return;
     autoCheckoutRan.current = true;
     window.history.replaceState({}, "", "/dashboard");
-    const [p, b] = intent.split(":");
-    const target: Plan | null = p === "mentor" ? "mentor" : p === "pro" ? "pro" : null;
-    if (!target) return;
-    // Don't re-charge an account that already holds this (or a higher) tier.
-    if (target === "mentor" && plan === "mentor") return;
-    if (target === "pro" && (plan === "pro" || plan === "mentor")) return;
-    const valid = ["monthly", "quarterly", "halfyearly", "annual"] as const;
-    const billing: Billing = valid.includes(b as Billing) ? (b as Billing) : "monthly";
-    upgrade(target, billing);
+    const [p] = intent.split(":");
+    // Single product: any checkout intent (allaccess, or legacy mentor/pro) buys
+    // the All-Access pass, which grants `mentor`.
+    const known = p === "allaccess" || p === "mentor" || p === "pro";
+    if (!known) return;
+    // Don't re-charge an account that already holds full access.
+    if (plan === "mentor") return;
+    upgrade();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, plan]);
 
@@ -144,15 +144,13 @@ export default function DashboardPage() {
   const hasData = analytics?.has_completed_attempts ?? false;
   const dash = (v: React.ReactNode) => (loading ? "…" : v);
 
-  function upgrade(target: Plan, billing: Billing = "monthly") {
-    if (target === "free") return;
-    const paidTarget = target === "mentor" ? "mentor" : "pro";
+  function upgrade() {
+    // Single product: every upgrade CTA buys the All-Access pass (grants mentor).
+    const paidTarget: Plan = "mentor";
     setPayError(null);
-    setPaying(target);
+    setPaying(paidTarget);
     void startRazorpayCheckout({
-      plan: paidTarget,
-      // Pro is monthly-only; MarksenseAI honours the chosen duration.
-      billing: paidTarget === "pro" ? "monthly" : billing,
+      plan: "mentor",
       prefill: email ? { email } : undefined,
       // Payment captured + signature verified, but the plan is granted by the
       // webhook, not this callback. Show a "confirming" state and poll until the
@@ -263,7 +261,7 @@ export default function DashboardPage() {
             {plan === "mentor" && planExpiresAt && (
               <p className="text-xs font-medium text-ink-tertiary">MarksenseAI renews {fmtDate(planExpiresAt)}</p>
             )}
-            <MarksenseEntry plan={plan} onUnlock={() => upgrade("mentor")} />
+            <MarksenseEntry plan={plan} onUnlock={() => upgrade()} />
             {plan === "mentor" && (
               <div className="grid gap-2.5 sm:grid-cols-3">
                 <QuickAction
@@ -283,19 +281,18 @@ export default function DashboardPage() {
         <div id="upgrade" className="scroll-mt-24 empty:hidden">
           {!loading && plan === "free" && (
             <UpgradePanel
-              heading="Unlock the full practice bank"
-              sub="Free gives you one sample. Go Pro for the entire 10,000+ question bank, unlimited mocks, and full deterministic reports."
+              heading="Unlock everything with All-Access"
+              sub="Free gives you one sample. One All-Access pass unlocks every exam, the entire 10,000+ question bank, unlimited mocks, full reports, and the MarksenseAI engine."
               latestAttempt={latestAttempt}
               paying={paying}
               payError={payError}
               onUpgrade={upgrade}
-              showBoth
             />
           )}
           {!loading && plan === "pro" && (
             <UpgradePanel
-              heading="Add the MarksenseAI"
-              sub="You have full practice + reports. Upgrade to MarksenseAI for the skip strategy, break-even guess rule, and your score-maximisation plan."
+              heading="Add the MarksenseAI with All-Access"
+              sub="You have full practice + reports. All-Access adds the MarksenseAI decision engine, your skip strategy, break-even guess rule, and score-maximisation plan, on top."
               latestAttempt={null}
               paying={paying}
               payError={payError}
@@ -318,7 +315,7 @@ export default function DashboardPage() {
           </div>
           {!loading && !canPractice && (
             <p className="flex items-center gap-1.5 text-xs text-ink-tertiary">
-              <Lock className="h-3.5 w-3.5" /> Detailed stats, history, and reports unlock with Pro.
+              <Lock className="h-3.5 w-3.5" /> Detailed stats, history, and reports unlock with All-Access.
             </p>
           )}
         </section>
@@ -350,14 +347,14 @@ export default function DashboardPage() {
                 <button
                   key={m.key}
                   type="button"
-                  onClick={() => upgrade("pro")}
+                  onClick={() => upgrade()}
                   disabled={paying !== null}
-                  aria-label={`${m.title}, unlock with Pro`}
+                  aria-label={`${m.title}, unlock with All-Access`}
                   className="group text-left"
                 >
                   <Card className="relative flex h-full flex-col justify-between overflow-hidden p-6 opacity-90">
                     <span className="absolute right-3 top-3 flex items-center gap-1 rounded-md bg-gold-soft px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-gold">
-                      <Lock className="h-3 w-3" /> Pro
+                      <Lock className="h-3 w-3" /> All-Access
                     </span>
                     <div className="space-y-3">
                       <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-panel text-ink-tertiary">
@@ -367,7 +364,7 @@ export default function DashboardPage() {
                       <p className="text-sm leading-relaxed text-ink-secondary">{m.desc}</p>
                     </div>
                     <div className="mt-5 flex items-center justify-between border-t border-hairline pt-4 text-sm font-semibold text-gold">
-                      <span>Unlock with Pro, ₹19</span>
+                      <span>Unlock All-Access, ₹{allAccessPriceInr()}</span>
                       <Lock className="h-4 w-4" />
                     </div>
                   </Card>
@@ -517,21 +514,20 @@ function UpgradePanel({
   paying,
   payError,
   onUpgrade,
-  showBoth = false,
 }: {
   heading: string;
   sub: string;
   latestAttempt: AttemptRow | null;
   paying: Plan | null;
   payError: string | null;
-  onUpgrade: (plan: Plan) => void;
-  showBoth?: boolean;
+  onUpgrade: () => void;
 }) {
-  const PRO_PERKS = [
-    "Full 10,000+ question bank",
-    "Unlimited PYP, Topic & Random mocks",
-    "Complete section & timing reports",
+  const ALL_ACCESS_PERKS = [
+    "Every exam, current & upcoming",
+    "Full 10,000+ question bank · unlimited mocks",
+    "Complete reports + the MarksenseAI engine",
   ];
+  const launch = isLaunchOffer();
   return (
     <Card className="space-y-5 p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -546,42 +542,35 @@ function UpgradePanel({
         )}
       </div>
 
-      {showBoth && (
-        <ul className="grid gap-2 sm:grid-cols-3">
-          {PRO_PERKS.map((p) => (
-            <li key={p} className="flex items-center gap-2 text-sm text-ink-secondary">
-              <Check className="h-4 w-4 flex-shrink-0 text-success" /> {p}
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className="grid gap-2 sm:grid-cols-3">
+        {ALL_ACCESS_PERKS.map((p) => (
+          <li key={p} className="flex items-center gap-2 text-sm text-ink-secondary">
+            <Check className="h-4 w-4 flex-shrink-0 text-success" /> {p}
+          </li>
+        ))}
+      </ul>
 
       <div className="flex flex-col gap-3 sm:flex-row">
-        {showBoth && (
-          <button
-            onClick={() => onUpgrade("pro")}
-            disabled={paying !== null}
-            className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-white shadow-soft transition-premium hover:bg-accent-hover disabled:opacity-60"
-          >
-            {paying === "pro" ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-            Go Pro, ₹19/mo
-          </button>
-        )}
         <button
-          onClick={() => onUpgrade("mentor")}
+          onClick={() => onUpgrade()}
           disabled={paying !== null}
           className={cn(
             "inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-premium disabled:opacity-60",
             "bg-gold-bright text-white hover:bg-gold"
           )}
         >
-          {paying === "mentor" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-          {showBoth ? "Go MarksenseAI, ₹99/mo" : "Unlock MarksenseAI, ₹99/mo"}
+          {paying !== null ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
+          Unlock All-Access, ₹{allAccessPriceInr()}
+          {launch && <span className="text-white/70">one-time</span>}
         </button>
       </div>
 
       {payError && <p className="text-sm text-danger">{payError}</p>}
-      <p className="text-xs text-ink-tertiary">Honest founding prices, no fake discounts. Cancel anytime.</p>
+      <p className="text-xs text-ink-tertiary">
+        {launch
+          ? `One-time payment, full access until ${ALL_ACCESS_OFFER_END_LABEL}. Then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`
+          : `Every exam + MarksenseAI, ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`}
+      </p>
       <RazorpayBadge className="pt-1" />
     </Card>
   );

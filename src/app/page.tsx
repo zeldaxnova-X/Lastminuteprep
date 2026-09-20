@@ -7,6 +7,7 @@ import {
   Compass,
   Target,
   Layers,
+  Sparkles,
 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
@@ -16,6 +17,12 @@ import { LiveQuestionCount } from "@/components/landing/live-stat";
 import { MarksenseReveal } from "@/components/landing/marksense-reveal";
 import { PricingPlans } from "@/components/landing/pricing-plans";
 import { getQuestionCount } from "@/lib/stats";
+import {
+  allAccessPriceInr,
+  isLaunchOffer,
+  ALL_ACCESS_REGULAR_PRICE_INR,
+  ALL_ACCESS_OFFER_END_LABEL,
+} from "@/lib/payments/pricing";
 import { HeroVisual } from "@/components/landing/hero-visual";
 import { ExamMarquee, Faq } from "@/components/landing/interactive";
 import { RazorpayBadge } from "@/components/payments/razorpay-badge";
@@ -57,6 +64,7 @@ export default async function LandingPage() {
   const questionCount = await getQuestionCount();
   return (
     <div className="flex min-h-screen flex-col bg-bg">
+      <LaunchBanner />
       <Nav />
       <main>
         <Hero />
@@ -81,6 +89,35 @@ export default async function LandingPage() {
 }
 
 /* ------------------------------------------------------------------ */
+
+/* Prominent launch-offer bar: ₹49 All-Access, shown site-top while the launch
+   price is live (auto-hides after the offer end date via pricing.ts). */
+function LaunchBanner() {
+  if (!isLaunchOffer()) return null;
+  const price = allAccessPriceInr();
+  return (
+    <Link
+      href="#pricing"
+      className="group block bg-gradient-to-r from-accent to-violet text-white transition-opacity hover:opacity-95"
+    >
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4 py-2 text-center text-[13px] font-medium sm:text-sm">
+        <span className="inline-flex items-center gap-1.5">
+          <Sparkles className="h-3.5 w-3.5" />
+          <span className="font-semibold">Launch offer</span>
+        </span>
+        <span>
+          <span className="font-bold tabular">₹{price}</span> one-time, all exams{" "}
+          <span className="font-semibold">+ MarksenseAI</span> until {ALL_ACCESS_OFFER_END_LABEL}
+        </span>
+        <span className="hidden text-white/70 sm:inline">·</span>
+        <span className="text-white/85">then ₹{ALL_ACCESS_REGULAR_PRICE_INR}/mo</span>
+        <span className="inline-flex items-center gap-0.5 font-semibold underline-offset-2 group-hover:underline">
+          Get it <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </Link>
+  );
+}
 
 function Nav() {
   return (
@@ -142,7 +179,14 @@ function Hero() {
 
           <Reveal delay={440}>
             <p className="mt-5 text-sm font-medium text-ink-secondary">
-              One subscription. Every exam. No separate purchases.
+              {isLaunchOffer() ? (
+                <>
+                  <span className="font-semibold text-ink">₹{allAccessPriceInr()} one-time</span>
+                  , every exam + MarksenseAI until {ALL_ACCESS_OFFER_END_LABEL}. Then ₹{ALL_ACCESS_REGULAR_PRICE_INR}/month.
+                </>
+              ) : (
+                <>₹{allAccessPriceInr()}/month, every exam + MarksenseAI. No separate purchases.</>
+              )}
             </p>
             <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-ink-secondary">
               {["No sign-up to try", "Real CBT interface", "One-time free sample"].map((t) => (
@@ -477,14 +521,26 @@ function Pricing({ questionCount }: { questionCount: number }) {
     <section id="pricing" className="border-t border-hairline bg-panel/40">
       <div className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
         <Reveal className="mx-auto mb-10 max-w-2xl text-center">
-          <Eyebrow>One subscription. Every exam.</Eyebrow>
+          <Eyebrow>One pass. Every exam.</Eyebrow>
           <h2 className="mt-3 font-report text-4xl font-medium tracking-tight text-ink sm:text-5xl">
-            Simple, honest pricing
+            One price. Everything unlocked.
           </h2>
           <p className="mt-4 text-base text-ink-secondary">
-            Start free. Go Pro for unlimited exams and full reports, or unlock
-            MarksenseAI for the decision engine on top. Every paid plan covers
-            every exam, current and upcoming.
+            Start free, then{" "}
+            {isLaunchOffer() ? (
+              <>
+                a one-time{" "}
+                <span className="font-semibold text-ink">₹{allAccessPriceInr()}</span>{" "}
+                pass unlocks every exam, unlimited mocks, full reports, and the
+                MarksenseAI engine, with full access until {ALL_ACCESS_OFFER_END_LABEL}.
+              </>
+            ) : (
+              <>
+                <span className="font-semibold text-ink">₹{allAccessPriceInr()}/month</span>{" "}
+                unlocks every exam, unlimited mocks, full reports, and the
+                MarksenseAI engine, no separate purchases.
+              </>
+            )}
           </p>
         </Reveal>
 
@@ -495,8 +551,9 @@ function Pricing({ questionCount }: { questionCount: number }) {
         <Reveal>
           <p className="mt-8 flex items-center justify-center gap-2 text-center text-xs text-ink-tertiary">
             <Check className="h-3.5 w-3.5 text-success" />
-            These are launch prices, locked in while you stay subscribed. The
-            struck-through figure is the real rate they rise to. Cancel anytime.
+            {isLaunchOffer()
+              ? `₹${allAccessPriceInr()} is a one-time early-access pass, full access until ${ALL_ACCESS_OFFER_END_LABEL}. After that, All-Access is ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`
+              : `All-Access is ₹${allAccessPriceInr()}/month. Every exam included.`}
           </p>
           <RazorpayBadge className="mt-4" />
         </Reveal>

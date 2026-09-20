@@ -12,6 +12,7 @@ import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
 import { ProfileTieIn } from "@/components/marksense/profile-tie-in";
+import { allAccessPriceInr } from "@/lib/payments/pricing";
 import {
   Loader2,
   Sparkles,
@@ -297,7 +298,7 @@ function MentorLockedCard() {
             className="flex-shrink-0 bg-gold-bright text-white hover:bg-gold"
           >
             <Sparkles className="h-4 w-4" />
-            Unlock, ₹79/mo
+            Unlock All-Access, ₹{allAccessPriceInr()}
           </ButtonLink>
         </div>
       </div>

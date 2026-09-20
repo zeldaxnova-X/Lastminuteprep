@@ -16,7 +16,7 @@ interface Viewer {
   plan: Plan;
 }
 
-const PLAN_LABEL: Record<Plan, string> = { free: "Free", pro: "Pro", mentor: "MarksenseAI" };
+const PLAN_LABEL: Record<Plan, string> = { free: "Free", pro: "Pro", mentor: "All-Access" };
 const PLAN_BADGE: Record<Plan, string> = {
   free: "bg-panel text-ink-secondary ring-1 ring-hairline",
   pro: "bg-accent-soft text-accent ring-1 ring-accent/20",
@@ -150,13 +150,13 @@ export function AuthNav({ variant = "landing" }: { variant?: "landing" | "app" }
           )}
           {plan === "pro" && (
             <Link
-              href="/dashboard?checkout=mentor:monthly"
+              href="/dashboard?checkout=allaccess"
               onClick={() => setOpen(false)}
               className="flex items-center gap-2.5 bg-gold-soft/50 px-4 py-2.5 text-sm font-semibold text-gold transition-premium hover:bg-gold-soft"
               role="menuitem"
             >
               <Sparkles className="h-4 w-4 text-gold-bright" />
-              Upgrade to MarksenseAI
+              Upgrade to All-Access
             </Link>
           )}
           {plan === "mentor" && (

@@ -136,7 +136,7 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     amount: order.amount,
     currency: order.currency,
     name: "LastMilePrep",
-    description: opts.plan === "mentor" ? "Mentor, report + AI engine" : "Pro, full report",
+    description: "All-Access — every exam + MarksenseAI",
     prefill: opts.prefill,
     theme: { color: "#4f46e5" },
     // 3. On success, verify the signature server-side before trusting anything.

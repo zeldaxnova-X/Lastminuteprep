@@ -17,10 +17,10 @@ export interface PriceEntry {
 }
 
 /**
- * Launch prices in paise, keyed by plan then billing period. Pro is monthly
- * only; MarksenseAI (internally `mentor`) has four durations. `days` is the
- * one-time access window each payment grants (see plan_expires_at). Amounts
- * mirror the pricing UI; the browser never sends an amount.
+ * @deprecated Superseded by the single All-Access pass in
+ * `@/lib/payments/pricing` (₹49 launch → ₹99 regular, granting `mentor`).
+ * create-order no longer reads this table; kept only for type/reference. Do NOT
+ * treat these amounts as live prices — see pricing.ts for the source of truth.
  */
 export const PLAN_PRICING: Record<PaidPlan, Partial<Record<Billing, PriceEntry>>> = {
   pro: {

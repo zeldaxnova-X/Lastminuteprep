@@ -1,43 +1,38 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { getSessionContext, json401 } from "@/lib/auth/api-guard";
-import { razorpay, CURRENCY, EXAM_SCOPE, isPaidPlan, isBilling, resolvePrice } from "@/lib/payments/razorpay";
+import { razorpay, CURRENCY, EXAM_SCOPE } from "@/lib/payments/razorpay";
 import { applyDiscount } from "@/lib/payments/coupons";
+import { allAccessAmountPaise, allAccessAccessDays, isLaunchOffer, ALL_ACCESS_DESCRIPTION } from "@/lib/payments/pricing";
 
 /**
- * POST /api/razorpay/create-order  { plan: "pro" | "mentor" }
+ * POST /api/razorpay/create-order
  *
- * Creates a Razorpay order for the signed-in user. The amount is chosen
- * server-side from the plan (the client never sends an amount). The buyer's id
- * and target plan are stamped into the order `notes` so verify-payment can grant
- * exactly what was paid for, to exactly who paid, no client trust.
+ * There is a single paid product — the All-Access pass (unlocks every exam +
+ * MarksenseAI). Any legacy `plan`/`billing` in the body is ignored: the amount
+ * and the granted plan are decided ENTIRELY server-side (the client never sends
+ * an amount). The pass grants the `mentor` plan (highest entitlement); during
+ * launch a ₹49 one-time pass runs through the launch end date, after which it is
+ * a ₹99 monthly window (see pricing.ts, all by date). The buyer's id + granted
+ * plan + days are stamped into the order `notes` so the webhook grants exactly
+ * what was paid for, to exactly who paid, no client trust.
  */
-export async function POST(req: NextRequest) {
+export async function POST() {
   // Identity is server-derived from the request cookies, the SAME helper the
   // CBT routes use (getSessionContext -> cookie-aware @supabase/ssr client).
   const { user, supabase } = await getSessionContext();
   if (!user) return json401();
   const userId = user.id;
 
-  const body = (await req.json().catch(() => ({}))) as { plan?: string; billing?: string };
-  if (!isPaidPlan(body.plan)) {
-    return NextResponse.json(
-      { error: "Invalid plan. Expected 'pro' or 'mentor'." },
-      { status: 400 }
-    );
-  }
-  // Pro is monthly-only; MarksenseAI offers all four. Default to monthly.
-  const billing = isBilling(body.billing) ? body.billing : "monthly";
-  const entry = resolvePrice(body.plan, billing);
-  if (!entry) {
-    return NextResponse.json(
-      { error: `Plan '${body.plan}' is not offered on a ${billing} cycle.` },
-      { status: 400 }
-    );
-  }
-
-  const { amount: listAmount, days } = entry;
+  // Single product: the All-Access pass. `plan` is always granted as `mentor`
+  // (unlocks everything). During launch a ₹49 one-time pass runs THROUGH the
+  // launch end date (days computed to land on 31 Oct 2026); after launch it is a
+  // ₹99 30-day monthly window. `billing` records which for the ledger.
+  const grantedPlan = "mentor";
+  const billing = isLaunchOffer() ? "launch_pass" : "monthly";
+  const days = allAccessAccessDays();
+  const listAmount = allAccessAmountPaise(); // ₹49 during launch, ₹99 after (by date)
   if (listAmount < 100) {
-    // Guard against a misconfigured price table (Razorpay minimum is 100 paise).
+    // Guard against a misconfigured price (Razorpay minimum is 100 paise).
     return NextResponse.json({ error: "Configured amount is below the minimum." }, { status: 500 });
   }
 
@@ -72,10 +67,11 @@ export async function POST(req: NextRequest) {
       // `coupon` (when present) is marked used by the webhook after the grant.
       notes: {
         userId,
-        plan: body.plan,
+        plan: grantedPlan,
         billing,
         days: String(days),
         scope: EXAM_SCOPE,
+        description: ALL_ACCESS_DESCRIPTION,
         ...(couponCode ? { coupon: couponCode } : {}),
       },
     });

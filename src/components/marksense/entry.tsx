@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight, Lock, TrendingUp, MessageSquare, Target } from "lucide-react";
 import { MarksenseWordmark } from "./wordmark";
+import { allAccessPriceInr } from "@/lib/payments/pricing";
 
 /**
  * The single branded entry point to MarksenseAI from the dashboard. Active for
@@ -56,7 +57,7 @@ export function MarksenseEntry({
               onClick={onUnlock}
               className="inline-flex items-center gap-2 rounded-xl bg-gold-bright px-5 py-3 text-sm font-bold text-white transition-premium hover:bg-gold"
             >
-              <Lock className="h-4 w-4" /> Unlock MarksenseAI, ₹99
+              <Lock className="h-4 w-4" /> Unlock All-Access, ₹{allAccessPriceInr()}
             </button>
           )}
         </div>

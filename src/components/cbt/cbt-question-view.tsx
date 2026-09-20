@@ -12,6 +12,8 @@ import {
   ChevronLeft,
   Bookmark,
   Keyboard,
+  SlidersHorizontal,
+  Check,
 } from "lucide-react";
 import type {
   ValidatedQuestion,
@@ -29,6 +31,45 @@ interface CBTQuestionViewProps {
 }
 
 const OPTION_KEYS: CorrectAnswer[] = ["A", "B", "C", "D"];
+
+/**
+ * Optional "study aids" — extras that are NOT part of the authentic SSC CGL CBT.
+ * All OFF by default so the exam screen matches the real test the first time;
+ * a candidate can switch any on from the in-exam settings menu if they want it.
+ * Confidence & speed live in the report + MarksenseAI, not on the live screen.
+ *   confidence — the 3-way confidence capture near Save (feeds MarksenseAI)
+ *   timer      — the per-question "Xs on this question" readout (speed is always
+ *                tracked silently for the report; this only shows it live)
+ *   insights   — the Trick-to-higher-scores + Virtual Mentor panels
+ */
+type StudyAids = { confidence: boolean; timer: boolean; insights: boolean };
+const STUDY_AIDS_DEFAULT: StudyAids = { confidence: false, timer: false, insights: false };
+const STUDY_AIDS_KEY = "lmp_cbt_study_aids_v1";
+
+function useStudyAids(): [StudyAids, (k: keyof StudyAids) => void] {
+  const [aids, setAids] = React.useState<StudyAids>(STUDY_AIDS_DEFAULT);
+  // Load once on mount (client only). Wrapped: storage can throw / be absent.
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STUDY_AIDS_KEY);
+      if (raw) setAids({ ...STUDY_AIDS_DEFAULT, ...(JSON.parse(raw) as Partial<StudyAids>) });
+    } catch {
+      /* ignore, keep defaults */
+    }
+  }, []);
+  const toggle = useCallback((k: keyof StudyAids) => {
+    setAids((prev) => {
+      const next = { ...prev, [k]: !prev[k] };
+      try {
+        localStorage.setItem(STUDY_AIDS_KEY, JSON.stringify(next));
+      } catch {
+        /* best-effort */
+      }
+      return next;
+    });
+  }, []);
+  return [aids, toggle];
+}
 
 /** Build renderable stem blocks, falling back to legacy flat fields. */
 function useStemBlocks(q: ValidatedQuestion): QuestionContentBlock[] {
@@ -74,6 +115,10 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
     confidences,
     setConfidence,
   } = useTestStore();
+
+  // Optional study aids (all off by default → authentic CBT on first load).
+  const [aids, toggleAid] = useStudyAids();
+  const [prefsOpen, setPrefsOpen] = React.useState(false);
 
   const selectedOption = userResponses[currentQuestion.id] || null;
   const confidence = confidences[currentQuestion.id] ?? "unsure";
@@ -174,7 +219,9 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
           </span>
         </div>
         <div className="flex items-center gap-2 text-[11px] sm:text-xs">
-          <span className="tabular-nums text-slate-400">{timeSpent}s on this question</span>
+          {aids.timer && (
+            <span className="tabular-nums text-slate-400">{timeSpent}s on this question</span>
+          )}
           <span className="rounded-md bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-400">
             +{(currentQuestion.marks ?? 2).toFixed(1)}
           </span>
@@ -194,6 +241,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
           >
             <Bookmark className={`h-4 w-4 ${bookmarked ? "fill-current" : ""}`} />
           </button>
+          <StudyAidsMenu open={prefsOpen} setOpen={setPrefsOpen} aids={aids} toggleAid={toggleAid} />
         </div>
       </div>
 
@@ -208,8 +256,9 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             <QuestionContent
               blocks={stemBlocks}
               onZoom={setZoomedImage}
+              showZoomHint
               textClassName="text-[15px] font-medium leading-relaxed text-slate-800 dark:text-slate-100 sm:text-lg"
-              imageMaxHeight="max-h-96"
+              imageMaxHeight="max-h-[60vh] sm:max-h-96"
             />
           </div>
 
@@ -253,7 +302,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
                         <QuestionContent
                           blocks={option.blocks}
                           onZoom={setZoomedImage}
-                          imageMaxHeight="max-h-44"
+                          imageMaxHeight="max-h-[34vh] sm:max-h-52"
                         />
                       ) : (
                         <QuestionContent
@@ -279,21 +328,28 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             </p>
           </div>
 
-          {/* Extension points: Virtual Mentor + Trick to Higher Scores */}
-          <div className="space-y-3 pt-1">
-            <TrickPanel tricks={tricks} />
-            <MentorPanel />
-          </div>
+          {/* Optional study aids: Trick to Higher Scores + Virtual Mentor.
+              Off by default (not part of the authentic CBT); opt-in via the
+              settings menu. */}
+          {aids.insights && (
+            <div className="space-y-3 pt-1">
+              <TrickPanel tricks={tricks} />
+              <MentorPanel />
+            </div>
+          )}
         </div>
       </div>
 
       {/* Action bar */}
       <div className="flex flex-col gap-2.5 border-t border-slate-200 bg-white/90 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/90 sm:px-6">
-        {/* Confidence capture, subtle, always present, powers the MarksenseAI */}
-        <ConfidenceControl
-          value={confidence}
-          onChange={(c) => setConfidence(currentQuestion.id, c)}
-        />
+        {/* Confidence capture — off by default (not part of the authentic CBT).
+            Opt-in via the settings menu; when on it feeds the MarksenseAI. */}
+        {aids.confidence && (
+          <ConfidenceControl
+            value={confidence}
+            onChange={(c) => setConfidence(currentQuestion.id, c)}
+          />
+        )}
 
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
@@ -374,6 +430,85 @@ const ConfidenceControl: React.FC<{
         );
       })}
     </div>
+  </div>
+);
+
+/**
+ * In-exam settings menu for the optional study aids. A single gear button opens
+ * a small popover of switches; everything is off by default so the exam screen
+ * is the authentic CBT until a candidate deliberately opts in.
+ */
+const AID_ROWS: { key: keyof StudyAids; label: string; hint: string }[] = [
+  { key: "confidence", label: "Confidence capture", hint: "Rate how sure you were, feeds your MarksenseAI report" },
+  { key: "timer", label: "Per-question timer", hint: "Show seconds spent on the current question" },
+  { key: "insights", label: "Tips & mentor panels", hint: "In-exam hints and mentor notes" },
+];
+
+const StudyAidsMenu: React.FC<{
+  open: boolean;
+  setOpen: (v: boolean) => void;
+  aids: StudyAids;
+  toggleAid: (k: keyof StudyAids) => void;
+}> = ({ open, setOpen, aids, toggleAid }) => (
+  <div className="relative">
+    <button
+      type="button"
+      onClick={() => setOpen(!open)}
+      aria-haspopup="true"
+      aria-expanded={open}
+      aria-label="Exam view settings"
+      className={`flex h-7 w-7 items-center justify-center rounded-lg border transition ${
+        open
+          ? "border-indigo-300 bg-indigo-50 text-indigo-600 dark:border-indigo-500/40 dark:bg-indigo-500/10 dark:text-indigo-300"
+          : "border-slate-200 text-slate-400 hover:text-slate-600 dark:border-slate-700 dark:hover:text-slate-200"
+      }`}
+    >
+      <SlidersHorizontal className="h-4 w-4" />
+    </button>
+
+    {open && (
+      <>
+        {/* click-away backdrop */}
+        <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} aria-hidden />
+        <div
+          role="menu"
+          className="absolute right-0 top-9 z-50 w-72 rounded-xl border border-slate-200 bg-white p-3 shadow-xl dark:border-slate-700 dark:bg-slate-900"
+        >
+          <p className="px-1 pb-2 text-[11px] font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            Study aids, off for a real exam feel
+          </p>
+          <div className="space-y-1">
+            {AID_ROWS.map((row) => {
+              const on = aids[row.key];
+              return (
+                <button
+                  key={row.key}
+                  type="button"
+                  role="menuitemcheckbox"
+                  aria-checked={on}
+                  onClick={() => toggleAid(row.key)}
+                  className="flex w-full items-start gap-3 rounded-lg px-2 py-2 text-left transition hover:bg-slate-50 dark:hover:bg-slate-800/60"
+                >
+                  <span
+                    className={`mt-0.5 flex h-5 w-9 flex-shrink-0 items-center rounded-full p-0.5 transition-colors ${
+                      on ? "bg-indigo-500 justify-end" : "bg-slate-300 justify-start dark:bg-slate-600"
+                    }`}
+                  >
+                    <span className="flex h-4 w-4 items-center justify-center rounded-full bg-white text-indigo-600 shadow-sm">
+                      {on && <Check className="h-3 w-3" />}
+                    </span>
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-medium text-slate-800 dark:text-slate-100">{row.label}</span>
+                    <span className="block text-[11px] leading-snug text-slate-400 dark:text-slate-500">{row.hint}</span>
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </>
+    )}
   </div>
 );
 

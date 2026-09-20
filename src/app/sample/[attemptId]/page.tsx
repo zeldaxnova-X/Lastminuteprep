@@ -11,6 +11,7 @@ import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
 import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 
 interface SectionRow {
   key: string;
@@ -102,12 +103,12 @@ export default function SampleConversionPage() {
   }
 
   function startCheckout(tier: "report" | "mentor") {
-    setCheckout({ tier, price: tier === "mentor" ? "₹99/mo" : "₹19/mo" });
+    // Single product: every unlock buys the All-Access pass (grants mentor).
+    setCheckout({ tier, price: `₹${allAccessPriceInr()}` });
     setPayError(null);
     setPaying(true);
-    const plan = tier === "mentor" ? "mentor" : "pro";
+    const plan = "mentor" as const;
     void startRazorpayCheckout({
-      // UI "report" tier maps to the canonical "pro" plan.
       plan,
       prefill: email ? { email } : undefined,
       // Payment captured + signature verified. The plan is granted by the
@@ -178,7 +179,7 @@ export default function SampleConversionPage() {
           <div className="flex items-center justify-between">
             <p className="text-sm font-semibold text-ink">Section breakdown</p>
             <span className="flex items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹19
+              <Lock className="h-3 w-3" /> ₹{allAccessPriceInr()}
             </span>
           </div>
           <div className="space-y-2.5">
@@ -206,7 +207,7 @@ export default function SampleConversionPage() {
               marks
             </p>
             <span className="flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-ink-tertiary">
-              <Lock className="h-3 w-3" /> ₹99
+              <Lock className="h-3 w-3" /> ₹{allAccessPriceInr()}
             </span>
           </div>
         </Card>
@@ -245,28 +246,22 @@ export default function SampleConversionPage() {
           </div>
         )}
 
-        {/* The calm offer */}
+        {/* The calm offer, one All-Access pass */}
         <div className="space-y-3">
           <OfferRow
-            title="Pro, full report"
-            price="₹19/mo"
-            note="Founding price"
-            desc="Unlock every section score, accuracy, and timing breakdown, plus the full 10,000+ question bank."
-            cta="Unlock report"
-            onClick={() => onUnlock("report")}
-          />
-          <OfferRow
-            title="MarksenseAI, report + engine"
-            price="₹99/mo"
-            note="Founding price"
+            title="All-Access, everything unlocked"
+            price={`₹${allAccessPriceInr()}`}
+            note={isLaunchOffer() ? `one-time · until ${ALL_ACCESS_OFFER_END_LABEL}` : "per month"}
             featured
-            desc="Everything above, plus the exact skip strategy, your own break-even guess rule, and your score-maximisation plan."
-            cta="Unlock report + MarksenseAI"
+            desc="Every exam, the full 10,000+ question bank, unlimited mocks, complete section & timing reports, and the MarksenseAI engine, skip strategy, break-even guess rule, and your score-maximisation plan."
+            cta="Unlock All-Access"
             onClick={() => onUnlock("mentor")}
           />
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">
             <ShieldCheck className="h-3.5 w-3.5 text-success" />
-            Honest founding prices, no fake discounts. Cancel anytime.
+            {isLaunchOffer()
+              ? `One-time payment, full access until ${ALL_ACCESS_OFFER_END_LABEL}. Then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`
+              : "Every exam + MarksenseAI, billed monthly."}
           </p>
           <RazorpayBadge className="pt-1" />
         </div>
@@ -320,6 +315,7 @@ export default function SampleConversionPage() {
 function OfferRow({
   title,
   price,
+  strike,
   note,
   desc,
   cta,
@@ -328,6 +324,7 @@ function OfferRow({
 }: {
   title: string;
   price: string;
+  strike?: string;
   note: string;
   desc: string;
   cta: string;
@@ -349,7 +346,7 @@ function OfferRow({
             <h3 className={cn("text-sm font-semibold", featured ? "text-white" : "text-ink")}>{title}</h3>
             {featured && (
               <span className="rounded-md bg-gold-bright/15 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-gold-bright">
-                Mentor
+                All-Access
               </span>
             )}
           </div>
@@ -358,7 +355,12 @@ function OfferRow({
           </p>
         </div>
         <div className="flex-shrink-0 text-right">
-          <p className={cn("text-xl font-semibold tracking-tight tabular", featured ? "text-white" : "text-ink")}>
+          <p className={cn("flex items-baseline justify-end gap-1.5 text-xl font-semibold tracking-tight tabular", featured ? "text-white" : "text-ink")}>
+            {strike && (
+              <span className={cn("text-sm font-medium line-through", featured ? "text-white/40" : "text-ink-tertiary")}>
+                {strike}
+              </span>
+            )}
             {price}
           </p>
           <p className={cn("text-[10px] font-medium", featured ? "text-white/50" : "text-ink-tertiary")}>{note}</p>

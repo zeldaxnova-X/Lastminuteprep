@@ -12,6 +12,7 @@ import {
 import { BrandLogo } from "@/components/brand-logo";
 import { Reveal } from "@/components/landing/motion";
 import { MarksenseCinematic } from "@/components/landing/marksense-cinematic";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 
 export const metadata = {
   title: "MarksenseAI: the intelligence behind every mark you earn",
@@ -148,7 +149,11 @@ export default function MarksenseAIPage() {
                   View full plans
                 </Link>
               </div>
-              <p className="mt-4 text-xs text-white/45">Plans from ₹99/mo. Cancel anytime.</p>
+              <p className="mt-4 text-xs text-white/45">
+                {isLaunchOffer()
+                  ? `₹${allAccessPriceInr()} one-time, every exam + MarksenseAI, full access until ${ALL_ACCESS_OFFER_END_LABEL}. Then ₹99/month.`
+                  : `₹${allAccessPriceInr()}/month, every exam + MarksenseAI.`}
+              </p>
               </div>
             </div>
           </Reveal>

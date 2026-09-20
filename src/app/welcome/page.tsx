@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 
 export const metadata = { title: "Welcome to LastMilePrep" };
 
@@ -44,17 +45,18 @@ export default function WelcomePage() {
           </Link>
 
           <Link
-            href="/#pricing"
+            href="/dashboard?checkout=allaccess"
             className="group flex flex-col rounded-2xl bg-panel-dark p-6 text-white ring-1 ring-gold-bright/30 transition-premium hover:ring-gold-bright/50"
           >
             <h2 className="inline-flex items-center gap-1.5 text-lg font-bold text-white">
-              <Sparkles className="h-4 w-4 text-gold-bright" /> Skip to plans
+              <Sparkles className="h-4 w-4 text-gold-bright" /> Get All-Access, ₹{allAccessPriceInr()}
             </h2>
             <p className="mt-1 flex-1 text-sm text-white/70">
-              Unlock unlimited mocks, the full report, and MarksenseAI. One subscription covers every exam.
+              Unlock every exam, unlimited mocks, the full report, and MarksenseAI.
+              {isLaunchOffer() ? ` One-time, full access until ${ALL_ACCESS_OFFER_END_LABEL}.` : ""}
             </p>
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-bright">
-              See plans <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              Get All-Access <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </span>
           </Link>
         </div>

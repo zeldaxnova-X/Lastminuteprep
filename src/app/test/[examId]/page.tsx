@@ -241,24 +241,30 @@ export default function CBTTestEnginePage() {
       {/* Click-to-zoom image modal */}
       {zoomedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/75 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 p-2 backdrop-blur-sm sm:p-4"
           onClick={() => setZoomedImage(null)}
           role="dialog"
           aria-modal="true"
           aria-label="Figure preview"
         >
           <div
-            className="relative flex max-h-[90vh] max-w-4xl flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl"
+            className="relative flex max-h-[94vh] w-auto max-w-[96vw] flex-col items-center overflow-auto rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl sm:max-w-3xl sm:p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setZoomedImage(null)}
-              className="absolute right-3 top-3 z-10 rounded-full bg-slate-100 p-2 text-slate-600 transition hover:bg-slate-200"
+              className="absolute right-2.5 top-2.5 z-10 rounded-full bg-slate-100/90 p-2 text-slate-600 shadow-sm backdrop-blur transition hover:bg-slate-200"
               aria-label="Close preview"
             >
               <X className="h-5 w-5" />
             </button>
-            <img src={zoomedImage} alt="Figure, enlarged" className="max-h-[80vh] w-auto rounded-lg object-contain" />
+            {/* h-auto/w-auto + object-contain keeps aspect; max-w-full fits the
+                panel width so wide figures scale to the screen, not the column. */}
+            <img
+              src={zoomedImage}
+              alt="Figure, enlarged"
+              className="h-auto w-auto max-w-full rounded-lg object-contain"
+            />
           </div>
         </div>
       )}

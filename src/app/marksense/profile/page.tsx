@@ -24,6 +24,7 @@ import { MarksenseEvolution } from "@/components/marksense/evolution";
 import { SectionTrendsChart, type TrendPoint } from "@/components/marksense/section-trends-chart";
 import { ChatPanel } from "@/components/marksense/chat-panel";
 import { WeakpointCard } from "@/components/marksense/weakpoint-card";
+import { allAccessPriceInr } from "@/lib/payments/pricing";
 
 interface TrendsResponse {
   locked?: boolean;
@@ -374,10 +375,10 @@ function LockedUpsell({ plan }: { plan?: string }) {
       </div>
       <div className="mt-5 flex flex-wrap gap-3">
         <Link
-          href="/dashboard?checkout=mentor:monthly"
+          href="/dashboard?checkout=allaccess"
           className="inline-flex items-center gap-2 rounded-lg bg-gold-bright px-4 py-2.5 text-sm font-semibold text-white transition-premium hover:bg-gold"
         >
-          <Sparkles className="h-4 w-4" /> Unlock MarksenseAI, ₹99
+          <Sparkles className="h-4 w-4" /> Unlock All-Access, ₹{allAccessPriceInr()}
         </Link>
         <Link
           href="/dashboard"
