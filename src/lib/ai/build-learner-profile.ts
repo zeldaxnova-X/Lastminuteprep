@@ -31,10 +31,15 @@ interface BuildResult {
   ok: boolean;
   reason?: string;
   regenerated: boolean;
+  attemptsAnalyzed?: number;
   row?: LearnerProfileRow;
 }
 
 const MODEL = process.env.DEEPSEEK_MODEL || "deepseek-chat";
+
+/** A proper MarksenseAI report needs at least this many completed mocks. One
+ *  attempt is a snapshot; two is the minimum to read a trend and diagnose. */
+export const MIN_TESTS_FOR_PROFILE = 2;
 
 /**
  * Append an immutable evolution snapshot. Deduped by (user_id, signals_hash):
@@ -79,7 +84,18 @@ export async function buildLearnerProfile(
   force = false
 ): Promise<BuildResult> {
   const signals = await loadLearnerSignals(supabase, userId);
-  if (!signals) return { ok: false, reason: "no analyzed attempts", regenerated: false };
+  if (!signals) return { ok: false, reason: "no analyzed attempts", regenerated: false, attemptsAnalyzed: 0 };
+
+  // Gate: a proper report needs >= MIN_TESTS_FOR_PROFILE completed mocks. Below
+  // that, no AI call and no stored profile, the UI shows a "take one more" state.
+  if (signals.attemptsAnalyzed < MIN_TESTS_FOR_PROFILE) {
+    return {
+      ok: false,
+      reason: "need_more_tests",
+      regenerated: false,
+      attemptsAnalyzed: signals.attemptsAnalyzed,
+    };
+  }
 
   const hash = signalsHash(signals);
 

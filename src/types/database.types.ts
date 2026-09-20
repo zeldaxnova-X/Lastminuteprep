@@ -260,6 +260,8 @@ export interface StartExamRequest {
   exam_type: ExamType;
   paper_id?: string;
   subject?: Subject;
+  /** Optional finer-grained topic within a subject_test (e.g. "Time & Work"). */
+  topic?: string;
   year?: number;
   paper_type?: PaperType;
   total_questions?: number;

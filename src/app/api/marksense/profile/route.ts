@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { getSessionContext, json401, serviceClient } from "@/lib/auth/api-guard";
 import { getViewer, canSeeMentor } from "@/lib/auth/plan";
-import { buildLearnerProfile } from "@/lib/ai/build-learner-profile";
+import { buildLearnerProfile, MIN_TESTS_FOR_PROFILE } from "@/lib/ai/build-learner-profile";
+import { buildActionPlan } from "@/lib/ai/action-plan";
 import { aiEnabled } from "@/lib/ai/deepseek";
 
 /**
@@ -32,6 +33,8 @@ export async function GET() {
       locked: false,
       hasProfile: false,
       reason: built.reason ?? "not_ready",
+      attemptsAnalyzed: built.attemptsAnalyzed ?? 0,
+      minTests: MIN_TESTS_FOR_PROFILE,
       aiAvailable: aiEnabled(),
     });
   }
@@ -42,9 +45,11 @@ export async function GET() {
     regenerated: built.regenerated,
     aiAvailable: built.row.aiAvailable,
     attemptsAnalyzed: built.row.attemptsAnalyzed,
+    minTests: MIN_TESTS_FOR_PROFILE,
     generatedAt: built.row.generatedAt,
     signals: built.row.signals,
     profile: built.row.profile,
+    taskList: built.row.signals ? buildActionPlan(built.row.signals) : [],
   });
 }
 
@@ -66,7 +71,12 @@ export async function POST() {
 
   if (!built.ok || !built.row) {
     return NextResponse.json(
-      { error: built.reason ?? "Could not build profile" },
+      {
+        error: built.reason ?? "Could not build profile",
+        reason: built.reason,
+        attemptsAnalyzed: built.attemptsAnalyzed ?? 0,
+        minTests: MIN_TESTS_FOR_PROFILE,
+      },
       { status: 404 }
     );
   }
@@ -76,8 +86,10 @@ export async function POST() {
     regenerated: built.regenerated,
     aiAvailable: built.row.aiAvailable,
     attemptsAnalyzed: built.row.attemptsAnalyzed,
+    minTests: MIN_TESTS_FOR_PROFILE,
     generatedAt: built.row.generatedAt,
     signals: built.row.signals,
     profile: built.row.profile,
+    taskList: built.row.signals ? buildActionPlan(built.row.signals) : [],
   });
 }

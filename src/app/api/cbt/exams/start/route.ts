@@ -160,10 +160,24 @@ export async function POST(request: NextRequest) {
           );
         }
 
+        if (body.topic) {
+          // Topic-wise test (MarksenseAI recommendation): questions tagged with
+          // this exact topic in the bank, unseen-first for this user.
+          title = title || `${body.topic}, Topic Test`;
+          const validList = await pickTopicQuestions(
+            supabase,
+            sessionUserId as string,
+            body.subject,
+            body.topic,
+            totalQuestions
+          );
+          questions = deduplicateQuestions(validList).slice(0, totalQuestions);
+          break;
+        }
+
         title = title || `${body.subject}, Practice Test`;
 
-        // Topic tests always require a signed-in user (guarded above), so serve
-        // questions this user hasn't done yet.
+        // Subject drill: serve questions this user hasn't done yet.
         const validList = await pickUniqueQuestions(
           supabase,
           sessionUserId as string,
@@ -400,6 +414,70 @@ async function pickUniqueQuestions(
   });
   if (error || !data) return [];
   return (data as ValidatedQuestion[]).filter(isValidQuestion);
+}
+
+/** Subject display name -> the section slug used on `questions.section`. */
+const SUBJECT_TO_SECTION: Record<string, string> = {
+  "Quantitative Aptitude": "quantitative_aptitude",
+  "General Intelligence & Reasoning": "reasoning",
+  "General Awareness": "general_awareness",
+  "English Comprehension": "english_comprehension",
+};
+
+/**
+ * Topic-wise picker. `validated_questions` (the exam-eligible view) has no topic
+ * column, so we resolve topic-tagged question ids from the base `questions`
+ * table, then fetch the exam-ready rows for those ids. Unseen-first for the
+ * user: questions they've already answered are used only to top up a short pool.
+ */
+async function pickTopicQuestions(
+  supabase: SupabaseClient,
+  userId: string,
+  subject: string,
+  topic: string,
+  limit: number
+): Promise<ValidatedQuestion[]> {
+  const section = SUBJECT_TO_SECTION[subject];
+  if (!section) return [];
+
+  // 1) Candidate ids: this topic within its section.
+  const { data: cand } = await supabase
+    .from("questions")
+    .select("id")
+    .eq("section", section)
+    .eq("topic", topic);
+  const candIds = (cand ?? []).map((r) => r.id as string);
+  if (candIds.length === 0) return [];
+
+  // 2) Exam-ready rows for those ids (validity is encoded in the view).
+  const rows: ValidatedQuestion[] = [];
+  for (let i = 0; i < candIds.length; i += 200) {
+    const chunk = candIds.slice(i, i + 200);
+    const { data } = await supabase.from("validated_questions").select("*").in("id", chunk);
+    if (data) rows.push(...(data as ValidatedQuestion[]));
+  }
+  const valid = rows.filter(isValidQuestion);
+  if (valid.length === 0) return [];
+
+  // 3) Unseen-first: prefer questions this user hasn't answered before.
+  const { data: attempts } = await supabase
+    .from("exam_attempts")
+    .select("id")
+    .eq("user_id", userId)
+    .in("status", ["completed", "auto_submitted", "in_progress"]);
+  const attemptIds = (attempts ?? []).map((a) => a.id as string);
+  const seen = new Set<string>();
+  for (let i = 0; i < attemptIds.length; i += 100) {
+    const chunk = attemptIds.slice(i, i + 100);
+    const { data: ans } = await supabase
+      .from("attempt_answers")
+      .select("question_id")
+      .in("attempt_id", chunk);
+    for (const a of ans ?? []) seen.add(a.question_id as string);
+  }
+  const unseen = shuffleArray(valid.filter((q) => !seen.has(q.id)));
+  const seenPool = shuffleArray(valid.filter((q) => seen.has(q.id)));
+  return [...unseen, ...seenPool].slice(0, limit);
 }
 
 function deduplicateQuestions(array: ValidatedQuestion[]): ValidatedQuestion[] {

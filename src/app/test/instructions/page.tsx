@@ -27,6 +27,7 @@ function InstructionsContent() {
   const paperId = searchParams.get("paper_id") || "";
   const title = searchParams.get("title") || "SSC CGL Practice Test";
   const subject = searchParams.get("subject") || "";
+  const topic = searchParams.get("topic") || "";
   const questionCount = parseInt(searchParams.get("questions") || "100");
   const timeLimitMinutes = parseInt(searchParams.get("time") || "60");
 
@@ -48,6 +49,7 @@ function InstructionsContent() {
       };
       if (paperId) payload.paper_id = paperId;
       if (subject) payload.subject = subject;
+      if (topic) payload.topic = topic;
 
       const res = await fetch("/api/cbt/exams/start", {
         method: "POST",

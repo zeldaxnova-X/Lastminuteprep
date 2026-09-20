@@ -28,8 +28,39 @@ export function ProfileTieIn() {
     };
   }, []);
 
-  // Not a MarksenseAI viewer, or nothing to show: stay invisible.
-  if (!loading && (!data || data.locked || !data.hasProfile)) return null;
+  // Not a MarksenseAI viewer: stay invisible.
+  if (!loading && (!data || data.locked)) return null;
+  // Mentor viewer still below the min-tests gate: nudge the next mock instead
+  // of hiding entirely (keeps them moving toward their first report).
+  const needMore = !loading && !data?.hasProfile && data?.reason === "need_more_tests";
+  if (!loading && !data?.hasProfile && !needMore) return null;
+
+  if (needMore) {
+    const attempts = data?.attemptsAnalyzed ?? 0;
+    const minTests = data?.minTests ?? 2;
+    const remaining = Math.max(1, minTests - attempts);
+    return (
+      <section className="overflow-hidden rounded-2xl border border-gold-bright/30 bg-gradient-to-br from-gold-soft/50 to-surface shadow-soft">
+        <div className="flex flex-wrap items-center justify-between gap-2 px-5 py-4">
+          <p className="flex items-center gap-2 text-sm font-semibold text-ink">
+            <Sparkles className="h-4 w-4 text-gold" />
+            {remaining === 1
+              ? "One more mock unlocks your MarksenseAI report"
+              : `${remaining} more mocks unlock your MarksenseAI report`}
+            <span className="rounded-full bg-panel px-2 py-0.5 text-[11px] font-bold text-ink-tertiary">
+              {attempts}/{minTests}
+            </span>
+          </p>
+          <Link
+            href="/test/create?mode=random_test"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-gold-bright px-3.5 py-2 text-xs font-semibold text-white transition-premium hover:bg-gold"
+          >
+            Take another mock <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </section>
+    );
+  }
 
   const weak = data?.profile?.weakpoints?.slice(0, 3) ?? [];
   const drillHref = (subject: string | null) =>

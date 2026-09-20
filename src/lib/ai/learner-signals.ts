@@ -9,6 +9,7 @@
  */
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
+import { loadTopicSignals } from "./topic-signals";
 
 /** A topic counts as a weakpoint below this accuracy, a strength at/above STRONG. */
 const WEAK_MAX_PCT = 65;
@@ -35,6 +36,7 @@ export interface TopicSignal {
   correct: number;
   accuracyPct: number;
   appearedInAttempts: number; // recurrence, the chronic weakness signal
+  section?: string; // section slug (e.g. "quantitative_aptitude"), for deep-linking a topic test
 }
 
 export interface LearnerSignals {
@@ -286,10 +288,25 @@ export async function loadLearnerSignals(
     }));
 
   if (data.length === 0) return null;
-  return aggregateSignals(data);
+  const signals = aggregateSignals(data);
+
+  // Topic weak/strong come from the freshly tagged bank (the frozen analyses
+  // predate topic tags), computed live from the answer log so they work for
+  // every past attempt. Overrides the (empty) aggregate topic lists.
+  const derived = await loadTopicSignals(supabase, userId);
+  if (derived) {
+    signals.topicWeakpoints = derived.weak;
+    signals.topicStrengths = derived.strong;
+  }
+  return signals;
 }
 
-/** Cheap fingerprint for staleness: changes when a new attempt is analyzed. */
+/**
+ * Cheap fingerprint for staleness: changes when a new attempt is analyzed, or
+ * when the topic diagnosis changes (so the AI profile regenerates once topic
+ * tags first populate for an existing user).
+ */
 export function signalsHash(s: LearnerSignals): string {
-  return `${s.attemptsAnalyzed}:${s.lastAttemptAt ?? ""}:${s.score.latestNet}`;
+  const topTopic = s.topicWeakpoints[0];
+  return `${s.attemptsAnalyzed}:${s.lastAttemptAt ?? ""}:${s.score.latestNet}:${s.topicWeakpoints.length}:${topTopic ? `${topTopic.topic}@${topTopic.accuracyPct}` : ""}`;
 }

@@ -13,6 +13,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { ActionTask } from "@/lib/ai/action-plan";
 
 // Mirrors src/lib/ai/learner-profile.ts and learner-signals.ts (client copies).
 export interface Weakpoint {
@@ -55,9 +56,11 @@ export interface ProfileResponse {
   hasProfile?: boolean;
   aiAvailable?: boolean;
   attemptsAnalyzed?: number;
+  minTests?: number;
   generatedAt?: string | null;
   signals?: Signals | null;
   profile?: Profile | null;
+  taskList?: ActionTask[];
   reason?: string;
 }
 

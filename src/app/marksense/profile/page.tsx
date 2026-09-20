@@ -14,7 +14,10 @@ import {
   Stethoscope,
   MessageSquare,
   ShieldCheck,
+  ListChecks,
+  CheckCircle2,
 } from "lucide-react";
+import type { ActionTask } from "@/lib/ai/action-plan";
 import { TopNav } from "@/components/top-nav";
 import { cn } from "@/lib/utils";
 import { MarksenseWordmark } from "@/components/marksense/wordmark";
@@ -221,18 +224,11 @@ export default function MarksenseHubPage() {
           )}
 
           {!loading && !locked && !data?.hasProfile && (
-            <div className="rounded-2xl border border-gold-bright/25 bg-surface p-6 text-center">
-              <p className="text-sm font-semibold text-ink">No analysis yet</p>
-              <p className="mx-auto mt-1 max-w-sm text-sm text-ink-secondary">
-                Take a full mock and MarksenseAI builds your intelligence report from it.
-              </p>
-              <Link
-                href="/test/create?mode=random_test"
-                className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold"
-              >
-                Take a mock <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+            <NotReady
+              attempts={data?.attemptsAnalyzed ?? 0}
+              minTests={data?.minTests ?? 2}
+              needMore={data?.reason === "need_more_tests"}
+            />
           )}
         </main>
       </div>
@@ -252,8 +248,12 @@ function OverviewTab({
 }) {
   const p = data.profile;
   const top = p?.weakpoints?.slice(0, 3) ?? [];
+  const tasks = data.taskList ?? [];
   return (
     <div className="space-y-6">
+      {/* Action plan: the deterministic task list to improve the score */}
+      <ActionPlan tasks={tasks} />
+
       {/* Verdict */}
       {(p?.headline || p?.trajectory) && (
         <section className="rounded-2xl border border-hairline bg-surface p-5 shadow-soft sm:p-6">
@@ -326,6 +326,120 @@ function OverviewTab({
         </section>
       )}
     </div>
+  );
+}
+
+/* Gate state: needs >= minTests completed mocks before a report is generated. */
+function NotReady({ attempts, minTests, needMore }: { attempts: number; minTests: number; needMore: boolean }) {
+  const remaining = Math.max(0, minTests - attempts);
+  return (
+    <div className="rounded-2xl border border-gold-bright/25 bg-surface p-6 text-center sm:p-8">
+      <span className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold-bright/15 text-gold ring-1 ring-gold-bright/30">
+        <Sparkles className="h-5 w-5" />
+      </span>
+      <p className="text-base font-bold text-ink">
+        {needMore ? "One more mock to unlock your report" : "No analysis yet"}
+      </p>
+      <p className="mx-auto mt-1.5 max-w-sm text-sm text-ink-secondary">
+        {needMore
+          ? `MarksenseAI needs at least ${minTests} completed mocks to read a real trend and diagnose you, not just a single snapshot.`
+          : "Take a full mock and MarksenseAI builds your intelligence report from it."}
+      </p>
+
+      {/* progress dots toward the minimum */}
+      <div className="mt-4 flex items-center justify-center gap-2">
+        {Array.from({ length: minTests }).map((_, i) => (
+          <span
+            key={i}
+            className={cn(
+              "flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold",
+              i < attempts
+                ? "bg-gold-bright text-white"
+                : "border border-hairline-strong text-ink-tertiary"
+            )}
+          >
+            {i < attempts ? <CheckCircle2 className="h-4 w-4" /> : i + 1}
+          </span>
+        ))}
+        <span className="ml-1 text-xs font-semibold text-ink-tertiary">
+          {attempts}/{minTests} done
+        </span>
+      </div>
+
+      <Link
+        href="/test/create?mode=random_test"
+        className="mt-5 inline-flex items-center gap-1.5 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold"
+      >
+        {remaining > 0 ? `Take ${remaining === 1 ? "one more mock" : `${remaining} more mocks`}` : "Take a mock"}
+        <ArrowRight className="h-4 w-4" />
+      </Link>
+    </div>
+  );
+}
+
+/* The action plan: the deterministic, per-user task list to improve the score.
+   Topic/section tasks deep-link a real test from the bank. */
+const TASK_ACCENT: Record<ActionTask["priority"], string> = {
+  high: "border-danger/30 bg-danger/5",
+  medium: "border-gold-bright/25 bg-gold-soft/25",
+  low: "border-hairline bg-surface",
+};
+const PRIORITY_LABEL: Record<ActionTask["priority"], string> = {
+  high: "Do first",
+  medium: "Next",
+  low: "Ongoing",
+};
+
+function ActionPlan({ tasks }: { tasks: ActionTask[] }) {
+  if (!tasks.length) return null;
+  return (
+    <section className="rounded-2xl border border-hairline bg-surface p-5 shadow-soft sm:p-6">
+      <SectionHead
+        eyebrow="Your task list"
+        title="What to do to score more"
+        sub="Built from your mocks, most valuable first. Each test is pulled from the question bank for you."
+      />
+      <ol className="space-y-2.5">
+        {tasks.map((t, i) => (
+          <li key={t.id} className={cn("rounded-xl border p-4", TASK_ACCENT[t.priority])}>
+            <div className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-panel text-xs font-bold text-ink-secondary">
+                {i + 1}
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-sm font-semibold text-ink">{t.title}</h3>
+                  <span
+                    className={cn(
+                      "rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide",
+                      t.priority === "high"
+                        ? "bg-danger/12 text-danger"
+                        : t.priority === "medium"
+                          ? "bg-gold-bright/15 text-gold"
+                          : "bg-panel text-ink-tertiary"
+                    )}
+                  >
+                    {PRIORITY_LABEL[t.priority]}
+                  </span>
+                  {t.metric && (
+                    <span className="text-[11px] font-medium tabular-nums text-ink-tertiary">{t.metric}</span>
+                  )}
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-secondary">{t.detail}</p>
+                {t.cta && (
+                  <Link
+                    href={t.cta.href}
+                    className="mt-2.5 inline-flex items-center gap-1.5 rounded-lg bg-ink px-3 py-1.5 text-xs font-semibold text-white transition-premium hover:bg-ink/90"
+                  >
+                    <ListChecks className="h-3.5 w-3.5" /> {t.cta.label}
+                  </Link>
+                )}
+              </div>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
   );
 }
 
