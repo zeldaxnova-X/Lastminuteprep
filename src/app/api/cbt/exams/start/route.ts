@@ -10,6 +10,7 @@ import {
 } from "@/lib/auth/api-guard";
 import { getViewer } from "@/lib/auth/plan";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
+import { SAMPLE_QUESTION_IDS } from "@/lib/sample-set";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
 
 /**
@@ -204,17 +205,19 @@ export async function POST(request: NextRequest) {
       }
 
       case "random_test": {
-        // Free sample: one full timed section from a single subject (default
-        // Quantitative Aptitude), runnable anonymously.
-        if (sample && body.subject) {
-          title = title || `Free Section, ${body.subject}`;
+        // Free sample: a STATIC, curated section, identical for every visitor
+        // (quality-controlled), served in a fixed order. Anonymous-friendly.
+        if (sample) {
+          title = title || `Free Section, ${body.subject || "Quantitative Aptitude"}`;
           const { data } = await supabase
             .from("validated_questions")
             .select("*")
-            .eq("subject", body.subject)
-            .limit(300);
-          const validSubj = ((data as ValidatedQuestion[]) || []).filter(isValidQuestion);
-          questions = deduplicateQuestions(shuffleArray(validSubj)).slice(0, totalQuestions);
+            .in("id", SAMPLE_QUESTION_IDS);
+          const byId = new Map((data as ValidatedQuestion[] | null ?? []).map((q) => [q.id, q]));
+          // Preserve the curated order; keep only exam-valid ones.
+          questions = SAMPLE_QUESTION_IDS.map((id) => byId.get(id)).filter(
+            (q): q is ValidatedQuestion => !!q && isValidQuestion(q)
+          );
           break;
         }
 
