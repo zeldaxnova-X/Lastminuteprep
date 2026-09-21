@@ -29,9 +29,18 @@ function isSampleRequest(body: StartExamRequest): boolean {
  * still flagged `needs_answer_key` (no correct_answer) are excluded so that
  * unkeyed items never appear in a scored exam.
  */
+const DEVANAGARI = /[ऀ-ॿ]/;
+
 function isValidQuestion(q: ValidatedQuestion): boolean {
   if (!q.id) return false;
   if (!q.correct_answer || !["A", "B", "C", "D"].includes(q.correct_answer)) return false;
+
+  // English-only: the live exam is English, so any question carrying Devanagari
+  // (Hindi/bilingual) is excluded. The authed pool already filters this via the
+  // view; this guards the anonymous sample/random paths that read the raw view.
+  if (DEVANAGARI.test(`${q.question_text ?? ""} ${q.option_a ?? ""} ${q.option_b ?? ""} ${q.option_c ?? ""} ${q.option_d ?? ""}`)) {
+    return false;
+  }
 
   const opts = [q.option_a, q.option_b, q.option_c, q.option_d].map((o) => (o || "").trim());
   if (opts.some((o) => !o)) return false; // all four options must be present ("[image]" counts)

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import Image from "next/image";
 import { useTestStore } from "@/lib/store/use-test-store";
 import { Clock, Maximize2, Minimize2 } from "lucide-react";
 
@@ -59,9 +60,14 @@ export const CBTHeader: React.FC<CBTHeaderProps> = ({ title }) => {
     <header className="z-30 flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 bg-white/90 px-3 py-2.5 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90 sm:px-5">
       {/* Left: brand + section indicator (the lock is never a surprise) */}
       <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
-        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-sm font-bold text-white shadow-sm">
-          L
-        </div>
+        <Image
+          src="/images/lmp-mark.png"
+          alt="LastMilePrep"
+          width={863}
+          height={348}
+          priority
+          className="h-7 w-auto flex-shrink-0"
+        />
         <div className="hidden h-5 w-px bg-slate-200 dark:bg-slate-700 sm:block" />
         <div className="min-w-0">
           <p className="text-[10px] font-semibold uppercase tracking-wide text-indigo-500 dark:text-indigo-400">
