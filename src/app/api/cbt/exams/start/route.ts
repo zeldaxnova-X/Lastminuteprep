@@ -152,8 +152,11 @@ export async function POST(request: NextRequest) {
 
         title = title || formatPaperTitle(paper);
 
+        // Read from cbt_valid_questions (not the raw view) so PYP also respects
+        // the excluded_questions registry — incomplete/retired questions never
+        // appear, even in a faithful previous-year paper.
         const { data, error } = await supabase
-          .from("validated_questions")
+          .from("cbt_valid_questions")
           .select("*")
           .eq("paper_id", body.paper_id)
           .order("question_number", { ascending: true });
