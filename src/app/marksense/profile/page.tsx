@@ -46,6 +46,7 @@ const TABS: Array<{ id: Tab; label: string; icon: React.ComponentType<{ classNam
 export default function MarksenseHubPage() {
   const [data, setData] = useState<ProfileResponse | null>(null);
   const [trends, setTrends] = useState<TrendsResponse | null>(null);
+  const [latestId, setLatestId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [tab, setTab] = useState<Tab>("overview");
@@ -55,11 +56,13 @@ export default function MarksenseHubPage() {
     Promise.all([
       fetch("/api/marksense/profile").then((r) => r.json()),
       fetch("/api/marksense/trends").then((r) => r.json()).catch(() => null),
+      fetch("/api/cbt/history?limit=1").then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
-      .then(([p, t]) => {
+      .then(([p, t, h]) => {
         if (!alive) return;
         setData(p as ProfileResponse);
         setTrends(t as TrendsResponse);
+        setLatestId((h?.attempts?.[0]?.id as string | undefined) ?? null);
       })
       .catch(() => alive && setData({ hasProfile: false }))
       .finally(() => alive && setLoading(false));
@@ -172,7 +175,7 @@ export default function MarksenseHubPage() {
           {ready && (
             <>
               {/* meta row */}
-              <div className="mb-5 flex items-center justify-between">
+              <div className="mb-4 flex items-center justify-between">
                 <p className="text-xs text-ink-tertiary">
                   Learned from {data!.attemptsAnalyzed} mocks
                   {data!.generatedAt ? ` · updated ${new Date(data!.generatedAt).toLocaleDateString("en-IN", { day: "numeric", month: "short" })}` : ""}
@@ -185,6 +188,15 @@ export default function MarksenseHubPage() {
                   {refreshing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <RotateCcw className="h-3.5 w-3.5" />}
                   Refresh
                 </button>
+              </div>
+
+              {/* Quick links, moved here from the dashboard to keep it uncluttered */}
+              <div className="mb-6 flex flex-wrap gap-2">
+                {latestId && (
+                  <QuickLink href={`/test/${latestId}/result`} icon={Sparkles} label="Your latest plan" />
+                )}
+                <QuickLink href="/revision" icon={RotateCcw} label="Revision queue" />
+                <QuickLink href="/dashboard" icon={LayoutGrid} label="Dashboard" />
               </div>
 
               {tab === "overview" && (
@@ -440,6 +452,27 @@ function ActionPlan({ tasks }: { tasks: ActionTask[] }) {
         ))}
       </ol>
     </section>
+  );
+}
+
+function QuickLink({
+  href,
+  icon: Icon,
+  label,
+}: {
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group inline-flex items-center gap-2 rounded-lg border border-hairline bg-surface px-3.5 py-2 text-xs font-semibold text-ink-secondary transition-premium hover:border-gold-bright/40 hover:text-ink"
+    >
+      <Icon className="h-3.5 w-3.5 text-gold" />
+      {label}
+      <ArrowRight className="h-3.5 w-3.5 text-ink-tertiary transition-premium group-hover:translate-x-0.5" />
+    </Link>
   );
 }
 

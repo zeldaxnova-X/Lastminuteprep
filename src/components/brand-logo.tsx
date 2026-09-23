@@ -26,8 +26,8 @@ export function BrandLogo({
       <Image
         src="/images/lmp-mark.png"
         alt="LastMilePrep"
-        width={863}
-        height={348}
+        width={862}
+        height={339}
         priority={priority}
         className="h-7 w-auto"
       />
