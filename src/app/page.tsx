@@ -599,7 +599,6 @@ function Footer() {
           </nav>
         </div>
         <p className="text-center text-[11px] leading-relaxed text-ink-tertiary">
-          [[LEGAL_ENTITY_NAME]] · [[REGISTERED_ADDRESS]] ·{" "}
           <a href="mailto:hello@lastmileprep.in" className="hover:text-ink">hello@lastmileprep.in</a>
           <br />© {new Date().getFullYear()} LastMilePrep. Not affiliated with SSC, IBPS, SBI, NTA, NBE or UPSC.
         </p>
