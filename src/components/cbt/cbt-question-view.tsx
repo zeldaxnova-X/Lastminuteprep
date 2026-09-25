@@ -271,7 +271,7 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
               blocks={stemBlocks}
               onZoom={setZoomedImage}
               showZoomHint
-              textClassName="text-[15px] font-medium leading-relaxed text-slate-800 dark:text-slate-100 sm:text-lg"
+              textClassName="text-[15px] font-medium leading-relaxed text-slate-800 dark:text-slate-100 sm:text-base"
               imageMaxHeight="max-h-[60vh] sm:max-h-96"
             />
           </div>
@@ -325,6 +325,12 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
                         />
                       )}
                     </span>
+                    {/* Selected tick — unambiguous, premium confirmation */}
+                    <Check
+                      className={`h-4 w-4 flex-shrink-0 text-indigo-500 transition-opacity dark:text-indigo-400 ${
+                        isSelected ? "opacity-100" : "opacity-0"
+                      }`}
+                    />
                   </div>
                 );
               })}
@@ -334,10 +340,10 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
             <p className="mt-3 flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500">
               <Keyboard className="h-3.5 w-3.5" />
               <span>
-                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">A–D</kbd> select ·{" "}
-                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">Enter</kbd> save &amp; next ·{" "}
-                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">M</kbd> mark ·{" "}
-                <kbd className="font-sans font-semibold text-slate-500 dark:text-slate-400">←/→</kbd> navigate
+                <kbd className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 font-sans text-[10px] font-semibold text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">A–D</kbd> select ·{" "}
+                <kbd className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 font-sans text-[10px] font-semibold text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">Enter</kbd> save &amp; next ·{" "}
+                <kbd className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 font-sans text-[10px] font-semibold text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">M</kbd> mark ·{" "}
+                <kbd className="rounded border border-slate-200 bg-slate-50 px-1.5 py-0.5 font-sans text-[10px] font-semibold text-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">←/→</kbd> navigate
               </span>
             </p>
           </div>
