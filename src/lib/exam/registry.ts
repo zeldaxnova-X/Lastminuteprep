@@ -5,7 +5,7 @@
  * its content schema. Nothing exam-specific is hardcoded in the scorer/engine.
  */
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { SSC_CGL_TIER1_CONFIG, type ExamConfig } from "./exam-config";
+import { SSC_CGL_TIER1_CONFIG, SBI_CLERK_PRELIMS_CONFIG, type ExamConfig } from "./exam-config";
 
 export interface ExamRegistryEntry {
   /** Canonical short code, e.g. "ssc-cgl". Stored on exam_attempts.exam_code. */
@@ -29,6 +29,12 @@ export const EXAM_REGISTRY: Record<string, ExamRegistryEntry> = {
     slug: "ssc-cgl-tier-1",
     contentSchema: "ssc_cgl",
     builtinConfig: SSC_CGL_TIER1_CONFIG,
+  },
+  "sbi-clerk": {
+    code: "sbi-clerk",
+    slug: "sbi-clerk-prelims",
+    contentSchema: "sbi_clerk",
+    builtinConfig: SBI_CLERK_PRELIMS_CONFIG,
   },
 };
 

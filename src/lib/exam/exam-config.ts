@@ -45,6 +45,9 @@ export interface SectionConfig {
   marksWrong: number;
   /** Question type for this section. */
   questionType: QuestionType;
+  /** Options per question in this section (SSC = 4 / A–D, SBI = 5 / A–E).
+   *  Omitted → falls back to the exam-wide optionsCount. */
+  optionsCount?: number;
   /** Per-section time lock in minutes; null = governed by the exam-wide timer. */
   timeLimitMinutes: number | null;
   /** For `optional_n_of_m`: how many of the `questionCount` must be attempted. STUB. */
@@ -67,7 +70,23 @@ export interface ExamConfig {
   /** Exam-wide fallback marking, used when a section omits its own. */
   marksCorrect: number;
   marksWrong: number;
+  /** Options per question exam-wide (SSC = 4, SBI = 5). Sections may override. */
+  optionsCount: number;
   sections: SectionConfig[];
+}
+
+/** Options for a section, falling back to the exam-wide count (default 4). */
+export function getOptionsCount(config: ExamConfig, sectionKey?: string): number {
+  if (sectionKey) {
+    const s = config.sections.find((x) => x.key === sectionKey);
+    if (s?.optionsCount) return s.optionsCount;
+  }
+  return config.optionsCount ?? 4;
+}
+
+/** Option letters for a count, e.g. 4 → [A,B,C,D], 5 → [A,B,C,D,E]. */
+export function optionLetters(count: number): string[] {
+  return Array.from({ length: count }, (_, i) => String.fromCharCode(65 + i));
 }
 
 /** Canonical SSC CGL Tier 1 config, the only fully-functional exam for now. */
@@ -82,6 +101,7 @@ export const SSC_CGL_TIER1_CONFIG: ExamConfig = {
   negativeMarking: true,
   marksCorrect: 2,
   marksWrong: -0.5,
+  optionsCount: 4,
   sections: [
     {
       key: "reasoning",
@@ -123,6 +143,30 @@ export const SSC_CGL_TIER1_CONFIG: ExamConfig = {
       questionType: "single_correct_mcq",
       timeLimitMinutes: null,
     },
+  ],
+};
+
+/**
+ * SBI Clerk Prelims config. Its OWN entity — 5 options (A–E), 1/−0.25 marking,
+ * 3 sections, 20-min sectional locks. Kept in sync with the DB seed in
+ * supabase/migrations/20260925000300_sbi_clerk_prelims.sql.
+ */
+export const SBI_CLERK_PRELIMS_CONFIG: ExamConfig = {
+  schemaVersion: 1,
+  examSlug: "sbi-clerk-prelims",
+  examName: "SBI Clerk Prelims",
+  tier: null,
+  totalDurationMinutes: 60,
+  hasSectionTimeLocks: true,
+  defaultLanguage: "en",
+  negativeMarking: true,
+  marksCorrect: 1,
+  marksWrong: -0.25,
+  optionsCount: 5,
+  sections: [
+    { key: "english", name: "English Language", order: 1, questionCount: 30, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
+    { key: "numerical_ability", name: "Numerical Ability", order: 2, questionCount: 35, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
+    { key: "reasoning", name: "Reasoning Ability", order: 3, questionCount: 35, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
   ],
 };
 

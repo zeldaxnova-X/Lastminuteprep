@@ -28,6 +28,7 @@ const SBI_MAINS_LIKE: ExamConfig = {
   negativeMarking: true,
   marksCorrect: 1,
   marksWrong: -0.25,
+  optionsCount: 5,
   sections: [
     { key: "english", name: "General English", order: 1, questionCount: 40, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", timeLimitMinutes: 35 },
     { key: "quantitative_aptitude", name: "Quantitative Aptitude", order: 2, questionCount: 50, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", timeLimitMinutes: 45 },
