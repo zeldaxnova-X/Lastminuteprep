@@ -22,6 +22,8 @@ import {
   Clock,
   ChevronDown,
   Lock,
+  Check,
+  X,
 } from "lucide-react";
 
 interface SessionResult {
@@ -738,8 +740,16 @@ function QuestionReview({ review }: { review: ReviewItem[] }) {
                               o.text
                             )}
                           </span>
-                          {isCorrect && <span className="text-[11px] font-semibold text-success">Correct</span>}
-                          {isChosen && !isCorrect && <span className="text-[11px] font-semibold text-danger">Your answer</span>}
+                          {isCorrect && (
+                            <span className="ml-auto flex flex-shrink-0 items-center gap-1 text-[11px] font-semibold text-success">
+                              <Check className="h-3.5 w-3.5" /> Correct
+                            </span>
+                          )}
+                          {isChosen && !isCorrect && (
+                            <span className="ml-auto flex flex-shrink-0 items-center gap-1 text-[11px] font-semibold text-danger">
+                              <X className="h-3.5 w-3.5" /> Your answer
+                            </span>
+                          )}
                         </div>
                       );
                     })}
