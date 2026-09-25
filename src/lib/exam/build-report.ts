@@ -60,21 +60,37 @@ export async function buildAndStoreReport(
 
   const config = await loadConfig(supabase, sessionRow.exam_id);
 
-  // Responses joined to their question's section / answer key / topic.
+  // Responses + their question metadata via a MANUAL join. We can't use
+  // PostgREST embedding (responses→questions) because responses is a shared,
+  // multi-exam table with no FK to any one exam's content table. Fetch the
+  // question metadata by id from the exam's content and join in code.
   const { data: rows, error } = await supabase
     .from("responses")
-    .select(
-      "question_id, selected_option, status, confidence, time_spent_ms, questions(section, correct_option, topic)"
-    )
+    .select("question_id, selected_option, status, confidence, time_spent_ms")
     .eq("session_id", sessionId);
 
   if (error) return { ok: false, reason: error.message };
   if (!rows || rows.length === 0) return { ok: false, reason: "no responses" };
 
+  const qids = rows.map((r) => r.question_id as string);
+  const qMeta = new Map<string, { section: string | null; correct_option: string | null; topic: string | null }>();
+  for (let i = 0; i < qids.length; i += 500) {
+    const chunk = qids.slice(i, i + 500);
+    const { data: qs } = await supabase
+      .from("questions")
+      .select("id, section, correct_option, topic")
+      .in("id", chunk);
+    for (const q of qs ?? []) {
+      qMeta.set(q.id as string, {
+        section: (q.section as string | null) ?? null,
+        correct_option: (q.correct_option as string | null) ?? null,
+        topic: (q.topic as string | null) ?? null,
+      });
+    }
+  }
+
   const responses: ResponseInput[] = rows.map((row) => {
-    const q = (Array.isArray(row.questions) ? row.questions[0] : row.questions) as
-      | { section: string | null; correct_option: string | null; topic: string | null }
-      | null;
+    const q = qMeta.get(row.question_id as string) ?? null;
     return {
       questionId: row.question_id as string,
       section: q?.section ?? "unknown",

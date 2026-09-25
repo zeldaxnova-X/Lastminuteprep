@@ -7,26 +7,6 @@ import { getUserId } from "@/lib/auth/api-guard";
 import { resolveReportAccess } from "@/lib/entitlements";
 import { emitEvent } from "@/lib/analytics/events";
 
-interface ReviewRow {
-  question_id: string;
-  selected_option: string | null;
-  status: string;
-  confidence: string | null;
-  time_spent_ms: number | null;
-  is_correct: boolean | null;
-  marks_awarded: number | null;
-  questions: {
-    question_number: number;
-    section: string;
-    stem: unknown;
-    stem_text: string;
-    options: unknown;
-    correct_option: string | null;
-    solution: unknown;
-    solution_text: string;
-  } | null;
-}
-
 /**
  * Remove proprietary methodology from the analysis before it leaves the server
  * (hard rule 4): global calibration thresholds and the blind-guess EV formula
@@ -98,20 +78,28 @@ export async function GET(
     .maybeSingle();
 
   // Question-by-question review (test is over, answer key + solution allowed).
-  const { data: rows } = await supabase
+  // MANUAL join: responses is a shared multi-exam table with no FK to any one
+  // exam's content, so we can't use PostgREST embedding — fetch the question
+  // metadata by id from the exam's content and join in code.
+  const { data: respRows } = await supabase
     .from("responses")
-    .select(
-      "question_id, selected_option, status, confidence, time_spent_ms, is_correct, marks_awarded, " +
-        "questions(question_number, section, stem, stem_text, options, correct_option, solution, solution_text)"
-    )
-    .eq("session_id", attemptId)
-    .returns<ReviewRow[]>();
+    .select("question_id, selected_option, status, confidence, time_spent_ms, is_correct, marks_awarded")
+    .eq("session_id", attemptId);
 
-  const review = (rows ?? [])
+  const reviewQIds = (respRows ?? []).map((r) => r.question_id as string);
+  const reviewQMeta = new Map<string, Record<string, unknown>>();
+  for (let i = 0; i < reviewQIds.length; i += 500) {
+    const chunk = reviewQIds.slice(i, i + 500);
+    const { data: qs } = await supabase
+      .from("questions")
+      .select("id, question_number, section, stem, stem_text, options, correct_option, solution, solution_text")
+      .in("id", chunk);
+    for (const q of qs ?? []) reviewQMeta.set(q.id as string, q as Record<string, unknown>);
+  }
+
+  const review = (respRows ?? [])
     .map((r) => {
-      const q = (Array.isArray(r.questions) ? r.questions[0] : r.questions) as
-        | Record<string, unknown>
-        | null;
+      const q = reviewQMeta.get(r.question_id as string) ?? null;
       return {
         questionId: r.question_id,
         questionNumber: (q?.question_number as number) ?? 0,

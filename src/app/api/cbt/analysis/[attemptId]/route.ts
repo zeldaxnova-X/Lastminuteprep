@@ -27,10 +27,12 @@ export async function GET(
     const viewer = await getViewer();
     if (!canSeeReport(viewer.plan)) return json403();
 
-    // Fetch all attempt answers with joined question metadata
+    // Fetch attempt answers, then their question metadata via a MANUAL join
+    // (responses/attempt_answers are shared multi-exam tables with no FK to a
+    // single exam's content, so PostgREST embedding is not available).
     const { data: answers, error: answersError } = await supabase
       .from("attempt_answers")
-      .select("*, question:validated_questions(*)")
+      .select("*")
       .eq("attempt_id", attemptId)
       .order("question_index", { ascending: true });
 
@@ -38,8 +40,16 @@ export async function GET(
       return NextResponse.json({ error: answersError.message }, { status: 500 });
     }
 
+    const aqIds = [...new Set((answers || []).map((a) => a.question_id as string))];
+    const aqMeta = new Map<string, ValidatedQuestion>();
+    for (let i = 0; i < aqIds.length; i += 500) {
+      const chunk = aqIds.slice(i, i + 500);
+      const { data: qs } = await supabase.from("validated_questions").select("*").in("id", chunk);
+      for (const q of qs ?? []) aqMeta.set(q.id as string, q as ValidatedQuestion);
+    }
+
     const questionAttempts: QuestionAttemptInput[] = (answers || []).map((ans, idx) => {
-      const q = ans.question as ValidatedQuestion;
+      const q = aqMeta.get(ans.question_id as string) as ValidatedQuestion;
       return {
         question: q,
         question_index: ans.question_index ?? idx,
