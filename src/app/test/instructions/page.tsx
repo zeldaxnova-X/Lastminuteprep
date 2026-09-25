@@ -31,6 +31,9 @@ function InstructionsContent() {
   const topic = searchParams.get("topic") || "";
   const questionCount = parseInt(searchParams.get("questions") || "100");
   const timeLimitMinutes = parseInt(searchParams.get("time") || "60");
+  // Free-mock entry (from the /sample exam picker): Back returns to the picker,
+  // and the daily cap is surfaced kindly rather than as a raw error code.
+  const isFree = searchParams.get("free") === "1";
 
   const [confirmed, setConfirmed] = useState(false);
   const [starting, setStarting] = useState(false);
@@ -61,6 +64,15 @@ function InstructionsContent() {
       const data = await res.json();
 
       if (!res.ok) {
+        if (res.status === 403 && (data.error === "signup_required" || data.error === "upgrade_required")) {
+          setError(
+            data.error === "signup_required"
+              ? "You've used your free mock for today. Sign up to take more."
+              : "You've used all your free mocks. Unlock All-Access for unlimited mocks."
+          );
+          setStarting(false);
+          return;
+        }
         throw new Error(data.error || "Failed to start exam");
       }
 
@@ -226,7 +238,7 @@ function InstructionsContent() {
 
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 pt-2">
           <Link
-            href="/test/create"
+            href={isFree ? "/sample" : "/test/create"}
             className="w-full sm:w-auto px-4 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 font-semibold text-xs transition-colors text-center min-h-[44px] flex items-center justify-center"
           >
             ← Back
