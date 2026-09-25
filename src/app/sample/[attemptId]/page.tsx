@@ -49,6 +49,9 @@ export default function SampleConversionPage() {
 
   const [data, setData] = useState<ReportData | null>(null);
   const [authed, setAuthed] = useState<boolean | null>(null);
+  // The ₹9 per-attempt unlock is part of the new funnel; gate it on the flag so
+  // flag-off prod keeps the All-Access-only behaviour.
+  const [freeMock, setFreeMock] = useState(false);
   const [email, setEmail] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [checkout, setCheckout] = useState<null | { kind: "single_report" | "all_access"; price: string }>(null);
@@ -86,6 +89,7 @@ export default function SampleConversionPage() {
         if (me.ok) {
           const viewer = await me.json();
           setAuthed(!!viewer.authenticated);
+          setFreeMock(!!viewer.freeMockFlow);
           setEmail(viewer.email ?? null);
           // Mint/return the score-gap coupon for signed-in free users. It is
           // applied automatically at checkout; here we just advertise it.
@@ -351,24 +355,26 @@ export default function SampleConversionPage() {
             onClick={() => onUnlock("all_access")}
           />
 
-          <button
-            onClick={() => onUnlock("single_report")}
-            className="flex w-full items-center justify-between gap-3 rounded-xl border border-hairline bg-surface px-4 py-3.5 text-left shadow-soft transition-premium hover:border-accent/40"
-          >
-            <span>
-              <span className="block text-sm font-semibold text-ink">Just this report</span>
-              <span className="block text-xs text-ink-tertiary">
-                Full breakdown for this one mock only
+          {freeMock && (
+            <button
+              onClick={() => onUnlock("single_report")}
+              className="flex w-full items-center justify-between gap-3 rounded-xl border border-hairline bg-surface px-4 py-3.5 text-left shadow-soft transition-premium hover:border-accent/40"
+            >
+              <span>
+                <span className="block text-sm font-semibold text-ink">Just this report</span>
+                <span className="block text-xs text-ink-tertiary">
+                  Full breakdown for this one mock only
+                </span>
               </span>
-            </span>
-            <span className="flex-shrink-0 text-sm font-bold text-ink">₹{SINGLE_REPORT_PRICE_INR}</span>
-          </button>
+              <span className="flex-shrink-0 text-sm font-bold text-ink">₹{SINGLE_REPORT_PRICE_INR}</span>
+            </button>
+          )}
 
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">
             <ShieldCheck className="h-3.5 w-3.5 text-success" />
             {isLaunchOffer()
-              ? `All-Access is one-time until ${ALL_ACCESS_OFFER_END_LABEL}, then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month. ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.`
-              : `All-Access ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month. ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.`}
+              ? `All-Access is one-time until ${ALL_ACCESS_OFFER_END_LABEL}, then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.${freeMock ? ` ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.` : ""}`
+              : `All-Access ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.${freeMock ? ` ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.` : ""}`}
           </p>
           <RazorpayBadge className="pt-1" />
         </div>
