@@ -4,6 +4,8 @@ import { loadOwnedAttempt, recordAnonMock } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { markProfileStale } from "@/lib/ai/build-learner-profile";
 import { emitEvent } from "@/lib/analytics/events";
+import { loadExamConfig } from "@/lib/exam/registry";
+import { getSectionMarking } from "@/lib/exam/exam-config";
 
 type ResponseStatus =
   | "not_visited"
@@ -141,11 +143,11 @@ export async function POST(
       return NextResponse.json({ error: answersError.message }, { status: 500 });
     }
 
-    // Get all questions for this attempt
+    // Get all questions for this attempt (incl. section_slug for per-section marking)
     const questionIds = (answers || []).map((a) => a.question_id);
     const { data: questions, error: questionsError } = await supabase
       .from("validated_questions")
-      .select("id, correct_answer, subject")
+      .select("id, correct_answer, subject, section_slug")
       .in("id", questionIds);
 
     if (questionsError) {
@@ -156,19 +158,21 @@ export async function POST(
       (questions || []).map((q) => [q.id, q])
     );
 
-    // Evaluate each answer
-    const marksPerQ = attempt.marks_per_question;
-    const negMarksPerQ = attempt.negative_marks_per_question;
+    // Marking comes from the exam's config, PER SECTION — never a hardcoded
+    // scalar. SSC is uniform +2/−0.5 so the numbers are unchanged; exams with
+    // per-section marks (e.g. SBI Mains Reasoning = 60/50) score correctly.
+    const config = await loadExamConfig(supabase, attempt.exam_code);
 
     let totalAnswered = 0;
     let totalCorrect = 0;
     let totalWrong = 0;
     let totalSkipped = 0;
     let totalMarked = 0;
+    let maxScore = 0;
 
-    // Section breakdown accumulator
+    // Section breakdown accumulator (keyed by display subject; carries slug).
     const sectionStats: Record<string, {
-      total: number; answered: number; correct: number; wrong: number; skipped: number;
+      slug: string; total: number; answered: number; correct: number; wrong: number; skipped: number; score: number;
     }> = {};
 
     const answerUpdates = (answers || []).map((answer) => {
@@ -176,33 +180,40 @@ export async function POST(
       if (!question) return null;
 
       const subject = question.subject;
+      const slug = (question as { section_slug?: string }).section_slug || subject;
+      const { correct: markCorrect, wrong: markWrong } = getSectionMarking(config, slug);
+      // Every question contributes its section's correct-mark to the max.
+      maxScore += markCorrect;
+
       if (!sectionStats[subject]) {
-        sectionStats[subject] = { total: 0, answered: 0, correct: 0, wrong: 0, skipped: 0 };
+        sectionStats[subject] = { slug, total: 0, answered: 0, correct: 0, wrong: 0, skipped: 0, score: 0 };
       }
-      sectionStats[subject].total++;
+      const st = sectionStats[subject];
+      st.total++;
 
       let isCorrect: boolean | null = null;
       let marksAwarded = 0;
 
       if (answer.selected_option) {
         totalAnswered++;
-        sectionStats[subject].answered++;
+        st.answered++;
 
         if (answer.selected_option === question.correct_answer) {
           isCorrect = true;
-          marksAwarded = marksPerQ;
+          marksAwarded = markCorrect;
           totalCorrect++;
-          sectionStats[subject].correct++;
+          st.correct++;
         } else {
           isCorrect = false;
-          marksAwarded = -negMarksPerQ;
+          marksAwarded = markWrong; // already signed (negative)
           totalWrong++;
-          sectionStats[subject].wrong++;
+          st.wrong++;
         }
       } else {
         totalSkipped++;
-        sectionStats[subject].skipped++;
+        st.skipped++;
       }
+      st.score += marksAwarded;
 
       if (answer.is_marked_for_review) {
         totalMarked++;
@@ -239,12 +250,11 @@ export async function POST(
       )
     );
 
-    // Calculate total score
-    const score = (totalCorrect * marksPerQ) - (totalWrong * negMarksPerQ);
-    const maxScore = attempt.total_questions * marksPerQ;
+    // Total score = sum of per-section (per-question) marks accumulated above.
+    const score = Math.round(Object.values(sectionStats).reduce((s, st) => s + st.score, 0) * 100) / 100;
     const percentage = maxScore > 0 ? Math.round((score / maxScore) * 10000) / 100 : 0;
 
-    // Build section breakdown
+    // Build section breakdown (score already computed per section's marking)
     const sectionBreakdown = Object.entries(sectionStats).map(([subject, stats]) => ({
       subject,
       total: stats.total,
@@ -252,7 +262,7 @@ export async function POST(
       correct: stats.correct,
       wrong: stats.wrong,
       skipped: stats.skipped,
-      score: (stats.correct * marksPerQ) - (stats.wrong * negMarksPerQ),
+      score: Math.round(stats.score * 100) / 100,
       accuracy: stats.answered > 0
         ? Math.round((stats.correct / stats.answered) * 10000) / 100
         : 0,

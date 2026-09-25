@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { loadOwnedAttempt } from "@/lib/auth/api-guard";
+import { loadExamConfig } from "@/lib/exam/registry";
+import { getSectionMarking } from "@/lib/exam/exam-config";
 
 /**
  * POST /api/cbt/exams/[attemptId]/auto-submit
@@ -35,24 +37,25 @@ export async function POST(
     const questionIds = (answers || []).map((a) => a.question_id);
     const { data: questions } = await supabase
       .from("validated_questions")
-      .select("id, correct_answer, subject")
+      .select("id, correct_answer, subject, section_slug")
       .in("id", questionIds);
 
     const questionMap = new Map(
       (questions || []).map((q) => [q.id, q])
     );
 
-    const marksPerQ = attempt.marks_per_question;
-    const negMarksPerQ = attempt.negative_marks_per_question;
+    // Per-section marking from the exam config (never a hardcoded scalar).
+    const config = await loadExamConfig(supabase, attempt.exam_code);
 
     let totalAnswered = 0;
     let totalCorrect = 0;
     let totalWrong = 0;
     let totalSkipped = 0;
     let totalMarked = 0;
+    let maxScore = 0;
 
     const sectionStats: Record<string, {
-      total: number; answered: number; correct: number; wrong: number; skipped: number;
+      total: number; answered: number; correct: number; wrong: number; skipped: number; score: number;
     }> = {};
 
     // Evaluate each answer
@@ -61,33 +64,39 @@ export async function POST(
       if (!question) continue;
 
       const subject = question.subject;
+      const slug = (question as { section_slug?: string }).section_slug || subject;
+      const { correct: markCorrect, wrong: markWrong } = getSectionMarking(config, slug);
+      maxScore += markCorrect;
+
       if (!sectionStats[subject]) {
-        sectionStats[subject] = { total: 0, answered: 0, correct: 0, wrong: 0, skipped: 0 };
+        sectionStats[subject] = { total: 0, answered: 0, correct: 0, wrong: 0, skipped: 0, score: 0 };
       }
-      sectionStats[subject].total++;
+      const st = sectionStats[subject];
+      st.total++;
 
       let isCorrect: boolean | null = null;
       let marksAwarded = 0;
 
       if (answer.selected_option) {
         totalAnswered++;
-        sectionStats[subject].answered++;
+        st.answered++;
 
         if (answer.selected_option === question.correct_answer) {
           isCorrect = true;
-          marksAwarded = marksPerQ;
+          marksAwarded = markCorrect;
           totalCorrect++;
-          sectionStats[subject].correct++;
+          st.correct++;
         } else {
           isCorrect = false;
-          marksAwarded = -negMarksPerQ;
+          marksAwarded = markWrong;
           totalWrong++;
-          sectionStats[subject].wrong++;
+          st.wrong++;
         }
       } else {
         totalSkipped++;
-        sectionStats[subject].skipped++;
+        st.skipped++;
       }
+      st.score += marksAwarded;
 
       if (answer.is_marked_for_review) totalMarked++;
 
@@ -101,8 +110,7 @@ export async function POST(
         .eq("id", answer.id);
     }
 
-    const score = (totalCorrect * marksPerQ) - (totalWrong * negMarksPerQ);
-    const maxScore = attempt.total_questions * marksPerQ;
+    const score = Math.round(Object.values(sectionStats).reduce((s, st) => s + st.score, 0) * 100) / 100;
     const percentage = maxScore > 0 ? Math.round((score / maxScore) * 10000) / 100 : 0;
 
     const sectionBreakdown = Object.entries(sectionStats).map(([subject, stats]) => ({
@@ -112,7 +120,7 @@ export async function POST(
       correct: stats.correct,
       wrong: stats.wrong,
       skipped: stats.skipped,
-      score: (stats.correct * marksPerQ) - (stats.wrong * negMarksPerQ),
+      score: Math.round(stats.score * 100) / 100,
       accuracy: stats.answered > 0 ? Math.round((stats.correct / stats.answered) * 10000) / 100 : 0,
     }));
 
