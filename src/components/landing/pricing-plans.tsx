@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Check, ArrowRight, Sparkles } from "lucide-react";
 import {
@@ -7,17 +8,35 @@ import {
   isLaunchOffer,
   ALL_ACCESS_REGULAR_PRICE_INR,
   ALL_ACCESS_OFFER_END_LABEL,
+  SINGLE_REPORT_PRICE_INR,
 } from "@/lib/payments/pricing";
 
-/* Two tiers: Free (one-time 20-question sample) and All-Access — a single pass
-   that unlocks every exam AND MarksenseAI. Launch price ₹49 (struck against the
-   regular ₹99 it reverts to on the offer end date); after that the launch badge
-   and strike-through drop automatically (date-driven via pricing.ts). */
+/* Two tiers: Free and All-Access — a single pass that unlocks every exam AND
+   MarksenseAI. Launch price ₹49 (reverts to ₹99/month on the offer end date;
+   date-driven via pricing.ts). The Free tier's shape depends on the funnel flag
+   (full free mock vs the legacy 20-question sample), read server-authoritatively
+   from /api/auth/me so the copy is always true to what's actually live. */
 
 export function PricingPlans({ questionCount }: { questionCount: number }) {
   const qStr = questionCount.toLocaleString("en-IN");
   const price = allAccessPriceInr();
   const launch = isLaunchOffer();
+
+  const [freeMock, setFreeMock] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    fetch("/api/auth/me", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => alive && setFreeMock(!!j?.freeMockFlow))
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const freeFeatures = freeMock
+    ? ["Full 100-question mock", "Exact CBT interface + sectional timers", "Net score & section accuracy, free"]
+    : ["20-question sample", "Exact CBT interface", "Your net score at the end"];
 
   const allAccessFeatures = [
     "Every exam, current and upcoming",
@@ -39,14 +58,20 @@ export function PricingPlans({ questionCount }: { questionCount: number }) {
           <span className="text-4xl font-semibold tracking-tight tabular text-ink">₹0</span>
           <span className="text-xs font-medium text-ink-tertiary">one-time</span>
         </div>
-        <p className="mt-1 text-xs text-ink-tertiary">No card. One exam.</p>
+        <p className="mt-1 text-xs text-ink-tertiary">{freeMock ? "No card. No signup." : "No card. One exam."}</p>
         <div className="mt-5 flex-1 space-y-2.5">
-          {["20-question sample", "Exact CBT interface", "Your net score at the end"].map((r) => (
+          {freeFeatures.map((r) => (
             <Feature key={r} tone="muted">{r}</Feature>
           ))}
         </div>
+        {freeMock && (
+          <p className="mt-4 rounded-lg bg-panel px-3 py-2 text-[11px] leading-relaxed text-ink-tertiary">
+            Want the full report on your free mock? Unlock just that one for{" "}
+            <span className="font-semibold text-ink">₹{SINGLE_REPORT_PRICE_INR}</span>, or get everything below.
+          </p>
+        )}
         <Link href="/sample" className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-lg border border-hairline-strong bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-premium hover:border-ink/30">
-          Try free
+          {freeMock ? "Take a free mock" : "Try free"}
         </Link>
       </div>
 
