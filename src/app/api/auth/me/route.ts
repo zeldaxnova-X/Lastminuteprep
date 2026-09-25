@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getViewer } from "@/lib/auth/plan";
-import { claimSampleForUser } from "@/lib/auth/api-guard";
+import { claimAnonymousAttempts } from "@/lib/auth/api-guard";
+import { freeMockFlowEnabled } from "@/lib/flags";
 
 /**
  * GET /api/auth/me, the current viewer + plan, for the client nav/account menu.
@@ -12,12 +13,15 @@ export async function GET() {
   const viewer = await getViewer();
   if (viewer.authenticated && viewer.userId) {
     try {
-      await claimSampleForUser(viewer.userId);
+      await claimAnonymousAttempts(viewer.userId);
     } catch {
       // Claiming is best-effort; never block the viewer response on it.
     }
   }
-  return NextResponse.json(viewer, {
-    headers: { "Cache-Control": "no-store" },
-  });
+  // Expose the server-authoritative funnel flag so the client can pick the right
+  // CTA (full free mock vs legacy sample) without a second source of truth.
+  return NextResponse.json(
+    { ...viewer, freeMockFlow: freeMockFlowEnabled() },
+    { headers: { "Cache-Control": "no-store" } }
+  );
 }

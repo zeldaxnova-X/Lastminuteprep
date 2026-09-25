@@ -39,7 +39,7 @@ export default function WelcomePage() {
           >
             <h2 className="text-lg font-bold text-ink">Take a free mock</h2>
             <p className="mt-1 flex-1 text-sm text-ink-secondary">
-              A 20-question CBT in the real interface. See your net score and a preview of the full report.
+              A full SSC CGL mock in the real CBT interface. See your net score free, then unlock the full report.
             </p>
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
               Start the mock <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

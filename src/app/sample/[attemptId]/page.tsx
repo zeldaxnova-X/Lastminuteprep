@@ -10,9 +10,10 @@ import { RazorpayBadge } from "@/components/payments/razorpay-badge";
 import { sectionLabel } from "@/lib/cbt-questions";
 import { cn } from "@/lib/utils";
 import { Loader2, Lock, Sparkles, ShieldCheck } from "lucide-react";
-import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
-import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
+import { startRazorpayCheckout, waitForPlanUpgrade, waitForReportUnlock } from "@/lib/payments/razorpay-checkout";
+import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL, SINGLE_REPORT_PRICE_INR } from "@/lib/payments/pricing";
 import { LEGAL_VERSION } from "@/lib/legal";
+import { trackEvent } from "@/lib/analytics/track";
 
 interface SectionRow {
   key: string;
@@ -50,7 +51,7 @@ export default function SampleConversionPage() {
   const [authed, setAuthed] = useState<boolean | null>(null);
   const [email, setEmail] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [checkout, setCheckout] = useState<null | { tier: "report" | "mentor"; price: string }>(null);
+  const [checkout, setCheckout] = useState<null | { kind: "single_report" | "all_access"; price: string }>(null);
   const [paying, setPaying] = useState(false);
   const [payError, setPayError] = useState<string | null>(null);
   const [offer, setOffer] = useState<null | { discount_pct: number; gap: number; expires_at: string }>(null);
@@ -110,39 +111,44 @@ export default function SampleConversionPage() {
     })();
   }, [attemptId]);
 
-  // PAYWALL SEAM, auth is required to unlock, payment is NOT wired.
-  // Not signed in → send to /login, returning to the report afterwards.
-  // Signed in → stubbed checkout (// TODO: Razorpay). No plan mutation here.
-  function onUnlock(tier: "report" | "mentor") {
-    void captureLead(); // grab the contact before we route away
+  // Two unlock paths. Both require an account (a purchase must attach to a user
+  // and the anonymous attempt is claimed on sign-in). If signed out, we route to
+  // /login and RETURN here with ?unlock=<kind> so checkout auto-resumes.
+  function onUnlock(kind: "single_report" | "all_access") {
+    trackEvent("upgrade_started", { kind, attemptId });
+    void captureLead();
     if (!authed) {
-      router.push(`/login?next=${encodeURIComponent(reportHref)}`);
+      const back = `/sample/${attemptId}?unlock=${kind === "single_report" ? "report" : "all"}`;
+      router.push(`/login?next=${encodeURIComponent(back)}`);
       return;
     }
-    startCheckout(tier);
+    startCheckout(kind);
   }
 
-  function startCheckout(tier: "report" | "mentor") {
-    // Single product: every unlock buys the All-Access pass (grants mentor).
-    setCheckout({ tier, price: `₹${allAccessPriceInr()}` });
+  function startCheckout(kind: "single_report" | "all_access") {
+    const price = kind === "single_report" ? `₹${SINGLE_REPORT_PRICE_INR}` : `₹${allAccessPriceInr()}`;
+    setCheckout({ kind, price });
     setPayError(null);
     setPaying(true);
-    const plan = "mentor" as const;
     void startRazorpayCheckout({
-      plan,
+      plan: "mentor",
+      kind,
+      attemptId: kind === "single_report" ? attemptId : undefined,
       consent: { policyVersion: LEGAL_VERSION, consentAt: new Date().toISOString() },
       prefill: email ? { email } : undefined,
-      // Payment captured + signature verified. The plan is granted by the
-      // webhook (independent of this callback), so wait for it to land before
-      // sending the user to the now-unlocked report.
+      // The webhook grants the entitlement independently; poll for it to land,
+      // then open the now-unlocked report.
       onSuccess: async () => {
-        const upgraded = await waitForPlanUpgrade(plan);
-        if (upgraded) {
+        const ok =
+          kind === "single_report"
+            ? await waitForReportUnlock(attemptId)
+            : await waitForPlanUpgrade("mentor");
+        if (ok) {
           router.push(reportHref);
         } else {
           setPaying(false);
           setPayError(
-            "Payment received, we're confirming your upgrade. It'll unlock in a moment; refresh if it doesn't."
+            "Payment received, we're confirming your unlock. It'll open in a moment; refresh if it doesn't."
           );
         }
       },
@@ -153,6 +159,23 @@ export default function SampleConversionPage() {
       onDismiss: () => setPaying(false),
     });
   }
+
+  // Auto-resume checkout after returning from login (?unlock=report|all).
+  useEffect(() => {
+    if (authed !== true) return;
+    const u = new URLSearchParams(window.location.search).get("unlock");
+    if (u !== "report" && u !== "all") return;
+    // Clear the param so a refresh doesn't reopen the modal.
+    window.history.replaceState({}, "", `/sample/${attemptId}`);
+    startCheckout(u === "report" ? "single_report" : "all_access");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authed]);
+
+  // Upsell impression (once, after we know auth state).
+  useEffect(() => {
+    if (authed !== null) trackEvent("upgrade_cta_viewed", { attemptId });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authed]);
 
   if (loading) {
     return (
@@ -315,22 +338,37 @@ export default function SampleConversionPage() {
           </div>
         )}
 
-        {/* The calm offer, one All-Access pass */}
+        {/* Two ways to unlock. All-Access / MarksenseAI is the hero; ₹9 unlocks
+            just this attempt's report. */}
         <div className="space-y-3">
           <OfferRow
-            title="All-Access, everything unlocked"
+            title="All-Access — unlock MarksenseAI"
             price={`₹${allAccessPriceInr()}`}
             note={isLaunchOffer() ? `one-time · until ${ALL_ACCESS_OFFER_END_LABEL}` : "per month"}
             featured
-            desc="Every exam, the full 10,000+ question bank, unlimited mocks, complete section & timing reports, and the MarksenseAI engine, skip strategy, break-even guess rule, and your score-maximisation plan."
+            desc="Every exam, unlimited mocks, the full report on every attempt, and the MarksenseAI engine — your skip strategy, personal break-even guess rule, and score-maximisation plan across all your mocks."
             cta="Unlock All-Access"
-            onClick={() => onUnlock("mentor")}
+            onClick={() => onUnlock("all_access")}
           />
+
+          <button
+            onClick={() => onUnlock("single_report")}
+            className="flex w-full items-center justify-between gap-3 rounded-xl border border-hairline bg-surface px-4 py-3.5 text-left shadow-soft transition-premium hover:border-accent/40"
+          >
+            <span>
+              <span className="block text-sm font-semibold text-ink">Just this report</span>
+              <span className="block text-xs text-ink-tertiary">
+                Full breakdown for this one mock only
+              </span>
+            </span>
+            <span className="flex-shrink-0 text-sm font-bold text-ink">₹{SINGLE_REPORT_PRICE_INR}</span>
+          </button>
+
           <p className="flex items-center justify-center gap-1.5 pt-1 text-center text-xs text-ink-tertiary">
             <ShieldCheck className="h-3.5 w-3.5 text-success" />
             {isLaunchOffer()
-              ? `One-time payment, full access until ${ALL_ACCESS_OFFER_END_LABEL}. Then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month.`
-              : "Every exam + MarksenseAI, billed monthly."}
+              ? `All-Access is one-time until ${ALL_ACCESS_OFFER_END_LABEL}, then ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month. ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.`
+              : `All-Access ₹${ALL_ACCESS_REGULAR_PRICE_INR}/month. ₹${SINGLE_REPORT_PRICE_INR} unlocks this report only.`}
           </p>
           <RazorpayBadge className="pt-1" />
         </div>
@@ -347,7 +385,7 @@ export default function SampleConversionPage() {
               <div className="space-y-2">
                 <p className="text-danger">{payError}</p>
                 <button
-                  onClick={() => startCheckout(checkout.tier)}
+                  onClick={() => startCheckout(checkout.kind)}
                   className="mx-auto block rounded-md border border-hairline bg-surface px-3 py-1.5 text-xs font-semibold text-ink transition-premium hover:bg-panel"
                 >
                   Try again
@@ -362,10 +400,12 @@ export default function SampleConversionPage() {
             {process.env.NODE_ENV !== "production" && (
               <button
                 onClick={async () => {
+                  // Dev shortcut: grant mentor so the full report opens (covers
+                  // both the ₹9 and ₹49 paths for local testing).
                   await fetch("/api/dev/simulate-upgrade", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ tier: checkout.tier === "mentor" ? "mentor" : "pro" }),
+                    body: JSON.stringify({ tier: "mentor" }),
                   });
                   router.push(reportHref);
                 }}

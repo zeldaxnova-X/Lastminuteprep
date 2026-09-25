@@ -176,28 +176,69 @@ export async function loadOwnedAttempt(
 }
 
 /**
- * When a signed-in user has an unclaimed anonymous sample on this device, attach
- * it to their account so their sample result follows them in. Idempotent.
+ * CLAIM-ON-SIGNUP. Attach EVERY anonymous attempt created on this device (the
+ * full free mock AND any legacy sample) to the signing-in user, ATOMICALLY, via
+ * the claim_anonymous_attempts RPC (a single SECURITY DEFINER transaction that
+ * reassigns exam_attempts + their canonical test_sessions mirror and stamps the
+ * sample ledger). Idempotent: a second call finds nothing left to claim.
+ *
+ * This is the single critical funnel step — if the just-finished anonymous mock
+ * were lost at signup, the whole funnel would be dead. Returns the number of
+ * attempts claimed (0 when there's nothing on this device).
  */
-export async function claimSampleForUser(userId: string): Promise<void> {
+export async function claimAnonymousAttempts(userId: string): Promise<number> {
   const token = await readDeviceToken();
-  if (!token) return;
+  if (!token) return 0;
   const svc = serviceClient();
-  const { data: sample } = await svc
-    .from("sample_attempts")
-    .select("device_token, attempt_id, claimed_by")
-    .eq("device_token", token)
-    .maybeSingle();
-  if (!sample || sample.claimed_by) return;
+  const { data, error } = await svc.rpc("claim_anonymous_attempts", {
+    p_user: userId,
+    p_device: token,
+  });
+  if (error) {
+    console.error("claim_anonymous_attempts failed:", error.message);
+    return 0;
+  }
+  return typeof data === "number" ? data : 0;
+}
 
-  await svc
-    .from("sample_attempts")
-    .update({ claimed_by: userId, claimed_at: new Date().toISOString() })
-    .eq("device_token", token);
-  if (sample.attempt_id) {
-    await svc
-      .from("exam_attempts")
-      .update({ user_id: userId, device_id: null })
-      .eq("id", sample.attempt_id);
+/** @deprecated Use claimAnonymousAttempts (claims the full mock too). Kept as an
+ *  alias so existing imports keep working. */
+export async function claimSampleForUser(userId: string): Promise<void> {
+  await claimAnonymousAttempts(userId);
+}
+
+/**
+ * Anonymous full-mock abuse cap: how many COMPLETED anonymous mocks this browser
+ * (device token) OR IP has finished in the last 24h. Signup lifts the cap. Not an
+ * anti-fraud system — a modest speed bump (see ANON_MOCKS_PER_DAY).
+ */
+export async function countAnonMocksLast24h(deviceToken: string | null, ip: string | null): Promise<number> {
+  if (!deviceToken && !ip) return 0;
+  const svc = serviceClient();
+  const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+  let q = svc.from("anon_mock_ledger").select("id", { count: "exact", head: true }).gte("created_at", since);
+  // Match either the device token or the IP (whichever we have) — OR semantics.
+  if (deviceToken && ip) {
+    q = q.or(`device_token.eq.${deviceToken},ip.eq.${ip}`);
+  } else if (deviceToken) {
+    q = q.eq("device_token", deviceToken);
+  } else if (ip) {
+    q = q.eq("ip", ip);
+  }
+  const { count } = await q;
+  return count ?? 0;
+}
+
+/** Record one completed anonymous mock for the 24h cap. Best-effort. */
+export async function recordAnonMock(
+  deviceToken: string | null,
+  ip: string | null,
+  attemptId: string
+): Promise<void> {
+  try {
+    const svc = serviceClient();
+    await svc.from("anon_mock_ledger").insert({ device_token: deviceToken, ip, attempt_id: attemptId });
+  } catch {
+    /* never block */
   }
 }

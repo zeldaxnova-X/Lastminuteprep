@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { loadOwnedAttempt, json403 } from "@/lib/auth/api-guard";
+import { loadOwnedAttempt, json403, claimAnonymousAttempts } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { narrateMentorReport } from "@/lib/exam/anthropic-narrate";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
-import { getViewer, canSeeReport, canSeeMentor } from "@/lib/auth/plan";
+import { getUserId } from "@/lib/auth/api-guard";
+import { resolveReportAccess } from "@/lib/entitlements";
+import { emitEvent } from "@/lib/analytics/events";
 
 interface ReviewRow {
   question_id: string;
@@ -54,8 +56,15 @@ export async function GET(
 ) {
   const { attemptId } = await params;
 
+  // Claim-first: if a signed-in user is opening an anonymous mock they took on
+  // this device (e.g. just after signup), attach it to their account NOW so
+  // ownership + entitlement resolve deterministically (no race with /auth/me).
+  // Idempotent and cheap (a no-op UPDATE when there's nothing to claim).
+  const uid = await getUserId();
+  if (uid) await claimAnonymousAttempts(uid);
+
   // Identity + ownership: only the owner (or the sample's device) may fetch a
-  // report. The paywall below further restricts WHAT they get by plan.
+  // report. The entitlement gate below further restricts WHAT they get.
   const access = await loadOwnedAttempt(attemptId);
   if (!access.ok) return access.res;
   const supabase = access.db;
@@ -124,18 +133,29 @@ export async function GET(
     .sort((a, b) => a.questionNumber - b.questionNumber);
 
   // ------------------------------------------------------------------
-  // PAYWALL SEAM (M9). Gate the report by the viewer's plan:
-  //   free   → net score + section breakdown + a blurred "+X" tease only
-  //            (the conversion screen shows these, values masked client-side).
-  //   pro    → full deterministic report (review), NO Mentor engine.
-  //   mentor → everything, incl. analysis + narrative.
-  // Session ownership isn't enforced yet (sessions still use permissive RLS +
-  // service role). // TODO: check session.user_id === viewer.userId once the
-  // anonymous sample sessions are claimed at first login.
+  // ENTITLEMENT GATE (server-side, un-bypassable). The full report is assembled
+  // ONLY for an authenticated OWNER who is entitled — All-Access plan OR the ₹9
+  // per-attempt unlock. Everyone else (anonymous, signed-in-free without an
+  // unlock) gets HEADLINE ONLY: nothing gated is ever put on the wire. See
+  // resolveReportAccess. The teaser markets the shape; the values live here.
   // ------------------------------------------------------------------
-  const viewer = await getViewer();
-  const reportAllowed = canSeeReport(viewer.plan);
-  const mentorAllowed = canSeeMentor(viewer.plan);
+  const gate = await resolveReportAccess(attemptId, access.attempt.user_id ?? null);
+  const viewer = gate.viewer;
+  const fullReport = gate.full;
+  // The longitudinal cross-mock MarksenseAI (its own /marksense page) stays a
+  // plan feature; the ₹9 unlock covers only THIS attempt's report here.
+  const mentorAllowed = fullReport;
+
+  // Funnel telemetry: a locked view is a teaser impression. (report_unlocked is
+  // emitted at the actual unlock moment in the payment webhook, not per view.)
+  if (!fullReport) {
+    void emitEvent("report_teaser_viewed", {
+      examCode: "ssc-cgl",
+      anonymous: !viewer.authenticated,
+      userId: viewer.userId,
+      props: { attemptId, reason: gate.reason },
+    });
+  }
 
   const rawAnalysis = (report?.analysis ?? null) as MentorAnalysis | null;
   // Rule 4: never expose methodology (config thresholds / EV formula artifacts)
@@ -160,19 +180,20 @@ export async function GET(
   return NextResponse.json({
     result,
     plan: viewer.plan,
-    canReport: reportAllowed,
+    // canReport = the caller may see the FULL report for this attempt (plan or ₹9
+    // unlock). Kept as the key the results page already branches on.
+    canReport: fullReport,
     canMentor: mentorAllowed,
     teaseGain,
     totalQuestions,
     maxScore: totalQuestions * 2,
-    // Full-report data, only for plan >= pro.
-    review: reportAllowed ? review : [],
-    // Mentor engine, only for plan == mentor.
-    analysis: mentorAllowed ? analysis : null,
-    optimalScore: mentorAllowed ? optimalScore : null,
-    narrative: mentorAllowed ? (report?.narrative_md ?? null) : null,
-    // Whether the server can produce the (purely additive) LLM narrative at all.
-    narrationAvailable: mentorAllowed && !!process.env.DEEPSEEK_API_KEY,
+    // Everything below is assembled ONLY when fully entitled — never sent and
+    // hidden client-side.
+    review: fullReport ? review : [],
+    analysis: fullReport ? analysis : null,
+    optimalScore: fullReport ? optimalScore : null,
+    narrative: fullReport ? (report?.narrative_md ?? null) : null,
+    narrationAvailable: fullReport && !!process.env.DEEPSEEK_API_KEY,
   });
 }
 
@@ -187,12 +208,15 @@ export async function POST(
 ) {
   const { attemptId } = await params;
 
-  // Ownership + paywall: the Mentor narrative is a mentor-plan feature.
+  // Ownership + entitlement: the narrative is part of the full report, so it
+  // requires the same entitlement (All-Access plan OR the ₹9 unlock).
+  const uid = await getUserId();
+  if (uid) await claimAnonymousAttempts(uid);
   const access = await loadOwnedAttempt(attemptId);
   if (!access.ok) return access.res;
   const supabase = access.db;
-  const viewer = await getViewer();
-  if (!canSeeMentor(viewer.plan)) return json403();
+  const gate = await resolveReportAccess(attemptId, access.attempt.user_id ?? null);
+  if (!gate.full) return json403();
 
   const { data: report } = await supabase
     .from("mentor_reports")

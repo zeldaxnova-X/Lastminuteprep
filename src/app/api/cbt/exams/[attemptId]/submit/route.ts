@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { loadOwnedAttempt } from "@/lib/auth/api-guard";
+import { loadOwnedAttempt, recordAnonMock } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { markProfileStale } from "@/lib/ai/build-learner-profile";
+import { emitEvent } from "@/lib/analytics/events";
 
 type ResponseStatus =
   | "not_visited"
@@ -41,7 +42,8 @@ async function mirrorToCanonical(
   supabase: SupabaseClient,
   attempt: {
     id: string;
-    user_id: string;
+    user_id: string | null;
+    device_id: string | null;
     exam_type: string;
     started_at: string;
   },
@@ -69,6 +71,7 @@ async function mirrorToCanonical(
     {
       id: attempt.id, // reuse the attempt uuid so URLs/lookups stay 1:1
       user_id: attempt.user_id,
+      device_id: attempt.device_id ?? null, // anonymous mirror, claimable at signup
       exam_id: exam?.id ?? null,
       template_id: null,
       mode: EXAM_TYPE_TO_MODE[attempt.exam_type] ?? "custom",
@@ -217,18 +220,24 @@ export async function POST(
       answerUpdates.filter(Boolean).map((u) => [u!.id, u!])
     );
 
-    // Batch update answers
-    for (const update of answerUpdates) {
-      if (!update) continue;
-      await supabase
-        .from("attempt_answers")
-        .update({
-          is_correct: update.is_correct,
-          marks_awarded: update.marks_awarded,
-          updated_at: new Date().toISOString(),
-        })
-        .eq("id", update.id);
-    }
+    // Update answers in PARALLEL. This used to be 100 sequential round-trips
+    // (~30s for a full mock), which is on the critical path now that the report
+    // must exist right after submit. Parallelising cuts it to ~1–2s.
+    const nowIso = new Date().toISOString();
+    await Promise.all(
+      answerUpdates.map((update) =>
+        update
+          ? supabase
+              .from("attempt_answers")
+              .update({
+                is_correct: update.is_correct,
+                marks_awarded: update.marks_awarded,
+                updated_at: nowIso,
+              })
+              .eq("id", update.id)
+          : Promise.resolve()
+      )
+    );
 
     // Calculate total score
     const score = (totalCorrect * marksPerQ) - (totalWrong * negMarksPerQ);
@@ -304,6 +313,24 @@ export async function POST(
     } catch (mirrorErr) {
       console.error("Canonical mirror/report failed (non-fatal):", mirrorErr);
     }
+
+    // Abuse ledger: log a COMPLETED anonymous FULL mock (not the short sample)
+    // for the per-device/IP 24h cap. Sample stays gated separately.
+    const anonOwner = !(attempt as { user_id?: string | null }).user_id;
+    const anonDevice = (attempt as { device_id?: string | null }).device_id ?? null;
+    const isFullMock = (attempt.total_questions ?? 0) > 20;
+    if (anonOwner && anonDevice && isFullMock) {
+      const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
+      await recordAnonMock(anonDevice, ip, attemptId);
+    }
+
+    void emitEvent("mock_completed", {
+      examCode: "ssc-cgl",
+      anonymous: anonOwner,
+      userId: (attempt as { user_id?: string | null }).user_id ?? null,
+      deviceToken: anonOwner ? anonDevice : null,
+      props: { attemptId, netScore: score, correct: totalCorrect, wrong: totalWrong, skipped: totalSkipped },
+    });
 
     return NextResponse.json({
       attempt_id: attemptId,

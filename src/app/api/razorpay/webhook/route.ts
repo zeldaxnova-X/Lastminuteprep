@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { razorpay, isPaidPlan } from "@/lib/payments/razorpay";
+import { emitEvent } from "@/lib/analytics/events";
 
 /**
  * POST /api/razorpay/webhook, the ONLY place a real payment grants a plan.
@@ -89,7 +90,12 @@ export async function POST(req: NextRequest) {
   const plan = notes.plan;
   const userId = notes.userId;
   const scope = notes.scope ?? null;
-  const resolvable = isPaidPlan(plan) && !!userId;
+  const kind = notes.kind ?? (plan ? "all_access" : null);
+  const attemptId = notes.attemptId ?? null;
+  const isSingleReport = kind === "single_report";
+  const resolvable = isSingleReport
+    ? !!attemptId && !!userId
+    : isPaidPlan(plan) && !!userId;
 
   // Record the payment (audit + idempotency), regardless of resolvability.
   await admin.from("razorpay_payments").upsert(
@@ -97,7 +103,7 @@ export async function POST(req: NextRequest) {
       razorpay_payment_id: paymentId,
       razorpay_order_id: orderId,
       user_id: userId ?? null,
-      plan: plan ?? null,
+      plan: isSingleReport ? null : (plan ?? null),
       scope,
       amount: (payment.amount as number) ?? null,
       currency: (payment.currency as string) ?? null,
@@ -111,6 +117,36 @@ export async function POST(req: NextRequest) {
 
   if (!resolvable) {
     return NextResponse.json({ received: true, granted: false, reason: "unresolved order notes" });
+  }
+
+  // ₹9 single-report unlock: grant access to ONE attempt's full report; no plan
+  // change. Idempotent via report_unlocks PK (attempt_id).
+  if (isSingleReport) {
+    const { error: unlockErr } = await admin
+      .from("report_unlocks")
+      .upsert(
+        { attempt_id: attemptId, user_id: userId, razorpay_payment_id: paymentId },
+        { onConflict: "attempt_id" }
+      );
+    if (unlockErr) {
+      console.error("Report unlock failed in webhook:", unlockErr);
+      await admin
+        .from("razorpay_payments")
+        .update({ status: "grant_failed", updated_at: new Date().toISOString() })
+        .eq("razorpay_payment_id", paymentId);
+      return NextResponse.json({ error: "Unlock failed." }, { status: 500 });
+    }
+    await admin
+      .from("razorpay_payments")
+      .update({ status: "granted", updated_at: new Date().toISOString() })
+      .eq("razorpay_payment_id", paymentId);
+    void emitEvent("report_unlocked", {
+      examCode: scope ?? "ssc-cgl",
+      anonymous: false,
+      userId,
+      props: { attemptId, via: "single_report" },
+    });
+    return NextResponse.json({ received: true, granted: true, kind: "single_report" });
   }
 
   // Access window for one-time-with-expiry billing: extend from the later of
@@ -149,6 +185,13 @@ export async function POST(req: NextRequest) {
     .from("razorpay_payments")
     .update({ status: "granted", updated_at: new Date().toISOString() })
     .eq("razorpay_payment_id", paymentId);
+
+  void emitEvent("upgrade_completed", {
+    examCode: scope ?? "ssc-cgl",
+    anonymous: false,
+    userId,
+    props: { plan, billing: notes.billing ?? null },
+  });
 
   // Burn the coupon (if any) now that the discounted payment has been granted.
   if (notes.coupon) {

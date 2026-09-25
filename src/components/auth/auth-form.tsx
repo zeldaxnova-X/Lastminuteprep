@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Loader2, Mail, Lock, User, ArrowRight, AlertCircle, CheckCircle2 } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { safeNext } from "@/lib/auth/next";
+import { trackEvent } from "@/lib/analytics/track";
 import { cn } from "@/lib/utils";
 
 type Mode = "signin" | "signup" | "forgot";
@@ -67,6 +68,7 @@ export function AuthForm() {
     // OAuth round-trip doesn't lose the affirmative act.
     if (mode === "signup" && typeof window !== "undefined") {
       try { localStorage.setItem("lmp_age_confirmed", "1"); } catch {}
+      trackEvent("signup_started", { method: "google" });
     }
     setBusy("google");
     const { error } = await supabase.auth.signInWithOAuth({
@@ -103,6 +105,7 @@ export function AuthForm() {
         if (typeof window !== "undefined") {
           try { localStorage.setItem("lmp_age_confirmed", "1"); } catch {}
         }
+        trackEvent("signup_started", { method: "email" });
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
@@ -121,6 +124,7 @@ export function AuthForm() {
         }
         if (data.session) {
           // Email confirmation disabled, signed in immediately.
+          trackEvent("signup_completed", { method: "email" });
           window.location.assign(signupNext);
           return;
         }

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { loadOwnedAttempt } from "@/lib/auth/api-guard";
+import { loadOwnedAttempt, getUserId, claimAnonymousAttempts } from "@/lib/auth/api-guard";
+import { resolveReportAccess } from "@/lib/entitlements";
 
 /**
  * GET /api/cbt/exams/[attemptId]/result
@@ -13,7 +14,9 @@ export async function GET(
   try {
     const { attemptId } = await params;
 
-    // Identity + ownership: only the owner (or the sample's device) sees it.
+    // Claim-first (idempotent), then ownership.
+    const uid = await getUserId();
+    if (uid) await claimAnonymousAttempts(uid);
     const access = await loadOwnedAttempt(attemptId);
     if (!access.ok) return access.res;
     const { attempt, db: supabase } = access;
@@ -23,6 +26,20 @@ export async function GET(
         { error: "Exam is still in progress. Submit first." },
         { status: 400 }
       );
+    }
+
+    // Anti-bypass: the per-question answer key + solutions are gated content.
+    // Without full entitlement this endpoint returns headline only (the attempt
+    // row carries score/counts/section_breakdown) and NO answers — so the review
+    // can't be read straight off this route. The UI uses /report, not this.
+    const gate = await resolveReportAccess(attemptId, attempt.user_id ?? null);
+    if (!gate.full) {
+      return NextResponse.json({
+        attempt,
+        answers: [],
+        section_breakdown: attempt.section_breakdown || [],
+        locked: true,
+      });
     }
 
     // Get all answers ordered by question index

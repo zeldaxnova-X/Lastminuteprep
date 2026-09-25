@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { loadOwnedAttempt } from "@/lib/auth/api-guard";
+import { loadOwnedAttempt, getUserId, claimAnonymousAttempts } from "@/lib/auth/api-guard";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
+import { resolveReportAccess } from "@/lib/entitlements";
 
 /**
  * GET /api/cbt/exams/[attemptId]
@@ -14,6 +15,9 @@ export async function GET(
   try {
     const { attemptId } = await params;
 
+    // Claim-first (idempotent), then ownership.
+    const uid = await getUserId();
+    if (uid) await claimAnonymousAttempts(uid);
     // Identity + ownership: only the owning user (or the anonymous device that
     // created a sample) may read this attempt.
     const access = await loadOwnedAttempt(attemptId);
@@ -48,19 +52,25 @@ export async function GET(
       );
     }
 
-    // Enrich with v2 rich content (stem/option blocks + image URLs). While the
-    // attempt is in progress, never send the answer key to the client.
+    // Enrich with v2 rich content (stem/option blocks + image URLs). Never send
+    // the answer key while in progress; and, anti-bypass, never send it for a
+    // finished attempt unless the caller is fully entitled to the report (else
+    // this resume route would leak the gated key/solutions for a paid attempt).
+    const gate = await resolveReportAccess(attemptId, attempt.user_id ?? null);
     let enriched = await enrichWithRichContent(supabase, questions || []);
-    if (attempt.status === "in_progress") enriched = stripAnswerKey(enriched);
+    if (attempt.status === "in_progress" || !gate.full) enriched = stripAnswerKey(enriched);
 
     // Build a question map for fast lookup
     const questionMap = new Map(enriched.map((q) => [q.id, q]));
 
-    // Merge answers with their questions, preserving order
-    const answersWithQuestions = (answers || []).map((answer) => ({
-      ...answer,
-      question: questionMap.get(answer.question_id) || null,
-    }));
+    // Merge answers with their questions, preserving order. Strip per-answer
+    // correctness/marks when not fully entitled (it reveals the decision log).
+    const answersWithQuestions = (answers || []).map((answer) => {
+      const base = gate.full
+        ? answer
+        : { ...answer, is_correct: null, marks_awarded: null };
+      return { ...base, question: questionMap.get(answer.question_id) || null };
+    });
 
     // Calculate remaining time
     const startedAt = new Date(attempt.started_at).getTime();

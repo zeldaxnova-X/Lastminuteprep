@@ -7,8 +7,11 @@ import {
   setDeviceCookie,
   json401,
   attemptWriteClient,
+  countAnonMocksLast24h,
 } from "@/lib/auth/api-guard";
 import { getViewer } from "@/lib/auth/plan";
+import { freeMockFlowEnabled, ANON_MOCKS_PER_DAY, FREE_ACCOUNT_MOCKS } from "@/lib/flags";
+import { emitEvent } from "@/lib/analytics/events";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import { SAMPLE_QUESTION_IDS } from "@/lib/sample-set";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
@@ -70,35 +73,98 @@ export async function POST(request: NextRequest) {
     const supabase = createServerSupabaseClient();
     const body: StartExamRequest = await request.json();
 
-    // Identity is server-derived. Real exams require a signed-in account; only
-    // the one-time 20-Q sample may run anonymously (guarded by a device token).
+    // Identity is server-derived.
     const viewer = await getViewer();
     const sessionUserId = viewer.userId;
     const sample = isSampleRequest(body);
+    const flag = freeMockFlowEnabled();
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
 
-    if (!sample && !sessionUserId) return json401();
+    // ------------------------------------------------------------------
+    // ACCESS GATE (server-side; a direct /start call can't bypass the UI).
+    //
+    // FLAG OFF (legacy, prod default): real exams require a signed-in PAID
+    // account; only the one-time sample runs anonymously.
+    //
+    // FLAG ON (free-mock funnel): ANYONE may start a full mock (exam_type
+    // random_test) with no signup — capped to ANON_MOCKS_PER_DAY completed mocks
+    // per device/IP per 24h. Signed-in FREE users may take up to
+    // FREE_ACCOUNT_MOCKS full mocks before All-Access is required. Targeted modes
+    // (pyp/subject/custom) still require a paid plan (the value of All-Access).
+    // ------------------------------------------------------------------
+    if (!flag) {
+      if (!sample && !sessionUserId) return json401();
+      if (!sample && viewer.plan === "free") {
+        return NextResponse.json(
+          { error: "upgrade_required", message: "Starting full tests requires All-Access." },
+          { status: 403 }
+        );
+      }
+    } else {
+      // Free-mock funnel gates.
+      const anonymous = !sessionUserId;
+      const isFreeFullMock = !sample && body.exam_type === "random_test";
 
-    // Plan gate (paywall at the source): FREE users may ONLY start the sample.
-    // Any real exam (pyp/subject/random/custom) requires a paid plan. Enforced
-    // server-side so a direct /start call can't bypass the gated UI. PRO/MENTOR
-    // are unaffected; the anonymous sample is exempt (sample === true).
-    if (!sample && viewer.plan === "free") {
-      return NextResponse.json(
-        {
-          error: "upgrade_required",
-          message: "Starting full tests requires Pro. Upgrade to unlock the question bank.",
-        },
-        { status: 403 }
-      );
+      if (anonymous && !sample && !isFreeFullMock) {
+        // Anonymous may only take the free full mock (or the sample); targeted
+        // modes need an account.
+        return json401();
+      }
+
+      if (anonymous && isFreeFullMock) {
+        // Abuse cap: one COMPLETED anonymous mock per device/IP per 24h.
+        const token = await readDeviceToken();
+        const used = await countAnonMocksLast24h(token, ip);
+        if (used >= ANON_MOCKS_PER_DAY) {
+          return NextResponse.json(
+            {
+              error: "signup_required",
+              message: "You've used your free mock for today. Sign up to keep practising.",
+            },
+            { status: 403 }
+          );
+        }
+      }
+
+      if (sessionUserId && viewer.plan === "free") {
+        if (isFreeFullMock) {
+          // Free account allowance: up to FREE_ACCOUNT_MOCKS completed mocks.
+          const { count } = await supabase
+            .from("exam_attempts")
+            .select("id", { count: "exact", head: true })
+            .eq("user_id", sessionUserId)
+            .in("status", ["completed", "auto_submitted"]);
+          if ((count ?? 0) >= FREE_ACCOUNT_MOCKS) {
+            return NextResponse.json(
+              {
+                error: "upgrade_required",
+                message: `You've used all ${FREE_ACCOUNT_MOCKS} free mocks. Unlock All-Access for unlimited mocks.`,
+              },
+              { status: 403 }
+            );
+          }
+        } else if (!sample) {
+          // Targeted modes (pyp/subject/custom) remain All-Access only.
+          return NextResponse.json(
+            { error: "upgrade_required", message: "This mode requires All-Access." },
+            { status: 403 }
+          );
+        }
+      }
     }
 
-    // Anonymous-sample guard: one sample per durable device token. Signed-in
-    // users skip the device gate (they own the row via user_id).
+    // Device token: minted/read for ANY anonymous start so the attempt is
+    // claimable at signup (httpOnly cookie + device_id on the row).
     let deviceToken: string | null = null;
     let newDeviceToken: string | null = null;
-    if (sample && !sessionUserId) {
+    if (!sessionUserId) {
       deviceToken = await readDeviceToken();
-      if (deviceToken) {
+      if (!deviceToken) {
+        newDeviceToken = randomUUID();
+        deviceToken = newDeviceToken;
+      }
+      // Legacy one-sample-per-device guard applies to the sample only.
+      if (sample) {
         const { data: prior } = await supabase
           .from("sample_attempts")
           .select("device_token")
@@ -110,9 +176,6 @@ export async function POST(request: NextRequest) {
             { status: 409 }
           );
         }
-      } else {
-        newDeviceToken = randomUUID();
-        deviceToken = newDeviceToken;
       }
     }
 
@@ -395,7 +458,6 @@ export async function POST(request: NextRequest) {
     // Record the anonymous sample against the device token (the server-side
     // one-time ledger, resists localStorage clearing).
     if (sample && !sessionUserId && deviceToken) {
-      const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
       await supabase.from("sample_attempts").upsert(
         {
           device_token: deviceToken,
@@ -406,6 +468,15 @@ export async function POST(request: NextRequest) {
         { onConflict: "device_token" }
       );
     }
+
+    // Funnel telemetry.
+    void emitEvent("mock_started", {
+      examCode: "ssc-cgl",
+      anonymous: !sessionUserId,
+      userId: sessionUserId,
+      deviceToken: sessionUserId ? null : deviceToken,
+      props: { attemptId: attempt.id, examType: body.exam_type, sample, totalQuestions: questions.length },
+    });
 
     const response: StartExamResponse = {
       attempt_id: attempt.id,

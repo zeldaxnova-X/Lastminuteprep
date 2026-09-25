@@ -60,24 +60,29 @@ export async function POST(req: NextRequest) {
   // NO plan mutation happens here, that is the webhook's job.
   let plan: string | undefined;
   let notesUserId: string | undefined;
+  let kind: string | undefined;
+  let attemptId: string | undefined;
   try {
     const order = await razorpay().orders.fetch(razorpay_order_id);
     const notes = (order.notes ?? {}) as Record<string, string>;
     plan = notes.plan;
     notesUserId = notes.userId;
+    kind = notes.kind;
+    attemptId = notes.attemptId;
   } catch (err) {
     console.error("Razorpay order fetch failed during verify:", err);
     return NextResponse.json({ error: "Could not confirm the order." }, { status: 502 });
   }
 
-  if (!isPaidPlan(plan)) {
+  const isSingleReport = kind === "single_report";
+  if (!isSingleReport && !isPaidPlan(plan)) {
     return NextResponse.json({ error: "Order has no valid plan." }, { status: 400 });
   }
   if (notesUserId !== user.id) {
     return NextResponse.json({ error: "This order belongs to a different account." }, { status: 403 });
   }
 
-  // Signature good + order owned by caller. The webhook grants the plan; the
-  // client should now poll for the plan to flip ("confirming your payment…").
-  return NextResponse.json({ verified: true, plan, pending: true });
+  // Signature good + order owned by caller. The webhook grants entitlement; the
+  // client should now poll for it to land ("confirming your payment…").
+  return NextResponse.json({ verified: true, plan: plan ?? null, kind: kind ?? "all_access", attemptId: attemptId ?? null, pending: true });
 }

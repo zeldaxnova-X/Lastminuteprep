@@ -12,6 +12,10 @@ interface CheckoutHandlers {
   plan: PaidPlan;
   /** MarksenseAI duration; Pro is always monthly. Defaults to monthly. */
   billing?: Billing;
+  /** "all_access" (default, plan grant) or "single_report" (₹9 per-attempt). */
+  kind?: "all_access" | "single_report";
+  /** Required for kind "single_report": the attempt whose report to unlock. */
+  attemptId?: string;
   /** Pre-purchase policy consent, stamped onto the order for enforceability. */
   consent?: { policyVersion: string; consentAt: string };
   prefill?: { name?: string; email?: string };
@@ -47,6 +51,33 @@ export async function waitForPlanUpgrade(
       if (r.ok) {
         const v = (await r.json()) as { plan?: string };
         if ((PLAN_RANK[v.plan ?? "free"] ?? 0) >= PLAN_RANK[target]) return true;
+      }
+    } catch {
+      // transient, keep polling
+    }
+    await new Promise((res) => setTimeout(res, intervalMs));
+  }
+  return false;
+}
+
+/**
+ * Poll the report endpoint until the ₹9 single-attempt unlock has landed (the
+ * webhook set `canReport: true` for this attempt). Returns true on unlock, false
+ * on timeout (the payment is still safe; the webhook applies it independently).
+ */
+export async function waitForReportUnlock(
+  attemptId: string,
+  opts?: { timeoutMs?: number; intervalMs?: number }
+): Promise<boolean> {
+  const timeoutMs = opts?.timeoutMs ?? 20000;
+  const intervalMs = opts?.intervalMs ?? 1500;
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const r = await fetch(`/api/cbt/exams/${attemptId}/report`, { cache: "no-store" });
+      if (r.ok) {
+        const j = (await r.json()) as { canReport?: boolean };
+        if (j.canReport === true) return true;
       }
     } catch {
       // transient, keep polling
@@ -114,7 +145,13 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     const res = await fetch("/api/razorpay/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ plan: opts.plan, billing: opts.billing ?? "monthly", consent: opts.consent }),
+      body: JSON.stringify({
+        plan: opts.plan,
+        billing: opts.billing ?? "monthly",
+        consent: opts.consent,
+        kind: opts.kind ?? "all_access",
+        ...(opts.attemptId ? { attemptId: opts.attemptId } : {}),
+      }),
     });
     if (res.status === 401) {
       opts.onError("Please sign in to continue.");
@@ -138,7 +175,10 @@ export async function startRazorpayCheckout(opts: CheckoutHandlers): Promise<voi
     amount: order.amount,
     currency: order.currency,
     name: "LastMilePrep",
-    description: "All-Access — every exam + MarksenseAI",
+    description:
+      opts.kind === "single_report"
+        ? "Full report for this mock"
+        : "All-Access — every exam + MarksenseAI",
     prefill: opts.prefill,
     theme: { color: "#4f46e5" },
     // 3. On success, verify the signature server-side before trusting anything.

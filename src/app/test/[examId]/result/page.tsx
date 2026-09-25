@@ -111,8 +111,16 @@ export default function ExamResultPage() {
     (async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/cbt/exams/${examId}/report`);
-        if (!res.ok) {
+        // The submit POST completes server-side (scoring + report build) a moment
+        // after we navigate here, so poll briefly for the report to exist rather
+        // than failing on the first 404.
+        let res: Response | null = null;
+        for (let i = 0; i < 15; i++) {
+          res = await fetch(`/api/cbt/exams/${examId}/report`, { cache: "no-store" });
+          if (res.ok) break;
+          await new Promise((r) => setTimeout(r, 1500));
+        }
+        if (!res || !res.ok) {
           setError("Report is not available for this session yet.");
           return;
         }
@@ -228,6 +236,10 @@ export default function ExamResultPage() {
         {/* Pro plan: has the report, not the Mentor engine, show the upsell. */}
         {mentorLocked && <MentorLockedCard />}
 
+        {/* Free plan viewing a ₹9-unlocked report: promote All-Access hard — it's
+            the same report on every future mock, plus longitudinal MarksenseAI. */}
+        {data.plan === "free" && !mentorLocked && <AllAccessPromo />}
+
         {/* Coaching narrative, purely additive. Rendered only while generating
             or when present; entirely absent when narration isn't available. */}
         {(narrativeState === "loading" || (narrativeState === "done" && narrative)) && (
@@ -267,6 +279,38 @@ export default function ExamResultPage() {
 }
 
 /* ------------------------------------------------------------------ */
+
+/** Shown to a free-plan user who unlocked THIS report (₹9): the same full report
+ *  on every future mock + longitudinal MarksenseAI comes with All-Access. */
+function AllAccessPromo() {
+  return (
+    <section>
+      <div className="relative overflow-hidden rounded-2xl bg-panel-dark p-6 ring-1 ring-gold-bright/30 sm:p-7">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-70"
+          style={{ background: "radial-gradient(70% 60% at 85% 0%, rgba(217,119,6,0.16), transparent 60%)" }}
+          aria-hidden
+        />
+        <div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-gold-bright">
+              <Sparkles className="h-3.5 w-3.5" /> Get this on every mock
+            </p>
+            <h3 className="mt-2 text-xl font-semibold text-white">Unlock the full MarksenseAI engine</h3>
+            <p className="mt-2 max-w-md text-sm text-white/70">
+              You unlocked this report. All-Access gives you this full report on every mock, unlimited mocks
+              across all exams, and the longitudinal MarksenseAI, your trends, recurring weakpoints, and coach.
+            </p>
+          </div>
+          <ButtonLink href="/#pricing" size="md" className="flex-shrink-0 bg-gold-bright text-white hover:bg-gold">
+            <Sparkles className="h-4 w-4" />
+            Unlock All-Access, ₹{allAccessPriceInr()}
+          </ButtonLink>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 /** Shown to Pro users: they have the report, the Mentor engine is one tier up. */
 function MentorLockedCard() {

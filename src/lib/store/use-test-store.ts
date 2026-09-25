@@ -396,9 +396,14 @@ export const useTestStore = create<TestState>((set, get) => ({
 
     if (state.attemptId) {
       try {
+        // keepalive: the page navigates to the report immediately after submit
+        // (isSubmitted flips → redirect effect). Without keepalive that in-flight
+        // POST is aborted on unload and the attempt is never scored, so the
+        // report can't build. keepalive guarantees the server receives it.
         await fetch(`/api/cbt/exams/${state.attemptId}/submit`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          keepalive: true,
         });
       } catch (e) {
         console.error("Error submitting test to API", e);

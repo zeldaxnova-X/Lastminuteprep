@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSessionContext, json401 } from "@/lib/auth/api-guard";
+import { getSessionContext, json401, claimAnonymousAttempts } from "@/lib/auth/api-guard";
 import { razorpay, CURRENCY, EXAM_SCOPE } from "@/lib/payments/razorpay";
 import { applyDiscount } from "@/lib/payments/coupons";
-import { allAccessAmountPaise, allAccessAccessDays, isLaunchOffer, ALL_ACCESS_DESCRIPTION } from "@/lib/payments/pricing";
+import { allAccessAmountPaise, allAccessAccessDays, isLaunchOffer, ALL_ACCESS_DESCRIPTION, singleReportAmountPaise, SINGLE_REPORT_DESCRIPTION } from "@/lib/payments/pricing";
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /**
  * POST /api/razorpay/create-order
@@ -27,9 +29,71 @@ export async function POST(req: NextRequest) {
   // accepted policy version + timestamp are provable later.
   const body = (await req.json().catch(() => ({}))) as {
     consent?: { policyVersion?: string; consentAt?: string };
+    kind?: string;
+    attemptId?: string;
   };
   const policyVersion = (body.consent?.policyVersion || "").slice(0, 16) || null;
   const consentAt = (body.consent?.consentAt || "").slice(0, 40) || null;
+
+  // ------------------------------------------------------------------
+  // ₹9 single-report unlock: buys the full report for ONE owned attempt. Does
+  // NOT change the plan. Amount is server-fixed; ownership is verified here.
+  // ------------------------------------------------------------------
+  if (body.kind === "single_report") {
+    const attemptId = (body.attemptId || "").trim();
+    if (!UUID_RE.test(attemptId)) {
+      return NextResponse.json({ error: "A valid attemptId is required." }, { status: 400 });
+    }
+    // Claim any anonymous attempt on this device first (so a just-signed-in buyer
+    // owns the mock they just finished), then verify ownership under RLS.
+    await claimAnonymousAttempts(userId);
+    const { data: owned } = await supabase
+      .from("exam_attempts")
+      .select("id")
+      .eq("id", attemptId)
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (!owned) {
+      return NextResponse.json({ error: "That attempt isn't yours to unlock." }, { status: 403 });
+    }
+
+    const amount = singleReportAmountPaise();
+    if (amount < 100) {
+      return NextResponse.json({ error: "Configured amount is below the minimum." }, { status: 500 });
+    }
+    try {
+      const order = await razorpay().orders.create({
+        amount,
+        currency: CURRENCY,
+        receipt: `rpt_${attemptId.slice(0, 8)}_${Date.now()}`,
+        notes: {
+          userId,
+          kind: "single_report",
+          attemptId,
+          scope: EXAM_SCOPE,
+          description: SINGLE_REPORT_DESCRIPTION,
+          ...(policyVersion ? { policyVersion } : {}),
+          ...(consentAt ? { consentAt } : {}),
+        },
+      });
+      return NextResponse.json({
+        order_id: order.id,
+        amount: order.amount,
+        currency: order.currency,
+        key_id: process.env.RAZORPAY_KEY_ID,
+      });
+    } catch (err: unknown) {
+      const statusCode = (err as { statusCode?: number })?.statusCode;
+      if (statusCode === 401) {
+        return NextResponse.json(
+          { error: "Payment gateway configuration error. Please try again later or contact support." },
+          { status: 502 }
+        );
+      }
+      console.error("Razorpay create-order (single_report) error:", err);
+      return NextResponse.json({ error: "Could not create payment order." }, { status: 500 });
+    }
+  }
 
   // Single product: the All-Access pass. `plan` is always granted as `mentor`
   // (unlocks everything). During launch a ₹49 one-time pass runs THROUGH the

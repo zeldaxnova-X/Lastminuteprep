@@ -69,3 +69,23 @@ export function isMonthlyBilling(now: Date = new Date()): boolean {
 
 /** Order/ledger description stamped on every All-Access purchase. */
 export const ALL_ACCESS_DESCRIPTION = "LastMilePrep All-Access — every exam + MarksenseAI";
+
+/* ------------------------------------------------------------------ */
+/* Single-attempt report unlock (₹9)                                   */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Micro-purchase: unlock the FULL report for ONE attempt (confidence breakdown,
+ * decision costs, personal break-even rule, per-question decision log, optimal
+ * gap + narrative) without buying All-Access. Permanent for that attempt; does
+ * NOT change the account plan. All-Access (₹49) is the upsell above it.
+ */
+export const SINGLE_REPORT_PRICE_INR = 9;
+
+/** The single-report price in paise, for Razorpay order creation. */
+export function singleReportAmountPaise(): number {
+  return SINGLE_REPORT_PRICE_INR * 100;
+}
+
+/** Order/ledger description stamped on every single-report purchase. */
+export const SINGLE_REPORT_DESCRIPTION = "LastMilePrep — full report for one mock";
