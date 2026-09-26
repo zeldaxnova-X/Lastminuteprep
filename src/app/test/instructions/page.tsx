@@ -18,6 +18,21 @@ import {
 } from "lucide-react";
 import { useTestStore } from "@/lib/store/use-test-store";
 import { sectionsFromQuestions, examSectionMinutes } from "@/lib/cbt-sections";
+import { getExamEntry } from "@/lib/exam/registry";
+
+/** Per-exam instruction chrome (official-portal flavour). */
+const EXAM_HEADER: Record<string, { org: string; exam: string; short: string }> = {
+  "ssc-cgl": {
+    org: "STAFF SELECTION COMMISSION",
+    exam: "Combined Graduate Level Examination (CGL)",
+    short: "Staff Selection Commission CBT",
+  },
+  "sbi-clerk": {
+    org: "STATE BANK OF INDIA",
+    exam: "Junior Associate (Clerk) — Preliminary Examination",
+    short: "SBI Clerk CBT",
+  },
+};
 
 function InstructionsContent() {
   const router = useRouter();
@@ -35,6 +50,11 @@ function InstructionsContent() {
   // and the daily cap is surfaced kindly rather than as a raw error code.
   const isFree = searchParams.get("free") === "1";
   const examCode = searchParams.get("exam_code") || "ssc-cgl";
+  const cfg = getExamEntry(examCode).builtinConfig;
+  const hdr = EXAM_HEADER[examCode] || EXAM_HEADER["ssc-cgl"];
+  const secMinutes = examSectionMinutes(examCode);
+  const markCorrect = cfg.sections[0]?.marksCorrect ?? cfg.marksCorrect;
+  const markWrong = Math.abs(cfg.sections[0]?.marksWrong ?? cfg.marksWrong);
 
   const [confirmed, setConfirmed] = useState(false);
   const [starting, setStarting] = useState(false);
@@ -98,8 +118,8 @@ function InstructionsContent() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6 space-y-4 sm:space-y-5">
       {/* Title */}
       <div className="border-b border-gray-300 pb-3 text-center">
-        <h1 className="text-lg sm:text-xl font-bold text-gray-900 uppercase tracking-wide">STAFF SELECTION COMMISSION</h1>
-        <h2 className="text-xs sm:text-sm font-semibold text-gray-700">Combined Graduate Level Examination (CGL)</h2>
+        <h1 className="text-lg sm:text-xl font-bold text-gray-900 uppercase tracking-wide">{hdr.org}</h1>
+        <h2 className="text-xs sm:text-sm font-semibold text-gray-700">{hdr.exam}</h2>
         <p className="text-[11px] sm:text-xs text-gray-500 mt-0.5">Computer Based Test (CBT) Candidate Instructions</p>
       </div>
 
@@ -150,9 +170,9 @@ function InstructionsContent() {
           <span>3. Duration & Marking Scheme</span>
         </div>
         <div className="text-xs text-gray-700 space-y-1.5 leading-relaxed">
-          <p>• Each section has its own <strong>15-minute</strong> timer, matching the SSC CGL Tier 1 2026 pattern.</p>
+          <p>• Each section has its own <strong>{secMinutes}-minute</strong> timer.</p>
           <p>• When a section&apos;s time ends it <strong>locks permanently</strong>. You cannot return to it, and unused time is not carried to the next section.</p>
-          <p>• Correct Answer: <strong>+2.0 Marks</strong> | Incorrect Answer: <strong>−0.50 Negative Marks</strong> | Unanswered: <strong>0 Marks</strong>.</p>
+          <p>• Correct Answer: <strong>+{markCorrect} Marks</strong> | Incorrect Answer: <strong>−{markWrong} Negative Marks</strong> | Unanswered: <strong>0 Marks</strong>.</p>
           <p>• The section clock counts down at the top of your screen; the exam auto-submits when the final section ends.</p>
         </div>
       </div>
@@ -210,7 +230,7 @@ function InstructionsContent() {
             <span>6. Keyboard Shortcuts</span>
           </div>
           <ul className="text-xs text-gray-700 space-y-1">
-            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">A/B/C/D</kbd>, Select Option</li>
+            <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">{Array.from({ length: cfg.optionsCount }, (_, i) => String.fromCharCode(65 + i)).join("/")}</kbd>, Select Option</li>
             <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">Enter</kbd>, Save & Next</li>
             <li><kbd className="bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded font-mono">M</kbd>, Mark for Review</li>
           </ul>
@@ -278,7 +298,7 @@ export default function InstructionsPage() {
             <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
               <Zap className="w-3.5 h-3.5 text-white fill-white" />
             </div>
-            <span className="truncate">Staff Selection Commission CBT</span>
+            <span className="truncate">Computer Based Test</span>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
             <Clock className="w-4 h-4" />

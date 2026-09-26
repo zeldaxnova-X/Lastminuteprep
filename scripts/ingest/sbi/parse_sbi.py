@@ -58,6 +58,18 @@ def classify(stem: str) -> str:
     best = max(scores, key=lambda k: scores[k])
     return best if scores[best] > 0 else ""
 
+# Source watermarks that leak into extracted text; stripped from stems + options.
+WATERMARK = re.compile(
+    r"\s*(www\.)?prepp\.in\s*|\s*Testbook Solution\s*|\s*Testbook\s*$|\s*Adda247\s*|\s*www\.\S+\s*",
+    re.I,
+)
+
+def clean_text(s: str) -> str:
+    if not s:
+        return s
+    s = WATERMARK.sub(" ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
 def norm_hash(text: str) -> str:
     t = re.sub(r"\s+", " ", (text or "").lower()).strip()
     t = re.sub(r"[^a-z0-9 ]", "", t)
@@ -106,8 +118,8 @@ def parse_prepp(text: str):
                 opts[cur_opt] += " " + ln.strip()
             elif cur_opt is None:
                 stem_lines.append(ln)
-        stem = re.sub(r"\s+", " ", " ".join(stem_lines)).strip()
-        out.append({"num": num, "stem": stem, "options": [opts.get(k, "") for k in range(1, 6)], "correct": correct})
+        stem = clean_text(" ".join(stem_lines))
+        out.append({"num": num, "stem": stem, "options": [clean_text(opts.get(k, "")) for k in range(1, 6)], "correct": correct})
     return out
 
 # ---- QC + section assignment for prepp -----------------------------------------
