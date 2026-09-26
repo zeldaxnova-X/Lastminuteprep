@@ -41,7 +41,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "Which exams are supported?",
-    a: "SSC CGL Tier 1 is live now with the current sectional-timer pattern. IBPS Clerk and SBI Clerk are next, with JEE Main and NEET UG following.",
+    a: "SSC CGL Tier 1 and SBI Clerk Prelims are live now, each with its own real sectional-timer pattern. IBPS Clerk, JEE Main and NEET UG are next.",
   },
   {
     q: "Is my data safe?",
