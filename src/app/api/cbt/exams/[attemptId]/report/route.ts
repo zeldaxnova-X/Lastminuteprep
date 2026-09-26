@@ -6,6 +6,7 @@ import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
 import { getUserId } from "@/lib/auth/api-guard";
 import { resolveReportAccess } from "@/lib/entitlements";
 import { contentObjectName } from "@/lib/exam/content-repo";
+import { loadExamConfig } from "@/lib/exam/registry";
 import { emitEvent } from "@/lib/analytics/events";
 
 /**
@@ -166,6 +167,10 @@ export async function GET(
     skipped?: number;
   } | null;
   const totalQuestions = (r?.correct ?? 0) + (r?.wrong ?? 0) + (r?.skipped ?? 0);
+  // Max score is exam-specific (SSC 100×2=200, SBI 100×1=100) — read the
+  // per-correct mark from the exam's config, never a hardcoded ×2.
+  const cfg = await loadExamConfig(supabase, examCode);
+  const maxScore = Math.round(totalQuestions * cfg.marksCorrect * 100) / 100;
 
   return NextResponse.json({
     result,
@@ -176,7 +181,7 @@ export async function GET(
     canMentor: mentorAllowed,
     teaseGain,
     totalQuestions,
-    maxScore: totalQuestions * 2,
+    maxScore,
     // Everything below is assembled ONLY when fully entitled — never sent and
     // hidden client-side.
     review: fullReport ? review : [],

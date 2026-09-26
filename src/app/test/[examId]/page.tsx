@@ -8,7 +8,7 @@ import { CBTQuestionView } from "@/components/cbt/cbt-question-view";
 import { CBTPalette } from "@/components/cbt/cbt-palette";
 import { CBTSubmitModal } from "@/components/cbt/cbt-submit-modal";
 import type { ValidatedQuestion, Subject } from "@/types/database.types";
-import { sectionsFromQuestions } from "@/lib/cbt-sections";
+import { sectionsFromQuestions, examSectionMinutes } from "@/lib/cbt-sections";
 import { X, Loader2, LayoutGrid } from "lucide-react";
 
 export default function CBTTestEnginePage() {
@@ -52,11 +52,12 @@ export default function CBTTestEnginePage() {
             return;
           }
 
-          // Order into the fixed SSC section sequence and drive the sectional
-          // timer engine (four independent 15-minute sections).
-          const { ordered, sections: secInputs } = sectionsFromQuestions(qList);
+          // Order into THIS exam's section sequence and drive the sectional
+          // timer engine (SSC 4×15 min, SBI 3×20 min — from the exam config).
+          const attExamCode = (data.attempt as { exam_code?: string }).exam_code;
+          const { ordered, sections: secInputs } = sectionsFromQuestions(qList, attExamCode);
           setValidatedQuestions(ordered);
-          initTest(data.attempt.id, data.attempt.id, secInputs);
+          initTest(data.attempt.id, data.attempt.id, secInputs, examSectionMinutes(attExamCode));
         } else {
           // Fallback to launch initial paper
           const papersRes = await fetch("/api/cbt/papers");

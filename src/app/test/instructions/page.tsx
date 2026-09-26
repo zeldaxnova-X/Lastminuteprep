@@ -17,7 +17,7 @@ import {
   ShieldAlert,
 } from "lucide-react";
 import { useTestStore } from "@/lib/store/use-test-store";
-import { sectionsFromQuestions } from "@/lib/cbt-sections";
+import { sectionsFromQuestions, examSectionMinutes } from "@/lib/cbt-sections";
 
 function InstructionsContent() {
   const router = useRouter();
@@ -34,6 +34,7 @@ function InstructionsContent() {
   // Free-mock entry (from the /sample exam picker): Back returns to the picker,
   // and the daily cap is surfaced kindly rather than as a raw error code.
   const isFree = searchParams.get("free") === "1";
+  const examCode = searchParams.get("exam_code") || "ssc-cgl";
 
   const [confirmed, setConfirmed] = useState(false);
   const [starting, setStarting] = useState(false);
@@ -47,6 +48,7 @@ function InstructionsContent() {
     try {
       const payload: Record<string, unknown> = {
         exam_type: examType,
+        exam_code: examCode,
         total_questions: questionCount,
         time_limit_minutes: timeLimitMinutes,
         title,
@@ -78,9 +80,10 @@ function InstructionsContent() {
 
       resetTest();
       const { sections } = sectionsFromQuestions(
-        (data.questions ?? []) as Array<{ id: string; subject?: string | null }>
+        (data.questions ?? []) as Array<{ id: string; subject?: string | null }>,
+        examCode
       );
-      initTest(data.attempt_id, data.attempt_id, sections);
+      initTest(data.attempt_id, data.attempt_id, sections, examSectionMinutes(examCode));
 
       router.push(`/test/${data.attempt_id}`);
     } catch (err: unknown) {

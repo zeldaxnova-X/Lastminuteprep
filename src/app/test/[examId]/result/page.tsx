@@ -76,6 +76,7 @@ interface ReportData {
   plan?: "free" | "pro" | "mentor";
   canReport?: boolean;
   canMentor?: boolean;
+  maxScore?: number;
 }
 
 const CONF_TONE: Record<string, string> = {
@@ -194,6 +195,7 @@ export default function ExamResultPage() {
   }
 
   const { result, analysis, optimalScore } = data;
+  const maxScore = data.maxScore ?? 200;
 
   return (
     <div className="flex min-h-screen flex-col bg-bg">
@@ -208,7 +210,7 @@ export default function ExamResultPage() {
             <h1 className="mt-1 font-report text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
               You scored{" "}
               <span className="text-accent tabular">{result.net_score}</span>
-              <span className="text-ink-tertiary"> / 200</span>
+              <span className="text-ink-tertiary"> / {maxScore}</span>
             </h1>
           </div>
 
@@ -231,7 +233,7 @@ export default function ExamResultPage() {
             optimal={optimalScore}
             gain={analysis.optimal.gain}
             dropped={analysis.optimal.droppedBuckets}
-            max={result.raw_score > 0 ? 200 : 200}
+            max={maxScore}
           />
         )}
 

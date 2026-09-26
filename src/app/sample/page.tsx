@@ -15,17 +15,11 @@ import { sectionsFromQuestions } from "@/lib/cbt-sections";
 // Local UX hint only (not a security control — the server enforces the caps).
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
 
-/** Exams offered on the free-mock picker. Only SSC CGL is live today. */
-const EXAMS = [
-  {
-    slug: "ssc-cgl",
-    name: "SSC CGL",
-    tagline: "Tier 1 · 2026 pattern",
-    logo: "/images/exams/ssc-cgl.png",
-    live: true,
-  },
-  { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", logo: "/images/exams/ibps-clerk.png", live: false },
-  { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims + Mains", logo: "/images/exams/sbi.svg", live: false },
+/** Exams offered on the free-mock picker. SSC CGL + SBI Clerk are live. */
+const EXAMS: Array<{ slug: string; name: string; tagline: string; logo: string; live: boolean; title: string }> = [
+  { slug: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", logo: "/images/exams/ssc-cgl.png", live: true, title: "SSC CGL Full Mock" },
+  { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", logo: "/images/exams/sbi.svg", live: true, title: "SBI Clerk Prelims Mock" },
+  { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", logo: "/images/exams/ibps-clerk.png", live: false, title: "" },
 ];
 
 export default function SamplePage() {
@@ -55,11 +49,13 @@ export default function SamplePage() {
    *  which then starts the full mock. Coming-soon exams are inert. */
   function chooseExam(slug: string, live: boolean) {
     if (!live) return;
+    const exam = EXAMS.find((e) => e.slug === slug);
     const params = new URLSearchParams({
       exam_type: "random_test",
+      exam_code: slug,
       questions: "100",
       time: "60",
-      title: "SSC CGL Full Mock",
+      title: exam?.title || "Full Mock",
       free: "1",
     });
     router.push(`/test/instructions?${params.toString()}`);
