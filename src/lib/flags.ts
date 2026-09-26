@@ -2,16 +2,17 @@
  * Feature flags + funnel tuning constants (single source of truth).
  *
  * FREE_MOCK_FLOW gates the whole "anyone takes a full mock, headline free, full
- * report behind ₹9/₹49" funnel. It is SERVER-AUTHORITATIVE (read in the API
- * routes, never trusted from the client) and defaults ON in dev / OFF in prod so
- * it can be dark-shipped and flipped from the environment without a redeploy:
- *   FREE_MOCK_FLOW=on|off   (falls back to: on in dev, off in prod)
+ * report behind ₹9/₹49" funnel (incl. the SBI Clerk exam). It is SERVER-
+ * AUTHORITATIVE (read in the API routes, never trusted from the client).
+ *
+ * LAUNCHED 2026-09-26: default ON everywhere. Kill-switch by setting the env var
+ *   FREE_MOCK_FLOW=off   (env always overrides the default).
  */
 export function freeMockFlowEnabled(): boolean {
   const raw = (process.env.FREE_MOCK_FLOW ?? "").trim().toLowerCase();
   if (raw === "on" || raw === "true" || raw === "1") return true;
   if (raw === "off" || raw === "false" || raw === "0") return false;
-  return process.env.NODE_ENV !== "production";
+  return true; // launched
 }
 
 /**

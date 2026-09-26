@@ -198,7 +198,7 @@ function Hero() {
               )}
             </p>
             <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-ink-secondary">
-              {["No sign-up to try", "Real CBT interface", "One-time free sample"].map((t) => (
+              {["No sign-up to try", "Real CBT interface", "Full mock, free"].map((t) => (
                 <li key={t} className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-success" />
                   {t}
@@ -549,8 +549,8 @@ function FinalCta() {
               Your last mile starts here.
             </h2>
             <p className="mt-4 max-w-md text-base text-white/75">
-              Take the free 20-question mock, no sign-up, and see exactly where
-              your marks are hiding.
+              Take a full mock free, no sign-up, and see exactly where your marks
+              are hiding.
             </p>
             <div className="mt-8">
               <Link
@@ -562,7 +562,7 @@ function FinalCta() {
               </Link>
             </div>
             <p className="mt-4 text-xs text-white/45">
-              One-time free sample · real CBT interface.
+              A full free mock · real CBT interface.
             </p>
           </div>
 

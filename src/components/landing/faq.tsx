@@ -16,8 +16,8 @@ const FAQS: { q: string; a: string }[] = [
     a: "No. MarksenseAI is our own analysis engine. It doesn't read your question paper and offer generic advice, it works from your actual mock data: what you answered, how confident you said you were, how long you spent, and what type of question it was. The output is specific to your attempt pattern and it's arithmetic you can check. We use AI infrastructure as part of the system, but the scoring logic, the confidence calibration and the recommendations are ours, and they're built on your performance rather than on a language model's opinion.",
   },
   {
-    q: "What exactly is the free sample?",
-    a: "One full timed section, 25 questions, 15 minutes, the real sectional lock. No sign-up, no card. At the end you get your net score under +2 / −0.5 and you see the structure of your MarksenseAI report. The analysis itself unlocks with All-Access.",
+    q: "What exactly is the free mock?",
+    a: "A full mock in the real CBT interface with the real sectional locks — no sign-up, no card. At the end you get your net score and section-wise accuracy free. The full MarksenseAI report — confidence calibration, what each decision cost, your break-even guess rule, and the per-question decision log — unlocks for ₹9 for that mock, or with All-Access for every mock.",
   },
   {
     q: "How does the confidence rating work?",
@@ -33,7 +33,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "Can I get a refund?",
-    a: "No. At ₹49 we've made the free sample generous specifically so you can decide before paying, a full timed section, no card, no sign-up. Once All-Access is unlocked the content is delivered immediately and in full, so payments are final. The three exceptions are a duplicate charge, a payment that debited without granting access, and anything we're required to refund by law. Write to hello@lastmileprep.in and we'll sort those out.",
+    a: "No. At ₹49 we've made the free mock generous specifically so you can decide before paying, a full mock with your net score, no card, no sign-up. Once a report or All-Access is unlocked the content is delivered immediately and in full, so payments are final. The three exceptions are a duplicate charge, a payment that debited without granting access, and anything we're required to refund by law. Write to hello@lastmileprep.in and we'll sort those out.",
   },
   {
     q: "Does one pass cover every exam?",
