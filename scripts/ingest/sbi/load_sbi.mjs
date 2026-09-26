@@ -107,8 +107,12 @@ async function main() {
         paper_id: paperId,
         question_number: q.question_number,
         section: q.section,
-        stem: JSON.stringify([{ kind: "text", text: q.stem_text }]),
-        stem_text: q.stem_text,
+        // Split an attached shared-context (context \n\n question) into separate
+        // paragraphs so the directions and the question render distinctly.
+        stem: JSON.stringify(
+          String(q.stem_text).split(/\n\n+/).map((t) => ({ kind: "text", text: t.trim() })).filter((b) => b.text)
+        ),
+        stem_text: String(q.stem_text).replace(/\n\n+/g, "  "),
         options: JSON.stringify(opts.map((t, i) => optionBlocks(t, i))),
         has_images: false,
         correct_option: String.fromCharCode(64 + idx), // 1->A .. 5->E

@@ -23,7 +23,7 @@
   {
    "question_number": 2,
    "section": "english",
-   "stem_text": "What is the primary goal of the collaboration between geneticists and conservationists mentioned in the passage?",
+   "stem_text": "Directions: Read the given passage carefully to answer the following questions. Each question will have five alternatives as its answer. Choose the correct option as your answer. An audacious collaboration between geneticists and conservationists plans to bring back the extinct dodo and reintroduce it to its once-native habitat in Mauritius. US-based biotechnology and genetic engineering company Colossal Biosciences, which is pursuing the “de- extinction” of multiple species, including the woolly mammoth, has entered a partnership _____ the Mauritian Wildlife Foundation to find a suitable location for the large flightless birds. The dodo has been extinct since 1681; a combination of predation by humans and animals introduced by humans led to its downfall, turning it into a textbook case for extinction. But according to the partners, its return to Mauritius could benefit the dodo’s immediate environment and other species. Colossal first announced its intention to resurrect the dodo in January 2023. Exactly when it will be able to do so remains unclear, but fresh details regarding how it plans to recreate the species have been revealed. The full genome of the dodo has been sequenced by Beth Shapiro, lead paleogeneticist at Colossal. In addition, the company says it has now sequenced the genome of the solitaire, an extinct relative of the dodo from Rodrigues Island, close to Mauritius, and the Nicobar pigeon, the dodo’s closest living relative, which resides on islands in Southeast Asia spanning the Indian and Pacific Oceans. Geneticists at Colossal have found cells that act as a precursor for ovaries or testes in the Nicobar pigeon can grow successfully in a chicken embryo. They are now researching to see if these cells (called primordial germ cells, or PGCs) can turn into sperm and eggs. This is a vital step in creating hybridized animals through reproduction. Scientists have previously introduced PGCs to create a chicken fathered by a duck – for which a duck embryo was injected with chicken PGCs, producing an adult duck with the sperm of a rooster. It then bred with a hen, which gave birth to a chick. Colossal plans to go down a similar route. First, it will compare the dodo and solitaire genomes to the Nicobar pigeon’s to identify how they differ. Then it will edit the PGCs of a Nicobar so it expresses the physical traits of a dodo. The edited PGCs will then be inserted into the embryos of a sterile chicken and rooster. With the introduction of the edited PGCs, the chicken and rooster will be capable of reproducing, and, in theory, their offspring will resemble the dodo thanks to the hybridized pigeon DNA in their reproductive systems. “Physically, the restored dodo will be indiscernible from what we know of the dodo’s appearance,” said Matt James, Colossal’s chief animal officer, in an email. James described the project as “an amazing engine of innovation for avian genetics, genomics, and cell biology,” in part because “most of the technologies that we use for cloning in mammals does not exist in birds today.” However, he declined to put a timeline on when the first embryo will be created.\n\nWhat is the primary goal of the collaboration between geneticists and conservationists mentioned in the passage?",
    "options": [
     "To increase biodiversity in Mauritius",
     "To bring back the extinct dodo and reintroduce it to Mauritius",
@@ -33,7 +33,7 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d0681a686c59170d42bcbb4794091565930dbb4da5fbb0480b4f1cae53f20db0"
+   "hash": "6d60a5fa7d4eceac839c2104e8bf6bcd55f657dd9e120b0becf810c26253d6ea"
   },
   {
    "question_number": 3,
@@ -83,7 +83,7 @@
   {
    "question_number": 6,
    "section": "english",
-   "stem_text": "According to the author, which of the following is/are true in the context of the passage? A.The dodo has been extinct since 1681 due to predation by humans and animals introduced by humans. B.The primary goal of Colossal Biosciences is to enhance the genetic diversity of Mauritius through these www.prepp.in efforts. C. The edited PGCs will be inserted into the embryos of any bird species available.",
+   "stem_text": "According to the author, which of the following is/are true in the context of the passage? A.The dodo has been extinct since 1681 due to predation by humans and animals introduced by humans. B.The primary goal of Colossal Biosciences is to enhance the genetic diversity of Mauritius through these efforts. C. The edited PGCs will be inserted into the embryos of any bird species available.",
    "options": [
     "Only A",
     "Only B",
@@ -93,12 +93,12 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "4ac439f6f3ef13aac3540ddd3091a3207c6d527f0664b99217348b5279a1e05b"
+   "hash": "2807160d328460fcab55dbc70897b0b3235935ecf8ad20375a6f90651272d881"
   },
   {
    "question_number": 7,
    "section": "english",
-   "stem_text": "What will the edited PGCs be inserted into, according to the plans described in the passage?",
+   "stem_text": "According to the author, which of the following is/are true in the context of the passage? A.The dodo has been extinct since 1681 due to predation by humans and animals introduced by humans. B.The primary goal of Colossal Biosciences is to enhance the genetic diversity of Mauritius through these efforts. C. The edited PGCs will be inserted into the embryos of any bird species available.\n\nWhat will the edited PGCs be inserted into, according to the plans described in the passage?",
    "options": [
     "The embryos of a sterile chicken and rooster",
     "The embryos of the dodo and solitaire",
@@ -108,7 +108,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "59c08387bbb7839ac141a4e9c166d3c3ad836626732e77dbdfbf6cdc227db269"
+   "hash": "15a8064fa66aa4054555a61b6c6ddb0f6d65732dadc9a8c4f9ac9c5dd40ce859"
   },
   {
    "question_number": 8,
@@ -128,7 +128,7 @@
   {
    "question_number": 9,
    "section": "english",
-   "stem_text": "Which company is involved in the de-extinction efforts of the dodo?",
+   "stem_text": "According to the author, which of the following is/are false in the context of the passage? A. Colossal plans to edit the PGCs of the Nicobar pigeon to express the physical traits of a dodo. B. The restored dodo will be completely different from the original dodo's appearance as known historically. C. The geneticists at Colossal have successfully grown Nicobar pigeon cells in a chicken embryo.\n\nWhich company is involved in the de-extinction efforts of the dodo?",
    "options": [
     "Mauritian Wildlife Foundation",
     "Colossal Biosciences",
@@ -138,12 +138,12 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d7e68db4064416459a0fe0c1690863940a351807acb1535b38be93ad3bfc01c5"
+   "hash": "d1a05132a8c4fd0b15aa68b6b6990126815fefd6150cf2f2f9c503ee59d2f5fb"
   },
   {
    "question_number": 10,
    "section": "english",
-   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer. www.prepp.in She is a MLA representing her constituency in the state assembly and is known for her dedication to public service and commitment to improving local infrastructure.",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer. She is a MLA representing her constituency in the state assembly and is known for her dedication to public service and commitment to improving local infrastructure.",
    "options": [
     "an MLA who represents",
     "a MLA who is representing",
@@ -153,7 +153,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "7e46b5a0f2d80735f8cc6f61ac18173363dbc7326e311b9fc71fda4c94836788"
+   "hash": "619f33c35f59d97b39685de3e66a98ebb419411c881f2361713b937de8c59d90"
   },
   {
    "question_number": 11,
@@ -193,12 +193,12 @@
     "couldn't get some sleep",
     "couldn't get any sleep",
     "couldn't got any sleep",
-    "couldn't gotten sleep www.prepp.in",
+    "couldn't gotten sleep",
     "no correction required"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "9cfc74f516d63aab5befe5697c8010ca3d888decd8b81cea7e61075301edefa6"
+   "hash": "8b26e2d265559ca1fbcddf55a3dc7084c72ae77653b02328bce8e157b2db98eb"
   },
   {
    "question_number": 14,
@@ -293,7 +293,7 @@
   {
    "question_number": 20,
    "section": "english",
-   "stem_text": "www.prepp.in Directions: Below is a word, followed by three sentences incorporating the word. Identify the sentence(s) that best illustrate(s) the meaning of the word. Choose option 5: \"None of the above\" if the word is not used correctly in any of the sentences. PITCH A. She gave her best pitch to the panel, hoping they would fund her startup. B. The journalist pitched the idea of a new article to his editor. C. They decided to pitch their tent by the riverside.",
+   "stem_text": "Directions: Below is a word, followed by three sentences incorporating the word. Identify the sentence(s) that best illustrate(s) the meaning of the word. Choose option 5: \"None of the above\" if the word is not used correctly in any of the sentences. PITCH A. She gave her best pitch to the panel, hoping they would fund her startup. B. The journalist pitched the idea of a new article to his editor. C. They decided to pitch their tent by the riverside.",
    "options": [
     "Only A",
     "Both A and B",
@@ -303,7 +303,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "da31cf12e26d1a4a06c7cbf598e1f2cb9c6e9920b628bdfe127aa304a54b95ae"
+   "hash": "3dab7e913b1b8ea9eebfc3a42a5ffd7452b6e2e071d2aeeab12b24a57e4e16c1"
   },
   {
    "question_number": 21,
@@ -326,14 +326,14 @@
    "stem_text": "Rearrange the following five sentences/group of sentences (A), (B), (C), (D), and (E) in the proper sequence to form a meaningful paragraph; then answer the questions given below them. A. The first factory for the industrial production of cheese opened in Switzerland in 1815. B. The mass production of cheese made it readily available to the poorer classes. C. Earliest proposed dates for the origin of cheese making range from around 8000 BCE, when sheep were first domesticated. D. Factory-made cheese overtook traditional cheese making in the World War II era. E. There is no conclusive evidence indicating where cheese making originated, whether in Europe, Central Asia or the Middle East. Which of the following should be the FIRST sentence after rearrangement?",
    "options": [
     "C",
-    "D www.prepp.in",
+    "D",
     "A",
     "B",
     "E"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "d73cbe18b251b61446e4cda77a4482b4aff5e701f183774ccbf8d14acef489eb"
+   "hash": "f1f58ce8b3cf191f8598380a92c4e7a30e2bfe4095e98c573a543fd77ff4be1c"
   },
   {
    "question_number": 23,
@@ -446,14 +446,14 @@
    "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. He is the most (A)/ intelligent and also (B)/ the very talented student (C)/ of the college. (D)/ No error (E).",
    "options": [
     "A",
-    "B www.prepp.in",
+    "B",
     "C",
     "D",
     "E"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "b1a820efa1c5f1bf8c7627997f20d72d71848574f58803631cc494b4d724cf0e"
+   "hash": "97f17c5dfff679caf93bdada03e9e6c6baae2d3f11f8e4d714135d5c0e0862e9"
   },
   {
    "question_number": 31,
@@ -503,7 +503,7 @@
   {
    "question_number": 34,
    "section": "numerical_ability",
-   "stem_text": "What should come in place of the question mark '?' in the following number series? www.prepp.in (?), 3125, 256, 27, 4, 1",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? (?), 3125, 256, 27, 4, 1",
    "options": [
     "46665",
     "46655",
@@ -513,7 +513,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "402152d03a109003fd68342ba3896e70abd35e9c701e03a583ad316fd4715883"
+   "hash": "0c7c3d07dd1710e5a4b895611921ba32f3336e6b1bc0486ac39f5536606ab3b6"
   },
   {
    "question_number": 35,
@@ -563,7 +563,7 @@
   {
    "question_number": 38,
    "section": "numerical_ability",
-   "stem_text": "What should come in place of the question mark '?' in the following number series? 2, 10, 30, 68, ?, 222 www.prepp.in",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 2, 10, 30, 68, ?, 222",
    "options": [
     "125",
     "130",
@@ -573,7 +573,7 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "3d4d4bffd2732c1b0d51e16846dd7e69210da08049bf201dad145d45aaa5737c"
+   "hash": "ea3d2cc3a616a980112c1a6dfbd61de0d6d158e0aad98d353d8679e37c2802ff"
   },
   {
    "question_number": 39,
@@ -611,14 +611,14 @@
    "stem_text": "Directions: The given table shows the number of questions attempted by three different persons in five different subjects, A, B, C, D and E. Name of the A B C D E person P 44 48 56 68 72 Q 80 52 42 76 64 R 58 66 38 62 78 Number of questions attempted by person P and Q in subject C is approximately what percentage of the number of questions attempted by person R in subject A.",
    "options": [
     "141%",
-    "163% www.prepp.in",
+    "163%",
     "169%",
     "171%",
     "156%"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "5a9017e37c378b445b72939a5e05edc15a0a583b83fa09518972b4397d711c8f"
+   "hash": "7b1d6d8b3b24a3ca73d3077dcc14fc81f73638f013546dc1dd1cacbda8ce9294"
   },
   {
    "question_number": 42,
@@ -672,13 +672,13 @@
    "options": [
     "96",
     "88",
-    "64 www.prepp.in",
+    "64",
     "68",
     "72"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "3f852046a4c9d3b26618fc4154b656550a4b702e0bc97b5142317842a2e08796"
+   "hash": "0ab42eb6939cec18ebc231b9330983339f1b5cf11897ccb779f06825e62fe6b4"
   },
   {
    "question_number": 46,
@@ -733,12 +733,12 @@
     "300",
     "200",
     "250",
-    "400 www.prepp.in",
+    "400",
     "350"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "18e20e3767ff9a19af1fa870433d44f3a03b4179e1ae82c2e645e273713d5b84"
+   "hash": "9c397398282adb33d11f06408359699b1b21501363215149d1122cd066f70797"
   },
   {
    "question_number": 50,
@@ -794,11 +794,11 @@
     "4752",
     "4753",
     "4754",
-    "4755 www.prepp.in"
+    "4755"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f06fbc7f792624218d90dc0444a7c3f27a1f6546edc434b2a1d7f4dd0ae55bab"
+   "hash": "ffb7fe242f3b99e4535b05f0f249cde74fcb1e7cef36d45425126bafeb4b5935"
   },
   {
    "question_number": 54,
@@ -983,7 +983,7 @@
   {
    "question_number": 66,
    "section": "reasoning",
-   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. www.prepp.in Statements: P > Q > R ; R > S ≥ T Conclusions: I. R > T II. P > S",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: P > Q > R ; R > S ≥ T Conclusions: I. R > T II. P > S",
    "options": [
     "Only I is true",
     "Only II is true",
@@ -993,7 +993,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "4cf47403f5aaed96dfbf30a0a1e357d76eedce2f9800e049cc82d1ab5da8a11d"
+   "hash": "579872710d35dbaf93e35ba2748a7e804d13a680b9ba277fc397b1a2e70766a8"
   },
   {
    "question_number": 67,
@@ -1028,7 +1028,7 @@
   {
    "question_number": 69,
    "section": "reasoning",
-   "stem_text": "Directions: Read the following information carefully and answer the questions given below. www.prepp.in Eight persons – R, S, T, U, W, X, Y and Z – gave the exam in four different months among – April, May, June th th and July – on different dates among – 7 and 28 – of the same year. No two persons gave on the same date of the same month. Only two persons gave after U. Only one person gave between U and S. S and R gave exams on different dates. R gave an exam after S. Five persons gave exam between W and T. T gave before R and both gave on different dates. Y gave after Z, who gave in the month which has odd number of days. Y and W did not give in the same month. In which month does Y gave the exam?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons – R, S, T, U, W, X, Y and Z – gave the exam in four different months among – April, May, June th th and July – on different dates among – 7 and 28 – of the same year. No two persons gave on the same date of the same month. Only two persons gave after U. Only one person gave between U and S. S and R gave exams on different dates. R gave an exam after S. Five persons gave exam between W and T. T gave before R and both gave on different dates. Y gave after Z, who gave in the month which has odd number of days. Y and W did not give in the same month. In which month does Y gave the exam?",
    "options": [
     "April",
     "May",
@@ -1038,12 +1038,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "63bb7ae7f105bcf94e387ce09cd4d2210316c33c0083d402632e69715e7d8971"
+   "hash": "1e9dd3a0cc5104d7a8059a399730b271f7f01805e7dd9c0a8a5772d0586d303b"
   },
   {
    "question_number": 70,
    "section": "reasoning",
-   "stem_text": "How many persons gave the exam between X and Z?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons – R, S, T, U, W, X, Y and Z – gave the exam in four different months among – April, May, June th th and July – on different dates among – 7 and 28 – of the same year. No two persons gave on the same date of the same month. Only two persons gave after U. Only one person gave between U and S. S and R gave exams on different dates. R gave an exam after S. Five persons gave exam between W and T. T gave before R and both gave on different dates. Y gave after Z, who gave in the month which has odd number of days. Y and W did not give in the same month.\n\nHow many persons gave the exam between X and Z?",
    "options": [
     "One",
     "Two",
@@ -1053,7 +1053,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "06a751f9e0eb9ac4e9c0da4c8d6db61182d10f44a05464cee58925e4c287d14d"
+   "hash": "ae291ab28511b5d95f8c524d69aa7abe49e8ff8190688415aa77e0b24e330f45"
   },
   {
    "question_number": 71,
@@ -1079,11 +1079,11 @@
     "W",
     "U",
     "S",
-    "Z www.prepp.in"
+    "Z"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "9f79368d4b5e103c6da89bedb381cb58e13b8cce261d09a18041d87deff24d46"
+   "hash": "d1a586c383b1f5f691424748aec015062d1397bdac9151fbe1d07e375e6cd30d"
   },
   {
    "question_number": 73,
@@ -1133,7 +1133,7 @@
   {
    "question_number": 76,
    "section": "reasoning",
-   "stem_text": "In each of the following questions below are given some statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known www.prepp.in facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Only a few top is bottom. Only a few bottom is side. All side is corner. Conclusions: I. All top is side. II. Some top is not side.",
+   "stem_text": "In each of the following questions below are given some statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Only a few top is bottom. Only a few bottom is side. All side is corner. Conclusions: I. All top is side. II. Some top is not side.",
    "options": [
     "None follows",
     "Only I follows",
@@ -1143,7 +1143,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "e13a614c7284b634b9f72e039af3b5dce8684ef00dda19fa266f625e7d733597"
+   "hash": "5f55046b8d40bb9eb90afd0210bfc1b89448f84623dfb6080db7d8094c8503ee"
   },
   {
    "question_number": 77,
@@ -1163,7 +1163,7 @@
   {
    "question_number": 78,
    "section": "reasoning",
-   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D. www.prepp.in Which Box is placed at the bottom?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D. Which Box is placed at the bottom?",
    "options": [
     "Box R",
     "Box C",
@@ -1173,12 +1173,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "dc0a1fed62caa51e43c60ab20e7c11d443ea64e952629e98c2045f870af8bdbd"
+   "hash": "b5fff182bcd714716da9a28baa26c713d074df8de8a50bdbcf96fad00be404c2"
   },
   {
    "question_number": 79,
    "section": "reasoning",
-   "stem_text": "Which of the following statement is true for the given information?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D.\n\nWhich of the following statement is true for the given information?",
    "options": [
     "Box P is placed at the top.",
     "Box R is at the middle of the arrangement.",
@@ -1188,12 +1188,12 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "247bcef3846e449fefe7dc4023039b6cca96da58dbadc9dafe7a649ae827bd8c"
+   "hash": "f4f17d6eef4829fcd730f55d91b2b5f3a5adc7221c7dd0b69f454b7a65b79354"
   },
   {
    "question_number": 80,
    "section": "reasoning",
-   "stem_text": "How many boxes are placed between Box Q and Box R?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D.\n\nHow many boxes are placed between Box Q and Box R?",
    "options": [
     "One",
     "Two",
@@ -1203,12 +1203,12 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "28220c997c3769b384a0a4a0c27d08f7a20f18f087922238f70279416d915828"
+   "hash": "04be0c76854dca06f663350f60cdf3b740d244fc58372b714a6b780acd8c76c0"
   },
   {
    "question_number": 81,
    "section": "reasoning",
-   "stem_text": "Which of the following statement is true about box D?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D.\n\nWhich of the following statement is true about box D?",
    "options": [
     "Box D is immediately below box Q.",
     "Box D is above box A.",
@@ -1218,22 +1218,22 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "2661c55bbdb89e6cd0d1e100559bb66dddb22aeabc06094527d8cc95a911e366"
+   "hash": "82e5e7d88c94b5be3bf047ced148fbafea9196070ff498e53304dcc9e47ed9ec"
   },
   {
    "question_number": 82,
    "section": "reasoning",
-   "stem_text": "Which box is placed exactly between Box D and Box P?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. Seven Boxes P, Q, R, A, B, C and D are placed one above the other in any particular order. Box no. 1 is at the bottom and Box no. 7 is at the top. Neither Box Q nor Box C are placed at the bottom. Box C placed at the even place. There are four boxes placed between Box P and Box B. Neither Box P nor Box B is placed at the bottom. Box R is immediately above box P. There are two boxes placed between box B and Box D.\n\nWhich box is placed exactly between Box D and Box P?",
    "options": [
     "Box B",
     "Box C",
     "Box A",
-    "Box P www.prepp.in",
+    "Box P",
     "Box R"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "ee31335c25378a841a3b3c06322b85e37640811fc40310ca530f21057e534c59"
+   "hash": "981a573740837d931353009ce60fa0bd869dbbeba42f971483efef9fd18e7046"
   },
   {
    "question_number": 83,
@@ -1287,13 +1287,13 @@
    "options": [
     "128",
     "166",
-    "175 www.prepp.in",
+    "175",
     "345",
     "453"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "dcde8693f60f899b15fb7189e60a3a5b0efbd5242da047c6b1c6017d5c62609e"
+   "hash": "ab9725abe8d43213c5dc3a30d74c62bdd30d6bed6af8ed6a28fd956e013cd29d"
   },
   {
    "question_number": 87,
@@ -1348,12 +1348,12 @@
     "P is grandfather of M",
     "V and S are of same gender",
     "S is mother of M",
-    "T is married to S www.prepp.in",
+    "T is married to S",
     "R is married to U"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "1b473ae6969ef0ab23a32686c72b6bd70e28cae266acbaa055d7a834baa8921e"
+   "hash": "08c7757cc892ce8ef64eac386cc64236422c28cb511f3ed8e63b7fc0fbd8a506"
   },
   {
    "question_number": 91,
@@ -1405,7 +1405,7 @@
    "section": "reasoning",
    "stem_text": "Which of the following person sits fifth right of U?",
    "options": [
-    "S www.prepp.in",
+    "S",
     "Y",
     "Z",
     "T",
@@ -1413,7 +1413,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "469fb2ca9704e006a9bad2c9e88bbb2f546783f8b923e897489a1957ad86c390"
+   "hash": "11a3227c4f72d0a650fffe19fd385b8551e3d6973296627f5ce8513545c6ac98"
   },
   {
    "question_number": 95,
@@ -1463,7 +1463,7 @@
   {
    "question_number": 98,
    "section": "reasoning",
-   "stem_text": "Direction: Read the given information and carefully answer the following questions. A certain number of people are sitting in a straight line, facing north. Distance between two adjacent people is the same. www.prepp.in Only one person sits to the right of Shruti. Tarun sits fifth to the right of Shree. Three people sit between Tanya and Taru. The number of people sitting between Taru and Tarun is the same as the number of people sitting between Tarun and Shruti. Shree is an immediate neighbor of Tanya. The number of people sitting to the right of Tarun is one more than the number of people sitting to the left of Shree. Shree does not sit to the right of Taru. Two people sit between Tia and Tarun but Tia is not an immediate neighbor of Taru. How many people are sitting in the row?",
+   "stem_text": "Direction: Read the given information and carefully answer the following questions. A certain number of people are sitting in a straight line, facing north. Distance between two adjacent people is the same. Only one person sits to the right of Shruti. Tarun sits fifth to the right of Shree. Three people sit between Tanya and Taru. The number of people sitting between Taru and Tarun is the same as the number of people sitting between Tarun and Shruti. Shree is an immediate neighbor of Tanya. The number of people sitting to the right of Tarun is one more than the number of people sitting to the left of Shree. Shree does not sit to the right of Taru. Two people sit between Tia and Tarun but Tia is not an immediate neighbor of Taru. How many people are sitting in the row?",
    "options": [
     "7",
     "9",
@@ -1473,12 +1473,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "5a91bd0fd3c41582f80001521af8ea934409d7bf6d228363021aaf709a12d71f"
+   "hash": "c9fbdbfe8b60af4a6555fc1bd636add19ea1d9203a3858aafae745d6645079db"
   },
   {
    "question_number": 99,
    "section": "reasoning",
-   "stem_text": "Who sits third to the left of Taru?",
+   "stem_text": "Direction: Read the given information and carefully answer the following questions. A certain number of people are sitting in a straight line, facing north. Distance between two adjacent people is the same. Only one person sits to the right of Shruti. Tarun sits fifth to the right of Shree. Three people sit between Tanya and Taru. The number of people sitting between Taru and Tarun is the same as the number of people sitting between Tarun and Shruti. Shree is an immediate neighbor of Tanya. The number of people sitting to the right of Tarun is one more than the number of people sitting to the left of Shree. Shree does not sit to the right of Taru. Two people sit between Tia and Tarun but Tia is not an immediate neighbor of Taru.\n\nWho sits third to the left of Taru?",
    "options": [
     "Shree",
     "Tanya",
@@ -1488,7 +1488,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "3b67c6926c7454c54a14b0a8dd390f2d227e23dbb9820f6abf6137f41ddaff33"
+   "hash": "a69be254d71236de27d91237b0ab753198f9030a6bbe1cc4237b0aa7fd78a4ce"
   },
   {
    "question_number": 100,
@@ -1506,7 +1506,7 @@
    "hash": "68ba9c4c1d05b713d27b90788be09a9b37dce2e33220f551f9550b232aadca01"
   }
  ],
- "section_confidence": 0.938,
+ "section_confidence": 0.94,
  "section_order": [
   "english",
   "numerical_ability",

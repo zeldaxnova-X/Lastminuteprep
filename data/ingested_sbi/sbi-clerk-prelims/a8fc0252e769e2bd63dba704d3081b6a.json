@@ -14,11 +14,11 @@
     "B",
     "C",
     "D",
-    "No Error Testbook Solution"
+    "No Error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "3a289b6ff7d19108fa8b57f9efddea28484c6d764d82f771502f2a2f65cec024"
+   "hash": "7246ac8098cb96b13b75021a1e49032dd66d186592bd0a7608b1fd61975ba738"
   },
   {
    "question_number": 2,
@@ -29,11 +29,11 @@
     "B",
     "C",
     "D",
-    "No Error Testbook Solution"
+    "No Error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "02606bc1c4884f4e6069809de27e5e4e6c154a4a25c052f1be1c639564748880"
+   "hash": "e244de23b66adc17698e658c63b7789dffad35a1c3fe49922bcd6df26733ecaf"
   },
   {
    "question_number": 3,
@@ -44,11 +44,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a56dceb8323e99baa40378af8b18cef9736d3a5310e3d7ebe4b8173166f88c71"
+   "hash": "1988bc794c473e7b3b6817222928de28ba72c9a6748713b1b43d448908f13b1c"
   },
   {
    "question_number": 4,
@@ -59,11 +59,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "0472f0cf9445cc6ad7cf029cc437cabeac128702997e1599b459bc00b5f1511a"
+   "hash": "39ca5195d4ffa9ce53ea69d40ea0a2b13a8d282cdde76f9699df24b07aaf3c4d"
   },
   {
    "question_number": 5,
@@ -74,11 +74,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "fdaf6190ac1697540223872862d50c500ec04455d8637a232edd5709e0fda242"
+   "hash": "4a2226be6a86eb06516d2aaf4d4d70d2912f4492480550bcc8f570e555783bfc"
   },
   {
    "question_number": 6,
@@ -89,11 +89,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "32681c4883c54011fad774b6e7c5da82f58173a73c3a36387c17fb4b288ed8ff"
+   "hash": "5efdcba8e043105ffcf2690351825445ca2c2fb42d19ffad48c507463c18293b"
   },
   {
    "question_number": 7,
@@ -104,71 +104,71 @@
     "Advantage",
     "Beginning",
     "Successfully",
-    "Staff Testbook Solution"
+    "Staff"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "69a7a31b95aae79f82e1115789b045658b48991ab17f71475f95610adac3e846"
+   "hash": "6575b58eab1679a7af2fd592019551ba84ee236a6a44dc42f9bae407c4fa4016"
   },
   {
    "question_number": 8,
    "section": "english",
-   "stem_text": "Which of the following words most appropriately fits the blank labelled (B)?",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, four options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. The end of World War II was not just the end of a war, but also the __(A)__ of a tense and dynamic period that affected society on all levels. This “postwar” period, as it became known, shaped the world as we know it today; likewise, the period was shaped itself both by the war that had __(B)__ it, and the powerful forces that surrounded it. As the energy of fundamentally different ideologies—Communism and Democracy— collided with advances in science such as the nuclear bomb, a dangerous environment ensued that created an atmosphere of __(C)__ throughout the world and especially, within America. This atmosphere is known broadly as the “Cold War.” While the Cold War played out step-by-step between the United States and the Soviet Union, it was __(D)__ playing out in the everyday lives of the masses within their borders. Paranoia, nevertheless, was not an effect that followed immediately after the close of the War. In fact, the United States had enjoyed an extended period of economic __(E)__ during the war, and following the war, the U.S. economy continued with great strength for more than a decade.\n\nWhich of the following words most appropriately fits the blank labelled (B)?",
    "options": [
     "Preceded",
     "Damper",
     "Subsequent",
     "Arming",
-    "Static Testbook Solution"
+    "Static"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "34c782a4aa18417350a545bb731fb9656d1323cc560e5f4a0f50b3b79e6d5341"
+   "hash": "b910b09414ffb322f907ec89d7f3f37f777bb472ad06294a500ffcc3ccb8c3e7"
   },
   {
    "question_number": 9,
    "section": "english",
-   "stem_text": "Which of the following words most appropriately fits the blank labelled (C)?",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, four options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. The end of World War II was not just the end of a war, but also the __(A)__ of a tense and dynamic period that affected society on all levels. This “postwar” period, as it became known, shaped the world as we know it today; likewise, the period was shaped itself both by the war that had __(B)__ it, and the powerful forces that surrounded it. As the energy of fundamentally different ideologies—Communism and Democracy— collided with advances in science such as the nuclear bomb, a dangerous environment ensued that created an atmosphere of __(C)__ throughout the world and especially, within America. This atmosphere is known broadly as the “Cold War.” While the Cold War played out step-by-step between the United States and the Soviet Union, it was __(D)__ playing out in the everyday lives of the masses within their borders. Paranoia, nevertheless, was not an effect that followed immediately after the close of the War. In fact, the United States had enjoyed an extended period of economic __(E)__ during the war, and following the war, the U.S. economy continued with great strength for more than a decade.\n\nWhich of the following words most appropriately fits the blank labelled (C)?",
    "options": [
     "Public",
     "Radical",
     "Politically",
     "Paranoia",
-    "Symbolic Testbook Solution"
+    "Symbolic"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "47f50c29bf1d6dcc66b3239a063a1d01d67b4bdd10e03de48089cd1171e5d57f"
+   "hash": "663e15d6bde87a604d0632e72d933b074d854b9aa4f7a838a6ba722a5024f16c"
   },
   {
    "question_number": 10,
    "section": "english",
-   "stem_text": "Which of the following words most appropriately fits the blank labelled (D)?",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, four options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. The end of World War II was not just the end of a war, but also the __(A)__ of a tense and dynamic period that affected society on all levels. This “postwar” period, as it became known, shaped the world as we know it today; likewise, the period was shaped itself both by the war that had __(B)__ it, and the powerful forces that surrounded it. As the energy of fundamentally different ideologies—Communism and Democracy— collided with advances in science such as the nuclear bomb, a dangerous environment ensued that created an atmosphere of __(C)__ throughout the world and especially, within America. This atmosphere is known broadly as the “Cold War.” While the Cold War played out step-by-step between the United States and the Soviet Union, it was __(D)__ playing out in the everyday lives of the masses within their borders. Paranoia, nevertheless, was not an effect that followed immediately after the close of the War. In fact, the United States had enjoyed an extended period of economic __(E)__ during the war, and following the war, the U.S. economy continued with great strength for more than a decade.\n\nWhich of the following words most appropriately fits the blank labelled (D)?",
    "options": [
     "Warheads",
     "Separated",
     "Simultaneously",
     "Hiding",
-    "Seek Testbook Solution"
+    "Seek"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f5a9fb3f6602ef603c68607a37990631aca16c45c8a0a73d84baffcfbe6a4c30"
+   "hash": "0c19a21d132fec456a7545c45d47cf50fa79469f1c70ad53f9f3a724ff3533c0"
   },
   {
    "question_number": 11,
    "section": "english",
-   "stem_text": "Which of the following words most appropriately fits the blank labelled (E)?",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, four options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. The end of World War II was not just the end of a war, but also the __(A)__ of a tense and dynamic period that affected society on all levels. This “postwar” period, as it became known, shaped the world as we know it today; likewise, the period was shaped itself both by the war that had __(B)__ it, and the powerful forces that surrounded it. As the energy of fundamentally different ideologies—Communism and Democracy— collided with advances in science such as the nuclear bomb, a dangerous environment ensued that created an atmosphere of __(C)__ throughout the world and especially, within America. This atmosphere is known broadly as the “Cold War.” While the Cold War played out step-by-step between the United States and the Soviet Union, it was __(D)__ playing out in the everyday lives of the masses within their borders. Paranoia, nevertheless, was not an effect that followed immediately after the close of the War. In fact, the United States had enjoyed an extended period of economic __(E)__ during the war, and following the war, the U.S. economy continued with great strength for more than a decade.\n\nWhich of the following words most appropriately fits the blank labelled (E)?",
    "options": [
     "Expansion",
     "Retrospect",
     "Behind",
     "Repressive",
-    "Subject Testbook Solution"
+    "Subject"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a0a1c40d385c4f719f46f707d706a33e4dc52f899bf35d9c1c56d14a5a777ffc"
+   "hash": "ec5e89fc9e2fcabd04497d8b359013ddf50f1cb9131c918c811e2184f8da289e"
   },
   {
    "question_number": 12,
@@ -179,11 +179,11 @@
     "deeper",
     "gain",
     "conclutions",
-    "no error Testbook Solution"
+    "no error"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "8a4c0f6aa413b44ab1fa6a7122ef1fc4095e44aa072535f696958955476e080d"
+   "hash": "4fa3a9c6045934fbd29eb6e5c9cc21fd89cdefdcda6dee3842f0ee5d4eeba196"
   },
   {
    "question_number": 13,
@@ -194,11 +194,11 @@
     "practice",
     "improve",
     "technique",
-    "no error Testbook Solution"
+    "no error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "1a80258e20c5983e25bd86ae4abde620aae923098a772daacd422d011b89dad1"
+   "hash": "01c19aaf5602cf3290df24010b43d010d2d0d349e2691b82bde9e8b703ed56c4"
   },
   {
    "question_number": 14,
@@ -209,11 +209,11 @@
     "creativity",
     "previaled",
     "writers",
-    "no error Testbook Solution"
+    "no error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "201860b49af0e36e7c3b5115a4fdb30c79596ddaec5e850b648335f6f87a00e1"
+   "hash": "13c8110a41fb19ff9a0c21c9d582d3657a70bd09c3025fc1803d6cbf75380250"
   },
   {
    "question_number": 15,
@@ -224,11 +224,11 @@
     "encourage",
     "more",
     "distraction",
-    "no error Testbook Solution"
+    "no error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "9c06dbdd313f8b10fa9cd743d467217445f563aea6eb6cc6ae5980330c84bb93"
+   "hash": "4cfb1abcdd6e93e3caf0f42f998ed7c324437747bdefccfff711d08a88f12464"
   },
   {
    "question_number": 16,
@@ -239,11 +239,11 @@
     "country",
     "against",
     "invaders",
-    "no error Testbook Solution"
+    "no error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "c42b46f751577c09d6d0f70a392c0454aee220133964dda8650601ade6b6cd18"
+   "hash": "be4bd41769cf16ccca96e271de958b6887c85dc43f097dcf0721e653bcd4e2eb"
   },
   {
    "question_number": 17,
@@ -254,11 +254,11 @@
     "Luxury",
     "Independence",
     "Confinement",
-    "Consent Testbook Solution"
+    "Consent"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "274c60ffa20d9133712a2b26ce48d47cf2b5590f06ffdaeec55ad2961be642b7"
+   "hash": "b38267e14567aec3ebc92cfd3e7a1dedba3327b59364ce4b134e37ea8d8d181a"
   },
   {
    "question_number": 18,
@@ -269,11 +269,11 @@
     "An increased tendency to blood clotting.",
     "An exaggerated immune response by the body.",
     "All of the above",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a87431f281b929d2d2d5690a1317f4ee370eecb78dcb10574229db38a2f378bf"
+   "hash": "93d53154395b37467f1c96c188e69d5c30de336bf229a9d592ca715e67cbb8c5"
   },
   {
    "question_number": 19,
@@ -284,11 +284,11 @@
     "Smoking and consumption of alcohol decreased due to prolonged quarantine.",
     "Disorders like Parkinsonism occurring during COVID is a cause of concern.",
     "Prolonged quarantine is a risk factor that can be associated with COVID related neurological conditions.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d94e802d35179ec4158243930049531e59b57589045625b3d763acbb7bb3bc99"
+   "hash": "84bdb8fcc33ea9d9a7acdf6857630681541e9ec5a7ebf9d24e89381490b96e99"
   },
   {
    "question_number": 20,
@@ -299,11 +299,11 @@
     "There is a constant need to be readily available for work.",
     "Face to face contact and human interactions have taken a back seat.",
     "Both 1 and 3",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "2c879737668f2a0e10846dd8a93c57fdea859d0da94c8f2bf54cc1f0b42fec31"
+   "hash": "faf82a4f874995dd558f461f2a2e90469dda1a0bca7d721cec132665973c7a06"
   },
   {
    "question_number": 21,
@@ -314,11 +314,11 @@
     "Spending time inside has given people an opportunity for self reflection.",
     "Less exposure to the pollution of the outside world is a blessing for many.",
     "The imposed virtual learning has increased the mental stress and fatigue in students.",
-    "None. Testbook Solution"
+    "None."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "124dc6f9584b2e97911a7bbb338bf066b2331d2f4daad70ff3d47337ee238791"
+   "hash": "b1426e4856a67aedf9913a2962a2e82d7698be131102cb0a3f1309aa3f200dd3"
   },
   {
    "question_number": 22,
@@ -329,11 +329,11 @@
     "Break",
     "Impede",
     "Operate",
-    "Conclude Testbook Solution"
+    "Conclude"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "c31bf5f9bba585cad0ef71f74b817c54ea6d7b4eefcdf8804766a081aeb116f0"
+   "hash": "225300096ce9572f5e54c7f42e156e78bc257850dec102688054c42bec597953"
   },
   {
    "question_number": 23,
@@ -344,11 +344,11 @@
     "Miniscule",
     "Tepid",
     "Enormous",
-    "Opulent Testbook Solution"
+    "Opulent"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "7127f19d3a457943d790155fb040499630a62ee9cd5e7e2262c5bab8dbc58a06"
+   "hash": "6387937c147ae310a6ef4bfd213cb0a2219118337f4b5815b202011a7b08b916"
   },
   {
    "question_number": 24,
@@ -359,11 +359,11 @@
     "The steep increase in the amount of alcohol consumption by regular drinkers.",
     "The rise of virtual learning and work from home.",
     "The wide range of mental and neurological disorders in patients with milder symptoms.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "494a7b2fa530909c1442406fcfe88f66a41e44a06d9e896c90c4205cbe9178d2"
+   "hash": "2e9aae39d1a53726b0ae738869d92674fe0f00a0c974e2f039e4a2ad0778d5ae"
   },
   {
    "question_number": 25,
@@ -374,11 +374,11 @@
     "Expel",
     "Reject",
     "Agree",
-    "Admit Testbook Solution"
+    "Admit"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "919fb414bf47f4b82b14322f8771ddc1cbfce71d8111bca0ed1f18a17dc564f8"
+   "hash": "c96b16fedded125e40b2084dc7b179ec436d645452d9f250617dbbbb763fb1e9"
   },
   {
    "question_number": 26,
@@ -389,11 +389,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "db32104376896bcd3fb65e6036d06eb4a13b0abf3ca90763d014ffcc9ca4ab84"
+   "hash": "859a07f9afbc859f3b6af08cce59d789ffd7134dad2804defa582af573351d32"
   },
   {
    "question_number": 27,
@@ -404,11 +404,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "b26cc4a98c4285a55b783fd8317f3af41ef92dca6d80bdb20e76b9d7a930b627"
+   "hash": "2b0e615231823aba57d7aa512a22e8999742cce6f79075580f3e3cf9eb513009"
   },
   {
    "question_number": 28,
@@ -419,11 +419,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "0f31b2ce00e20e4c5d4e649dcc3cbfc01b1ea5260ca834aa24c03ea7a1f83fcc"
+   "hash": "0e5964e504d8925d71ee6fb614e7c37794d2bad0e845f95f8b475453dee4c575"
   },
   {
    "question_number": 29,
@@ -434,11 +434,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "cc9a51a8167c3b39e982d93a3057e47aac6e33e5b6207b5640a59c9e634a751e"
+   "hash": "c27f0175099de74f2970fc04f4ba2a2917d52fc9ce5c2e1d53bf205bdb0accfd"
   },
   {
    "question_number": 30,
@@ -449,11 +449,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "cae3a35ddc03af9f2cdd6b96698201c3916f3e721d82222d27f6687b0110e7e6"
+   "hash": "a4a4bacd11a16171e13de8f924b47229fd097ecbda9b91fbd4a400e435683396"
   },
   {
    "question_number": 31,
@@ -464,11 +464,11 @@
     "172",
     "168",
     "166",
-    "182 Testbook Solution"
+    "182"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "b6be7b5026121d7f443fadde3c44ab90fbb82c6b76fd53985179119c9f28f251"
+   "hash": "d9c1327eecffddb76ca89dfbf1d7d84bc54273fea44baa5124711387bf31eaa3"
   },
   {
    "question_number": 32,
@@ -479,11 +479,11 @@
     "15",
     "12",
     "13",
-    "14 Testbook Solution"
+    "14"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "4003779854315860723115d4ecf4459c85c2d03441723588b85095adfbe053b2"
+   "hash": "a5f8a5e53a7090bd0b79d7ff4e5383a2ad837b904c6d3ccfe5caa83e3ef7cbe7"
   },
   {
    "question_number": 33,
@@ -494,11 +494,11 @@
     "209",
     "610",
     "508",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d3929656212a17fe252971bf0a3d6f435b1398488639cfb1c299936a715065c0"
+   "hash": "562e364527881807e817f34c4ddccbce0d4a413868921870813c1aaafb1afc45"
   },
   {
    "question_number": 34,
@@ -509,11 +509,11 @@
     "41",
     "43",
     "35",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a5947966672155f13d32c3588243699aa46a2a963fc33da7375e7dd584cd26e5"
+   "hash": "11ad844d0370fb4975dc0671ab43db4aeecf0ac3cc0fdf8d0c80e783ababb481"
   },
   {
    "question_number": 35,
@@ -524,11 +524,11 @@
     "7",
     "6",
     "9",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "cfe99ba8b6e585b841dabc77498d44ce61f21681c1156f12e15b16ecb24fbf7c"
+   "hash": "56c8f0b1b40b8a73d2ab208171d0b3cb02d168fc4f002e30cef23395cc0063ee"
   },
   {
    "question_number": 36,
@@ -539,11 +539,11 @@
     "1",
     "3",
     "2",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "346cf7eb85b441dee70fa2896460bfba2c4cef19737f49daabd9df0947830115"
+   "hash": "335cae55ad00cbf58c7f0a578622713f6b26a59de27a17999903fe582b46187b"
   },
   {
    "question_number": 37,
@@ -554,11 +554,11 @@
     "28",
     "27",
     "26",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "424c7ea7889b406cf32c7afab4b351be0a70d783112d32e7ece2dfa3d8616fbc"
+   "hash": "6f5cf83711c1b1eec9642c29b6b77ab0d7afb4a3b98ee973c48ee0684b9a76a1"
   },
   {
    "question_number": 38,
@@ -569,11 +569,11 @@
     "14",
     "15",
     "13",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "c51b692bc47e8ca552801a972191d95679b861ff31d1b30191bfbb51a8e0fabb"
+   "hash": "e19918d18c6e2cc749f8b8e878b0da6a5c2291dc458a54609b098000927c173f"
   },
   {
    "question_number": 39,
@@ -584,11 +584,11 @@
     "5",
     "3",
     "4",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "5241e9023261bd9d7854928cb9d5810a07519d6338804a950b1fa223ecbe96ba"
+   "hash": "112f9842602a2a88aa675526248da904b47a880a3d718c9129547664e2cf0a77"
   },
   {
    "question_number": 40,
@@ -599,11 +599,11 @@
     "36",
     "6",
     "216",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "2e94d837225aa11842ac7cd2dddf7bf5a6b4fed93b642d4390e8ecb38d53741e"
+   "hash": "0bcbdfbcc25d614da5434a784451c563384f536ad717c29fa4a7d4cbec2fbeab"
   },
   {
    "question_number": 41,
@@ -614,11 +614,11 @@
     "42",
     "46",
     "52",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "42ca57134a8b35f729efc07bb5870b74eac5d6f42a76700151be919e411dc83b"
+   "hash": "eb608cfb76685c638ff5129fa02099618ef5fbea2f660c72be6d431b8933a16e"
   },
   {
    "question_number": 42,
@@ -629,11 +629,11 @@
     "82.5%",
     "90.75%",
     "62.5%",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a40b1f13a8306b4fbaebc13d290e253783b0312d94e3fcf1983b5bb4eefdb643"
+   "hash": "3e9ece428c0ba2263e4d2dcf0afc6517866a296a16fe098abcecf305f231009a"
   },
   {
    "question_number": 43,
@@ -644,11 +644,11 @@
     "11 : 12",
     "12 : 13",
     "22 :23",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "8f9eefbab0d3e8592fc14fd50116e19c23b44848477a366736af4d4f568ba84c"
+   "hash": "279b6aa3d43b19f9af3b56ee830ae337c60da31bfb0f79c3dbc44b3c917b7dcf"
   },
   {
    "question_number": 44,
@@ -659,11 +659,11 @@
     "44",
     "52",
     "38",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "1582b9226d6de0302d8bf34ab133deb481aa765cd17aec7ff8eaa092b61b50a3"
+   "hash": "c6002e4dda8ff96cc99ecc70d95e86628d0e9287a1823f465d79b14707b5537a"
   },
   {
    "question_number": 45,
@@ -674,11 +674,11 @@
     "102",
     "96",
     "104",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "22975589fe55d53302c415a47da373c769466dde5190d5242cb0095b94839fcf"
+   "hash": "0a0ff886ad5fcfb59c211ca2d705092064cb3884319b26065dd59652babdd99f"
   },
   {
    "question_number": 46,
@@ -689,11 +689,11 @@
     "32",
     "23",
     "18",
-    "52 Testbook Solution"
+    "52"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d29499ac524ceb6097e1036cee16bbf0aa37f776e4468222885423ef80692856"
+   "hash": "0dcca40aa15d969be5e1dd643494959de817ed3e626e9352cbd8b9f271b7384b"
   },
   {
    "question_number": 47,
@@ -704,11 +704,11 @@
     "52",
     "93",
     "129",
-    "39 Testbook Solution"
+    "39"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "56aac2b75156d47efff285d48b9d1ae0ec2c330feeb83fbc3cfb491105170b05"
+   "hash": "1bb6e8a6ab3f08c911ef10953105a7eed3118b8546665fc44be50ee374ddab2b"
   },
   {
    "question_number": 48,
@@ -719,11 +719,11 @@
     "35",
     "18",
     "136",
-    "273 Testbook Solution"
+    "273"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "0861f6721c76675959e06daed37edbc8d35f0460a8213601e7bf196f16a93c82"
+   "hash": "3d66e977ec9fd97e80412aa6444202f1e849e60d39f4527caac4b7392c583197"
   },
   {
    "question_number": 49,
@@ -734,11 +734,11 @@
     "21",
     "41",
     "6",
-    "27 Testbook Solution"
+    "27"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e174bba8c368f74f0562f013586055f0a32616e0b6c40ec693b9ae080df010d5"
+   "hash": "3564292a9b555ac5c2e18d1d3fcf6c3aba83570c3a70f4548d0d158ce527563a"
   },
   {
    "question_number": 50,
@@ -749,11 +749,11 @@
     "220",
     "110",
     "87",
-    "88 Testbook Solution"
+    "88"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "542ede8baee1167a657ba21c89e75e9401e03c63cb9486cbee92303e378c1665"
+   "hash": "c4405d1611cdc462d1e93f4a77fe697253c5f52c2df5767be2990eb33bfa4c2f"
   },
   {
    "question_number": 51,
@@ -764,11 +764,11 @@
     "3",
     "2.5",
     "1.5",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f3558881e658781bb50c6ce5375d1ca5e588d9e1dd41fddd2bb3d250601257f8"
+   "hash": "3e677c7f47de1a4da0caa63fdcd7486e0530194f762d50de8ae966795fb22fa4"
   },
   {
    "question_number": 52,
@@ -779,11 +779,11 @@
     "20 days",
     "22.5 days",
     "25 days",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f3d1c510bfab53de47046e10a93bad7e67d7c362c261fcd4d071a71adc57876c"
+   "hash": "4cc5a65bdbf2f766622e681f43efacc1de78a4b76557f672f1f92c8dd7f04ee6"
   },
   {
    "question_number": 53,
@@ -794,11 +794,11 @@
     "3.5 hrs",
     "4 hrs",
     "2.5 hrs",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "be9ccfe59e1293f5beb971d2b2d0d10777dd0350d06f8d70592a93d48dbb43c7"
+   "hash": "e34def8bfa27bb5810caa7faeeb0e4390ec7b8d6266785b13e2e9816f8d07a73"
   },
   {
    "question_number": 54,
@@ -809,11 +809,11 @@
     "4",
     "6",
     "8",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "f423e01853dbbbcb89ff411001b282f253498cbfc2ac1d45cf45abb6d0418718"
+   "hash": "579a1ac093137ac3888160bd91d33d43ce56723ac73f7fd0ec586afb8b21dd80"
   },
   {
    "question_number": 55,
@@ -824,11 +824,11 @@
     "3 years",
     "5 years",
     "4 years",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "53fe565643e8cae870f0422b7cb9e22455cd1f5c5b9750f03863051c1d0fccf8"
+   "hash": "e180937f4f0536d32535372ad4347d5f656e829898417972b8adc6d5a7433251"
   },
   {
    "question_number": 56,
@@ -839,11 +839,11 @@
     "3 : 4",
     "6 : 5",
     "5 : 3",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "e7f7b62a7990b6ac670136d7ce753c2553071a6d1ce063452f5fab7bf5c910e5"
+   "hash": "ce68d0bf51dcfa8140588747f6b6e882fd85b27342c2c06a0ae9cbff73cd9670"
   },
   {
    "question_number": 57,
@@ -854,11 +854,11 @@
     "45%",
     "35%",
     "60%",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "637852f18de08fe3a985e417c6a6ba868dd2a3c0a0a703ef713945070423fe3f"
+   "hash": "9521b30ab2d4c25697e66327d2e9354584e34a224632ae5ae968d36088882148"
   },
   {
    "question_number": 58,
@@ -869,11 +869,11 @@
     "30",
     "45",
     "50",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "3e3e2d0ea96d356fa13738374882b2488f58ea560e6a4341a740bab38fbaec18"
+   "hash": "0966d9b62b26961abca1a599e43f1d8a4d673cac9851ec206e0b8b6f6c92f375"
   },
   {
    "question_number": 59,
@@ -884,11 +884,11 @@
     "Delhi",
     "Mumbai",
     "Both Patna and Mumbai",
-    "Both Delhi and Mumbai Testbook Solution"
+    "Both Delhi and Mumbai"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "63833a0a337e89566918e7fdfc6f8a3cd0512a606664d6e03b1eb287fea24fd1"
+   "hash": "94871c354a6ab62359491a98fda1161421d7eb2360dce1b02279bcee8aaa0bfd"
   },
   {
    "question_number": 60,
@@ -899,11 +899,11 @@
     "75",
     "90",
     "80",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "00d1286b920a2ba7217bc01c3204c6219d6ba4b447a0b1cb7328839fe7a2bb1d"
+   "hash": "08ee18cce109c0e7e8e0d6cb5575efb9775fe3d4c91a4d9b4aa81dcf54d426c3"
   },
   {
    "question_number": 61,
@@ -914,11 +914,11 @@
     "Rs. 500, Rs. 500",
     "Rs. 600, Rs. 500",
     "Rs. 600, Rs. 600",
-    "none of these Testbook Solution"
+    "none of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "983b23b40f07cd7a2a7a6d7eaf736849467daf622e17f89c60f670424d87e38e"
+   "hash": "aa9d65a5b95937681f129bdc9a4a6537fc36cf9698d1ca6949620e8e5d5a00c2"
   },
   {
    "question_number": 62,
@@ -929,11 +929,11 @@
     "500",
     "450",
     "650",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "55c3a06dc889110082c9efbe17ccf67a745cbec83901b52f37c6a07d58af4ab8"
+   "hash": "47fda082ae5342b2688a3868682bde3efba4380f04ff7a254689b8e3b0f1499c"
   },
   {
    "question_number": 63,
@@ -944,11 +944,11 @@
     "3000",
     "6000",
     "5000",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "827fcb31cbe948bf4259482ee3978a4d5ea76650ccc43623bbc3feb014311e52"
+   "hash": "9288ad4cd29ea12dd5da76464ee888b6a725bc8a1cf39769d25a76f6c8f99626"
   },
   {
    "question_number": 64,
@@ -959,11 +959,11 @@
     "59 kg",
     "62 kg",
     "65 kg",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "7d96a89631b0943715c0b1be04cd56c42241016617458d86a04209995558fc27"
+   "hash": "26c5102cdf67d6df295f266efc30afd2a58340f416092b45807ce5f92189ee62"
   },
   {
    "question_number": 65,
@@ -974,11 +974,11 @@
     "Rs. 1500",
     "Rs. 1800",
     "Rs. 2000",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "4880eceffb54a1912f0a91806ef3d382fca444f8448457b7422d6c8236214709"
+   "hash": "19b30b1ed5a68bf4856bd037976509a9ec41920f0e65a8dd603f6abaf0dadfb2"
   },
   {
    "question_number": 66,
@@ -989,56 +989,56 @@
     "Third to the right",
     "Immediate to the left",
     "Immediate to the right",
-    "Fourth to the right Testbook Solution"
+    "Fourth to the right"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "b5d6957bc510e09a7c2c556cc3088719e74657ab46500c869cef05fe07a1b2b8"
+   "hash": "29a1a72321e1ddf7f2381b447f31b4a382a08791daf584c6964923d813cb7ff6"
   },
   {
    "question_number": 67,
    "section": "reasoning",
-   "stem_text": "How many people sit between R and S, when counted in a clockwise direction from S?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the square while four sit in the middle of each of the four sides. People who are sitting at the corner are facing outside the center while people sitting in the middle are facing the center. R sits second to the right of V. Only one person sits between R and W. P is not an immediate neighbor of W and does not sit at corner. Q faces S who sits immediately to the left of U.\n\nHow many people sit between R and S, when counted in a clockwise direction from S?",
    "options": [
     "None",
     "One",
     "Two",
     "Three",
-    "More than three Testbook Solution"
+    "More than three"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "3e29bfc7adc1eda9dc527475683ab76f8a922ab85db3e7428572a6b653bbb08b"
+   "hash": "1f9c70481c594d78bf25acd6173f99f3fcedae53816ea192884dbcd135d6ad2a"
   },
   {
    "question_number": 68,
    "section": "reasoning",
-   "stem_text": "What is true regarding P?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the square while four sit in the middle of each of the four sides. People who are sitting at the corner are facing outside the center while people sitting in the middle are facing the center. R sits second to the right of V. Only one person sits between R and W. P is not an immediate neighbor of W and does not sit at corner. Q faces S who sits immediately to the left of U.\n\nWhat is true regarding P?",
    "options": [
     "P sits immediate right of U.",
     "P Second to the right of Q",
     "P is an immediate neighbor of R",
     "Both 1) and 2)",
-    "Both 1) and 3) Testbook Solution"
+    "Both 1) and 3)"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "90d3bcaa9a85fb1e451aa765acaab2d3f091aa49f054feab529c3339ab792ee7"
+   "hash": "327136c7f0c3aec6477eb37c4cd1698c62387d182d22c0011ae3b3bed4441ca4"
   },
   {
    "question_number": 69,
    "section": "reasoning",
-   "stem_text": "Who sits second to the left of the person who sits immediate right of S?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the square while four sit in the middle of each of the four sides. People who are sitting at the corner are facing outside the center while people sitting in the middle are facing the center. R sits second to the right of V. Only one person sits between R and W. P is not an immediate neighbor of W and does not sit at corner. Q faces S who sits immediately to the left of U.\n\nWho sits second to the left of the person who sits immediate right of S?",
    "options": [
     "U",
     "R",
     "V",
     "T",
-    "W Testbook Solution"
+    "W"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "dc8d71825d039bcbffa43910d8e69bc4ab03e9ac7ac5563836216d4d3d260666"
+   "hash": "a055b4321fbbfadb8e27f257412d7333649a3dbc3cc41af67e79eb490c16892d"
   },
   {
    "question_number": 70,
@@ -1049,11 +1049,11 @@
     "U",
     "V",
     "W",
-    "Q Testbook Solution"
+    "Q"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "fc8ff5ab56cf3033911c80c305c827d00dc65052223d9a61a85d877bb3de59d2"
+   "hash": "47562b6aaa5367577c0e3747d017ccd9c565c888d7b450fc9b601d472c590381"
   },
   {
    "question_number": 71,
@@ -1064,11 +1064,11 @@
     "py",
     "nx",
     "ta",
-    "su Testbook Solution"
+    "su"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "80acef2a71736dfb34b15ecf03913f93aca8c2c2a92ec9712028d66a4d660c10"
+   "hash": "9bd8ac0582625f1382b56df1514e9c12f4f735fd6304a1b017b838f72d738d10"
   },
   {
    "question_number": 72,
@@ -1079,11 +1079,11 @@
     "development",
     "focus",
     "on",
-    "important Testbook Solution"
+    "important"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d362b963f144dadbe68b44b3736d46b29084d82e94421f852f554309613103f4"
+   "hash": "30c84aec8acd7edc391da8e260f5cc08f9c932aa23b166df18527d9e08fe811c"
   },
   {
    "question_number": 73,
@@ -1094,11 +1094,11 @@
     "om ta nx",
     "wr ta nx",
     "ea nx py",
-    "Cannot be determined Testbook Solution"
+    "Cannot be determined"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "eccc515bb4b7f8ce6e2c7cc96cbf5292ffdb3b094fd04a4db4a1d1f3810275db"
+   "hash": "34ac4b71f7066b63e8c41091276084072e727727487d6590432d49cf8f9f13a8"
   },
   {
    "question_number": 74,
@@ -1109,11 +1109,11 @@
     "py",
     "nx",
     "om",
-    "Cannot be determined Testbook Solution"
+    "Cannot be determined"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "a60ce8e77516a4ea70feb94034ff00fb5abe7f83ea2bbba2e36fbab60bfd2955"
+   "hash": "326e0272875f26f80dc3faacdc37911b6e441b03fc69b87e5cf9f3e6f5c0516b"
   },
   {
    "question_number": 75,
@@ -1124,11 +1124,11 @@
     "ea",
     "vl",
     "om",
-    "no Testbook Solution"
+    "no"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "aa6f68894a2c8d1ed93fb94d56196975a3fde00773199c2f1adc8a75fde90ca9"
+   "hash": "8d9ec743a52d570669724a2673c9d8ac7f4d69ddd1dd92863760a3af1d37321a"
   },
   {
    "question_number": 76,
@@ -1139,11 +1139,11 @@
     "689",
     "957",
     "495",
-    "879 Testbook Solution"
+    "879"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "e0cd55974aa190adbcaff106b7c2a71be4a5fbbb75f12f846013f8f7c213ff10"
+   "hash": "85641a4503b20396e13e2b3bc403d336091b0f367b0e7da7298a5535270d1745"
   },
   {
    "question_number": 77,
@@ -1154,26 +1154,26 @@
     "Tuesday",
     "Wednesday",
     "Thursday",
-    "Sunday Testbook Solution"
+    "Sunday"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "d3bdad96acd435f5edaeb6d17119905c911d8bf6c80ee1b7e0a2d376a6a623e1"
+   "hash": "fb137517225edc8c0b3b41be3cd68988707bd68ab3231c2d3ff2a6196aab158f"
   },
   {
    "question_number": 78,
    "section": "reasoning",
-   "stem_text": "How many person/ persons go for movie after E?",
+   "stem_text": "Direction: Study the given information carefully and answer the questions. Seven persons, A, B, C, D, E, F and G go to movies on different days of the week starting from Monday to Sunday but not necessarily in the same order. One person goes between G and C, A goes on one of the days before C. G goes on Friday. D goes on the second day of the week. Three persons go-between D and F. B does not go on Monday or Thursday. The number of persons who goes after C is equal to the number of persons go before G.\n\nHow many person/ persons go for movie after E?",
    "options": [
     "No One",
     "One",
     "Two",
     "Three",
-    "Four Testbook Solution"
+    "Four"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "04c20fbb8466d833bc621888cb67efffb43940cc23e28faec31bbb6cf3e3b7b9"
+   "hash": "2e8071a6712079424c0d1a6eb7df856446b8c6944ee0ba5ed0aa3cc1a007be76"
   },
   {
    "question_number": 79,
@@ -1184,11 +1184,11 @@
     "E",
     "F",
     "G",
-    "D Testbook Solution"
+    "D"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "e75b1b7ffc167f4df16bb80b4a297a2e478866a68f79012ab8cb53ea43807090"
+   "hash": "a467d4673bbb2a859940005cbc469b50aae5b880d984ada3a0062c8c929afd21"
   },
   {
    "question_number": 80,
@@ -1199,11 +1199,11 @@
     "F",
     "E",
     "G",
-    "D Testbook Solution"
+    "D"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "0b59254d4ff42d30f70b38c11fbb2ab9a49f53261792cbe37b8bc6032afc8a6a"
+   "hash": "9b40c0d02f4f194efa39500d9214a22967bb8a3008195d62a1b24d6852c90f68"
   },
   {
    "question_number": 81,
@@ -1214,11 +1214,11 @@
     "D",
     "C",
     "A",
-    "G Testbook Solution"
+    "G"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "8e5bf1d29a3ae16f619efc296adda1da33c4de7696b22f60d346933f3e93634f"
+   "hash": "a34b37b9b6c7e50aee6dabb54e4346948400d079c84a5f59165423236189cbf7"
   },
   {
    "question_number": 82,
@@ -1229,11 +1229,11 @@
     "2",
     "3",
     "4",
-    "5 Testbook Solution"
+    "5"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "71fdead1dd4641e89fd7a4f9f78672d5a32aca5e5e6f4e8c63fd9ed1ed2bce57"
+   "hash": "e4fe3b279167823b7f3fcb8fd8d3faffcae787bce5ffd4bf742b05bae62161d1"
   },
   {
    "question_number": 83,
@@ -1244,11 +1244,11 @@
     "Both I and II follow",
     "Either I or II follow",
     "Only I follow",
-    "Neither I nor II follow Testbook Solution"
+    "Neither I nor II follow"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "e2f8a67f915cc3e1d8a4d3b8992fac857b899a82cfe6eda818a287e76809a8f4"
+   "hash": "77447e0f62ecf59c7904feacce07244e191bae7a2d88e7e0980e423b9189d19b"
   },
   {
    "question_number": 84,
@@ -1259,11 +1259,11 @@
     "Neither I and II follows",
     "Either I or II follows",
     "Only I follow",
-    "Only II follows Testbook Solution"
+    "Only II follows"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "98b5605607e235266050b6ef56e0c05c51279dbc12df38a1924d577721b54a9d"
+   "hash": "cabd1a7f8869d39e706442c444a839d3c0007ab7ca864934e34f9013cd5a4fb7"
   },
   {
    "question_number": 85,
@@ -1274,11 +1274,11 @@
     "Only I follow",
     "Both I and II follows",
     "Either I or II follow",
-    "Neither I nor II follows Testbook Solution"
+    "Neither I nor II follows"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "461a3bafafc622204d664f90559e41c52a4eae2a97ce611a6430847a9e9c6b6a"
+   "hash": "9903d092a13da0d7bc7e3d039d90b42c2f76456ef4984047bc660d351f933648"
   },
   {
    "question_number": 86,
@@ -1289,11 +1289,11 @@
     "Only I follows",
     "Only II follows",
     "Either I or II follow",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "3f2cda31aa92bfe6b49c28e4981fb75ee0e651500d8b770aa7cb733e0e7713af"
+   "hash": "33d4bc54f374490d6e25088de39e8e71720aa8d0584eb2673466cf436edf58ab"
   },
   {
    "question_number": 87,
@@ -1304,11 +1304,11 @@
     "Two",
     "Three",
     "Four",
-    "More than Four Testbook Solution"
+    "More than Four"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "875b2435472da48551fa9ad98d419f120ad3120f7fdd4773bcfddba0ee579b99"
+   "hash": "5d738e28fc0048177751bd38bf5e48459c337757188bdbaaac5e3af5333f1e48"
   },
   {
    "question_number": 88,
@@ -1319,41 +1319,41 @@
     "P",
     "Q",
     "T",
-    "S Testbook Solution"
+    "S"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "63d1e8ce8b4c53a311266fe8df4ee45517df2fc1396738e8f3549db028f314ad"
+   "hash": "0cee310e21a96785d7d018d9d8fa110c9dc7c74f041a02c9bb89ec10d6fcf303"
   },
   {
    "question_number": 89,
    "section": "reasoning",
-   "stem_text": "How many persons buy the item after U?",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people P, Q, R, S, T, U, V and W buy different items but not necessarily in the same order. Two people buy items between P and S. One person buys between T and Q. T buys an item before Q. At least two people buy after Q. Three people buy items between V and Q. V neither buy at first nor at last. The number of persons buy items before T is same as the number of persons buy the item after W. Two people buy item between W and P. R buys before U.\n\nHow many persons buy the item after U?",
    "options": [
     "None",
     "One",
     "Two",
     "Three",
-    "More than Three Testbook Solution"
+    "More than Three"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "aa640554fbf8b69507ed55f9c0bd4a2fe072bf7ea5995687f052e8dec9aa86f1"
+   "hash": "1be82e80788ed69e503935a41ad129c7844839696e7092fbe186ce4d6c54373e"
   },
   {
    "question_number": 90,
    "section": "reasoning",
-   "stem_text": "How many persons buy item between R and W?",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people P, Q, R, S, T, U, V and W buy different items but not necessarily in the same order. Two people buy items between P and S. One person buys between T and Q. T buys an item before Q. At least two people buy after Q. Three people buy items between V and Q. V neither buy at first nor at last. The number of persons buy items before T is same as the number of persons buy the item after W. Two people buy item between W and P. R buys before U.\n\nHow many persons buy item between R and W?",
    "options": [
     "No one",
     "One",
     "Two",
     "Three",
-    "Four Testbook Solution"
+    "Four"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "0a6f75056504004423f6efe01576ce8eb143bb5be83ff4116d336161f5413f7d"
+   "hash": "13049e7ae84de61fdc4d1b3d7ea53f4db61c1158f30a547a41cc22ef8505655e"
   },
   {
    "question_number": 91,
@@ -1364,11 +1364,11 @@
     "Q",
     "S",
     "W",
-    "V Testbook Solution"
+    "V"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "5a2b02ee64cf767361d1d0422cea44e58a37c733df36b1a0816ea955640113d1"
+   "hash": "18b0721943003fe03df0f907261949c7963adf3c7dd12fa2d40f76dd3dd9b25d"
   },
   {
    "question_number": 92,
@@ -1379,11 +1379,11 @@
     "Q",
     "S",
     "V",
-    "W Testbook Solution"
+    "W"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "68f57fdfdd66969973d7eca24d959e836600779af8fe13980ecff2697f9c2db6"
+   "hash": "4b5defcb7b16dca393cb5ebd767a773bd2d60a1e54dddd0596eb3fffb2a9ed70"
   },
   {
    "question_number": 93,
@@ -1394,11 +1394,11 @@
     "Niece",
     "Brother",
     "Sister",
-    "Aunt Testbook Solution"
+    "Aunt"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "932bb5bad3674e7a7e2e90bd060288e5ba7c770836f244f32a36e3d5d6969ebb"
+   "hash": "bfebb3ea4d007e3f1e6b64c54124917ae09859c60edfe384ed3e48290780083a"
   },
   {
    "question_number": 94,
@@ -1409,11 +1409,11 @@
     "Sister in law",
     "Brother in law",
     "Daugther in law",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "a743771642d41c1380ffcf90f39739e3ee05ab5a4af24e6717468e96a76c8fca"
+   "hash": "dc96a527772f95e57a0507c0c21de6e8e04a0abe125b676b36174c87a70436e5"
   },
   {
    "question_number": 95,
@@ -1424,11 +1424,11 @@
     "6",
     "Cannot be determined",
     "3",
-    "4 Testbook Solution"
+    "4"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "ae326759b8763dad9df431af18987367d1eebe55172a915d688fa6ddaa9918c1"
+   "hash": "29232e5e2edb1b0e43b3d6e6e8536da3d77dc261daf57ea73b28b5d18dfa12d7"
   },
   {
    "question_number": 96,
@@ -1439,11 +1439,11 @@
     "V",
     "@",
     "H",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "9f6ed2e62aa46e7dd52bf8a4f8a8d8462671db781698420c40d210437d10c7e5"
+   "hash": "192a80f6adfa221fb5c66594c94b17ee00e7f36e841818a61417e78f9eabb3da"
   },
   {
    "question_number": 97,
@@ -1454,11 +1454,11 @@
     "O",
     "Y",
     "7",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "5d826f91c313c868bb34217b9a2b9713b9aa8d74930befc59b5bc228a922d0b1"
+   "hash": "b6ca24e0bdc62dadb675851b6e3a9193b41a380ed403ab6588dc959c53405f1c"
   },
   {
    "question_number": 98,
@@ -1469,11 +1469,11 @@
     "Two",
     "Three",
     "More than three",
-    "None Testbook Solution"
+    "None"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "e2a809dab14e4d0598ebf9485ec97d095fd3d19df7ebb9e96b52a8d417447bb0"
+   "hash": "8a9b92ae1db3510b59aa693df2507ddd9facb7c68259f445e8d95909eb1c4822"
   },
   {
    "question_number": 99,
@@ -1484,11 +1484,11 @@
     "@",
     "©",
     "4",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "d62621abd25b295f7ee5f580689975875c856dae90855507ec78794571d0320d"
+   "hash": "9de2b0fe32cba496665016ba074cd23539e82e817bb58892c3fe2215100d98ab"
   },
   {
    "question_number": 100,
@@ -1499,14 +1499,14 @@
     "H©T",
     "7$O",
     "V€7",
-    "4YA Testbook Solution"
+    "4YA"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "c485cd4000c7982316948cfc1feb39a2d39c246fe25e65c141d92cecdf04df48"
+   "hash": "493b1760b8dbe462991e79c9cb1d1c8999f83cbf92a2a617eaacd3fd8b865c7e"
   }
  ],
- "section_confidence": 0.952,
+ "section_confidence": 0.957,
  "section_order": [
   "english",
   "numerical_ability",

@@ -70,6 +70,40 @@ def clean_text(s: str) -> str:
     s = WATERMARK.sub(" ", s)
     return re.sub(r"\s+", " ", s).strip()
 
+# ---- Shared-context (puzzle / comprehension set) attachment --------------------
+# Prepp puts a set's directions/scenario on the FIRST question of the set and
+# leaves the rest as bare sub-questions ("Who sits after D?"). Detect the setup
+# and prepend its context to the following bare sub-questions so each is
+# self-contained and answerable.
+_ENTITY_SEQ = re.compile(r"\b[A-Z]\b\s*,\s*[A-Z]\b\s*,\s*[A-Z]\b")
+_COUNT_ENT = re.compile(r"\b(two|three|four|five|six|seven|eight|nine|ten|\d+)\s+(friends|persons?|people|boxes?|students?|men|women|players?|cities|families|candidates)\b", re.I)
+_SCENARIO = re.compile(r"\b(sitting|sit in a row|seated|arrang|circular table|linear|floor|deliver|following information|study the following|read the (following|passage)|passage|different (months|floors|cities|days|subjects|years)|facing (north|south|the cent))\b", re.I)
+_REF = re.compile(r"^\s*(who\b|how many\b|how is\b|which\b|what (is|will|comes)\b|find the (position|rank)|name the\b|the position of\b|how does\b|whose\b)", re.I)
+_HAS_DATA = re.compile(r"\d{3,}|\bcode\b|\bseries\b|\"[^\"]+\"|=\s*\?", re.I)
+
+def _is_setup(stem: str) -> bool:
+    return len(stem) >= 220 and bool(_ENTITY_SEQ.search(stem) or _COUNT_ENT.search(stem) or _SCENARIO.search(stem))
+
+def _extract_context(stem: str) -> str:
+    # Drop the trailing interrogative sentence (the setup carrier's own sub-Q).
+    ctx = re.sub(r"\s*[^.?!]*\?\s*$", "", stem).strip()
+    return ctx if len(ctx) >= 80 else stem
+
+def _needs_context(stem: str) -> bool:
+    return len(stem) <= 170 and bool(_REF.search(stem)) and not _HAS_DATA.search(stem)
+
+def attach_shared_context(qs):
+    ctx = None
+    for q in qs:
+        stem = q["stem"]
+        if _is_setup(stem):
+            ctx = _extract_context(stem)
+        elif ctx and _needs_context(stem):
+            q["stem"] = ctx + "\n\n" + stem
+        else:
+            ctx = None  # a self-contained question ends the set
+    return qs
+
 def norm_hash(text: str) -> str:
     t = re.sub(r"\s+", " ", (text or "").lower()).strip()
     t = re.sub(r"[^a-z0-9 ]", "", t)
@@ -161,6 +195,7 @@ def qc_paper(path, exam_code, meta):
         report["reasons"][f"unsupported_format:{fmt}"] += 1
         return report
     qs = parse_prepp(text)
+    attach_shared_context(qs)  # prepend puzzle/comprehension directions to bare sub-questions
     filled, conf, order = assign_sections_prepp(qs, bp)
     SECTION_CONF_MIN = 0.75  # below this, sections are unresolved -> review
     sections_ok = conf >= SECTION_CONF_MIN and len(filled) == len(qs)

@@ -25,7 +25,7 @@
   {
    "question_number": 2,
    "section": "reasoning",
-   "stem_text": "How many persons are sitting between J to C in the clockwise direction?",
+   "stem_text": "Directions: Read the information given below carefully and answer the questions that follow. Seven people A, B, C, J, P, Q and R are sitting around a circular table, facing the centre, not necessarily in the same order. Person A is sitting exactly in between R and J. R is not sitting adjacent to C. B is not an immediate neighbour of P. Person C is sitting to the second right of J and C is sitting exactly between B and Q.\n\nHow many persons are sitting between J to C in the clockwise direction?",
    "options": [
     "One",
     "Three",
@@ -35,12 +35,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "a6d1f02c2d4365b5d3f275738c2d8bbfe86178c75947bbe56561134777b5a314"
+   "hash": "b446ebd5a46c8b80fa38d82ca8ae4266b97a25ca8f9c3190722f5b1d690cd426"
   },
   {
    "question_number": 3,
    "section": "reasoning",
-   "stem_text": "Which of the following statement is correct about Q and R?",
+   "stem_text": "Directions: Read the information given below carefully and answer the questions that follow. Seven people A, B, C, J, P, Q and R are sitting around a circular table, facing the centre, not necessarily in the same order. Person A is sitting exactly in between R and J. R is not sitting adjacent to C. B is not an immediate neighbour of P. Person C is sitting to the second right of J and C is sitting exactly between B and Q.\n\nWhich of the following statement is correct about Q and R?",
    "options": [
     "Q is third to the left of R.",
     "Q is fourth to the right of R.",
@@ -50,12 +50,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "a0dc0152719c577036d20ae9e0cea9d190bad3224dfbb91165e3052a14252893"
+   "hash": "3785fc1af5977408bbfab616014b034d1126d9efce3b2d41a8d63186dcb3188d"
   },
   {
    "question_number": 4,
    "section": "reasoning",
-   "stem_text": "Who is sitting third to the left of J?",
+   "stem_text": "Directions: Read the information given below carefully and answer the questions that follow. Seven people A, B, C, J, P, Q and R are sitting around a circular table, facing the centre, not necessarily in the same order. Person A is sitting exactly in between R and J. R is not sitting adjacent to C. B is not an immediate neighbour of P. Person C is sitting to the second right of J and C is sitting exactly between B and Q.\n\nWho is sitting third to the left of J?",
    "options": [
     "R",
     "P",
@@ -65,22 +65,22 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b6d9bb9205f9eec0969db88c39526cd0c69d8426642b5cc60bb30145a849681e"
+   "hash": "32c984e556c68bcaf2cf172856aff724346a0a7c96754fd1161a5554f476a88e"
   },
   {
    "question_number": 5,
    "section": "reasoning",
-   "stem_text": "Which of the following statement is correct?",
+   "stem_text": "Directions: Read the information given below carefully and answer the questions that follow. Seven people A, B, C, J, P, Q and R are sitting around a circular table, facing the centre, not necessarily in the same order. Person A is sitting exactly in between R and J. R is not sitting adjacent to C. B is not an immediate neighbour of P. Person C is sitting to the second right of J and C is sitting exactly between B and Q.\n\nWhich of the following statement is correct?",
    "options": [
     "C is facing towards the centre and second to the right of J.",
     "J is an immediate neighbour of R.",
     "B is an immediate neighbour of P.",
-    "P is sitting opposite Q. www.prepp.in",
+    "P is sitting opposite Q.",
     "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "7517f9da8ef2a180d0b0b3ca2da99bca3bd114c293886f0a2bf82528d93f586b"
+   "hash": "787ceda9e9b235e1a8242b15d308db1e77e5fe597ea6d2c300dc99a61cab84c0"
   },
   {
    "question_number": 6,
@@ -115,7 +115,7 @@
   {
    "question_number": 8,
    "section": "reasoning",
-   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some mango is guava Some guava is Grapes Some Grapes is orange www.prepp.in Conclusions: I.Atleast some orange is mango II.Some Grapes is definitely mango",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some mango is guava Some guava is Grapes Some Grapes is orange Conclusions: I.Atleast some orange is mango II.Some Grapes is definitely mango",
    "options": [
     "Only I follow",
     "Only II follow",
@@ -125,7 +125,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "00217940de613afac6e2bdfdb20f583c5da5611d3941c688f13f71a1b996bb1b"
+   "hash": "98f3a83b54b402276bc77a8fc8ac56c277983c216a6c113b67a9c90da888f682"
   },
   {
    "question_number": 9,
@@ -145,7 +145,7 @@
   {
    "question_number": 10,
    "section": "reasoning",
-   "stem_text": "How many persons live between Hira and Preet?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Seven persons- Asha, Tom, Jiya, Hira, Tua, Preet and Vina are living in a seven-storey building, but not necessarily in the same order. The ground floor is numbered 1 and the floor above it is numbered 2, and so on, until the topmost floor is numbered 7. Vina lives on the lowermost floor. Only four people live between Vina and Asha. Tua lives on an even numbered floor. Only two people live between Tua and Preet. Tom, who is an immediate neighbour of Asha, lives on an odd numbered floor. Only two people live between Asha and Hira. Jiya lives on an even numbered floor, below Tua.\n\nHow many persons live between Hira and Preet?",
    "options": [
     "Two",
     "Three",
@@ -155,12 +155,12 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "9ea66519ac2f63cdbd1acca376feb92c72348e384e7c789c61bfca558ed7f53f"
+   "hash": "9eb665f5cb022907422728ebbb2d139395f1351352450a028c6b55b933c4e7e1"
   },
   {
    "question_number": 11,
    "section": "reasoning",
-   "stem_text": "Who lives immediate above Tom?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Seven persons- Asha, Tom, Jiya, Hira, Tua, Preet and Vina are living in a seven-storey building, but not necessarily in the same order. The ground floor is numbered 1 and the floor above it is numbered 2, and so on, until the topmost floor is numbered 7. Vina lives on the lowermost floor. Only four people live between Vina and Asha. Tua lives on an even numbered floor. Only two people live between Tua and Preet. Tom, who is an immediate neighbour of Asha, lives on an odd numbered floor. Only two people live between Asha and Hira. Jiya lives on an even numbered floor, below Tua.\n\nWho lives immediate above Tom?",
    "options": [
     "Tua",
     "Vina",
@@ -170,7 +170,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a596d6bf206eac24a48470651e73d80192a2b044f732ea48858c8c11eb4b29d1"
+   "hash": "db6f112ede177941f6de08b76af015126cba83313d75872ebfb9befde4112cf5"
   },
   {
    "question_number": 12,
@@ -179,13 +179,13 @@
    "options": [
     "Tua",
     "Vina",
-    "Hira www.prepp.in",
+    "Hira",
     "Preet",
     "Tom"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "341d3930095cc98a57803c1311bd42ef7501a3d8873471d32db1628ff5ed6aa3"
+   "hash": "5ef8f962fab3e6c5855f6d02f32d17e0b6f8cc474b8b81c0b58a4cd54fbf57ed"
   },
   {
    "question_number": 13,
@@ -235,7 +235,7 @@
   {
    "question_number": 16,
    "section": "reasoning",
-   "stem_text": "DIRECTIONS: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/are definitely true and then give your answers accordingly. Statements : T > N < V = L ≤ W < K, V = H > I > F Conclusions : I. V > F II. T > H www.prepp.in",
+   "stem_text": "DIRECTIONS: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/are definitely true and then give your answers accordingly. Statements : T > N < V = L ≤ W < K, V = H > I > F Conclusions : I. V > F II. T > H",
    "options": [
     "Only conclusion I follows",
     "Only conclusion II follows",
@@ -245,7 +245,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "917fc65cc123ff18bcf662187c4a922d79be591bd4e55854358806ebf593b01e"
+   "hash": "243ba33ccae477c6868cbd2e9d645a5a006f37df5d90d0065dff9010ceacadb1"
   },
   {
    "question_number": 17,
@@ -280,7 +280,7 @@
   {
    "question_number": 19,
    "section": "reasoning",
-   "stem_text": "Who among the following person sits sixth to the right of Q?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions below. An uncertain number of persons are sitting in a straight line facing north. Three persons sit between P and Q. R sits second to the right of P. Only three people sit between Q and S. T is immediate to the left of P. R sits fifth from the right extreme ends of the row. X sits on the extreme end of the row. As many people sit between R and U as many between U and S. Y sits second to the left of V, who is an immediate neighbor of Q. Not more than two persons sit between V and S. Five people sit between S and X. As many people sit between S and W as many between W and X.\n\nWho among the following person sits sixth to the right of Q?",
    "options": [
     "P",
     "T",
@@ -290,12 +290,12 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "c5cadbf66528907bcbc287bef925d883e6cb694de523e84197611577fd9d4cb0"
+   "hash": "dbd02637b6e4dc16d099579011310376f1ef5817d564a358a6d29e76ad7b0fd6"
   },
   {
    "question_number": 20,
    "section": "reasoning",
-   "stem_text": "How many people are sitting between S and T? www.prepp.in",
+   "stem_text": "Directions: Study the following information carefully and answer the questions below. An uncertain number of persons are sitting in a straight line facing north. Three persons sit between P and Q. R sits second to the right of P. Only three people sit between Q and S. T is immediate to the left of P. R sits fifth from the right extreme ends of the row. X sits on the extreme end of the row. As many people sit between R and U as many between U and S. Y sits second to the left of V, who is an immediate neighbor of Q. Not more than two persons sit between V and S. Five people sit between S and X. As many people sit between S and W as many between W and X.\n\nHow many people are sitting between S and T?",
    "options": [
     "Four",
     "Three",
@@ -305,7 +305,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "6443052ae840874ea0dc937eaee6a84bbdd31659b741d1832e8e610a4bae4732"
+   "hash": "0823f46447289b95103e7365feb041c21ccbf1f8979b08b0e4bde0498cacc607"
   },
   {
    "question_number": 21,
@@ -340,7 +340,7 @@
   {
    "question_number": 23,
    "section": "reasoning",
-   "stem_text": "What is the product of numbers, which are between ‘X’ and ‘Z’?",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: 6 U # 7 Y 8 X @ Q 9 L S % $ V M 3 F 2 K 1 5 Z & 4 C * O ?\n\nWhat is the product of numbers, which are between ‘X’ and ‘Z’?",
    "options": [
     "270",
     "280",
@@ -350,7 +350,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "c3826592aefcdade6417f93c9b587db9fae7cdbedea869e55a1e6a08a304b102"
+   "hash": "4ba442088264f9665b69e83a02fd3bc2b355cd1ba6175aa3ef8de0d511b41783"
   },
   {
    "question_number": 24,
@@ -400,7 +400,7 @@
   {
    "question_number": 27,
    "section": "reasoning",
-   "stem_text": "Which of the following statements is true regarding M?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Ten persons are sitting in two parallel rows containing five persons each, in such a way that there is equal distance between adjacent persons. In row-1 J, K, L, M, and N are seated (no necessarily in the same order) and all of them are facing South. In row-2 V, W, X, Y, and Z are seated (not necessarily in the same order) and all of them are facing North. Therefore, in the given seating arrangement each member seated in a row faces another member to the other row. Z sits third to the right of W. V sits second to the left of Z. The person facing V sits to the immediate right of K. Only one person sits between K and M. J is not an immediate neighbor of K. Only two people sit between J and L. Neither K nor J faces Y.\n\nWhich of the following statements is true regarding M?",
    "options": [
     "M faces one of the immediate neighbors of X",
     "K is one of the immediate neighbors of M",
@@ -410,12 +410,12 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "9cb99b0d1a9996a9d3ec0fa8dc2a5216785b6d6eb6f65c99830e6a72316e3a88"
+   "hash": "38f709849e77df5afff7ee6e0f42f02d4e1672d02b9fd8a49db3b0aa9c1c9996"
   },
   {
    "question_number": 28,
    "section": "reasoning",
-   "stem_text": "Who amongst the following is facing X?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Ten persons are sitting in two parallel rows containing five persons each, in such a way that there is equal distance between adjacent persons. In row-1 J, K, L, M, and N are seated (no necessarily in the same order) and all of them are facing South. In row-2 V, W, X, Y, and Z are seated (not necessarily in the same order) and all of them are facing North. Therefore, in the given seating arrangement each member seated in a row faces another member to the other row. Z sits third to the right of W. V sits second to the left of Z. The person facing V sits to the immediate right of K. Only one person sits between K and M. J is not an immediate neighbor of K. Only two people sit between J and L. Neither K nor J faces Y.\n\nWho amongst the following is facing X?",
    "options": [
     "K",
     "L",
@@ -425,22 +425,22 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f30e53af8b9e7d0d5363dd40bc1f265902d74f90945b995155d65ff1b0bfe018"
+   "hash": "418453e307271df0019731178f78cb5cea09aac4f62773e87dbc766ef7f4767b"
   },
   {
    "question_number": 29,
    "section": "reasoning",
-   "stem_text": "What is the position of Z with respect to Y?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Ten persons are sitting in two parallel rows containing five persons each, in such a way that there is equal distance between adjacent persons. In row-1 J, K, L, M, and N are seated (no necessarily in the same order) and all of them are facing South. In row-2 V, W, X, Y, and Z are seated (not necessarily in the same order) and all of them are facing North. Therefore, in the given seating arrangement each member seated in a row faces another member to the other row. Z sits third to the right of W. V sits second to the left of Z. The person facing V sits to the immediate right of K. Only one person sits between K and M. J is not an immediate neighbor of K. Only two people sit between J and L. Neither K nor J faces Y.\n\nWhat is the position of Z with respect to Y?",
    "options": [
     "Third to the right",
-    "Second to the right www.prepp.in",
+    "Second to the right",
     "Immediate left",
     "Immediate right",
     "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "51fc7626fec0cec2be6eb2c0f3af912de0f3511477942c0671927baf6d86c4e4"
+   "hash": "05b7aaa210a238d33dd5d0b80978402f668460d462a170bc25532ecb870736a4"
   },
   {
    "question_number": 30,
@@ -494,13 +494,13 @@
    "options": [
     "Grand-son",
     "Grand-daughter",
-    "Son www.prepp.in",
+    "Son",
     "daughter",
     "Cannot be determined"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "eb39ab4d1816f33b72ad83ec6c1a9832addfa167a70f2f4665b483c98d549cb6"
+   "hash": "4cf1b8e866407b315e95b6a2ddc4af1b64f208c3dca6c4730f8d7da467072290"
   },
   {
    "question_number": 34,
@@ -570,12 +570,12 @@
     "250",
     "175",
     "275",
-    "300 www.prepp.in",
+    "300",
     "215"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "05f24f5cc383133b5b432241aa7174d146524795b3e6c197b416922ff69e4458"
+   "hash": "f73203dc56ac73ce30d7578d6f62cf115ff5c452b2c87b57b4f7b484a6097d31"
   },
   {
    "question_number": 39,
@@ -643,14 +643,14 @@
    "stem_text": "A dealer marks an article 50% above the cost price and sells it to a customer allowing two successive discounts of 20% and 15% on the marked price. if he gains Rs. 400 on the deal then the cost price of the article is?",
    "options": [
     "Rs. 25,000",
-    "Rs. 30,000 www.prepp.in",
+    "Rs. 30,000",
     "Rs. 20,000",
     "Rs. 15,000",
     "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "671e8f44eb9a69dcdb3eb31950f6b9b22d329de9ba335029ba99352992d24e62"
+   "hash": "6a5f67bb72dc456436a0e91fcfc0f76fb132321d83f2751580bf3d09e3fc0b11"
   },
   {
    "question_number": 44,
@@ -765,12 +765,12 @@
     "6",
     "7",
     "5",
-    "2 www.prepp.in",
+    "2",
     "3"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "afb122edd9ed2d8710c8b84e9f41d692ca37dc5ebd58d9ba379218feb169cef7"
+   "hash": "d8a6e142401184edff38f759754dbe429a156cdd5bdf09be4fab9bf0c6917074"
   },
   {
    "question_number": 52,
@@ -839,13 +839,13 @@
    "options": [
     "14",
     "13",
-    "22 www.prepp.in",
+    "22",
     "26",
     "16"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "4d3915ec77828a8681cc14e2669509e8ece5012825ac48f07dd85c739a383af3"
+   "hash": "4ce62162aabe3c02e688fed0a0120c711ca6a9967f584038ebe6b16f2e45b075"
   },
   {
    "question_number": 57,
@@ -913,14 +913,14 @@
    "stem_text": "What will come in the place of the question mark '?' in the following question? 152 - 7841/2 + 24011/2 = ?",
    "options": [
     "229",
-    "223 www.prepp.in",
+    "223",
     "196",
     "246",
     "252"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a48240350d1cb531e8c5224db05b7181618d5b35f1df468d640fc670b1d27367"
+   "hash": "f94a6641e6fa2a7e4217fa296909a96692f25247f162602c7c6b996c6d8942d5"
   },
   {
    "question_number": 62,
@@ -985,7 +985,7 @@
   {
    "question_number": 66,
    "section": "numerical_ability",
-   "stem_text": "A person invested in 2 schemes one at 10% per annum and another at 20% per annum. After 3 years, he gained Rs. 5400 as interest from both the schemes. He invested a total of Rs. 12000. Find the share of investment in each scheme. www.prepp.in",
+   "stem_text": "A person invested in 2 schemes one at 10% per annum and another at 20% per annum. After 3 years, he gained Rs. 5400 as interest from both the schemes. He invested a total of Rs. 12000. Find the share of investment in each scheme.",
    "options": [
     "Rs. 8000, Rs. 4000",
     "Rs. 6000, Rs. 6000",
@@ -995,7 +995,7 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "fe526673529af348fd011b787721045a1486f9862cbcfd81d5d8c38d4cebcaed"
+   "hash": "0e241c1798a32dea5241fa0058f43c8ee29e2df2925d9bf407351efc00c2eed2"
   },
   {
    "question_number": 67,
@@ -1060,7 +1060,7 @@
   {
    "question_number": 71,
    "section": "english",
-   "stem_text": "Directions: Read the passage carefully and answer the following question. www.prepp.in Restaurants’ growth accelerated in the 20th century. American employment in food service quadrupled as a share of the workforce over this period. The Michelin Guide was first published in 1900; the stars came 26 years later. And yet the continued rise of the restaurant up until the pandemic nonetheless presents an economic puzzle. Cooking at home was becoming even easier. Average house sizes grew. Appliances such as the food processor and the dishwasher reduced preparation and clean-up times. Dining out became relatively more expensive: And yet three economic changes ensured that demand for restaurants grew despite rising prices. The first is immigration. In the 50 years after the second world war the net flow of migrants into rich countries, relative to population, more than quadrupled. Starting a restaurant is a good career move for new arrivals; it neither requires formal qualifications nor, at least for chefs, fluency in the local language. Migrants tend to improve the quality of an area’s restaurants. The second factor was the changing microeconomics of the family. As a new paper by Rachel Griffith of the Institute for Fiscal Studies, a think-tank, and colleagues, shows, households’ choices about whether to make their own food or to buy it premade are shaped not only by the upfront cost of those things. They also depend on what economists call “shadow costs”. The true cost of an at-home meal involves not just the outlay for the ingredients, but the time spent on shopping and preparation. In an era of low female labor-force participation, shadow costs were low. A stay-at-home mother who cooked instead of eating out would have less leisure time. But as more women entered the workforce during the 20th century this equation changed, raising the shadow cost of cooking. Now a working woman who cooked dinner would be sacrificing time that might _________ used to earn money. And so eating out made increasing economic sense, even as it became more expensive. The third factor was changing working patterns. Historically poor people have tended to work longer hours than rich ones. But in the latter half of the 20th century, the opposite became true. The rise of knowledge-intensive jobs, and globalization, made rich people’s work more financially rewarding—and enjoyable. Toiling into the night became a sign of status. The upshot was that the people with the most money to spend on dining out increasingly needed it most since they had the least free time. In Britain, the richest tenth of households devote a much bigger chunk of their overall spending to dining and drinking out than the poorest tenth, and the gap has grown in recent years. What does the history of the restaurant say about its future? People have relished their reopening. In recent weeks global restaurant reservations have been near their pre-pandemic levels. The long-term future of the restaurant is less clear. The pandemic has led to many people buying more takeout than before, while others have a newfound love of cooking. Restaurants have little choice but to continue to adapt. What were the changes happened after the post-pandemic period?",
+   "stem_text": "Directions: Read the passage carefully and answer the following question. Restaurants’ growth accelerated in the 20th century. American employment in food service quadrupled as a share of the workforce over this period. The Michelin Guide was first published in 1900; the stars came 26 years later. And yet the continued rise of the restaurant up until the pandemic nonetheless presents an economic puzzle. Cooking at home was becoming even easier. Average house sizes grew. Appliances such as the food processor and the dishwasher reduced preparation and clean-up times. Dining out became relatively more expensive: And yet three economic changes ensured that demand for restaurants grew despite rising prices. The first is immigration. In the 50 years after the second world war the net flow of migrants into rich countries, relative to population, more than quadrupled. Starting a restaurant is a good career move for new arrivals; it neither requires formal qualifications nor, at least for chefs, fluency in the local language. Migrants tend to improve the quality of an area’s restaurants. The second factor was the changing microeconomics of the family. As a new paper by Rachel Griffith of the Institute for Fiscal Studies, a think-tank, and colleagues, shows, households’ choices about whether to make their own food or to buy it premade are shaped not only by the upfront cost of those things. They also depend on what economists call “shadow costs”. The true cost of an at-home meal involves not just the outlay for the ingredients, but the time spent on shopping and preparation. In an era of low female labor-force participation, shadow costs were low. A stay-at-home mother who cooked instead of eating out would have less leisure time. But as more women entered the workforce during the 20th century this equation changed, raising the shadow cost of cooking. Now a working woman who cooked dinner would be sacrificing time that might _________ used to earn money. And so eating out made increasing economic sense, even as it became more expensive. The third factor was changing working patterns. Historically poor people have tended to work longer hours than rich ones. But in the latter half of the 20th century, the opposite became true. The rise of knowledge-intensive jobs, and globalization, made rich people’s work more financially rewarding—and enjoyable. Toiling into the night became a sign of status. The upshot was that the people with the most money to spend on dining out increasingly needed it most since they had the least free time. In Britain, the richest tenth of households devote a much bigger chunk of their overall spending to dining and drinking out than the poorest tenth, and the gap has grown in recent years. What does the history of the restaurant say about its future? People have relished their reopening. In recent weeks global restaurant reservations have been near their pre-pandemic levels. The long-term future of the restaurant is less clear. The pandemic has led to many people buying more takeout than before, while others have a newfound love of cooking. Restaurants have little choice but to continue to adapt. What were the changes happened after the post-pandemic period?",
    "options": [
     "There was divide in the choices of how to adapt to food culture.",
     "People preferred organic farming.",
@@ -1070,7 +1070,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "72a59ef06e53059c09472c3054d7afbf88e7e856bfc6594243b4c46a0d633e51"
+   "hash": "926985b3015e44db10c15ce79aef33fb551ea2483e36eb3dd8eb4c958b840d76"
   },
   {
    "question_number": 72,
@@ -1090,7 +1090,7 @@
   {
    "question_number": 73,
    "section": "english",
-   "stem_text": "Which of the following reason(s) is/are true which led to increase in restaurants? (a) Change in work patterns (b) Increase in shadow cost www.prepp.in (c) Immigration of migrants",
+   "stem_text": "Which of the following reason(s) is/are true which led to increase in restaurants? (a) Change in work patterns (b) Increase in shadow cost (c) Immigration of migrants",
    "options": [
     "Only a",
     "Only b",
@@ -1100,7 +1100,7 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "972315a67d5522d23ba6e7116971223e1241a88eca4a1df09296a8a7a8651ba1"
+   "hash": "7a63f9e4c4efff9ce483a6a980fbbed82480f091404ef7464943560ecc56a551"
   },
   {
    "question_number": 74,
@@ -1285,7 +1285,7 @@
   {
    "question_number": 87,
    "section": "english",
-   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. www.prepp.in With a burning desire to (A)/ achieve the dream as a backing, so that (B)/ the desire to become enthusiastic, (C)/ let it become your brain in one of (D)/ the most important thing. (E)/.",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. With a burning desire to (A)/ achieve the dream as a backing, so that (B)/ the desire to become enthusiastic, (C)/ let it become your brain in one of (D)/ the most important thing. (E)/.",
    "options": [
     "A",
     "B",
@@ -1295,7 +1295,7 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "2b81ed7cafc9337c9c21256a2a5a3b56816b3087d0e91063c9a162dda1360abf"
+   "hash": "090c903c7471084a31b1ddd95a5c8c7c507bca771fe04345dee0765fec996c14"
   },
   {
    "question_number": 88,
@@ -1345,7 +1345,7 @@
   {
    "question_number": 91,
    "section": "english",
-   "stem_text": "In the following question. a sentence is given with three words marked as (A), (B), and (C). These words may or may not be placed in their correct order. Four options with different www.prepp.in arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required. mark option (5) as your answer. There can also be cases of erroneous (A) judgment of liabilities, where the scheme provides (B) an opportunity for quick justice to innocent taxpayers, who are falsely implicated (C).",
+   "stem_text": "In the following question. a sentence is given with three words marked as (A), (B), and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required. mark option (5) as your answer. There can also be cases of erroneous (A) judgment of liabilities, where the scheme provides (B) an opportunity for quick justice to innocent taxpayers, who are falsely implicated (C).",
    "options": [
     "BAC",
     "CBA",
@@ -1355,7 +1355,7 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "f0e28db634ed927345e1c04c7a360e554895b4e7acf6c044d2a2520aa495d993"
+   "hash": "071918cd0e776946045af282e3eb3e95236d7eeec54e9f1db8ecd7992abcdd63"
   },
   {
    "question_number": 92,
@@ -1396,11 +1396,11 @@
     "BAC",
     "CAB",
     "BCA",
-    "No arrangement required www.prepp.in"
+    "No arrangement required"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "940fe3423fd7ef01be9e3fd7dc26b4ab94348d5c61a112eced9a8b6e727457f6"
+   "hash": "dfabaf66fa1968f3284f754a3e6b61288dabbe1ab26fbe4b0b444d79b71aee5e"
   },
   {
    "question_number": 95,
@@ -1435,7 +1435,7 @@
   {
    "question_number": 97,
    "section": "english",
-   "stem_text": "Which of the following should be the FOURTH sentence after rearrangement?",
+   "stem_text": "Directions: Five sentences A,B,C,D and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. Once while travelling by train, he was asked to leave the first-class compartment and shift to the van compartment. B. Then, he was pushed forcibly out of the compartment and his luggage was thrown on the platform. C. Gandhiji had to travel by train from Durban to Pretoria in connection with his job. D. This was a turning point in Gandhiji's life and he decide to stay back in South Africa and fight against this injustice. E. It was winter and he kept shivering all night.\n\nWhich of the following should be the FOURTH sentence after rearrangement?",
    "options": [
     "A",
     "B",
@@ -1445,27 +1445,27 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "e619933109bb253ea05f934adb9f1115fdd72081aa3d28a44356b83c9209076c"
+   "hash": "e5ab93d9aef2de2cce511e93d263f0ef964ca64d544751abf70c9db12d8fedb0"
   },
   {
    "question_number": 98,
    "section": "english",
-   "stem_text": "Which of the following should be the SECOND sentence after rearrangement?",
+   "stem_text": "Directions: Five sentences A,B,C,D and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. Once while travelling by train, he was asked to leave the first-class compartment and shift to the van compartment. B. Then, he was pushed forcibly out of the compartment and his luggage was thrown on the platform. C. Gandhiji had to travel by train from Durban to Pretoria in connection with his job. D. This was a turning point in Gandhiji's life and he decide to stay back in South Africa and fight against this injustice. E. It was winter and he kept shivering all night.\n\nWhich of the following should be the SECOND sentence after rearrangement?",
    "options": [
     "A",
     "B",
     "C",
-    "D www.prepp.in",
+    "D",
     "E"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f07bb95b64f50f3849a3d498c674e035bed8abc0e2d65e6575cd4efc90c16789"
+   "hash": "c643e8bf6adaba6674301b31b4f51363e354040a9024a28a44e43e4134dd4723"
   },
   {
    "question_number": 99,
    "section": "english",
-   "stem_text": "Which of the following should be the THIRD sentence after rearrangement?",
+   "stem_text": "Directions: Five sentences A,B,C,D and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. Once while travelling by train, he was asked to leave the first-class compartment and shift to the van compartment. B. Then, he was pushed forcibly out of the compartment and his luggage was thrown on the platform. C. Gandhiji had to travel by train from Durban to Pretoria in connection with his job. D. This was a turning point in Gandhiji's life and he decide to stay back in South Africa and fight against this injustice. E. It was winter and he kept shivering all night.\n\nWhich of the following should be the THIRD sentence after rearrangement?",
    "options": [
     "A",
     "B",
@@ -1475,12 +1475,12 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "62eda7125e2fe7ca65d459a3f80825f3126659702ac4a27009d1ec0a6fc8bea6"
+   "hash": "5c3ec37060e978d1da452c2345e82820de6f1259916abc994a94f0966ddd29c8"
   },
   {
    "question_number": 100,
    "section": "english",
-   "stem_text": "Which of the following should be the FIFTH sentence after rearrangement?",
+   "stem_text": "Directions: Five sentences A,B,C,D and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. Once while travelling by train, he was asked to leave the first-class compartment and shift to the van compartment. B. Then, he was pushed forcibly out of the compartment and his luggage was thrown on the platform. C. Gandhiji had to travel by train from Durban to Pretoria in connection with his job. D. This was a turning point in Gandhiji's life and he decide to stay back in South Africa and fight against this injustice. E. It was winter and he kept shivering all night.\n\nWhich of the following should be the FIFTH sentence after rearrangement?",
    "options": [
     "A",
     "B",
@@ -1490,10 +1490,10 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "ec5167cd787a1418deaa82f6d6a191b83524c9da71de016815c1abd2bda808f3"
+   "hash": "97ab9ba52201f8688bef1c7e61c47dd09ff9a752a0d1342d79701f2d2c4ed9b8"
   }
  ],
- "section_confidence": 0.94,
+ "section_confidence": 0.944,
  "section_order": [
   "reasoning",
   "numerical_ability",

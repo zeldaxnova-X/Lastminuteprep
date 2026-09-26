@@ -101,14 +101,14 @@
    "stem_text": "Find the antonym of the word 'unfurled' used in the passage.",
    "options": [
     "Shrink",
-    "Steep www.prepp.in",
+    "Steep",
     "Hide",
     "Scroll",
     "Curl"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "0bf64a074a49797497dda4c85a730f5b4caf06c61c7ab534ddedc7f1db45e9e3"
+   "hash": "cedc1908e438257cb214a29c80f6fa011194ce4bbfef4f32eae6991abc9c111f"
   },
   {
    "question_number": 8,
@@ -162,13 +162,13 @@
    "options": [
     "Achieve",
     "Deceive",
-    "Anguish www.prepp.in",
+    "Anguish",
     "Torment",
     "Grief"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a37dc090c21851153896e818d5e5c492764a2a675e6e578b74e03380931299c6"
+   "hash": "4391a236e601751a11ef982aa987e7da30705a102163243572694089059b864a"
   },
   {
    "question_number": 12,
@@ -218,7 +218,7 @@
   {
    "question_number": 15,
    "section": "english",
-   "stem_text": "In the given sentence a word has been emboldened. Select the best alternative for the bold word from the given options. If none follows, select option 5 as your answer. The family of the victim wanted to petition the court for an extension. www.prepp.in",
+   "stem_text": "In the given sentence a word has been emboldened. Select the best alternative for the bold word from the given options. If none follows, select option 5 as your answer. The family of the victim wanted to petition the court for an extension.",
    "options": [
     "Pray",
     "Prey",
@@ -228,7 +228,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "709e38301dc7f4fc7dd58efc29db576f92e921028ecffb1fb5e15aa4b76db787"
+   "hash": "8469dca3444736c0e7879255a006382828a0de33eaa4d0aa2060d7a1ec509cb3"
   },
   {
    "question_number": 16,
@@ -248,7 +248,7 @@
   {
    "question_number": 17,
    "section": "english",
-   "stem_text": "Which of the following should be the THIRD sentence after rearrangement?",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, among which only three have been arranged in sequence and two sentences must be interchanged so that the five sentences can together form a meaningful paragraph. A. Miss Universe is an annual international beauty pageant that is run by the United States-based Miss Universe Organization. B. Telemundo has the licensing rights to air the pageant for the next 5 years. C. The Miss Universe Organization and its brand are currently owned by Endeavor. D. Along with Miss World, Miss International, and Miss Earth, Miss Universe is one of the Big Four international beauty pageants. E. The pageant's advocacy is humanitarian issues and is a voice to affect positive change in the world.\n\nWhich of the following should be the THIRD sentence after rearrangement?",
    "options": [
     "A",
     "B",
@@ -258,22 +258,22 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "62eda7125e2fe7ca65d459a3f80825f3126659702ac4a27009d1ec0a6fc8bea6"
+   "hash": "3020ec5d0655face27bde41545f1bd5a1cbb18641daeb1c41379afdfe83ce274"
   },
   {
    "question_number": 18,
    "section": "english",
-   "stem_text": "Which of the following pairs of sentences must be interchanged in order to make the set of sentences a meaningful paragraph?",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, among which only three have been arranged in sequence and two sentences must be interchanged so that the five sentences can together form a meaningful paragraph. A. Miss Universe is an annual international beauty pageant that is run by the United States-based Miss Universe Organization. B. Telemundo has the licensing rights to air the pageant for the next 5 years. C. The Miss Universe Organization and its brand are currently owned by Endeavor. D. Along with Miss World, Miss International, and Miss Earth, Miss Universe is one of the Big Four international beauty pageants. E. The pageant's advocacy is humanitarian issues and is a voice to affect positive change in the world.\n\nWhich of the following pairs of sentences must be interchanged in order to make the set of sentences a meaningful paragraph?",
    "options": [
     "A and C",
     "B and D",
     "D and A",
-    "B and E www.prepp.in",
+    "B and E",
     "C and B"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "54ae06f9d4cff4e21f0a3de0deca0b6bcef5ce417ec0679b632e5a2ac3c8a8c6"
+   "hash": "92e887ba2d98144245154a1b8fdd7dabdf5c845b863fe0788328fa5b69401e1a"
   },
   {
    "question_number": 19,
@@ -368,7 +368,7 @@
   {
    "question_number": 25,
    "section": "english",
-   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. www.prepp.in We'd discussed (A)/ this point between (B)/ ourselves numerous times (C)/ over the past months. (D)/ No error (E)/.",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. We'd discussed (A)/ this point between (B)/ ourselves numerous times (C)/ over the past months. (D)/ No error (E)/.",
    "options": [
     "A",
     "B",
@@ -378,7 +378,7 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "52c4c681566cdcbd4332017e83b3f3df2a6bdb8e7ad664261facb854430a6247"
+   "hash": "1109d21213e39eb4c2c533fb4cc1b44c3133f516005d0e806460fc5263f3ef98"
   },
   {
    "question_number": 26,
@@ -413,7 +413,7 @@
   {
    "question_number": 28,
    "section": "english",
-   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DISCREET A. He made some discreet enquiries about the organization before accepting the employment agreement. www.prepp.in B. Brown and white rice are two discreet varieties of rice. C. All objects are made of discreet molecules",
+   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DISCREET A. He made some discreet enquiries about the organization before accepting the employment agreement. B. Brown and white rice are two discreet varieties of rice. C. All objects are made of discreet molecules",
    "options": [
     "Only A",
     "Only B",
@@ -423,7 +423,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "194888b0bdf8a4c569469f645b3ba050525378633870f092b59fd38d5d99fa28"
+   "hash": "32142273856f47c5bdaed586ada06c4f448a17a6cd04b6206ebde5430e345e08"
   },
   {
    "question_number": 29,
@@ -458,7 +458,7 @@
   {
    "question_number": 31,
    "section": "numerical_ability",
-   "stem_text": "Directions: Study the following directions shows the number of non vegetarian and number of vegetarians living in five different cities A, B, C D and E. www.prepp.in If 2/5th of the vegetarians in city A and 1/4th of the non vegetarians in city A are females then find the total number of male vegetarian and male non vegetarian in city A.",
+   "stem_text": "Directions: Study the following directions shows the number of non vegetarian and number of vegetarians living in five different cities A, B, C D and E. If 2/5th of the vegetarians in city A and 1/4th of the non vegetarians in city A are females then find the total number of male vegetarian and male non vegetarian in city A.",
    "options": [
     "1150",
     "950",
@@ -468,7 +468,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "95711c4db2a1cf7fbf83e4fea7e6f820a05c7e7ddd7501e730bb4334b9f0b9f9"
+   "hash": "2887ea58330d3a97a28ec1fabddd62802b33f439e38a3358a54c68c61ef76d13"
   },
   {
    "question_number": 32,
@@ -491,14 +491,14 @@
    "stem_text": "The average number of vegetarians in the city D , E and F is 700 and the average number of non vegetarians in the city D, E and F is 600. Find the total number of vegetarian and Non vegetarian in city F.",
    "options": [
     "1100",
-    "1200 www.prepp.in",
+    "1200",
     "1250",
     "1000",
     "1300"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "c02752c2b4020a17222b75b560cb076e5ed085f34f739fd93e75d02b4a6c9354"
+   "hash": "c37be99eba0a508bb239f1265f910a03d442d6da725e46340363cbe057e0e0a8"
   },
   {
    "question_number": 34,
@@ -553,12 +553,12 @@
     "68",
     "72",
     "62",
-    "66 www.prepp.in",
+    "66",
     "76"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "7b494ebb6374885128e224935d7aa817f3f8d7abe4e9c3d1e082dad4a914a46e"
+   "hash": "60f3378cf72a8bc0124f382135ad862b8f890c1f82a52990f2a8582822a35a54"
   },
   {
    "question_number": 38,
@@ -614,11 +614,11 @@
     "80",
     "74",
     "50",
-    "65 www.prepp.in"
+    "65"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "2a0bda60ef7f18416eb67d09ead9eb38d1106da3fa501cf1fa38ed9aebdbb3a7"
+   "hash": "b7382706bd05d204e33566a649f5da5c5a959b606d38764f02d536cd87b3e6e9"
   },
   {
    "question_number": 42,
@@ -670,7 +670,7 @@
    "section": "numerical_ability",
    "stem_text": "Find the ratio between the number of cars sold in company C and D to the number of bikes sold in company A and D.",
    "options": [
-    "24: 23 www.prepp.in",
+    "24: 23",
     "28: 25",
     "21: 26",
     "19: 23",
@@ -678,7 +678,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "9808e12a03e2907d88f5abb04c6e3647e4fc0cbc38b721282b68c677cbc76690"
+   "hash": "4c97f4765b377c76d7fcaa7babe11e32f935839009289d2a4f053d01cdc62c1b"
   },
   {
    "question_number": 46,
@@ -730,7 +730,7 @@
    "section": "numerical_ability",
    "stem_text": "What will come in place of question mark (?) in the following equation? 126.06 + 181.92 - 229.99 = 65.99 + ?",
    "options": [
-    "12 www.prepp.in",
+    "12",
     "15",
     "22",
     "25",
@@ -738,7 +738,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "0343fc12ae8b70d50fd016308e986beeaa8552fd19f36fc7944ef6c1d076da36"
+   "hash": "43ae07de990abff41d71af00b0638514bd5d4bcd8e4951724c1aba7f47bb21ab"
   },
   {
    "question_number": 50,
@@ -791,14 +791,14 @@
    "stem_text": "What will come in place of question mark (?) in the following equation? 55% of 240 + 83 × 4 – 24 × 8 = ?",
    "options": [
     "1788",
-    "1498 www.prepp.in",
+    "1498",
     "1678",
     "1988",
     "1828"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "9b3d3b1ae0d258630d8302786380cb9c836cefd43a47681d973c577747c3ffa6"
+   "hash": "94087db13845476ddd7d2ccb13084f6d77100e8fba9671ff782d6c46db4704c3"
   },
   {
    "question_number": 54,
@@ -852,13 +852,13 @@
    "options": [
     "270",
     "310",
-    "350 www.prepp.in",
+    "350",
     "240",
     "210"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "c17556909d489c70182f4d44e715d282be85a1e778110105882f2eaec71c7014"
+   "hash": "ae3b61c61a90bc040360c5752e1844f00d4dbe5fa41131857b223e92429aa5a5"
   },
   {
    "question_number": 58,
@@ -914,11 +914,11 @@
     "8",
     "9",
     "24",
-    "32 www.prepp.in"
+    "32"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "23163a9e7a58f7840787c1bfda91a3f48d1cf06a4e88bc37b5380e8c1b71fa75"
+   "hash": "c56bbb7882b1943b3cfff5ae8b95bcd127c9989b085a7b026442f17a27b73d88"
   },
   {
    "question_number": 62,
@@ -998,7 +998,7 @@
   {
    "question_number": 67,
    "section": "reasoning",
-   "stem_text": "Who among the following sits at the end?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Ten persons – L, M, N, O, P, S, T, U, W and Z – are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. In row 1, L, M, N, O, and P are sitting in the same row facing south while in row 2, S, T, U, W and Z are sitting in the other row facing north. Number of persons to the right of S is two less than the number of persons to the left of P and S does not sit at the end of the row. Z faces the one who sits third to the right of N. N faces U. Only one person sits between W and T. M faces either T or Z and sits second to the left of O.\n\nWho among the following sits at the end?",
    "options": [
     "P",
     "Z",
@@ -1008,12 +1008,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "335908242aa0c2764753d844fd6134c14c0f9f9c5ae0b4994a93b9e82343252e"
+   "hash": "59cca79dbd9fd1521eb8e45d3b517a2e2ee012dfd037d9eca00f7838edf0f377"
   },
   {
    "question_number": 68,
    "section": "reasoning",
-   "stem_text": "Who faces the one who sits second to the left of S?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Ten persons – L, M, N, O, P, S, T, U, W and Z – are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. In row 1, L, M, N, O, and P are sitting in the same row facing south while in row 2, S, T, U, W and Z are sitting in the other row facing north. Number of persons to the right of S is two less than the number of persons to the left of P and S does not sit at the end of the row. Z faces the one who sits third to the right of N. N faces U. Only one person sits between W and T. M faces either T or Z and sits second to the left of O.\n\nWho faces the one who sits second to the left of S?",
    "options": [
     "L",
     "M",
@@ -1023,12 +1023,12 @@
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "d4bf80839a0f5107095c6b1191f2122a535230f453e3719a4f1424e2a6f8d839"
+   "hash": "a386036c5dc5be0b14597c85a0da23cedab9864d254561b0f678cfe29ad10da9"
   },
   {
    "question_number": 69,
    "section": "reasoning",
-   "stem_text": "Who faces O?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Ten persons – L, M, N, O, P, S, T, U, W and Z – are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. In row 1, L, M, N, O, and P are sitting in the same row facing south while in row 2, S, T, U, W and Z are sitting in the other row facing north. Number of persons to the right of S is two less than the number of persons to the left of P and S does not sit at the end of the row. Z faces the one who sits third to the right of N. N faces U. Only one person sits between W and T. M faces either T or Z and sits second to the left of O.\n\nWho faces O?",
    "options": [
     "S",
     "T",
@@ -1038,12 +1038,12 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "16d10a26cfcdf804815d6d9b23636b65b5c16911fe4ffee5fbfdd74dcf63e7ea"
+   "hash": "a34de4f2206697b127e1b18824a72c2513f8ab59355984804f114168ac97a614"
   },
   {
    "question_number": 70,
    "section": "reasoning",
-   "stem_text": "How many persons sit to the right of T?",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Ten persons – L, M, N, O, P, S, T, U, W and Z – are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. In row 1, L, M, N, O, and P are sitting in the same row facing south while in row 2, S, T, U, W and Z are sitting in the other row facing north. Number of persons to the right of S is two less than the number of persons to the left of P and S does not sit at the end of the row. Z faces the one who sits third to the right of N. N faces U. Only one person sits between W and T. M faces either T or Z and sits second to the left of O.\n\nHow many persons sit to the right of T?",
    "options": [
     "None",
     "One",
@@ -1053,7 +1053,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "ed40947525ca46f9a54d37c075a9c8e90ea3aa85e09089292dd151b8bf20dea8"
+   "hash": "cd67e993d40d822f6515628e6c44871223d06313984e12e87c8d1815ee0ece73"
   },
   {
    "question_number": 71,
@@ -1078,12 +1078,12 @@
     "Only I follows",
     "Only II follows",
     "Both I and II follows",
-    "Either I or II follows www.prepp.in",
+    "Either I or II follows",
     "Neither I Nor II follows"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "9f0a5ae993c4f2fe0f080375b985e8ed8ed28331fe8ebe1ada9eea8d5808070e"
+   "hash": "dcb3523038f6aa80c7f3f2958fe7e87f2d898b8498824a2a48217430b70abd5a"
   },
   {
    "question_number": 73,
@@ -1118,7 +1118,7 @@
   {
    "question_number": 75,
    "section": "reasoning",
-   "stem_text": "Direction: Study the following information carefully and answer the given questions. www.prepp.in In a certain code language, all beautiful are girls nice → pb ag ba sa tf some sweet girls are classy → sf nt tf mp pb beautiful all some dating good → nf mp gd sa ba nice boys are sweet but not cute → ct ag tf nt na kp st What could be the code for \"girls are classy\"?",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. In a certain code language, all beautiful are girls nice → pb ag ba sa tf some sweet girls are classy → sf nt tf mp pb beautiful all some dating good → nf mp gd sa ba nice boys are sweet but not cute → ct ag tf nt na kp st What could be the code for \"girls are classy\"?",
    "options": [
     "mp ag ph",
     "ag sf tf",
@@ -1128,7 +1128,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "b9b1b0099d9d662b500315f738068a716f928bf2824a2c362fa98b51f1831e4c"
+   "hash": "0bda0b695b265591e3206691a9a0671435c78dec9eea885d09b45ab299f01646"
   },
   {
    "question_number": 76,
@@ -1208,7 +1208,7 @@
   {
    "question_number": 81,
    "section": "reasoning",
-   "stem_text": "How many boxes are placed between E and F?",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Eight boxes A, B, C, D, E, F, G and H are placed one above another but not necessarily in the same order. Each box has a number written on it from 1 to 8 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. C is placed just above G. G is the bottom most box. There are four boxes placed between D and G. Two boxes are placed between B and G. Number of boxes between A and G is same as between H and B. H is placed above B. Two boxes are placed between F and D. There are at least 2 boxes between E and B.\n\nHow many boxes are placed between E and F?",
    "options": [
     "1",
     "2",
@@ -1218,12 +1218,12 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "526034d2de4d3439df943de102dc2fc6446d861f23ad60f6e04c9bd21c46ada9"
+   "hash": "75dd1d5863c0e878e2e0865fd7c4a7c34c2c37f2accc105cd5e90c2b7617b150"
   },
   {
    "question_number": 82,
    "section": "reasoning",
-   "stem_text": "Which box is placed between H and D?",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Eight boxes A, B, C, D, E, F, G and H are placed one above another but not necessarily in the same order. Each box has a number written on it from 1 to 8 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. C is placed just above G. G is the bottom most box. There are four boxes placed between D and G. Two boxes are placed between B and G. Number of boxes between A and G is same as between H and B. H is placed above B. Two boxes are placed between F and D. There are at least 2 boxes between E and B.\n\nWhich box is placed between H and D?",
    "options": [
     "A",
     "E",
@@ -1233,12 +1233,12 @@
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "f4a0b9f81858a78df68e0b98aa6b2051960be2a08f78381af15394b9befec027"
+   "hash": "40c4f3c8a75781ad252ac5721464e29050017d5c0db6354ebc24b2914ed9dc97"
   },
   {
    "question_number": 83,
    "section": "reasoning",
-   "stem_text": "Which box is placed immediately above A?",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Eight boxes A, B, C, D, E, F, G and H are placed one above another but not necessarily in the same order. Each box has a number written on it from 1 to 8 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. C is placed just above G. G is the bottom most box. There are four boxes placed between D and G. Two boxes are placed between B and G. Number of boxes between A and G is same as between H and B. H is placed above B. Two boxes are placed between F and D. There are at least 2 boxes between E and B.\n\nWhich box is placed immediately above A?",
    "options": [
     "D",
     "E",
@@ -1248,12 +1248,12 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "a9484ffa89e409474f1b587b4bea81601c9d22802fc38339ecab776280ce572a"
+   "hash": "75656b3b44875e3ff2b6a30c3b8e858ff0d3d21bcb6eb51a6bea013cc83f4995"
   },
   {
    "question_number": 84,
    "section": "reasoning",
-   "stem_text": "Which box is placed immediately below F?",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Eight boxes A, B, C, D, E, F, G and H are placed one above another but not necessarily in the same order. Each box has a number written on it from 1 to 8 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. C is placed just above G. G is the bottom most box. There are four boxes placed between D and G. Two boxes are placed between B and G. Number of boxes between A and G is same as between H and B. H is placed above B. Two boxes are placed between F and D. There are at least 2 boxes between E and B.\n\nWhich box is placed immediately below F?",
    "options": [
     "D",
     "E",
@@ -1263,7 +1263,7 @@
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "fba2ebcb4b6caa0bdc3012e3690aa686c93a4e73cf333884674e46158d05db1f"
+   "hash": "3abfc3d5455f866710a6c9beb2404be42574f4d78880311cbd3bc8b7405894ac"
   },
   {
    "question_number": 85,
@@ -1285,7 +1285,7 @@
    "section": "reasoning",
    "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A < J > B ≤ I < C = H ≤ D = E ≤ F ≥ G = Z Conclusions: I. C < F II. H = F",
    "options": [
-    "Only I is True www.prepp.in",
+    "Only I is True",
     "Only II is True",
     "Both I and II are True",
     "Either I or II is True",
@@ -1293,7 +1293,7 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "65414edaf6e2012ee0ef2b9db436986a4cac0b9b54bd0fef4ac6e823da660497"
+   "hash": "2981f9ae47628803c3a748e801c2fc9634440faa5a5bcea8f95af97f362b6551"
   },
   {
    "question_number": 87,
@@ -1331,19 +1331,19 @@
    "stem_text": "Directions: Read the following information carefully and answer the given question. There are 6 friends A, B, C, D, E, and F standing in a row according to their height in ascending order from left to right but not necessarily in the same order. C is taller than A and D. B is taller than A, but shorter than E. E is shorter than F. C is taller than E but not the tallest one. D is taller than B but shorter than E. How many friends are standing to the right of 'D'?",
    "options": [
     "1",
-    "5 www.prepp.in",
+    "5",
     "3",
     "6",
     "2"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "fd3467463ce645897f85a037773d14c6e7c019c52c578f9830c8595ba0bba432"
+   "hash": "5a203793c4abd2e7a1ee571fed66b1aeedb40ba5b1de6e68a12988fe27ddc04b"
   },
   {
    "question_number": 90,
    "section": "reasoning",
-   "stem_text": "How many persons are there in between F and B?",
+   "stem_text": "Directions: Read the following information carefully and answer the given question. There are 6 friends A, B, C, D, E, and F standing in a row according to their height in ascending order from left to right but not necessarily in the same order. C is taller than A and D. B is taller than A, but shorter than E. E is shorter than F. C is taller than E but not the tallest one. D is taller than B but shorter than E.\n\nHow many persons are there in between F and B?",
    "options": [
     "None",
     "One",
@@ -1353,12 +1353,12 @@
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "add89942345dc4d08a8590163205c30fa47ef4a22fb817f48d8dfd5ece11b066"
+   "hash": "1a0ed544d84fbf34712c08dc272191cbcb369989bb83abd5070a1d6b20fef615"
   },
   {
    "question_number": 91,
    "section": "reasoning",
-   "stem_text": "How many friends are taller than 'A'?",
+   "stem_text": "Directions: Read the following information carefully and answer the given question. There are 6 friends A, B, C, D, E, and F standing in a row according to their height in ascending order from left to right but not necessarily in the same order. C is taller than A and D. B is taller than A, but shorter than E. E is shorter than F. C is taller than E but not the tallest one. D is taller than B but shorter than E.\n\nHow many friends are taller than 'A'?",
    "options": [
     "5",
     "4",
@@ -1368,7 +1368,7 @@
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "166fb53b785253369d37fad1c0287a033fe98d9fa34f04d2478234b6e10e6860"
+   "hash": "f74b89e9352e5493c571e2265bfdc826c82978b4552c73948e791a9fc5991fdc"
   },
   {
    "question_number": 92,
@@ -1388,17 +1388,17 @@
   {
    "question_number": 93,
    "section": "reasoning",
-   "stem_text": "How many persons have examination between Q and T?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below: Seven friends namely, P, Q, R, S, T, U, and V have examinations on seven different days of the same week from Monday to Sunday but not necessarily in the same order. P’s examination is on Friday. Only one person has examination between P and S. Q has examination just before S. As many persons have an examination before Q as after V. Not more than one person has examination between S and T. Only two persons have examination between R and U but U’s examination is not after R’s examination.\n\nHow many persons have examination between Q and T?",
    "options": [
     "None",
-    "One www.prepp.in",
+    "One",
     "Two",
     "Three",
     "Four"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "06a3a9471f41b887a7e3a254dd19a41c90bb00dad80f105108c81c53fc538455"
+   "hash": "b7f1424c0a34b5cae836ff4c7f8a6ff0e356c2474a8b510fc82c35712cf611dc"
   },
   {
    "question_number": 94,
@@ -1454,11 +1454,11 @@
     "D",
     "E",
     "F",
-    "T www.prepp.in"
+    "T"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "308d5078fd21c612db5e666ff8f452c4bc13d55b2687a1f3ffa2e51eed1e52aa"
+   "hash": "a97e6ae974a810d8ca658caa3b687e86d5dd8ddd22039a31c4f57ea689397618"
   },
   {
    "question_number": 98,
@@ -1506,7 +1506,7 @@
    "hash": "5017da1ade440e8041900e3b60ce8d2fcc54e128d2598b87abf6a6b7d764fd96"
   }
  ],
- "section_confidence": 0.973,
+ "section_confidence": 0.974,
  "section_order": [
   "english",
   "numerical_ability",

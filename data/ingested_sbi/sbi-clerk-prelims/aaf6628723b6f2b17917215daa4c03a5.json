@@ -16,11 +16,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "51f9e0b44d16351851bb27058e1b468d423dced6f514dd52899365d31677ffd2"
+   "hash": "690cc9cf5485fae354c745e51886685d26b7acf3c08d375aae9669bb2afa5a96"
   },
   {
    "question_number": 2,
@@ -31,11 +31,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d7236852a4967a08f27f657b3fdc18c9887bd7d8084d14560c4c62201a91b321"
+   "hash": "ee26e48d19c911f997ca428526623af9d17f692b7b32ad5e6945284a483cbc28"
   },
   {
    "question_number": 3,
@@ -46,11 +46,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "3d990179007e9a808ed1851a69ee69eb69ae901f053bc458740353ed0760d8a8"
+   "hash": "8bd5f28c45f96bca5af12c71766db1eaee32b6c0f92ab1d0864a8593619414e1"
   },
   {
    "question_number": 4,
@@ -61,11 +61,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "133aee4fa987e46c41b7a1fa4900316a586ddf909eaed0ecdccafb29c005adf4"
+   "hash": "37e411d881de333d24ea5e538b2c5ba4543151bb809559613011a7ac960da246"
   },
   {
    "question_number": 5,
@@ -76,11 +76,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "0a544ef8ea13d139cce599cd24fb76d5de680162da6ac4b20b6f3d875b7be075"
+   "hash": "eec46cc55b59df6988dce6a17e20fa902f036e6a25cfcbe34d4c4c904fdc8009"
   },
   {
    "question_number": 6,
@@ -91,11 +91,11 @@
     "Attacking",
     "Stopping",
     "Controlling",
-    "Maintaining Testbook Solution"
+    "Maintaining"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "296b585636bb338b540e308076a03ba77efefab6080b784d2e4521ed11cc53e1"
+   "hash": "d27b284a727f7fa2cb31c370e592bc4c5e01afcbc21ec657eb69fcbf9176295c"
   },
   {
    "question_number": 7,
@@ -106,11 +106,11 @@
     "Relationship",
     "Companionship",
     "Partnership",
-    "Courtship Testbook Solution"
+    "Courtship"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b38d4602a634cee8f70f12ad48451844faf313c75873f8c57efbce015a592a29"
+   "hash": "706eca53acb98cb678d61fbe469255cd450eaff33694a5180574e35d98289919"
   },
   {
    "question_number": 9,
@@ -121,11 +121,11 @@
     "Renovations",
     "Attachments",
     "Disruptions",
-    "Relations Testbook Solution"
+    "Relations"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "9d184014b9daaf834f31c463ff596559ab2d24426f3a188b65df6dde5d02de26"
+   "hash": "70ff28a266d6f1fde2e35815aac4a95293633b2ba18871fc179bec65da080d39"
   },
   {
    "question_number": 10,
@@ -136,11 +136,11 @@
     "Fade",
     "Improve",
     "Dwindle",
-    "Intrigue Testbook Solution"
+    "Intrigue"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "b1897c3c168c32a7c51173c90df3139916a816dd4ce4388d4a43dcb43a7c1dd0"
+   "hash": "c8cc9269e74f839db4233a6716039812c5401ddbcbded3bc5d93e6985bd3ac20"
   },
   {
    "question_number": 11,
@@ -151,11 +151,11 @@
     "Obscure",
     "Vague",
     "Accessible",
-    "Suspicious Testbook Solution"
+    "Suspicious"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "98dd376b6c33b430c4539fb53f2ac8803118db939436bdd582c2afb1d4b71490"
+   "hash": "80a0d7b8ebf226756d0c6d1cfddb98f6e7a28592eae1388f2842d0f854c26572"
   },
   {
    "question_number": 12,
@@ -166,11 +166,11 @@
     "C-D",
     "D-A",
     "B-D",
-    "C-A Testbook Solution"
+    "C-A"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "39e0145a66605829ea5e3ef93bc0230b704a872981ec380b94661d6621d96de3"
+   "hash": "a7f0763316c132b50107ad112c4c8d21be3f015a6ceb92a7c779883e8e4a8a00"
   },
   {
    "question_number": 13,
@@ -181,11 +181,11 @@
     "B-A",
     "D-C",
     "C-B",
-    "No change required Testbook Solution"
+    "No change required"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "ba41b2bb7523b15344e1c3192f1e00b035f38ea6200eda4492314f3020e2be74"
+   "hash": "ab88826b53c70fd384a1554a2b01e3e25df7bab74093b86524cef72a48fe638c"
   },
   {
    "question_number": 14,
@@ -196,11 +196,11 @@
     "A-B",
     "B-D",
     "D-A",
-    "No change required. Testbook Solution"
+    "No change required."
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "336692c1b45332ecc1b3ab7eb20f1cbe69701ae065dcde02a6be9f2c6bed4458"
+   "hash": "645ec1f386170b6f7f9d270df8e7b68621f1a39b76a4abf0c3fa291bcfa5b658"
   },
   {
    "question_number": 15,
@@ -211,11 +211,11 @@
     "C-A",
     "B-D",
     "D-C",
-    "No change required. Testbook Solution"
+    "No change required."
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "a8c7ed57e1d89ee79353c6ee0b3cb765f3738b8e187116431de00f7fc2dd2350"
+   "hash": "4b581bed87c8b30713a283553f4055177d37b11ed4f7ba62e0745b48d7995cf2"
   },
   {
    "question_number": 16,
@@ -226,11 +226,11 @@
     "C-D",
     "D-B",
     "B-A",
-    "No change required. Testbook Solution"
+    "No change required."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "aabd7fe7919706aedbf21eac72864190bc424c0408174e189556855477230375"
+   "hash": "27546edf0a0c46c420d11f1a52beb541b941afe750f9c6a876b416560a0412f2"
   },
   {
    "question_number": 17,
@@ -241,11 +241,11 @@
     "B-C",
     "D-B",
     "C-A",
-    "No change required Testbook Solution"
+    "No change required"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "1f5ceaccf6150c07557f3f09f93bc4f3ad8ab305cf8800ebe1dc5cc40ce2230c"
+   "hash": "59f8078535cb7342cebd39913dc27e732e7645daba9292460f8980a0230963d0"
   },
   {
    "question_number": 18,
@@ -256,11 +256,11 @@
     "pilot would have flying the plane",
     "pilot flew the plane",
     "pilot has fly the plane",
-    "No error. Testbook Solution"
+    "No error."
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "c6520e19682b8999a451ee4de57502d00791621fe875007edb21bd82ae63839a"
+   "hash": "674f3b2003f70ace812408d4eaba545a658ee1998ea9a8a4d1719aba28e870c0"
   },
   {
    "question_number": 19,
@@ -271,11 +271,11 @@
     "statue without had been thinking",
     "statue without thinking",
     "statue without a think",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "2dc35ac272c48cf582cdca0775b30be0d6a7b52c54adfb093d5c019e03772ae7"
+   "hash": "2e005718eee94e53639aac8cc456b89d849dcaa9b8990bad5d2cf5d06440acb7"
   },
   {
    "question_number": 20,
@@ -286,11 +286,11 @@
     "a moment did I",
     "a moment would I",
     "a moment did me",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e45f6754d0c7ce883b145c61915782ab7f77266cc75a0e7263b93921d5248e4b"
+   "hash": "45257cd71cc8bf18af66d47fd49ce0078bb0fac3bec596c5fa5d14dd2789c747"
   },
   {
    "question_number": 21,
@@ -301,11 +301,11 @@
     "gave him a lot of advices.",
     "gave him many advices.",
     "gave him a bit of advice",
-    "No error. Testbook Solution"
+    "No error."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "d8284b3a93f59c1d012ba5e3ea3aa884a85d837be54dfa2d8de88ae554ab9002"
+   "hash": "a9f17c10c979b7c9aa910c3206b8b4005efbd1a129a96a6975d31152318ab428"
   },
   {
    "question_number": 22,
@@ -316,11 +316,11 @@
     "already broken off",
     "already broken into",
     "already broken",
-    "No error. Testbook Solution"
+    "No error."
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "6745be00959f0a951e03e9bb5778f38ce02392eb1ff1d373127175df7b705b76"
+   "hash": "970295167840afce10dac796014cca66b0ebcfae58ea1eb159528b48927d639d"
   },
   {
    "question_number": 23,
@@ -331,11 +331,11 @@
     "show",
     "discard",
     "feel",
-    "ignore Testbook Solution"
+    "ignore"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b5462582f875ffc694e6af3b3622dd8d942600de5730095801f88290de75014b"
+   "hash": "604c565f54802b42af7d3fcca0b31fcf93ea5289d8b80db6328a945c960909ca"
   },
   {
    "question_number": 24,
@@ -346,11 +346,11 @@
     "dejected",
     "hampered",
     "elated",
-    "crushed Testbook Solution"
+    "crushed"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "4138fb8219164d8e53cbd44eac1a761890a19f1b58f582235e4742c736149a47"
+   "hash": "5cfeae86b3fad8aed0b1855cc7d34bb83e031fce94e00f313374b8df7d629f01"
   },
   {
    "question_number": 25,
@@ -361,11 +361,11 @@
     "Because screams happen only when we are excited.",
     "The sheer variety of screams makes it hard.",
     "Sound produced by a scream falls below the audible frequency.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d95a3fa2ade75979f5c2a571f1c0ec4be101a8c135658369b27c5c0ebf4a3ba3"
+   "hash": "cda16b06405e5042ae9588ed8f4f865e7011c850aff017474b672a9c00501d82"
   },
   {
    "question_number": 26,
@@ -376,11 +376,11 @@
     "Comprehend our primordial existence.",
     "Know why we get scared.",
     "Explore our pre-linguist past.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "fb9da16b288d6ada0004922c509c257c41edf4fb75bcffe627551bd6b3e76483"
+   "hash": "f3e30d9db40ee7604defb3756054779464b0e38c4ee30d9ba74559c3c8e9394b"
   },
   {
    "question_number": 27,
@@ -391,11 +391,11 @@
     "Make movies more frightening.",
     "Help fight crime.",
     "All of the above.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "53cb35e82a2fa3ad1321a3807d4d27f30d4930f5b921767f7c593ff7010b8b32"
+   "hash": "fd21fe1d45a406c1a85c3342556078e3cc706c531f5790b697e63cd6e9998ac8"
   },
   {
    "question_number": 28,
@@ -406,11 +406,11 @@
     "To analyze the 28 acoustic signature of sounds.",
     "To probe the boundary that separates humans form animals.",
     "To determine the acoustic qualities that differentiate fearful screams.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "85f05c4b81986b57e399d7a7b47f14e34caa36076475f0aabb50bc4416a28448"
+   "hash": "5095f1b245f6f7312a28c64685523f0a6423b8d7d59355944919bef7705fd58f"
   },
   {
    "question_number": 30,
@@ -421,11 +421,11 @@
     "Most people say that screams are focused, loud and high-pitched.",
     "Fearful screams and non-verbal vocalizations are the same.",
     "Volunteers were asked to rank the screams according to how alarming the sound was.",
-    "Screaming is exhibited by many animals. Testbook Solution"
+    "Screaming is exhibited by many animals."
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "80b9e022e706c1b094189d08a247a397a816808b8aff1320b1aad97cd8e9b185"
+   "hash": "903895296cda6061b3a9b9158e60d582ab1ccbb44c85f581d7cccb302702db3d"
   },
   {
    "question_number": 31,
@@ -436,11 +436,11 @@
     "41/3",
     "62/5",
     "55/7",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "2196bb55600f5bc3da6319d11a8dc3dba303732f9125fd6494b5af421db912a8"
+   "hash": "c659f0127f1155b44dc92290a55b4d9bd62d551efec4696aa5cdcb4985349c4a"
   },
   {
    "question_number": 32,
@@ -451,11 +451,11 @@
     "238",
     "258",
     "242",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "81af0fde1666eb049fa45ec86f428e815e358c338d5b28a0b16bde56947a45ea"
+   "hash": "a3945c57c2fc9b7fa876a68af29d453c461a4e0f73d6640b6021e17c89a83d40"
   },
   {
    "question_number": 33,
@@ -466,11 +466,11 @@
     "39",
     "25",
     "33",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "cb3713f37b389013d21b99b37beb28848b7af84020598cfdc1a57878b3b7510f"
+   "hash": "3d4748ef11f37b70c44cfb94648b4351afdfdd69dc76b68fc7dea5bfd2c36080"
   },
   {
    "question_number": 34,
@@ -481,11 +481,11 @@
     "40/7",
     "55/3",
     "42/5",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f15cfb2e46124b4f4f407bd405d7d0ff8f931def167c2a7c1c340d549e3a63e3"
+   "hash": "cf2ee2bdd71672f96f35dbe57ab953b40920b4504369a770d778e176e4adcb7d"
   },
   {
    "question_number": 35,
@@ -496,11 +496,11 @@
     "151",
     "155",
     "143",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "af9ac67fa661bcf1137e6bcb494bd21e407eaf801618809d579dfa218090af68"
+   "hash": "0bb179fea765389e22f945c5a813bd4248a04b33826fc9f52987663f63f09b4a"
   },
   {
    "question_number": 36,
@@ -511,11 +511,11 @@
     "90",
     "32",
     "98",
-    "133 Testbook Solution"
+    "133"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "b3b970d23edf8b8f7f899668f6db4ef95ec062467c3d759388379e6ccfdf47b1"
+   "hash": "d8214321f7965cc0438d2625288ca9f925ba7f0936a0e596b7b067d08ce59da2"
   },
   {
    "question_number": 37,
@@ -526,11 +526,11 @@
     "35",
     "30",
     "45",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e1751ea9dc0b27a36c1313c964d5cd45e8edff4457dc40927b6e8aef0e8ab0b2"
+   "hash": "6b6e14ca503c97ea982ca898ae1f034e7316899254c926ddffa02f5fcdb0c417"
   },
   {
    "question_number": 38,
@@ -541,11 +541,11 @@
     "35",
     "42",
     "31",
-    "38 Testbook Solution"
+    "38"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "45feab81b2ca61ff728cc68d43c8374757deab2598bdc7cf008406f99e3f4ed2"
+   "hash": "21aeaf450a0a77779efbf2c6c2c9c55355fbbca5b273d16fa4aa65406462ac85"
   },
   {
    "question_number": 39,
@@ -556,11 +556,11 @@
     "301",
     "501",
     "101",
-    "251 Testbook Solution"
+    "251"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "44b1f877f6cf1c94bd644963569298136d630cb5850783537fbe8501ce60357b"
+   "hash": "47b29c179798025fd23101681783279a3fdba2df617cec63a22cbe1c92a3e280"
   },
   {
    "question_number": 40,
@@ -571,11 +571,11 @@
     "505",
     "510",
     "516",
-    "495 Testbook Solution"
+    "495"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "edc2452a21287b9409d4498e6ba203cff50e900f3612c9206de23124535f2a13"
+   "hash": "299be429812a7e24d5e71b9853442a356e4f484a89656a0ff3f3646632b3ff56"
   },
   {
    "question_number": 41,
@@ -586,11 +586,11 @@
     "14 : 11",
     "4 : 3",
     "7 : 9",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "b41a88c7bc635d33efaa81c730c6efc16d69f10493f48495b74c29882541e1bf"
+   "hash": "577f7a711422341f30597145f9874eb9a620296ca359f3f1f930b00037e6b66f"
   },
   {
    "question_number": 42,
@@ -601,11 +601,11 @@
     "28%",
     "26%",
     "30%",
-    "20% Testbook Solution"
+    "20%"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "b968d37449bae13fb708808e67d607f0fc3b46d6a071517c13c9290f48b4189c"
+   "hash": "69f972c24355ff54d677322cebe82be5d3520cf3df82431a5394b2132b347282"
   },
   {
    "question_number": 43,
@@ -616,11 +616,11 @@
     "110",
     "40",
     "60",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d71246c3663844eaf6798bb579f60a71f6d707997f301943983851daeceb3bae"
+   "hash": "0c1f1c9655ffe9f9a9903c89c33581cde64003f97d989853e4181892fd30d299"
   },
   {
    "question_number": 44,
@@ -631,11 +631,11 @@
     "3000",
     "2600",
     "3200",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "63609853b7023bbeb5854b42c354ce71283a23f165066b230ba96a1d0e6bfd95"
+   "hash": "d3ad993aa45ac0f4f9b58503da3f20718b430271c758886e36669e4cbe84fe1a"
   },
   {
    "question_number": 45,
@@ -646,11 +646,11 @@
     "652",
     "526",
     "688",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "536483c841c1295e9f4572e0686a83095c88d48d9b911399b5e72450b45fd051"
+   "hash": "fd8fef3895402b15fa9fa3dc8813de3fd3024a81cf815b5555fc91b75a1e83e2"
   },
   {
    "question_number": 46,
@@ -661,11 +661,11 @@
     "5800",
     "5250",
     "5500",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "ac3ac48c1a102f27fcff704169ce3c4db040197dd1ff7fcaf4dda91ba16b8ba3"
+   "hash": "e24ce6d27e40ffe48fa8fec3cca3c7f4238656053c8c18de1fbce942206b1127"
   },
   {
    "question_number": 47,
@@ -676,11 +676,11 @@
     "1866",
     "1738",
     "2106",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "d9d039c7d158777373e1818099fe291939ca942630ede5340fd5c29bab1ede30"
+   "hash": "8af02847fe255e08534fcdeb869a0ceb5736f58eef246b13112d2810aaff20ec"
   },
   {
    "question_number": 48,
@@ -691,11 +691,11 @@
     "83",
     "87",
     "93",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "b26cbb3c8e4fca9c14013e4526d38ffb8ef015331c80756088e0dd8aed1c4e4c"
+   "hash": "84cff656e191ae749e8e6570156b3ff68dab64fbd6303771c5b3241efbf51ab0"
   },
   {
    "question_number": 49,
@@ -706,11 +706,11 @@
     "55",
     "49",
     "51",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "b5806b379bc3ba8ec4ea2602ed148b6b3866b5dc103ca62f85b52c762aabed15"
+   "hash": "ca7b155d87deeffd77a077e98d66f98387641692add2084a3fb5f426ffd1f68d"
   },
   {
    "question_number": 50,
@@ -721,11 +721,11 @@
     "7",
     "9",
     "10",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "2618e03a30aa446da7bdaa9ca88793aa3dd4ce0882f080010bc7d7d8a5aecb60"
+   "hash": "e46531bd1cbe26b2a8711f38576ccf8314c76dc2eb15f82f96db4f02841b9007"
   },
   {
    "question_number": 51,
@@ -736,11 +736,11 @@
     "48 years",
     "42 years",
     "38 years",
-    "50 years Testbook Solution"
+    "50 years"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "beaa61af6ffeb07be89015a35639eb387013900a2475d7cc753f63a701451e02"
+   "hash": "346f6748836eab51f3ca4f20247ba685e544b3fb3b038544a80689ed85f249a9"
   },
   {
    "question_number": 52,
@@ -751,11 +751,11 @@
     "2 months",
     "4 months",
     "3 months",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "3f95b94519589d028fb70bacba08d1858afdb4f395d19352fd565fba2004ee9b"
+   "hash": "a64864c99c49bba9dc3e19e72d39dad18954ab8918719a79d3cfd2e0f803341e"
   },
   {
    "question_number": 53,
@@ -766,11 +766,11 @@
     "18 hours",
     "12 hours",
     "14 hours",
-    "10 hours Testbook Solution"
+    "10 hours"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "8725d3d1b439e186c6ba47e65d7339659fcc2bbdd37a1d08076b15988aa6c78b"
+   "hash": "284328912f518130c2ce3dc303e43c70fcf6d823d2c3b260c937000a4f4b25c1"
   },
   {
    "question_number": 54,
@@ -781,11 +781,11 @@
     "19 : 25",
     "6 : 7",
     "9 : 16",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "6f4fdce6286918da55f4775221fa30c6ae67970defad255f72aa2fc5987194b1"
+   "hash": "49927908414dfb2a089005c67dd1e08d5cba2df11e5ffe099de800080dd74fc4"
   },
   {
    "question_number": 55,
@@ -796,11 +796,11 @@
     "24 km/h",
     "18 km/h",
     "26 km/h",
-    "48 km/h Testbook Solution"
+    "48 km/h"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "038f409c688851fee941a800c7db63d0a6cd97307b9f6a8126255dd2d3641fc2"
+   "hash": "072a99e82a2a1052e92b45a16d9b648b5fb9f636b4e7f83102d603ecce8cdd36"
   },
   {
    "question_number": 56,
@@ -811,11 +811,11 @@
     "158",
     "176",
     "184",
-    "162 Testbook Solution"
+    "162"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d62bfbc4cc545c8093f3544897b3c893c8da3d69ff5a35fd6f6777570cfdd509"
+   "hash": "11b6edaddaf40fd81e2a3ab2a740aec1a202f30fc532321c73f13fdf1d2e2bcf"
   },
   {
    "question_number": 57,
@@ -826,11 +826,11 @@
     "110%",
     "80%",
     "60%",
-    "140% Testbook Solution"
+    "140%"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "6ee0f018c28002e3609e0be31905f05758ed57d3a27d8e3991e13138954cc30d"
+   "hash": "9991c43491d3b2e9419673eab46427455e7fab84e968957a4ad43a2985f2c392"
   },
   {
    "question_number": 58,
@@ -841,11 +841,11 @@
     "126",
     "112",
     "102",
-    "118 Testbook Solution"
+    "118"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "2cc76e4a5ba1cf74c2423129f20a61a5a8d4d0c9502ae21f759ca83a1613d509"
+   "hash": "3a066263b41faf74e815e97bd1f9baec08516f1327e41e8d41dd67913544f21f"
   },
   {
    "question_number": 59,
@@ -856,11 +856,11 @@
     "3 : 4",
     "2 : 5",
     "1 : 2",
-    "4 : 3 Testbook Solution"
+    "4 : 3"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "5b82c6d229c640a3dce4a75de0b5238914dd7f3dc3f041ed3dcf7e5399ce844e"
+   "hash": "78a68bba038725676c8aaf102e1b4a670b5147fa10ce57d593941b5c1302598e"
   },
   {
    "question_number": 60,
@@ -871,11 +871,11 @@
     "56",
     "58",
     "48",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "40ccf336fbcfb7ee9e34013600f1dc356dd498470d69aa1d55cc5e997ce121ca"
+   "hash": "e4023d90c1f75aade3216bc450c95a768c77db882bc29f3b1af4e4c20d003b74"
   },
   {
    "question_number": 61,
@@ -886,11 +886,11 @@
     "12%",
     "10%",
     "18%",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "acb88c2ad12e900f521a1136d49049e1071eaae58c6aa40707421c9e0178d520"
+   "hash": "82d353dbc6cabae1d1246c9044759bf9741cfeb1fcc7e67b8aebe0efe99751fd"
   },
   {
    "question_number": 62,
@@ -901,11 +901,11 @@
     "150 seconds",
     "160 seconds",
     "140 seconds",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "9a3e1b79491dbf45864700135c891a3f1d41fa931e1eac678cb064d0129fe8dc"
+   "hash": "7febb01c8f8d6359a27e75cddf6676c0fa097893a8c11f414c02cf02841ea727"
   },
   {
    "question_number": 63,
@@ -916,11 +916,11 @@
     "3 litres",
     "4 litres",
     "5 litres",
-    "6 litres Testbook Solution"
+    "6 litres"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d5f77284234ee727bd066a21a5d26faee488867b0528a0446710aa4ef31889b0"
+   "hash": "b66a65d6387a585c215bc74a671a6b9dd6fd3faef7a3f6c260e8a71dfddcaa7a"
   },
   {
    "question_number": 64,
@@ -931,11 +931,11 @@
     "Rs 100",
     "Rs 550",
     "Rs 1000",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "29abe3594085091012c5667e6a6181b78a7530b7ef2f565ae202d770726f48ec"
+   "hash": "b54f5bd02e87bad930115add4d0adec6b48531f2b70cd35451ccc17c9f7adc1c"
   },
   {
    "question_number": 65,
@@ -946,11 +946,11 @@
     "600",
     "640",
     "700",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "a5843f1b18fda70901a8ab73e1e1915ee29689a45b33a5f07f1fbb29a04115aa"
+   "hash": "f3642f8b5e530b13e2e5515eefdabf486abaabd3a4e8dc2723640b50fd12ca9d"
   },
   {
    "question_number": 66,
@@ -961,56 +961,56 @@
     "B",
     "H",
     "E",
-    "A Testbook Solution"
+    "A"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "0d8d32035a0bcb27d5db42cc824b434f00f317e4a2ca85d2511723a71826290e"
+   "hash": "177c0ce439714660c0ea604a70618d48ea9c8368ec29b46f0a8d100ca69b3ce7"
   },
   {
    "question_number": 67,
    "section": "reasoning",
-   "stem_text": "What is the position of D with respect to E?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle. All of them are facing the center but not necessarily in the same order. Two people sit between C and D. Three people sit between G and A. D is second to the right of F. Two people sit between H and B. G is not an immediate neighbor of D. H is an immediate neighbor of E.\n\nWhat is the position of D with respect to E?",
    "options": [
     "Immediate to the right",
     "Immediate to the left",
     "Second to the right",
     "Second to the left",
-    "Fifth to the right Testbook Solution"
+    "Fifth to the right"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "ce8bdb947acd84c7f2f107bbf6d28bf42ec97bc467c661c67ff8c581eeccf770"
+   "hash": "6f87a15e674bf56f58126f39eaea7103f516ad6f392049def998558397185c6c"
   },
   {
    "question_number": 68,
    "section": "reasoning",
-   "stem_text": "Who among the following is the immediate neighbor of C?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle. All of them are facing the center but not necessarily in the same order. Two people sit between C and D. Three people sit between G and A. D is second to the right of F. Two people sit between H and B. G is not an immediate neighbor of D. H is an immediate neighbor of E.\n\nWho among the following is the immediate neighbor of C?",
    "options": [
     "B",
     "F",
     "E",
     "Both B and E",
-    "Both B and F Testbook Solution"
+    "Both B and F"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "723c646f158f45eea48d7e9b8c4f7d26d82e1b9f2b0b4631250013d3c0f1507a"
+   "hash": "cbd624e375ed20de54afd748b753ccc4586a3cbaa8d4079c3de7824150bbf168"
   },
   {
    "question_number": 69,
    "section": "reasoning",
-   "stem_text": "Which among the following statement is true?",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle. All of them are facing the center but not necessarily in the same order. Two people sit between C and D. Three people sit between G and A. D is second to the right of F. Two people sit between H and B. G is not an immediate neighbor of D. H is an immediate neighbor of E.\n\nWhich among the following statement is true?",
    "options": [
     "E is an immediate neighbor of C.",
     "H is an immediate neighbor of D",
     "D sits opposite to E",
     "C is second to the right of A",
-    "None of the given statement is true Testbook Solution"
+    "None of the given statement is true"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e929b123f8ee3038525a16c01d5d78dcdc4f2cb35bb5c82b59e635f7244cdeb9"
+   "hash": "27458180d5a0a3c76e700dd01ac71eb8d3a5d3825f62a543a016a8dcf2ba8c4a"
   },
   {
    "question_number": 70,
@@ -1021,11 +1021,11 @@
     "C - H",
     "F - E",
     "A - G",
-    "F - H Testbook Solution"
+    "F - H"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "91e1b93ff15d379b11252e86f1d3246d85ef264f15ad368d82470570cff21a49"
+   "hash": "6128a8a0b80ff95d1683e1f7540ad6f3502a5d5b92833384d68126e0c18992b8"
   },
   {
    "question_number": 71,
@@ -1036,11 +1036,11 @@
     "Only conclusion II follows",
     "Either conclusion I or II follow.",
     "Neither conclusion I nor II follow.",
-    "Both conclusion I and II follows Testbook Solution"
+    "Both conclusion I and II follows"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "ada98388dbdc7184954d875d1460917970782139b50aa585db80384cf187f67d"
+   "hash": "a12e4fba78c888626e67376845a29a855535e11bd28874c77efced534c89388d"
   },
   {
    "question_number": 72,
@@ -1051,11 +1051,11 @@
     "Only conclusion II follows",
     "Only conclusion I follows",
     "Neither conclusion I nor II follows",
-    "Either conclusion I or II follows Testbook Solution"
+    "Either conclusion I or II follows"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "f155c12433e93fd33d6c30f60c3cfa1634bb88b499f564850946a2c49df28d29"
+   "hash": "ccee4e71267151d0c7a5bbd8f5d54613ea2eaa2989726a789415efa37afaed3a"
   },
   {
    "question_number": 73,
@@ -1066,11 +1066,11 @@
     "Only II follows",
     "Either I or II follows",
     "Neither I nor II follows",
-    "Both I and II follow Testbook Solution"
+    "Both I and II follow"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "a6d0823d4e9471dada39107ab100b4d8d5941484e740baef1364bf751380646e"
+   "hash": "00ec84995362e5ce8bccafe28a789f29385d0046361498767bd667e90540e6db"
   },
   {
    "question_number": 74,
@@ -1081,26 +1081,26 @@
     "G",
     "D",
     "E",
-    "C Testbook Solution"
+    "C"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "8a60b894695cf5f89c14958aa7878b5f2735f3a507e52ae2a514ddd5c2a52dc2"
+   "hash": "d60d8617aab17145b445c7f582469c2583f2457955c7e12f18995ba3df986d03"
   },
   {
    "question_number": 75,
    "section": "reasoning",
-   "stem_text": "How many people sit between C and B?",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Eight friends A, B, C, D, E, F, G and H are sitting in a row with equal distances between each other, but not necessarily in the same order. All of them are facing north direction. Two people sit between E and C. E sits at one of the extreme ends. A sits second to the right of C. B sits fourth to the left of F. F is not an immediate neighbor of C. H sits third to the left of D. D does not sit at extreme ends.\n\nHow many people sit between C and B?",
    "options": [
     "One",
     "Two",
     "Three",
     "Four",
-    "None Testbook Solution"
+    "None"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "594f47bd6c72fbf74fc247fc837efead7151afcd74178cd25dce670f30905763"
+   "hash": "cc5f8c73af46f20100a464f9b043dc090acfabbd11abf4845f4703dcf7211b6f"
   },
   {
    "question_number": 76,
@@ -1111,11 +1111,11 @@
     "Two",
     "Three",
     "None",
-    "More than three Testbook Solution"
+    "More than three"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "c4c69db76676a9abe4c38df45bd21665dc37561a524dc2d7559db7a0d98eda04"
+   "hash": "47bdbb074e34e3de3f02dcb03d46ea8ee846beba78e5d91229735bcc5560b8c4"
   },
   {
    "question_number": 77,
@@ -1126,11 +1126,11 @@
     "B - A",
     "D - C",
     "F - H",
-    "C - F Testbook Solution"
+    "C - F"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "fa5311d8ccb190fc5218777b565ed1b7b2566caded92675abb7838aa66a5d451"
+   "hash": "7892dcdffbc151dc5cb8d0d6cac7f3cf74ad361b3bbc1df8fb9d5ed694b5678a"
   },
   {
    "question_number": 78,
@@ -1141,11 +1141,11 @@
     "C",
     "H",
     "F",
-    "A Testbook Solution"
+    "A"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d3b9a5f13c084c3a338f42aa802e95b1e4c3a7060394c129ac99e5262e9f5195"
+   "hash": "8b575538e1d093aa4c58236b919bbd06b4b074c0895f5b4e1cb8f6b5d645792a"
   },
   {
    "question_number": 79,
@@ -1156,11 +1156,11 @@
     "12 m, West",
     "16 m, West",
     "24 m, North East",
-    "12 m, South East Testbook Solution"
+    "12 m, South East"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "b5a9290368499be3e75b42c75bdf0d890c5cfe67d53f410d272f37dcc5acd24b"
+   "hash": "bc4ad748fc8241f1330364638e1e10ddb8f62a0f8fd3d50fe4d5bc48b8c520aa"
   },
   {
    "question_number": 80,
@@ -1171,11 +1171,11 @@
     "South East",
     "North West",
     "North",
-    "North East Testbook Solution"
+    "North East"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "acbc052230e16ff7fea7645f6b5d57fdc38fd297bb25a3088b0d4d072c21dfc2"
+   "hash": "0bf968141b9d70f413232e40ac9e82d7e531af9b67292f8556a483bc18a63f45"
   },
   {
    "question_number": 81,
@@ -1186,11 +1186,11 @@
     "Two",
     "Three",
     "Four",
-    "More than Four Testbook Solution"
+    "More than Four"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "5b5e715266c1379109395d3dcea89aa6c72e77b5bd816543cbf721a866fe5570"
+   "hash": "0fb567c654a2e5967d4c6d1036e7b24dd152be77c0e9f420b1f4d5920c5672dd"
   },
   {
    "question_number": 82,
@@ -1201,56 +1201,56 @@
     "Two",
     "Three",
     "Four",
-    "Five Testbook Solution"
+    "Five"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "5764f451c54cf452cf1608051dd86e1e296cd4febb21d83db04cd7eb2086e985"
+   "hash": "02f01bd7fb31b7021d5998bbf7cabedcda1e497b54a0af1f12953d9d9b87cdb6"
   },
   {
    "question_number": 83,
    "section": "reasoning",
-   "stem_text": "Who among the following buys the item at last?",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people A, B, C, D, E, F, G and H buy different items but not necessarily in the same order. Three-person buys items between A and D. Two persons buy items between B and A. A buys item immediately before G and after C. Two people buy item between H and C. A buys an item after B. F buys an item before E. Neither F nor E buys items first or last.\n\nWho among the following buys the item at last?",
    "options": [
     "C",
     "D",
     "F",
     "A",
-    "G Testbook Solution"
+    "G"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d3d86699f1cdab211da83fbdf58f929229aacad1d291db7517f2cb6082ba5472"
+   "hash": "2df158c4c314cb498bcbcafd94ad26573a820c0e9495fd4853236364198d12d2"
   },
   {
    "question_number": 84,
    "section": "reasoning",
-   "stem_text": "Who among the following buys item immediately before E?",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people A, B, C, D, E, F, G and H buy different items but not necessarily in the same order. Three-person buys items between A and D. Two persons buy items between B and A. A buys item immediately before G and after C. Two people buy item between H and C. A buys an item after B. F buys an item before E. Neither F nor E buys items first or last.\n\nWho among the following buys item immediately before E?",
    "options": [
     "C",
     "H",
     "F",
     "B",
-    "G Testbook Solution"
+    "G"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "c90d40547b87331843390f101f63553d6a8bb12ca370d1ef533d391ae71513b7"
+   "hash": "e43adc60635ad61c42dc744290bf2b5339e2871990208dcc3e2c674a973c65d0"
   },
   {
    "question_number": 85,
    "section": "reasoning",
-   "stem_text": "How many persons buy item after C?",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people A, B, C, D, E, F, G and H buy different items but not necessarily in the same order. Three-person buys items between A and D. Two persons buy items between B and A. A buys item immediately before G and after C. Two people buy item between H and C. A buys an item after B. F buys an item before E. Neither F nor E buys items first or last.\n\nHow many persons buy item after C?",
    "options": [
     "None",
     "Two",
     "Three",
     "Four",
-    "Five Testbook Solution"
+    "Five"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "f4aaf348bfda1d454e42bdcf8aabe32cdd9bbd8db8de36970b8cd80a69125083"
+   "hash": "fddb30d5a89d5a688a3a0a7da17bd0def20fd3b618ad0aa844de86ad9fe0155c"
   },
   {
    "question_number": 86,
@@ -1261,11 +1261,11 @@
     "AG",
     "CA",
     "GH",
-    "AB Testbook Solution"
+    "AB"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "f32e5c0406e255e99a3818c853a77233670908004277f80848f6245f64d00bac"
+   "hash": "f7a1f658fe287d2a0de1a2db2c64a3fe8f0cd934644c58cdfca9ddef41daebdc"
   },
   {
    "question_number": 87,
@@ -1276,11 +1276,11 @@
     "Only II is true",
     "Both I and II are true",
     "None is true",
-    "Either I or II is true Testbook Solution"
+    "Either I or II is true"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "7960c308896d41e60e22b9fd3204aad587d6abae1d9110b11efb036e11259a8f"
+   "hash": "0678f461a65081cc8c687a508cc180db21235511f5760306e9978d2f1538d502"
   },
   {
    "question_number": 88,
@@ -1291,11 +1291,11 @@
     "Only II is true",
     "Both I and II are true",
     "Only I is true",
-    "Either I or II is true Testbook Solution"
+    "Either I or II is true"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "8cbc09aa50a2329bc6984d91479f11271cc3c402e7546a6ed9ab522fa0d64b39"
+   "hash": "5098cc084a64d0fce60618a92248fa267a678724169f546c62055c6fd213e323"
   },
   {
    "question_number": 89,
@@ -1306,11 +1306,11 @@
     "Only II true",
     "Neither I nor II is true",
     "Both I and II are true",
-    "Either I or II is true Testbook Solution"
+    "Either I or II is true"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "51b868beb6c093fb881514aa02ee986399441bee6d54e65d7f9954eb87a9a3ba"
+   "hash": "0f27b2260d23714c1dc899d083f834e6afe629ce8067642e58aea8e80a6e8f1d"
   },
   {
    "question_number": 90,
@@ -1321,11 +1321,11 @@
     "Two",
     "Three",
     "Four",
-    "None Testbook Solution"
+    "None"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "e77b5e79eaa500240af6b30e967ca86102e5c7b914f005a9438f6b24e9d82149"
+   "hash": "9d95941623a68b84d60f0c27220c94b54d31c41f2385e544253aa78aca9d29dc"
   },
   {
    "question_number": 91,
@@ -1336,11 +1336,11 @@
     "U",
     "D",
     "B",
-    "A Testbook Solution"
+    "A"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "c0422cab5e168f03344c5276d958bac0945dc3ad36e7e13b2d0639043066913e"
+   "hash": "35cb985fbc0680b695126297b58734f62985c34277af1bed914a5e9a4645ab73"
   },
   {
    "question_number": 92,
@@ -1351,11 +1351,11 @@
     "S",
     "T",
     "R",
-    "Can’t determine Testbook Solution"
+    "Can’t determine"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "48045795fb94875ea87f5807e75cce08fcad82f299ea817c846ba18b131d4d6e"
+   "hash": "7e2ab87fa329fd68d8dd652e0d636cb6441d90b441a771e787434f88d2afa31f"
   },
   {
    "question_number": 93,
@@ -1366,11 +1366,11 @@
     "None",
     "One",
     "Two",
-    "Four Testbook Solution"
+    "Four"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "3c5054a322be0d931a3ebbc857cf718376c1b2ecbd3d1848e5a0f5b8cdad4409"
+   "hash": "627c99f3c5ff1220e846402ad515f0776f58589bb66a78454b0720d408fe612e"
   },
   {
    "question_number": 94,
@@ -1381,11 +1381,11 @@
     "D",
     "B",
     "E",
-    "A Testbook Solution"
+    "A"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "73d9dabf34659ba4daea3dcdf322f7ca38ff3ab1b5498bbb182b2f86cc491f95"
+   "hash": "4e46554f93bb4f327ab7c913525e43f31f4d244a7a89f2fc20e2c539332f7843"
   },
   {
    "question_number": 95,
@@ -1396,26 +1396,26 @@
     "1",
     "2",
     "3",
-    "4 Testbook Solution"
+    "4"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "b8971cbe6e3bf35907cb3976a07b89924016cf55ff58572b3bd47e1f7cbad962"
+   "hash": "35ad896cae444fc20f3ec37b9f4c8db208f0b5be8d3dade1025285c5d9ecb106"
   },
   {
    "question_number": 96,
    "section": "reasoning",
-   "stem_text": "How many numbers are there which are immediately preceded by a symbol and followed by a consonant?",
+   "stem_text": "Direction: Study the following alpha numeric series and answer the questions given below.\n\nHow many numbers are there which are immediately preceded by a symbol and followed by a consonant?",
    "options": [
     "0",
     "1",
     "2",
     "3",
-    "4 Testbook Solution"
+    "4"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "13f141e6d1ec8abef88eb0c23e6951d0f932ac8d8662205686f4b4495081a226"
+   "hash": "170de1b0b4366b4039e6312dfebacc7fdcb4449ccda885fc24bcd11475041179"
   },
   {
    "question_number": 97,
@@ -1426,11 +1426,11 @@
     "U",
     "5",
     "7",
-    "F Testbook Solution"
+    "F"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "f8be50df0a6ce1f536b392a7c4f3455ee807e8757af337a1a03bab0c1e0aed65"
+   "hash": "bbefc97671ef7af534689c49c95bfd67dff76e841e3348d040b7d52f240be42e"
   },
   {
    "question_number": 98,
@@ -1441,11 +1441,11 @@
     "4",
     "A",
     "©",
-    "5 Testbook Solution"
+    "5"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b20d6b251450df82decfab58d28f70a9b131e83c780de49129fd307a597cca9b"
+   "hash": "ef70140a5e61ea96ae4903c310fe368b0d7d9302b47a138be33b7592f33f7915"
   },
   {
    "question_number": 99,
@@ -1456,11 +1456,11 @@
     "7 K £",
     "4 € 1",
     "4 B 3",
-    "U G © Testbook Solution"
+    "U G ©"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "222f76f1dfbc5e05d85c560f1f6afe80241221ba6b805eb4968531d486d0e6ce"
+   "hash": "c7ff7321f82064269fc5f1dff78dd5a8b60bb0e564e1887d08d8bd4ab6f631ae"
   },
   {
    "question_number": 100,
@@ -1471,14 +1471,14 @@
     "N",
     "T",
     "X",
-    "Y Testbook Solution"
+    "Y"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "6262f31d7422157fc004c8fbb906f5609a4482c7f5d0d7b43daa753757745803"
+   "hash": "5e6f1f336ed6525d839704851c75ebbda78a1fd53c6126377a8026266f977e3d"
   }
  ],
- "section_confidence": 0.968,
+ "section_confidence": 0.972,
  "section_order": [
   "english",
   "numerical_ability",

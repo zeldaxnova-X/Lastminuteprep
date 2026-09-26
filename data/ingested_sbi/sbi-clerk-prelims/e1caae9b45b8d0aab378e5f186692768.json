@@ -14,11 +14,11 @@
     "B",
     "C",
     "D",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "7887f329b95d056ff410d8fac9f4bc654c85833262a656ce803955dca5d77ab3"
+   "hash": "12c82358a0363232d087fb1a4247862ba8d89ca5b207544389c03bd4b9f714d2"
   },
   {
    "question_number": 2,
@@ -29,11 +29,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "97d2602e49729ab5c76205ddbd6d2040ff9cc90c09ddae024885f49f40989a18"
+   "hash": "bf18f7d550ad8bfac0139eb15f1f03b1e47588d25c7120970ec003e4a7db7fcb"
   },
   {
    "question_number": 3,
@@ -44,11 +44,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "174490acef0b6cc72b46147f99fc53014f5671567f215edc3713f93028d6d5c8"
+   "hash": "7acfbd4c8fcbc17ba437b5e4976c229f930139fba690e0761215f40bb6d8358a"
   },
   {
    "question_number": 4,
@@ -59,11 +59,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "740bfa89dc0baa909873b1e0a118b74ed3ffcff8e33ce3dfd0cdfdedf735fc77"
+   "hash": "077c8f0daa3c9dbdf3fcedc8079635acd837b50d3841a3e2878a6c0cf3ca35a3"
   },
   {
    "question_number": 5,
@@ -74,11 +74,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "c1ab82187fd91450f0dbad9eb46c83d696ae61fea28674fcaa9b4e2a7b824c0d"
+   "hash": "0e62e1e66f04175219c64d7f5c57b7db6620c816c69783b11df28570cd64ce2b"
   },
   {
    "question_number": 6,
@@ -89,11 +89,11 @@
     "(B)",
     "(C)",
     "(D)",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "355f4aa6904d7c4edb1a4ea9ad2f15b67fde6c4f56ab979939c6586b5604fda8"
+   "hash": "e69e91c05b354f47d460164a8e125038b119a975355bbfab72113adaa7f869c7"
   },
   {
    "question_number": 7,
@@ -104,11 +104,11 @@
     "Building",
     "Culture",
     "Pavement",
-    "Test Testbook Solution"
+    "Test"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d7a700e2d18c52e54bcdf8a3635dbe37b05a29d7928124d6f2a1808442e50642"
+   "hash": "0bac6eafd48a0eb1bfff87c478d853877e6d574391da04ca215774f0b342008f"
   },
   {
    "question_number": 8,
@@ -119,11 +119,11 @@
     "Ignorance",
     "Emphasis",
     "Satisfaction",
-    "Comparison Testbook Solution"
+    "Comparison"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "6451f233f037ee199664378d376bb9da367ccbdd5be0d8b2adc51c085de8fce1"
+   "hash": "97587f368c056f32bf3d5232d7d859fd6526887f278a8a8771d10d191c3e7ec6"
   },
   {
    "question_number": 9,
@@ -134,11 +134,11 @@
     "Relation",
     "Development",
     "Appearance",
-    "Maintanence Testbook Solution"
+    "Maintanence"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "778226d5513e2478e0cc1158ec236048bf30e14a8de3bf3e799b867f6a774601"
+   "hash": "743f126bf34a91721426ec0b5b5a052948992d6a62e8273ff5d17a46e854795f"
   },
   {
    "question_number": 10,
@@ -149,11 +149,11 @@
     "Replacement",
     "Department",
     "Measurement",
-    "Equipment Testbook Solution"
+    "Equipment"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "65b5346fe76fd80f4acef282b6f7a02005863284e011f2c9da999c52ca7a0c0e"
+   "hash": "23a8115d1187f663007947b2995a3366d01ecd8d43e5a0978703b0ac3ff2db29"
   },
   {
    "question_number": 11,
@@ -164,11 +164,11 @@
     "Understand",
     "Ignore",
     "Disobey",
-    "Obstruct Testbook Solution"
+    "Obstruct"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "3ab1e17e3a386ea1f3e8ca8a3be2a6759c8e4493e276167d93926afd5ab234e2"
+   "hash": "3b584538c7faec12185597aa3590fd0659f68043397b936035cb000693d30708"
   },
   {
    "question_number": 12,
@@ -179,11 +179,11 @@
     "B",
     "C",
     "D",
-    "No error. Testbook Solution"
+    "No error."
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "c1e52ea60c612b6f0ddf0e519b0bc2be24016f7dd2055076c73237ae27ddff2c"
+   "hash": "82114e7d769aaf8444f215c56ad2bb90d405054deb46b647b94412f6ee51e786"
   },
   {
    "question_number": 13,
@@ -194,11 +194,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "e796f760ce93a77e05a647b4df5f5c89c71f52b74c177e2c0850e87ede9fb639"
+   "hash": "a7101a550c270675aea5cbed6f10809f4d26119071a2363b0ba046cb8c9a5c42"
   },
   {
    "question_number": 14,
@@ -209,11 +209,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f397ce7fb4f272397c7fc2075c8ba4170ee4d3dd36987ecc98a078a7e43dc6b6"
+   "hash": "867b061d23d8a7b055c198fe54d75de91c5ba0d999628f22b9596584b828f58e"
   },
   {
    "question_number": 15,
@@ -224,11 +224,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "e715182d3891f3e369451821f5730cb8f876c46fea53750836d456231d5e1cd3"
+   "hash": "851b2a788febc8fc3cd2ad76bc582fa5eb3d7eec947ee95c422c471e3b662cec"
   },
   {
    "question_number": 16,
@@ -239,11 +239,11 @@
     "B",
     "C",
     "D",
-    "No error Testbook Solution"
+    "No error"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "adaab31af31cc653e72ef15dcfd1abfaeb14703436a9b20cc82a37e2ed16fe70"
+   "hash": "9fbbf78a13a4e49a376169f9c87558b095532643d3b9512397742dc4c9da5882"
   },
   {
    "question_number": 17,
@@ -254,11 +254,11 @@
     "I have another",
     "I have other",
     "I have few",
-    "No correction required Testbook Solution"
+    "No correction required"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e76d073a25a8236d8c66f172960c93aa5fbbedbfffaa669110225bedf86252cf"
+   "hash": "d248cd7f0917236bd54fb52b443df18d9644c793586df80a86110b836c9d007d"
   },
   {
    "question_number": 18,
@@ -269,11 +269,11 @@
     "That have recovered",
     "Still recovered from",
     "That are recovering",
-    "No corrections required Testbook Solution"
+    "No corrections required"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "5e78c8b3b5dc041e6e679bd1c39ae6cd2c2bcd9ff1b2e7f0252d93fb62254f82"
+   "hash": "fbf775a9f0ee200a4df6fb412f18553cefcc11bed2a1ce239f237559578a359e"
   },
   {
    "question_number": 19,
@@ -284,11 +284,11 @@
     "Went for meeting",
     "Going for meeting",
     "Going to meet",
-    "No correction required Testbook Solution"
+    "No correction required"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "230967ed18f25e18e703c37551ec489378ce579fef293b8ab314c26f095e9fce"
+   "hash": "bd2933998ad6c1af164ed93e7c847239f2940085890c6aa3987db2d3490f9fd9"
   },
   {
    "question_number": 20,
@@ -299,11 +299,11 @@
     "Unaffectedly simple",
     "Unaffected and simple",
     "Unaffectedly in simple",
-    "No correction required. Testbook Solution"
+    "No correction required."
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "f447caaf741c17ee4f4d1ca0978b10bf43ccc436a2eb113b2b903c2cb193938b"
+   "hash": "848952dca956b7ff689c8115630865c9d084b566c97f1b261c748be4bd108a4f"
   },
   {
    "question_number": 21,
@@ -314,11 +314,11 @@
     "had been talking",
     "had being talked",
     "have been talking",
-    "No improvement is required Testbook Solution"
+    "No improvement is required"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d43210cf6a4b34edc3e23d3a36caf2db359df6ff357c0ac6350c2bce798a7f81"
+   "hash": "0dba68ce39ea540d89239c68ad68668db79d613512e7b1a8c0fdf3610043d0f3"
   },
   {
    "question_number": 22,
@@ -329,26 +329,26 @@
     "Only a native speaker should teach the language.",
     "The culture where the language belongs must be referenced.",
     "Morphemes and phonemes should be avoided.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f9cf5203636aa3ba22abec265e4b44b7372afbd4e9a1566bcb30a8dd0ae1856a"
+   "hash": "f5e3b0feffe471156b04a65f5bc7a2c7da35d7622c4638e81fc77827cbec16a8"
   },
   {
    "question_number": 23,
    "section": "english",
-   "stem_text": "Which one is the most obvious type of paralanguage?",
+   "stem_text": "Read the passage given below and answer the questions that follow. Language and culture are intertwined. A particular language usually points out to a specific group of people. When you interact with another language, it means that you are also interacting with the culture that speaks the language. You cannot understand one’s culture without accessing its language directly. When you learn a new language, it not only involves learning its alphabet, the word arrangement and the rules of grammar, but also learning about the specific society’s customs and behaviour. When learning or teaching a language, the culture where the language belongs must be referenced because language is very much ingrained in the culture. Complex is one term that you can use to describe human communication since paralanguage is used to transmit messages. Paralanguage is specific to a culture, therefore communication with other ethnic groups can lead to misunderstandings. When you grow up in a specific society, it is inevitable to learn the glances, gestures and little changes in voice or tone and other communication tools to emphasize or alter what you want to do or say. These specific communication techniques of one culture are learned mostly by imitating and observing people, initially from parents and immediate relatives and later from friends and people outside the close family circle. Body language, which is also known as kinesics, is the most obvious type of paralanguage. These are the postures, expressions and gestures used as non-verbal language. However, it is likewise possible to alter the meaning of various words by changing the character or tone of the voice. The phrase, language is culture and culture is language is often mentioned when language and culture are discussed. It’s because the two have a homologous although complex relationship. Language and culture developed together and influenced each other as they evolved. Using this context, Alfred L Krober, a cultural anthropologist from the United States said that culture started when speech was available, and from that beginning, the enrichment of either one led the other to develop further. If culture is a consequence of the interactions of humans, the acts of communication are their cultural manifestations within a specific community. Ferruccio Rossi-Landi, a philosopher from Italy whose work focused on philosophy, semiotics and linguistics said that a speech community is made up of all the messages that were exchanged with one another using a given language, which is understood by the entire society. Rossi-Landi further added that young children learn their language and culture from the society they were born in. In the process of learning, they develop their cognitive abilities as well.\n\nWhich one is the most obvious type of paralanguage?",
    "options": [
     "Spoken Language",
     "Written Language",
     "Body Language",
     "Phrasal Language",
-    "None of the above Testbook Solution"
+    "None of the above"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "7e3e65d1536ec14b4523a7e9d2c888c9e428fd4617438c4057a1a029828deb63"
+   "hash": "2a3c124a7bbd8780d516f0817b2cc112d37e8a777c7e78906656315c78df681a"
   },
   {
    "question_number": 24,
@@ -359,11 +359,11 @@
     "Imitating and observing foreigners inside the family circle.",
     "Imitating and observing people outside the close family circle.",
     "Both 1 and 3",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "0c154feb47ca7c34a71c87ba3ecd8dff82dbd775591cd13f2776e7e9b592c2de"
+   "hash": "e1d0771c16d8e698d499b8665074ff015cff5ede48667419470bbb942b79f2c0"
   },
   {
    "question_number": 25,
@@ -374,11 +374,11 @@
     "When you grow up in a society you ignore glances, gestures and little changes in voice.",
     "Language and culture are homologous with a complex relationship.",
     "It is possible to alter the meaning of words by changing the tone.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "cdec1b4afacc8f04dd2d0b997b8b89bb774ecb99c5254e1fa06693a6b909ea52"
+   "hash": "1263bae33e342d2608ce470d23d91c465df11ccd1474cb80e1cca2b705d31f9f"
   },
   {
    "question_number": 26,
@@ -389,11 +389,11 @@
     "Culture started when close hunter gatherer bonds were formed.",
     "Culture started with the introduction of grammar.",
     "All of the above.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "1458be484359fcf5bf557ab57e272209ab7667807f229fdf7fc8a62be5176efa"
+   "hash": "08709939f0c25978676e5e5cf2fdea1a6b030183da1eb0d3f3c9ce8eb68a6eb9"
   },
   {
    "question_number": 27,
@@ -404,11 +404,11 @@
     "All the messages exchanged using the same paralanguage.",
     "A group of people with the same body language.",
     "Messages exchanged with one another using a given language.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "8fa92865fe51cbf88c7096f8b0bdba41de2edb4b3284ba0d22c63084ed868fb2"
+   "hash": "55b308b4f9e6c31fbab6808d7e6feec8609ecd77af02e744a6370e7a26c7eac6"
   },
   {
    "question_number": 28,
@@ -419,11 +419,11 @@
     "A better understanding of the society.",
     "Fine body language and vivid expressions.",
     "All of the above.",
-    "None of the above. Testbook Solution"
+    "None of the above."
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "f900cf9fbadafbb1e5533d137674f41231e5bee3cc9dedb53447155c4fa2e220"
+   "hash": "8f5a373af66b598167231a65cf2faeedaec1688fcf04d1db1d7ce0cd68869bf9"
   },
   {
    "question_number": 29,
@@ -434,11 +434,11 @@
     "Lucid",
     "Plain",
     "Intricate",
-    "Rare Testbook Solution"
+    "Rare"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a5ee36b75712df653aa511a303a80992e68aac502eedb72a4f5db4326b739a6a"
+   "hash": "134383bd12fc593a27e58c1d4d5b1ddc202832f036d5c320b8dc3645912407c8"
   },
   {
    "question_number": 30,
@@ -449,11 +449,11 @@
     "Inescapable",
     "Splendid",
     "Rare",
-    "Avoidable Testbook Solution"
+    "Avoidable"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "56f711961c9ed304570c6179738dc8f8bdac4e2a56d61399aa676096965921e2"
+   "hash": "9372ce07f1e87a8b26ab2efd55546737c166e6d4be7d691c5076d843d2cb7004"
   },
   {
    "question_number": 31,
@@ -464,11 +464,11 @@
     "28",
     "26",
     "24",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "11c2bab7e99bac00c1ae0bc884ef306a9871c130bac77daf65d1c3453bf5cf14"
+   "hash": "8d84b294574c49e65cd19938f7c96b022ff799388ab732afacb0b9196c2ec7ab"
   },
   {
    "question_number": 32,
@@ -479,11 +479,11 @@
     "35",
     "25",
     "15",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "df8d18c5ffaefdec82b02745be9f41f611b511bf16efa8ac234c2a4963f8dad8"
+   "hash": "dec061c32548fa6e9496178c60058df89be9b2bcc5fc2b6aa7810098c5fc3ae0"
   },
   {
    "question_number": 33,
@@ -494,11 +494,11 @@
     "55",
     "35",
     "39",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "d9e93fdc7cf59bafd2f291073d583101010b7d45b9aa1f86cc31788864f9dbeb"
+   "hash": "2916be7e6103838f8f63fb7aceaaff5fb60303be67438c662e47134266abb2f3"
   },
   {
    "question_number": 34,
@@ -509,11 +509,11 @@
     "19",
     "21",
     "18",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "59d4220097b5fbd4ac79354699237331f5edb844c9a4058a1f0f85c5cceff73a"
+   "hash": "cc9e3b0a81f2ab0917472ef436700c0156276496a45f1de299e2d0e95e005fff"
   },
   {
    "question_number": 35,
@@ -524,11 +524,11 @@
     "5",
     "8",
     "9",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "50d3601560aabdbaac3cc86dc2b2e0f5c5f4c9536cc9f95ff1036112893098de"
+   "hash": "d1021ed67d1612afb1f29de025a02295c6ac1e939905009e927011c9f2a3b78a"
   },
   {
    "question_number": 36,
@@ -539,11 +539,11 @@
     "32",
     "22",
     "17",
-    "19 Testbook Solution"
+    "19"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "65d456aafc5d9df62203c480590151d8c4db73f6e017e64548448692b3a0f437"
+   "hash": "b76e521514240957fd887041ae0c333d1d6552f80b7910916f4f5f8aee5fcade"
   },
   {
    "question_number": 37,
@@ -554,11 +554,11 @@
     "86",
     "92",
     "96",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b135afa32c36ed2cfd20de68ceecbf327883cbf64e5cf83b69e9cf9a44e8020c"
+   "hash": "d0b53d59c8f598172bd4bebb2ab95e43adf1f3522d2313d175420eb9b442934a"
   },
   {
    "question_number": 38,
@@ -569,11 +569,11 @@
     "25",
     "64",
     "36",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "307814176a01c5d5884bf6f7770f38cf1337525d3e93fbe6e187612b80ca9ebe"
+   "hash": "51bc55f7bfb9039af56987586b801f04ee71b1e6b7740aa2b6e5ebc23a174122"
   },
   {
    "question_number": 39,
@@ -584,11 +584,11 @@
     "21",
     "18",
     "23",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "e174ae87c7bcf193611d3955b8b2615078f379fb60756ed2ec776c7ed4cebb4f"
+   "hash": "8c5ec5f8cd30254fa4308046fe07fdb3c55216cc3444124c576f633a5be0f53b"
   },
   {
    "question_number": 40,
@@ -599,11 +599,11 @@
     "36",
     "38",
     "42",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "7c34eeb86a6c2643facea1210fcf8a39a820d407240a883f957d48afc732dc0c"
+   "hash": "73e3f29ff409e88b65163b6c98c3e85d7f4048bfedd2bdc9e1a9659196461702"
   },
   {
    "question_number": 41,
@@ -614,11 +614,11 @@
     "100",
     "125",
     "75",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "430651758c6d02c5c67623ef8d82bc6ce06a197318b91b7af01d62e0fbf14c76"
+   "hash": "881b3c117dbedf9156b210c8d99a2caea5d0a0bd6b9ed786f00538f5ee993eb7"
   },
   {
    "question_number": 42,
@@ -629,11 +629,11 @@
     "275",
     "305",
     "315",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "bb17694ff881351c650e339190b4c33c026bba175bdac3fb69424aad2e2618bc"
+   "hash": "9b303098ce0357db23167ff0e5d8c2434815786644dc5d29329d586aaf0dbe45"
   },
   {
    "question_number": 43,
@@ -644,11 +644,11 @@
     "33.33%",
     "27.5%",
     "37.5%",
-    "75% Testbook Solution"
+    "75%"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "bff91a11356eebaddc926f4d59094f1bfccf6770308addd433cf140fda9a45f4"
+   "hash": "4891f4d90fc31bd0e24bd4657747b72f5c4f74ce83b38321d0a0263f0233a4e4"
   },
   {
    "question_number": 44,
@@ -659,11 +659,11 @@
     "1 : 1",
     "4 : 3",
     "2 : 1",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "179ccb59c70059799113ee1f3a2d405cb6c8b2c61677bbc69f142be7d06b4963"
+   "hash": "b32b73c084f66325acceeea729df72dfe491eaca2b8366c98b1ca4c0aea55d92"
   },
   {
    "question_number": 45,
@@ -674,11 +674,11 @@
     "150",
     "175",
     "100",
-    "250 Testbook Solution"
+    "250"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "41063d35438bdd3f0f626fdfac05015b4629cc2729f3629819975dcbf467f651"
+   "hash": "4443087c102c1c16a08092a917f70f66a86abcd48479f5c38af814bd6e7bb745"
   },
   {
    "question_number": 46,
@@ -689,11 +689,11 @@
     "120",
     "150",
     "160",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "700b89abd7c9794ecdfc38dc4e1829659267ed9158b5736858a447fa9938e862"
+   "hash": "b11e01b8492f144d3697995df70c7816c16a6c6b51e55d70012fde2ef029d81b"
   },
   {
    "question_number": 47,
@@ -704,11 +704,11 @@
     "92",
     "112",
     "99",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "3b6164440114ac03ce0184abf76d71c3c99b450757ec783b87d189dd753986e5"
+   "hash": "fc1f52ef44768e9ebafc9ac5fc97b79660e0aa503b2cbabeacfe7d4999cf55bc"
   },
   {
    "question_number": 48,
@@ -719,11 +719,11 @@
     "258",
     "245",
     "255",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "84b26de50e021c61568e211d86e5db5f3b96bbacfda13909dd7ce56097728b70"
+   "hash": "8187a6df50045657581383cdaf0040c930d1264adbe93b5f093edfbce30a09e0"
   },
   {
    "question_number": 49,
@@ -734,11 +734,11 @@
     "229",
     "204",
     "238",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "10879e24ebee0b47d3218470e341b01c82d3b5362f326e56dda9282f40326603"
+   "hash": "fdf2028faf55407d64163b424f370c74e1f49bf1dd657ab9b13fa8c420c1ae25"
   },
   {
    "question_number": 50,
@@ -749,11 +749,11 @@
     "5080",
     "5040",
     "4920",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "d7fa96d8cdf4f7825fb618bf634f64b16e243d640cd6d0380442fe87858d675c"
+   "hash": "01cd97567f86ec57edd9bf983cf7f5ebfa35784a45bbb5045d141240cff4a3c9"
   },
   {
    "question_number": 51,
@@ -764,11 +764,11 @@
     "69",
     "71",
     "72",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "5f2e88a403403540afca18e884bf3983e642c2e7dbe0aff2bb8f9b2412f2dee1"
+   "hash": "ead065a0fb845aa24ceb4201d416d1a54102f38a6e29bd0e36f71735b1810f59"
   },
   {
    "question_number": 52,
@@ -779,11 +779,11 @@
     "28 years",
     "27 years",
     "23 years",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "771f7d827f7f520ba1170f35a5678b27a70017177a5e658fa9590032621bccc1"
+   "hash": "7b7143cd8437fbdd1edfc87fd97b6b50681d7a51862063f41a544389f7a816f1"
   },
   {
    "question_number": 53,
@@ -794,11 +794,11 @@
     "380 metres",
     "290 metres",
     "350 metres",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a4b3c6b3fcf4df447e08875ac3d3a94a98a7c21a0d754ffa091ce7e024b01ed0"
+   "hash": "756b7b198e7fae1ff13c19003c574307fde87320585a0ae7420679caf82ae492"
   },
   {
    "question_number": 54,
@@ -809,11 +809,11 @@
     "25 hours",
     "12 hours",
     "30 hours",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "d6dbbaa42ae17e2a537bcaa7c663213add46270715aefec3a4a6a30ac1061706"
+   "hash": "663ccd53cabe00fd58217260d4ebeb2f43e8a2ec784965723623fa9b7546d3f0"
   },
   {
    "question_number": 55,
@@ -824,11 +824,11 @@
     "5 hours",
     "7 hours",
     "4 hours",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "792d18d24b3d7efe74f24d9815e41eec8dbfafdac2a0f6c7c248df970c0a0541"
+   "hash": "b7a3f450462a65046b887c1ecd25e057ac7703fe8855e3c1baf843e03ed5c9f9"
   },
   {
    "question_number": 56,
@@ -839,11 +839,11 @@
     "100",
     "150",
     "175",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "1d5b25cdf8d0cc300b93b229e2a189116a612ec0ef01e097f5e474de7b4227fe"
+   "hash": "53150e83c9fd7dee7f5346fe66b1d912aeff31d16e73bae40776a9e083009fd8"
   },
   {
    "question_number": 57,
@@ -854,11 +854,11 @@
     "5",
     "15",
     "20",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "8b404f75b2558633aaa12bfa43fbd5bfe45789d140ebf2a8c898a0de38fdb752"
+   "hash": "9888f79cb163a3faf4b9df378d8cb454fa0a350a8123353facda0a6927f6b296"
   },
   {
    "question_number": 58,
@@ -869,11 +869,11 @@
     "12 : 13",
     "15 : 14",
     "7 : 8",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "b2090f9f1e497757f6d6aafc3f0563327d708cc4b0ac542bf3a4eb2b86a16560"
+   "hash": "aa9ecfee9ce29ef982c96d3e65c21cd8b8d554c7e35581677366303d5f1d614d"
   },
   {
    "question_number": 59,
@@ -884,11 +884,11 @@
     "120%",
     "150%",
     "125%",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "17b691ee6ecf8141a79104274664b73a067a621c1e3f361d6fdc0561ff93cd07"
+   "hash": "1a4932850de84fc9afec89011032d633f97421227ae9ea75af5ffdb4d8347ae1"
   },
   {
    "question_number": 60,
@@ -899,11 +899,11 @@
     "210",
     "240",
     "230",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "2e3c09940ecfdbdb9ce257b65f5122dc31139e7bb896c6b75e4953b2f78a5531"
+   "hash": "08245c8c0dc427091a443219c9682f6e6869034621c821dddfdc4ece89b9dd4f"
   },
   {
    "question_number": 61,
@@ -914,11 +914,11 @@
     "10 cm",
     "7 cm",
     "14 cm",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "870c63fd4cfea3278abff8c34ddaba5589104c40ba3ed711a16e48930b91af87"
+   "hash": "592b5b6b8275392f5d6da87994e2a74b1d763b3b525833ca16cd52b6d9678dc4"
   },
   {
    "question_number": 62,
@@ -929,11 +929,11 @@
     "Rs. 19,380",
     "Rs. 20,160",
     "Rs. 22,340",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "4aed1f29b3727c89317ee38545d9c2c5b0e03065bba4d1fa54337a2eccdd3151"
+   "hash": "a7d875b0cd5be22b4c1529663c94a34fdd45c2d1d44e7fcb4567c634bff88024"
   },
   {
    "question_number": 63,
@@ -944,11 +944,11 @@
     "Rs. 5400",
     "Rs. 4800",
     "Rs. 4500",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "a183a74e6956a57c2492206c8aa17ea440a0766de26579b35ccd00dc312b5636"
+   "hash": "013aa85cc689fea369a668ac1c093948a31579fc9e19ff322480fdd4fd7a9dbc"
   },
   {
    "question_number": 64,
@@ -959,11 +959,11 @@
     "24%",
     "18%",
     "25%",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "8e9bf1715c2d84b4473dcee862ee135935785032aab1476399842dbcb9eb717d"
+   "hash": "8895420b756431c62e90b7d94cd3f289630b2d75730ddcd0b76ec2607dac07aa"
   },
   {
    "question_number": 65,
@@ -974,11 +974,11 @@
     "2020 votes",
     "1840 votes",
     "2330 votes",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "23060ac2a80db4535289edcf28aaf157c44d33b07cfe1c2a695bb6a2209eb5f7"
+   "hash": "977885ed90a3c5d60d09f7ecbeada948f0c0fe9a50e1f03f801a2aeb6b0255e4"
   },
   {
    "question_number": 66,
@@ -989,71 +989,71 @@
     "Immediate right",
     "Third to the right",
     "Third to the left",
-    "None of the above Testbook Solution"
+    "None of the above"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f9460a8c7a0c1de9bf792b831729b35770b2ce5b3c55f087f3e03a1f22160ea4"
+   "hash": "ce0470fa61b1b602f74fc5e95ed262323dc6953aca8fb5a72d39f595ba495f6b"
   },
   {
    "question_number": 67,
    "section": "reasoning",
-   "stem_text": "Which among the following statement is true?",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight people P, Q, R, S, T, U, V and W are sitting around a circle. All of them are facing the center but not necessarily in the same order. P is sitting to the second of T. S is sitting next to the left of R. U is sitting opposite to W. W is sitting third to the left of P. R is neighbour of neither W nor T. R is sitting opposite to Q. V is not a neighbour of Q.\n\nWhich among the following statement is true?",
    "options": [
     "V is sitting fifth to the left of R.",
     "P is sitting opposite to R.",
     "One person is sitting between Q and W.",
     "R is third to the right of T",
-    "Q is sitting opposite to V Testbook Solution"
+    "Q is sitting opposite to V"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "f1dddc7ce2d93a1caacccf88d9d4c9f674189c7ba6176343cf3fcbffc0e12e22"
+   "hash": "7571be35cf16ab6f32dc91a326e03e21c25b0a46e7236469715608041dfdf3c6"
   },
   {
    "question_number": 68,
    "section": "reasoning",
-   "stem_text": "Who is sitting opposite to T?",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight people P, Q, R, S, T, U, V and W are sitting around a circle. All of them are facing the center but not necessarily in the same order. P is sitting to the second of T. S is sitting next to the left of R. U is sitting opposite to W. W is sitting third to the left of P. R is neighbour of neither W nor T. R is sitting opposite to Q. V is not a neighbour of Q.\n\nWho is sitting opposite to T?",
    "options": [
     "P",
     "Q",
     "R",
     "S",
-    "V Testbook Solution"
+    "V"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "c3cbbf8376586eefe352c06aeb8e014598008dea8348270954f3b71b546efb2f"
+   "hash": "f206bfb46fc79c464e5a42970bfc0ef0cd55a848f1c889eb9e8a9061bdb7e840"
   },
   {
    "question_number": 69,
    "section": "reasoning",
-   "stem_text": "Who among the following is sitting next to right of S?",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight people P, Q, R, S, T, U, V and W are sitting around a circle. All of them are facing the center but not necessarily in the same order. P is sitting to the second of T. S is sitting next to the left of R. U is sitting opposite to W. W is sitting third to the left of P. R is neighbour of neither W nor T. R is sitting opposite to Q. V is not a neighbour of Q.\n\nWho among the following is sitting next to right of S?",
    "options": [
     "R",
     "S",
     "U",
     "T",
-    "V Testbook Solution"
+    "V"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "e7d5193dd8f3b8c7900c5a28fc51e546cee8e34fc2e906b832288d86da227026"
+   "hash": "bab461332f1b5655cc67fd1952eb9295be55f8358fa54c819e4b63b2b58f3905"
   },
   {
    "question_number": 70,
    "section": "reasoning",
-   "stem_text": "How many persons are sitting between Q and U when counted from the left of Q?",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight people P, Q, R, S, T, U, V and W are sitting around a circle. All of them are facing the center but not necessarily in the same order. P is sitting to the second of T. S is sitting next to the left of R. U is sitting opposite to W. W is sitting third to the left of P. R is neighbour of neither W nor T. R is sitting opposite to Q. V is not a neighbour of Q.\n\nHow many persons are sitting between Q and U when counted from the left of Q?",
    "options": [
     "1",
     "3",
     "4",
     "5",
-    "2 Testbook Solution"
+    "2"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "ca56ac67db094eb7520a1454dd6cfa22426eecab57885b414787c2bdba8cb84a"
+   "hash": "ff4c5dab9864f3180eb8c03146beae4fea2c5eb7e3f6674a9ca4cfc58daefcd9"
   },
   {
    "question_number": 71,
@@ -1064,11 +1064,11 @@
     "Only II follows",
     "None follows",
     "Both follow",
-    "Either I or II follow. Testbook Solution"
+    "Either I or II follow."
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "6f497c3a8e24afe330c61986251c3cf1e969b73c0832975b5e16e9036d2ae5de"
+   "hash": "955c79092de6909eb0fbeb2c9109db697a224394b3ee187970fd36bd5a839a78"
   },
   {
    "question_number": 72,
@@ -1079,11 +1079,11 @@
     "Only II follows",
     "Both follow",
     "None follows",
-    "Either I or II follows Testbook Solution"
+    "Either I or II follows"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "d317c7f378d659f8bbdfc4dec3e591e9804a0f5c51fdc87ef97877d241e2d2fb"
+   "hash": "713b0994b065baab34f049f0c040976e24128d9a71e88dfd17dc655659a9fb27"
   },
   {
    "question_number": 73,
@@ -1094,11 +1094,11 @@
     "Only II follows",
     "Either I or II follows",
     "None follows",
-    "Both follow Testbook Solution"
+    "Both follow"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "ceefd6cc2bed4932ada8daef89075362602ccac0c1548033a38c970030aa74b3"
+   "hash": "3595b746de64f26d1460110acd6d7486bee00c5ccc30a9d6d21f34f261bf211e"
   },
   {
    "question_number": 74,
@@ -1109,11 +1109,11 @@
     "Only II follow",
     "Either I or II follow",
     "Both follow",
-    "None follow Testbook Solution"
+    "None follow"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "c1e02423b4fd16021039bf860b3217c230c93c1b4e5cd9609c17c89c13febb1f"
+   "hash": "8e5e0044787e92760402d234bce614365e5bf2ce9cef53bd6d68ab29c5746780"
   },
   {
    "question_number": 75,
@@ -1124,11 +1124,11 @@
     "Only II follows",
     "Either I or II follow",
     "None follows",
-    "Both follow Testbook Solution"
+    "Both follow"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "2228de9b2bbb7479071c4abd7ccca36cd134add67ca77bf851b1f76246c1ff75"
+   "hash": "b934559ea8ce3e49fe2a20341805ae487e3be233afa3bbb0999b08daa03b9f0c"
   },
   {
    "question_number": 76,
@@ -1139,11 +1139,11 @@
     "2",
     "3",
     "4",
-    "5 Testbook Solution"
+    "5"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "e3f331efe3e747c66022907ce31d31ceb19b4a250b5efc17c22c3999e8a3abc6"
+   "hash": "fad2a31f6a04cd00fde73ab14f759ca790e7365757c0397dbdde4aefea8c2183"
   },
   {
    "question_number": 77,
@@ -1154,11 +1154,11 @@
     "ABD",
     "ATE",
     "KLO",
-    "POT Testbook Solution"
+    "POT"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "ad725957884a510a526c20c278d29c60121f3f332152f1d63a9ba41d7038f025"
+   "hash": "20858aa7eba5371bd6a380f1dc0b7a5a425c4a53e6bc81f6acff00a8d850027d"
   },
   {
    "question_number": 78,
@@ -1169,11 +1169,11 @@
     "1",
     "2",
     "3",
-    "4 Testbook Solution"
+    "4"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "664a262510e4b59bbbb54c3f96446f6aca86e2677ab0d6012b64de563d188f4e"
+   "hash": "5712e582e5847d187ff7e13ee7cec3ff5fbdc870858f8fcc03c0d794fc339fa4"
   },
   {
    "question_number": 79,
@@ -1184,11 +1184,11 @@
     "12",
     "13",
     "7",
-    "None Testbook Solution"
+    "None"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "aa8f7ae0f9cade0e6cc4bac6781d7f152c4950cde9d05024fc8e82bc144a891f"
+   "hash": "884c6bd7f4d7c03f8158abb30fae20b12ecbc97d011d46ca5f396d589acc595f"
   },
   {
    "question_number": 80,
@@ -1199,11 +1199,11 @@
     "3",
     "1",
     "4",
-    "None Testbook Solution"
+    "None"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "6347fe2c86c9e1dfac7ba8a5729b82b3fd2aec0923204b98d563ee63afae2adc"
+   "hash": "dd00834110f600e1fda2b7272fab5541abc7f83e5668e620c088051a3d4879e2"
   },
   {
    "question_number": 81,
@@ -1214,11 +1214,11 @@
     "rz",
     "ku",
     "op",
-    "uk Testbook Solution"
+    "uk"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "f7dcbc25e3718f25a9a30730ff6e4aed45db34637a46a6cc8636f400996b696e"
+   "hash": "1d10485075c35b63602256c74625880169b1b9c44cc2436bc1db8990d89f6255"
   },
   {
    "question_number": 82,
@@ -1229,11 +1229,11 @@
     "vn",
     "ku",
     "wp",
-    "Either 1 or 2 Testbook Solution"
+    "Either 1 or 2"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "be403c3e0febbbcd96571d389928d994d5832a36d2784fba1a11c06051240782"
+   "hash": "4502c861c04d9f65bd4df6308d4e1e550b74edcd2da921b89c226c0f48fb5f51"
   },
   {
    "question_number": 83,
@@ -1244,11 +1244,11 @@
     "uk",
     "vn",
     "wp",
-    "st Testbook Solution"
+    "st"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "c15ee5eb257bc8a3923db22cd640e036470e32b26dcce82d9a8c14a243e2d27b"
+   "hash": "324281e01ee8471ff41e3f0d8d3e11f5263fabff7839e5a8626b341abf2f22eb"
   },
   {
    "question_number": 84,
@@ -1259,11 +1259,11 @@
     "ku wp et",
     "ap ku et",
     "ap vn uk",
-    "ap ku rz Testbook Solution"
+    "ap ku rz"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "9e010463d6e30e185efd5fa721143c04086951b56ef11abbedad6ce6486234ac"
+   "hash": "a3cf14d0f5338bb73ebb294b532171ad55b79628ae19b32a8fcf2521862bef73"
   },
   {
    "question_number": 85,
@@ -1274,71 +1274,71 @@
     "B",
     "C",
     "D",
-    "G Testbook Solution"
+    "G"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "dcce01e1a363f9ed19737b94026fe35a2d536af6c7dd99c9fcf633d3abd37664"
+   "hash": "4e9a1092a5d2be494cc211a6d22ff369f00efd14e2ea8fbb3b14b08abdbcb469"
   },
   {
    "question_number": 86,
    "section": "reasoning",
-   "stem_text": "Who among the following deliver the lecture immediately after D?",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nWho among the following deliver the lecture immediately after D?",
    "options": [
     "C",
     "A",
     "G",
     "H",
-    "B Testbook Solution"
+    "B"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "e46b6afdac386a5df72b4486f83ab12914a53090d56ab07a343a150867734d52"
+   "hash": "e312d8b843c5e1d49dfe31d8bcd732bf22c895bf061f5f3825a29c8c3245f08e"
   },
   {
    "question_number": 87,
    "section": "reasoning",
-   "stem_text": "How many lectures delivered after C?",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nHow many lectures delivered after C?",
    "options": [
     "Four",
     "Two",
     "One",
     "Six",
-    "Five Testbook Solution"
+    "Five"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "8448cb03b763cb5c450eb1ab105bd6fe8893a946dab1bdd640a2a54f18612467"
+   "hash": "0b3380376cdb925f3e9e8ac62cfcf0ab7b08df55ed49993fb2565151737ea212"
   },
   {
    "question_number": 88,
    "section": "reasoning",
-   "stem_text": "Who deliver the lecture on 6th March?",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nWho deliver the lecture on 6th March?",
    "options": [
     "G",
     "B",
     "C",
     "H",
-    "E Testbook Solution"
+    "E"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "4211d67f4ab263f4292d59a6ce19a52af5669fb9ad5b73953d075895eb211441"
+   "hash": "a4ac31e9b7dcb8ca9b7f060ddd5ccf0c66ec4c5896d2b1b8e308541b30d50c40"
   },
   {
    "question_number": 89,
    "section": "reasoning",
-   "stem_text": "How many person (s) deliver lectures between B and F?",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nHow many person (s) deliver lectures between B and F?",
    "options": [
     "One",
     "Two",
     "Three",
     "Four",
-    "Five Testbook Solution"
+    "Five"
    ],
    "correct_index": 1,
    "correct_letter": "A",
-   "hash": "26d0f3a2f2140c179e411fd391b2988193262197ab289ddd9b939000dcbd993e"
+   "hash": "76f60ac2d54714fc4b8f7deb3f36377443d33166369df1144b1a8ca3fb3adae3"
   },
   {
    "question_number": 90,
@@ -1349,56 +1349,56 @@
     "T",
     "S",
     "W",
-    "V Testbook Solution"
+    "V"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "1fd404e877e59cb5af786388c9e0126606cdd3a1dceaa7c78f0ba49d58b34d33"
+   "hash": "8ad8a8c2b1a4884b374c7902927c8364c61fc6e2dd22f1d35c4e8ad92919e1f0"
   },
   {
    "question_number": 91,
    "section": "reasoning",
-   "stem_text": "Which of the following statement is false?",
+   "stem_text": "Eight Person P, Q, R, S, T, U, V and W are sitting in a room in a single row with equal distances between each other, but not necessarily in the same order. All of them are facing north direction. Only one person sits between T and P. Number of persons to the left of Q is one less than to the right of Q. Two persons sit between T and S. V sits second to the right of U. T sits immediate left of Q. W is not an immediate neighbour of V.\n\nWhich of the following statement is false?",
    "options": [
     "P sits at one of end of the row.",
     "U sits immediate left of S.",
     "There are two persons between U and R.",
     "No one sits between W and T.",
-    "Only one person sits to the right of S. Testbook Solution"
+    "Only one person sits to the right of S."
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "fd369f32b71b48266f5437c132d8f24003c6492ef8488706b02c3c827d17842f"
+   "hash": "cc758df27cb9e45f5f5561082871d3264fcde7a15fff23571b26f19eb76113a8"
   },
   {
    "question_number": 92,
    "section": "reasoning",
-   "stem_text": "How many persons sits between T and R?",
+   "stem_text": "Eight Person P, Q, R, S, T, U, V and W are sitting in a room in a single row with equal distances between each other, but not necessarily in the same order. All of them are facing north direction. Only one person sits between T and P. Number of persons to the left of Q is one less than to the right of Q. Two persons sit between T and S. V sits second to the right of U. T sits immediate left of Q. W is not an immediate neighbour of V.\n\nHow many persons sits between T and R?",
    "options": [
     "One",
     "Two",
     "Three",
     "Four",
-    "No one Testbook Solution"
+    "No one"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "f0052d2ce25fbf2e2b9de85e5623eaf5f482c762ed9ab39c0a3f58ac8e9d8bca"
+   "hash": "c91b33d92fbd2e7b778c83eb93fb93ce81526023bd58ec85ff31d55d3ae4bba8"
   },
   {
    "question_number": 93,
    "section": "reasoning",
-   "stem_text": "Who sits at extreme end of the row?",
+   "stem_text": "Eight Person P, Q, R, S, T, U, V and W are sitting in a room in a single row with equal distances between each other, but not necessarily in the same order. All of them are facing north direction. Only one person sits between T and P. Number of persons to the left of Q is one less than to the right of Q. Two persons sit between T and S. V sits second to the right of U. T sits immediate left of Q. W is not an immediate neighbour of V.\n\nWho sits at extreme end of the row?",
    "options": [
     "W",
     "R",
     "S",
     "T",
-    "U Testbook Solution"
+    "U"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "0a47aa1cd16fb57a87f21ebc03d1c46b56ed25d7a4f105f2a3aaf2b49e3cb54d"
+   "hash": "cd0217dcaafbd97d718898cefd2fec99a972b16af863a7cf69b0b28ec334eba9"
   },
   {
    "question_number": 94,
@@ -1409,11 +1409,11 @@
     "W, T",
     "U, S",
     "T, Q",
-    "S, T Testbook Solution"
+    "S, T"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "0ceff19364323ccfe5d05c04b80668da37f3bc111716991f4f7455c58c16184b"
+   "hash": "3966699dfe18fc38f9770daff0abe51624d697a7edd034ab0ce2496bf97d1df8"
   },
   {
    "question_number": 95,
@@ -1424,11 +1424,11 @@
     "M",
     "X",
     "Y",
-    "P Testbook Solution"
+    "P"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "bf927cd707a32f35bab25e9ea8b85775aa2d892f817542866fab9f51d9c83d78"
+   "hash": "7777de56d60a9e8c3795b8a62f7569ad1d11efeca9193e09eba9e4f1ad6fb241"
   },
   {
    "question_number": 96,
@@ -1439,11 +1439,11 @@
     "Two",
     "Three",
     "Four",
-    "More than four Testbook Solution"
+    "More than four"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "df11219ffbe23e50fe2cc4d215ffa293cc49e9ae9850a2edf7e79de5d4ba7a6f"
+   "hash": "6834ac5ce6297c4c4d8642dee0e387b7beded343365c0254a236d47a48b7a339"
   },
   {
    "question_number": 97,
@@ -1454,11 +1454,11 @@
     "B",
     "C",
     "D",
-    "Both 3 and 4 Testbook Solution"
+    "Both 3 and 4"
    ],
    "correct_index": 5,
    "correct_letter": "E",
-   "hash": "5675508e447b412f1dcbcb403925c85ba18b90657ce82e027b834b7b8fb0fdff"
+   "hash": "bae656efc414fbeeb1cfe4dfc075bf7a08bea97158d8fd7bd0642508cff266ce"
   },
   {
    "question_number": 98,
@@ -1469,26 +1469,26 @@
     "Brother",
     "Sister",
     "Brother in law",
-    "Sister in law Testbook Solution"
+    "Sister in law"
    ],
    "correct_index": 2,
    "correct_letter": "B",
-   "hash": "7aec40aa5a2ed7f443713ca70f596e65c981df7d9b403bfc2db7249609453a17"
+   "hash": "83bb0e4b3518c8745b7191494ab1ac463a708fd7f6e0907c391dd555329b258c"
   },
   {
    "question_number": 99,
    "section": "reasoning",
-   "stem_text": "Who is the grandmother of P?",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follow: There are 6 members of a family in a gathering – P, Q, R, S, T and U. R is father of S and married to Q. T is sister in law of U who is a female. P is daughter of S. S is not married to T. Q has one daughter and one son.\n\nWho is the grandmother of P?",
    "options": [
     "S",
     "U",
     "Q",
     "R",
-    "None of these Testbook Solution"
+    "None of these"
    ],
    "correct_index": 3,
    "correct_letter": "C",
-   "hash": "a62259a4d0a553258a934587685958b4951c7ac0d85dcb57c32e1bb5a1412565"
+   "hash": "d72cca4a93274c401721bf9113d546b825c21bcbebb5b1d8071745e915db8778"
   },
   {
    "question_number": 100,
@@ -1499,14 +1499,14 @@
     "Father",
     "Sister",
     "Niece",
-    "Sister in law Testbook Solution"
+    "Sister in law"
    ],
    "correct_index": 4,
    "correct_letter": "D",
-   "hash": "98ca2e633a8566b6d01ad25ed2816fd5d2928a7b42430089043198055a4fbd15"
+   "hash": "ce471bbb8a218ecae94eec8b7010a49cd14779c430a898b3f1b814df6054addf"
   }
  ],
- "section_confidence": 0.883,
+ "section_confidence": 0.892,
  "section_order": [
   "english",
   "numerical_ability",
