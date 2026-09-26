@@ -1,0 +1,1502 @@
+{
+ "file": "SBI_Clerk_Prelims_05_Jan_2024_Shift_1_Memory_Based_Paper_5efb65fd342931151f91fa727f2d5cfa.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "duplicate_options": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Directions: Read the passage and answer the questions: Motivational literature aimed at youth has become a staple in bookstores worldwide. With their aesthetically pleasing covers and powerful testimonials, these books claim to invigorate young readers and pave their way towards success. Despite these promising attributes, the effectiveness of such books raises quite a debate. The sheer number of these motivational compilations is, in itself, an overwhelming sight. They purport a version of reality wherein success and growth are distilled into actionable tips and methodologies easily consumed by an impressionable audience. However, there is a belief that such convenience brings complexities of its own. Motivation, inherently a personal and subjective experience, is often simplified in these books. They offer a sequence of simplified steps, a 'one-size-fits-all' path towards success. Though such guidance might temporarily inspire, it rarely contributes to long-lasting motivation, rendering them ineffective in the long run. A central issue lies in the external nature of motivation these books attempt to foster. It's widely accepted that motivation should be an intrinsic quality, a self-ignited passion driving one forward, even in the face of adversity. This motivation, which develops from introspection, life experiences, and personal values, cannot be derived from predetermined methods or uniform strategies. Additionally, there is an inherent difficulty to retain the fleeting inspiration these books might induce. The motivational surge often experienced during or shortly after reading is seldom sustainable. Over time, as the realities of daily life resume, the inspiration diminishes, leaving readers at their starting point, sometimes even more demotivated than before. Are these observations an indictment of youth motivation books? Not entirely. These books undoubtedly play their part. They provide practical tips, inspiration from shared stories, and can even stimulate one's journey of self-growth and discovery. They expose readers to new ways of thinking and provide alternate life perspectives. However, a cautious approach towards accepting these books as the definitive path to success is recommended. They are not magic solutions or silver bullets, as they often portray themselves to be. They should be seen as only one element of a broader journey towards self-growth and development. The youth, while inspired by these motivational reads, should understand that lasting motivation can only be derived from within themselves. It is fuelled by their impassioned desires, intrinsic values, and dreams. So, while motivational literature has its place, the youth are encouraged to primarily cultivate their own intrinsic motivation that can withstand the test of time. What is a synonym for the term 'sheer' as used in the passage?",
+   "options": [
+    "Obscurity",
+    "Infinity",
+    "Throw",
+    "Utter",
+    "Blur"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c6ae25620f3a50015898a9f137aa64e62f44d810333a6115e93a2be672386313"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "According to the passage, what is the complexity associated with the convenience of motivational books aimed at youths?",
+   "options": [
+    "They offer too many success stories",
+    "They disrupt the reading habits of the youth",
+    "They oversimplify the subjective nature of motivation",
+    "They are too expensive for young people",
+    "They are often outdated www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "46fb31d7e687b4f1bfbc6d24f386dd919b229b8611e17de6510b979f593151ba"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "Which of the following is a synonym for the phrase 'retain' as presented in the text?",
+   "options": [
+    "Maintain",
+    "Disperse",
+    "Relinquish",
+    "Neglect",
+    "Dismiss"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "137cb1405846e9b18c5037cbee533bb18343f62493ec333c47a701fbf3a7655f"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Which of the following is mentioned in the passage as a challenge in the effectiveness of youth motivational books?",
+   "options": [
+    "The lack of personal testimonies",
+    "The broad scope of the contents",
+    "Difficulty in sustaining the inspired motivation",
+    "The language used is too complex for the youth",
+    "The books are not accessible enough"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5b6c43cd453df08f32c56a3e69013d75dc714be4e877f3c667a698d4e6506456"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "What is an antonym for 'sustainable' as used in the passage?",
+   "options": [
+    "Preservable",
+    "Upholdable",
+    "Extendable",
+    "Undermining",
+    "Protractable"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "98ce5b605a4da5bd5ba504d3396ebfa23bae2e29525864a7f553cc9d3e1c09ce"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "According to the passage, why should young readers take a cautious approach to motivational literature?",
+   "options": [
+    "The books cannot replace practical life experience",
+    "The books lack credibility and authenticity",
+    "The books might discourage readers from pursuing their own goals",
+    "The books cannot be the definitive path to success",
+    "The books often lack quality and depth"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d30fe2f8269dd4ad53225ddf8b89906e8ec31f1bd862b18856aff3b3e413f9ca"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "What is the antonym of the word 'effectiveness' based on the usage in the text?",
+   "options": [
+    "Potency www.prepp.in",
+    "Impotency",
+    "Efficiency",
+    "Practicality",
+    "Dynamism"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2099513b463b90c10ac7c4c5e3e8a41ebf48c45bcff709c000ed362ef1829237"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Based on the passage, which of the following statements is correct? A.Motivational books potentially serve as a start towards self-growth and development. B.Motivational literature for youth counsels a one-size-fits-all method to success. C.The motivational surge from these books is often short-lived.",
+   "options": [
+    "Only A",
+    "A and B",
+    "B and C",
+    "A and C",
+    "A, B, and C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b8e2349942b21b219cf007d78624aaa8e24bef6137c61b28ecf6d29db50becaf"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Which of the following would be an appropriate title for the passage?",
+   "options": [
+    "The Unseen Dangers of Motivational Literature",
+    "Dissecting Motivational Literature for Youth",
+    "The Ineffectiveness of Self-help Books",
+    "The Mediocre Influence of Motivational Books",
+    "Youth Motivation: The Role and Limitations of Motivational Books"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "afef03e3aea250c34c2437ec0532d49537b37802e915dd64f079ad5606c24e97"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Direction: In the following sentence, identify the erroneous part. Choose the corresponding option as your answer. In case there is no mistake, choose option 5 ‘No Error’. In the modern world, (A)/ technology playing (B)/ an integral role (C)/ in our daily lives.(D)/ No Error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0e849e117bbca493fea4bab575ab14b1802997cb3aeaa5f5bf40e6725c4501fd"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Direction: One part of the sentence given below contains an error. Find this part and choose the corresponding option. If the sentence does not have an error, pick option 5 ‘No Error’. He preferred (A)/ coffee then (B)/ tea because (C)/ it was stronger.(D)/ No Error (E) www.prepp.in",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2dc5af0f8d2ad34407b201f7b01faea00583b275614084f74759351be6706f75"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Directions: In the following question, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the ''No error'' option. The audience were (A)/ becoming restive as they (B)/ waited for the (C)/ performance to begin. (D)/ No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7a32d94236873ee9767bdf624be94be18db3e41f3d7445f6eea54923ee5d4531"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Directions: In the following question, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the ''No error'' option. The matter is (A)/ strictly irrelevance (B)/ at this point (C)/ in the proceedings (D)/. No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7bc2546582a4bd9cf64932ebc9827e352096a267fa655476bc4c003f1c363930"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Directions: In the following question, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the ''No error'' option. Scarcely had I (A)/ got through (B)/ the door then (C)/ the phone rang (D)/ No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3686a52a20f29669777b068003c6f03200e82a22ab1659dce1ee37691af3a41f"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, four words, marked as A, B, C, and D, are given in bold, out of which one word may or may not be misspelt. Identify the misspelt word and mark it as your answer. If all the highlighted words are correctly spelt, mark \"All are correctly spelt\" as your answer. The engineer (A) designed a complex (B) system with interconnected (C) circuits running in paralel (D) for efficient power distribution.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "All are correctly spelt"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d0f9f80184f0e7ec4218b9fb11bc053efcb25c96eccf3d7eaa9ad0e5ad7c890d"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, four words, marked as A, B, C, and D, are given in bold, out of which one word may or may not be misspelt. Identify the misspelt word and mark it as your answer. If all the highlighted words are correctly spelt, mark \"All are correctly spelt\" as your answer. Embracing authenticity (A) fosters confidence and contentment (B), allowing us to create (C) our accepted, genuine (D) selves in life.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "All are correctly spelt"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c92584457ec9a29b792a8c597279a7fe601695e88364e64d8319e8a78d4848d2"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, four words, marked as A, B, C, and D, are given in bold, out of which one word may or may not be misspelt. Identify the misspelt word and mark it as your answer. If all the highlighted words are correctly spelt, mark \"All are correctly spelt\" as your answer. Despite his best efforts (A), the clumsy (B) waiter managed to embarass (C) himself by spilling drinks in a comical yet awkward (D) moment.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "All are correctly spelt"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6b8527d7969016425d9f97715683341ed3a09b8b5b0047771127547d66d4b417"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, four words, marked as A, B, C, and D, are given in bold, out of which one word may or may not be misspelt. Identify the misspelt word and mark it as your answer. If all the highlighted words are correctly spelt, mark \"All are correctly spelt\" as your answer. www.prepp.in Despite feeling concious (A) about her attire (B), she confidently entered the room, unaware (C) of the admiration she garnered (D).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "All are correctly spelt"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3fdcf3bae40899db90b357e393d0d4d8ac54c77eee8bab5f788daad08f94ec0e"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Fill in the blanks with the correct word from the options given below: His utter _______ and disregard for the rules of the jungle lead him to his demise.",
+   "options": [
+    "vigilance",
+    "studious",
+    "careful",
+    "ignorance",
+    "existence"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "abf320b1fd402ecb4ebead9a15b420fb793ce90731a6da1f7cf05d2642f03bf5"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Fill in the blanks with the correct word from the options given below: The Louvre pyramid is one of the most _______ landmarks in France.",
+   "options": [
+    "dismal",
+    "shallow",
+    "iconic",
+    "crude",
+    "contempt"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f557640c21fbe87c5be5fed55ca7f4306dbad6c7f31532fc3d158562d9a2a1db"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Fill in the blanks with the correct word from the options given below: The _______ eyes of the statue captivated the onlookers.",
+   "options": [
+    "horrific",
+    "dirty",
+    "beautiful",
+    "pathetic",
+    "demonic"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9c8f7da4513b8bb4057ff36e55f0bbe37aa8698f1b623f03ae742684112bebf2"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, there is a statement divided into four parts, when arranged properly forms a coherent sentence both grammatically and contextually. Choose the www.prepp.in best alternative among the five options given below each statement as your answer. were set to sleep on 2 September and 4 September (A)/ sunset at the landing site (B)/ respectively due to depleting solar power with (C)/ the Vikram lander and Pragyan rover (D)/",
+   "options": [
+    "ACBD",
+    "BDCA",
+    "BADC",
+    "DACB",
+    "CBDA"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3915e188ad91af84c9a3dc851a0d2f5bb289ef6b2490b2c56dce1ec209e98481"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, there is a statement divided into four parts, when arranged properly forms a coherent sentence both grammatically and contextually. Choose the best alternative among the five options given below each statement as your answer. a native of Spring Green, Wisconsin, (A)/ earning all-conference honors in football twice (B)/ Roach attended what is now (C)/ Black Hills State University from 1948 to 1951, (D)/",
+   "options": [
+    "CDBA",
+    "DBAC",
+    "BACD",
+    "DCBA",
+    "ACDB"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6b14060234a5432030f447e798ad0e0ff9d0207f10c1d7dc79aea4de90893c0b"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, there is a statement divided into four parts, when arranged properly forms a coherent sentence both grammatically and contextually. Choose the best alternative among the five options given below each statement as your answer. the two dominant players in men's tennis (A)/ Roger Federer and Rafael Nadal established themselves as (B)/ Djokovic turned professional in 2003 (C)/ by entering the ATP Tour, around the time (D)/",
+   "options": [
+    "DABC",
+    "CDBA",
+    "BCAD",
+    "ACDB",
+    "BADC"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "da496e78a5a6ca7f9dd0ee7e0e44bacd41d94e987b604ad0e06f95d42eefd514"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, there is a statement divided into four parts, when arranged properly forms a coherent sentence both grammatically and contextually. Choose the best alternative among the five options given below each statement as your answer. Japan formerly had the second-largest (A)/ China in both assets and wealth (B)/ in both categories, until it was surpassed by (C)/ assets and wealth, behind only the United States (D)/",
+   "options": [
+    "ADCB www.prepp.in",
+    "BDCA",
+    "CABD",
+    "DBAC",
+    "CADB"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d3cb437eacb32a6aed4f73dceb8c8b33aedc4b17f752ac2ebb125237d0a10170"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, five options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. In a capitalist society, the goods produced are ___(A)___ among people not on the basis of what people need but on the basis of Purchasing Power—the ability to buy goods and services. That is, one has to have the money in the pocket to buy it. Low-cost housing for the poor is much needed but will not ___(B)___ as demand in the market sense because the poor do not have the purchasing power to back the demand. As a result, this ___(C)___ will not be produced and supplied as per market forces. Such a society did not ___(D)___ to Jawaharlal Nehru, our first prime minister, for it meant that the great majority of people of the country would be left behind without the chance to ___(E)___their quality of life. Which of the following words would most appropriately fit in the blank (A)?",
+   "options": [
+    "Derived",
+    "Distributed",
+    "Differentiated",
+    "Accumulated",
+    "Penetrated"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "251ead0193845388185fe97559aec5963db36758c8bea2a7fb0444ef0c333b3b"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (B)?",
+   "options": [
+    "Count",
+    "Condemn",
+    "Grab",
+    "Apparent",
+    "Falsify"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "146f8431c8274876fe553c4144e4b722aa854351b41d1a9cba53583731081d14"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (C)?",
+   "options": [
+    "Locomotive",
+    "Procedure",
+    "Commodity",
+    "Logistics",
+    "Discourse"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7306ac654b7463b4bac30c860a0d92fb2ed35d4a42b39e281152661aa37f3094"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (D)?",
+   "options": [
+    "Debar",
+    "Appeal",
+    "Jeopardize",
+    "Appreciate",
+    "Deconstruct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fdc926fabe94f68713ede2e19f68da1f93d67b980dff5d28091b7ca7b33cdd48"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (E)?",
+   "options": [
+    "Abandon",
+    "Debase",
+    "Improve",
+    "Scrutinize",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "31da0fb28bbe70277964c24ae3024902952e1f8033521735f06623ad62cc1d7f"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 100, 91, 81, 70, 60, 45",
+   "options": [
+    "91",
+    "81",
+    "60",
+    "70",
+    "45"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7670b7ce65a04b58986ba44786a2416a086c19e7ac825d78e6c89d153713712b"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 98, 128, 162, 200, 242, 266",
+   "options": [
+    "98",
+    "266",
+    "162",
+    "128",
+    "200"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f375422db4828afb56df6b1c32afce06d5dfc0a381cf8b0a475d8f8384a0b5eb"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 64, 100, 134, 161, 180, 189 www.prepp.in",
+   "options": [
+    "100",
+    "64",
+    "161",
+    "180",
+    "189"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6c704230bdbe0353df2b8ad802c3c058de66f2ca78b8745a151b6c8d37a01230"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 12, 25, 50, 150, 600, 3000",
+   "options": [
+    "12",
+    "25",
+    "50",
+    "600",
+    "150"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "142b087f07f95c292e08f23adcfbbafbe7cac7af50ca754c8a573bfc53a1365e"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the given series. 145, 168, 197, 224, 252, 288",
+   "options": [
+    "197",
+    "145",
+    "252",
+    "168",
+    "224"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cb805f8c55252dc5c5194053c51a617b0ea4138b6cd1336081f1dd5e9e295a61"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of the perimeter to the length of a rectangle is 3 : 1. If the perimeter of the rectangle is 108 cm, then find the ratio of breadth of the rectangle to the perimeter of the rectangle.",
+   "options": [
+    "1 : 6",
+    "1 : 4",
+    "3 : 5",
+    "4 : 7",
+    "2 : 5"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "fee43ff8606c3a4ed7b4a6c7a79329cc9bbef5ffbea98490f17f11d6cb895d54"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "Priya started a business with an investment of Rs. 57,000 and after 6 months Soni joined her investing Rs. 95,000. If the Profit at the end of a year is Rs. 22,000 then what is the profit share of Soni?",
+   "options": [
+    "Rs. 12,000",
+    "Rs. 10,000 www.prepp.in",
+    "Rs. 15,000",
+    "Rs. 11,000",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "39fb8bb55148d31f934fdacba777f45782861d706880c018cd6a8e07d88b3e1a"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "In a hotel, there are 10 staff members. Their average weight is 50 kg. When one of the staff members leaves the hotel, the average weight becomes 49 kg. If one new staff member join the average weight becomes 52 kg. Find the difference between the weight of the staff member who left the hotel and who join the hotel.",
+   "options": [
+    "25 kg",
+    "35 kg",
+    "20 kg",
+    "18 kg",
+    "27 kg"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "586c31124bcafbae03f3e765afb1e2ad50b7ecbd6522e19a5a93ba268cab8266"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Study the following information carefully and answer the questions. The below table shows the investment of Indumathi and Chutki in three different insurance policies. Amount invested by Amount invested by Scheme Chutki (in Rs.) Indumathi (in Rs.) LIC 29500 19500 NPS 27500 12500 ELSS 18500 24500 Find the ratio of the total investment of Indumathi in ELSS and LIC together with the total investment of Chutki in NPS and ELSS together",
+   "options": [
+    "20: 17",
+    "22: 23",
+    "21: 23 www.prepp.in",
+    "27: 29",
+    "21: 19"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c4d44e680a50a739df7e16d6a34f41e0c68b3f333fd7be302b2819effaecce9d"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "If the investment of Giyan in NPS is 2500 more than the investment of Chutki in ELSS and the investment of Giyan in ELSS is 3500 less than the investment of Indumathi in LIC, then find the average investment of Giyan in NPS and ELSS.",
+   "options": [
+    "Rs. 19500",
+    "Rs. 18500",
+    "Rs. 16500",
+    "Rs. 17500",
+    "Rs. 14500"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22be40e6783ac8ddba1118b69b50e02cdca437542bdd0d9f589ee8f47b240c70"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "The investment of Chutki in ELSS and NPS together is what percentage more or less than the investment of Indumathi in NPS and LIC together?",
+   "options": [
+    "44.25%",
+    "43.75%",
+    "41.25%",
+    "40.25%",
+    "46.65%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9d92e50582341fe17cab76712076c2bed23c872f21c4c6e58037d0d8d580cb70"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "If the investment of Chayan in ELSS is 50% of the average investment of Chutki in NPS and LIC, then find the total investment of Chayan in ELSS.",
+   "options": [
+    "Rs. 18350",
+    "Rs. 14250",
+    "Rs. 13930",
+    "Rs. 15750",
+    "Rs. 16450"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6e03b63ce97fb1e3698cb46ffc64381b47b39bcce4c8314570763febf4334806"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "Find the average of the total investment of Chutki in NPS, Indumathi in NPS, and Chutki in ELSS together.",
+   "options": [
+    "Rs. 21500",
+    "Rs. 19500",
+    "Rs. 17500",
+    "Rs. 23500",
+    "Rs.13500 www.prepp.in"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6f210c10f63ca8fda91872f084e49c65ea62032eba4b20c635c69845fa94ea00"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 250 × 24 ÷ 12 + 6 + 2 of 3 of 18 = ?",
+   "options": [
+    "416",
+    "612",
+    "614",
+    "610",
+    "510"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a7f350cfe7adec6bbb8c797df079b65eeb40e1cc1ecf0ac839004dd5c3e2b5fb"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 36 × 9 + 4 × 3 – 70 × 4 + 144 ÷ 24 = ? ÷ 48",
+   "options": [
+    "2970",
+    "2897",
+    "2766",
+    "2876",
+    "2976"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d4aeec2d40e1e19f0673817f6b7020282c613953fd95021c456ce2d6e2a41841"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 20% of 2500 - 22.5% of 1200 = 15% of 1140 + (?)",
+   "options": [
+    "47",
+    "59",
+    "65",
+    "49",
+    "63"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0ebba88afb28ee88ff71327340fc5476bb6f5762fb1973016a24372523f11487"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 840 ÷ 14 + 6 × 9 + 11 - 3 + ? = 187",
+   "options": [
+    "56",
+    "60",
+    "34",
+    "28",
+    "65 www.prepp.in"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6d9ea5c46b75c68ba4dc71be90cd89ff267a5955f73477a65c8509f61a7ad624"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 15 × 100 - 10 × 800 + 60 ÷ 6 = ? × 50 ÷ 10",
+   "options": [
+    "-1198",
+    "1298",
+    "-1298",
+    "-1289",
+    "-1239"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dd8b612bfb74d1f4fbcbff5c598932cf3624204118abfa040ce42ad9eef5f355"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 45 × 3 + 7 + ? + 36 ÷ 6 × 9 = 100",
+   "options": [
+    "96",
+    "100",
+    "120",
+    "110",
+    "-96"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d6942629274dba311f49a57c78b45bdd4f7602e596bad57371d631e65c3ed12a"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 85 - 5 × [20 × (120 - 110)] ÷ 10 + 40 = ?",
+   "options": [
+    "24",
+    "23",
+    "22",
+    "21",
+    "25"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5f45f38cc9aa3c10fdebdac6297e344999877dbd3194035b787b2f379f9f496f"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 30% of 50 - 55% of 250 = ? + (200 - 99 × 2) ÷ 4",
+   "options": [
+    "123",
+    "133",
+    "135",
+    "-123",
+    "-133"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e77c118bbe2ec4e5372b95395bfe53ce6459a15cbd78160a552e5c42d1069370"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (953 + 487 - 220) ÷ 5 = 482 - 62 + ?",
+   "options": [
+    "-165",
+    "-196",
+    "-176",
+    "-162",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "66e5d4a7baa0a285289265cf144da29662d3b66a2a183e532e8746ab312d5f71"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 48 × 27 + 115 × 62 + 79 × 23 = ? - √256",
+   "options": [
+    "10159",
+    "11519",
+    "12259",
+    "11219",
+    "10259"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d46ab113b48135a643c8ac04c1cc458ad2837aabd71e4918ff79c9178a0441f0"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 2 3 √ 289 × 5 - 60 + 8 = 3 + 45 - ?",
+   "options": [
+    "-25",
+    "17",
+    "-17",
+    "-15",
+    "19"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "065e61d19c72663295742a19590bb5f3cdaefb0a67f0b960a8d8dce6f452abf1"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question ? 2 ( 843 + 237 ) ÷ 180 + 16 = ?",
+   "options": [
+    "284",
+    "272",
+    "292",
+    "282",
+    "262"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "10f47fe401ff9b1ad5d07199db78c8d19ed60257ea5eb8544744cb55ce495224"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of '?' in the following question? √729 × 6 + 15 × 50% of 450 - 366 ÷ 3 = ?",
+   "options": [
+    "2088",
+    "3415",
+    "3375",
+    "2812",
+    "3130"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2a184504eee0dc4f2a686e7a7010337ed7e37e25158112c9b5e91e1768a1b313"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark '?' in the following question? 122 ÷61 +71 x 2/5 - 12.5% of 12 = ? 3 3 7",
+   "options": [
+    "3.15",
+    "3.35",
+    "3.65",
+    "4.25",
+    "4.75"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6af1aacef5cf06d21e8acd214fbe2a27470e6b035ed8fee1a2b751a187a46e85"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of ‘?’ in the following question? 48% of 420 + 32% of 470 = 11% of ?",
+   "options": [
+    "3200",
+    "3000",
+    "3300",
+    "3500",
+    "2800"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6e53a995efbb76b991f112fb8104e12f9ff09cc0314bd68f78dd7ac74a160dc8"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Ratio of milk and water in a mixture of 48 litres is 3 : 1. 10 litres of the mixture is taken out from the mixture and then 20 litres of water is added to it. Find the final difference between milk and water.",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "1",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4aabd5c63d33ce112f8cd06ab6d4514bd3ab0e9101a7ea013fe280c939e22da5"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "A sum is lent at simple interest of 7% p.a. If at the end of three years, the amount received is Rs. 4,840, then find the sum lent.",
+   "options": [
+    "Rs. 4000",
+    "Rs. 5400",
+    "Rs. 5000",
+    "Rs. 5600",
+    "Rs. 4400"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d4c0512d25dde171b1f0cfa29b941779dd44691671fa71628f2f687002025b17"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "A dealer purchased a washing machine. He allows a discount of 10% on its marked price and gains Rs. 4000. If he allows a discount of 20% on its marked price and gains Rs. 3300. Find the marked price of the machine.",
+   "options": [
+    "Rs. 7,000",
+    "Rs. 9,000",
+    "Rs. 13,000",
+    "Rs. 10,000",
+    "Rs. 15,000"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f12992ff38be361616d6eef4af7a30c638128c8d0d5cc6d71d9a5c145f1c360f"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A and B can complete a work in 24 days. If A can complete the work in 48 days, then in how many days B alone can complete the work?",
+   "options": [
+    "24",
+    "40",
+    "48",
+    "42",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "206118277606e6a14c9daf194f3cc443c95dcdffc78d8104401fd9e6f12b243f"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of present age of A and B is 1 : 3 and the ratio of present age of A and C is 2 : 3. The difference between the present age of A and C is 2 years. 14 years hence, find the sum of there ages.",
+   "options": [
+    "70",
+    "64",
+    "60",
+    "56",
+    "68"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "979206fc4edb134b8b3a7703a10a5c1cb45c23c6a8b0596799bf26c7fb04dfef"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "A train moving at a speed of 36 km/hr crosses a standing man in 10 seconds. Find the time taken by it to cross a platform of 60 m. www.prepp.in",
+   "options": [
+    "10 s",
+    "6 s",
+    "12 s",
+    "16 s",
+    "20 s"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "93aee3278e32309b2f7059d6c2c53b5081a6e0443020a1e6e29a19efd8bd655a"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions. 3 @ K P 5 % R S D 7 © G L N W 9 € # 6 2 C Q Y 1 H J T 4 & U M X @ If the elements at even-numbered positions are removed from the arrangement, which element will be at the 4th position from the right side?",
+   "options": [
+    "X",
+    "T",
+    "&",
+    "R",
+    "D"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b49993f28483e61ab7e2ca981822cce9d892fb6b79e2bae1704f0fa245440704"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "How many number and letters in the arrangement are immediately followed by a symbol?",
+   "options": [
+    "One",
+    "Zero",
+    "Five",
+    "Six",
+    "Two"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1bb57bb1cee29f9855813893db685f44dfdd468dc97bc18a63a1b4361a86e85a"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "How many elements are there which are followed by Vowel and preceded by number?",
+   "options": [
+    "Two",
+    "One",
+    "Three",
+    "Zero",
+    "Four"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "625b02b4e73e71a59b4094389e08a25d6be0ea5822bfda330e0c565cbc08d7ab"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+   "options": [
+    "5%R",
+    "#6C www.prepp.in",
+    "T4&",
+    "P5%",
+    "@KP"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6bed88bacabaa79215d6feb69fa251163b9db6c7862cba8d3c9bc7afa5ae39a9"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "If a four-letter meaningful word can be formed by using the third, fourth, eighth and ninth letters from the word “POTENTIAL”, then what is the last letter from the right end of the newly formed word? Mark X as your answer, if more than one word is formed. Mark Z, if no meaningful word can be formed.",
+   "options": [
+    "T",
+    "L",
+    "X",
+    "Z",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2b88693e68b9965a2de7937f11bf2468086966ea02dd9ea562ad2d376c004e39"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight members of a family have two married couples and consist of three generations. X is the brother- in-law of U. P is the only sister of U. S is the son-in-law of P. F is the sister-in-law of Z. A is the son of S and A has only one sister. S is the brother of Z. The remaining person is B. If Z is married to a girl named W, then how is Z related to B?",
+   "options": [
+    "Father",
+    "Uncle",
+    "Brother",
+    "Cannot be determined",
+    "Niece"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "db47da14b53de3a6bfa3c41844258a365a5ba1265b37002ad561fe11159b3811"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "What is the relationship between F and B?",
+   "options": [
+    "Brother, sister",
+    "Father, son",
+    "Mother, daughter",
+    "Mother, son",
+    "Grandparent, grand child"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e2c1e2e4a19f828de870572825c425f9968128ea7d8454b454ce6b41e62d3d93"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement is Correct?",
+   "options": [
+    "F is the daughter in law of X",
+    "S is uncle of B www.prepp.in",
+    "B is niece of Z",
+    "X is father of Z",
+    "Both a and c"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "97334ff4b4b1a2256414bbea2b5ef9a7ebecd39e729cadb28c3eed5e7f3a1901"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. In a certain code of language, ‘place satellite on earth’ is written as ‘jo ki la si’ ‘earth moon on circle’ is written as ‘bp la mi jo’ ‘circle orbit through satellite’ is written as ‘si dv ut bp’ ‘moon navigation gone through’ is written as ‘js mi dv hm’ What is the code for ‘circle’ in the given code of language?",
+   "options": [
+    "la",
+    "si",
+    "jo",
+    "dv",
+    "bp"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5f2a9386f008a4e5fec35a78e0e8246d5b70d0b2e2e1a83220db96637a335608"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "What is the possible code of ‘place moon school’ in the given code language?",
+   "options": [
+    "ki jo mi",
+    "ki mi xi",
+    "mi la jo",
+    "ki mi dv",
+    "ki mi si"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1a80ecb4e82d9bb339a8d16ce8db7ec6672ee49477d7e339b9e54dde8f693944"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "The code ‘js’ stands for which of the following word?",
+   "options": [
+    "Either ‘navigation’ or ‘circle’",
+    "Either ‘gone’ or ‘place’",
+    "Either ‘gone’ or ‘navigation’",
+    "Either ‘earth’ or ‘circle’",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2c506be537bc5f6b39a1c6514d5b05a85c984f51624072954dfd35d85083dcd6"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "What is the code for ‘earth’ in the given code language?",
+   "options": [
+    "jo www.prepp.in",
+    "mi",
+    "la",
+    "Either jo or la",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "07334348597ddb7cde48a3e91f60c70dfe0659ea37f7364534d874ef0d092d60"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "What is the code for ‘orbit’ in the given code of language?",
+   "options": [
+    "si",
+    "dv",
+    "ut",
+    "bp",
+    "none of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1126ec2c167b956dbef448229c292dccf3c4afb285f1b0f274c3fdc51fa53a51"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of digits are there in the number “9458167244”, each of which has as many digits between them in the number (both forward and backward direction) as they have between them in the numerical series?",
+   "options": [
+    "Four",
+    "Three",
+    "Two",
+    "Five",
+    "More than five"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b744aeedd8f2a1e497ebc4016c77a3ea5efd6a68faf630acb4300fe10e193e53"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Direction: Answer the questions based on the information given below: R, S, M, Y, D and P have different number of colors. R has more colors than D and M. S has more colors than P, who doesn’t have fewer colors than R. S doesn’t have the highest number of colors. Who has the highest of colors?",
+   "options": [
+    "R",
+    "Y",
+    "M",
+    "P",
+    "D"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b0c29b7f964176609718b461ef1ba2ba9f2dc99b137b92395bd267faa63a897e"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "If M doesn’t have the least number of colors, then who has the least number of colors?",
+   "options": [
+    "R",
+    "Y",
+    "M www.prepp.in",
+    "P",
+    "D"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "171fd596f1f5d510b9a00d477ce19dc4aa9a8d8133235fddb40ba869a5c8f32b"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "How many persons have more colors than D?",
+   "options": [
+    "Four",
+    "Five",
+    "Two",
+    "Cannot be determined",
+    "Three"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "08ea12179a020f67584ed2368de93841051543014017a0204251f50fb2fb9644"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. There are 7 persons – P, Q, R, S, T, U and V – attended a seminar on different days among Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday, Starting the week from Monday but not necessarily in the same order. (Assume that they attended in the same month of the year.) Three persons attended between V and R. Neither V nor R is either the first or the last person to attend the seminar. Number of persons who attended before P is the same as the number of persons who attended after S. P attended after R but immediately before T. Q did not attend the seminar after U. Which of the statements is true?",
+   "options": [
+    "U attended on Monday.",
+    "Only two persons attended before P.",
+    "R attended before Q.",
+    "S attended after Friday.",
+    "All the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8f9fd7d3bfa64c79c9223d79cc207a4a0a63a2bb089431e8dda955856a0e6066"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Who attended the seminar on Thursday?",
+   "options": [
+    "R",
+    "S",
+    "T",
+    "V",
+    "U"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6e5f3b94387599ed628ca74231ba429331a1acd87ca18de8324b1df1fb593d2c"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "On which day does Q attended?",
+   "options": [
+    "Sunday",
+    "Monday www.prepp.in",
+    "Tuesday",
+    "Wednesday",
+    "Cannot be determined"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f1fe3e11c31adbe3be137169aad06e11c7c0107a3fe8783847a29e2002c11236"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "In a certain way R is related to T, and P is related to S. Following the same __ is related to V?",
+   "options": [
+    "R",
+    "T",
+    "S",
+    "P",
+    "No one"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "10b2f418e6a0f4c0881694d1c2275e58063163d753fec67030d27a4a5806eaf2"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "How many persons attended between P and U?",
+   "options": [
+    "Three",
+    "None",
+    "Two",
+    "One",
+    "More than three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "217377b8b9f92756abcc2fd7cc73541e787a770929a62532d42b079cffcb2a43"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight boxes – A, B, C, D, P, Q, R, and S, are kept in a room in such a way that each box is stacked on bottom to top of one another. Box S is kept below Box C but not immediately. 3 boxes are kept between Box B and Box R, which is kept below Box B. Box P is kept 3 places above Box Q, which is kept immediately above Box D. Box S is kept above Box B. Box D is not kept below Box A. Box P is kept second from the top of the stack. Which box is kept 5 boxes below the box kept third from the top?",
+   "options": [
+    "Box B",
+    "Box C",
+    "Box P",
+    "Box R",
+    "Box S"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "606dcd377da86e89d8725f8fc4c56b0894d4bca95d7a8d082779f2d458a9291d"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is/are correct? I. Four boxes are kept between Box B and Box C II. Box D is kept immediately below Box Q III. Box S is kept three boxes above Box A www.prepp.in",
+   "options": [
+    "None of the statements are correct",
+    "Only Statements II and III are correct",
+    "Only Statement II is correct",
+    "Only Statements I and II are correct",
+    "All the statements are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "425915c66774bda564a13a54df4c6e68f24f15ec426330e1bb953a5688bc9960"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "How many boxes are kept between the box kept seventh from the top and the box kept 3 boxes above Box R?",
+   "options": [
+    "2 boxes",
+    "5 boxes",
+    "1 box",
+    "4 boxes",
+    "No boxes"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a7ae018d56a47c6bfbec238d505ec44f51e385a1310083836affc629edd0523a"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Four of the five options given below follow a certain logic and form a group. Identify the odd one out.",
+   "options": [
+    "Box A",
+    "Box B",
+    "Box C",
+    "Box Q",
+    "Box S"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cfd766917382110e31777599fe30ae9d3ba9f8992629cc2a96ace08e969cf0ab"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "If all the boxes are rearranged in alphabetical order from the bottom to the top, which box will be placed fifth from the top?",
+   "options": [
+    "Box C",
+    "Box P",
+    "Box D",
+    "Box R",
+    "Box S"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "14eafde5327b55516227324c8b4766536b45d7f3e2f76ee7f5b63760bb5469f9"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Ten people are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. P, Q, R, S, and T sit in Row 2 facing North, while A, B, C, D, and E sit in the Row 1 facing South. E sits in the middle of the row and is immediate left of the person who sits opposite S. R sits at an end of the row and is sitting opposite to B. C sits to the immediate left of E. S sits exactly in between P and Q. D sits at an end of the row. Q sits to the right of S. www.prepp.in Who sits in the middle of Row 2?",
+   "options": [
+    "R",
+    "P",
+    "S",
+    "Q",
+    "T"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1fc32af406533447a70b2a1001c972f0faa78ca45e3c8e9792ecbd9143094f4e"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "How many people sit between the one who sits beside P and the one who sits at the right end of Row 2?",
+   "options": [
+    "1 person",
+    "2 people",
+    "3 people",
+    "4 people",
+    "5 people"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "abfbace2564dc0e56f7f192aede9fd6f8b3069421bb0be7944e2f06adc64da3b"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Who sits opposite to the one who sits second to the left of the one who sits beside D?",
+   "options": [
+    "Q",
+    "P",
+    "R",
+    "T",
+    "B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8fd85d0978ef0598d7203a5499f1ae944b0a66ad491bb0a144bdefc7e8cfb92a"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Who sits at the end of the row?",
+   "options": [
+    "D and A",
+    "A and B",
+    "P and T",
+    "P and B",
+    "R and A"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "827f10df2dd9ba8a9618696cbbe6e80a900e67ff6afbb62fb268a3e7e4fe8f28"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who sits diagonally opposite to R?",
+   "options": [
+    "A",
+    "B",
+    "C www.prepp.in",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "051a3a77752250c868b8a24afb73c9a36bd3b117aa8f5dcb5801662df89fa8ee"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few A is B. No B is C. Conclusions: I. Some A are not B. II. Some A are C.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9eb8cefc182d5f344135121660667da67b1cf7d0bc1d635550f15945e863d1f2"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few Pet are Cat. All Bat are Pet. Conclusions: I. Some Pet are not Cat. II. Some Bat are Cat.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f8f468ae4cb6005c85daf6676d009733493b218800e95f66ed7dfe9d0075f3cf"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with www.prepp.in commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Car is Train. Only a few Train is Bike. Conclusions: I. All Train can be Bike. II. Some Bike is Car.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8f6b5c4f19add1a6e26c8c313ca9be10bfa7f3aeff83f182c8761080ab82d01b"
+  }
+ ],
+ "section_confidence": 0.955,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

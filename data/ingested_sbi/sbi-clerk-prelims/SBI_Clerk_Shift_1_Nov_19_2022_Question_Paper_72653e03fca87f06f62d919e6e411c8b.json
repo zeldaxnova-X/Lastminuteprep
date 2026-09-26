@@ -1,0 +1,1515 @@
+{
+ "file": "SBI_Clerk_Shift_1_Nov_19_2022_Question_Paper_72653e03fca87f06f62d919e6e411c8b.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. 7 persons – B, C, D, E, F, G and H are sitting on a row facing north not necessarily in the same order. G sits three places away from D. Only one person sits between B and G. B sit neither adjacent to D nor at the end. Number of persons to the left of H is same as number of persons to the right of C. C sits to the right of G and to the immediate left of E. What is the position of F with respect to H?",
+   "options": [
+    "Immediate left",
+    "Third to the right",
+    "Second to the left",
+    "Second to the right",
+    "Immediate right"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "28753242b093c34480161a8293662d7f5c39eaf84f872f77ba0a42807b82d8f5"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are same in some way, find the odd one.",
+   "options": [
+    "FB",
+    "ED",
+    "HC",
+    "DG",
+    "BE"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b9ec0f4ea70d6cf31a5bdde50c08c978c182654fed84d08659003bd675bb02ab"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Which of the following is true?",
+   "options": [
+    "C sits to the right of D.",
+    "Three persons sit between F and E.",
+    "G sits in the middle of the row.",
+    "H sits second to the left of D.",
+    "All are true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5f65abf0164bed4fbab6b28e2e212ded077913ebde7619fbb5c2feefa48f51d2"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Who sits four places away from the person who sit adjacent to D?",
+   "options": [
+    "F",
+    "B",
+    "H",
+    "G",
+    "No one"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c7a389a9c136366d6665af152db268462307e44a9de17c841c268e7592997148"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "How many persons sit to the right of H and to the left of E?",
+   "options": [
+    "Two",
+    "One",
+    "None www.prepp.in",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "52553fbe3ac787e8287bfa3c9a8693b38574851fc5167385c1d414c56ee00f82"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "What is the difference between the sum of the digits of first four digits of the given number and sum of the last four digits in the number \"87345691\"?",
+   "options": [
+    "2",
+    "5",
+    "1",
+    "7",
+    "0"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6e1044f59e0a1287553afe6d3c9b5e1cd829fe2956d5378c2959440ba4d10f3b"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: I.Only east is north II.Only a few east is south III.All south is west Conclusion: I.Some north being west is a possibility II.Some east is north",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows",
+    "Both conclusion I and II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a8a217b09033b5a34c119e3d3775a7c64a3d723ee86f1fcb45815f8ade11e107"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions I, and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Only a few Cap is Hat Only a few Hat is Crown All Crown are Throne Conclusion: I.Some Hat is Throne is a possibility II.No Throne is Hat",
+   "options": [
+    "Only I follows",
+    "Both I and II follow",
+    "Only II follows",
+    "Neither I nor II follows www.prepp.in",
+    "Either I or II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "412db2edc5de5fb2eefab24cb724d3d0e13886571df708717e8e12abbdb5652e"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some roses are pens. All pens are pencils. Some pencils are markers. Conclusions: I.some markers are pens. II.No marker is pen.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Conclusion I and II both follow",
+    "Neither conclusion I nor conclusion II follows",
+    "Either conclusion I or conclusion II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "47b63d04d5dda6ca3121f2c477aec8bad1eb969976d2fcfc4c720bd22f83a345"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Directions: These questions are based on the following information. There are eight people in a family. M, K, A, C, D, E, G, and H consists of 3 generations. Four of them are females. D and A are the daughter and son of K respectively and both are married. E is the sister of H whose father is C. M and G are of 3rd generation and M is the son-in-law of E. K is the brother-in-law of H. How is K related to A?",
+   "options": [
+    "Son",
+    "Father",
+    "son-in law",
+    "Daughter-in-law",
+    "Mother"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fe1c20fd6c524ddaa8085ef276885cfceca6217fb5efc25ed803cd70bd0d941c"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Who among the following is the son-in-law of C?",
+   "options": [
+    "G",
+    "A",
+    "K",
+    "H",
+    "Cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "343cd50ae9635f87fc9f263e48f1455e20609b32767a32edd99d241d0a4ecf1e"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Who among the following belongs to the first generation?",
+   "options": [
+    "C",
+    "H www.prepp.in",
+    "K",
+    "A",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6ee707b3a40d7f808e5e3ea52248ea76e88fdf626d39ea20ed3859f1a1c4cc22"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. 7 boxes – P, Q, R, S, T, U and V – are placed one above the other not necessarily in the same order. Box U is placed third from either of the ends. Box P is placed adjacent to box U. Three boxes are placed between boxes P and S. Number of boxes placed above box S is two more than the number of boxes placed below box V. Box Q is placed above box R, which is not placed below box S. How many boxes are placed between boxes R and P?",
+   "options": [
+    "One",
+    "Three",
+    "None",
+    "Two",
+    "More than three"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "434dabdc750687f15295568a5ba30c6e0f8cb5f94373f0e4c767e45514a969ef"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "Which box is placed three boxes below box U?",
+   "options": [
+    "V",
+    "Q",
+    "S",
+    "T",
+    "R"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "58f61842ba8777a68f18293f6c1d779eab636e80c16cd6eb4ff26ad5360366fd"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "Number of boxes placed below box Q is same as the number of boxes placed above box ___.",
+   "options": [
+    "P",
+    "R",
+    "S",
+    "T",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fe63a6544c8cec25b066cfa4842c0960cfed1f159439e1674327103b06971ffa"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Which of the following is false? a.Box T is not placed at the bottom. b.Box V is placed immediately above box R. c.More than four boxes are placed between boxes Q and S.",
+   "options": [
+    "Only a",
+    "Only a and b",
+    "Only c",
+    "Only a and c",
+    "Only b and c"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "96dfaf9cd64c53ec82355e4201681dd10daf1dcf79495ecbb705c12d923c76ea"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "boxes remain unchanged?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "None",
+    "More than three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "39ba2434e6955b1c1f72e424d4f3ffa7a1663d7b39234a2bd4c69e89c20cb5e5"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word \"UNIQUE\" which has as many letters between them in the word (in both forward and backward directions), as they have between them in the English alphabetical series?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "None",
+    "More than three"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "df3bed3144357984a64466117bc90c24200ba9ed49e2b170c57574ac41e6b18e"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: W = B; B ≤ F; F < R Conclusions: I. W = F II. W < F",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Either I or II is True",
+    "Neither I or II is True",
+    "Both I and II are True"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "83f4aef045df412128918c664687b3dd915101e61c24573098b7a2f9841cae1d"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which conclusion among the given conclusions is/are definitely true and then give your answers accordingly. Statements: F < A > B = E; D < C = G > E Conclusions: I. A > E II. E > D",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Either I or II is true",
+    "Both I or II is true",
+    "Neither I or II is true"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4c6c8097453852a03a5d358e5efac259cf88d6c56065b0072ccd4b69718d2dcc"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: J > D > A ≥ S; C > X ≤ F ≤ S Conclusions: I. D ≥ X II. C > A",
+   "options": [
+    "Only II is True",
+    "Neither I nor II is True",
+    "Both I and II are True",
+    "Either I or II is True",
+    "Only I is True"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d6461aa12c9885afbeb69091c245919446d4ea1c23b310a49b47d9e6f270bf01"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: Kashish went 15 kilometers to the West from my house, then turned right and walked 20 kilometers. He then turned East and walked 25 kilometers and finally turning right covered 20 kilometers. How far was he from his house?",
+   "options": [
+    "5 kilometers",
+    "10 kilometers",
+    "40 kilometers",
+    "80 kilometers",
+    "20 kilometers"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f15a5c58657a378ab46b2894a20d8f6a3593ca50faedb65fcb731ff9c75bb247"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight persons – A, B, C, D, W, X, Y and Z –are living in a four-storey building such that ground floor is numbered as 1, the floor immediately above floor 1 is numbered as 2 and so on. Each of the floors has two flats in it as flat P and flat Q. Flat Q is to the east of flat P. Flat P of floor 2 is immediately above the flat P of floor 1 and immediately below the flat P of floor 3 and so on. In the same way, flat Q of floor 2 is immediately above the flat Q of floor 1 and immediately below the flat Q of floor 3 and so on. D lives immediately above the flat in which A lives in the same flat but not in flat Q. There are two floors between the floor on which A and Z live. There is only one floor between the floors on which Z and B live. Y who lives on an even numbered floor lives above the floor on which C lives. C lives below the floor on which X lives. C and X live in the same flat but not with Z. In which flat and on which floor does W lives?",
+   "options": [
+    "Flat Q, Floor 3",
+    "Flat P, Floor 4",
+    "Flat P, Floor 3",
+    "Flat Q, Floor 1",
+    "Flat P, Floor 2"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "57fb092daa8078a03c31b6d33bc2072088cd486ba647553e25d2ec6813bde0c9"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Who lives on the same floor with Z?",
+   "options": [
+    "Y",
+    "X",
+    "B",
+    "C www.prepp.in",
+    "A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0fdab60e3b250281cc9abe8da36379ce10477d59336b5624f7a68304e539de2b"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are same in some way, find the odd one.",
+   "options": [
+    "W",
+    "A",
+    "D",
+    "C",
+    "X"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "02febf3a1d8570205a7336d0f3ec1528477f6ae502b998145f41121cf7c2b0ca"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "If W and B interchange their position, then who among the following lives immediately below B?",
+   "options": [
+    "C",
+    "A",
+    "D",
+    "X",
+    "Y"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7de784ed81ce448b7cacb82a60ba0beb59898c5de7d911b38de6bb15ed499278"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Which of the following is true?",
+   "options": [
+    "Z lives in flat Q.",
+    "B and X live in different flats.",
+    "Y lives on floor 2.",
+    "D lives below the floor on which W lives.",
+    "All are true"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ff9edc52585209b82709e56e69143698cde5bbdce2f7ca554cbffdd6ccc2ad19"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement carefully and answer the questions given below: N T * I A ^ $ J # B * B U A R Q D & L O @ P T ! F How many such symbols are there in the above series which is immediately followed by a consonant and immediately preceded by vowel?",
+   "options": [
+    "Two",
+    "Three",
+    "One",
+    "Four",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "863eeeda5c10f4ad42a6224b0d17dafe8b3d85958a666a41f8258af2032bd100"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "If we remove all the symbols from the above series then which among the following alphabet is the 9th from the right end?",
+   "options": [
+    "R",
+    "Q",
+    "D",
+    "A",
+    "None of these www.prepp.in"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "39ad1cd9086f502d13fc5d42cbf2f9422f1f06690a737dd9bd7758519e510627"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Which among the following elements is 5th to the left of 7th from the right end of the series?",
+   "options": [
+    "T",
+    "A",
+    "&",
+    "@",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ab6d43ce029f2732b4da16493eb86d6389ffe616cc09139da47aa8a9a9ad4e6c"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "How many such vowels are in the series given each of which is immediately followed by symbol and immediately preceded by a letter?",
+   "options": [
+    "Two",
+    "One",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "97b32e59f4db37d9cfd5921e0222110c177e4ab6077bc70a7918c80dcee79948"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "If all the symbols are replaced with a digit 5 then how many such 5’s are there in the new series each of which is followed by a consonant?",
+   "options": [
+    "Five",
+    "Six",
+    "Four",
+    "Eight",
+    "Two"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9d7d04e63c1f47d6e7da25732aba26fb082deccf89bcca86288e79e26196b5ad"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions that follow: There are six members in the group - A, B, C, D, E and F who score different marks in an exam. All are sitting in a row according to their marks. B scores the second highest mark. Marks of F is less than D. A scores fewer marks than C and E. F is the third highest score in the group and has scored 56 marks. D is the highest scorer in the group. Who score second highest in the group?",
+   "options": [
+    "A",
+    "B",
+    "E",
+    "F",
+    "C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "85fed4a023f0bbe2bce68db479f1b02aa70b3cd3a0c0f4ec4ea65ed05a96b340"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Who score second lowest marks in the group?",
+   "options": [
+    "E",
+    "B",
+    "C www.prepp.in",
+    "D",
+    "Either option 1 or option 3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "396f8c3111da2a3f411c39011034688cd011c17ebd49cca3dced4bcaef6082e6"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "If sum of F and B mark is 116. then what is possible marks of D?",
+   "options": [
+    "60",
+    "62",
+    "58",
+    "57",
+    "56"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e408871bc93184612741dcaf496813da1f3377065edd2187cfb4ba2b4ddafe66"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "If the numerator of a certain fraction is increased by 80%, while the denominator is increased by 200%, then the ratio of the numerator and denominator becomes 21:50, what will be the actual fraction?",
+   "options": [
+    "5/7",
+    "7/8",
+    "7/10",
+    "8/11",
+    "5/8"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "da4c694a50f00254717c69b20e96d365579af3153e5f586871b9833eefe61c75"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "A certain work was completed by A in 9 days, B in 12 days, C in 15 days, If A and C did work for 4 days and then leftt, then B will finishes rest work in how many days?",
+   "options": [
+    "4(2/3) days",
+    "4(1/3) days",
+    "4(1/4) days",
+    "4(1/5) days",
+    "4(1/2) days"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "43282063f84d440dde0864499092e6e83c53873454c5bb3278845211628203fb"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. 5x2 + 26x + 33 = 0 II. y2 + 18y + 65 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y can not be established."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ec403a6b1dfefc879d76fc0ab8774b61530e1ce14c30eec3a3e77fdd83386bac"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. 6x2 - 23x + 20 = 0 www.prepp.in II. y2 - 5y + 4 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y can not be established."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9ea64ce73636a9ab37cdbcd9378b4287800b1731a3ca47d8177441660405df14"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "In the given questions, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer. I. x2 + 30x + 81 = 0 II. y2 + 26y + 48 = 0",
+   "options": [
+    "x < y",
+    "No relation in x and y or x = y",
+    "x > y",
+    "x ≤ y",
+    "x ≥ y"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "37923abee9606f0432c38df92249e99e2ed2f88b402f5c3fcc8774cf4cb701b8"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "In the given questions, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer. I. x2 - 14x + 45 = 0 II. y2 - 11y + 30 = 0",
+   "options": [
+    "x ≤ y",
+    "x > y",
+    "x ≥ y",
+    "x < y",
+    "No relation in x and y or x = y"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f693b1d8d6e4718ef69578645e80ec2132f94d2ce5f8460f215ea44c95c6f99a"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "Two equations I and II are given below in question. You have to solve these equations and give the answer. I. x2 + 13x + 42 = 0 II. y2 + 21y + 104 = 0",
+   "options": [
+    "x < y",
+    "x > y",
+    "x ≤ y",
+    "x ≥ y",
+    "x = y or the relation between x and y can't be established."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e321979cf8db02133ac80d9636af2873edb58ee83cb815442fcdfcfdce9fabc7"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What approximate value should come in the place of question mark (?) in the following question? [(15.98 + 9.99) ÷ 1.99] × 4.98 = ?3 + 1.09 www.prepp.in",
+   "options": [
+    "11",
+    "8",
+    "2",
+    "4",
+    "5"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2900627cd1cd65f886996622447d1ebe10139164860f64cd7f4de5fe6a4b1162"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What approximate value should come in place of the question mark (?) in the following question? (222.22 + 71.98) ÷ 2.99 = 8.99% of 299.99 + 29.99 + ?",
+   "options": [
+    "31",
+    "41",
+    "21",
+    "11",
+    "51"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cc98e445e2d913c585142d642f42e0f4e5a92822d89532f6dbba4088de5be450"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What approximate value should come in place of the question mark (?) in the following question? 3 220.89 + 2.12 + 205.96 = 1.99 × ? + 214.98",
+   "options": [
+    "90",
+    "100",
+    "120",
+    "80",
+    "110"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "da90cd8079001ad2c17b5425c89210985c52633044ba3287a66def3a7a66d9c0"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 52% of 150 + 15 × 35 - √841 × 8 = ?",
+   "options": [
+    "372",
+    "373",
+    "371",
+    "370",
+    "None of these."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d0aa31e15603ef9e7dc2c9652ff42b7fabfd1159c395563088e167824296d781"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 80% of 140 = 25 × 8 - ? + 12 × 4",
+   "options": [
+    "147",
+    "137",
+    "146",
+    "136",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ea6dd7ed70e013e3ab90e592c6350ec19629e28b77e48a3448f5f7586ed069e2"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? www.prepp.in 131 × 6 + 189 = 210 ÷ 7 + ?% of 63",
+   "options": [
+    "1400",
+    "1500",
+    "1550",
+    "1450",
+    "None of these."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0cbc1422f92b349f8e0683e8dfe8ba85472b077987c8d8a65203ba23783c441e"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 17 × √9 + 30% of 200 = 25% of 80 + ? × 13",
+   "options": [
+    "7",
+    "1",
+    "9",
+    "5",
+    "None of these."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d349e129bc909291542f012df3de693da822676317e47a427ba90b4002bf6d7d"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 44 × 46 – 80% of 1900 = √441 × ?",
+   "options": [
+    "23",
+    "24",
+    "28",
+    "14",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "71d5ce8a73f85385f2047b97781ec85f7c7f9aaf80a77d0c05b463df9b241df2"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? ?% of 400 × (3/4) + 300 = 66.66% of 900",
+   "options": [
+    "100",
+    "260",
+    "70",
+    "180",
+    "50"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ad15879bf5899aa5c688b4c280f20bf8614bfbf4fce535bff8b05498aa9f34e9"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 25% of 212 + 5% of 140 = 2 × 11% of 500 + ?",
+   "options": [
+    "-46",
+    "-32",
+    "-50",
+    "-60",
+    "-25"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "60459b6066293b5942983744ce899c75afb4afee6a7c28052d77b72ef944a37e"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "√81 + 162 ÷ 18 = 297 ÷ 33 + (?)2",
+   "options": [
+    "8",
+    "6",
+    "13",
+    "3",
+    "None of these."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6b49a3be0edde0d56451c3da7aca378b4bf85a0693368e3dfec405d6611b93c4"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 33 × √25 - 30% of 200 = 25% of √1296 + ? × 12",
+   "options": [
+    "7",
+    "8",
+    "9",
+    "5",
+    "None of these."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5fe1804ef90c0a71e285fee50562480fe4991dc9e1d81bb764acb301b4df0832"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? ?% of 550 × (3/5) + √625 = 28.57% of 630 + 10",
+   "options": [
+    "100",
+    "260",
+    "70",
+    "180",
+    "50"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "919e7c4cd8dbc5006cabdeef707862ad07737bd1af4c875efc92b60082e03308"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 112 + 120 ÷ 12 × 2 = ? – 30",
+   "options": [
+    "270",
+    "137",
+    "190",
+    "171",
+    "None of these."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e7b2d7a73af15a0211873cfece8fa85465fa002970837f2315fd09aa3d395035"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 25% of 28 - 20% of 30 + 22 = 5 × ?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "0",
+    "4"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e0f15d1c0989bff92c9979dce2326b1c66d9b4aec4d2f7c4a9687e57e60b9648"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "In the below given table, the total number of headphones, Adaptors and Chargers sold by five different companies in 2019 is given. On the basis of the given data determine the answered of the questions asked. Companies Headphone Adaptor Charger I 500 150 150 J 650 100 200 K 750 100 300 L 800 200 400 M 500 250 500 In 2020, a new company T&T joins, and it was found that the sale of headphone for the company is 40% more than the sale of headphone by L in 2019, while the sale of Charger by the company is 30% less than the sale of charger by K in 2019. Find the total number of the headphones and chargers sold by T&T company in 2020?",
+   "options": [
+    "1400",
+    "1390",
+    "1410",
+    "1430",
+    "1470"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d772a6cbbedb9ca8c8f08a809029ad77a2fb0679ab7b73068674391cfe204031"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "If each company has targeted to increase their sale of chargers by at least 25% in 2020, but it was found that I, J and K have scale up their target only by 20%, while M have scale up by 35%. The sale of charger by M in 2020 is approximately what percent to the sale of I,J and K in 2020?",
+   "options": [
+    "84%",
+    "85%",
+    "87%",
+    "77%",
+    "80%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fae7ccc1b86dfdc733ab9f389202dfcfad8e6153db4a82acc0bb87f9c79cc86b"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "If the sale for headphones is increased by 50% in 2020, and sale for Adaptor is increased by 40% in 2020 for shop M, then what will be the new ratio of sale of headphones and adaptors in 2020?",
+   "options": [
+    "5:17",
+    "5:14",
+    "7:11",
+    "7:15",
+    "8:13"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7f67ac6fe33d836a1541dfec5ae88d7e5157276bbee780db7c08c0d127a8a342"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "If in 2020 the total sales of Headphones for all the shops are increased by 120%, what will be the number of Headphones sold by shop M, if it was considered that half of the Headphones are sold from M and L?",
+   "options": [
+    "2090",
+    "2190",
+    "2070 www.prepp.in",
+    "2240",
+    "1990"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "581a7a044e70c74518508b28ce03d2173c99108b04712512c20bd6cfd90f1102"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What will be the total ratio of the Headphones and the Chargers sold by all of the company in 2019?",
+   "options": [
+    "55:31",
+    "54:31",
+    "57:31",
+    "58:31",
+    "59:31"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "bccc2772a22bb62da0957af19c87f8f9652b1740f99cc4079567ad9c2f2caa0b"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A boat having a speed of 12 Kmph covering a distance of 36 Km in upstream, and a distance of 30 Km in downstream. if the time taken by the boat to cover the distance in up and down is in ratio of 2:1. Find the speed of the stream.",
+   "options": [
+    "3 Kmph",
+    "4 Kmph",
+    "5 Kmph",
+    "6 Kmph",
+    "8 Kmph"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3437896a286124088938e1cb534ff0a25e96362392cdc96f0947a6ce7c7bc9b5"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "If the height of the triangle is 24 cm, and the area of the triangle is 168 sq. cm. The perimeter of the rectangle is 84 cm. If it were given that the base of a triangle is equal to the breadth of a rectangle. Find length of rectangle.",
+   "options": [
+    "30 cm",
+    "32 cm",
+    "28 cm",
+    "40 cm",
+    "25 cm"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "223916ae74f72a5a65d1d232cfca88b6b95ab1e448f61f449c182131d2f20e6c"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "If the ratio of Income of 2 companies is 7 : 5, while it was found that the ratio of expenditure is 5:3, If both the companies saves Rs.10,000 in each month. Find sum of monthly income of both the companies?",
+   "options": [
+    "Rs. 50000",
+    "Rs. 55000",
+    "Rs. 60000",
+    "Rs. 65000",
+    "Rs. 70000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0f24f0474d5985b2d1c9a34d4d44ec55491733adf8b1e5f4341489acca4ddee2"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of 80 students in a class is 30kg. The number of girls in a class are 40% less than the number of boys in a class. The average weight of girls in a class is 24kg. Find the difference between the average weight of boys and average weight of girls in a class. www.prepp.in",
+   "options": [
+    "12.6 kg",
+    "7.5 kg",
+    "11.9 kg",
+    "9.6 kg",
+    "12.8 kg"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3f0f24221686ce94358af50334596cce8bf942cbf3d9c24e7bae27c71507550a"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "There are 3 friends named Sahil, Tanya, and Deepak. it was found that the average age of Sahil and Tanya is 22 years. While the ratio of Sahil and Deepak's ages is 7:5, and the sum of all the friends together is 72 years. what will be the present age of Tanya?",
+   "options": [
+    "14 years",
+    "20 years",
+    "12 years",
+    "18 years",
+    "24 years"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4e335195286f34a6a72b198a7b730212f9b125c97c789e8f605ad192d802f162"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "A sum of money gives an interest of 1/5 of itself in T years, when it is given in the rate of 10%, Find amount after (T+3) years.",
+   "options": [
+    "1.2 P",
+    "1.25 P",
+    "1.35 P",
+    "1.5 P",
+    "1.6 P"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "594a75884526ca3a652f46a603a789f2dad5ee29db86cad0dbae22fd8c44364d"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "Monthly income of a person was Rs. 36,000. if he spent 25% on food, 12 % on his children's education and saves x% in bank account. After the calculation, he found that he was left with Rs. 2160. Find the sum of amount which he saves in his bank.",
+   "options": [
+    "Rs. 18840",
+    "Rs. 16420",
+    "Rs. 20520",
+    "Rs. 22140",
+    "Rs. 24720"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b6feb0b2de78a734e8d4c685e4b05055efde430119c22be795b4dbfab6ab24d6"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "A train having a certain length of x m covers the two different platforms having lengths of 140 m and 180 m in 18 sec and 20 sec, respectively. Find speed of train (in kmph).",
+   "options": [
+    "70 Kmph",
+    "72 Kmph",
+    "75 Kmph",
+    "78 Kmph",
+    "80 Kmph"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9f02c3f0938ec3e07ff062d18b9e2aec62d863862d0d948fdc5d42bd49414133"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "www.prepp.in Directions: Read the following passage and answer the following questions. Some words are highlighted to help you answer some of the questions. With the Humane Agrarian Centre, a one-of-a-kind rural museum, Prem Singh’s farm stands as an exception in the hilly region of Bundelkhand, divided between Madhya Pradesh and Uttar Pradesh. The land is otherwise synonymous with droughts, farmer suicides, unemployment as a result of crop failure, extreme weather conditions with below-average rainfall, and low water availability. Despite all the odds stacked against him, Prem Singh made out against these tribulations as a farmer who went debt-free without loans from the banks only by using taking the less travelled road. Singh’s lush green farmland paints a vivid picture of sustainable farming: organic produce and homegrown compost, fruit-bearing trees, livestock shelter with water- bodies, well-nourished soil, natural fertilisers and, most importantly, a continuous source of income. Born into a family of farmers, Prem (54) grew up on the fields amidst the once lush green farms, fresh harvest and livestock. After studying MA Philosophy at Allahabad University and Management in Rural Development from Mahatma Gandhi Chitrakoot Gramoday Vishwavidyalaya, he joined his ancestors occupation and began farming in 1987. Despite toiling daily, Prem’s family continued to be in loss; bank loans and interest rate increased with each passing loan repayment date. Two years into the profession, he realised that something was wrong: conventional agriculture was proving to be very expensive and his family began slipping into debt. Further, the increased use of fertilisers and chemicals proved to be harmful to the soil’s ecological balance. That is when he started to look for alternative ways of farming and his meeting with Nagraj helped. In 1989, he sought his father’s permission to start experimenting with sustainable and traditional farming in a small part of his land. Prem Singh of Banda district in Uttar Pradesh now practices Avartansheel Kheti, also known as Periodic proportionate farming, which he says is the way forward for farmers in the country. Avartansheel Kheti is based on the philosophy of A Nagraj, who was a proponent of harmonious co-existence. Singh believes that nature value adds to everything, like trees add value to the soil nutrients by producing fruits. Similarly, farmers should also process everything before selling. Avartansheel Kheti insists that farmers should produce food for themselves first and what remains after consumption should be sold in the market. This way, the farmer will never put harmful pesticides and fertilisers if they are growing for themselves. He explains the method of his technique: the farmer would have to utilise his farm by dividing it into three parts: core one-third would be used for rearing fruits and crops, the outer one-third for growing timber and the remaining portion for animal husbandry. The outer circle of trees shields the inner crops from wind and reduces the intensity of the weather extremities. Mr Singh now processes all the produce from his farm, He makes pickle out of turmeric; candy and powder out of amla (gooseberry), sattu or gram flower __________ chickpeas, and produces paneer from milk. He also gets about 15-20 tonnes of mango every year, which he sells in the open market. Middlemen, he thinks, are one of the biggest problems for farmers and he says that the only way to reach the consumer directly is by processing the produce at the farm level. Mr. Singh’s multi-pronged technique, pioneered and implemented by him for over a decade, is similar to the idea of farming Prime Minister Narendra Modi has been propagating in his addresses to farmers. What are the processed foods Prem produces and sells?",
+   "options": [
+    "Pickle from turmeric",
+    "Candy and powder from amla",
+    "Gram flower from chickpeas",
+    "Paneer from milk",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b41589c9ee8c267a59eb53d712f6cd6504f975be55a08fa82a624a51750e08d7"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Which of the following is/are correct according to the given passage? A. Prem did Master's in Philosophy from Allahabad University and Management in Rural Development from Mahatma Gandhi Chitrakoot Gramoday Vishwavidyalaya. B. Prem's family was not associated with farming before his entry into the occupation. www.prepp.in C. Prem's meeting with Nagaraj influenced him to change his way of farming into Avartansheel Kheti.",
+   "options": [
+    "Only A",
+    "Both A & B",
+    "Both A & C",
+    "Both B & C",
+    "Only C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2d4d34896fe85b6ba6acf770970ffdeff34739715414786144834dbff3c5e974"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "Which of the following is correct according to the given passage?",
+   "options": [
+    "Prem's family was incurring loss when they were following the traditional methods.",
+    "Prem always wanted to move away from the farming occupation.",
+    "Mr Singh believes that despite other problems with the middle men, they can really help the farmers.",
+    "Periodic proportionate farming requires dividing the land in four equal parts.",
+    "Mr Singh thinks that the only way to reach the consumer directly is by delegating the step of processing the produce to the middlemen."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3bcf49ccdd01212083c35a79aeb18e27a77e3476fa9c7099bdacdd321b0487b5"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Which of the following is incorrect, according to the given passage?",
+   "options": [
+    "Periodic proportionate farming is based on the philosophy of A Nagraj.",
+    "In Avartansheel Kheti, the outer circle of trees shields the inner crops from from various kinds of weather extremities.",
+    "Mr Singh suggests that the farmers should only sell the remaining produce in the marketproduce after keeping food for themselves",
+    "Mr Singh sells the mangoes harvested from his farm directly to the rural mandis.",
+    "Mr Singh opines that farmers should also process everything before selling"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b3a8ec835c7227c77b562b3a75005e436389eff2b1dc3875504d40f583045627"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "Out of the given alternatives, choose the one which is most similar to the meaning of the given word. Start",
+   "options": [
+    "Surcease",
+    "Halt",
+    "Pause",
+    "Conclude",
+    "Begin"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8593f5fcf3519c53281f0b539df71d9ec048ea8c3af76691905cce76131ec08b"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "Out of the given alternatives, choose the one which is most opposite to the meaning of the given word. Shield",
+   "options": [
+    "Protect",
+    "Obfuscate",
+    "Defend",
+    "Screen",
+    "Imperil"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "605e63c188a71dc9a951f4fff2cd325da09e8fce43b949157941f488f1365860"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "What will fit in the blank taken from the passage: \"He makes pickle out of turmeric; candy and powder out of amla (gooseberry), sattu or gram flower __________ chickpeas, and produces paneer from milk.\"",
+   "options": [
+    "in with",
+    "make from",
+    "out of",
+    "out with",
+    "along with"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0c8f6f81ab31d5af60d007948eb1964d74b2e95541902cda30968677264f5b41"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "According to the passage, which of the following is NOT a problem plaguing the agrarian scenario of Bundelkhand?",
+   "options": [
+    "Below average rainfall and droughts",
+    "Farmer Suicide",
+    "Low water availability",
+    "Lack of goods transport facilities",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "476b838b432eb09212b7980d49bad1b636cd1db01a382fcc91ba0eac8f1b450f"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Which of the following cannot be inferred from the passage?",
+   "options": [
+    "It is possible to earn more through Periodic proportionate farming than following traditional method",
+    "Making farmers produce food for themselves first before selling the produce in the market will reduce the possibility of their putting harmful pesticides and fertilisers.",
+    "Periodic proportionate farming can solve the problem of water availability in India completely.",
+    "Mr Singh's approach towards farming is similar to that of the Prime Minister Narendra Modi.",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f3f2462f3f8f6724ace0af6d22de72fe060d05c240fe8b5421e7d8ef3e9dc1d6"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. The law further provide (A)/ for the re-engagement (B)/ of men of all ranks, (C)/ under conditions varying (D)/ according to their rank (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "39cb22c89c63a42b4b01a6fc4a299b12d6af43c2c3fcd690b550407496e85bb9"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Direction: Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. To maximize the scholarship (A)/ opportunities, we should focus (B)/ on our educations and keep (C)/ our priorities in the right place.(D)/ no error",
+   "options": [
+    "A www.prepp.in",
+    "B",
+    "C",
+    "D",
+    "NO ERROR"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f39b7f0e054651c33386d4fe3e7136beb739d75807398f915e289904e98492dc"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Read the sentence below to find out if there is any error in it. The error, if any, will be in one part of the sentence. The letter of that part is the answer. If there is no error the answer is (5). (Ignore errors in punctuation if any). Three men were arrested for alleged (A)/ impersonating civic body officials (B)/ and extorting money from shopkeepers (C) /in east Delhi’s Mansarovar Park, the police said on Sunday. (D)/. No Error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8a8d9f9451c324cfcecdbbf8e005d677fec8fa7eb490f437e839eb854f5e8896"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "Directions: In this question, a sentence has been divided into five parts (A), (B), (C), (D), and (E). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. If there is no error, the answer is 'No error'. Ignore the error of punctuation if any. A pair of supportive (A)/ shoes are important (B)/ if you are (C)/ experiencing lower back pain. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "25d83da9cd0f559e91f32bcb202f554460b830710526299d911871327f182cbf"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Read the sentence below to find out if there is any error in it. The error, if any, will be in one part of the sentence. The letter of that part is the answer. If there is no error the answer is (5). (Ignore errors in punctuation if any). The result was a material(A)/ which was tough(B)/ or tensile, possessing (C)the dexterity of fabric.(D)/ No error(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fa52e3ba9ea4cd7d88f763b3bef6c07869aeec1d47b438b83e121aa7e692f3b1"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: In the following passage, there are blanks, each of which has been numbered. Against each five words are suggested one of which fits the blank appropriately. Find out the appropriate word in each case. www.prepp.in Good nutrition has the potential to __(A)__ the present and future generations. India’s greatest national __(B)__ is its people — especially women and children – but even after 75 years of independence, a __(C)__ of them do not get the required diet to meet their nutritional needs. A child’s nutritional status is directly linked to their mother. Poor nutrition among pregnant women affects the nutritional status of the child and has a greater chance to __(D)__ future generations. Undernourished children are at risk of underperforming in studies and have limited job prospects. This __(E)__ cycle restrains the development of the country, whose workforce, affected mentally and physically, has reduced work capacity. While there has been some progress in tackling malnutrition among children and women over the past decade, the improvement has been modest at best. This is despite declining rates of poverty, increased self-sufficiency in food production, and the implementation of a range of government programmes. Which of the following words most appropriately fits the blank labelled (A)?",
+   "options": [
+    "empower",
+    "enervate",
+    "exhaust",
+    "undermine",
+    "beholden"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "408ea277665dcd48d4c564e11a3a2c597b014bfd6d0a6801be71ed35910a5824"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Which of the following words most appropriately fits the blank labelled (B)?",
+   "options": [
+    "burden",
+    "coterie",
+    "treasure",
+    "totem",
+    "rancour"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1a110c3c61b1ddfe2a946a0034102d977ed33454b3ca2e3589a8337dc7692962"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Which of the following words most appropriately fits the blank labelled (C)?",
+   "options": [
+    "many",
+    "much",
+    "most",
+    "little",
+    "majority"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7b107f07267300d93729683da0a328df7638bb669d5d80ca198fbf64316d6a39"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Which of the following words most appropriately fits the blank labelled (D)?",
+   "options": [
+    "empower",
+    "affect",
+    "improve",
+    "embolden",
+    "enable"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2b21de10675e70a3f3285f281c1cc11487de2330af46c28a6e5fb6a37c3a9e12"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Which of the following words most appropriately fits the blank labelled (E)?",
+   "options": [
+    "seasonal",
+    "lunar",
+    "natural www.prepp.in",
+    "vicious",
+    "complete"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "43a9a18d5a98c3ff4e165fcef3418413b40c18d97caab76332b1c22fa685db03"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. The car I brought is ten times cheaper than his luxury car.",
+   "options": [
+    "cheaper then",
+    "as cheap as",
+    "cheap than",
+    "as cheap than",
+    "No correction required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "edc47d1df62e1a840ce098725569f7711e2cfd4b363a5298e1324eeb798abde7"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. As a law-abiding citizen, it was difficult to put on with the anti-government group of neighbours with questionable activities.",
+   "options": [
+    "put off with",
+    "put out with",
+    "put up with",
+    "put down with",
+    "No correction required"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2e059fbc7614b89c8aef697c21b0ac1a235d81246711f75654e753b6b3549af9"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word/phrase that is underlined in the sentence to make it grammatically correct? if the sentence is correct as it is given and no correction is required, select 'No correction required' as the answer. The committee was split on whether the new regulations for the National Health Protection Scheme should be implemented.",
+   "options": [
+    "were split on whether",
+    "is split on whether",
+    "has been split on whether",
+    "was split over whether",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c5ea72949da80791c0e4d8963eeb6178d5bda13a2936239c51d249a9af285e4a"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "A sentence/ a part of sentence underlined.5 alternatives are given to embolden parts that will improve the meaning of the sentence. Choose the correct alternative. In case, no improvement is needed, click the option corresponding to 'no improvement' Moral ethics are to be taught to the students at an early age by their parents, teachers, and society for their overall development.",
+   "options": [
+    "is to be",
+    "are be",
+    "were to be www.prepp.in",
+    "was to be",
+    "No Improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "433ff775becc2ea684fb10c799a20e5306cc8623904eb8cccabbf36cc1f23a3d"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "In the following sentence, a part of the sentence is underlined. Below are given alternatives to the underlined part, which may improve the sentence. Choose the correct alternative. In case no improvement is needed, choose the alternative that indicates 'No improvement'. Due to its complex tribal equations and rugged mountainous terrain, Rajasthan has historically be an difficult place for external invaders.",
+   "options": [
+    "historic has a difficult place",
+    "historically been a difficult place",
+    "historically being a difficult place",
+    "historically been a difficult places",
+    "No improvement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "62102d5fa924a0e2e37b1a296242d7fe41800ad57516b084725b3246b6ab1119"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Given below is a sentence that may or may not be grammatically viable, choose the most suitable alternative that reflects the grammatically correct sentence. He would often say the exact opposite of what he had said on a previous occasion, so both points would be right after the debate had ended.",
+   "options": [
+    "and both points",
+    "so both points",
+    "yet both points",
+    "nor both points",
+    "or both points"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ac7a1db3a82e5e770ca641e03fcb8c6918e4265d659628e4a96be24f1a1ebb97"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with three words marked as (A), (B) and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. In the rainfall (A) when water droplets (B) fuse together and become heavy, they come down as clouds. (C)",
+   "options": [
+    "ABC",
+    "CBA",
+    "BCA",
+    "CAB",
+    "No Rearrangement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "89077d147612494aadb7d28309aed74a5aabb273abc0032fe0ebb445a078b899"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with three words marked as (A), (B) and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The lungs (A) of the RBC transports haemoglobin (B) from the oxygen (C) to all the cells of the body.",
+   "options": [
+    "BCA",
+    "ABC",
+    "CAB www.prepp.in",
+    "BAC",
+    "No Rearrangement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "95fd809a8f909313d91bfc373fa220634181ec61f9b767a28f578425d3d2535c"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with three words marked as (A), (B) and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The use of atmosphere (A) is responsible for causing an increase in fossil fuels (B) concentration in the carbon dioxide(C).",
+   "options": [
+    "BAC",
+    "ABC",
+    "CAB",
+    "BCA",
+    "No Rearrangement"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "57cc74411d00fc4614b4c05696171598b0cad85c627810644ad87061a29cd388"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with three words marked as (A), (B) and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Virus (A) countries have faced a large developing (B) due to the recent onset of the Corona setback (C) worldwide.",
+   "options": [
+    "ABC",
+    "CAB",
+    "CBA",
+    "BCA",
+    "No Rearrangement"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b2d55ff9fc8ae767043c6d2f8bff49c261bf9185c9e5fa5f14d354df651c9429"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with three words marked as (A), (B) and (C). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The puppy was finally found faint (A) in the nearby park, it was dehydrated (B) and about to roaming. (C)",
+   "options": [
+    "CBA",
+    "CAB",
+    "ABC",
+    "BAC",
+    "No Rearrangement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0f978b398361b5dc22b3cd374fc4d28c1829a1710b4b24393b6542ae080b7c96"
+  }
+ ],
+ "section_confidence": 0.938,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

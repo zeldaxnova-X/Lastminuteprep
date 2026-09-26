@@ -12,6 +12,8 @@ import {
 import { getViewer } from "@/lib/auth/plan";
 import { freeMockFlowEnabled, ANON_MOCKS_PER_DAY, FREE_ACCOUNT_MOCKS } from "@/lib/flags";
 import { emitEvent } from "@/lib/analytics/events";
+import { examContent, contentObjectName } from "@/lib/exam/content-repo";
+import { DEFAULT_EXAM_CODE, loadExamConfig, getExamEntry } from "@/lib/exam/registry";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import { SAMPLE_QUESTION_IDS } from "@/lib/sample-set";
 import type { StartExamRequest, StartExamResponse, ValidatedQuestion, Subject } from "@/types/database.types";
@@ -78,6 +80,11 @@ export async function POST(request: NextRequest) {
     const sessionUserId = viewer.userId;
     const sample = isSampleRequest(body);
     const flag = freeMockFlowEnabled();
+    // Which exam this attempt is for. Validated against the registry (unknown →
+    // default). SBI etc. are read ONLY from their own content namespace.
+    const examCode = getExamEntry(body.exam_code).code;
+    const examScoped = examCode !== DEFAULT_EXAM_CODE;
+    const examCfg = await loadExamConfig(supabase, examCode);
     const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || null;
 
     // ------------------------------------------------------------------
@@ -287,6 +294,26 @@ export async function POST(request: NextRequest) {
           break;
         }
 
+        // Exam-scoped mock (SBI etc.): balanced per-section pull from THIS exam's
+        // own valid pool only, using its blueprint. Cannot read another exam's
+        // content — examContent resolves the exam's namespace.
+        if (examScoped) {
+          title = title || `${examCfg.examName} Mock`;
+          const content = examContent(supabase, examCode);
+          let collected: ValidatedQuestion[] = [];
+          for (const s of examCfg.sections) {
+            const { data } = await content
+              .validQuestions()
+              .select("*")
+              .eq("section_slug", s.key)
+              .limit(s.questionCount * 6);
+            const picked = shuffleArray((data as ValidatedQuestion[] | null) ?? []).slice(0, s.questionCount);
+            collected = [...collected, ...deduplicateQuestions(picked)];
+          }
+          questions = collected;
+          break;
+        }
+
         title = title || "SSC CGL Full Length Mock Test";
 
         const subjects: Subject[] = [
@@ -382,14 +409,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // STRICT VALIDATION AUDIT
-    const invalidItem = questions.find((q) => !isValidQuestion(q));
-    if (invalidItem) {
-      console.error(`Invalid question detected: Q ID ${invalidItem.id}`);
-      return NextResponse.json(
-        { error: `Validation failed: Incomplete question detected (ID: ${invalidItem.id}). Attempt aborted.` },
-        { status: 500 }
-      );
+    // STRICT VALIDATION AUDIT (SSC 4-option checks). Exam-scoped pools (e.g. SBI
+    // with 5 options) are already validity-filtered by their own cbt_valid view,
+    // so this SSC-shaped re-check is skipped for them.
+    if (!examScoped) {
+      const invalidItem = questions.find((q) => !isValidQuestion(q));
+      if (invalidItem) {
+        console.error(`Invalid question detected: Q ID ${invalidItem.id}`);
+        return NextResponse.json(
+          { error: `Validation failed: Incomplete question detected (ID: ${invalidItem.id}). Attempt aborted.` },
+          { status: 500 }
+        );
+      }
     }
 
     // CRITICAL DEDUPLICATION CHECK
@@ -408,6 +439,7 @@ export async function POST(request: NextRequest) {
       .insert({
         user_id: userId,
         device_id: deviceId,
+        exam_code: examCode,
         exam_type: body.exam_type,
         paper_id: body.paper_id || null,
         title,
@@ -416,10 +448,12 @@ export async function POST(request: NextRequest) {
         paper_type_filter: body.paper_type || null,
         total_questions: questions.length,
         time_limit_seconds: timeLimitSeconds,
-        marks_per_question: 2.0,
-        negative_marks_per_question: 0.5,
+        // Display-only scalars (scoring reads per-section config); set from the
+        // exam's config so they're right per exam.
+        marks_per_question: examCfg.marksCorrect,
+        negative_marks_per_question: Math.abs(examCfg.marksWrong),
         status: "in_progress",
-        max_score: questions.length * 2.0,
+        max_score: questions.length * examCfg.marksCorrect,
       })
       .select()
       .single();
@@ -451,7 +485,11 @@ export async function POST(request: NextRequest) {
     // Ensure rich content is attached (non-paper flows weren't enriched yet),
     // then remove the answer key before returning to the client.
     if (questions.length && questions[0].stem === undefined) {
-      questions = (await enrichWithRichContent(supabase, questions)) as ValidatedQuestion[];
+      questions = (await enrichWithRichContent(
+        supabase,
+        questions,
+        examScoped ? contentObjectName(examCode, "questions") : "questions"
+      )) as ValidatedQuestion[];
     }
     questions = stripAnswerKey(questions);
 

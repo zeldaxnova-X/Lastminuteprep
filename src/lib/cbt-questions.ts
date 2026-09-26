@@ -42,13 +42,17 @@ interface RichRow {
  */
 export async function enrichWithRichContent<T extends { id: string }>(
   supabase: SupabaseClient,
-  questions: T[]
+  questions: T[],
+  /** Exam-scoped raw-questions object (default: SSC public shim). For another
+   *  exam pass its content-repo questions object name (e.g. sbi_clerk__questions)
+   *  so rich content is read from THAT exam's schema, never across exams. */
+  questionsTable = "questions"
 ): Promise<(T & Partial<ValidatedQuestion>)[]> {
   if (!questions.length) return questions;
   const ids = questions.map((q) => q.id);
 
   const { data, error } = await supabase
-    .from("questions")
+    .from(questionsTable)
     .select("id, stem, options, has_images, section, external_id, topic")
     .in("id", ids);
 

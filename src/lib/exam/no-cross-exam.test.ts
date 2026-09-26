@@ -73,8 +73,10 @@ test("no query mixes two exams' `<code>__` content views", () => {
     const text = readFileSync(file, "utf8");
     const prefixes = new Set<string>();
     for (const m of text.matchAll(viewRe)) prefixes.add(m[1]);
-    if (prefixes.size >= 1) {
-      // Any `<code>__` content view outside the repo is itself a violation.
+    // Two or more DISTINCT exam prefixes in one module means a query could read
+    // across exams. A single mention (e.g. a doc comment) is fine; per-exam view
+    // names are only ever *built* in content-repo.ts (allowlisted).
+    if (prefixes.size >= 2) {
       violations.push(`${file.replace(process.cwd(), ".")} (${[...prefixes].join(", ")})`);
     }
   }

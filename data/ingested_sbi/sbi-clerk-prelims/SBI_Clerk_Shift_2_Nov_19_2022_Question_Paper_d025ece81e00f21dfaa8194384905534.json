@@ -1,0 +1,1515 @@
+{
+ "file": "SBI_Clerk_Shift_2_Nov_19_2022_Question_Paper_d025ece81e00f21dfaa8194384905534.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions given below: Eight girls: Dia, Gia, Mia, Nia, Pia, Tia, Sia, and Ria going on a Science Excavation trip from their th th school on two different dates of the month 16 and the 27 of the months: January, February, September, and October. All information is not necessary in the same order. Gia goes on the trip in the months which have neither a maximum number of days or a minimum number of days. Only two girls are going on the trip between Gia and Mia. Dia goes on the trip after Gia but not on an odd date. Only three girls are going on the trip between Nia and Sia, who goes on the trip before Tia. Pia goes on the trip before Tia but neither of them will go on the trip on an even number of dates nor in October. Ria goes on the trip after Tia. th Who will go on the trip on 16 of any month?",
+   "options": [
+    "Pia",
+    "Tia",
+    "Gia",
+    "Nia",
+    "Ria"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3516a76049a27a697569f9080403def69a1e5e731adc44a0d7f40a82bc2af8a8"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Who goes on the trip exactly before last?",
+   "options": [
+    "Ria",
+    "Dia",
+    "Gia",
+    "Nia",
+    "Tia"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "13fd9c2d3cf44f01330a72f5bb5519bce98d7ffab64d9eff26d347cb20fab398"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence they form a group. Which one of the following does not belongs to that group?",
+   "options": [
+    "Pia - Sia",
+    "Tia - Mia",
+    "Ria - Dia",
+    "Mia - Pia",
+    "Gia - Nia"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9b21a620047f6707af22590a10970423b767aa8a597a817896b764d8633aa58f"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Who goes on the trip after Gia? www.prepp.in",
+   "options": [
+    "Tia",
+    "Pia",
+    "Nia",
+    "Sia",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4378141816a44ea35dd449adf52fd95c0023eb1f43c9cf73492bf80a8b0f2be3"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "th Who goes on the trip on 27 February?",
+   "options": [
+    "Gia",
+    "Pia",
+    "Tia",
+    "Mia",
+    "Ria"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3e3d6022f45b79d93b044956ce6c297956c670bff98b45c255900aa511b0b252"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All balls are dolls . All dolls are mobiles. All mobiles are tablets. Conclusions: I. All balls are tablets. II. Some mobiles are dolls.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Conclusion I and II both follow",
+    "Neither conclusion I nor conclusion II follows",
+    "Either conclusion I or conclusion II follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1252e59f73af8fcd5e9609fddd87ce2ee6b567996abaf0e70ccedb2811db7741"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All apples are oranges. No orange is lime. All potatoes are limes. www.prepp.in Conclusions: I. No potato is orange. II. Some apples are limes.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Conclusion I and II both follow",
+    "Neither conclusion I nor conclusion II follows",
+    "Either conclusion I or conclusion II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4aaf55c5dfdc26dfe32624c767d5418f4e7b3b76efcff661830b3ac5045cc4b4"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only captain is america. Only a few captain are hydra. Few hydra are bucky. Conclusions: I. No bucky is captain. II. Some america is bucky.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follow",
+    "Neither I nor II follows",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8a7d86760941bb949754c654a3ae7f4a42103e01ef2e940454c8b2225b1b6182"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: Y 5 @ N 2 # U 9 B E 6 % S © 3 Q A & 7 W I ¥ Z 8 £ How many such consonants are there in the above arrangement each of which is immediately preceded by a symbol and immediately followed by a number?",
+   "options": [
+    "Three",
+    "Two",
+    "One",
+    "More than three",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9218a06d7483c0efb064b556de2924de5a2c39fba0bbc53894e5d7d975335af5"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "What should come in place of question mark on the basis of the above arrangement? @ 2 U B 6 S ? I Z £",
+   "options": [
+    "3 A &",
+    "© Q &",
+    "A 7 I",
+    "3 A 7",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "97c85ee47fe82f8f66002e97141474e6211171d333b0341f5091c5ec66cc7e25"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "th If all the vowels in the above arrangement are dropped, then which of the following will be the 8 from the right end?",
+   "options": [
+    "3",
+    "&",
+    "Q",
+    "A",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3e1a374b446778ff2388102f9bd4e4a232401e43e17e6e051fac8d4ef0200152"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "th st If the order of the last 12 elements is reversed, which of the following will be 6 to the left of 21 from the left end?",
+   "options": [
+    "Z",
+    "8",
+    "3",
+    "Q",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "21c984efd798adf3a11f0649d50e1c5779602938314233783d3ff6792f430d48"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Four of following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which one does not belong to that group?",
+   "options": [
+    "# 9 N",
+    "6 S 3",
+    "7 I A",
+    "¥ 8 W",
+    "@ 2 Y"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d9f40ab03eecae2bc97603579c6745808d5446f331c5c5ba6f86aaa39d2d0790"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. www.prepp.in Statements: T = V < U ≥ X; V ≤ S; H > U Conclusions: I. S ≥ T II. X < H",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Either I or II is True",
+    "Neither I nor II is True",
+    "Both I and II are True"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e17c678a8b36e18243adde8e8a4d64edce1adf92ca088bd0f8a6fb9eeb96a63e"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: L < O < M ; Q > N ≥ P > M Conclusions: I. P > L II. M > N",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Both I and II are True",
+    "Either I or II is True",
+    "Neither I nor II is True"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7739c864ad86c90783dfb8010ce1a5f2cdcc9af54fd0bde652f03054711f9bf6"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: X ≤ U < V > T; U < S; H > V Conclusions: I. X < H II T ≤ S",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Either I or II is True",
+    "Neither I nor II is True",
+    "Both I and II are True"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a25b2c2eabfa81a7db9ec241cc51516c90065e7cac209768f873e4214e3771b1"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. www.prepp.in Seven boxes – P, Q, R, S, T, U, and V are stacked one above the other but not necessarily in the same order. At most two boxes are placed below box Q. Box U is placed one of the places above box T, but not exactly above. Two boxes are placed between box R and box S, where box S is above box R. Box R is placed exactly above box Q. Box P is placed at one of the places below box S. Number of boxes above box P is the same as the number of boxes below box V. At least five boxes are placed below box S. Box T is placed near Box V. How many boxes are placed above box U?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7675fe6ab49c4e00ff84f42d6e2e5d11ae7e1d669a18003d5c63b0518d497c94"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "Which box is placed second from the bottom?",
+   "options": [
+    "R",
+    "S",
+    "T",
+    "U",
+    "V"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0af48c3dca087b79ee9c14fae6a384fb70a65b69bd18c7bebf1c7ff6b1477e45"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "How many boxes are placed between box T and box S?",
+   "options": [
+    "One",
+    "Three",
+    "Four",
+    "Five",
+    "None"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9f518463a16b93428251a32b5770ccf45f0e3bf61a328efb730edeadc2dcdaa8"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "If box S is related to box P and box R is related to box Q in the same way box V is related to which box?",
+   "options": [
+    "T",
+    "Q",
+    "R",
+    "U",
+    "P"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "adb72367f9e34bfca2a5d640098775a412cbe88d2ad06a716cc683d0c4129675"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "If we rearrange all the boxes in alphabetical order from bottom to top, then the position of how many boxes remains unchanged?",
+   "options": [
+    "One",
+    "Three",
+    "Four",
+    "Five",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c5386517e3d7199df72249a487b32792e0f7922e362a03cb3a1a8695f15fdfec"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word ‘MISUNDERSTANDING’, each of which has as many letters between them in the word (both forward and backward direction) as they have between them in the English Alphabet?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More then four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b8a079f485a043409b4575e3e0ef2821d250981688607d35c8256dd730656641"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the questions that follow. Point R is 6 km to the south of point J. Point S is 4 km to the north of point M. Point H is 10 km to the east of point S. Point M is 7 km to the west of point R. Point P is 6 km to the north of point F. Point D is 4 km to the east of point S. Point F is 4 km to the south of point D. Point N is 3 km to the west of point H. Point U is 6 km to the south of point D. What is the distance between points J and P?",
+   "options": [
+    "4 km",
+    "5 km",
+    "10 km",
+    "6 km",
+    "3 km"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "45ac552f3de082b8bccab47fc3b48ee38d0e65966798894aacc3598460e1f918"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their position and thus form a group. Which of the following does not belong to the group?",
+   "options": [
+    "S",
+    "U",
+    "D",
+    "N",
+    "H www.prepp.in"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6d6b4202b54037e872095343a69245e77f9e464c5e07611b8660c624974d2642"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "What is the direction of point S from point U?",
+   "options": [
+    "South-East",
+    "West",
+    "East",
+    "North-West",
+    "South-West"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "da33ec89b2ed80e679ab94a64d20c1959529016e4119a2c021c26703e18ea8a3"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "In the word “DOORLOCK” if all the vowels are replaced with the letter immediate next to it in the English alphabet series and all the consonants are replaced with the letter immediately before it in the English alphabet series, then how many vowels are there in the new word so formed?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "None",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "185ef7e98266a45925d9939bd4c90bfa06958d5ba04801b89c45b004f23459b6"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below: Seven persons A, B, C, D, E, F and G got appointment letter from IBPS in seven different days from Monday to Sunday of a week but not necessarily in the same order. G does not get appointment letter on Sunday. B got appointment letter before E. Only one person got appointment letter between A and D. F got appointment letter in one of the day after D.A got appointment letter on Wednesday. C got appointment letter before D and after B. Two people got appointment between B and E. Which of the following is not true?",
+   "options": [
+    "B got appointment letter on Monday",
+    "E got appointment letter immediately after A",
+    "Three persons got appointment letter after D",
+    "Both 1 and 2 are not true",
+    "All are not true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b3dd68b54f762286481e8cb75b668b4f090a51d03826ced9ab3f033719b3e4cd"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Which of the following combination is correct?",
+   "options": [
+    "B – Monday",
+    "C– Sunday",
+    "D– Saturday www.prepp.in",
+    "E– Friday",
+    "F– Tuesday"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e362dbe942e86791023ad3f2b17915d33f1db2324b69262226a8c4a39de39658"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Who got appointment letter on Friday?",
+   "options": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "08c709c9a4de9d9bcc8ef95ae8068713559113b91d0c46a0c937930e49aea297"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "How many persons got appointment letter between B and F?",
+   "options": [
+    "Three",
+    "Two",
+    "None",
+    "One",
+    "More than three"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "07657ce057ae11410e4ac6bf18542db75e4e3f43f96fcb4fde4dda845e61d0d9"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "E got appointment letter in which of the following days?",
+   "options": [
+    "Monday",
+    "Wednesday",
+    "Thursday",
+    "Saturday",
+    "Tuesday"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "19280362b5f76fb157ea1809d7b7f9ccd48c5bd5acd0bf680c66de2de6470161"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Select the one which different from other four alternatives.",
+   "options": [
+    "CBD",
+    "GFH",
+    "MNO",
+    "RQS",
+    "VUW"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f6c7df4248b6d2a84ca429d806c44ad53095ad0b97c43f391a6628c3a9eca8bf"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Directions: These questions are based on the following information. www.prepp.in Eight persons P, Q, R, S, T, V, W and X are in a family with three different generations. W is the son of T, who is the only daughter of P. P is the brother-in-law of V and does not has any siblings. Not more than three and not less than two members in the same generation. X is the niece of Q, who is the sibling of T. R is the brother-in- law of Q. V is not a female. Less than four female members are there in the family. How is Q related to S?",
+   "options": [
+    "Nephew",
+    "Cousin",
+    "Son",
+    "Daughter",
+    "Father"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c723bb9ca074952d0778cfae36515cb4e41d435a7d4e7717debfa32015426d5d"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Who among the following is the Maternal uncle of W?",
+   "options": [
+    "Q",
+    "R",
+    "S",
+    "V",
+    "Cannot be determined"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "30958fd2da2e6c2feb51cd9733579d96317c992127ea682692582afceb6ebbd1"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "How many females are there in the family?",
+   "options": [
+    "One",
+    "Four",
+    "Two",
+    "Three",
+    "Cannot be determined"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6050c9eb23b8d720667b8c9af91fa588301cd9c92238fac50abae4a4990dbc9b"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark (?) in the following question? [(27 × 10) ÷ 30 + 10500 ÷ 500] = ? × 15",
+   "options": [
+    "1",
+    "4",
+    "2.65",
+    "0.90",
+    "2"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "96cba8b43c6ebcf6e6b20151352177c446654cd4c682c4d1fa0a214983c90576"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark ‘?’ in the following question? 999 ÷ 3 – 165 = 75 + 111 - ?",
+   "options": [
+    "20",
+    "28",
+    "18",
+    "22",
+    "24"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "96762e6f8176d77a226fa42779d520b5abb919523d379aa9d5484f08d31966f6"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (71 × 8) + 90 = 132 × 4 + ?",
+   "options": [
+    "160",
+    "140",
+    "132",
+    "130",
+    "135"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8e9c380d9bd0c1634c98ee4e5529ae3584fc1c3a811344d51ccf892869e29f7a"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 26of 408 + 25% of 43200 = ? 24 48",
+   "options": [
+    "547",
+    "447",
+    "467",
+    "647",
+    "667"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9e42b33766ec4006251ada31ad7deebf803d9fc72acb75364c317ae8f852d9a8"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? (8 + 6 × 7) ÷ 10 × 3 = ?",
+   "options": [
+    "18",
+    "20",
+    "30",
+    "15",
+    "45"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a7d9d8f384558f85d591439eba085302977e95c7c65923015e33131f159b9278"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? www.prepp.in 2 5 × √25 + 300 - 100 = ?",
+   "options": [
+    "12",
+    "20",
+    "15",
+    "25",
+    "30"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "eaf0b5d02c55f1c29ff997a38811dd4497dbf9ce560dd9c78923f08ed1d535de"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following equation? 2 18 - ? + 19 + (11) = 120",
+   "options": [
+    "38",
+    "48",
+    "42",
+    "34",
+    "24"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "db0dffd213c1782438f815a0e1459c92904f618613e3e56542ae7642a3c31621"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation?",
+   "options": [
+    "36",
+    "24",
+    "46",
+    "52",
+    "38"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fa2be9c5eb73e87556a8a5082cc6c36373e31623264f503aafd563eb141d4504"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 450% of ? ÷ 90 + 350% of 200 ÷ 70 = 20",
+   "options": [
+    "180",
+    "190",
+    "200",
+    "210",
+    "220"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e993b908e5ec883df098e2e543d2a57ab62345ff096cae25607ad26a952160cc"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 935.5 + 555.4 + 64.5 + 1444.6 = 600% of ? www.prepp.in",
+   "options": [
+    "200",
+    "250",
+    "300",
+    "350",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "473ffb43dde4c493dd32fabc46b3a8e5a255ac11195f8305ec2c362b8839f29c"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? -5 256 × 2 × ? = 2/25 of 50 × 75",
+   "options": [
+    "25",
+    "37.5",
+    "22.5",
+    "50",
+    "16"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6efac8bf4f04a8abb99a63a8cce41fbc2f47f797028e27c7c769b9d7848aab95"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 2 23 - 413 ÷ 59 = ? × 18",
+   "options": [
+    "24",
+    "34",
+    "29",
+    "39",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e32eae7b789e03d8a031f981f54880338879ecaa16695da20335ae7f9857dff2"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "The present ages of A and B are in the ratio 3 : 4 and ratio of B and C is 1 : 2 and ratio of C and D is 4 :",
+   "options": [
+    "86 yrs",
+    "80 yrs",
+    "78 yrs",
+    "82 yrs",
+    "96 yrs"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "980955a1da2c404ab64a4f8245406cfb9026fcd11582fadb0db651d269c1c33a"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "A train crosses a platform in 10 seconds while running at a speed of 45 km/h and it takes 15 seconds to pass a man walking at 5 m/s in the same direction of the train. Find the difference in the length of the train and length of the platform. www.prepp.in",
+   "options": [
+    "200 m",
+    "145 m",
+    "100 m",
+    "125 m",
+    "156 m"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fdaba0ae33867e06b8e333896a2d05589d701cd116020ab074aa90a60603b8a0"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "If the ratio of the radius of two circles is 3 : 5. The perimeter of the smaller circle is 10% more than that of the perimeter of the square. If the side of the square is 30 cm, then, find the area of the larger circle?",
+   "options": [
+    "2 3220 cm",
+    "2 4250 cm",
+    "2 3550 cm",
+    "2 3850 cm",
+    "2 3250 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d10ebd9a3c65a39d83762222984f57e8edd3c4e664d1249e58f66faebfdc2585"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the information carefully and answer the given questions: 1000 students enrolled for ‘NEET EXAM”. 75% of the students appeared in an exam. 30% of the students who appeared in an exam attempts Physics in the exam and remaining attempts only Chemistry and Biology section. The number of students attempts Chemistry section is 75 more than the number of students attempts in Biology section. Ratio of girls and boys appeared in an exam is 2 ∶ 3. Number of girl’s attempt in each section are equal. 30% of the girls cleared the exam and the number of boys who cleared the exam is two times the number of girls who cleared the exam. Students who cleared the exam is what% of the students who appeared in the exam?",
+   "options": [
+    "12%",
+    "24%",
+    "56%",
+    "36%",
+    "46%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4252e965a91a98aa2f429e94f0f699ac8ea2a27d82770c9451e570a12b58ed38"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "The total number of boys who attempts the Chemistry section is what percent of total number of students who appeared in Chemistry section?",
+   "options": [
+    "12.66%",
+    "13.66%",
+    "66.66%",
+    "68.56%",
+    "67.56% www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cf3350ea12cea3ba7438c6e59d3825c13c1e1963eb4bb4f18200de6efaebae3c"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "The total number of boys who cleared the NEET exam, is what percent of total number of students who appeared in the exam?",
+   "options": [
+    "12%",
+    "24%",
+    "14%",
+    "16%",
+    "15%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d89111ed1446e3e9ed1921490461644c93d3efa20ea73155362b350b3d1c6ded"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "Two varieties of milk with different prices is mixed in the ratio 2 : 3. The price of 1st type of milk is Rs 10 per litre while the price of 2nd type of milk is Rs. 15 per litre. The average price of the mixture.",
+   "options": [
+    "Rs. 11 per litre",
+    "Rs. 12 per litre",
+    "Rs. 13 per litre",
+    "Rs. 14 per litre",
+    "Rs. 15 per litre"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3887677a61ca3807d2fd61127917692e562d0ab4619f061cd38499e0249ae574"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "Sachin's batting average for 50 innings is 60 runs. His highest score exceeds his lowest score by 182 runs. If these two innings are excluded, the average of the remaining 48 innings is 58 runs. The lowest score made by Sachin in his inning is:",
+   "options": [
+    "16",
+    "17",
+    "18",
+    "29",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7ee00ebcab7c6b7f1b380c54d18b67272f788913ab279a67cadb0d9f07bf8bef"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "A boat travels 30 km upstream and 30 km downstream in 8 hours. Time taken for the same boat to travel 50 km downstream if its speed against the stream is 6 kmph.",
+   "options": [
+    "10 hours",
+    "6 hours",
+    "8 hours",
+    "4 hours",
+    "5 hours"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "56f6b6f2980006f0d9faf9344f091fffa492428077c28bbcf27ed6d0b83e3ac9"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "A seller mixes 26 kg rice of a price of Rs. 20/kg, with 30 kg of different variety rice of a price of Rs. 36/kg. He sells both the mixed rices at Rs. 30/kg. What will be the profit in percentage?",
+   "options": [
+    "25%",
+    "10%",
+    "15%",
+    "20%",
+    "5%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b9991e60c5fa9b20cb7c5db07462332d06927175dd4125a25b604a893ac0b9f8"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "Raj lends an amount of Rs.50,000 to Sumesh at a rate of 12% for five years. But after two years Raj decided to increase the rate to 20%. Find the extra amount Sumesh has to pay due to this hike in interest.",
+   "options": [
+    "Rs. 8,000",
+    "Rs. 10,000",
+    "Rs. 12,000",
+    "Rs. 14,000",
+    "Rs. 16,000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7395e199756ca4ac8148710aef6668c48fa700f77369498c544a2e65480c51f9"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "In a mixture, the ratio between milk and water is 8 : 1. If 18 litres of mixtures is removed and 4 lires of water is added, then the quantity of milk is 24 litres more than that of water. Find the initial quantity of milk in the mixture.",
+   "options": [
+    "56 litres",
+    "48 litres",
+    "40 litres",
+    "42 litres",
+    "64 litres"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3597ac78255a59b8cb779a027e15ddfdf3a4dff3a8c096c888f2ddc4c0430acf"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "A and B started a business with Rs. 95000 and Rs. 57000 respectively. But B was a business partner they decided to share their profit in the ratio of 4 : 3. If C joins with a condition that they will share profit and loss in the ratio of 2 : 1 : 3. Find the sacrifice ratio of A and B.",
+   "options": [
+    "10 : 11",
+    "11 : 10",
+    "5 : 7",
+    "13 : 19",
+    "21 : 17"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "660742a6a9247881426ad0da7e7a462e9826d32483b2bca0e876641ef978817e"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 38, 39, 35, 44, 28, ?",
+   "options": [
+    "43",
+    "53",
+    "48",
+    "58",
+    "63"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4ac5a827d6b39388557b6f300cb771fcb268a37346c34353af09ab74a93db1da"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 12, 23, 45, ?, 177, 353",
+   "options": [
+    "93",
+    "97",
+    "101",
+    "83",
+    "89"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4085708546cbbb95279b84d2985bcb77390f14088ab4a4dc4d54eef76ac0ce83"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 11.5, 12.5, 27, ?, 340, 1705",
+   "options": [
+    "84",
+    "96",
+    "74",
+    "114",
+    "106"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7dd4fd509ddd12bd11ebbf1f9c930c64de791e0f9a1fa4dedd4b79678caffc79"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 50, 54, 45, 61, ?, 72",
+   "options": [
+    "46",
+    "36",
+    "106",
+    "56",
+    "96"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c3458bdd76719dd76e92b0bf26f14330c1bb6a181454d9353bb5a422799b2a1e"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 14, 18, 26, ?, 74, 138",
+   "options": [
+    "32",
+    "42",
+    "52",
+    "22",
+    "62"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "78451f99cfb2b6f8106e4e17cbc6d442d389947ee8f42f853b040f1019e14fd2"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following graph carefully and answer the following questions: The Bar Graph given below shows the number of ice creams and chocolates sold by four different companies. The number of chocolates sold by company P and Q together is what percentage more than the number of ice creams sold by company Q and R together?",
+   "options": [
+    "5%",
+    "15%",
+    "30%",
+    "40%",
+    "20%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ddd9718b7988720fd01441e16bf52fdc36526dc3a5465953a3253bd156baf83e"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "The number of chocolates sold by company U is 25% more than the number of ice creams sold by company Q. Find the average of the number of chocolates sold by all the five companies together.",
+   "options": [
+    "865",
+    "825",
+    "805 www.prepp.in",
+    "860",
+    "820"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "30ed43d1b5c30e833482669fad2b380a3bf8e6ec655295d0b80196dd56feaeb8"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "What is the difference between the total number of Ice creams and chocolates sold by company P and Q and the total number of chocolates sold by company R and S?",
+   "options": [
+    "1955",
+    "1940",
+    "1900",
+    "1850",
+    "1950"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "848601f082c503c05192ae71d6401b67a8e9e0c0ca8ca2614d6dcc83b6d9ad82"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "If the ratio of Ice creams to Chocolates sold by another company T is 6 : 7 and the number of both items i.e., Ice creams and Chocolates sold by company T increased by same number to company S, then by what percent number of Ice creams and Chocolates respectively increased with repsect to company S?",
+   "options": [
+    "40%, 16.66%",
+    "20%, 16.66%",
+    "25%, 16.66%",
+    "24%, 16%",
+    "18%, 6.66%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "63d2f0c41bf51ddcfad27eef0cbfd16e02a525bb1d657889a7140be076790e00"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "What is the ratio of the total number of Ice creams and Chocolates sold by the four companies?",
+   "options": [
+    "27:32",
+    "29:31",
+    "26:33",
+    "23:32",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "261ce12548dace3ed47ca9dff8a558119f0425459ffd498687b649b685522485"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: Heatwaves unfolding on the bottom of the ocean can be more intense and last longer than those on the sea surface, new research suggests, but such extremes in the deep ocean are often overlooked. A team of scientists with the U.S. National Oceanic and Atmospheric Administration has conducted the first _______ of marine heatwaves along North America's continental shelves. They found that these bottom heatwaves ranged from 0.5 degrees Celsius to 3C warmer than normal temperatures and could _______ more than six months — much longer than heatwaves at the surface. \"We simply don't have a ton of instruments on the ocean bottom along continental shelves,\" said study co-author Dillon Amaya, an NOAA climate scientist. The ocean is a powerful thing. It destroys instruments that we have in the water for too long. Surface heat waves can be picked up by www.prepp.in satellites and can result in huge algal blooms. But, Amaya said, often no one knows a bottom marine heatwave is happening until the impacts show up in commercial bottom-dwelling species like lobsters and crabs. The assessment, published in the journal Nature Communications, used computer models of the ocean and observations to analyze seafloor heat waves. It found that while sometimes a marine heatwave can hit both the sea surface and ocean bottom at the same time, bottom heatwaves can also occur on their own. The ocean has absorbed about 90% of the excess heat from global warming, with the ocean's average temperature increasing by about 1.5C over the last century. Marine heatwaves have become about 50% more frequent over the past decade. \"It's a little less clear if climate change is strongly impacting bottom marine heatwaves in the same way it would at the surface,\" Amaya said, saying changes to ocean circulation patterns could also play a role. Past bottom marine heatwaves have decimated Pacific cod and snow crab populations. \"Pacific cod in the Gulf of Alaska is an important fishery and … that population has declined by 75% following the big marine heatwave in 2015,\" said Michael Jacox, a scientist at NOAA's Southwest Fisheries Science Center. Warmer water, he said, can increase the energy needs of species at the same time that there's less prey available for them to eat, leading to more deaths and fewer births. According to the passage, for what purpose does computer models of the ocean and observations are used?",
+   "options": [
+    "To more deaths and fewer births.",
+    "To hit both the sea surface and ocean bottom at the same time.",
+    "To decimate Pacific cod and snow crab populations.",
+    "To increase the energy needs of species.",
+    "To analyze seafloor heat waves."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "fc2fc53ecb08cd7aa5bb56e1b8d0294abcd7cbcccd13c97320b8744c2b4e76e5"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "When does one get to know a bottom marine heatwave is happening?",
+   "options": [
+    "When a marine heatwave hit both the sea surface and ocean bottom at the same time.",
+    "When heatwaves unfolding on the bottom of the ocean is more intense.",
+    "When the impacts show up in commercial bottom-dwelling species like lobsters and crabs.",
+    "When the bottom heatwaves ranged from 0.5 degrees Celsius to 3C warmer than normal temperatures.",
+    "When the ocean's average temperature increases by about 1.5C."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e019bb9e5420c4c68f10877ad932052c775c3d8063ba53d9104814f00057d130"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "How does less availability of prey affect marine species?",
+   "options": [
+    "It leads to more deaths and fewer births of marine species.",
+    "It destroys instruments that we have in the water for too long.",
+    "It strongly impacts bottom marine heatwaves in the same way it would at the surface.",
+    "It absorbs about 90% of the excess heat from global warming.",
+    "It leads to less fewer and more births of marine species."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "fb23ca7a32ba681d734a3d1baa121ed70e5bc2b1dc56ef7717f42460b99fc942"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Which of the following is/are incorrect according to the given passage? A. The ocean's average temperature is decreasing by about 1.5C over the last century. B. The ocean has absorbed only 10% of the excess heat from global warming. www.prepp.in C. The ocean destroys instruments that are inside the water for too long.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5f995b73f78b76cbbd3c3000cffe1cee87b57d8687c1ed7f42b2b0e17c272a4a"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "Which of the following is/are correct according to the given passage? A. It is found that a marine heatwave can never hit both the sea surface and ocean bottom at the same time. B. Surface heat waves can't be picked up by satellites and can't result in huge algal blooms. C. Heatwaves unfolding on the bottom of the ocean are often ignored.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c1f66040af6e9ecd4175491278a0b92828eb3fdb7c603cddd76a4547965bfde5"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "What will fit in the blank taken from the passage: ''They found that these bottom heatwaves ranged from 0.5 degrees Celsius to 3C warmer than normal temperatures and could _______ more than six months — much longer than heatwaves at the surface.''",
+   "options": [
+    "Last",
+    "Conclusion",
+    "Termination",
+    "Begin",
+    "Prior"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1e4975bae171422824aec07ea67dd2c6acd46d544c4840836427d85abd068a08"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "What will fit in the blank taken from the passage: ''A team of scientists with the U.S. National Oceanic and Atmospheric Administration has conducted the first _______ of marine heatwaves along North America's continental shelves.''",
+   "options": [
+    "Disappointment",
+    "Contentment",
+    "Adamant",
+    "Assessment",
+    "Amusement www.prepp.in"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2612fb3da3d3c7753a55808995bd2b57adf9432de27c5c10ec49b4c77064620b"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "Choose the antonym of the word 'Decimated'.",
+   "options": [
+    "Ruined",
+    "Raised",
+    "Wrecked",
+    "Devastated",
+    "Shattered"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "195669d0da27ff6beaad59b25657b25e5f56606e0c29a99d20023484a3263e9c"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Choose the synonym of the word 'Overlooked'.",
+   "options": [
+    "Regarded",
+    "Valued",
+    "Discerned",
+    "Noticed",
+    "Ignored"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "372737701b0a0b9420d157db6bbdf2bf0460b63cd42f79cb31e76ff622b49333"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "Choose the antonym of the word 'Intense'.",
+   "options": [
+    "Fierce",
+    "Acute",
+    "Moderate",
+    "Severe",
+    "Ferocious"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c80257bf867b4224d6a24d06506a38a23cacc4fe6935268645729b8fbf73eab2"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Directions: In the given sentence, three words are marked as (A), (B), and (C). These words may or may not be placed in their right places. Four options with different arrangements of these words are given below, mark the option with the correct arrangement as your answer. If no change is required mark 'No rearrangement required' as your answer. Many mechanism(A) banks are over-cautious about using this restrictions(B) so that it would not invite any secondary Indian(C) from the U.S.",
+   "options": [
+    "BAC",
+    "CAB",
+    "ACB",
+    "CBA",
+    "No rearrangement required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d9e48a7de99684dfb2a15bb978210f828e3464b16b8fd3ef054ebf9745e9b329"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Directions: In the given sentence, three words are marked as (A), (B), and (C). These words may or may not be placed in their right places. Four options with different arrangements of these words are given below, mark the option with the correct arrangement as your answer. If no change is required mark 'No rearrangement required' as your answer. He was hired for the job because he was persuade(A) at speaking and able to eloquent(B) people and these are the skills that the company(C) was looking for.",
+   "options": [
+    "BAC",
+    "CAB",
+    "ACB",
+    "CBA",
+    "No rearrangement required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "97e6a5cba3d3fd1bf0d4b1399dce55d000acd3e8232a889cef3d8e9fed1b164a"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "Directions: In the given sentence, three words are marked as (A), (B), and (C). These words may or may not be placed in their right places. Four options with different arrangements of these words are given below, mark the option with the correct arrangement as your answer. If no change is required, mark 'No rearrangement required' as your answer. \"The company(A) announced a new partnership(B) with a leading technology firm(C).\"",
+   "options": [
+    "BAC",
+    "ABC",
+    "CAB",
+    "CBA",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "32af3e66308644239d585c1937603ff8958d1df7a78355d890b4d18e855538ba"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Directions: In the given sentence, three words are marked as (A), (B), and (C). These words may or may not be placed in their right places. Four options with different arrangements of these words are given below, mark the option with the correct arrangement as your answer. If no change is required, mark 'No rearrangement required' as your answer. \"The ahead(A) successfully completed the project team(B) of the deadline(C).\"",
+   "options": [
+    "BAC",
+    "ABC",
+    "CAB",
+    "CBA",
+    "No rearrangement required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "101a1660cdc966143d600fc3f00003740f43c4fb8b979db16a6c8c6e73c37241"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Select the part of the sentence which has an error from the given options. Select 'No error' if all are correct www.prepp.in Mary speaks more highlier of the iTouch than the iPod.(A)/ The price variation between multiple (B)/ variants is a staggering ten thousand rupees, so please do consider (C)/ other brands rather than following the shepherd. (D)/",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bf45731e81dee914bcf8728f00cb83cf7ed3d381ee792bd370315a2ba8caf44f"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Select the part of the sentence which has an error from the given options. Select 'No error' if all are correct Justin is the most fastest runner on the track team.(A) He has won the nationals (B) twice, but there has been a (C) deterioration in his form over the years. (D)",
+   "options": [
+    "D",
+    "B",
+    "A",
+    "C",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4017dfbd345ca757f4d6c5d5852d569f8a4a653e2622b86c39689a6ae8cf2f23"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Select the part of the sentence which has an error from the given options. Select 'No error' if all are correct Mussolini may be said to have done more (A) for the unity of Italy than other man. (B) His methods were inhuman (C) and probably controversial.(D)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "11798c1ab5db2424e39f1b06148a2b88498fc326e68ce99e3d7e91308e5d50b5"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Directions. Identify the segment of the sentence which contains the grammatical error. If there is no error mark ‘No error’ as your answer. If Stefan had studied well (A)/ during his board exams, (B)/ he will have secured a rank (C)/ among the top ten rank holders of his school. (D)/ No error",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D www.prepp.in",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ac38d0f561dbf1109e0f9a270e182d5b4a60b3f39153ada605879814244ac99f"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. We need more psychiatrists /(A) who specializes in /(B) treating mentally /(C) ill people in crisis. /(D) No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22f36a3e253b19fb763717e8824b01caf9b02cdb0ef7babfddb97fe05eba29fe"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "A passage is given below with five blanks labelled (A)-(E). Below the passage, five options are given for each blank. Choose the word that fits each blank most appropriately in the context of the passage, and mark the corresponding answer. Graphic art and design ___(A)___ the history of humankind from cave paintings to the dazzling neon signs of the modern era. In both its history and in the relatively recent ___(B)___ of visual communication in the twenty- first century, there is sometimes a blurring distinction and overlapping relation of advertising art, graphic design and fine art. They ___(C)___ many of the common elements, theories, principles, practices and language. The ___(D)___ of graphic design lies in representing information, providing form to ideas, expression and feeling and giving shapes to artefacts that ___(E)___ the human experience. Which of the following words would most appropriately fit in the blank (A)?",
+   "options": [
+    "Surmount",
+    "Leap",
+    "Travel",
+    "Slide",
+    "Span"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5b5bb0d953c770a10da4e70d663f2f179d28cdff57848419b4d4d531ba131952"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (B)?",
+   "options": [
+    "Expansion",
+    "Exhilaration",
+    "Jubilation",
+    "Supervision",
+    "Illusion"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cfde78f0ba82f2d4ece2bb4abfc72a05085a7f8d6286a4ca0efe47afc1d4884c"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (C)?",
+   "options": [
+    "Differ",
+    "Share",
+    "Penetrate",
+    "Predict",
+    "Preserve"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e02e1b00c1e7d36ddc2be12fc635b31e11cf34f26f03a7444bbee98f0ad7f324"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (D)?",
+   "options": [
+    "Correspondence",
+    "Precariousness",
+    "Acceptance",
+    "Essence",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9f1edd9dc09f03835e0f85ea79a975af1ee2741feb2d94d89fa6c154be20cc71"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Which of the following words would most appropriately fit in the blank (E)?",
+   "options": [
+    "Deliberate",
+    "Personify",
+    "Document",
+    "Demolish",
+    "Brag"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f438406bfabf882b3bf4d2484d2fc0ae327753a568ae4de34e7c7b98811b8ad0"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Directions: In a question given below an incomplete sentence that must be filled/completed with one of the sentences/phrases given below i.e. one of the sentences/phrases can be fit into the given blanks. Choose the correct option and complete the given sentence. It must be remembered that the Galwan clash,______________________________ after an agreement to disengage",
+   "options": [
+    "in which India lost 20 soldiers, occur immediately",
+    "in which India lost 20 soldiers, occurred immediately",
+    "in which India loss 20 soldiers, occurred immediately",
+    "in which India lost 20 soldiers, occurred immediate",
+    "India in which lost 20 soldiers, occurred immediately"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c771e0574f678087fddaf50ba2789ebf4aa34190adef78e3d4e828807e45fefc"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Directions: In a question given below an incomplete sentence that must be filled/ completed with one of the sentences/phrases given below i.e. one of the sentences/phrases cab be fit into the given blanks. Choose the correct option and complete the given sentences. www.prepp.in Modi’s attempt to convey personal ______________________________ contentious is a good step.",
+   "options": [
+    "warmth so show that politics need not just be",
+    "warmth and show that politics need not just is",
+    "warmth and show the politics need not just be",
+    "warmth and showed that politics need not just be",
+    "warmth and show that politics need not just be"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "38436e0d3c6cd916efca3f3f7cb9c4c2714025ffffedc4c4feeeaddc5d35f611"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "In the given question, a sentence is given with a part of it missing and represented by a blank. Choose the phrase that can be placed in the given blank to make a meaningful and grammatically correct sentence. Some countries__________ their citizens to monitor if quarantine laws are being followed, or even welding some residents in their homes to stop the spread of the virus.",
+   "options": [
+    "are annoying",
+    "are analyzing",
+    "are depending on",
+    "are spying on",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e25f349fb797c7d94a095dea66893b528138511f1bdacec788e4fd7bd7f7ae7c"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "In the given question, a sentence is given with a part of it missing and represented by a blank. Choose the phrase that can be placed in the given blank to make a meaningful and grammatically correct sentence. Our willingness __________ leaves us vulnerable to the insidious threat of creeping authoritarianism.",
+   "options": [
+    "to determine sacrifice",
+    "to increase sacrifice",
+    "to accept sacrifice",
+    "to answer sacrifice",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9cf5eb59754bc3c84d2bb573514838501f0980a9f454896a8569a407de6f0fd5"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. formation of the stars B. is gravitational instability C. one simple D. physical concept which E. lies behind the",
+   "options": [
+    "CDEAB www.prepp.in",
+    "BCEAD",
+    "CDBEA",
+    "DBEAC",
+    "ADEBC"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e737007f4ee56dd8f2fe27bd3a374a2dffb8d867752c6b1a28b0d8d09bad220f"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. after waking B. people are C. more susceptible D. to heart attacks E. in the first few hours",
+   "options": [
+    "CABDE",
+    "BCDEA",
+    "DEACB",
+    "AEBCD",
+    "BACDE"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22712598e97b85ab6569ef73830c861e935f54e8d0d6bed27902d8f837b2a5b1"
+  }
+ ],
+ "section_confidence": 0.913,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

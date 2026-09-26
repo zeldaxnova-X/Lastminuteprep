@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { loadOwnedAttempt, getUserId, claimAnonymousAttempts } from "@/lib/auth/api-guard";
 import { enrichWithRichContent, stripAnswerKey } from "@/lib/cbt-questions";
 import { resolveReportAccess } from "@/lib/entitlements";
+import { contentObjectName } from "@/lib/exam/content-repo";
 
 /**
  * GET /api/cbt/exams/[attemptId]
@@ -38,10 +39,11 @@ export async function GET(
       );
     }
 
-    // Get all questions for this attempt
+    // Get all questions for this attempt (from THIS exam's content namespace)
+    const examCode = (attempt as { exam_code?: string }).exam_code;
     const questionIds = (answers || []).map((a) => a.question_id);
     const { data: questions, error: questionsError } = await supabase
-      .from("validated_questions")
+      .from(contentObjectName(examCode, "validated_questions"))
       .select("*")
       .in("id", questionIds);
 
@@ -57,7 +59,7 @@ export async function GET(
     // finished attempt unless the caller is fully entitled to the report (else
     // this resume route would leak the gated key/solutions for a paid attempt).
     const gate = await resolveReportAccess(attemptId, attempt.user_id ?? null);
-    let enriched = await enrichWithRichContent(supabase, questions || []);
+    let enriched = await enrichWithRichContent(supabase, questions || [], contentObjectName(examCode, "questions"));
     if (attempt.status === "in_progress" || !gate.full) enriched = stripAnswerKey(enriched);
 
     // Build a question map for fast lookup

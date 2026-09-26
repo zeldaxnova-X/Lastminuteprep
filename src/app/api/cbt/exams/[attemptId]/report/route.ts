@@ -5,6 +5,7 @@ import { narrateMentorReport } from "@/lib/exam/anthropic-narrate";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
 import { getUserId } from "@/lib/auth/api-guard";
 import { resolveReportAccess } from "@/lib/entitlements";
+import { contentObjectName } from "@/lib/exam/content-repo";
 import { emitEvent } from "@/lib/analytics/events";
 
 /**
@@ -56,8 +57,9 @@ export async function GET(
     .eq("session_id", attemptId)
     .maybeSingle();
 
+  const examCode = (access.attempt as { exam_code?: string }).exam_code;
   if (!result) {
-    const built = await buildAndStoreReport(supabase, attemptId);
+    const built = await buildAndStoreReport(supabase, attemptId, examCode);
     if (!built.ok) {
       return NextResponse.json(
         { error: `Report unavailable: ${built.reason}` },
@@ -91,7 +93,7 @@ export async function GET(
   for (let i = 0; i < reviewQIds.length; i += 500) {
     const chunk = reviewQIds.slice(i, i + 500);
     const { data: qs } = await supabase
-      .from("questions")
+      .from(contentObjectName(examCode, "questions"))
       .select("id, question_number, section, stem, stem_text, options, correct_option, solution, solution_text")
       .in("id", chunk);
     for (const q of qs ?? []) reviewQMeta.set(q.id as string, q as Record<string, unknown>);

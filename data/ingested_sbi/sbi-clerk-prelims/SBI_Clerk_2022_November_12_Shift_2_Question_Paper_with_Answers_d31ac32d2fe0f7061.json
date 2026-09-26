@@ -1,0 +1,1515 @@
+{
+ "file": "SBI_Clerk_2022_November_12_Shift_2_Question_Paper_with_Answers_d31ac32d2fe0f7061c9a35408003bc3f.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information given below and answer the question that follows. There are seven boxes – Z, A, V, B, U, C and W which are placed one above the other but not necessarily in the same order. The bottom box is numbered 1 and the box above it numbered 2 and so on till the top box which is numbered 7. Two boxes are placed between V and Z, which is kept at an odd number position above V. Two boxes are kept between A and W. Three boxes are kept between Z and W. B is kept immediately above U, which is not kept above V. Which box is kept immediately above B?",
+   "options": [
+    "W",
+    "A",
+    "Z",
+    "C",
+    "U"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2bcd1db736f892dbea6cb9f803f589194a22bff2279c47b8958ba498ec008907"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Which box is placed at 4th position?",
+   "options": [
+    "W",
+    "B",
+    "Z",
+    "A",
+    "V"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3576e77ab6b6d596830dfe547a066e47429c811afe3f5d4b0c34225584bd8b3f"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "How many boxes are placed between U and A?",
+   "options": [
+    "One",
+    "Three",
+    "Four",
+    "Two",
+    "More than four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "002482db73da4e90c399f1fa7b3d6c226866e255f0924515ac83e4a20be8c694"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Which box is kept at the top?",
+   "options": [
+    "A",
+    "V",
+    "Z",
+    "W",
+    "B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "72bbea28ecea8736b3184ec53cceef9f6350935b9a45c4fd899d08e9dd6a2f0c"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "If all the boxes are arranged in alphabetical order from bottom to top, how many boxes will remain in the same position?",
+   "options": [
+    "One www.prepp.in",
+    "Three",
+    "Two",
+    "More than three",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "421237c70fc33ac6f0b37e0f3de833805cfd9f990219c9e96952b15eab641402"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statement to be true, find which of the conclusion among the given conclusions is/are definitely true and then give your answers accordingly. Statement: H ≤ G ≤ J ≥ L >A >Q = Y < R Conclusions: I.J > Q II.Q < R",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both I and II are follow",
+    "Either conclusion I or II follows",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9580f4d003ea751fde8ffc5a578f650fc3109e19f6a997b466d29b8574fc0160"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: F < H ≤ L; L < J ≤ S < A Conclusions: I.S > F II.A < H",
+   "options": [
+    "Only Conclusion I is True.",
+    "Only Conclusions II is True.",
+    "Either Conclusion I or II is True.",
+    "Both Conclusions I and II are True",
+    "Neither Conclusion I nor II is True."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "913ab488f64ef0b3640648670403e6bbb5763466a041e8dbd4c9b568d02cd7cd"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: R < O ≤ L ≤ E; G = E ≥ S ≥ P Conclusions: I.R < S II.O ≤ G",
+   "options": [
+    "Only Conclusion I is True.",
+    "Only Conclusions II is True.",
+    "Either Conclusion I or II is True.",
+    "Both Conclusions I and II are True.",
+    "Neither Conclusion I nor II is True. www.prepp.in"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "96866f7dfdb9f83b62a7d48ab3238da5389d44b1744ec300e619875cc97e5a9a"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: P > Q = R ≥ S; T ≥ U ≤ V = S Conclusions: I. V = R II. V < R",
+   "options": [
+    "Only Conclusion I is True.",
+    "Only Conclusions II is True.",
+    "Either Conclusion I or II is True.",
+    "Both Conclusions I and II are True.",
+    "Neither Conclusion I nor II is True."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0bb9b9e2bed383e589c35b35c5f4fa7fabc6ba0ceefef3ed42c6c44a93168cdb"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. if in the word \"ASSESSMENT\" each consonant is replaced by the alphabet following it and each vowel is replaced by the previous alphabet of the english alphabetical series then which of the following will be the seventh from the right?",
+   "options": [
+    "M",
+    "E",
+    "F",
+    "D",
+    "N"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c29c66b96752f319ee300a2177eb2316a33cca56564c02f5ac22fc78cc550c32"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Direction: Eight persons Paro, Runa, Sona, Kim,Harry, Ram, Geet and Monu are going for seven days holiday on different months of same year i.e. January, February, March, April, May, June, July and August. All information is not necessarily in same order. Harry goes in the month of August. Sona goes in the month which has odd number of days. Geet goes just after the month in which Sona goes. Three persons goes between Monu and Sona. Runa goes in the month which has even number of days but not in February. Two persons goes between Kim and Ram, who does not go in the month which have odd number of days. Ram does not go in February. Paro does not go after Kim. Who goes in the month of March?",
+   "options": [
+    "Kim",
+    "Paro",
+    "Harry",
+    "Monu",
+    "Sona"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0bc8fca538b43a5408e480362b1ebdd86c6eb7745ab2c262ccb47808bcefd794"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "How many persons goes between Geet and Runa?",
+   "options": [
+    "Three",
+    "One",
+    "Four",
+    "Two www.prepp.in",
+    "Five"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4eb33a74fe48e7927b9b4daef243337a086cdd20f1dcdcc5c8ea2dfa8db60a54"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "In which month Monu goes on holiday?",
+   "options": [
+    "January",
+    "August",
+    "June",
+    "May",
+    "July"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a9b121f0847493f88dfa89f9471eb16a7efa1f21d9ba5f1b252519aecc55a13a"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "In which month Kim goes on holiday?",
+   "options": [
+    "April",
+    "July",
+    "February",
+    "June",
+    "May"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c9fdcf1ab3313dc5ffc3113f13f4bf1f47060e64485c6ab6ecc68a6908d95d1d"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "How many persons go on holiday before Ram?",
+   "options": [
+    "Five",
+    "Two",
+    "Four",
+    "Three",
+    "One"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ad233d5401f68328f899d7665c2bf1ee6a5e39d20d4eae63c2b0b8383bbb3455"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons - A, B, C, D, P, Q, R and S live in a 4-storey building such as ground floor is numbered as 1 above it numbered as 2 then top floor is numbered as 4 but not necessarily in the same order. Each of the floors has two flats in it as flat-1 and flat-2. Flat-1 of floor 2 is immediately below flat-1 of floor 3 and so on. In the same way, flat-2 of floor 2 is immediately above flat-2 of floor 1 and immediately below flat 2 of floor 3 and so on. Flat-1 is to the West of flat-2. Q lives in an odd-numbered floor but not on floor number 1. Both R and B live in the same flat number. R and A live in the same floor. B does not live in flat-2. There is a gap of one floor between Q and S. Both Q and S do not live in the same flat. R lives 3 floors above B. C lives immediately below D on the same flat. Who among the following lives in flat-2 on the 4th floor?",
+   "options": [
+    "B",
+    "A",
+    "P",
+    "Q",
+    "R"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "462f2f50f94453a378676a246cfab4cacf7315fa32557ce4a8e328ea6806c229"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Who among the following lives with Q in the same floor? www.prepp.in",
+   "options": [
+    "P",
+    "B",
+    "D",
+    "A",
+    "C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1ddc2ed182ccab6c0f6dc2fc3498b8e61519dfae4db74d337793970da4902135"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "How many floors are there between R and P?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "598a77b873ad24e135777b1963978b633daf3370b01ec4ef1a0e9428dc6aacdb"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "D lives on which of the following floor and which flat number?",
+   "options": [
+    "Floor 1, Flat-1",
+    "Floor 2, Flat-2",
+    "Floor 3, Flat-2",
+    "Floor 4, Flat-1",
+    "None of these."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "302c5cb93ea0407291793b17352c34f2c97fd67dc35ddb6df7f811a3e8b8d168"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence form a group. Which among the following does not belong to that group?",
+   "options": [
+    "R",
+    "S",
+    "Q",
+    "P",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2849958f7175e93bf510d8c1d4c50dcaaad5f14c0d87ab811e5111adafc221b4"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the given questions. Certain number of people are sitting in a linear row facing towards the north direction. U sits third from one of the extreme ends but not adjacent to S. Four persons sit between A and B. Two persons sit between B and E. More than two persons sit between B and P. Y sits immediate left of A. Y sits fifth from one of the extreme ends. R sits third from one of the extreme ends. Nine persons sit between Y and R. S sits fourth to the left of E. P sits third to the right of S. How many persons are sitting in the row?",
+   "options": [
+    "15",
+    "16",
+    "17",
+    "18",
+    "19"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2ca46088f50f7a341abad1eb88a2f138c3e45cad0932664f2b87509da6982e32"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "What is the position of B with respect to Y?",
+   "options": [
+    "Fifth to the right",
+    "Sixth to the left",
+    "Fourth to the left",
+    "Sixth to the right",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7be185ec179a146ef124870141c3b153037756066769325a23119a17863e57b3"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "How many persons are there between R and A?",
+   "options": [
+    "8",
+    "7",
+    "10",
+    "9",
+    "6"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "91cd5ec22c4369e7707bbfeb3381269c98cb9080658219f04aaaa3632232551a"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I, and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some cricket are football Only a few football are ball No ball is bat Conclusions: I.Some football is not ball II.All bat can be cricket",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "89088e0ce75470b8a73a43f3daeab5b5943a140c3930d3b111458e70bc0f80b9"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: I. Only a few grapes are cherry II.Some cherry are banana III.No banana is apple Conclusions: I.All grapes are apple II.Some grapes are not apple www.prepp.in",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows",
+    "Both conclusion I and II follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "38272118df22f1775b1c38f388a04d5343519721c294dbfdd6b7bb5af663c014"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All tea is coffee All coffee is butter Only a few butter is milk Conclusions: I.Some milk is coffee II.Some tea is milk",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ceda63a4594479931080182441adb86d9e93211a7c86b1c52d98c034fce735a6"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "In each of the questions below are given some statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some buildings are sofas. Some sofas are benches. Some benches are tables. Conclusions: I.Some tables are sofas. II.No table is sofa.",
+   "options": [
+    "If only conclusion I follows.",
+    "If only conclusion II follows.",
+    "If either conclusion I or II follows.",
+    "If neither conclusion I nor II follows.",
+    "If both conclusions I and II follow."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3f79ebaf88aea51dba69536da423c6996102d59c2c138cbc8bee90eb498625f7"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Direction: The following questions are based on the five three-digit numbers given below. 483 396 625 834 967 If 2 is added to the last digit of each number and then the positions of the first and the second digits are www.prepp.in interchanged, which of the following will be the highest number?",
+   "options": [
+    "396",
+    "625",
+    "967",
+    "834",
+    "483"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2a1affd35e7e476599a812699d4e7b3e2e3e0f3e2e1b37e5bfd894d13c4b2059"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "If in the above set of numbers 1 is added to the last digit and 2 is subtracted from first digit, then which number will be third if arranged in descending order?",
+   "options": [
+    "396",
+    "625",
+    "967",
+    "834",
+    "483"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "19ed8c63a517a08e3daabf7d2fb16374a18158783efb3fa4c447c8bbe6d73c69"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "If each number is multiplied by 2, then what is the multiplication of the 1st digit of the lowest and last digit of the largest number?",
+   "options": [
+    "24",
+    "30",
+    "36",
+    "28",
+    "20"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c301332cf6505f1efbbc8349506eca2753c4a386b333a07e36580a865be823cb"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "If each number first and third digits are interchanged, then how many even numbers are there?",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "5",
+    "1"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "801f2cff599e023b4eaae3f2248e03cf6b7c2e129f087c45417124f8b830cd8e"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. How many meaningful English words can be formed with the second, fifth, sixth and seventh letters of the word \"PLAGIARISM\", using each letter only once in each word? (To be counted from left)",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9f9dcfcb2bc18147f3df23e85b71e3d22a9bf19e5b6cc5fee3847fe3f853e367"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions given below: www.prepp.in There are eight cars A, B, C, D, E, F, G, and H in a park within a certain distance. Car A is 8km to the east of Car B, which is 9km north of Car D. Car C is 5km to the south of Car F, which is 6km to the west of Car G. Car G is 4km to the north of Car A. Car E is 8km to the west of Car C. Car H is 2km to the south of Car E. Car G is in which direction with respect to Car C?",
+   "options": [
+    "North",
+    "South",
+    "East",
+    "South-West",
+    "North-East"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6796b6d09cacfabb0e946d9f6d8a270b20a385b2a4264c7d9944d3ea1b3e8d67"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Car F is in which direction with respect to Car A?",
+   "options": [
+    "West",
+    "North",
+    "East",
+    "North-West",
+    "North-East"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "224d9b83facc59f00ddf9d4a04e947291e19a36f520b6a752be4c5017755ecdd"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "If K is parked in middle of G and A then what is distance between G and K?",
+   "options": [
+    "2 km",
+    "4 km",
+    "3 km",
+    "5 km",
+    "1 km"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5a8e0865449dcdfca653f5547d51b7031baa640ceb3d31e3ab5a5da77231106b"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "In the given questions, two equations numbered I and II are given. You have to solve both the equations and mark the appropriate answer. I. x2 - 12x + 36 = 0 II. y2 - 7y - 60 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "No relation in x and y or x = y"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e527288e436765e4c48a3728e8e1532d5e74e9b118cba39617318f0eda5cbac8"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered I and II are given. Solve both the equations and mark the appropriate answer. I. x2 - 15x + 54 = 0 II. y2 - 11y + 30 = 0",
+   "options": [
+    "x > y",
+    "x < y www.prepp.in",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relationship between x and y cannot be established"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f43b51175bf22fca4eecac1dd4df8da67b13c83dbee99dccd4873359c6ecacaa"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. x2 + 12x + 35 = 0 II. y2 − 12y + 32 = 0",
+   "options": [
+    "x < y",
+    "x > y",
+    "x ≤ y",
+    "x ≥ y",
+    "x = y or the relation between x and y can't be established."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "83038a1dd20b95264eebacffb7459d29f97f7651e05f303e16cec70fd7b1374b"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. x2 + 8x + 16 = 0 II. y2 - 17y + 66 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y can not be established."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5f5dc26d609bfb31a3b9f91a2f541798373c6d582d21aaa19672c5f389e2d330"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "Two equations I and II are given below in question. You have to solve these equations and give the answer. I. x2 + 11x + 30 = 0 II. y2 + 9y + 20 = 0",
+   "options": [
+    "x < y",
+    "x > y",
+    "x ≤ y",
+    "x ≥ y",
+    "x = y or the relation between x and y can't be established."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f13206519037a7fea16a4314aa41db8ca3c6794898353610b9ca31cbc0608797"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of A, B, C, D, and E is 48 kg while the average weight of C and E is 42 kg. If the weight of F is also added, then the average weight of all six is reduced by 2.5 kg. Find the average weight of A, B, D, and F.",
+   "options": [
+    "52.25 kg",
+    "42.25 kg",
+    "47.25 kg",
+    "57.25 kg www.prepp.in",
+    "45.25 kg"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b9f22af24350aef35ede3c94634569f1d844407fa349f32275b45284d5f8f593"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "A, B, and C can do the work in 81, 54, and 72 days, respectively. They started working together, but A left 8 days before the work was completed and C left 10 days before the work was completed. How long did it take to do the total work?",
+   "options": [
+    "17 9 days 29",
+    "2719 days 29",
+    "3615 days 17",
+    "1614 days 19",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1f79baa154bbe579ada95c3c38d2360bea3b1f30773f773f40e8a152b3d3d8da"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "2 years ago, ratio of ages between Amar and Bhupendro is 3 : 4 and 2 year hence, the ratio of ages between Amar and Bhupendro is 4 : 5. Find the ratio of their present ages.",
+   "options": [
+    "9 : 7",
+    "7 : 5",
+    "7 : 9",
+    "5 : 7",
+    "None of these."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8ec058384662958344578d9f30ef6b092a0e146e22cc6396ce77298b62cf2320"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Answer the question based on the information given below: Given below table shows the number of people, who went to four different malls (A, B, C, and D) on three different days (Friday, Saturday, and Sunday) of the same week. Days/MallsMall AMall BMall CMall D Friday 380 280 280 320 Saturday 220 300 360 340 Sunday 240 380 260 320 What is the sum of number of people, who went to Mall A on Friday, Mall B on Saturday, Mall C on Sunday, and Mall D on Friday?",
+   "options": [
+    "1340",
+    "1360",
+    "1260",
+    "1310",
+    "1380"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3d9787b0a2f41a2ac61f3dfad8a8c8b53209d32d2ca9b05d576b71c60b169440"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "If number of people, who went to Mall E on Thursday is 80% of the number of people, who went to Mall D on Friday, then what is the average of number of people, who went to Mall E on Thursday and number of people, who went to Mall C on all three days of the week?",
+   "options": [
+    "260",
+    "295 www.prepp.in",
+    "289",
+    "284",
+    "270"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5a3de561df8ba21b7d52c054a822d68d83e2161db820cf73a436ad74b81143c6"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "Total number of people, who went to all four malls on Saturday is how much/more less than the total number of people, who went to Mall B on all three days together?",
+   "options": [
+    "260, More",
+    "250, More",
+    "110, More",
+    "110, Less",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "55edc644f8c06f5561f28d04df2bf7acea4ca2c80c7ad50fc1c2b5c4f3f5ad24"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "Total number of people, who went to Mall A on all three days is what percent of the number of people, who went to Mall D on Friday and the number of people, who went to Mall C on Saturday together?",
+   "options": [
+    "123. 52%",
+    "128. 32%",
+    "120. 19%",
+    "127. 89%",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3b3e101b137b49f7b4f0fe4fb52d1761d8929f4224740e8dae67f30a3f76e424"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "If on Monday the number of people, who went to Mall A is 200% of the number of people, who went to Mall C on Saturday, then find the ratio of the number of people, who went to Mall A on Monday and the number of people, who went to Mall D on Sunday and Saturday together respectively?",
+   "options": [
+    "9 : 11",
+    "11 : 9",
+    "12 : 11",
+    "11 : 13",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "148ca439c3bf92d0f7d3882186cf4ef06f7bde5837bd0bacae901065eb0b3caf"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What is the average of number of people, who went to Mall A and Mall B together on Sunday and the people, who went to Mall C and Mall D together on Friday?",
+   "options": [
+    "306",
+    "309",
+    "303",
+    "305",
+    "310"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "25b938a6d2564188a1d3cf19e336c9ad532c2bddca29d0da0f7183c765a8e6f5"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 7841/2 + 5761/2 ÷ 3 + ?1/3 = 16001/2 www.prepp.in",
+   "options": [
+    "81",
+    "36",
+    "64",
+    "25",
+    "16"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "705971312512657d527796170277265eda85039bda196e89902c17b3a2f44606"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 5/16 - 1/8 - 3/32 = 3/16 - 1/4 + ?/32",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "5",
+    "3"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7d5950b684dc7714f3c0fc140e018a24dfacfa9df0d48fa2f769c24fd3f71351"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 40% of 750 - ? - 450 ÷ 9 × 4 = 40",
+   "options": [
+    "40",
+    "80",
+    "20",
+    "100",
+    "60"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "813d71679ec346c1162d96bde2665d927ff38971e4042baafd7fcf5b3bf7abfd"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 0.027 × 0.32 ÷ 0.0081 × 0.09 = (0.3)?",
+   "options": [
+    "2",
+    "5",
+    "4",
+    "1",
+    "3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6cc0d1595801939cee8092eb8969880220a155c27332c25109deb1d831407801"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? (251/2÷ 161/2) × 44 + 135 - ? = 240 ÷ 6",
+   "options": [
+    "110",
+    "150",
+    "190",
+    "170",
+    "140"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6be4f6272aa72fb24170bd13cf9bdf909456ddc0869708c0e17a7453ef50bbda"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? www.prepp.in 15% of 800 + 35 × 4 = ? + 150 ÷ 3",
+   "options": [
+    "210",
+    "110",
+    "240",
+    "150",
+    "190"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c3468530e1aa464bfe4564536e0b3e8850f874e1b23de6804d58debae4f7cc61"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 9611/2 - 4001/2 - 12251/2 = 16001/2 - ?2",
+   "options": [
+    "15",
+    "13",
+    "8",
+    "10",
+    "9"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "78337d0cd1c076e60f142fb681ac522dff00c26852999a1d0eafdfc014708ed2"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 378 + ?1/2 = 25% of 2400 - 192",
+   "options": [
+    "784",
+    "900",
+    "576",
+    "400",
+    "625"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "17b6ad10c21560c414fb1db71cd32b6f7671ebf7150b037a90c6fb5fc2b4b5fd"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 133 ÷ 491/2× 20 + ? = 225001/2 + 310",
+   "options": [
+    "70",
+    "60",
+    "90",
+    "55",
+    "80"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f99ba4ed7226e9cbc63779ebcb5f936e155590b4b7acb971eaf1d75003d8ac18"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark in the following question? 260 ÷ ? + 60 × 4 + 10 = 315 + 65 × 3",
+   "options": [
+    "5",
+    "8",
+    "1",
+    "3",
+    "4"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1f92885113192556fa70085cfca3f05b9b59d2ecfd7ef9e175d63191b42619dc"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "120% of 620 + 20% of 525 + 150% of 750 = ?",
+   "options": [
+    "1974",
+    "2184",
+    "2197",
+    "1989",
+    "1743"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bbdcbda0cff1b5521f137ce3cd1ea2ae4ed5f8bc2340923bc9b62b87a1ae91a5"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 73 × 10 × ? = (18 + 12) +140 × 5",
+   "options": [
+    "7",
+    "8",
+    "17",
+    "12",
+    "1"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "76e705104efb82d244f1dda56a35e5e0316e492b9413a484e828f4bbd315ff9a"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 360 × 9 ÷ 3 + 120 + 900 ÷ 5 = ?",
+   "options": [
+    "1426",
+    "1286",
+    "1380",
+    "1275",
+    "1180"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9a5f751ac3cb9426b63dfc8d002211c7cf33ebbba6c677dd9a92a9dbd94db012"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 25% of 960 + 24 × 15 + 18 × 20 = ?",
+   "options": [
+    "1080",
+    "1180",
+    "960",
+    "990",
+    "880"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d1bfd2771864e09a3122e7a9771c858158d26fbe6f6b0418655b6a10af111faf"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 4 × ( ? + 120 ) = (8)3 + 640 ÷ 80 + 22",
+   "options": [
+    "12",
+    "6",
+    "8",
+    "16",
+    "11"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "19af6859b1e78493025a094e31ca1c78c06f2adc3631b628e5f84a43b7242e0f"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "A mixture of 60 litres of wine and water contains 20% of water. How much water should be added to the mixture so that the water will be 36% in the final mixture?",
+   "options": [
+    "10 litres",
+    "15 litres",
+    "12 litres",
+    "20 litres",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f59b30b611f51bef5de4629305b60e0e18e4a1b4fec47bf10873b56bc9cdfe64"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "A bookshop sells books whose marked price is Rs. 300 at a discount of 15% and gives a pamphlet costing Rs. 15 free with each book. Even then he makes a profit of 20%. What is his cost price per book?",
+   "options": [
+    "200",
+    "250",
+    "150",
+    "220",
+    "240"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9c8ef4357ee0b06bf9c42832b4c3d88e6f4a7f0423ae00d85d5bd37142fabd1e"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "Train A crosses a standing man at a speed of 15 m/s in ‘x’ seconds while train B crosses a platform of 200 m length in ‘3x’ seconds with a speed of 15 m/s. Length of train B is one- third the length of train A. Find the length of train B.",
+   "options": [
+    "32 m",
+    "12 m",
+    "25 m",
+    "67 m",
+    "45 m"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5432d606ded16d515b735e2face383f8bb0eb0a797f815cf584b3950a9c94768"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "P and Q invests Rs. 400 and Rs. 300 into a partnership respectively. After 5 months, P added Rs. 100 to his investment. After 4 months, P removes double the amount he added to his investment after 5 months and Q removes the same amount P added after 5 months. If the profit share of Q is Rs.429 then what is the total profit they had in a year?",
+   "options": [
+    "Rs. 902",
+    "Rs. 1148",
+    "Rs. 820",
+    "Rs. 1066",
+    "Rs. 1234"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "90896563eb158d0e27aa0aca860887737b3dbd2ebdab2cd827a4cd94905a3b38"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "The state bank of india lends a certain amount of money to a Mohan at a simple interest at the rate of 3% p.a. Mohan again lends the same amount to another person at the rate of 6% p.a compounded half yearly. If he gets a profit of Rs. 618 then find out the sum borrowed by Mohan.",
+   "options": [
+    "25000",
+    "20000",
+    "30000 www.prepp.in",
+    "15000",
+    "24000"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ffcc1a48290c6c7ddfda82644a00f62ebedb8890b765c9ec38a288d89ab4b1ed"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "Raktim covered a distance from village A to B on car at 28 km/hr. However he covered the distance from B to A on foot at 4 km/hr. What is his average speed in the whole journey?",
+   "options": [
+    "22 km/hr",
+    "7 km/hr",
+    "8 km/h",
+    "10 km/h",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "585e571c9ec4bf30c2dbd9a3a035cbe411554067099b740219d483ddcf4cece0"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: Amidst global turmoil, the Intergovernmental Panel on Climate Change — the largest international consortium of scientists analyzing and reviewing the evidence on the present and future man-made impacts of climate change — has a message that is predictably dire. The world faces unavoidable multiple climate hazards over the next two decades with global warming of 1.5°C; even temporarily exceeding this warming level would mean additional severe impacts, some of which will be irreversible. The report points out that the rise in weather and climate extremes has led to some irreversible impacts as natural and human systems are pushed beyond their ability to adapt. Alluding to the Conference of the Parties (COP26) in Glasgow, in November 2021, the report notes that most of the targets that countries have set for themselves are too far in the future to have an impact in the short term at meaningfully reducing the climate impact. India will achieve net-zero emissions latest by 2070, that is, there will be no net carbon emissions, Prime Minister Narendra Modi declared at the COP26 summit. By 2030, India would also _______ 50% of its energy will be from renewable energy sources. However, none of this can help the 1.5°C mark from being breached. A major point of emphasis of the report, particularly for South Asia, is the trend in the ‘wet bulb’ temperature — an index of the impact of heat and humidity combined — and its effect on health. Lucknow and Patna, according to one of several studies cited in the report, were among the cities predicted to reach wet-bulb temperatures of 35°C if emissions continued to rise, while Bhubaneshwar, Chennai, Mumbai, Indore, and Ahmedabad are ‘at risk’ of reaching wet-bulb temperatures of 32°C-34°C with continued emissions. This will have consequences such as a rise in heat-wave linked deaths or reduced productivity. Global sea levels will likely rise 44cm-76cm this century if governments meet their current emissions-cutting pledges. But with higher emissions, and if ice sheets collapse more quickly than expected, sea levels could rise as much as 2 meters this century and 5m by 2150. India is one of the most vulnerable country in terms of the population that will be affected by sea-level rise. By the middle of the century, around 35 million of its people could face annual coastal flooding, with 45 million-50 million at risk by the end of the century if emissions are high. Experience has shown that partisan economic calculations trump climate considerations, but India must shore up its adaptation measures and urgently move to secure the futures of its many vulnerable who have the most to lose. According to the passage, when will India achieve net-zero emissions?",
+   "options": [
+    "By 2090",
+    "By 2070",
+    "By 2030",
+    "By 2040",
+    "By 2050"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "804405e506553909d733bf9310a762ddf9ce2a31eace256b5f3a025311ae69dd"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Which of the following is/are correct according to the given passage? www.prepp.in A. If ice sheets collapse more quickly than expected, sea levels could rise as much as 2 meters by this century. B. The world faces avoidable multiple climate hazards over the next two decades with global warming of 10.5°C. C. The rise in weather and climate extremes has led to some reversible impacts.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cb5e0362512dae31fea2dec9a1d2cb51d456b77e7241a2ee6e95ad680234ec76"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "According to the passage, if emissions are high, how many people could face annual coastal flooding by the end of the century?",
+   "options": [
+    "Around 35 million",
+    "25 million-30 million",
+    "Around 15 million",
+    "45 million-50 million",
+    "Around 10 million"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7607e4f059490ec2ed90de423c792b49419808d191b3da24f6883f5febe101e3"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "According to the passage, how much the sea levels could rise by 2150 if ice sheets collapse more quickly than expected?",
+   "options": [
+    "Two meters",
+    "Five meters",
+    "1.5 meters",
+    "6.5 meters",
+    "Ten meters"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bec35aac9e66eca2b1e09b4b82435a3733d1e4fc3c3acaf4d122f45340c1192f"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "What will fit in the blank taken from the passage: ''By 2030, India would also _______ 50% of its energy will be from renewable energy sources.''",
+   "options": [
+    "Ensurable",
+    "Ensures",
+    "Ensuring",
+    "Ensure",
+    "Ensured"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "76a439373e1cb08754f6e3109e1b34bcf2e3b7c43e3636f3e8dc3e1dc0ff70fb"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "Choose the synonym of the word 'Irreversible'.",
+   "options": [
+    "Irrevocable",
+    "Corrigible",
+    "Retrievable",
+    "Repairable",
+    "Revocable"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd88c202a2ecaabb07b83b8c4a174e7c16f2ae107d7a54c41c564d6af3ad9afd"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "Choose the antonym of the word 'Evidence.'",
+   "options": [
+    "Attestation",
+    "Confirmation",
+    "Corroboration",
+    "Proof",
+    "Guess"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9af614fe5d781392c15f90f99d9fb50f8d5281c75c0e251a7503750c6ec15849"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "Which of the following is/are incorrect according to the given passage? A. The 2021 COP26 summit was held in Glasgow. B. Global sea levels will fall 44cm-76cm this century if governments meet their current emission-cutting pledges. C. Lucknow and Patna were predicted to reach wet-bulb temperatures of 35°C with continued emissions.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both A and C",
+    "Only C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7657297552aa3317b9a5d7ca331a391fa198182a4163bd47f3f5bb111b27046c"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "What is the theme of the passage?",
+   "options": [
+    "India must relax upon its adaptation measures for climate considerations.",
+    "India can withstand the sea-level rise.",
+    "India is risk-free from climate change.",
+    "The achievement of net-zero emissions by India.",
+    "India must shore up its adaptation measures for climate considerations."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1c77fbe98d7ee8743c89375dd4ca17e24cd91b22f9eeeb5f5e9f0f991460d06c"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "Great Expectations were written by Dickens.",
+    "Every man and woman are required to check-in.",
+    "The Grapes of Wrath take a long time to read.",
+    "Either Shilpi or Raj is to blame for the accident.",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a44f4f345cd1156f6c701b73f382734be2fd040cbd4f7fd54290a68d2d616025"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "One little girl had less presents than the rest, and Helen insisted on sharing her gifts with her.",
+    "If you refuse her help because you are angry at her, you are cutting off your nose to spite your face.",
+    "Not only dogs but also cats are available at the animal shelter. www.prepp.in",
+    "The spectacles was sold at a price that most villagers couldn't afford, thus alienating the very people most at risk.",
+    "All are correct."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "51d4c76d0d85513f1dca328f0d83898b0413c5d18fcb896d8d18cb647f0e0b80"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "Either the bears or the lion has escaped from the zoo.",
+    "Teachers actively engaged in working at progressive education, defending the curriculum they developed and finding ways to expand it.",
+    "The greatest challenge of the Americans is understanding the mindset of Eastern Europeans.",
+    "Ten minutes are enough time to get there.",
+    "All are correct."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "67ce7856925fbdfbc638f6fcdd8de98f92697d90d4266312af92788a5406f13a"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "He could find himself making enemies as well as friends unless he proceeds with utmost caution.",
+    "Swimming in the ocean and playing drums are my hobbies.",
+    "The friar preached again stealing and had a goose in his sleeve.",
+    "Maybe Newton's law of gravitation, the law that describes how their trajectories should be playing out, is in need of a overhaul.",
+    "All are correct."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0056d2abcaed77eb108f1cb1dddd62588501febb656db8afe9db6b793be1cbeb"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "Shivani, together with a friend, practice yoga every day.",
+    "It is the people with insecurities which make life difficult.",
+    "Widows were forbidden to remarry and were stoned to death if they do.",
+    "Neither the lion nor the bears have escaped from the zoo.",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0691b239078aa0b131f734dac4c4c62d5996a663ba0cf0721fc51ff48f6e4824"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. We put ribbons (A) on our suitcases (B) to diferentiate (C) them from the hundreds (D) of other bags on the airline carousel (E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "767441c67c1b77d18b94b88cf6d78e303dde46a83900670f5f66ac83ef0bcacc"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. Tom regretted (A) having wasted (B) a grate (C) deal (D) of his life (E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "286bb7a7ab229fbd8b30046ed16f45ca9884c9ef93deea75e42f17ea6647c680"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. Despite(A) the completion(B) of the dilimitation(C) commission’s exercise(D), Legislative Assembly elections have still to be announced(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ba8c0aba5564f07ab491844351daf6341fd294ea45f60cabad5c88137f3603e9"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The likelihood(A) that many would face long incarceration(B) as PMLA accused(C), even though eventually(D) found innocant(E) has just increased manifold.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c73a55e9fb43e37c10138281b9a9572471548ed373bc570b782b95d39eb3fe34"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. Retail (A) inflation alike (B) eased below 7% in October, Reserve Bank of India (RBI) Governor Shaktikanta Das said on Saturday, in conversation (C) with R Sukumar, editor-in-chief, of Hindustan Times at the Hindustan Times Leadership (D) Summit(E) 2022.",
+   "options": [
+    "Retail",
+    "Likly",
+    "Conversation",
+    "Leadership",
+    "Summit"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "df6082dadc008a57352097bbf8dd17dbe4d61294422e263daf49970dccca9a40"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. www.prepp.in A. of many sorts show B. both plants and animals C. growth habits and even modes D. remarkable changes in form, E. of reproduction to adapt to changing environment",
+   "options": [
+    "BADCE",
+    "ABCED",
+    "CAEDB",
+    "BDCEA",
+    "CAEBD"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6206f19b2d85214bfc6a3cd8e5c6958b10f18335d366295b9b655241eb81bf89"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. mass formal education B. part of all industrial C. began in industrial society D. societies in India E. and is an established",
+   "options": [
+    "ABCDE",
+    "CDEBA",
+    "DEBAC",
+    "BECDA",
+    "ACEBD"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8048f6c46c09d16c64cbeb144c9935946b63a9943ded0f2eba3803fce27a77af"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. as a few hours before B. distant and as recent C. Alzheimer's disease impairs D. a person's ability E. to recall memories, both",
+   "options": [
+    "ABCED",
+    "BCEAD",
+    "DEACB",
+    "CDEBA",
+    "ADECB"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5d1e34a88f592bd5a77811e88c1634d97f08cee6f4e8aa352dfd6491b50f8185"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of the word. Identify the sentence(s) that best express(es) the meaning of the word. Choose 'None of these ' if the word is not suitable in any of the sentences. DEVISE A. Keep this electronic devise out of reach of children. B. Sam devised a fundraising strategy for the welfare of the childcare foundation's orphan children. www.prepp.in C. The terrorists devised a plan to attack the Colaba market during the festive season.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both B and C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c91855722597ff3ddd15b97c398426bf0a59840d8f9180ccb9e9991876f5f546"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of the word. Identify the sentence(s) that best express(es) the meaning of the word. Choose 'None of these ' if the word is not suitable in any of the sentences. LIGHTNING A. The little girl answered all the questions at the lightning speed. B. Arpit fall off the bridge when he was struck by lightning. C. The dress is lightning with sequins at night.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both B and C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "32899ef52e17e586a1fd025d532cd725093db14ebea59387479014097f8a339e"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of that word. FACTUAL A. She gave the police a factual account of the events that took place before the robbery. B. His opinion about the company was based on factual information and wasn't some preconceived notion. C. The hollow Earth story is based on factual imagination and there is no truth to it.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both B and C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "bcfb27440b4df5a133aea71713de80d2e1e4f9615a614c8c3858061047e88340"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, you have a passage where some of the words have been left out. Read the passages carefully and choose the correct answer to each blanks with its particular number, out of the four alternatives. After the outbreak of COVID- 19 in the world, technological advancement has been used to ________(A) and enable the business to continue running throughout. COVID-19 has transformed online shopping from occasional to a must globally to minimize the ________(B) of people all over, thus controlling the coronavirus’s spread. Online shopping is enhanced through ______(C) logistics systems where robots are being used as the means to deliver food supplies and other commodities because in-person delivery isn’t virus-proof. Countries like China and the United States have ________(D)contactless delivery services where the customer’s goods ordered are élite and dropped off at the selected locations instead of the customers picking for themselves using their hands. However, not every sector is equal in terms of e-commerce amid this _________(E). www.prepp.in Choose the correct option which fits the blank (B) in the given passage.",
+   "options": [
+    "Cause.",
+    "Event.",
+    "Movement.",
+    "Stationary.",
+    "Consequence."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ef99c035e12c7ffc70419619d162956645cd90e82b57b435fcf26f9931d47c99"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Choose the correct option which fits the blank (C) in the given passage.",
+   "options": [
+    "Extravagant",
+    "Robust",
+    "Enormous",
+    "Reactive",
+    "Plausible"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4fc14c8a847db826d38c29cb4f09b699ecf463cb327e3b96a41a0512fd83659c"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Choose the correct option which fits the blank (A) in the given passage.",
+   "options": [
+    "Promote.",
+    "Impede.",
+    "Launch.",
+    "Distribute.",
+    "Pamper."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "69ac9d8c017658e553908052a985fb11dd8d352b1ca0ea8bc145e146a387798a"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Choose the correct option which fits the blank (D) in the given passage.",
+   "options": [
+    "Evolved",
+    "Provoked",
+    "Indulged",
+    "Launched",
+    "Describe"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "892bbea6f231451f8545e4dc5b9d9cf2d4579e0b6c799984d6cdb36f03c02f5e"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "Choose the correct option which fits the blank (E) in the given passage.",
+   "options": [
+    "Endemic",
+    "Illness",
+    "Infection",
+    "Virus",
+    "Pandemic"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a5936d63ee2ff243ee34f2d56defd4c44057ff8ccf4fa9835caa20c40d7484b3"
+  }
+ ],
+ "section_confidence": 0.967,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

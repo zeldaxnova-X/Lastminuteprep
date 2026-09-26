@@ -1,0 +1,1515 @@
+{
+ "file": "SBI_Clerk_Prelims_Memory_Based_Paper_12_Jan_2024_Shift_1__1fc08e346071e42d534b4ca678d1403c.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Two missions the Indian Space Research Organisation (ISRO) has launched in the five months since its success with Chandrayaan-3 have both been scientific in nature: the Aditya L-1 space probe to study the sun and the X-ray Polarimeter Satellite (XPoSat) to study polarised X-rays emitted in astrophysical phenomena. ISRO launched the XPoSat, in a two-part mission, onboard a Polar Satellite Launch Vehicle (PSLV) on its C58 flight on January 1. The relative timing of these launches may be a coincidence but it is heartening because the ratio of scientific to technological missions ISRO has launched is skewed in favour of the latter, at the expense of research in the sense of discovery. Those science-oriented missions have all been exceptional in their own right. For example, XPoSat is only the second space-based experiment to study X-ray polarisation, and at higher x-ray energies than the other, NASA’s Imaging X-ray Polarimetry Explorer. Its POLIX payload, realised by the Raman Research Institute, will track X-rays in the 8-30 kilo-electron-volt (keV) energy range and observe emissions from around 50 sources in five years. The XSPECT payload, by ISRO’s U.R. Rao Satellite Centre, will study X- rays of energy 0.8-15 keV and changes in continuous X-ray emissions. Together, they are expected to shed light on intense X-ray sources such as pulsars and black holes. Then again, the science-technology skew is a reminder that ISRO among the world’s spacefaring organisations has unique needs and priorities. This is exemplified by the second part of the C58 mission. After launching XPoSat in a 650-km circular orbit around the earth, the fourth stage of the rocket lowered itself into a 350-km- high orbit and unfurled solar panels, becoming a rudimentary satellite and orbital testbed for the 10 payloads it carried. These are a radio payload by the K.J. Somaiya Institute of Technology and a device to measure ultraviolet radiation from L.B.S. Institute of Technology for Women; a ‘green’ cubesat propulsion unit, a ‘green’ monopropellant thruster, a tantalum-based radiation shield, a heater-less hollow cathode, and a nanosatellite platform, all from private entities; and an interplanetary dust counter, a fuel-cell power system, and a high-energy cell from ISRO centres. This is only the third time ISRO has operated the PSLV fourth stage in this way. As such, the C58 mission represents a union of the aspirations of professional scientists, aspiring students of science, and India’s private spaceflight sector. This again is a vignette of the demands of ISRO itself as it navigates an era in which a permanent lunar station seems inevitable, drawing as much on technological capabilities as — based on scientific missions — humankind’s knowledge of the universe. Find the synonym of the word 'skew' used in the passage.",
+   "options": [
+    "distribute",
+    "distortion",
+    "aligned",
+    "different",
+    "harmonious"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9122ed75da66c125d95e87eb9fde3d3d52f9b4aa749a69e337cb23f1541963e5"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "Select the most suitable title for the passage from the following:",
+   "options": [
+    "The highlights of ISRO’s XPoSat journey",
+    "ISRO – Redefining space exploration beyond technology",
+    "The unparalleled scientific prospects of Aditya L-1 and XPoSat",
+    "The future prospects of India’s private spaceflight sector",
+    "ISRO's global contributions to X-ray studies"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a2a1d044f6337dcdd76da8467f072311634da9b8264099a5436fade1ec29d457"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "According to the passage, who realized the POLIX payload?",
+   "options": [
+    "NASA",
+    "The K.J. Somaiya Institute of Technology",
+    "ISRO's U.R. Rao Satellite Centre",
+    "The Raman Research Institute",
+    "L.B.S. Institute of Technology for Women"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2de43de2900e18447e01eef7542bcb7ec926ae0630c9ab673f7adc40535b37c9"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "It can be inferred from the passage that:",
+   "options": [
+    "ISRO's scientific missions are viewed as less important than their technological ones",
+    "The scientific missions of ISRO carry potential for significant breakthroughs",
+    "The XPoSat mission solely focuses on studying X-ray polarization",
+    "ISRO plans to construct a permanent lunar station in the foreseeable future",
+    "The C58 mission was a failure due to lack of private participation"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a9ce1cd32e78fe1e42071cec1aec35db092faa0f4b5d37146b7b4a05597514ef"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "According to the passage, which one of them must be true?",
+   "options": [
+    "XPoSat is the first space-based experiment to study X-ray polarisation",
+    "All scientific missions launched by ISRO have underperformed",
+    "The importance of scientific missions is belittled because of ISRO's technological missions",
+    "The fourth stage of the rocket in the C58 mission transformed into a rudimentary satellite",
+    "ISRO centers did not contribute any payloads in the second part of the C58 mission"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2173665e19bf0b75971370a9c1fa58e61d0a33e2be610570b040fa313fed32df"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word: The C58 mission represents a union of the aspirations of professional scientists, _________ students of science, and India’s private spaceflight sector.",
+   "options": [
+    "discouraged",
+    "aspiring",
+    "disrespectful",
+    "hesitant",
+    "neglectful"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b500d0076699a5fecdb1f3170d5f849088eff14e8b6f859c7bc2702f09fa14e3"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Find the antonym of the word 'unfurled' used in the passage.",
+   "options": [
+    "Shrink",
+    "Steep www.prepp.in",
+    "Hide",
+    "Scroll",
+    "Curl"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0bf64a074a49797497dda4c85a730f5b4caf06c61c7ab534ddedc7f1db45e9e3"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Which of the following idioms best describes the phrase 'drawing as much on technological capabilities as scientific missions' used in the passage?",
+   "options": [
+    "To have one's finger in every pie",
+    "To burn the midnight oil",
+    "A piece of cake",
+    "To bite off more than one can chew",
+    "To kill two birds with one stone"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1b1b7695e0672e4a9bab176d153943bcb21995d5ee6032b54f99c04ac98877f8"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Which of the following most accurately states the main idea of the passage?",
+   "options": [
+    "The impact of ISRO's recent launches on India's space technology advancements",
+    "The role of ISRO in the global space community, focusing on its scientific missions",
+    "The scientific breakthroughs achieved by ISRO's Aditya L-1 and XPoSat missions",
+    "The distribution and characteristics of X-ray emissions in astrophysical phenomena",
+    "The scientific versus technological mission preferences of ISRO"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1d49a38ad4f0291bb45d83ea7668a1c12c8f8212edfa099230852f385f0ffe95"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Directions: The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. _______ spending by the state government drained our funds and left us with a huge deficit.",
+   "options": [
+    "Pivotal",
+    "Resolute",
+    "Excessive",
+    "Determined",
+    "Emphatic"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a8cdca86b85e67c85527b777715bc239e0363cf73c066360cbeaeade64ff99fd"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Directions: The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. I will _______ my goal through patience and diligence.",
+   "options": [
+    "Achieve",
+    "Deceive",
+    "Anguish www.prepp.in",
+    "Torment",
+    "Grief"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a37dc090c21851153896e818d5e5c492764a2a675e6e578b74e03380931299c6"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Directions: The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. The _______ of her nausea was so strong that she felt dizzy and began to retch.",
+   "options": [
+    "Resonate",
+    "Vulnerable",
+    "Susceptible",
+    "Intensity",
+    "Diversity"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "39ed3a2ac3e65c940e8737bbd1f6ab3bab29c45ec1da70bb7c3267ab0d0a76d2"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Directions: The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. The _______ invention allowed farmers to process cotton ten times faster than before the revolutionary discovery.",
+   "options": [
+    "Complication",
+    "Snag",
+    "Breakthrough",
+    "Intricacy",
+    "Drawback"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a080e1b16a6df01a646963396faa5dc9f177a707b7af6fb246515ebf7a6641a6"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "In the given sentence a word has been emboldened. Select the best alternative for the bold word from the given options. If none follows, select option 5 as your answer. The change in the defense team's strategy was astonishing for the court.",
+   "options": [
+    "Confirming",
+    "Astounding",
+    "Purifying",
+    "Praising",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ac3e34020e461a866ace355d62aaeb71f91173340e4b30952905d0b27c4aa69f"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "In the given sentence a word has been emboldened. Select the best alternative for the bold word from the given options. If none follows, select option 5 as your answer. The family of the victim wanted to petition the court for an extension. www.prepp.in",
+   "options": [
+    "Pray",
+    "Prey",
+    "Command",
+    "Request",
+    "None"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "709e38301dc7f4fc7dd58efc29db576f92e921028ecffb1fb5e15aa4b76db787"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, among which only three have been arranged in sequence and two sentences must be interchanged so that the five sentences can together form a meaningful paragraph. A. Miss Universe is an annual international beauty pageant that is run by the United States-based Miss Universe Organization. B. Telemundo has the licensing rights to air the pageant for the next 5 years. C. The Miss Universe Organization and its brand are currently owned by Endeavor. D. Along with Miss World, Miss International, and Miss Earth, Miss Universe is one of the Big Four international beauty pageants. E. The pageant's advocacy is humanitarian issues and is a voice to affect positive change in the world. Which of the following should be the FOURTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "70624b5d0ae3a8b739d3edb006cfde7bf234739a05e055d56331348898ad0eec"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Which of the following should be the THIRD sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "62eda7125e2fe7ca65d459a3f80825f3126659702ac4a27009d1ec0a6fc8bea6"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Which of the following pairs of sentences must be interchanged in order to make the set of sentences a meaningful paragraph?",
+   "options": [
+    "A and C",
+    "B and D",
+    "D and A",
+    "B and E www.prepp.in",
+    "C and B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "54ae06f9d4cff4e21f0a3de0deca0b6bcef5ce417ec0679b632e5a2ac3c8a8c6"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "After forming a meaningful paragraph, which of the sentences can immediately follow B: I. The reselling of the franchise from one owner to the next is recurrently common in the history of the event, sometimes for contractual breaches or financial reasons. II. It is one of the most-watched pageants in the world with an estimated audience of over 500 million viewers in over 190 territories. III. The fee includes the rights of image, brand, and everything related to the pageant.",
+   "options": [
+    "Only II",
+    "I and II both",
+    "II and III both",
+    "Only III",
+    "Only I"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "60eae83bc814ab8f33311e4c12ad788c08f4d255f9684c843dda3a1f41a1075c"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "After forming a meaningful paragraph, which of the sentences can immediately follow E: I. This crown was purely made from rhinestones. II. The crown is set with 1,371 gemstones, weighing a total of 416.09 carats (83.218 g). III. The current Miss Universe is Harnaaz Sandhu of India who was crowned by Andrea Meza of Mexico on December 12, 2021, in Eilat, Israel.",
+   "options": [
+    "Only I",
+    "I and II both",
+    "II and III both",
+    "Only III",
+    "Only II"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d56eced6820f399c9d2e2561b89f2cfe6ac49dbfb91b9c69c64734a0a4c771d9"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. One of the thing that attracted (A)/ me to this field is the (B)/ opportunity to make a (C)/ difference in people’s lives. (D)/ No error (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "94d3b405da5d6c16669ffa4f86ec18c3dde086ab1f07e179e5c2b274dfc2b4fc"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. They coin money in (A)/ honest and accurate measures (B)/ and allow this money trade (C)/ freely on open markets. (D)/ No error (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "09c8342dd5626001e92d6512c1313bfd48fe1053307de6163f11038df3e0973d"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. The people of Queenstown are (A)/ happy that the queen, accompanied (B)/ by the prince of Wales, (C)/ are present at the function. (D)/ No error (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e3c5e131db692d3a7c4439e3d797583ac9daa02edf31b817021cc72fabe616d6"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. In the choice of these spots, (A)/ two motives seem to have influenced (B)/ him - the neighborhood of an university or college (C)/ and the amenities of the situation. (D)/ No error (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "26c924bbde664723d78b50714867b76f3ffb9d223580a68595be7f426da88ffd"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select 'No error' as your answer. www.prepp.in We'd discussed (A)/ this point between (B)/ ourselves numerous times (C)/ over the past months. (D)/ No error (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "52c4c681566cdcbd4332017e83b3f3df2a6bdb8e7ad664261facb854430a6247"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DEPRECATE A. The teacher should not deprecate his student's achievements. B. The value of new cars deprecate quickly in first two years. C. Shares continued to deprecate on the stock market today.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both A and c"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "be840ab543d7735c834f1b3bdd848ca67082d220e3e7c56f89f87a9ea01a9d5e"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. IMMINENT A. Several imminent personalities will be present at the meeting . B. .The weather forecast warned that a rain storm was imminent. C. Rohit comes from a family of imminent politicians.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Only C",
+    "Both B and C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ed66b681f82198841d63995608f57f627aeb7f24e23198ddce7c5e56147ae246"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DISCREET A. He made some discreet enquiries about the organization before accepting the employment agreement. www.prepp.in B. Brown and white rice are two discreet varieties of rice. C. All objects are made of discreet molecules",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both A and C."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "194888b0bdf8a4c569469f645b3ba050525378633870f092b59fd38d5d99fa28"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. Elicit A. He managed to elicit donations from many small businesses. B. Ravi tried to elicit some info from his friends about his surprise birthday party. C. One should refrain oneself from any elicit practices.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "764130b403d3599d81b41a8e8d2736ed3fd66aabaef81075819abe412114aecf"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. PROJECT A. He gained valuable experience whilst working on the project. B. The party is trying to project a new image of itself as caring for the working classes. C. He was afraid she would project him because he was a foreigner.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "601ae240dd96d5c1b5ca96bf2fce72d418287ff04480e23d20eeaae159f35397"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Study the following directions shows the number of non vegetarian and number of vegetarians living in five different cities A, B, C D and E. www.prepp.in If 2/5th of the vegetarians in city A and 1/4th of the non vegetarians in city A are females then find the total number of male vegetarian and male non vegetarian in city A.",
+   "options": [
+    "1150",
+    "950",
+    "1050",
+    "850",
+    "1100"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "95711c4db2a1cf7fbf83e4fea7e6f820a05c7e7ddd7501e730bb4334b9f0b9f9"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "40% of the vegetarians from city B and 33.33% of the non vegetarians from city B are married and the remaining are unmarried then find a difference between the number of unmarried persons in city B.",
+   "options": [
+    "120",
+    "80",
+    "90",
+    "70",
+    "100"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a236dbe75719c3e356e10822a2105c44589a0fb595a97994ba6348ac25af6792"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "The average number of vegetarians in the city D , E and F is 700 and the average number of non vegetarians in the city D, E and F is 600. Find the total number of vegetarian and Non vegetarian in city F.",
+   "options": [
+    "1100",
+    "1200 www.prepp.in",
+    "1250",
+    "1000",
+    "1300"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c02752c2b4020a17222b75b560cb076e5ed085f34f739fd93e75d02b4a6c9354"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the number of vegetarians in D and E to the number of non-vegetarians in C and D.",
+   "options": [
+    "5: 11",
+    "7: 5",
+    "3: 5",
+    "5: 4",
+    "3: 2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5e15ea179372481287728e895262dc33f31a4b2d2e4edd74d300581c55122df5"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the average number of vegetarians from all the cities and the average number of non vegetarians from all the cities.",
+   "options": [
+    "60",
+    "70",
+    "30",
+    "40",
+    "50"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2c3cff0d52f23a8031a221c476aa1cafc562dd9bea1a60565dd7ac38002318c2"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 81, 99, 123, 153, 189, ?",
+   "options": [
+    "221",
+    "211",
+    "241",
+    "101",
+    "231"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "90185a6e9a877a8fdc156de8412b483a6ddab9422ebb3556c3da52162f05b9dc"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 26, 38, 52, ?, 86, 106",
+   "options": [
+    "68",
+    "72",
+    "62",
+    "66 www.prepp.in",
+    "76"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7b494ebb6374885128e224935d7aa817f3f8d7abe4e9c3d1e082dad4a914a46e"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 12, 15, 24, 39, 60, ?",
+   "options": [
+    "77",
+    "81",
+    "83",
+    "87",
+    "91"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6a6896102aedb0f971e753828273f34eff8237c7ad77db51a607c7d103774ad6"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question mark(?) in the following series? 6, 17, ?, 28,-16, 39",
+   "options": [
+    "18",
+    "-18",
+    "5",
+    "-5",
+    "21"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1cf0aced18aa08c66b184ee90098feed2c96a87319b2327900dd3772ad26c5e8"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 310, 382, 474, ?, 726, 890",
+   "options": [
+    "480",
+    "458",
+    "588",
+    "580",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "06d524f72ddf4812beff62b2716a8b7f934d7779f2ffb123b7ac4c7d96f4cfd3"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "In Gada Electronics, the profit is 420% on cost price of Television. If the cost price is increased by 35% but the selling price does not change, what percent of the selling price will be the profit nearly",
+   "options": [
+    "70",
+    "80",
+    "74",
+    "50",
+    "65 www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2a0bda60ef7f18416eb67d09ead9eb38d1106da3fa501cf1fa38ed9aebdbb3a7"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "Ratio between the present age of Ranita and Rahul is 3 ∶ 4. If sum of their ages is 63, what is the ratio between the age of Ranita and Rahul after 5 years?",
+   "options": [
+    "14 ∶ 43",
+    "30 ∶ 11",
+    "32 ∶ 41",
+    "15 ∶ 31",
+    "40 ∶ 21"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a27366d6594650442be5fdfeca7c959193c708bb490e37fe4a269a3c2770263b"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "In a mixture of 80 litres, milk and water were in the ratio of 2 : 3. If 25% of the mixture is replaced with the same amount of milk, then what is the amount of milk in the final mixture?",
+   "options": [
+    "44 litres",
+    "46 litres",
+    "54 litres",
+    "56 litres",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f9bc54fb402f3312cac4b678551cdbf9b1944477f7eaabefba30aa879263c67e"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The following caselet shows the number of bikes and cars sold in the four different companies A, B, C and D. Number of bikes sold in company A is 2.5 times of the number of cars sold in the same company. Number of cars sold in company A to B are in the ratio 5: 7 Number of bikes sold in company C is 500 more than the number of bikes sold in company A. Number of bikes sold in company B is 20% more than the number of bikes sold in company A. Total bikes sold in all the companies are 5850. Number of bikes sold in company D is 150 less than the number of bikes sold in company B. Number of cars sold in company C is 100 more than the number of cars sold in company D. Number of cars sold in company D is 350 less than the number of bikes sold in company D. Number of bikes sold in company C is what percentage of the number of cars sold in all the companies.",
+   "options": [
+    "50.77%",
+    "51.89%",
+    "53.03%",
+    "57.89%",
+    "50.89%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "29d0936066acd4b95260ac20f8033ac09a6b69bad35302bd577add7943fa8a47"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the number of cars sold in company C and D to the number of bikes sold in company A and D.",
+   "options": [
+    "24: 23 www.prepp.in",
+    "28: 25",
+    "21: 26",
+    "19: 23",
+    "19: 17"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9808e12a03e2907d88f5abb04c6e3647e4fc0cbc38b721282b68c677cbc76690"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "Number of bikes sold in company E is 250 more than the number of bikes sold in company D and the number of cars sold in company E is 125 more than the number of cars sold in company C. Find the total number of vehicles (Cars + Bikes) sold in company E.",
+   "options": [
+    "2195",
+    "2885",
+    "2765",
+    "2825",
+    "2655"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "492fb6f680d6e803e955c9a578a212b530b8fdf719e1c5e356f1ea5054a098bc"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "If the number of cars sold in company A is increased by 25% and the number of bikes sales is increased by x. If the number of vehicles (Bikes + Cars) sold in company A is 2225 then find the number of bikes sales increased in company A.",
+   "options": [
+    "325",
+    "300",
+    "350",
+    "200",
+    "250"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6f469b375caa7cb2ba8341213870ecdb749ae12929a91d6cf3b2404695ed7371"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 1260 ÷ 42 × {(102 - 86) + 5} = ?",
+   "options": [
+    "630",
+    "570",
+    "540",
+    "510",
+    "590"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "89748a25d7784804410fdf87ff29e7d4bda0021ef971f3c898fd5dadab5a468b"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 126.06 + 181.92 - 229.99 = 65.99 + ?",
+   "options": [
+    "12 www.prepp.in",
+    "15",
+    "22",
+    "25",
+    "19"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0343fc12ae8b70d50fd016308e986beeaa8552fd19f36fc7944ef6c1d076da36"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 2 1024 ÷ 128 + 24% of 250 = ? + 180 ÷ 45",
+   "options": [
+    "44",
+    "64",
+    "80",
+    "14",
+    "8"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "892ebb3d3e414e1465e1af9f04a60f99ae65320137fc0f511b357f06acec575a"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 45% of 900 + 55% of 700 = 66% of 400 + ?",
+   "options": [
+    "374",
+    "424",
+    "472",
+    "526",
+    "556"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "52e29743de7b85f60eeba77f733e8662bdebb70bf7c31710337d3b78e621c4fd"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 3 2 950 + 50 × 15 - 14 × 22 + √? = 11 + 9",
+   "options": [
+    "200",
+    "240",
+    "320",
+    "400",
+    "420"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9170674690292f0cd76a88df9cc7e12b9e45d35ff8ea94261ce00bba4166d6a1"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 55% of 240 + 83 × 4 – 24 × 8 = ?",
+   "options": [
+    "1788",
+    "1498 www.prepp.in",
+    "1678",
+    "1988",
+    "1828"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9b3d3b1ae0d258630d8302786380cb9c836cefd43a47681d973c577747c3ffa6"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? (25 × 30) – (110 × 8) + 670 = ? × 9",
+   "options": [
+    "90",
+    "30",
+    "60",
+    "45",
+    "120"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7db0fe82aae0665dbbd813b2a9e07c1c295e8bc04793c47a2d102b2d98b93780"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? (96 + 48 × 5) ÷ 24 + 32 = ?",
+   "options": [
+    "52",
+    "48",
+    "42",
+    "38",
+    "46"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "61295fd1d17714fe53aa08de1d4f0769b7c776cad9b24ede9b074060795ffde3"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 25% of 480 + 35% of 600 = ? + 40% of 800",
+   "options": [
+    "20",
+    "30",
+    "50",
+    "10",
+    "40"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a358df25714623c4231917cea90a1f6d97c891c2e90672da0d7f79b5022e5a11"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 65% of 200 + 35% of 400 = ?",
+   "options": [
+    "270",
+    "310",
+    "350 www.prepp.in",
+    "240",
+    "210"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c17556909d489c70182f4d44e715d282be85a1e778110105882f2eaec71c7014"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 45% of 300 - ? = 27 × 40 ÷ 9",
+   "options": [
+    "12",
+    "22",
+    "15",
+    "25",
+    "35"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "21df08f2529157322a8bd26074bd36a03d63183aa40570de6d25fb536eb4a7ff"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 132 ÷ 11 - 15 × 8 + 128 = ?",
+   "options": [
+    "10",
+    "20",
+    "25",
+    "15",
+    "30"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a03b3ea11c772c63635f7939162e179e2455ac690a614fa6a35818b1563d9b63"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Compound interest accrued on a sum of Rs. 2500 is Rs. 749 at 14% per annum for certain years. What would be the simple interest accrued on the same amount for the same years at 7% per annum?",
+   "options": [
+    "Rs. 230",
+    "Rs. 350",
+    "Rs. 349",
+    "Rs. 450",
+    "Rs. 670"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "89fd3221257eb90cf023709f75e404a7ba3524911d60662776461c83726681a6"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "(a) persons can complete a job in (a-19) days while (a-9) persons can complete a job in (a-15) days. How many persons can finish twice the job in 54 days ?",
+   "options": [
+    "4",
+    "8",
+    "9",
+    "24",
+    "32 www.prepp.in"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "23163a9e7a58f7840787c1bfda91a3f48d1cf06a4e88bc37b5380e8c1b71fa75"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "th Virat Kohli made 160 runs in his 16 innings and after that, his average run increased by 5. Find his average run after 16 innings.",
+   "options": [
+    "80",
+    "85",
+    "75",
+    "60",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3cb20e2bf58ed0553219857affca27c23cfa1df226a8f19da4ed6b2aed2d8032"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "2 If length and breadth of a rectangle are in the ratio of 8 ∶ 7 and its area is 224 cm . Find the perimeter of the rectangle.",
+   "options": [
+    "40 cm",
+    "50 cm",
+    "56 cm",
+    "60 cm",
+    "64 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "08d49119b9d6b2d01f243cbce02a115853e6979cc29b4ed4b992316861f15f95"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "Trains A and B started from X and Y respectively at the same time towards each other. They crossed each other after 4 hours. A travels the distance XY in 10 hours. Find the time taken by B to travel XY.",
+   "options": [
+    "6.4 hours",
+    "4.8 hours",
+    "7.2 hours",
+    "6.67 hours",
+    "4.5 hours"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "853f3f8cebd7c8d8e54163dddd71d51c156ecf413766b2b0db34b15a4acc9991"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "A student got 30% marks in an exam of 150 marks and failed by few marks. If he had got 10% more of his present marks, he would have passed by 1.5 marks. Calculate the passing marks.",
+   "options": [
+    "50",
+    "48",
+    "46",
+    "47",
+    "51"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0009b782e490278f27244bc3b560c4854d077eb8f642cd3f20f449501717c7d0"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Ten persons – L, M, N, O, P, S, T, U, W and Z – are sitting in two parallel rows of five each such that each person of one row is facing the other person of the other row. In row 1, L, M, N, O, and P are sitting in the same row facing south while in row 2, S, T, U, W and Z are sitting in the other row facing north. Number of persons to the right of S is two less than the number of persons to the left of P and S does not sit at the end of the row. Z faces the one who sits third to the right of N. N faces U. Only one person sits between W and T. M faces either T or Z and sits second to the left of O. What is the position of L with respect to O?",
+   "options": [
+    "Third to the left",
+    "Third to the right",
+    "Second to the left",
+    "Fourth to the right",
+    "Second to the right"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ba938b465680af2bdf82b4afa836479d0a0d65c85d42f516c4f4ad1903dc25f8"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Who among the following sits at the end?",
+   "options": [
+    "P",
+    "Z",
+    "U",
+    "M",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "335908242aa0c2764753d844fd6134c14c0f9f9c5ae0b4994a93b9e82343252e"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Who faces the one who sits second to the left of S?",
+   "options": [
+    "L",
+    "M",
+    "N",
+    "O",
+    "P"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d4bf80839a0f5107095c6b1191f2122a535230f453e3719a4f1424e2a6f8d839"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Who faces O?",
+   "options": [
+    "S",
+    "T",
+    "U",
+    "W",
+    "Z"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "16d10a26cfcdf804815d6d9b23636b65b5c16911fe4ffee5fbfdd74dcf63e7ea"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "How many persons sit to the right of T?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ed40947525ca46f9a54d37c075a9c8e90ea3aa85e09089292dd151b8bf20dea8"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions numbered I, and II .You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements Only a few Mobile is Laptop. No Laptop is Wire. Some Wire is Electric. Conclusions I. All Mobile being Laptop is a possibility. II. Some Electric can never be Laptop.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Neither I nor II follows",
+    "Either I or II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cd4b12dafbcd1952f08fc2a70b447082d49dd964a933792ed9cdfe50f2c958fb"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: No books are copies. Some books are laptops. All laptops are computers. Conclusions: I. At least some computers are not copies II. At least some computers are copies",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Either I or II follows www.prepp.in",
+    "Neither I Nor II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9f0a5ae993c4f2fe0f080375b985e8ed8ed28331fe8ebe1ada9eea8d5808070e"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions numbered I, and II .You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Red is Yellow. No Yellow is Green. All Green is Pink. Conclusions: I. All Red being Green is a possibility. II. Some Pink can be Red.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Neither I nor II follows",
+    "Either I or II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8e1df552b5c12ad29dd9b8685082a4db3052ccf0c5a281bfeb7879a5e154873b"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All Laptops are Computers. All Computers are Mobiles. No Mobile is a Battery. Conclusions: I. Some Computers are not Laptops. II. Some Mobiles are not Laptops.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Neither I nor II follows",
+    "Either I or II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8145eece8737c9a54945fbe42e2beb3aadc29d86c6c1b53b4f07662399dbe937"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. www.prepp.in In a certain code language, all beautiful are girls nice → pb ag ba sa tf some sweet girls are classy → sf nt tf mp pb beautiful all some dating good → nf mp gd sa ba nice boys are sweet but not cute → ct ag tf nt na kp st What could be the code for \"girls are classy\"?",
+   "options": [
+    "mp ag ph",
+    "ag sf tf",
+    "pb tf sf",
+    "ba kp st",
+    "ag pb tf"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b9b1b0099d9d662b500315f738068a716f928bf2824a2c362fa98b51f1831e4c"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "What is the code for \"beautiful nice good\"",
+   "options": [
+    "ba ag sa",
+    "ag sa gd",
+    "ba ag nf",
+    "Either Option 2 or 3",
+    "Either Option 1 or 2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "13a642828da30f1ec6ac098a0d5fda46f83aea2b4edb09e6d2314fc871bd2428"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Code \"na st sf' used for which of the following words.",
+   "options": [
+    "boys not cute",
+    "classy cute not",
+    "boys not classy",
+    "but classy girls",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d988cba6a0e8667eb2aefaf7c2c6bc3b6f6a5c0ab07a7d6ad298c0b9f91f9bda"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Which of the following word is used for \"tf nt pb\"",
+   "options": [
+    "classy girls are",
+    "some classy girls",
+    "beautiful girls are",
+    "some sweet all",
+    "are girls sweet"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7fe7ff3c6465a86906f57fed5117521ea423cb21cc9ecdddfc396fb74f0ff49d"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Code \"nf\" is used for which of the following word?",
+   "options": [
+    "girls",
+    "dating",
+    "good",
+    "Either girls or good",
+    "Either dating or good"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "62cae1d9b042a40c68a6d563b6994e3a6e4aa3e65042093440a72b5b54627003"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Eight boxes A, B, C, D, E, F, G and H are placed one above another but not necessarily in the same order. Each box has a number written on it from 1 to 8 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. C is placed just above G. G is the bottom most box. There are four boxes placed between D and G. Two boxes are placed between B and G. Number of boxes between A and G is same as between H and B. H is placed above B. Two boxes are placed between F and D. There are at least 2 boxes between E and B. Which box is the topmost?",
+   "options": [
+    "A",
+    "H",
+    "E",
+    "B",
+    "F"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fe06b4e8359aee568f30bbac6ade3fc0f80926adeac54a5bc5658af7d7323075"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "How many boxes are placed between E and F?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "526034d2de4d3439df943de102dc2fc6446d861f23ad60f6e04c9bd21c46ada9"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Which box is placed between H and D?",
+   "options": [
+    "A",
+    "E",
+    "C",
+    "B",
+    "F"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f4a0b9f81858a78df68e0b98aa6b2051960be2a08f78381af15394b9befec027"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Which box is placed immediately above A?",
+   "options": [
+    "D",
+    "E",
+    "C",
+    "B",
+    "F"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a9484ffa89e409474f1b587b4bea81601c9d22802fc38339ecab776280ce572a"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Which box is placed immediately below F?",
+   "options": [
+    "D",
+    "E",
+    "C",
+    "B",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fba2ebcb4b6caa0bdc3012e3690aa686c93a4e73cf333884674e46158d05db1f"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given some conclusion is/are definitely true and then give your answers accordingly: Statement: U > T; X < U = Y; Y ≤ Q < R Conclusions: I) U > R II) T < Q",
+   "options": [
+    "Only Conclusion I follows",
+    "Only Conclusion II follows",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8a6b34831c46f48aa00ff1124045ae73d398f9264e5b5a87ef3f951a68ca4167"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A < J > B ≤ I < C = H ≤ D = E ≤ F ≥ G = Z Conclusions: I. C < F II. H = F",
+   "options": [
+    "Only I is True www.prepp.in",
+    "Only II is True",
+    "Both I and II are True",
+    "Either I or II is True",
+    "Neither I nor II is True"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "65414edaf6e2012ee0ef2b9db436986a4cac0b9b54bd0fef4ac6e823da660497"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statement: B < S ≤ Q < Y = X > C ≥ J Conclusion: I) S < Y II) X > B",
+   "options": [
+    "Only I is true",
+    "Either I or II is true",
+    "Only II is true",
+    "Both I and II are true",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "347ccdf6aa5f1d7e5df4b6b90503496c88a0dd6652913cf919731a0d932c2411"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statement: T > U ≥ O = P ≤ Y < L = B Conclusion: I) O ≤ Y II) B > U",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Both I and II are true",
+    "Either I or II is true",
+    "Neither I nor II is true"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f6ae0a2c3e8185ee4061419598676c46f71789e20a9998a8e39366a4c1704fd7"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the given question. There are 6 friends A, B, C, D, E, and F standing in a row according to their height in ascending order from left to right but not necessarily in the same order. C is taller than A and D. B is taller than A, but shorter than E. E is shorter than F. C is taller than E but not the tallest one. D is taller than B but shorter than E. How many friends are standing to the right of 'D'?",
+   "options": [
+    "1",
+    "5 www.prepp.in",
+    "3",
+    "6",
+    "2"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fd3467463ce645897f85a037773d14c6e7c019c52c578f9830c8595ba0bba432"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "How many persons are there in between F and B?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "add89942345dc4d08a8590163205c30fa47ef4a22fb817f48d8dfd5ece11b066"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "How many friends are taller than 'A'?",
+   "options": [
+    "5",
+    "4",
+    "2",
+    "1",
+    "3"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "166fb53b785253369d37fad1c0287a033fe98d9fa34f04d2478234b6e10e6860"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below: Seven friends namely, P, Q, R, S, T, U, and V have examinations on seven different days of the same week from Monday to Sunday but not necessarily in the same order. P’s examination is on Friday. Only one person has examination between P and S. Q has examination just before S. As many persons have an examination before Q as after V. Not more than one person has examination between S and T. Only two persons have examination between R and U but U’s examination is not after R’s examination. Which among the following has examination on Saturday?",
+   "options": [
+    "U",
+    "T",
+    "S",
+    "V",
+    "R"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "61a871dac7656e5f0d721ba27398f85cbb6173584e74d10c8cd393fdff68e000"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "How many persons have examination between Q and T?",
+   "options": [
+    "None",
+    "One www.prepp.in",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "06a3a9471f41b887a7e3a254dd19a41c90bb00dad80f105108c81c53fc538455"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "On which day is U’s examination?",
+   "options": [
+    "Sunday",
+    "Wednesday",
+    "Friday",
+    "Monday",
+    "Thursday"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0ee851eaf50523a9b76b09abd8ccc0480ba1332a853071e4b807a6151f5e2830"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Which of the following person has examination on Monday?",
+   "options": [
+    "V",
+    "T",
+    "R",
+    "S",
+    "Q"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6dd3ec26f1bccc51dbc872ab541b01f1cfb7ca072f16c8c851f6650b16e472dc"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Which among the following is true?",
+   "options": [
+    "S’s exam is on Sunday",
+    "No one has examination between Q and P",
+    "Three persons have examination between R and S",
+    "S’s examination is just before P’s examination",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fc199df6947074cd502c286a3e3bd54c2179b6cf3781a30adfad3592523b1aec"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "If in the word ‘DEFECTED’, all the letters are arranged in the reverse alphabetical order (i.e. Z - A) and then the first four letters are changed to the previous letter and the last four letters are changed to the next letter. After the final arrangement, which of the following letter is the second to the left of the letter which is fourth from the right end?",
+   "options": [
+    "C",
+    "D",
+    "E",
+    "F",
+    "T www.prepp.in"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "308d5078fd21c612db5e666ff8f452c4bc13d55b2687a1f3ffa2e51eed1e52aa"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement carefully and answer the questions: H % 1 P ! F S ? * X 7 C T 4 $ 9 3 > @ / 6 N Q 5 How many letters are immediately preceded by consonants and immediately followed by a symbol?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "58447d284db0f6a7c3a1f6a42cd4ce2031c0f6ed4441dac7f29a034234a767eb"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "If all the numbers are dropped from the above arrangement, which of the following will be the fifth to the right of fourth from the left end?",
+   "options": [
+    "?",
+    "S",
+    "*",
+    "X",
+    "C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c877a86c938b04ba35cec372e77ba2346b070be7a27365e18a14534a96b7fdcd"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If all the symbols are dropped from the arrangement then what would be the sixth element from the right end?",
+   "options": [
+    "9",
+    "T",
+    "4",
+    "C",
+    "7"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5017da1ade440e8041900e3b60ce8d2fcc54e128d2598b87abf6a6b7d764fd96"
+  }
+ ],
+ "section_confidence": 0.973,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

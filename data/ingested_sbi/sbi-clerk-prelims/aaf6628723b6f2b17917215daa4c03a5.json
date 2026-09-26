@@ -1,0 +1,1487 @@
+{
+ "file": "aaf6628723b6f2b17917215daa4c03a5.pdf",
+ "format": "prepp",
+ "accepted": 98,
+ "rejected": 2,
+ "reasons": {
+  "empty_or_short_stem": 2
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. A computer can do (A) some tasks best than (B) a person can (C) as human often make silly mistakes. (D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "51f9e0b44d16351851bb27058e1b468d423dced6f514dd52899365d31677ffd2"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. Since Julie (A) was not hungry,(B) therefore we ate (C) dinner without her.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d7236852a4967a08f27f657b3fdc18c9887bd7d8084d14560c4c62201a91b321"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. We shook myself (A) dry on the porch (B) and returned to the (C) warmth of the cabin.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3d990179007e9a808ed1851a69ee69eb69ae901f053bc458740353ed0760d8a8"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. The pictures (A) were painted by hand, (B) and some them (C) were very beautiful. (D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "133aee4fa987e46c41b7a1fa4900316a586ddf909eaed0ecdccafb29c005adf4"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. Two children, (A) brother and sister,(B) were on there way (C) to school.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0a544ef8ea13d139cce599cd24fb76d5de680162da6ac4b20b6f3d875b7be075"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "In the following passage, some of the words have been left out. Read the passage carefully and select the correct answer for the given blanks out of the given alternatives. Studies have shown that good quality sleep is important in ___(1)____ good mental health. Think back to times when you’ve awoken and felt well-rested – how much clearer was your mind, your emotions and your overall mood? Although the ___(2)____ between sleep and mental health is not completely understood, it’s generally ___(3)____ that getting a good night's sleep can help your mental and emotional resilience against mental illnesses such as depression and anxiety. It’s believed that during the REM (Rapid Eye Movement) cycle of sleep, your mind begins to dream and it’s at this stage during the night which contributes to emotional health. Unfortunately, ___(4)____ in sleep can interrupt these cycles which can impair thinking and emotional regulation. But sleep doesn’t just ward off risks of mental illness; it also helps ___(5)____ general mental functions as well. For example: throughout your day, your brain is taking in new information and responding to all kinds of stimuli. Then at night, sleep gives your brain the downtime to consolidate and process this information, and commit it to memory so that it’s ___(6)____ in the future when required. What should come in place of the blank labelled 1?",
+   "options": [
+    "Foraging",
+    "Attacking",
+    "Stopping",
+    "Controlling",
+    "Maintaining Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "296b585636bb338b540e308076a03ba77efefab6080b784d2e4521ed11cc53e1"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "What should come in place of the blank labelled 2?",
+   "options": [
+    "Ownership",
+    "Relationship",
+    "Companionship",
+    "Partnership",
+    "Courtship Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b38d4602a634cee8f70f12ad48451844faf313c75873f8c57efbce015a592a29"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "What should come in place of the blank labelled 4?",
+   "options": [
+    "Connections",
+    "Renovations",
+    "Attachments",
+    "Disruptions",
+    "Relations Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9d184014b9daaf834f31c463ff596559ab2d24426f3a188b65df6dde5d02de26"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "What should come in place of the blank labelled 5?",
+   "options": [
+    "Recede",
+    "Fade",
+    "Improve",
+    "Dwindle",
+    "Intrigue Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b1897c3c168c32a7c51173c90df3139916a816dd4ce4388d4a43dcb43a7c1dd0"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "What should come in place of the blank labelled 6?",
+   "options": [
+    "Unreachable",
+    "Obscure",
+    "Vague",
+    "Accessible",
+    "Suspicious Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "98dd376b6c33b430c4539fb53f2ac8803118db939436bdd582c2afb1d4b71490"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. We were arrived(A) to the party(B) and it was almost over(C) when we had late(D).",
+   "options": [
+    "A-B",
+    "C-D",
+    "D-A",
+    "B-D",
+    "C-A Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "39e0145a66605829ea5e3ef93bc0230b704a872981ec380b94661d6621d96de3"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Her life(A) in the house(B) of the confines(C) became her new normal(D).",
+   "options": [
+    "A-D",
+    "B-A",
+    "D-C",
+    "C-B",
+    "No change required Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ba41b2bb7523b15344e1c3192f1e00b035f38ea6200eda4492314f3020e2be74"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. After(A) seeing the terrified(B) shadow, she was really scary(C) and refused to move(D).",
+   "options": [
+    "C-B",
+    "A-B",
+    "B-D",
+    "D-A",
+    "No change required. Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "336692c1b45332ecc1b3ab7eb20f1cbe69701ae065dcde02a6be9f2c6bed4458"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The car accident(A) was horrific, it crushed(B) his dreams and his legs leaving him depressed(C) and in agony(D).",
+   "options": [
+    "A-B",
+    "C-A",
+    "B-D",
+    "D-C",
+    "No change required. Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a8c7ed57e1d89ee79353c6ee0b3cb765f3738b8e187116431de00f7fc2dd2350"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. It took him a lot of time to lack(A) his crippling battle(B) of concentration(C) so that he could finish his work on time(D).",
+   "options": [
+    "A-C",
+    "C-D",
+    "D-B",
+    "B-A",
+    "No change required. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "aabd7fe7919706aedbf21eac72864190bc424c0408174e189556855477230375"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Martha came(A) to the occasion(B) that a bunch(C) of flowers is a great gift for any conclusion(D).",
+   "options": [
+    "A-D",
+    "B-C",
+    "D-B",
+    "C-A",
+    "No change required Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1f5ceaccf6150c07557f3f09f93bc4f3ad8ab305cf8800ebe1dc5cc40ce2230c"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "A sentence is given with a phrase highlighted in bold. Which of the phrases given below the sentence should replace it improve the sentence? If the sentence is correct as it is given and no correction is required, select 'No correction required' as your answer. The pilot fly the plane into the thick clouds which created heavy turbulence.",
+   "options": [
+    "pilot will fly the plane",
+    "pilot would have flying the plane",
+    "pilot flew the plane",
+    "pilot has fly the plane",
+    "No error. Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c6520e19682b8999a451ee4de57502d00791621fe875007edb21bd82ae63839a"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "A sentence is given with a phrase highlighted in bold. Which of the phrases given below the sentence should replace it improve the sentence? If the sentence is correct as it is given and no correction is required, select 'No correction required' as your answer. The teenagers vandalized the statue without thought about the repercussions.",
+   "options": [
+    "statue without think",
+    "statue without had been thinking",
+    "statue without thinking",
+    "statue without a think",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2dc35ac272c48cf582cdca0775b30be0d6a7b52c54adfb093d5c019e03772ae7"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "A sentence is given with a phrase highlighted in bold. Which of the phrases given below the sentence should replace it improve the sentence? If the sentence is correct as it is given and no correction is required, select 'No correction required' as your answer. Not for a moment I did think that I would be trekking in the highlands of Scotland.",
+   "options": [
+    "a moment I had",
+    "a moment did I",
+    "a moment would I",
+    "a moment did me",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e45f6754d0c7ce883b145c61915782ab7f77266cc75a0e7263b93921d5248e4b"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "A sentence is given with a phrase highlighted in bold. Which of the phrases given below the sentence should replace it improve the sentence? If the sentence is correct as it is given and no correction is required, select 'No correction required' as your answer. Seeing his desperate struggle, the manager gave him an advice.",
+   "options": [
+    "gave him much advices.",
+    "gave him a lot of advices.",
+    "gave him many advices.",
+    "gave him a bit of advice",
+    "No error. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d8284b3a93f59c1d012ba5e3ea3aa884a85d837be54dfa2d8de88ae554ab9002"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "A sentence is given with a phrase highlighted in bold. Which of the phrases given below the sentence should replace it improve the sentence? If the sentence is correct as it is given and no correction is required, select 'No error' as your answer. By the time the dictator realized what was happening, violent protests had already broken out in parts of the capital.",
+   "options": [
+    "already broken up",
+    "already broken off",
+    "already broken into",
+    "already broken",
+    "No error. Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6745be00959f0a951e03e9bb5778f38ce02392eb1ff1d373127175df7b705b76"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Read the passage given below and answer the questions that follow. Screaming is exhibited by many animals, but no species uses this extreme vocalization in as many different contexts as humans. Though we're pretty good at recognizing a scream when we hear one, the wide variety of screams makes it difficult to pin down what defines them. To study screams is to probe the fuzzy boundary that separates humans from the rest of the animal kingdom. It is a way to explore our pre-linguistic past. Although we are fully symbolic creatures today, on occasion a trace of our primal selves bubbles to the surface in the form of a scream. Understanding its characteristics could improve the treatment of nonverbal patients, help fight crime, or simply make movies more frightening. But first scientists need to explain what makes a scream a scream. To that end, researchers at Emory University’s Bioacoustics Laboratory recruited 181 volunteers to listen to short recordings of 75 nonverbal human vocalizations, such as screams, laughter, and crying. For each of the 75 sounds, the volunteers were asked to indicate whether they thought it was a scream. The researchers then analyzed 28 acoustic signatures of the sounds, such as pitch, frequency, and timbre, to determine which parameters influence the perception of a sound as a scream. Most people would say that the defining characteristic of a scream is that it is a focused loud and high- pitched, but previous scream research suggests otherwise. In 2015, David Poeppel, a neuroscientist at New York University and the Max Planck Institute, led a study to determine the acoustic qualities that differentiate fearful screams from other nonverbal vocalizations. To do this, Poeppel and his colleagues compiled a corpus of screams lifted from YouTube videos and ones recorded in their lab, then asked volunteers to rank them according to how alarming the sound was. Poeppel also imaged the brains of his volunteers as they listened to screams to see how these sounds affected neural activity. Choose the correct synonym of the word 'indicate' highlighted in the passage.",
+   "options": [
+    "reject",
+    "show",
+    "discard",
+    "feel",
+    "ignore Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b5462582f875ffc694e6af3b3622dd8d942600de5730095801f88290de75014b"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Choose the correct synonym of the word 'focused' highlighted in the passage.",
+   "options": [
+    "engrossed",
+    "dejected",
+    "hampered",
+    "elated",
+    "crushed Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4138fb8219164d8e53cbd44eac1a761890a19f1b58f582235e4742c736149a47"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Why is it difficult to pin down what defines a scream.",
+   "options": [
+    "Screams are not used by humans making it incomprehensible.",
+    "Because screams happen only when we are excited.",
+    "The sheer variety of screams makes it hard.",
+    "Sound produced by a scream falls below the audible frequency.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d95a3fa2ade75979f5c2a571f1c0ec4be101a8c135658369b27c5c0ebf4a3ba3"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "As per the given passage to study screams is to?",
+   "options": [
+    "Understand the evolution of words.",
+    "Comprehend our primordial existence.",
+    "Know why we get scared.",
+    "Explore our pre-linguist past.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fb9da16b288d6ada0004922c509c257c41edf4fb75bcffe627551bd6b3e76483"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Understanding the characteristics of a scream could improve:",
+   "options": [
+    "Treatment of nonverbal patients.",
+    "Make movies more frightening.",
+    "Help fight crime.",
+    "All of the above.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "53cb35e82a2fa3ad1321a3807d4d27f30d4930f5b921767f7c593ff7010b8b32"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "What was the aim of David Poeppel's study?",
+   "options": [
+    "To study the 75 non verbal vocalizations.",
+    "To analyze the 28 acoustic signature of sounds.",
+    "To probe the boundary that separates humans form animals.",
+    "To determine the acoustic qualities that differentiate fearful screams.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "85f05c4b81986b57e399d7a7b47f14e34caa36076475f0aabb50bc4416a28448"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which of the following statement is false according to the given passage.",
+   "options": [
+    "Humans are good at recognizing a scream.",
+    "Most people say that screams are focused, loud and high-pitched.",
+    "Fearful screams and non-verbal vocalizations are the same.",
+    "Volunteers were asked to rank the screams according to how alarming the sound was.",
+    "Screaming is exhibited by many animals. Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "80b9e022e706c1b094189d08a247a397a816808b8aff1320b1aad97cd8e9b185"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (3/5) × (18/15) ÷ (9/5) + 60% of 20 = ?",
+   "options": [
+    "58/5",
+    "41/3",
+    "62/5",
+    "55/7",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2196bb55600f5bc3da6319d11a8dc3dba303732f9125fd6494b5af421db912a8"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 152 + 112 – 182 + 63 = ?",
+   "options": [
+    "240",
+    "238",
+    "258",
+    "242",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "81af0fde1666eb049fa45ec86f428e815e358c338d5b28a0b16bde56947a45ea"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 30% of 50 + 16.66% × 48 – 20 + 13% of 200 = ?",
+   "options": [
+    "29",
+    "39",
+    "25",
+    "33",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cb3713f37b389013d21b99b37beb28848b7af84020598cfdc1a57878b3b7510f"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? [(20/7) × 63] ÷ (18) + (20/3) = ?",
+   "options": [
+    "50/3",
+    "40/7",
+    "55/3",
+    "42/5",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f15cfb2e46124b4f4f407bd405d7d0ff8f931def167c2a7c1c340d549e3a63e3"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 78 + 85 – 30% of 200 + (8 × 5) = ?",
+   "options": [
+    "141",
+    "151",
+    "155",
+    "143",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "af9ac67fa661bcf1137e6bcb494bd21e407eaf801618809d579dfa218090af68"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (25 + 35) ÷ 4 × 15 - 644 ÷ 7 = ?",
+   "options": [
+    "128",
+    "90",
+    "32",
+    "98",
+    "133 Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b3b970d23edf8b8f7f899668f6db4ef95ec062467c3d759388379e6ccfdf47b1"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? [(252 – 63) × 3 – 2]1/2 = ?",
+   "options": [
+    "38",
+    "35",
+    "30",
+    "45",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e1751ea9dc0b27a36c1313c964d5cd45e8edff4457dc40927b6e8aef0e8ab0b2"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 15 × 18 + 20% of 45 = 9 × ?",
+   "options": [
+    "25",
+    "35",
+    "42",
+    "31",
+    "38 Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "45feab81b2ca61ff728cc68d43c8374757deab2598bdc7cf008406f99e3f4ed2"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "841 ÷ 29 + 650 ÷ 5 + ? = 35% of 1600",
+   "options": [
+    "401",
+    "301",
+    "501",
+    "101",
+    "251 Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "44b1f877f6cf1c94bd644963569298136d630cb5850783537fbe8501ce60357b"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 208 ÷ 13 × √441 + (13)2 = ?",
+   "options": [
+    "460",
+    "505",
+    "510",
+    "516",
+    "495 Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "edc2452a21287b9409d4498e6ba203cff50e900f3612c9206de23124535f2a13"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "Directions: There are 5 different Buildings A, B, C, D and E and the number of Total number of floors and number of vacant floors given. Read the graph carefully and answer the given questions Total Number of floors = Number of Vacant Floors + Number of Occupied floors Find the ratio between number of occupied floors in building B and that of building E.",
+   "options": [
+    "16 : 19",
+    "14 : 11",
+    "4 : 3",
+    "7 : 9",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b41a88c7bc635d33efaa81c730c6efc16d69f10493f48495b74c29882541e1bf"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "floors in building E?",
+   "options": [
+    "22%",
+    "28%",
+    "26%",
+    "30%",
+    "20% Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b968d37449bae13fb708808e67d607f0fc3b46d6a071517c13c9290f48b4189c"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the total number of occupied floors of building B and C together and that of buildings D and E together.",
+   "options": [
+    "90",
+    "110",
+    "40",
+    "60",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d71246c3663844eaf6798bb579f60a71f6d707997f301943983851daeceb3bae"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "If 3 persons live on each occupied floor of building A and 2 persons live on each occupied floor of building D, then find the total number of persons living in these 2 buildings.",
+   "options": [
+    "2800",
+    "3000",
+    "2600",
+    "3200",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "63609853b7023bbeb5854b42c354ce71283a23f165066b230ba96a1d0e6bfd95"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "Find the average of total number of occupied floors in all the 5 buildings.",
+   "options": [
+    "572",
+    "652",
+    "526",
+    "688",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "536483c841c1295e9f4572e0686a83095c88d48d9b911399b5e72450b45fd051"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 50, 200, 700, 2100, ?",
+   "options": [
+    "4250",
+    "5800",
+    "5250",
+    "5500",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ac3ac48c1a102f27fcff704169ce3c4db040197dd1ff7fcaf4dda91ba16b8ba3"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 5, 16, 65, 326, ?",
+   "options": [
+    "1957",
+    "1866",
+    "1738",
+    "2106",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d9d039c7d158777373e1818099fe291939ca942630ede5340fd5c29bab1ede30"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 20, 29, 4, 53, -28, ?",
+   "options": [
+    "88",
+    "83",
+    "87",
+    "93",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b26cbb3c8e4fca9c14013e4526d38ffb8ef015331c80756088e0dd8aed1c4e4c"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 10, 12, 15, 20, 27, 38, ?",
+   "options": [
+    "53",
+    "55",
+    "49",
+    "51",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b5806b379bc3ba8ec4ea2602ed148b6b3866b5dc103ca62f85b52c762aabed15"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 49, 41, 33, 25, 17, ?",
+   "options": [
+    "8",
+    "7",
+    "9",
+    "10",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2618e03a30aa446da7bdaa9ca88793aa3dd4ce0882f080010bc7d7d8a5aecb60"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of present ages of Prakash and Sohan is 5 : 3. If the present age of Sohan is 27 years, then what will be the age of Prakash after 3 years?",
+   "options": [
+    "45 years",
+    "48 years",
+    "42 years",
+    "38 years",
+    "50 years Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "beaa61af6ffeb07be89015a35639eb387013900a2475d7cc753f63a701451e02"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "A invested Rs. 4500 in a business and after some time B also joined him and invested Rs. 4800. At the end of year B received Rs. 4400 profit out of Rs. 9900. After how much time did B join the business?",
+   "options": [
+    "1 months",
+    "2 months",
+    "4 months",
+    "3 months",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3f95b94519589d028fb70bacba08d1858afdb4f395d19352fd565fba2004ee9b"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "A pipe can fill a rooftop water container in 12 hours and another pipe can empty 50% of the container in 10 hours. How long will it take for the empty container to be filled to 1/2 its capacity, if both the pipes are opened simultaneously?",
+   "options": [
+    "15 hours",
+    "18 hours",
+    "12 hours",
+    "14 hours",
+    "10 hours Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8725d3d1b439e186c6ba47e65d7339659fcc2bbdd37a1d08076b15988aa6c78b"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "Two numbers are in the ratio of 21 : 26. If 8 is added in each, the new numbers are in the ratio of 5 : 6. Find the ratio of numbers, if 4 is subtracted from each number?",
+   "options": [
+    "19 : 24",
+    "19 : 25",
+    "6 : 7",
+    "9 : 16",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6f4fdce6286918da55f4775221fa30c6ae67970defad255f72aa2fc5987194b1"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "A boat covers a certain distance downstream in 5 hours but takes 7 hours to return upstream to the starting point. If the speed of the stream is 3 km/h, then find the speed of the boat.",
+   "options": [
+    "20 km/h",
+    "24 km/h",
+    "18 km/h",
+    "26 km/h",
+    "48 km/h Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "038f409c688851fee941a800c7db63d0a6cd97307b9f6a8126255dd2d3641fc2"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following information carefully and answer the following questions. Statement I- There are 3 groups of students X, Y and Z and they study in different classes A, B and C. Number of students in class A is 120. Statement II- Number of students in class C is 80% of total number of students in class A and class B. Number of group X students in class A is 1/3rd of total number of students in class A. Total number of group X and group Y students in class B is 40. Statement III- Ratio of group Y and group Z students in class A is 3 : 1. Ratio of group X and group Y students in class B is 3 : 1. Total number of students in class B is 250% of total number of students of group X and group Y. Statement IV- Ratio of group X, group Y and group Z students in class C is 3 : 5 : 3 Find the number of students in class C.",
+   "options": [
+    "164",
+    "158",
+    "176",
+    "184",
+    "162 Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d62bfbc4cc545c8093f3544897b3c893c8da3d69ff5a35fd6f6777570cfdd509"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "Number of students in class A is what % of number of students in class B?",
+   "options": [
+    "120%",
+    "110%",
+    "80%",
+    "60%",
+    "140% Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6ee0f018c28002e3609e0be31905f05758ed57d3a27d8e3991e13138954cc30d"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "Find the total number of students of group X.",
+   "options": [
+    "128",
+    "126",
+    "112",
+    "102",
+    "118 Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2cc76e4a5ba1cf74c2423129f20a61a5a8d4d0c9502ae21f759ca83a1613d509"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between group X and group Z students in class B.",
+   "options": [
+    "2 : 3",
+    "3 : 4",
+    "2 : 5",
+    "1 : 2",
+    "4 : 3 Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5b82c6d229c640a3dce4a75de0b5238914dd7f3dc3f041ed3dcf7e5399ce844e"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between number of students in class A and that of class C.",
+   "options": [
+    "44",
+    "56",
+    "58",
+    "48",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "40ccf336fbcfb7ee9e34013600f1dc356dd498470d69aa1d55cc5e997ce121ca"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "Ram invested Rs. 8000 at R% for 2 years. Amount received is again invested in scheme B at 12.5% for 1 years. Total interest received is Rs. 3700. Find the value of R.",
+   "options": [
+    "15%",
+    "12%",
+    "10%",
+    "18%",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "acb88c2ad12e900f521a1136d49049e1071eaae58c6aa40707421c9e0178d520"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "Train A running with the speed of 36 km/hr crosses a pole in 20 seconds. Another train B whose length is 100 metre more than length of train A is running with the speed of 18 km/hr. Find the time taken by train B to cross a platform of length 500 metre.",
+   "options": [
+    "200 seconds",
+    "150 seconds",
+    "160 seconds",
+    "140 seconds",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9a3e1b79491dbf45864700135c891a3f1d41fa931e1eac678cb064d0129fe8dc"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "If the ratio of alcohol and water in a mixture of 85 litres is 11 ∶ 6. How much water should be added to make the ratio 5 ∶ 3?",
+   "options": [
+    "2 litres",
+    "3 litres",
+    "4 litres",
+    "5 litres",
+    "6 litres Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d5f77284234ee727bd066a21a5d26faee488867b0528a0446710aa4ef31889b0"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "A Raman marked his radio at 25% above the C.P and gave customers 12% discount on cash payment. In this way he gained Rs. 55. Find the cost price of radio.",
+   "options": [
+    "Rs 700",
+    "Rs 100",
+    "Rs 550",
+    "Rs 1000",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "29abe3594085091012c5667e6a6181b78a7530b7ef2f565ae202d770726f48ec"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "In the examination Raushan got 25% marks and failed by 64 marks. If he had got 40% marks he would have secured 32 marks more than the pass marks. Find the maximum marks in the examination.",
+   "options": [
+    "650",
+    "600",
+    "640",
+    "700",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a5843f1b18fda70901a8ab73e1e1915ee29689a45b33a5f07f1fbb29a04115aa"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle. All of them are facing the center but not necessarily in the same order. Two people sit between C and D. Three people sit between G and A. D is second to the right of F. Two people sit between H and B. G is not an immediate neighbor of D. H is an immediate neighbor of E. Who among the following is facing C?",
+   "options": [
+    "D",
+    "B",
+    "H",
+    "E",
+    "A Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0d8d32035a0bcb27d5db42cc824b434f00f317e4a2ca85d2511723a71826290e"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "What is the position of D with respect to E?",
+   "options": [
+    "Immediate to the right",
+    "Immediate to the left",
+    "Second to the right",
+    "Second to the left",
+    "Fifth to the right Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ce8bdb947acd84c7f2f107bbf6d28bf42ec97bc467c661c67ff8c581eeccf770"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Who among the following is the immediate neighbor of C?",
+   "options": [
+    "B",
+    "F",
+    "E",
+    "Both B and E",
+    "Both B and F Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "723c646f158f45eea48d7e9b8c4f7d26d82e1b9f2b0b4631250013d3c0f1507a"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Which among the following statement is true?",
+   "options": [
+    "E is an immediate neighbor of C.",
+    "H is an immediate neighbor of D",
+    "D sits opposite to E",
+    "C is second to the right of A",
+    "None of the given statement is true Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e929b123f8ee3038525a16c01d5d78dcdc4f2cb35bb5c82b59e635f7244cdeb9"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Four among the five are same in some way and thus form a group. Which among the following is odd one out.",
+   "options": [
+    "B - D",
+    "C - H",
+    "F - E",
+    "A - G",
+    "F - H Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "91e1b93ff15d379b11252e86f1d3246d85ef264f15ad368d82470570cff21a49"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Some vowels are words. Only a few words are sentences. Conclusion: I. Some words are not sentences. II. Some vowels are sentences.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or II follow.",
+    "Neither conclusion I nor II follow.",
+    "Both conclusion I and II follows Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ada98388dbdc7184954d875d1460917970782139b50aa585db80384cf187f67d"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: All numbers are natural. Only a few numbers are prime. Conclusion: I. No prime is number. II. Some prime are natural.",
+   "options": [
+    "Both conclusion I and II follows",
+    "Only conclusion II follows",
+    "Only conclusion I follows",
+    "Neither conclusion I nor II follows",
+    "Either conclusion I or II follows Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f155c12433e93fd33d6c30f60c3cfa1634bb88b499f564850946a2c49df28d29"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Only a few cups are buckets. No bucket is a jug. Conclusion: I. Some cups are not bucket. II. Some cups are not jug.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a6d0823d4e9471dada39107ab100b4d8d5941484e740baef1364bf751380646e"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the questions asked below. Eight friends A, B, C, D, E, F, G and H are sitting in a row with equal distances between each other, but not necessarily in the same order. All of them are facing north direction. Two people sit between E and C. E sits at one of the extreme ends. A sits second to the right of C. B sits fourth to the left of F. F is not an immediate neighbor of C. H sits third to the left of D. D does not sit at extreme ends. Who among the following sits immediately to the right of F?",
+   "options": [
+    "A",
+    "G",
+    "D",
+    "E",
+    "C Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8a60b894695cf5f89c14958aa7878b5f2735f3a507e52ae2a514ddd5c2a52dc2"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "How many people sit between C and B?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "594f47bd6c72fbf74fc247fc837efead7151afcd74178cd25dce670f30905763"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "If all the persons are made to sit in alphabetical order from left to right, how many will remain unchanged as compared to their original seating position?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "None",
+    "More than three Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c4c69db76676a9abe4c38df45bd21665dc37561a524dc2d7559db7a0d98eda04"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Four among five are the same in a certain way. Find the one who does not belong to the group?",
+   "options": [
+    "E - G",
+    "B - A",
+    "D - C",
+    "F - H",
+    "C - F Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "fa5311d8ccb190fc5218777b565ed1b7b2566caded92675abb7838aa66a5d451"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Who among the following sits second from the left end?",
+   "options": [
+    "B",
+    "C",
+    "H",
+    "F",
+    "A Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d3b9a5f13c084c3a338f42aa802e95b1e4c3a7060394c129ac99e5262e9f5195"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given question. Sahil starts from Point A and walks 8 m in south and reaches point B, then turns towards his left and walks 4 m and reaches Point C, from point C he turns his right and walks 5 m and reaches Point D. From D he turns 8 m towards left and reaches to E. From E he again turns left and walk 5 m reaches to F again turn right and walk 4 m to reach point G. Finally he again turns to his left and walks 8 m and reaches Point H. What is the distance between A and H and H is in which direction with respect to A?",
+   "options": [
+    "16 m, East",
+    "12 m, West",
+    "16 m, West",
+    "24 m, North East",
+    "12 m, South East Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b5a9290368499be3e75b42c75bdf0d890c5cfe67d53f410d272f37dcc5acd24b"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Point E is in which direction with respect to C?",
+   "options": [
+    "South",
+    "South East",
+    "North West",
+    "North",
+    "North East Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "acbc052230e16ff7fea7645f6b5d57fdc38fd297bb25a3088b0d4d072c21dfc2"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word ‘CONDITION’, each of which has as many letters between them in the word (both forward and backward direction) as they have between them in the English alphabetical series?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than Four Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5b5e715266c1379109395d3dcea89aa6c72e77b5bd816543cbf721a866fe5570"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Eight people A, B, C, D, E, F, G and H buy different items but not necessarily in the same order. Three-person buys items between A and D. Two persons buy items between B and A. A buys item immediately before G and after C. Two people buy item between H and C. A buys an item after B. F buys an item before E. Neither F nor E buys items first or last. How many people buy item between F and G?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5764f451c54cf452cf1608051dd86e1e296cd4febb21d83db04cd7eb2086e985"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Who among the following buys the item at last?",
+   "options": [
+    "C",
+    "D",
+    "F",
+    "A",
+    "G Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d3d86699f1cdab211da83fbdf58f929229aacad1d291db7517f2cb6082ba5472"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Who among the following buys item immediately before E?",
+   "options": [
+    "C",
+    "H",
+    "F",
+    "B",
+    "G Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c90d40547b87331843390f101f63553d6a8bb12ca370d1ef533d391ae71513b7"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "How many persons buy item after C?",
+   "options": [
+    "None",
+    "Two",
+    "Three",
+    "Four",
+    "Five Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f4aaf348bfda1d454e42bdcf8aabe32cdd9bbd8db8de36970b8cd80a69125083"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Four among the five are same in a certain way and thus form a group. Which among the following does not belong to the group?",
+   "options": [
+    "FC",
+    "AG",
+    "CA",
+    "GH",
+    "AB Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f32e5c0406e255e99a3818c853a77233670908004277f80848f6245f64d00bac"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be true. Find which of the following conclusion(s) among given conclusions is/are definitely true then give your answer accordingly. Statement: D < E ≤ F, G > H ≥ I > F Conclusion: I. E ≤ H II. H > D",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Both I and II are true",
+    "None is true",
+    "Either I or II is true Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7960c308896d41e60e22b9fd3204aad587d6abae1d9110b11efb036e11259a8f"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be true. Find which of the following conclusion(s) among given conclusions is/are definitely true then give your answer accordingly. Statement: M ≥ B ≥ N = Z > X ≤ R > S Conclusion: I. M > X II. N > S",
+   "options": [
+    "None is true",
+    "Only II is true",
+    "Both I and II are true",
+    "Only I is true",
+    "Either I or II is true Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8cbc09aa50a2329bc6984d91479f11271cc3c402e7546a6ed9ab522fa0d64b39"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be true. Find which of the following conclusion(s) among given conclusions is/are definitely true then give your answer accordingly. Statement: M > N ≥ O = P ≤ Q < R > S Conclusion: I. M > P II. O < R",
+   "options": [
+    "Only I true",
+    "Only II true",
+    "Neither I nor II is true",
+    "Both I and II are true",
+    "Either I or II is true Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "51b868beb6c093fb881514aa02ee986399441bee6d54e65d7f9954eb87a9a3ba"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information carefully and answer the following questions. There are twelve persons sitting in two parallel rows. Six persons A, B, C, D, E and F are facing north and other six P, Q, R, S, T, and U are facing south. Each person from one row faces exactly one person from the other row but not necessarily in the same order. A and R sits diagonally opposite to each other. There are two persons sitting between R and Q. One of the immediate neighbors of Q faces C, who does not sit near A. P faces B and P is not an immediate neighbor of Q. There are two persons sitting between B and D. T sits second to the right of U. E does not sit at any of the extreme ends. S and T is not an immediate neighbor of each other. A sits at one of the extreme ends. How many persons are sitting between R and U?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e77b5e79eaa500240af6b30e967ca86102e5c7b914f005a9438f6b24e9d82149"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Four are alike in some way. Find which of the following is different?",
+   "options": [
+    "P",
+    "U",
+    "D",
+    "B",
+    "A Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c0422cab5e168f03344c5276d958bac0945dc3ad36e7e13b2d0639043066913e"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Who is second to the left of Q?",
+   "options": [
+    "P",
+    "S",
+    "T",
+    "R",
+    "Can’t determine Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "48045795fb94875ea87f5807e75cce08fcad82f299ea817c846ba18b131d4d6e"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "If persons who are facing north sit as per alphabetical order from left to right. How many persons do not change their seats?",
+   "options": [
+    "Three",
+    "None",
+    "One",
+    "Two",
+    "Four Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3c5054a322be0d931a3ebbc857cf718376c1b2ecbd3d1848e5a0f5b8cdad4409"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Who among the following sits opposite to T?",
+   "options": [
+    "C",
+    "D",
+    "B",
+    "E",
+    "A Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "73d9dabf34659ba4daea3dcdf322f7ca38ff3ab1b5498bbb182b2f86cc491f95"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following alpha numeric series and answer the questions given below. 5 4 A B % & 3 5 E 2 1 U * G @ © 9 C 5 7 F K I 4 £ T V 9 4 H € L M 1 How many vowels are there which are immediately preceded by a perfect square?",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4 Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b8971cbe6e3bf35907cb3976a07b89924016cf55ff58572b3bd47e1f7cbad962"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "How many numbers are there which are immediately preceded by a symbol and followed by a consonant?",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4 Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "13f141e6d1ec8abef88eb0c23e6951d0f932ac8d8662205686f4b4495081a226"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "If all the symbols in the above arrangement are dropped then which of the following element is tenth from the left of third element from the right?",
+   "options": [
+    "E",
+    "U",
+    "5",
+    "7",
+    "F Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f8be50df0a6ce1f536b392a7c4f3455ee807e8757af337a1a03bab0c1e0aed65"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "If the first eighteen elements in the above sequence are written in reverse order, then which of the following will be at the eighteenth position from the right end?",
+   "options": [
+    "9",
+    "4",
+    "A",
+    "©",
+    "5 Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b20d6b251450df82decfab58d28f70a9b131e83c780de49129fd307a597cca9b"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Four of the following are alike in a certain way based on their position in the above arrangement. Find the one which does not belong to that group?",
+   "options": [
+    "B & E",
+    "7 K £",
+    "4 € 1",
+    "4 B 3",
+    "U G © Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "222f76f1dfbc5e05d85c560f1f6afe80241221ba6b805eb4968531d486d0e6ce"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make only one four-lettered meaningful word without repetition of any letter with the third, fourth, eighth, and the eleventh letters of the word ‘CONSECUTIVE’, which would be the second letter of the new word? If more than one such word can be formed, give X as the answer. If no such word can be formed, give Y as your answer.",
+   "options": [
+    "S",
+    "N",
+    "T",
+    "X",
+    "Y Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6262f31d7422157fc004c8fbb906f5609a4482c7f5d0d7b43daa753757745803"
+  }
+ ],
+ "section_confidence": 0.968,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

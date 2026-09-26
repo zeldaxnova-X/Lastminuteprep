@@ -1,0 +1,1515 @@
+{
+ "file": "SBI_Clerk_Prelims_Memory_Based_Paper_11_Jan_2024_Shift_2__998cbab5f87adbd5cf0c38a6f330f827.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Directions: Read the given passage carefully to answer the following questions. Each question will have five alternatives as its answer. Choose the correct option as your answer. Soil nutrition and organic fertilization are critical components of sustainable agriculture, impacting crop productivity and environmental health. The essence of soil nutrition lies in the soil's ability to supply essential nutrients that plants require for growth, development, and reproduction. Understanding and managing these nutrients sustainably, particularly through organic fertilization, can lead to healthier crops and reduced environmental impact. Soil is a complex ecosystem teeming with life and is the primary source of nutrients for plants. These nutrients include macronutrients like nitrogen (N), phosphorus (P), and potassium (K), which are required in large amounts, and micronutrients like zinc (Zn) and copper (Cu), needed in smaller quantities but equally vital for plant health. Organic fertilization plays a crucial role in maintaining these nutrient levels without the adverse effects associated with synthetic fertilizers. Organic fertilizers, derived from natural sources such as compost, manure, bone meal, and green manure, offer a multitude of benefits. These materials contribute not only nutrients but also organic matter, which enhances soil structure, improves water retention, and fosters beneficial microbial activity. The gradual breakdown of organic matter releases nutrients slowly, matching plant uptake and reducing the risk of leaching into water bodies. This slow release also ensures a sustained supply of nutrients over a longer period, supporting crop growth throughout the season. Moreover, organic fertilization supports the biodiversity of soil organisms by providing food and a healthy environment for worms, fungi, bacteria, and other microbes. These organisms play essential roles in decomposing organic material, fixing nitrogen, and breaking down soil minerals into forms accessible to plants. Recognizing the benefits of organic methods, many agricultural professionals have begun to pilot new techniques that address the need for sustainable nutrient management. This initiative aims to optimize organic fertilization practices, tailoring them to specific crops and regional soil conditions. By incorporating these practices, farmers can enhance soil fertility naturally, reduce dependence on chemical inputs, and support ecological balance within their farming systems. Which of the following words is similar in meaning to \"pilot\" in the context of the passage?",
+   "options": [
+    "Navigate",
+    "Experiment",
+    "Guide",
+    "Control",
+    "Launch"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1c77e924f18be5dbcb0fada44e049612647bb0aaf1cea1ddbb455c6c7e304c08"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "According to the passage, why is organic matter important for soil health?",
+   "options": [
+    "It mainly boosts the soil's appearance and feel.",
+    "It contributes to the chemical binding of soil particles.",
+    "It improves soil structure and water retention.",
+    "It increases the soil's susceptibility to pests.",
+    "It decreases the biodiversity of soil organisms. www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "87b3c59d5d077602d1fc4d03c0bb6b6816b0a62e59c55568b091c9e0f3d843a0"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "Which of the following words is similar in meaning to \"address\" in the context of the passage?",
+   "options": [
+    "Speak",
+    "Confront",
+    "Manage",
+    "Write",
+    "Adjust"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7f9fd80be023490b070b69fac5809c2db1509913275c96c93d29a96493ca7341"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "What role do soil organisms play in organic fertilization as mentioned in the passage?",
+   "options": [
+    "They predominantly consume plant roots, enhancing growth.",
+    "They fix nitrogen, decompose organic material, and make soil minerals accessible to plants.",
+    "They solely aerate the soil without affecting nutrient levels.",
+    "They prevent any organic matter from decomposing.",
+    "They convert all organic matter into harmful chemicals."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "036f24b217ff3a14d96bf5a4ad1f4d4597add9da47e2932bcfd96c2006f17fcb"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "Which of the following is true as per the passage?: A) Organic fertilizers release nutrients slowly, matching plant uptake. B) Organic matter primarily serves to reduce soil biodiversity. C) The slow release of nutrients by organic matter reduces the risk of nutrient leaching into water bodies.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and C",
+    "Both B and C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3b1ed0f20c993120d50b8e427c673363efaf659db59d9b2b32c2a99706288a02"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "What is the purpose of piloting new techniques in organic fertilization as described in the passage?",
+   "options": [
+    "To make organic fertilizers less effective but more affordable.",
+    "To increase the chemical fertilizer dependency.",
+    "To tailor organic fertilization practices to specific crops and regional conditions.",
+    "To completely eliminate the use of organic fertilizers in agriculture.",
+    "To reduce the biodiversity supported by organic fertilizers."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d3bed408233aff92b0e6cb7a9a8bf98d3d0588419bec4ad0a6e9f49f28170da5"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Fill in the blank: The gradual breakdown of organic matter releases nutrients slowly, matching plant uptake and reducing the risk of __________ into water bodies.",
+   "options": [
+    "Erosion",
+    "Pollution",
+    "Leaching",
+    "Acidification",
+    "Contamination"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c1679715177890c52f674731b9000803974d66c860cf6b3b9f5c0228bb78bfef"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Which of the following is false as per the passage? A) Soil organisms contribute to soil health by fixing nitrogen. B) Chemical fertilizers are favored over organic methods for sustainable agriculture. C) New techniques in organic fertilization are being tested to adapt to specific regional soil conditions.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both B and C",
+    "Both A and C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b3eb346dfe5fb9bcc2f803e3327b16ca175043b6b8b3f8da969097f74bed86fd"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "What is the primary benefit of using organic fertilizers according to the passage?",
+   "options": [
+    "They increase the speed of plant growth.",
+    "They provide a slow, sustained release of nutrients.",
+    "They eliminate the need for water in agricultural practices.",
+    "They instantly improve the color of the crops.",
+    "They can replace all plant micronutrients synthetically."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9ee91ee404fa90d1c217779e0edaac21678837b2228d9bcddf1a48e96a2cca35"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C), and (D). These words may or may not be placed in the correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The troops had to surround(A) the enemy(B) from all sides to escape(C) that they didn’t ensure(D).",
+   "options": [
+    "D-C",
+    "C-A",
+    "B-C",
+    "A-D",
+    "No change required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b37ed33984aa5f20cf6d0a0708102ad87703bab119849204e6815f979b92d3af"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C), and (D). These words may or may not be placed in the correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. The thief sobbed(A) and begged, pretending(B) to be apologetic(C) so he could avoid(D) going to jail.",
+   "options": [
+    "D-C",
+    "B-D",
+    "A-D",
+    "C-A",
+    "No change required"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6c2c1cc95267d6480663dce4147a81ffae6235f0f23969c11356133dac679f21"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C), and (D). These words may or may not be placed in the correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Even though the alibi(A) could not substantiate(B) his defendant(C) for the night of the murder, he was still found innocent(D) of all charges.",
+   "options": [
+    "D-A",
+    "C-B",
+    "B-D",
+    "A-C",
+    "No change required"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e15488c004bb1dd44a5326ff3eabab82bf58bb83841573b23512642bc69eac0a"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C), and (D). These words may or may not be placed in the correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. If you want to maintain(A) your lawn, you will need to fresh(B) the grass and water it frequently(C) so it stays nice and mow(D).",
+   "options": [
+    "A-C",
+    "B-D",
+    "C-D",
+    "A-B",
+    "No change required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "80fef4a688bb475c162eaeb9ebc55c6f96cd2eaf2f1e9b3c910577708f3f9101"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C), and (D). These words may or may not be placed in the correct order. Four options with different www.prepp.in arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Some people believe(A) that they must do something validate(B) with their lives to significant(C) their existence(D) in this world.",
+   "options": [
+    "B-C",
+    "B-D",
+    "A-D",
+    "C-A",
+    "No change required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9e93c50dfebb66fd23f9216b515c8b692907ffef380d2b4c8cd5232761c3b19c"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer Each of the employees need to submit their reports by Friday.",
+   "options": [
+    "Each of the employees needs",
+    "All employees need",
+    "Every employee needs",
+    "Each employee needed",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "21553bdb29796ddc076ad8b04c8c54216431087cb60bd11e1467a84c08d0b817"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer Despite the many challenges, the project were completed on time.",
+   "options": [
+    "the project was completed",
+    "the projects were completed",
+    "the project had been completed",
+    "the project has been completed",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "962af444240403d1599c9af847c7ff53ccdd108d549a3c2177aca3a30faef93e"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer. They plans to travel to Japan once the travel restrictions are lifted.",
+   "options": [
+    "are planning to travel",
+    "plan to travel",
+    "are planned traveling www.prepp.in",
+    "will plan to travel",
+    "No correction required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a76f6ec0cbd3a39f13e936e7c1e0760f6afa45df7889acab4c75c9b8c1292994"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer. She have decided to enroll in a cooking class to enhance her culinary skills.",
+   "options": [
+    "has decided",
+    "had decided",
+    "will have decided",
+    "have been decided",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "91f3618c62beaaf954bd325eb04cffcc3d34f1fdfa39018be25f82292688fdf5"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically and contextually correct. If the sentence is already correct, select 'No correction required' as your answer One of the keys to success are maintaining a positive attitude.",
+   "options": [
+    "is maintaining",
+    "are to maintain",
+    "is to maintain",
+    "are maintained",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d321cbbfc962a4b52c828a77f0da62651a7866ba706242fa8f190afaea793ba0"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Direction: Evaluate the following word, accompanied by three sentences containing it. Determine the sentence(s) that accurately convey the meaning of the given word. Edition A. The second edition of the fantasy novel included exclusive illustrations. B. The chef prepared a special edition of the dessert, using a recipe from his grandmother. C. Due to heavy traffic, she took an edition route to work this morning.",
+   "options": [
+    "Only A",
+    "Both A & B",
+    "Only C",
+    "All A, B & C",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1fc5132bdffdf65cbd4f908bbe1af41f98d6117bb50c024425e9d44d6310d6ec"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Direction: Evaluate the following word, accompanied by three sentences containing it. Determine the sentence(s) that accurately convey the meaning of the given word. Systemic A. He suggested a systemic change in the way schools evaluate students. B. The doctor prescribed a systemic antibiotic for the widespread infection. C. The event planner organized a systemic reception at the beach.",
+   "options": [
+    "Only A",
+    "Both A & B",
+    "Only C",
+    "All A, B & C",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aeb273cab06c5d82ea79ad802127028f3da9a9f9b11dc4624464baf5eaa76f0d"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Direction: Evaluate the following word, accompanied by three sentences containing it. Determine the sentence(s) that accurately convey the meaning of the given word. Cruel A. The teacher's harsh grading was seen as cruel by many students. B. They went on a lovely cruel around the Caribbean. C. The cruel winter left many without adequate heating.",
+   "options": [
+    "Only A",
+    "Only C",
+    "Both A & C",
+    "Only B",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "47515a960b52e25d6fcbaabdd1ef2a22bc7f7f9462894f74d778f46dbf55bb6a"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Directions: Below, you will find a set of five sentences. You need to arrange these sentences in the correct sequence to form a coherent paragraph. After doing so, answer the questions that follow. A) In addition, digital records enable rapid information sharing between departments, improving coordination and efficiency. B) Modern medical centers now often include advanced diagnostic tools and specialized wings for diverse medical fields, enhancing patient outcomes. C) The introduction of cutting-edge technology has significantly changed how patient care is administered in these facilities. D) Another key advancement is the implementation of streamlined patient admission and discharge processes to minimize wait times. E) Medical centers have evolved from simple clinics to complex institutions that are equipped to handle a wide range of health issues. www.prepp.in Which of the following will be the FIRST sentence after rearrangement?",
+   "options": [
+    "A",
+    "D",
+    "C",
+    "B",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "74a4a843e9889f06598fe56973f87f26f2dd922886439101852aa96cc59e0c9c"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Which of the following will be the SECOND sentence after rearrangement?",
+   "options": [
+    "B",
+    "C",
+    "A",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2bcae8d929bd242c23a47fd91d61efc9881eddc50c656ee99d3004364a6f6d14"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Which of the following will be the THIRD sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b1ab911f155dad4d12ff621fd723286c8ea2b0d0ce36268e0265ba105aa870b6"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Which of the following will be the FOURTH sentence after rearrangement?",
+   "options": [
+    "C",
+    "D",
+    "E",
+    "A",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "43678113d2e2e5ee25287346352181b2b3768d0ddb1fe5c8aa748b03b09897d8"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Which of the following will be the LAST sentence after rearrangement?",
+   "options": [
+    "B",
+    "D",
+    "C",
+    "E www.prepp.in",
+    "A"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "71d89022861d62f899552cbc51b89d87a796e0130e327313e971e051243e2c9f"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Directions: Read the following sentences carefully, choose the one that is grammatically/contextually incorrect, and mark it as your answer.",
+   "options": [
+    "She rarely misses an opportunity to learn something new.",
+    "Everyone have a role to play in protecting the environment.",
+    "The documentary provided a deep dive into the history of the Roman Empire.",
+    "Maintaining a balanced diet contributes to overall health and well-being.",
+    "Our team's efforts were instrumental in the project's success."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "61bacf3cbd6f9259727c95d0df412d4ac06af4acce43141d2c009d72b227a13f"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Directions: Read the following sentences carefully, choose the one that is grammatically/contextually incorrect, and mark it as your answer.",
+   "options": [
+    "The CEO, along with his managers, are planning a restructuring.",
+    "He who hesitates is lost.",
+    "Miscommunications can lead to unnecessary complications.",
+    "I appreciate all the effort you put into this project.",
+    "Playing an instrument well requires years of practice."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ab8d8e55e046cd1c9dd0ccbfcdb451f9644f44e96c6ad15c12b78471fa1ca997"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Directions: Read the following sentences carefully, choose the one that is grammatically/contextually incorrect, and mark it as your answer.",
+   "options": [
+    "We need to buy new furnitures for the office.",
+    "She adjusted quickly to her new role at the company.",
+    "Negotiations between the two countries are ongoing.",
+    "Understanding complex theories demands a high level of concentration.",
+    "They cheered loudly when their team won the championship."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "48e5f3991382fef08013e0c1b77f83b36e736e213f6f09b0768af783bd5d94b1"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "X, Y, and Z are partners in a Law Firm. During a particular year X received one-fourth of the profit, Y received one-third of the profit and Z received the remaining Rs. 20,000. How much did Y receive?",
+   "options": [
+    "Rs. 10,000",
+    "Rs. 12,000",
+    "Rs. 24,000",
+    "Rs. 18,000",
+    "Rs. 16,000"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "51c957191b7e4fb62d1723445a5d18efa7fc999ea600a95973760a65f9d5fe7f"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "A man swims a certain distance downstream in 3 hours and returns the same distance upstream in 5 hours. If the speed of the stream is 11 km/hr, then find the speed of the man in still water.",
+   "options": [
+    "44 km/hr",
+    "33 km/hr",
+    "55 km/hr",
+    "66 km/hr",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9e21d285c819905b00ef68fe22dd3ad2ac0585ee1973939d794a00f44ccb520a"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following series? 36, 38, 41, 46, 53, 64, ?",
+   "options": [
+    "72",
+    "77",
+    "66",
+    "74",
+    "68"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4f830143a3b156a55a66e5507f17d4a60b17b387fcd3ac23e51c088b6d4e8395"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 11, 12, 26, 81, ?, 1645",
+   "options": [
+    "328",
+    "168",
+    "648",
+    "88",
+    "1288"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "04011c2811adf98aa78bd7f5e2a047293ff0b8d34f407774edaedb95ea5eebe5"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 6, 19, 59, 180, 544, ?",
+   "options": [
+    "1613",
+    "1597",
+    "1625",
+    "1637",
+    "1583"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b4e1bf3bcba8d30e7807764ac4db016030f014dcd4d1eb5fee438fa599484df3"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "4, 6, 12, 30, ?, 315",
+   "options": [
+    "75",
+    "60",
+    "120",
+    "90",
+    "108"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "432db8892abf8ac20108d50aa405fb09e021f359d9e94854019328ea64f4281a"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 3600, 360, 36, ?, 0.36",
+   "options": [
+    "3.6",
+    "36.1",
+    ".036",
+    "0.36",
+    "3.65"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d4d7731cfe1550089b228b8219a831b5ce4b6f49f2a3a75a37e7e0c94bc6a1b8"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "Directions : The following line graph shows the number of employees (Officers + Assistant) working in five different companies A, B, C, D, and E. 1/4th of the number of officers working in company A is selected for promotion and the total number of employees selected for promotion is 70. Find the number of assistants who didn't get a promotion in company A.",
+   "options": [
+    "45",
+    "65 www.prepp.in",
+    "55",
+    "50",
+    "60"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "eef8d26463de02bf4d8145be5dd5d91da08676069064ba78a58e7722974a1d3f"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "If the number of officers working in Company F is 20 more than the number of officers working in company E, the number of assistants working in company F is 30 more than the number of assistants working in company D. Find the difference between number of assistants and number of officers working in company F.",
+   "options": [
+    "30",
+    "20",
+    "10",
+    "15",
+    "25"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a9c6bf267bc38760e6301768dff7bb194f7d82d7a83ef4756a68af97e2b16646"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the number of officers working in company A and B to the number of assistants working in B and C.",
+   "options": [
+    "13: 6",
+    "10: 9",
+    "11: 4",
+    "12: 5",
+    "14: 9"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bf87260c7b57b1241512453fb13d2ac3623c8fdf530ffa277f12b94249cb4c9a"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "Number of officers working in company D and E is what percentage of total assistants working in all the companies A, B, C, D and E.",
+   "options": [
+    "56.7%",
+    "53.6%",
+    "51.6%",
+    "43.8%",
+    "57.8%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "802211d89534e06711c155eebee1e743cf571f38c8b64393960966f103bffda4"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "1/3rd of the officers working in Company C and 3/7th of the assistants working in company C are females. Find the number of males working in the company C.",
+   "options": [
+    "180",
+    "100",
+    "120 www.prepp.in",
+    "150",
+    "80"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a2850214a2f212af6c639c651f498c99f041b7207d40d04db812325c1ef4c702"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "In an election between two candidates, one got 55% of the total valid votes, 20% of the votes were invalid. If the total number of votes was 7500, then find the number of valid votes that the other candidate got",
+   "options": [
+    "2500",
+    "1700",
+    "2600",
+    "2800",
+    "2700"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2350d92c93159ee06bdd74378b962f9fa9051cf76c3dff0bfe4b723d8c870522"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "A and B invested their capitals in the ratio of 3 : 1. After \"x\" months, A leaves and C joins with some capital. If they share the annual profit equally, then the capital invested by C was what % of the capital invested by A?",
+   "options": [
+    "50%",
+    "40%",
+    "60%",
+    "45%",
+    "55%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b5598622b771ed97e82ce5bd77819390b65d93c9ca990cd2a626586fa8c7279e"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "An alloy contains silver, aluminium and copper in ratio 5 ∶ 4 ∶ 7, the quantity of copper in kg that must be added to 320 kg of mixture, to have the alloy that contain silver, aluminium and copper in the ratio 5 ∶ 4 ∶ 8?",
+   "options": [
+    "10 kg",
+    "15 kg",
+    "20 kg",
+    "50 kg",
+    "30 kg"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cf6a6cf13e215c2fcbbc5492c92a0689d93af69c627c6cefbc8e60da14e83fdd"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "A shopkeeper purchase some Onion of Rs. 200 per kg. 20% of Onion is rotten, At what price (per kg) should he sell the remaining Onion so as to earn a profit of 25% ?",
+   "options": [
+    "Rs. 340",
+    "Rs. 312.5",
+    "Rs. 302.5 www.prepp.in",
+    "Rs. 315",
+    "Rs. 300"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a5ba2682b4453df798c05159f38584555e5b4967b4a73fafdb8a641fa6cb13e6"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 75% of 500 + 40% of 650 = ?",
+   "options": [
+    "625",
+    "630",
+    "640",
+    "635",
+    "645"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3bc7c2a123c00aa8b46850d8a318524f2c51c136e456a8ffa4ae34ab78c6f525"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? -5 256 × 2 × ? = (2/25) of 50 × 75",
+   "options": [
+    "25",
+    "37.5",
+    "22.5",
+    "50",
+    "16"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6efac8bf4f04a8abb99a63a8cce41fbc2f47f797028e27c7c769b9d7848aab95"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 37% of 700 - 39% of 400 = ? - 31% of 300",
+   "options": [
+    "187",
+    "168",
+    "196",
+    "202",
+    "205"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b3a29b31e234ddc1527484fadc2f58fb434e9c5fe15a1ee05041b044ee3bf643"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 3 2 150% of 220 + 8 + 10% of ? = 30",
+   "options": [
+    "58",
+    "80",
+    "360",
+    "580 www.prepp.in",
+    "630"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5f367555008ea3c855717885633c23c41b7e19587bb758c175df2ad9f235c57e"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 2 ? + 308 - 25% of 4036 = 18",
+   "options": [
+    "325",
+    "525",
+    "725",
+    "1025",
+    "1225"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e5443425c0fa459bab298e321e186a05763f988d7aaa191ba38c37beb934f36a"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 20% of (28 × 40) - √? = 156 × 30 ÷ 26",
+   "options": [
+    "144",
+    "784",
+    "1296",
+    "1936",
+    "2116"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "322f9eeffee647abaa6b3fed01f259d8da5b7e5f93074f6f6feda8c1ff19bcbf"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 80 – 42 ÷ 14 – 19 × 3 = ?",
+   "options": [
+    "18",
+    "12",
+    "15",
+    "20",
+    "25"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6e21136a981bc76773422c183690a23ccb0219d02010b71dc87c4b94944c52ac"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? 4532 ÷ √1936 + 524 ÷ 4 = ?",
+   "options": [
+    "210",
+    "214",
+    "226",
+    "234",
+    "242 www.prepp.in"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b3cf7ec82e157f063d552401df75248071f09fcaf1d56f43d8be3293454f07d4"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? √676 × 34 + 125 × 7 = ? - 41",
+   "options": [
+    "1500",
+    "1600",
+    "1800",
+    "2000",
+    "2100"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f1bc67b81bbf96c7d0405e87036f68e23e4d87b1cc1d98002cf7690afd2c5ed2"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? (256 - 196 + 169 - 144) ÷ ? = 500",
+   "options": [
+    "0.17",
+    "0.26",
+    "0.37",
+    "0.47",
+    "0.58"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "78e2109e98949d5541fa2bae5b90af11c859f238bf48bbfca123660536a613a6"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 65% of 400 + 35% of 600 = ?",
+   "options": [
+    "430",
+    "510",
+    "450",
+    "470",
+    "490"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "37779f6c7d7ec56ee50aac401208a8899135eb5cc45c3553b7c74ecf8cb787cc"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 40% of 600 + ∛729 – 132 = ?",
+   "options": [
+    "60",
+    "120",
+    "80",
+    "90",
+    "50 www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "abb18146a243cb46a44fdc7aeb730008a2cd0272351305f5c332e9f26c638a8b"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark ‘?’ in the following question? 24 × 16.67% + 36 × 11.11% + 42 × 14.28% = ?",
+   "options": [
+    "10",
+    "12",
+    "14",
+    "16",
+    "18"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e1c316ab552d38b36d82f3f2126842cfa0b9111338402b2ac7ca6c821d3a158f"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark ‘?’ in the following question? 35 × 25 + 55 × 45 + 75 × 65 = ? × 5",
+   "options": [
+    "1220",
+    "1330",
+    "1455",
+    "1665",
+    "1645"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f4ef115cfc3bccda043579837c74848d6d1e0c9cf3b300b6c07c34e239c3888d"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 630 ÷ 9 × {(118 - 106) + 3} = ?",
+   "options": [
+    "1150",
+    "1050",
+    "950",
+    "1250",
+    "850"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fba0663706158e7f01c3853bba17842bd42edf35061e48fd279add5c04b1bad6"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "Prashant borrowed Rs. 15000 from his friend at a rate of 10% compound interest compounded annually. Find out how much amount he will return after 3 years?",
+   "options": [
+    "Rs. 19,500",
+    "Rs. 18,500",
+    "Rs. 19,965",
+    "Rs. 18,065",
+    "Rs. 19,000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "31db035a1bf99286c9159fc1acbb48e309f1da3dd4a20a3cef4e85b2a47b54c6"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "The circumferences of two circles are in the ratio of 3 ∶ 5. Then by what percentage the area of bigger circle is greater than the area of smaller circle.",
+   "options": [
+    "200 %",
+    "185.56 %",
+    "156.75 %",
+    "177.78 %",
+    "64 %"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9537a0f41064859522a133e3b3e8ac87d06fb91828a60abb654ec2efdb86ba7e"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "Pipe A can fill the tank in 3 hours and pipe B can fill the tank in 5 hours pipe C can empty tank 15 hours then find in how many hours tank will be filled when they work alternatively starting from B?",
+   "options": [
+    "11/3",
+    "19/3",
+    "25/9",
+    "12/5",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1ae2df7ae688680b13f28049c88f67fb0e5888fc3458eebb0adc6ec62b89fa12"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "8 years hence, the ratio of Munna’s and Guddu’s age will be 6 : 5. At present Munna is twice the age of Guddu. What will be the age of Munna after 6 years?",
+   "options": [
+    "26",
+    "10",
+    "12",
+    "32",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "778083f5cafdc05fc8ed56985cceae09b632ae19706ee76e10f3fbc22ff3b174"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow. There are 8 persons namely M, N, O, P, Q, R, S, and T. They all stay in an 8-storey building, where the bottom floor is numbered 1 and the top floor is numbered 8 but not necessarily in the same order. Only one person stays on one floor. R stays on the only even prime numbered floor. N stays on one of the floors which is below floor 4. Q stays on floor 5. Three persons stay between N and T. S stays just below Q. O stays two floors above M. Who stays on the sixth floor?",
+   "options": [
+    "T",
+    "O",
+    "M",
+    "S",
+    "Q www.prepp.in"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d08a1d23d1b0243d82627ae0d63c9c249fc25695f1864f4faab8b2c00705126d"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "How many persons are staying between P and M?",
+   "options": [
+    "3",
+    "1",
+    "2",
+    "6",
+    "4"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "75f43ea4f50e6b0bc9a603e6ca3dd6599edb72a5a5d66140a405e68d64f669f2"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Who stays two floors above the floor of Q?",
+   "options": [
+    "T",
+    "S",
+    "N",
+    "M",
+    "P"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d0c8cf4981bff618fef13eee82630e0b2878c1eeff2051a3845f2817451cfa2f"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Among the given options, one option is different from the others in some way, choose the option which is different from the other options.",
+   "options": [
+    "T, O",
+    "R, S",
+    "Q, M",
+    "N, S",
+    "P, R"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "80ef1099de6a99d113a9efb569258b642b5907c0a0fd9f7f5a3b17b2484494e9"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Which pair of name – floor number is incorrect?",
+   "options": [
+    "O – floor 8",
+    "Q – floor 5",
+    "M – floor 6",
+    "N – floor 4",
+    "T – floor 7"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e7ea7d5f8b53023ccf8515ee723d0cc2191d5f47bd0bedbbdd6285b7189bba6a"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion(s) among given conclusions is/are definitely true and then give your answers accordingly. Statement: www.prepp.in T ≥ D, T ≥ K, Z = K Conclusions: I. D > Z II. Z ≥ D",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follow",
+    "Neither I nor II follow",
+    "Both I and II follow"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8b4aa6364c4ac62cb17045ee44617846c7f3b793c7eba0d0f5d2b3a925df807e"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion(s) among given conclusions is/are definitely true and then give your answers accordingly. Statement: Y ≥ D < F = R > L < X Conclusions: I. X < F II. R > D",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follow",
+    "Neither I nor II follow",
+    "Both I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "26619309a2843184695423df06f6eb585bfd5beb77859d1df07f004104d82f9c"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Directions: In each of the following questions assuming the given statement to be true, find which of the conclusions among given conclusions is / are definitely true and then give your answers accordingly. Statements: A ≥ X < S = T > W ≤ Y, O > V < X Conclusions: I. A > O II. V < T",
+   "options": [
+    "Only Conclusion I follows",
+    "Only Conclusion II follows",
+    "Either Conclusion I or II follows",
+    "Neither Conclusion I nor II follows",
+    "Both Conclusion I and II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8de2f2cbe9de07b826c2a5ccfaa5fb0a40ebf26cb492ee9611b4dc2ff9eb3571"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few black are public All metro are black All metro are City Conclusions: All public can never be black All city are public Some black are metro",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Only I and II follows",
+    "Only III follows",
+    "Only I and III follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "88d3e5041358de865968e00dc1af3324399c5d16b5623c3bd062c47826c30692"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All shirts are pant All pant are top Some top are sticks. Conclusions: Some sticks are pant Some sticks are shirts Some top are shirt",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Only II and III follows",
+    "Only III follows",
+    "None follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b04a5ffb60b6b20b337c8052c5395b30d3aec0bf7f2e7030163ae306b010c15e"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance with www.prepp.in commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few LEDs are bulbs All the LEDs are tubes. Only a few tubes are lights. Conclusions: I.A few tubes are bulbs. II.Some lights are LEDs. III.Some lights are not LEDs.",
+   "options": [
+    "Only I follows.",
+    "Either II or III follows.",
+    "Both II and III follows.",
+    "All I, II and III follows.",
+    "Either II or III and I follows."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5ecf0711d7bcc038cb3d657396fe6a8557b9623487ad8bb1a1e8d1f8a2db6cf7"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by three conclusions I, II, and III. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few cones are candies All candies are chips Only a few chips are chewing gums Conclusions: I. Some chewing gums can never be chips II. Some candies can never be chewing gums III. Some cones can never be candies",
+   "options": [
+    "Only I follows",
+    "Only III follows",
+    "Either I or II follows",
+    "Either I or III follows",
+    "None of the conclusions follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "521566303c9a3172e824097f97be8e4b962346db357026dcaedfe3563f9fccd4"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "A, B, C, D, E, F and G are seven people standing at a certain distance from one another. C is 10 m east of A. D is 10 m north of A. C is 5m south of B. F is 18 m west of E. E is 11m north of C. G is 8 m west of D. What is the distance between G and F? www.prepp.in",
+   "options": [
+    "1m",
+    "5m",
+    "10m",
+    "4m",
+    "2m"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "06f0e5b0facbc434034f7cb51ffc6f3e9b9f680c19e52f5d3348b741ee5950b7"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "What is the direction of E with respect to A?",
+   "options": [
+    "North-West",
+    "North",
+    "East",
+    "North-East",
+    "West"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "06adfaca62e0dbb0cfe2e3b22d490efccc935b650de329d89272d3c0fbe0d50f"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "What is the shortest distance between E and A",
+   "options": [
+    "√221",
+    "221",
+    "20",
+    "19",
+    "√222"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "08e6007ed02bd7ac4992e8ab1d4c23b9f22c066085092f3ab0031fa70aafcc79"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the given questions. There are 8 person P, Q, R, S, T, U, V, and W sitting around the circular table facing towards the centre. P is sitting two places away from T but, Third from the right of R. R is not the immediate neighbour of S. Only three people sit between S and T. S is not an immediate neighbour of Q. T is not an immediate neighbour of U. W is sitting two places away from R. Q is sitting third to the right of U. Only one person sits between U and V. Q and W are not the immediate neighbours. How many person sit between P and V when counted from the left of P?",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "5",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "516cb13261938aca1d4ae3e35cb4ad613aad6cd2c3d0d52250be653d6bff1aba"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Who are immediate neighbours of W? www.prepp.in",
+   "options": [
+    "P and S",
+    "P and T",
+    "R and S",
+    "T and Q",
+    "S and Q"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1036bde2ab14ebe5cf9327fae253d9cc2ba9c0e090fe4eb207ee7c7be127f8ea"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement is true?",
+   "options": [
+    "T is immediate neighbour of U",
+    "V is sitting third to the left of S",
+    "U sits exactly between Q and T (When counted clockwise from Q)",
+    "R is immediate neighbour of U",
+    "P is immediate neighbour of Q"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9200b7d258ec1737c75e6322021a4c5a739a1e9300a1e41b9e5769e47c38cd83"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Who is sitting third to the left of R?",
+   "options": [
+    "V",
+    "T",
+    "P",
+    "S",
+    "U"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2bf793a67a828a6d1551efff11280b3a968a382cae59e604a125b71ab29066cc"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "How many person sit between R and W when counted from the left of R?",
+   "options": [
+    "4",
+    "6",
+    "1",
+    "2",
+    "5"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "34bf2f0564e38adb7e54047e4f3ecba331ea6e6f4be5686cc31b8ac6afc57f46"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: 2 P J # 8 @ L B 1 V * Q 6 < G W 9 K C D 3 & % > 5 F R 7 A Y 4 How many symbols and numbers are there in the sequence which are either immediately preceded or immediately followed by the letter which is from the first half of the English alphabet?",
+   "options": [
+    "4",
+    "8",
+    "9 www.prepp.in",
+    "10",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "650d197c864fa5b15fbfef908e78817a4ab53b4e42228d66d4a1e8c4205d4781"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are similar in relation to their positions in the above sequence and hence form a group. Which one does not belong to that group?",
+   "options": [
+    "Q K 5",
+    "L 6 D",
+    "P L <",
+    "1 G &",
+    "K > 4"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9f98c2dbf1cd68143456b30523c66f4c658f766cfdfc2340a635348a91317c74"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "If each symbol exchanges its position with its immediate right symbol/letter/number. Now, how many letters are there in the sequence which are immediately followed by a number and immediately preceded by a symbol?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "26c571847ffe50e0d28272d289a3483ed0780e0714e9d38c7417e0e3b5ac9f1d"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "P # L is related to Y 7 5 in the same way as @ 1 * is to?",
+   "options": [
+    "R > &",
+    "F > 3",
+    "5 > &",
+    "5 % D",
+    "F % 3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "132367fe584b49a5a2f36115fb2be2e5f167954184ff6989be3b219ab82e4694"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Which of the following indicates the total number of symbols, letters and numbers respectively which get eliminated from the sequence when every second element of the sequence from your left is dropped from the sequence?",
+   "options": [
+    "5, 9 & 1",
+    "1, 5 & 9",
+    "9, 1 & 5",
+    "8, 0 & 6",
+    "None of these www.prepp.in"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c9888b372f05f1052603552a97d1b419ab6407d78f81caf2bcc156779982e804"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following comprehension carefully and answer the questions below. A certain number of people are sitting in a linear row facing North. Only two people are sitting between E and Q. E is sitting on one of the ends. One person is sitting between Q and R. R is not an immediate neighbor of E. D sits third to the left of R and only five people are sitting between D and S. S is not an immediate neighbor of Q. B is sitting second to the right of S. S is sitting fourth to the right of C. Only six people are sitting between C and U. U is sitting on one end. Only Two people sitting between A and U. How many people are sitting in the row?",
+   "options": [
+    "Seventeen",
+    "Thirteen",
+    "Sixteen",
+    "Eleven",
+    "Twenty Six"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2c756c2e45cc359085f9a6e33d6219a8c40e06a157233c7b5f8740718227d953"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "How many people are sitting between A and C?",
+   "options": [
+    "Three",
+    "Two",
+    "Nine",
+    "Five",
+    "Zero"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c7627e07c4683dc2efe8b8598997718b6eeabff087bbd70d8bf0b31552d65864"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Who is sitting on the extreme left end of the row?",
+   "options": [
+    "R",
+    "E",
+    "U",
+    "S",
+    "C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "afff18ae7ff6862f99cea9eae6231c92c8451c00ab7c1c187bd9e7e0654e2f85"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Ten people are sit in 2 rows of 5 seats each. P, Q, R, S, and T sit in Row 2 facing North, while A, B, C, D, and E sit in the Row 1 facing South. People sitting in Row 1 face the people sitting in Row 2. A sits beside C, neither of whom sit at the end of the row. E sits opposite the one who sits to the immediate right of Q, who sits in the middle of the row. D sits to the right of B. Two people sit between S and P, who sits at an end of the row. T sits to the left of R. S does not sit opposite E, who does not sit beside A. Who sits in the middle of Row 1? www.prepp.in",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a4fc4c7429d81d559961c682a0cccff540647fa48c8a6ffbf6c48333d8d305cf"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "How many people sit between S and T?",
+   "options": [
+    "Nobody",
+    "1 person - S",
+    "2 people - A and C",
+    "2 people - A and B",
+    "3 people - S, P, and Q"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "331d1cbc0c2b91e1f3229c046696206ae222265dd949b7348af2f4353bb409a8"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Who sits on the right end of Row 2?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d1bf33045684a4b73531963424a4fe3f96838b5b049ea54e02bdafb179158d41"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who sits opposite the one who sits second to the left of the one who sits opposite S?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "66338e1e354f596549c4b9069862b4b649e8a53ccb149b221f76fbb62ecc8fd5"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Who sits opposite T?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E www.prepp.in"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9ab5751e286dc4bc15ada48335c8b51c893f56fbcd726bef1914f24e79b277bd"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word ‘COMBINE’, each of which has as many letters between them in the word (both forward and backward direction) as they have between them in the English Alphabet?",
+   "options": [
+    "Two",
+    "Three",
+    "One",
+    "Four",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6bad579b95796020e4e76b3f866067f8cd48674a31c680a3eec5fab01f49b846"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make only one meaningful English word with the second, the third, the sixth, and the ninth letters of the word SACRIFICE, which of the following will be the third letter of that word? If no such word can be made give ‘X’ as the answer and if more than one such word can be made give ‘Y’ as the answer.",
+   "options": [
+    "C",
+    "E",
+    "A",
+    "X",
+    "Y"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "03fab8479d1f91ab797d3d1e7c9711db2fb7a3b940feb98445e53685bd4738b6"
+  }
+ ],
+ "section_confidence": 0.973,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

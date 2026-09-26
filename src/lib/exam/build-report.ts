@@ -9,16 +9,14 @@
  */
 import type { SupabaseClient } from "@supabase/supabase-js";
 import {
-  SSC_CGL_TIER1_CONFIG,
-  type ExamConfig,
-} from "./exam-config";
-import {
   scoreSession,
   type Option,
   type ResponseInput,
   type ResponseStatus,
 } from "./score-session";
 import { analyzeSession, type MentorAnalysis } from "./mentor-analysis";
+import { loadExamConfig, DEFAULT_EXAM_CODE } from "./registry";
+import { contentObjectName } from "./content-repo";
 
 interface BuildResult {
   ok: boolean;
@@ -26,29 +24,16 @@ interface BuildResult {
   analysis?: MentorAnalysis;
 }
 
-/** Resolve the ExamConfig for a session, falling back to the SSC config. */
-async function loadConfig(
-  supabase: SupabaseClient,
-  examId: string | null
-): Promise<ExamConfig> {
-  if (examId) {
-    const { data } = await supabase
-      .from("exams")
-      .select("config")
-      .eq("id", examId)
-      .single();
-    if (data?.config) return data.config as ExamConfig;
-  }
-  return SSC_CGL_TIER1_CONFIG;
-}
-
 /**
  * Score + analyze a submitted session and upsert session_results and
- * mentor_reports. Idempotent; safe to call more than once.
+ * mentor_reports. Idempotent; safe to call more than once. `examCode` scopes the
+ * config AND the content namespace the question metadata is read from, so an
+ * SBI report is scored with SBI's rules and reads only SBI content.
  */
 export async function buildAndStoreReport(
   supabase: SupabaseClient,
-  sessionId: string
+  sessionId: string,
+  examCode: string = DEFAULT_EXAM_CODE
 ): Promise<BuildResult> {
   const { data: sessionRow } = await supabase
     .from("test_sessions")
@@ -58,7 +43,8 @@ export async function buildAndStoreReport(
 
   if (!sessionRow) return { ok: false, reason: "session not found" };
 
-  const config = await loadConfig(supabase, sessionRow.exam_id);
+  const config = await loadExamConfig(supabase, examCode);
+  const questionsObject = contentObjectName(examCode, "questions");
 
   // Responses + their question metadata via a MANUAL join. We can't use
   // PostgREST embedding (responses→questions) because responses is a shared,
@@ -77,7 +63,7 @@ export async function buildAndStoreReport(
   for (let i = 0; i < qids.length; i += 500) {
     const chunk = qids.slice(i, i + 500);
     const { data: qs } = await supabase
-      .from("questions")
+      .from(questionsObject)
       .select("id, section, correct_option, topic")
       .in("id", chunk);
     for (const q of qs ?? []) {

@@ -258,6 +258,8 @@ export interface SectionBreakdown {
 
 export interface StartExamRequest {
   exam_type: ExamType;
+  /** Which exam this attempt is for (e.g. "ssc-cgl", "sbi-clerk"). Default SSC. */
+  exam_code?: string;
   paper_id?: string;
   subject?: Subject;
   /** Optional finer-grained topic within a subject_test (e.g. "Time & Work"). */

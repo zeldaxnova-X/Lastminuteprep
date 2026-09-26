@@ -1,0 +1,1487 @@
+{
+ "file": "23cbc41e12cdf60ef5824ba12eec95a2.pdf",
+ "format": "prepp",
+ "accepted": 98,
+ "rejected": 2,
+ "reasons": {
+  "empty_or_short_stem": 2
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. The room was (A) crowded with (B) small pieces of furnitures, (C) cupboards, and little tables. (D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7c4520e74227796a246f1040f3dcf18e494c4c4ee2cc5fd6959370f32110770a"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. He thought (A) of the number of times (B) that himself (C) had been a coward.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "84b362f596d9d09ecbacc4f81837b63757f069e2ee2c2dfba912a354a9f4b7be"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. He ate (A) greedily the chicken sandwich (B) in the manner of (C) a starving man. (D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "eb083e2e5d629c7d41ef7bcc67485d0068913476dd07ef9bb489d0b93a5bb402"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. I bought (A) some Mughal silver charming ornaments (B) at the Hauz Khas market (C) and enjoyed visiting the ruins yesterday. (D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7fb85be1f96469e8e3d45518f38ffb06be451281e9a724e1ea4aadb82c074532"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. Mr. Roy was admitted (A) to the hospital yesterday (B) with a gunshot wound (C) to his leg.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1578c107cb51a4be8f6e97d30d17a305cdb6d5ce63def689e482771b73590815"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "In this question, a sentence has been divided into four parts (A), (B), (C) and (D). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. Mark that part as your answer. If there is no error, the answer is ‘No error’. Ignore the error of punctuation if any. There's a morning (A) Rajdhani train that (B) making the trip from (C) Kolkata to Delhi in less than ten hours.(D)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "de663a214de0ec97bcd725a7189bc3383c4b3a34104a25c31c966c4ea52d53aa"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Fill in the blank with the correct word. The problems associated with abandonment are so common, with such grave ________, that it is classified as gender-based violence.",
+   "options": [
+    "Reciprocation",
+    "Result",
+    "Propaganda",
+    "Ramifications",
+    "Intimidation Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4304ae9d10760cace3ba9612461b09540afc6e83b7cbf863b80d3e1aa85002a1"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Fill in the blanks with the correct word from the options given below: The virus had _______ none of us knew existed.",
+   "options": [
+    "freedom",
+    "terms",
+    "powers",
+    "agony",
+    "safe Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b67da74a2b00b1040b8c9e4c5e52e41db8e5920ea56a1383360c62667e7a5d7b"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Fill in the blank with the correct word from the options give below. As the snow melted, the roads became very _______.",
+   "options": [
+    "slippery",
+    "shallow",
+    "defective",
+    "impolite",
+    "capable Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4863896a6f696fdfe234ddf58c5d9a6fe38832e46488a092421c8c7d9a12f525"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Fill in the blank with the correct word from the options given below. The tortoise jumped into the lake with _______ of becoming a sea turtle.",
+   "options": [
+    "loss",
+    "series",
+    "basis",
+    "dreams",
+    "answers Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0393b0f1b7bf2c7df6ce39799bdf40b32a43062b32a7a7a1116ae4b73c4432ce"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Fill in the blank with the correct answer from the options given below: It was a strange fact, however, that talent and skill, if ______ for too long, cease to dazzle.",
+   "options": [
+    "suspended",
+    "spent",
+    "displayed",
+    "surrounded",
+    "commanded Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "983b98bb0d041fd68f8ae7728daad0e11e94957a5c7b4aa775f180f3b681c5ac"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Fill in the blanks with the correct word from the options given below. The novel was a great _______ and he gave up his job to pursue literature.",
+   "options": [
+    "control",
+    "failure",
+    "charity",
+    "variety",
+    "success Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8cfa26895c002bf368e455b6e41a3baf3128dd2721dc4c06d5eb3c2ca3b68a28"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences which consist of that word. Identify the sentences(s) which best express(es) the meaning of the word. Choose option 5 ‘None of the above’ if the word is not suitable in any of the sentences. SQUASH A. The spectators had to be squashed into the hall for want of space. B. We are in no position to squash the simmering tensions between the two communities. C. He squashed his car into the tree.",
+   "options": [
+    "Both A and B",
+    "Both B and C",
+    "Only C",
+    "Only B",
+    "None of the above Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2d692e40b0ae4000529e211292f2f88e8b018175b78695ba9d180e25fd63f3e4"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences which consist of that word. Identify the sentence(s) which best express(es) the meaning of the word. Choose option 5 ‘None of the above’ if the word is not suitable in any of the sentences. DROWSY A. Although he's quite old he's still very drowsy. B. He had regained consciousness but was drowsy and uncomfortable. C. I'd just woken up and was still drowsy.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Both B and C",
+    "Both A and C",
+    "None of the above Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "da3d66330a404e3a7ebe9dc7ba8844f39867523eb35231341e89a77304a174fb"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences which consist of that word. Identify the sentences(s) which best express(es) the meaning of the word. Choose option 5 ‘None of the above’ if the word is not suitable in any of the sentences. ANALYSIS A. He did a wonderful analysis of the subject after the exam. B. The man felt dejected seeing the analysis of his new car. C. A perfect analysis of the land is very essential before a counteroffensive.",
+   "options": [
+    "Both A and B",
+    "Both A and C",
+    "Only A",
+    "Only B",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6d94b5cc460ddd8ddfd311845fbd097e3a9d1954b3c859b673e8a5bd8f556e7c"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences which consist of that word. Identify the sentences(s) which best express(es) the meaning of the word. Choose option 5 ‘None of the above’ if the word is not suitable in any of the sentences. VULGAR A. She laughed in a loud, vulgar manner that distressed the guests. B. The crowd felt happy and vulgar after cheering for their team. C. He had a disarming voice and a calm vulgar look that put her at ease.",
+   "options": [
+    "Both A and B",
+    "Both B and C",
+    "Only C",
+    "Only A",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "92b8990eb18987ebbf74ab247f62526f0c5c244a5caf3f51952cda4f80209871"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Given below is a word, followed by three sentences which consist of that word. Identify the sentences(s) which best express(es) the meaning of the word. Choose option 5 ‘None of the above’ if the word is not suitable in any of the sentences. CAUTIOUS A. He was such a reckless and cautious driver that nobody wanted to get in his car. B. The cautious zebra failed to notice the approaching lion and was mindlessly jumping around in the field. C. Her cautious attitude irked her mother as she knew that one day it would get her into trouble.",
+   "options": [
+    "Both A and B",
+    "Both B and C",
+    "Only B",
+    "Only C",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b0fdbfc713db186d50ad2e6c602396d5b96201e7189d33560031e22462441880"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Read the passage given below and answer the questions that follow. Fish are one of the most highly utilized and intriguing vertebrate taxa by humans; they are harvested from wild stocks as part of global fishing industries, grown under intensive aquaculture conditions, are the most common pet and are widely used for scientific research. But fish are seldom afforded the same level of compassion or welfare as warm-blooded vertebrates. Part of the problem is the large gap between people's perception of fish intelligence and the scientific reality. This is an important issue because public perception guides government policy. The perception of an animal's intelligence often drives our decision whether or not to include them in our moral circle. From a welfare perspective, most researchers would suggest that if an animal is sentient, then it can most likely suffer and should therefore be offered some form of formal protection. There has been a debate about fish welfare for decades which centres on the question of whether they are sentient or conscious. The implications for affording the same level of protection to fish as other vertebrates are great, not least because of fishing-related industries. Here, the passage reviews the current state of knowledge of fish cognition starting with their sensory perception and moving on to cognition. The review reveals that fish perception and cognitive abilities are abundant, often matching or exceeding other vertebrates. A review of the evidence for pain perception strongly suggests that fish experience pain in a manner similar to the rest of the vertebrates. Although scientists cannot provide a definitive answer on the level of consciousness for any non- human vertebrate, the extensive evidence of fish behavioral and cognitive sophistication and pain perception suggests that best practice would be to lend fish the same level of protection as any other vertebrate. Why are fish not afforded the same level of compassion as other vertebrates?",
+   "options": [
+    "Fish live in water therefore they are not considered as vertebrates.",
+    "The wide variety of fish makes it impossible to offer compassion.",
+    "There is a large gap between people's perception of fish intelligence and reality.",
+    "Fish are highly aggressive creatures that should be used only for food.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "851199ddf9e9dc8f1e798abd65052f105dd5bcd91a67a1bdf4d2b4fc34a45f33"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "What helps humans to decide whether or not to include an animal in their moral circle?",
+   "options": [
+    "The amount of loyalty that the animal is willing to show.",
+    "The visible aggressive nature of the animal.",
+    "Classification on the basis of taxonomy.",
+    "The perception of an animal's intelligence.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fcd318284250c87c6cc167d607185af66911dddec4c22d849251a8ea6c6dbb9a"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "The debate about fish welfare is centered on?",
+   "options": [
+    "The question of whether they are sentient or conscious.",
+    "The question of whether they have a moral circle or not.",
+    "The question of whether they are vertebrates or invertebrates.",
+    "All of the above",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "82b0455caba413039a862834039010fbc3a2149f1a6fbf20dda95eb19e964358"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Which of the given statement is false according to the passage.",
+   "options": [
+    "Fish perception and cognitive abilities are abundant.",
+    "Fish are harvested from wild stocks as part of global fishing industry.",
+    "Researches suggest that if an animal is sentient it can most likely suffer.",
+    "Fish do not experience pain in a manner similar to that of other vertebrates.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f23c5eca6322139054b9ccaf5c11504980b95f9f7d4c3dd3c582dffbf2287572"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "What does the passage review?",
+   "options": [
+    "The level of compassion and welfare offered to fish.",
+    "The gap between intelligence and reality.",
+    "The definitive answer to human consciousness.",
+    "The current state of knowledge of fish cognition.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b1e67a0f451750fd3939f0ffe7516ca7aa9b9ad82dca89a4b63584a73cbab96a"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Which of the given statement is true according to the passage.",
+   "options": [
+    "The cognitive ability of fish makes it one of the most sought after vertebrates.",
+    "Fish are grown under intensive aquaculture conditions.",
+    "Cognitive abilities of vertebrates are higher than that of invertebrates.",
+    "Fish are immune to pain and have high cognitive tolerance.",
+    "None of the above. Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1dfd52e8fbb93156de1e13655c02613b44d675e3262e668f2978119ea97f3515"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "What is the synonym of the word intriguing mentioned in the passage.",
+   "options": [
+    "Gripping",
+    "Boring",
+    "Worrying",
+    "Frightening",
+    "Confusing Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6cbc8dea8fef4da14de2fceab79e63283064df38c4cf4e439e232f7ec7dfe100"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "What is the synonym of the word abundant mentioned in the passage.",
+   "options": [
+    "Plentiful",
+    "Scarce",
+    "Paltry",
+    "Meagre",
+    "Rare Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d2a47682e20ebfac76b092bc2352445ef0f04d9d81501809782e78b50781411a"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Rearrange the following five sentences (A), (B), (C), (D) and (E) in a proper sequence so as to form a meaningful paragraph, and then answer the questions given below. A. Being native or foreign is society's enduring parameter of judging belonging. B. People judge others by their skin, gender, caste, religion and class. C. Unfortunately, ecology is also now a realm of judgment, beyond mere objective labelling. Conservationists label trees as alien and exotic. D. Some criticised the felling and sympathised with the forest. Others joined the tree-shaming or remained silent about the felling. E. And the Nilgiri administration recently judged a forest as dispensable on that count. Which of the following sentence is FIRST in the above given passage?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "C Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d02034b394db232e8767ce059b967992525f7bce1e4b4003dd7717ce91f54dc5"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Which of the following sentence is SECOND in the above given passage?",
+   "options": [
+    "A",
+    "E",
+    "D",
+    "C",
+    "B Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8468adb4bb18ffcb683e9060df2c8cf5c41cc6fd9e13e7207e4a85ea053ed849"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Which of the following sentence is THIRD in the above given passage?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "C Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ceba587536d73b78d2b5f64666917b35c2cdd75b6e04abc33c25dd5b632690ed"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Which of the following sentence is FOURTH in the above given passage?",
+   "options": [
+    "A",
+    "B",
+    "E",
+    "D",
+    "C Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a1ed3b77dc92f989d074f2068d96447049adc9ee4d102a31fee8c51cd93979ab"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which of the following sentence is FIFTH(LAST) in the above given passage?",
+   "options": [
+    "B",
+    "C",
+    "D",
+    "A",
+    "E Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "190af8772ab9d726768cfea1d984e0ea25ac67b7bde57aa375a7d8aedd79a1cb"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "In an exam, the average marks of 40 students is 75. Afterwards, it is found that the marks of 2 students are taken wrong as 56 and 38 instead of 65 and 69. Find the correct average.",
+   "options": [
+    "74",
+    "72",
+    "76",
+    "80",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7ee7846635f9bb1013d05063dcc1c47b67e87bc9676eb6e7720a2b52b8d687a6"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "A can finish a work in 18 days and B can do the same work in 15 days. B worked for 10 days and left the job. In how many days A alone can finish the remaining work?",
+   "options": [
+    "6",
+    "5",
+    "8",
+    "4",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1e8bace9d345e0765719a3eda80ea5ebd2b42a2f7f675b19dfe8f3a2a482bb19"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "The simple interest on a certain sum of money at the rate of 5 p.a. for 8 years is Rs. 840. rate of interest for which the same amount of interest can be received on the same sum after 5 years is",
+   "options": [
+    "7%",
+    "8%",
+    "9%",
+    "10%",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "51e086607972e3a0cc954611684949b898c7d94294e41e4dff2fa6b172f7b4fe"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "The present ages of A and B are 36 and 50 years respectively, if after k years the ratio of their ages will be 3 : 4, then the value of k is",
+   "options": [
+    "3",
+    "4",
+    "6",
+    "7",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "84771143d9abf84e61132f5c48cedf5baf260c00a20c8626c937db1c44370b92"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "Equal amounts of water were poured into two empty jars of different capacities, which made one jar 1/4 full and the other jar 1/3 full. If the water in the jar with lesser capacity is then poured into jar with greater capacity, then the part of the larger jar filled with the water is",
+   "options": [
+    "1/2",
+    "7/12",
+    "1/4",
+    "1/3",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0550b379da0ef28f9480a8112807180b4baa47b601d4bac1479f1e7d50050051"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following information carefully and answer the following questions. A class has total 60 students. All the students likes only one of 3 flowers i.e Lotus, Sunflower and Rose. Number of boys is 5/7 times the number of girls. Ratio of number of girls who likes Rose and total number of girls is 2 : 7. Number of boys who likes Sunflower is 60% of the number of girls who likes Rose. Number of girls who likes Sunflower is 2.5 times the number of boys who likes Sunflower. Number of girls who likes Sunflower is 150% of the number of boys who likes Lotus. Find the total number of girls in the class.",
+   "options": [
+    "30",
+    "25",
+    "35",
+    "40",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d8b99265d446f084eb693d304b6ee9684c986c93cbabcc96a2847ce9011790f1"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio of number of boys and number of girls who likes Lotus.",
+   "options": [
+    "1 : 2",
+    "3 : 5",
+    "2 : 1",
+    "1: 1",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "42a108f87297c7e1c363b3dd2d3cfea10e54df8f9c2610d517b981f8515813d5"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "Find the total number of students who likes Rose.",
+   "options": [
+    "19",
+    "18",
+    "21",
+    "22",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5c8af0145c7fddd6ab5c3d0e30c08e92de0af804cd8a0dbc03523350cd12de73"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What is the difference between number of boys who likes Lotus and Sunflower and number of girls who likes Sunflower and Rose?",
+   "options": [
+    "8",
+    "7",
+    "9",
+    "6",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "af4af029132fa342be660a95bd5f27ed3ad74f7ad31d179f9eeb61419c0e5445"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 5, 9, 18, 33, 65, 129",
+   "options": [
+    "33",
+    "65",
+    "18",
+    "9",
+    "129 Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8a9c0bb8fe3aba97eb34e93c79bab58320ae73ba8a29869f9fa31afd594bb92c"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 15, 17, 19, 25, 32, 43",
+   "options": [
+    "17",
+    "19",
+    "32",
+    "43",
+    "25 Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0fd9dd40053a03c08a8e404d4399f8e64f8ec233e22f2f71df736a87a96bade7"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 5, 6, 14, 40, 105, 230",
+   "options": [
+    "40",
+    "5",
+    "14",
+    "105",
+    "230 Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "fedb118d99d354d3581c316e4528cec6a51b95159378bc25eb47a47b3f2e6946"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 540, 540, 270, 135, 22.5, 4.5",
+   "options": [
+    "540",
+    "270",
+    "22.5",
+    "135",
+    "4.5 Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "465ad7c38d4705d3f597a075d94928874624a6489eae0b2362e08151d8387fbd"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 120, 80, 65, 50, 45, 42.5",
+   "options": [
+    "45",
+    "42.5",
+    "65",
+    "80",
+    "120 Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "63869ef7f14783545a7d9dd91e7d8f5d507adcda628d98b9161f15a6f8e42389"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (3.9 + 4.1) × 2.5 + 9 – 25 = ?2",
+   "options": [
+    "5",
+    "3",
+    "2",
+    "4",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e4d2b08dd0082c263593b65238aae040ff47f77ee106fb278a2a98d8a953ed86"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 60% of 90 + 12.5% × 64 – 39 + 16 = ?",
+   "options": [
+    "35",
+    "39",
+    "38",
+    "41",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "87b22f906068bb2e14e0e92f690418d2437f9f419263ff31dc40f157e84403f3"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? [(306/17) × 12] ÷ 6 + 18 – 30 = ?",
+   "options": [
+    "22",
+    "21",
+    "23",
+    "24",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1b8a519941ceb3da9fdd68caac8882e37a1605563f523b5b46957ac83000ae7e"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "(123 – 51) ÷ 3 + 33 – ? = 239",
+   "options": [
+    "340",
+    "239",
+    "347",
+    "452",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cdceee45e0bbf8208f4ef5a36aaee9aeeeb6e41c80f41101e9f0c0b19e417004"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (33.98 + 28.02 + 2)1/2 × 3.2 – 11.6 = ?",
+   "options": [
+    "14",
+    "16",
+    "12",
+    "11",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "57176c80d03ceeebd45d8224d1290b90e61e9ab5a7f648f6a0d60d145502a643"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Study the data carefully and answer the following questions. Following is the production data by 4 persons during 2 months. Production by A in January in what % more than production by B in January (Approx)?",
+   "options": [
+    "82%",
+    "76%",
+    "70%",
+    "90%",
+    "65% Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "16242eb001790f8c9d5604bf558077d93541e4bc8442fd618b542e18fb39c98a"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "Find the average of total production done in February month.",
+   "options": [
+    "2.85",
+    "2.89",
+    "2.65",
+    "2.96",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7fb04f822b0b8f8b25cdf3275fe6b4da0b145e388ae14ea308d2c2eb833fad82"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between production done by C and D together in January to production done by B and C together in February.",
+   "options": [
+    "37 : 32",
+    "33: 31",
+    "28 : 29",
+    "30 : 31",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "56488c684d613254631a30d8ddbde9004cc173ab15d19cb0c9d41f653762b9f1"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between total production done in January to that of February (in Kg).",
+   "options": [
+    "2000 kg",
+    "2100 kg",
+    "2500 kg",
+    "2200 kg",
+    "Nine of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ee431897debd4a6382075368dc32014ecce87a82cf46702095ec855f74dc91ab"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "Find the total production by A in February month and by C in January month.",
+   "options": [
+    "5 tonnes",
+    "5.8 tonnes",
+    "6 tonnes",
+    "4.8 tonnes",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "89e1c8b043d196c25434e849581cc8f4c99083f39679df128d87d3be90053673"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 855.8 + 89.2 – (19 × 12) + (64 ÷ 4) = ?",
+   "options": [
+    "732",
+    "733",
+    "645",
+    "644",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0516753d7f25f3cf8fad8c6bb4cb33df416af2da837429154b82893017e01144"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 16.66% of 96 + 37.5% of 200 – (27 × 2) = ?",
+   "options": [
+    "37",
+    "40",
+    "51",
+    "31",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5bec7bf9cf3d47bc507460f9bf192c68e7ce865bd9a8b300f99a05098c03128d"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? [(5/7) + (13/21)] × 62 + 50 – 76 = ?",
+   "options": [
+    "21",
+    "23",
+    "25",
+    "22",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "dd3c803c654944295b2234a125478b2ed0bbbfd6fc4056e79783c879cea52259"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 18.68 + 17.54 – 12.22 + 38.02 = ?",
+   "options": [
+    "54.88",
+    "37.98",
+    "32.68",
+    "62.02",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4f2ee7b11742b532a4be637dea4a01aa623e19aed9512da5b8e6dceb526eb0a7"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 50 × 42 ÷ 12 + 92 – 60 = ?2",
+   "options": [
+    "18",
+    "17",
+    "14",
+    "12",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "529bc840edd7725ec2b66467b4d93b6a66e2cc55b33d3aa4eaf32f9b1398a8d2"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "By selling 9 pen for a rupee, a shopkeeper incurred a loss of 4%. To make a gain of 44%, the number of pen to be sold for a rupee is",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "7",
+    "6 Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a1cd7e65c1bfe28f5430d91d0334061cf2e09ebe4d3b256a6fcedc2d32b2eb21"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "A man rows down a river 30 km in 6 hrs with the stream and returns in 10 hrs. The rate at which he rows in still water is",
+   "options": [
+    "3 km/h",
+    "4 km/h",
+    "5 km/h",
+    "6 km/h",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "72ca5eed506940a8428628539787eb8b093a10eff35309dd5d9df05ce303ad05"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A train 290 m long is running at a speed of 36 km per hour, then it will cross a bridge of length 180 m in",
+   "options": [
+    "37 s",
+    "40 s",
+    "45 s",
+    "47 s",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "977862eabfedcb7597232abe1eb97ccc5f00e93950d64c71f6a122b3f5319ecf"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "30 men take 25 days to dig a pond. If the pond would have been dug in 15 days, then what is the number of men to be employed?",
+   "options": [
+    "45",
+    "60",
+    "50",
+    "57",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "091adb034b3cab0fe64ef549de8329d0856cce6661e3383a8a3cada244dfafa8"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "The monthly salaries of A and B together amount to Rs. 40000. A spends 85% of his salary and B spends 95% of his salary. If now their savings are the same, then the salary of A is",
+   "options": [
+    "Rs. 10,000",
+    "Rs. 12000",
+    "Rs. 16000",
+    "Rs. 18000",
+    "none of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "12ccd5d9864b173aad952ea84d6ae736f5fb5f88c95a20e1b666a5c61dc74eb5"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows: Eight persons - A, B, C, D, E, F, G and H were born in different months of January to August of the same year but not necessarily in the same order. Not more than one person is born in a month. G was born in a month that has 31 days but not in the month of May. There is a gap of one month between G and A. A born somewhere after G. B was born in the month which has the least number of days. E was born immediately after C. Number of persons born before E is one more than the number of person born after E. F born before D. There is a gap of two months between A and H. How many persons born before C?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "No one Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e961f8b7a89cda3104c42034bd6fd317649ad6a021e397c8d4c634c66952c29e"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Who born in the month of January?",
+   "options": [
+    "A",
+    "B",
+    "G",
+    "D",
+    "F Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ee2d763a95ed3bc96c527e44af574ed6bc447b99480b3b77c78d481042eee6fc"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Which of the following persons born in the month which has 30 days?",
+   "options": [
+    "A, G",
+    "C, G",
+    "H, D",
+    "C, H",
+    "H, B Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "896e94fa2b909ba2a08c5a2096c52132b5fbb72292ea5c2c48897e8d68e86acc"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Who born immediately after F?",
+   "options": [
+    "A",
+    "G",
+    "C",
+    "D",
+    "H Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8208132a064043f1bf2350c9effb3a1bbaea36a7e8df1750ce3735da375aeecc"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement is true?",
+   "options": [
+    "G was born in the month of March.",
+    "There are two persons between A and E.",
+    "E was born immediately before H.",
+    "H was born in the month of July.",
+    "None is correct. Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3cb65279dd74902bba29085aeed0b3d9b8d9785a021ed4a598e2415428a4594d"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some apples are orange. No oranges are fruit. Only a few fruits are bananas. Conclusions: I. Some apples are fruit. II. Some fruits are bananas.",
+   "options": [
+    "Only 1 follows",
+    "Only 2 follows",
+    "Either 1 or 2 follows",
+    "Both 1 and 2 follows",
+    "None follows Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5f41c07ba3aa2efc035f1030ec8fab430824febda9e1a63e70d20b9d24f3014f"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some red are blue. No red are black. All black are pink. Conclusions: I. Some pink are black. II. Some red are pink.",
+   "options": [
+    "Only 1 follows",
+    "Only 2 follows",
+    "Both 1 and 2 follows",
+    "Either 1 or 2 follows",
+    "Neither 1 nor 2 follows. Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "825398fc3c1fc484ac47b381b02218de5509916d4d5ad11f4750ccd0de763249"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: No dogs are cats. Only a few cats are wild. All wild are animal. Conclusions: I. All cats are animal. II. Some cats are not animal.",
+   "options": [
+    "Only 1 follows",
+    "Only 2 follows.",
+    "Both 1 and 2 follows.",
+    "Either 1 or 2 follows.",
+    "Neither 1 nor 2 follows. Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7d916ce06f078622e1676fe62d2793a6a65aac5f123bbe9944f1fda8b0406016"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: I. Some chairs are tables II. Only a few tables are bed III. No bed is furniture Conclusions: I. Some chairs are bed II. Some furniture are tables",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follows",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b8fee0fa787364af5ff9a86f7466be611c7dd97d961668e3c2360820aceab1a4"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: I. Some mobiles are calculators II. Some calculators are pens III. Only a few pens are scales Conclusions: I. Some mobiles being pens is a possibility II. Some pens are not scales",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows",
+    "Both conclusion I and II follows Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "80eeda02d14a9800f307b9e8876682e3b094b69c40e34daccd00bc3b149fca6c"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Eight persons - A, B, C, D, E, F, G and H live in a building of 4 floors and 2 flats - Flat 1 and Flat",
+   "options": [
+    "A",
+    "C",
+    "D",
+    "H",
+    "B Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "418f514f4ce5a032e294caadd61f2856af48150fd0227af223a5756d542506c4"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "On which Floor B lives?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth",
+    "None Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e27ce4298dcb5dac85626acfd223ef39acba77689098f11a6ec902d6ba640460"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Who lives just below H ?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "47a114da8dc9d29f1ce9e998b3548ba32a7ca1d2ecb0cde88d7d7daf56f12556"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Which of the following pair is correct ?",
+   "options": [
+    "Floor - 2 Flat - 1 - H",
+    "Floor - 3 Flat - 2 - D",
+    "Floor - 4 Flat - 2 - G",
+    "Floor - 1 Flat - 2 - C",
+    "Floor - 3 Flat - 1 - F Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fbf00c0d8046651593ace82ac1fa60e24511c2f3934abcaa795af2c72ea6f1a2"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Which Floor Flat Combination is correct for E ?",
+   "options": [
+    "Floor 1 Flat 2",
+    "Floor 2 Flat 1",
+    "Floor 3 Flat 2",
+    "Floor 4 Flat 1",
+    "Floor 2 Flat 2 Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a42b5d3a0a5e3f94624bf3a44363bde234792a72912ab90e9822c7365a5fefb0"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Direction: The following questions are based on the given five words. Study the given information carefully and answer the following questions. YXZ BAC JFG ROP GON If each consonant is changed to the previous letter of the given words and vowel remains the same, then how many words have more than one vowel?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "87a6e006d6c2b936ca5d387adeb995886d04d2b64f377b8d5056a33cedb8b932"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "How many letters are in the alphabet series between third letter of the second word from left and second letter of the second from the right end ?",
+   "options": [
+    "Eight",
+    "Nine",
+    "Ten",
+    "Eleven",
+    "Twelve Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "408a5c960a97ca007e3a87b9156ee5dca7e7cebe605df2aaa2d026934ceeca28"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "If first and second letter of the each word is interchange then how many words starts with a vowel ?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "bd7a20cdea0d95d64abb35c9dbe262fec01984e51509864401c2aa82adf231c0"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "If all the given words are arranged in the alphabetical order from left to right within the words, then which one will be fourth from left end ?",
+   "options": [
+    "YXZ",
+    "BAC",
+    "JFG",
+    "ROP",
+    "GON Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "252f242b1de882ada3f9f2692838a56246aad1ed006fe8427010949ca39db288"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "If 'E' is added in the last of the each word then how many meaningful word will form ?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "be86c95cb35d1ab5c71861fc6e90175cf7db141d498a6a8a3bc102fdc2e3d613"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. In a certain code language: 'he is very fast' is coded as 'pa za kt pu 'this is computer' is coded as 'fp pu qs' 'machine is fast' is coded as 'pu kt tq' 'I like computer' is coded as 'fp sp el' What would be the code of 'computer' ?",
+   "options": [
+    "el",
+    "pu",
+    "fp",
+    "kt",
+    "za Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "13c8012e7c1925e1e10d00f78febabc1d57f3342ef1b8b4159130ebe4e293d75"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "What is the code of 'machine'?",
+   "options": [
+    "tq",
+    "kt",
+    "pa",
+    "pu",
+    "Can not be determined. Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7be8477053a52894853492fe300a8a55564b0a0455914e845ccb78618db3b308"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "What is the code of 'he'?",
+   "options": [
+    "pa",
+    "za",
+    "Either 1 or 2",
+    "kt",
+    "pu Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "36e0044485544813a0c068eea3932b613dfeac4edc7cdf0c6bfb966d7b0ed223"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows: Twelve persons are sitting in two parallel rows containing six person each in such a way that there is an equal distance between adjacent persons. In row-1 P, Q, R, S, T and U are seated and all of them are facing South. In row-2 A, B, C, D, E and F are seated and all of them are facing North. Therefore, in the given seating arrangement each member seated in a row faces another member in the other row. Q sits at one of the end of the row. One person sits between P and Q. R sits opposite to D. A sits immediately right of D. Three persons sit between S and T and S does not sit at any end of the line. U is not an immediate neighbour of T. E sits opposite to S. C sits second to the right of B. Either B or C sits at end of the row. P does not face B and T does not face C. F sits second to the right of E. Who sits at end of the row?",
+   "options": [
+    "P",
+    "C",
+    "A",
+    "U",
+    "R Testbook Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "70a58905c218a0973894d5a44652571046297ebf0727405fee1c36570649627d"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Who sits second to the right of U?",
+   "options": [
+    "Q",
+    "S",
+    "P",
+    "T",
+    "R Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d91980cec9914408b865f0e2cf5bb5328b1da26939c1163b5f637d4f7aec6d3a"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Four of the five are alike in certain way and form a group. Find the one which does not belong to the group?",
+   "options": [
+    "Q, B",
+    "P, C",
+    "U, F",
+    "T, A",
+    "P, F Testbook Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8dd422e200a36733f65a3c804e6f422e56ce1917a16a6928bb2f213b6d2957c1"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Who sits immediate right of the person who faces D?",
+   "options": [
+    "Q",
+    "U",
+    "P",
+    "T",
+    "S Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1b6212cd89becbae9846b797e4a84011e8d67886df7d3e0b8ebe169a5a3b0b2b"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Which of the following pairs sit at end of the row?",
+   "options": [
+    "Q - A",
+    "T - C",
+    "A - P",
+    "Q - R",
+    "None of these Testbook Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ee40087ba1cb848b7bbc51295eb604ea159cd0afc996d898c3888834c068c0ab"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "In a certain code language \"all means some\" is coded as \"578\" and \"few means some\" is coded as \"358\" and \"all means not\" is codes as \"874\". What is the code of \"all\"?",
+   "options": [
+    "5",
+    "8",
+    "3",
+    "7",
+    "4 Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "440f053e95a339e0a848437ee7eacfd532632342cb3eeaf3bd6063c7847c2ae8"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follow: There are 6 members of a family in a gathering – P, Q, R, S, T and U. S is the son of Q. Q is the daughter of R. P is the daughter of T. P and Q are siblings. U is the father of S. How is S related to T?",
+   "options": [
+    "Son",
+    "Grandson",
+    "Grand daughter",
+    "Grand father",
+    "Can not be determined Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cb027452438432f9b10b5859582995a222c31d6a655a4ac0acc099c2695bc0c2"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statement to be true, find which of the conclusion among the given conclusions is / are definitely true and then give your answer accordingly. Statement: X > Z < Y ≤ V; P > K > S = Q ≥ V Conclusion: I) K > X II) Y < P",
+   "options": [
+    "Only I is true.",
+    "Only II is true.",
+    "Either I or II is true.",
+    "Neither I nor II is true.",
+    "Both I and II are true. Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3c04ece94b10957a1259911486453a7d2069d6825b85dc495b935b0044dff225"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is / are definitely true and then give your answers accordingly. Statements: U ≤ W ≥ R > S ; T > S = V Conclusions: I. W < V II. T < V",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Either I or II is true",
+    "Neither I nor II is true",
+    "Both I and II is true Testbook Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "42a818735c6192ae39011d2777315b72bf834ac4fc962991f5276f68a09d3214"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Directions: - In these Questions, Relationship between different elements is shown in the statements. These statements are followed by 2 Conclusions. Marks Answer as Option Given. Statement: P ≥ Q = R ≥ N < S Conclusions: I) S > Q II) P ≥ N",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "None follow Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "68a8e2319bc3e908e7c8db44a1a4f8dc5d158f713a47dcd5b5f92f578ad1b80f"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make a meaningful word with the 2nd, the 3rd and the 8th letters of the word ‘ABSOLUTE’, then which of the following will be the 3rd letter from the left of that word? If more than one such word can be formed give ‘X’ as the answer and if no such word can be formed give ‘Y’ as the answer.",
+   "options": [
+    "X",
+    "Y",
+    "E",
+    "S",
+    "B Testbook Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6eac4d723ed40ba321d1e368a97ba5e47e03100e1e59a7539a1e3652264154f7"
+  }
+ ],
+ "section_confidence": 0.918,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

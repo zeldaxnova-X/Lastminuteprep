@@ -1,0 +1,1562 @@
+[
+ {
+  "id": "b4257c96-9e95-4bc6-898b-723aa1accdd3",
+  "paper_id": "8000c17c-b33b-43c9-a1ad-168d544c8e70",
+  "question_number": 52,
+  "correct_option": "A",
+  "stem_text": "The number of students in two sections A and B having different heights is shown in the table given below: \nHeight (in metres) Section A Section B \n1.55 \n1.60 \n1.62 \n1.65 \n1.68 \n1.71 \n1.75 \nWhat is the ratio of the number of students with a height of 1.62 metres in Section A to the total number of students \nin Section A?",
+  "options": [
+   {
+    "key": "A",
+    "text": "14 : 67",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "14 : 67"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "14 : 62",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "14 : 62"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "1 : 4",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "1 : 4"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "7 : 33",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "7 : 33"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "SSC-CGL-T-I-Similar-Paper-Held-on-23-Sep-2025-S2-English.pdf",
+  "year": 2025,
+  "source_document": null
+ },
+ {
+  "id": "dfffe88f-97bd-48cf-b4ab-7876cd9f61ed",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-1",
+  "question_number": 63,
+  "correct_option": "C",
+  "stem_text": "The pie chart given below shows the number of truck sold by 8 different companies.\nThe total number of truck sold by all these 8 companies are 4000. Number of truck\nsold by a particular company is shown as a percent of total number of truck sold by all\nthese 8 companies.\nThe number of trucks sold by B, C, F and H is how much percent less than the number\nof trucks sold by all these 8 companies?",
+  "options": [
+   {
+    "key": "A",
+    "text": "46 percent",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "46 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "22 percent",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "22 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "34 percent",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "34 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "14 percent",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "14 percent"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-1.docx"
+ },
+ {
+  "id": "d03c8eeb-f583-4489-b725-f72042da8d80",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-1",
+  "question_number": 70,
+  "correct_option": "B",
+  "stem_text": "The table given below shows the number of spoon manufactured by five factories.\nWhat are the ratio of number of spoon manufactured by P to the number of spoon\nmanufactured by R?",
+  "options": [
+   {
+    "key": "A",
+    "text": "3 : 2",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "3 : 2"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "2 : 3",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2 : 3"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "14 : 1",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "14 : 1"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "1 : 3",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "1 : 3"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-1.docx"
+ },
+ {
+  "id": "a63233fc-41e7-4042-b145-73addf790596",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-2",
+  "question_number": 69,
+  "correct_option": "D",
+  "stem_text": "The table given below shows the number of persons participating in a survey from 6\ndifferent states.\nWhat is the ratio of number of person participating in a survey from state S3 to the\nnumber of person participating in a survey from state S4?",
+  "options": [
+   {
+    "key": "A",
+    "text": "3 : 5",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "3 : 5"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "5 : 4",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "5 : 4"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "4 : 3",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "4 : 3"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "4 : 5",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "4 : 5"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-2.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-2.docx"
+ },
+ {
+  "id": "089f1361-47a4-42b7-8686-3891d4c5e881",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-3",
+  "question_number": 57,
+  "correct_option": "A",
+  "stem_text": "The pie chart given below shows the number of bike sold by 8 different companies.\nThe total number of bike sold by all these 8 companies are 2000. Number of bikes sold\nby a particular company is shown as a percent of total number of bike sold by all these\n8 companies.\nWhat is the difference between the average number of bikes sold by P, Q, R and S and\nthe average number of bikes sold by T, U, V and W?",
+  "options": [
+   {
+    "key": "A",
+    "text": "150",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "150"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "200",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "200"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "175",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "175"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "125",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "125"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-3.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-3.docx"
+ },
+ {
+  "id": "03b6810e-5419-4c25-ae04-b8601373ea28",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-3",
+  "question_number": 63,
+  "correct_option": "A",
+  "stem_text": "The table given below shows the income of two companies C1 and C2 in 6 years.\nWhich of the following statement is NOT correct?\nI. The income of C1 in year P is 33.33 percent of the income of C2 in year Q.\nII.The average income of C1 and C2 in year T is 400.",
+  "options": [
+   {
+    "key": "A",
+    "text": "Only I",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Only I"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "Both I and II",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Both I and II"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "Neither I nor II",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Neither I nor II"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "Only II",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Only II"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-3.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-3.docx"
+ },
+ {
+  "id": "6ada3efb-ce14-4a6a-a82c-e4f07e72325c",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-4",
+  "question_number": 53,
+  "correct_option": "D",
+  "stem_text": "The table given below shows the number of bicycle sold by six companies.\nWhat are the ratio of number of bicycle sold by B to the number of bicycle sold by D?",
+  "options": [
+   {
+    "key": "A",
+    "text": "11 : 5",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "11 : 5"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "11 : 6",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "11 : 6"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "5 : 13",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "5 : 13"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "6 : 11",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "6 : 11"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx"
+ },
+ {
+  "id": "fd468b03-c723-4552-add4-ce973c721d7e",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-4",
+  "question_number": 62,
+  "correct_option": "D",
+  "stem_text": "The pie chart given below shows the production of 6 different factories. The total\nproduction of all these 6 factories are 22000. The production of a particular factory is\nshown as a percent of total production of all these 6 factories.\nP1 = The value of average production of A, C, D and F.\nP2 = The difference between the production of B and E.\nWhat is the value of (P1 + P2)?",
+  "options": [
+   {
+    "key": "A",
+    "text": "2525",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2525"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "6545",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "6545"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "3525",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "3525"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "4565",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "4565"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx"
+ },
+ {
+  "id": "2e192023-523a-4c95-a2ab-c3664b1a0857",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-01-shift-4",
+  "question_number": 69,
+  "correct_option": "D",
+  "stem_text": "The pie chart given below shows the sales of 7 different companies. The total sales of\nall these 7 companies are 2880. The sale of a particular company is shown in terms of\ndegree with respect to the total sales of all these 7 companies.\nThe average sales of G and H is how much percent more than the average sales of D\nand I?",
+  "options": [
+   {
+    "key": "A",
+    "text": "18.86 percent",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "18.86 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "24.25 percent",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "24.25 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "56.21 percent",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "56.21 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "22.86 percent",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "22.86 percent"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-01-shift-4.docx"
+ },
+ {
+  "id": "b6d34cd9-199f-4e69-aa9a-4199550aa39b",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-1",
+  "question_number": 53,
+  "correct_option": "B",
+  "stem_text": "The table given below shows the production of beauty products by five different\ncompanies.\nThe production of beauty product by T is what percent of the production of beauty\nproduct by S?",
+  "options": [
+   {
+    "key": "A",
+    "text": "40 percent",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "40 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "140 percent",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "140 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "240 percent",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "240 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "120 percent",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "120 percent"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx"
+ },
+ {
+  "id": "983e72f0-7b59-4b25-9883-5d1900332056",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-1",
+  "question_number": 58,
+  "correct_option": "D",
+  "stem_text": "The table given below shows the number of pencils sold by 7 shops.\nWhat is the ratio of number of pencils sold by S3 to the number of pencils sold by S6?",
+  "options": [
+   {
+    "key": "A",
+    "text": "8 : 15",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "8 : 15"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "13 : 7",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "13 : 7"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "15 : 7",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "15 : 7"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "7 : 13",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "7 : 13"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx"
+ },
+ {
+  "id": "cb42e920-f6d9-4c24-a25d-b4b5e0e74a75",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-1",
+  "question_number": 73,
+  "correct_option": "C",
+  "stem_text": "The pie chart given below shows the population of 8 cities in a year. Total population\nof all the 8 cities is 30,000. Population in a particular city is shown as a percent of total\npopulation in all these 8 cities.\nWhat is the average population (approximately) of cities C3, C5 and C7?",
+  "options": [
+   {
+    "key": "A",
+    "text": "1200",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "1200"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "1800",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "1800"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "1600",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "1600"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "2000",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2000"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-1.docx"
+ },
+ {
+  "id": "76315751-e043-4b16-8a01-222d6fbdef08",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-2",
+  "question_number": 68,
+  "correct_option": "B",
+  "stem_text": "The table given below shows the marks obtained by six students in two subjects.\nIf the maximum marks for subject P is 900 then what percentage of marks are obtained\nby A in subject P?",
+  "options": [
+   {
+    "key": "A",
+    "text": "125.5 percent",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "125.5 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "16.67 percent",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "16.67 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "9.09 percent",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "9.09 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "11.11 percent",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "11.11 percent"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-2.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-2.docx"
+ },
+ {
+  "id": "5de559df-99b4-4648-8b25-fae1bc0b9f5b",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-2",
+  "question_number": 73,
+  "correct_option": "D",
+  "stem_text": "The table given below shows the number of workers working in 5 different factories.\nWhat is the total number of workers working in all factories?",
+  "options": [
+   {
+    "key": "A",
+    "text": "180",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "180"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "240",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "240"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "250",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "250"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "220",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "220"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-2.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-2.docx"
+ },
+ {
+  "id": "fed80518-b1d1-4be8-bda6-fe7beaa99b1b",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-02-shift-3",
+  "question_number": 72,
+  "correct_option": "D",
+  "stem_text": "The table given below shows the production of five companies in two years.\nJ1= The average production of A in year Y1 and Y2.\nJ2 = Sum of production of B, C and D in year Y1 and Y2.\nWhat is the value of (J2/J1)?",
+  "options": [
+   {
+    "key": "A",
+    "text": "4",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "4"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "5",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "5"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "3",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "3"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "6",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "6"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-02-shift-3.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-02-shift-3.docx"
+ },
+ {
+  "id": "93f138cd-2a7c-402e-9e86-4cf9c06f715c",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-03-shift-1",
+  "question_number": 57,
+  "correct_option": "C",
+  "stem_text": "The table given below shows the number of people in different states.\nWhat is the ratio of number of people in state C to the number of people in state E?",
+  "options": [
+   {
+    "key": "A",
+    "text": "31 : 17",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "31 : 17"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "35 : 18",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "35 : 18"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "18 : 35",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "18 : 35"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "17 : 29",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "17 : 29"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-03-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-03-shift-1.docx"
+ },
+ {
+  "id": "522b2f2d-cabf-4de2-892f-46837bf17bb6",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-03-shift-1",
+  "question_number": 59,
+  "correct_option": "C",
+  "stem_text": "The table given below shows the number of truck sold by six companies.\nNumber of trucks sold by L are what percent of number of trucks sold by J?",
+  "options": [
+   {
+    "key": "A",
+    "text": "100 percent",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "100 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "250 percent",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "250 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "200 percent",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "200 percent"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "150 percent",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "150 percent"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-03-shift-1.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-03-shift-1.docx"
+ },
+ {
+  "id": "dbb6b4f1-92e7-4eff-9fba-e1c72337fb79",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-03-shift-2",
+  "question_number": 57,
+  "correct_option": "D",
+  "stem_text": "The pie chart given below shows the expenditure incurred by a person on 7 articles.\nThe total expenditure of all these 7 articles are 3600. Expenditure incurred on a\nparticular article is shown in terms of degree with respect to the total expenditure\nincurred in all these 7 articles.\nWhat is the average expenditure incurred on article P and Q?",
+  "options": [
+   {
+    "key": "A",
+    "text": "875",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "875"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "905",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "905"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "885",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "885"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "950",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "950"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-03-shift-2.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-03-shift-2.docx"
+ },
+ {
+  "id": "60025267-4379-4429-9206-a99181ee7074",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-03-shift-2",
+  "question_number": 75,
+  "correct_option": "C",
+  "stem_text": "The table given below shows the production of refrigerator by 6 companies.\nWhat is the ratio of production of refrigerator by company G to the production of\nrefrigerator by company I?",
+  "options": [
+   {
+    "key": "A",
+    "text": "12 : 13",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "12 : 13"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "11 : 13",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "11 : 13"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "13 : 11",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "13 : 11"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "13 : 12",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "13 : 12"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-03-shift-2.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-03-shift-2.docx"
+ },
+ {
+  "id": "129250af-5ae0-49c4-8511-34794eeb064e",
+  "paper_id": "ssc-cgl-tier-1-2022-2022-12-03-shift-4",
+  "question_number": 53,
+  "correct_option": "C",
+  "stem_text": "The table given below shows the number of players participating in two games in six\ndifferent schools?\nWhat is the ratio of total number of players participating in game A to the total number\nof players participating in game B?",
+  "options": [
+   {
+    "key": "A",
+    "text": "117 : 77",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "117 : 77"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "67 : 116",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "67 : 116"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "77 : 117",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "77 : 117"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "116 : 57",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "116 : 57"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2022-2022-12-03-shift-4.docx",
+  "year": 2022,
+  "source_document": "ssc-cgl-tier-1-2022-2022-12-03-shift-4.docx"
+ },
+ {
+  "id": "565e38b9-42d7-46f6-8f52-95f96e038b44",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-09-shift-1",
+  "question_number": 72,
+  "correct_option": "A",
+  "stem_text": "Study the given table and answer the question that follows.\nThe given table shows the production of different types of refrigerators in a company.\nYears\nTypes of Refrigerators\nA\nB\nC\n2011\n2018\n1800\n1932\n2012\n2040\n1890\n1800\n2013\n2035\n1910\n1890\n2014\n2020\n1940\n1978\n2015\n1997\n1960\n1900\nIn which of the given year(s) was the production of B type refrigerator closest to its average production over the given\nyears?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Both 2012 and 2013",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Both 2012 and 2013"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "Both 2013 and 2015",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Both 2013 and 2015"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "2014",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2014"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "Only 2012",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Only 2012"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-09-shift-1.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-09-shift-1.docx"
+ },
+ {
+  "id": "8ecfea64-758d-4097-af3d-bfe8300918fe",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-12-shift-1",
+  "question_number": 72,
+  "correct_option": "A",
+  "stem_text": "Study the given table and answer the question that follows.\nThe given table shows the production of different types of refrigerators in a company.\nYears\nTypes of Refrigerators\nA\nB\nC\n2011\n2018\n1800\n1932\n2012\n2040\n1890\n1800\n2013\n2035\n1910\n1890\n2014\n2020\n1940\n1978\n2015\n1997\n1960\n1900\nIn which of the given year(s) was the production of B type refrigerator closest to its average production over the given\nyears?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Both 2012 and 2013",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Both 2012 and 2013"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "Both 2013 and 2015",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Both 2013 and 2015"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "2014",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2014"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "Only 2012",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Only 2012"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-12-shift-1.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-12-shift-1.docx"
+ },
+ {
+  "id": "b53876d9-88ef-455f-8be5-a976b11df1fe",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-13-shift-2",
+  "question_number": 51,
+  "correct_option": "D",
+  "stem_text": "The following table indicates the number of students studying in three subjects in four colleges.\nWhat is the ratio of the total number of students studying in the Physics to that of studying in Mathematics in all four\ncolleges taken together?",
+  "options": [
+   {
+    "key": "A",
+    "text": "781 : 585",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "781 : 585"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "775 : 601",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "775 : 601"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "576 : 731",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "576 : 731"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "776 : 603",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "776 : 603"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-13-shift-2.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-13-shift-2.docx"
+ },
+ {
+  "id": "9163f78e-c2ef-42e4-994c-aab87c25e869",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-13-shift-3",
+  "question_number": 62,
+  "correct_option": "B",
+  "stem_text": "Study the given table and answer the question.\nThe table displays the number of cars produced (in lakhs) by six different brands between 2018 and 2023.\nBrand\n2018\n2019\n2020\n2021\n2022\n2023\nA\n36\n40\n42\n45\n47\n42\nB\n23\n37\n28\n32\n34\n26\nC\n45\n47\n51\n54\n56\n48\nD\n35\n37\n42\n32\n36\n28\nE\n57\n56\n52\n38\n48\n42\nF\n43\n45\n56\n41\n52\n40\nWhich brand production is the highest, and in which year?",
+  "options": [
+   {
+    "key": "A",
+    "text": "E and 2019",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "E and 2019"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "E and 2018",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "E and 2018"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "C and 2022",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "C and 2022"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "F and 2020",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "F and 2020"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-13-shift-3.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-13-shift-3.docx"
+ },
+ {
+  "id": "dcf520aa-2851-4358-869c-5401bbda3714",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-18-shift-2",
+  "question_number": 75,
+  "correct_option": "D",
+  "stem_text": "The given pie chart shows the amount of money (₹) spent (in degrees) on various sports by a sports academy in a particular\nyear. Study the pie chart and answer the question that follows.\nIf ₹42,000 were spent on Soccer, then the money spent on Badminton, Tennis and Rugby taken together is what percentage\n(rounded off to 2 decimal places) more/less than the money spent on Cricket, Swimming and Hockey taken together?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Less, 34.87%",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Less, 34.87%"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "More, 28.95%",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "More, 28.95%"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "More, 34.87%",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "More, 34.87%"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "Less, 28.95%",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "Less, 28.95%"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-18-shift-2.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-18-shift-2.docx"
+ },
+ {
+  "id": "0cc9bd41-ffb9-4c42-8769-ef1a88c961d6",
+  "paper_id": "ssc-cgl-tier-1-2024-2024-09-24-shift-1",
+  "question_number": 69,
+  "correct_option": "A",
+  "stem_text": "Study the given table and answer the question.\nYear\nRice gm/day\nWheat gm/day\nPulses gm/day\nVegetables gm/day\n2019\n450\n55\n160\n280\n2020\n430\n60\n150\n300\n2021\n380\n65\n140\n320\n2022\n350\n70\n125\n400\n2023\n350\n80\n120\n350\nFor which year is the daily consumption equal to that of another given year?",
+  "options": [
+   {
+    "key": "A",
+    "text": "2019 and 2022",
+    "index": 1,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2019 and 2022"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "B",
+    "text": "2019 and 2023",
+    "index": 2,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2019 and 2023"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "C",
+    "text": "2021 and 2023",
+    "index": 3,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2021 and 2023"
+     }
+    ],
+    "isImage": false
+   },
+   {
+    "key": "D",
+    "text": "2020 and 2022",
+    "index": 4,
+    "blocks": [
+     {
+      "kind": "text",
+      "text": "2020 and 2022"
+     }
+    ],
+    "isImage": false
+   }
+  ],
+  "source_pdf": "ssc-cgl-tier-1-2024-2024-09-24-shift-1.docx",
+  "year": 2024,
+  "source_document": "ssc-cgl-tier-1-2024-2024-09-24-shift-1.docx"
+ }
+]

@@ -4,8 +4,9 @@ import { loadOwnedAttempt, recordAnonMock } from "@/lib/auth/api-guard";
 import { buildAndStoreReport } from "@/lib/exam/build-report";
 import { markProfileStale } from "@/lib/ai/build-learner-profile";
 import { emitEvent } from "@/lib/analytics/events";
-import { loadExamConfig } from "@/lib/exam/registry";
+import { loadExamConfig, getExamEntry } from "@/lib/exam/registry";
 import { getSectionMarking } from "@/lib/exam/exam-config";
+import { contentObjectName } from "@/lib/exam/content-repo";
 
 type ResponseStatus =
   | "not_visited"
@@ -61,10 +62,13 @@ async function mirrorToCanonical(
   }>,
   marksById: Map<string, { is_correct: boolean | null; marks_awarded: number }>
 ) {
+  // Resolve THIS attempt's exam (not hardcoded SSC) so the canonical report
+  // scores with the right config.
+  const examSlug = getExamEntry((attempt as { exam_code?: string }).exam_code).slug;
   const { data: exam } = await supabase
     .from("exams")
     .select("id")
-    .eq("slug", "ssc-cgl-tier-1")
+    .eq("slug", examSlug)
     .single();
 
   const nowIso = new Date().toISOString();
@@ -143,10 +147,12 @@ export async function POST(
       return NextResponse.json({ error: answersError.message }, { status: 500 });
     }
 
-    // Get all questions for this attempt (incl. section_slug for per-section marking)
+    // Get all questions for this attempt (from THIS exam's content namespace),
+    // incl. section_slug for per-section marking.
+    const examCode = (attempt as { exam_code?: string }).exam_code;
     const questionIds = (answers || []).map((a) => a.question_id);
     const { data: questions, error: questionsError } = await supabase
-      .from("validated_questions")
+      .from(contentObjectName(examCode, "validated_questions"))
       .select("id, correct_answer, subject, section_slug")
       .in("id", questionIds);
 
@@ -312,7 +318,7 @@ export async function POST(
         marksAwardedById
       );
       // Deterministic scoring + Mentor analysis → session_results + mentor_reports.
-      const report = await buildAndStoreReport(supabase, attempt.id);
+      const report = await buildAndStoreReport(supabase, attempt.id, (attempt as { exam_code?: string }).exam_code);
       if (!report.ok) console.warn("Report build skipped:", report.reason);
 
       // MarksenseAI: a new analyzed attempt makes the longitudinal profile

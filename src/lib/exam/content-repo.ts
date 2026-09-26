@@ -33,7 +33,7 @@ export type ContentObject =
  * uses the base names (its public shims); others use `<code>__<object>` views.
  * Exported so the ingestion + guardrail can agree on the naming.
  */
-export function contentObjectName(examCode: string, object: ContentObject): string {
+export function contentObjectName(examCode: string | null | undefined, object: ContentObject): string {
   const entry = getExamEntry(examCode);
   if (entry.code === DEFAULT_EXAM_CODE) return object;
   return `${entry.code.replace(/-/g, "_")}__${object}`;
