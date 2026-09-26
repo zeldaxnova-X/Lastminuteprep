@@ -57,3 +57,7 @@ service-account*.json
 next-env.d.ts
 
 .vercel
+
+# Python bytecode
+__pycache__/
+*.pyc
