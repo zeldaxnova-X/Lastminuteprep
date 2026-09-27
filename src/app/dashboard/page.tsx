@@ -77,10 +77,16 @@ const MODES = [
   },
 ];
 
-const EXAMS = [
+// SSC CGL opens its full per-exam dashboard (onOpen). Other live exams that don't
+// have a scoped dashboard yet deep-link straight to their CBT mock via `href`.
+const SBI_MOCK_HREF =
+  "/test/instructions?exam_type=random_test&exam_code=sbi-clerk&questions=100&time=60&title=" +
+  encodeURIComponent("SBI Clerk Prelims Mock") +
+  "&free=1";
+const EXAMS: { slug: string; name: string; tagline: string; live: boolean; href?: string; cta?: string }[] = [
   { slug: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", live: true },
+  { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", live: true, href: SBI_MOCK_HREF, cta: "Start mock" },
   { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", live: false },
-  { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims + Mains", live: false },
 ];
 
 export default function DashboardPage() {
@@ -316,7 +322,7 @@ function ExamHub({
             Choose your exam
           </h1>
           <p className="text-sm text-ink-secondary">
-            SSC CGL is live today. Open it to see your dashboard and start a session.
+            SSC CGL and SBI Clerk are live today. Open one to start a session.
           </p>
         </div>
         <PlanBadge plan={plan} loading={loading} />
@@ -334,7 +340,7 @@ function ExamHub({
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {EXAMS.map((e) =>
           e.live ? (
-            <button key={e.slug} type="button" onClick={onOpen} className="group text-left">
+            <button key={e.slug} type="button" onClick={() => (e.href ? (window.location.href = e.href) : onOpen())} className="group text-left">
               <Card
                 interactive
                 className="relative flex h-full flex-col justify-between overflow-hidden p-6"
@@ -359,7 +365,7 @@ function ExamHub({
                   </div>
                 </div>
                 <div className="relative mt-5 flex items-center justify-between border-t border-hairline pt-4 text-sm font-semibold text-accent">
-                  <span>Open dashboard</span>
+                  <span>{e.cta ?? "Open dashboard"}</span>
                   <ArrowRight className="h-4 w-4 transition-premium group-hover:translate-x-0.5" />
                 </div>
               </Card>
