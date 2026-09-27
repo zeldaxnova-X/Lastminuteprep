@@ -11,6 +11,9 @@ export const SECTION_LABELS: Record<string, string> = {
   general_awareness: "General Awareness",
   quantitative_aptitude: "Quantitative Aptitude",
   english_comprehension: "English Comprehension",
+  // SBI Clerk section slugs
+  english: "English Language",
+  numerical_ability: "Numerical Ability",
   statistics: "Statistics",
   general_studies: "General Studies",
   finance_economics: "Finance & Economics",

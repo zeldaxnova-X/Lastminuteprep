@@ -7,20 +7,25 @@ import { getSessionContext, json401 } from "@/lib/auth/api-guard";
  * Identity is server-derived; the user-scoped client means RLS also restricts
  * rows to auth.uid() as a backstop.
  */
-export async function GET() {
+export async function GET(request: Request) {
   try {
     const { user, supabase } = await getSessionContext();
     if (!user) return json401();
     const userId = user.id;
+    // Optional per-exam scope: ?exam=<exam_code> restricts to that exam's attempts
+    // so each exam's dashboard shows its own analytics. No param = all exams.
+    const examCode = new URL(request.url).searchParams.get("exam");
 
-    // Fetch all completed attempts for this user.
+    // Fetch all completed attempts for this user (optionally one exam).
     // NOTE: the column is `score` (not `total_score`), selecting a non-existent
     // column previously 500'd this endpoint and broke the dashboard.
-    const { data: attempts, error } = await supabase
+    let query = supabase
       .from("exam_attempts")
       .select("id, score, max_score, total_questions, time_spent_seconds, created_at, section_breakdown")
       .eq("user_id", userId)
       .in("status", ["completed", "auto_submitted"]);
+    if (examCode) query = query.eq("exam_code", examCode);
+    const { data: attempts, error } = await query;
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });

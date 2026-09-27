@@ -13,6 +13,13 @@ import { MarksenseEntry } from "@/components/marksense/entry";
 import { startRazorpayCheckout, waitForPlanUpgrade } from "@/lib/payments/razorpay-checkout";
 import { allAccessPriceInr, isLaunchOffer, ALL_ACCESS_REGULAR_PRICE_INR, ALL_ACCESS_OFFER_END_LABEL } from "@/lib/payments/pricing";
 import { LEGAL_VERSION } from "@/lib/legal";
+import {
+  SSC_CGL_TIER1_CONFIG,
+  SBI_CLERK_PRELIMS_CONFIG,
+  getMaxScore,
+  getTotalQuestions,
+  type ExamConfig,
+} from "@/lib/exam/exam-config";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
@@ -50,44 +57,72 @@ interface AttemptRow {
   created_at: string;
 }
 
-const MODES = [
-  {
-    key: "pyp",
-    href: "/test/create?mode=pyp",
-    icon: BookOpen,
-    title: "Previous Year Paper",
-    desc: "Real SSC CGL shift papers (2020–2024) with official TCS answer keys.",
-    cta: "Select paper",
-  },
-  {
-    key: "subject",
-    href: "/test/create?mode=subject",
-    icon: Target,
-    title: "Topic Test",
-    desc: "Target Reasoning, GA, Quant, or English individually.",
-    cta: "Select subject",
-  },
-  {
-    key: "random",
-    href: "/test/create?mode=random",
-    icon: Shuffle,
-    title: "Random Mock",
-    desc: "A balanced 100-question mock, 25 per section, drawn from the bank.",
-    cta: "Launch mock",
-  },
+interface ExamMode {
+  key: string;
+  href: string;
+  icon: React.ElementType;
+  title: string;
+  desc: string;
+  cta: string;
+}
+interface ExamEntry {
+  code: string; // exam_attempts.exam_code (registry code)
+  name: string;
+  tagline: string;
+  live: boolean;
+  config?: ExamConfig;
+}
+
+// Data-driven exam catalog. Every LIVE exam opens its OWN config-scored dashboard;
+// adding a future exam = one entry here + its config + content (no dashboard edits).
+const EXAM_CATALOG: ExamEntry[] = [
+  { code: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", live: true, config: SSC_CGL_TIER1_CONFIG },
+  { code: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", live: true, config: SBI_CLERK_PRELIMS_CONFIG },
+  { code: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", live: false },
 ];
 
-// SSC CGL opens its full per-exam dashboard (onOpen). Other live exams that don't
-// have a scoped dashboard yet deep-link straight to their CBT mock via `href`.
-const SBI_MOCK_HREF =
-  "/test/instructions?exam_type=random_test&exam_code=sbi-clerk&questions=100&time=60&title=" +
-  encodeURIComponent("SBI Clerk Prelims Mock") +
-  "&free=1";
-const EXAMS: { slug: string; name: string; tagline: string; live: boolean; href?: string; cta?: string }[] = [
-  { slug: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", live: true },
-  { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", live: true, href: SBI_MOCK_HREF, cta: "Start mock" },
-  { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", live: false },
-];
+function catalogEntry(code: string | null): ExamEntry | undefined {
+  return EXAM_CATALOG.find((e) => e.code === code);
+}
+
+// A full-mock deep-link for ANY exam: the CBT instructions screen starts a mock
+// built from that exam's blueprint and scored by its config (sectional locks and
+// option count included). This is the authentic CBT experience per exam.
+function fullMockHref(code: string, name: string, config: ExamConfig): string {
+  const params = new URLSearchParams({
+    exam_type: "random_test",
+    exam_code: code,
+    questions: String(getTotalQuestions(config)),
+    time: String(config.totalDurationMinutes),
+    title: `${name} Mock`,
+    free: "1",
+  });
+  return `/test/instructions?${params.toString()}`;
+}
+
+// Start-session modes for an exam. SSC exposes its rich create-flow (PYP / Topic /
+// Random); every other exam gets the config-driven Full Mock. Future exams gain
+// PYP/Topic here once their create-flow is wired.
+function modesFor(code: string, name: string, config: ExamConfig): ExamMode[] {
+  if (code === "ssc-cgl") {
+    return [
+      { key: "pyp", href: "/test/create?mode=pyp", icon: BookOpen, title: "Previous Year Paper", desc: "Real SSC CGL shift papers (2020–2024) with official TCS answer keys.", cta: "Select paper" },
+      { key: "subject", href: "/test/create?mode=subject", icon: Target, title: "Topic Test", desc: "Target Reasoning, GA, Quant, or English individually.", cta: "Select subject" },
+      { key: "random", href: "/test/create?mode=random", icon: Shuffle, title: "Random Mock", desc: "A balanced 100-question mock, 25 per section, drawn from the bank.", cta: "Launch mock" },
+    ];
+  }
+  const nSec = config.sections.length;
+  return [
+    {
+      key: "fullmock",
+      href: fullMockHref(code, name, config),
+      icon: Shuffle,
+      title: "Full Mock",
+      desc: `A full ${getTotalQuestions(config)}-question mock across ${nSec} sections, ${config.totalDurationMinutes} minutes — scored on the real ${name} pattern.`,
+      cta: "Start mock",
+    },
+  ];
+}
 
 export default function DashboardPage() {
   const { examId, isSubmitted, resetTest } = useTestStore();
@@ -106,6 +141,9 @@ export default function DashboardPage() {
   // Two-stage view: "hub" (choose an exam) → "exam" (that exam's dashboard).
   // The hub is always the landing so the exam choice is the first thing seen.
   const [stage, setStage] = useState<"hub" | "exam">("hub");
+  const [activeExam, setActiveExam] = useState<string | null>(null);
+  const [examAnalytics, setExamAnalytics] = useState<AnalyticsData | null>(null);
+  const [examLoading, setExamLoading] = useState(false);
   const [notified, setNotified] = useState<string[]>([]);
   const [savingExam, setSavingExam] = useState<string | null>(null);
   const [planExpiresAt, setPlanExpiresAt] = useState<string | null>(null);
@@ -144,8 +182,8 @@ export default function DashboardPage() {
     if (!intent) return;
     autoCheckoutRan.current = true;
     window.history.replaceState({}, "", "/dashboard");
-    // A checkout link is exam-agnostic; drop the buyer straight onto the exam view.
-    setStage("exam");
+    // A checkout link is exam-agnostic; drop the buyer onto their primary exam view.
+    void openExam("ssc-cgl");
     const [p] = intent.split(":");
     const known = p === "allaccess" || p === "mentor" || p === "pro";
     if (!known) return;
@@ -156,7 +194,6 @@ export default function DashboardPage() {
 
   const canPractice = plan === "pro" || plan === "mentor";
   const hasData = analytics?.has_completed_attempts ?? false;
-  const dash = (v: React.ReactNode) => (loading ? "…" : v);
 
   function upgrade() {
     const paidTarget: Plan = "mentor";
@@ -203,15 +240,25 @@ export default function DashboardPage() {
     }
   }
 
-  function openExam() {
+  async function openExam(code: string) {
+    setActiveExam(code);
     setStage("exam");
+    setExamAnalytics(null);
+    setExamLoading(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
     // Persist the primary choice; harmless if already set.
     void fetch("/api/exam/preference", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ primary: "ssc-cgl", notify: notified }),
+      body: JSON.stringify({ primary: code, notify: notified }),
     }).catch(() => {});
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // Per-exam analytics so each exam's dashboard shows its own numbers.
+    try {
+      const r = await fetch(`/api/cbt/analytics?exam=${encodeURIComponent(code)}`);
+      if (r.ok) setExamAnalytics(await r.json());
+    } finally {
+      setExamLoading(false);
+    }
   }
 
   return (
@@ -272,12 +319,13 @@ export default function DashboardPage() {
           />
         ) : (
           <ExamDashboard
-            loading={loading}
+            examName={catalogEntry(activeExam)?.name ?? "Exam"}
+            examCode={activeExam ?? "ssc-cgl"}
+            config={catalogEntry(activeExam)?.config ?? SSC_CGL_TIER1_CONFIG}
+            loading={examLoading}
             plan={plan}
-            analytics={analytics}
-            hasData={hasData}
+            analytics={examAnalytics}
             canPractice={canPractice}
-            dash={dash}
             planExpiresAt={planExpiresAt}
             latestAttempt={latestAttempt}
             paying={paying}
@@ -310,7 +358,7 @@ function ExamHub({
   canPractice: boolean;
   notified: string[];
   savingExam: string | null;
-  onOpen: () => void;
+  onOpen: (code: string) => void;
   onNotify: (slug: string) => void;
 }) {
   return (
@@ -338,9 +386,9 @@ function ExamHub({
 
       {/* Exam cards */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {EXAMS.map((e) =>
+        {EXAM_CATALOG.map((e) =>
           e.live ? (
-            <button key={e.slug} type="button" onClick={() => (e.href ? (window.location.href = e.href) : onOpen())} className="group text-left">
+            <button key={e.code} type="button" onClick={() => onOpen(e.code)} className="group text-left">
               <Card
                 interactive
                 className="relative flex h-full flex-col justify-between overflow-hidden p-6"
@@ -365,13 +413,13 @@ function ExamHub({
                   </div>
                 </div>
                 <div className="relative mt-5 flex items-center justify-between border-t border-hairline pt-4 text-sm font-semibold text-accent">
-                  <span>{e.cta ?? "Open dashboard"}</span>
+                  <span>Open dashboard</span>
                   <ArrowRight className="h-4 w-4 transition-premium group-hover:translate-x-0.5" />
                 </div>
               </Card>
             </button>
           ) : (
-            <Card key={e.slug} className="flex h-full flex-col justify-between p-6 opacity-95">
+            <Card key={e.code} className="flex h-full flex-col justify-between p-6 opacity-95">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-panel text-ink-tertiary">
@@ -388,18 +436,18 @@ function ExamHub({
               </div>
               <button
                 type="button"
-                disabled={savingExam === e.slug || notified.includes(e.slug)}
-                onClick={() => onNotify(e.slug)}
+                disabled={savingExam === e.code || notified.includes(e.code)}
+                onClick={() => onNotify(e.code)}
                 className={cn(
                   "mt-5 flex items-center justify-between gap-2 border-t border-hairline pt-4 text-sm font-semibold transition-premium",
-                  notified.includes(e.slug) ? "text-success" : "text-ink-secondary hover:text-ink"
+                  notified.includes(e.code) ? "text-success" : "text-ink-secondary hover:text-ink"
                 )}
               >
-                {savingExam === e.slug ? (
+                {savingExam === e.code ? (
                   <>
                     <span className="inline-flex items-center gap-1.5"><Loader2 className="h-4 w-4 animate-spin" /> Saving…</span>
                   </>
-                ) : notified.includes(e.slug) ? (
+                ) : notified.includes(e.code) ? (
                   <>
                     <span className="inline-flex items-center gap-1.5"><Check className="h-4 w-4" /> We&apos;ll notify you</span>
                   </>
@@ -474,7 +522,7 @@ function OverallStatus({
       </div>
       <div className="grid grid-cols-3 gap-4">
         <MiniStat label="Tests completed" value={`${analytics!.tests_completed}`} />
-        <MiniStat label="Average score" value={`${analytics!.avg_score.toFixed(0)}/200`} tone="accent" />
+        <MiniStat label="Average accuracy" value={`${analytics!.overall_accuracy.toFixed(0)}%`} tone="accent" />
         <MiniStat label="Current streak" value={`${analytics!.current_streak}d`} />
       </div>
     </Card>
@@ -494,12 +542,13 @@ function MiniStat({ label, value, tone }: { label: string; value: string; tone?:
 
 /* -------------------------- Stage 2: exam view -------------------------- */
 function ExamDashboard({
+  examName,
+  examCode,
+  config,
   loading,
   plan,
   analytics,
-  hasData,
   canPractice,
-  dash,
   planExpiresAt,
   latestAttempt,
   paying,
@@ -507,12 +556,13 @@ function ExamDashboard({
   onUpgrade,
   onBack,
 }: {
+  examName: string;
+  examCode: string;
+  config: ExamConfig;
   loading: boolean;
   plan: Plan;
   analytics: AnalyticsData | null;
-  hasData: boolean;
   canPractice: boolean;
-  dash: (v: React.ReactNode) => React.ReactNode;
   planExpiresAt: string | null;
   latestAttempt: AttemptRow | null;
   paying: Plan | null;
@@ -520,6 +570,10 @@ function ExamDashboard({
   onUpgrade: () => void;
   onBack: () => void;
 }) {
+  const hasData = analytics?.has_completed_attempts ?? false;
+  const dash = (v: React.ReactNode) => (loading ? "…" : v);
+  const maxScore = getMaxScore(config);
+  const modes = modesFor(examCode, examName, config);
   return (
     <div className="space-y-8">
       {/* Back + header */}
@@ -532,7 +586,7 @@ function ExamDashboard({
         </button>
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div className="space-y-1.5">
-            <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">SSC CGL</h1>
+            <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{examName}</h1>
             <p className="text-sm text-ink-secondary">
               {canPractice
                 ? hasData
@@ -575,7 +629,7 @@ function ExamDashboard({
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           <StatTile label="Unique Questions Practised" value={dash(analytics?.unique_questions_practiced ?? 0)} empty={!loading && !hasData} />
           <StatTile label="Overall Accuracy" value={dash(hasData ? `${analytics!.overall_accuracy.toFixed(1)}%` : "—")} empty={!loading && !hasData} valueClassName={hasData ? "text-success" : undefined} />
-          <StatTile label="Average Score" value={dash(hasData ? `${analytics!.avg_score.toFixed(1)}/200` : "—")} empty={!loading && !hasData} valueClassName={hasData ? "text-accent" : undefined} />
+          <StatTile label="Average Score" value={dash(hasData ? `${analytics!.avg_score.toFixed(1)}/${maxScore}` : "—")} empty={!loading && !hasData} valueClassName={hasData ? "text-accent" : undefined} />
           <StatTile label="Tests Completed" value={dash(analytics?.tests_completed ?? 0)} empty={!loading && !hasData} />
           <StatTile label="Current Streak" value={dash(`${analytics?.current_streak ?? 0}d`)} empty={!loading && !hasData} />
           <StatTile label="Avg Time / Question" value={dash(hasData ? `${analytics!.avg_time_per_question}s` : "—")} empty={!loading && !hasData} />
@@ -605,7 +659,7 @@ function ExamDashboard({
           {canPractice ? "Start a session" : "Practice modes"}
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {MODES.map((m) =>
+          {modes.map((m) =>
             canPractice ? (
               <Link key={m.key} href={m.href} className="group">
                 <Card interactive className="flex h-full flex-col justify-between p-6">
