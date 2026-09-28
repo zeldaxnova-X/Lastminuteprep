@@ -210,8 +210,12 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        const { data: paper } = await supabase
-          .from("papers")
+        // Exam-scoped reads: SSC uses the public shims (papers/cbt_valid_questions),
+        // every other exam its own `<code>__` views — via examContent, never a
+        // literal schema/view name here.
+        const pypContent = examContent(supabase, examCode);
+        const { data: paper } = await pypContent
+          .papers()
           .select("paper_name_canonical, year, shift, tier, paper_type")
           .eq("paper_id", body.paper_id)
           .single();
@@ -220,13 +224,13 @@ export async function POST(request: NextRequest) {
           return NextResponse.json({ error: "Paper not found" }, { status: 404 });
         }
 
-        title = title || formatPaperTitle(paper);
+        title = title || (examScoped ? `${examCfg.examName} — ${paper.paper_name_canonical ?? "Paper"}` : formatPaperTitle(paper));
 
         // Read from cbt_valid_questions (not the raw view) so PYP also respects
         // the excluded_questions registry — incomplete/retired questions never
         // appear, even in a faithful previous-year paper.
-        const { data, error } = await supabase
-          .from("cbt_valid_questions")
+        const { data, error } = await pypContent
+          .validQuestions()
           .select("*")
           .eq("paper_id", body.paper_id)
           .order("question_number", { ascending: true });
@@ -235,8 +239,16 @@ export async function POST(request: NextRequest) {
           return NextResponse.json({ error: error.message }, { status: 500 });
         }
         // Enrich before validating so image-based questions are recognised.
-        const enrichedPaper = await enrichWithRichContent(supabase, (data as ValidatedQuestion[]) || []);
-        questions = (enrichedPaper as ValidatedQuestion[]).filter(isValidQuestion);
+        const enrichedPaper = await enrichWithRichContent(
+          supabase,
+          (data as ValidatedQuestion[]) || [],
+          examScoped ? contentObjectName(examCode, "questions") : "questions"
+        );
+        // The SSC-shaped 4-option validity audit only applies to SSC; exam-scoped
+        // pools are already filtered by their own cbt_valid view.
+        questions = examScoped
+          ? (enrichedPaper as ValidatedQuestion[])
+          : (enrichedPaper as ValidatedQuestion[]).filter(isValidQuestion);
         break;
       }
 
@@ -246,6 +258,26 @@ export async function POST(request: NextRequest) {
             { error: "subject is required for subject_test" },
             { status: 400 }
           );
+        }
+
+        // Exam-scoped subject / topic drill (SBI etc.): resolve the section from
+        // THIS exam's config by its subject name, then pull only from this exam's
+        // own valid pool. SSC keeps its unseen-first RPC path below.
+        if (examScoped) {
+          const sectionSlug = examCfg.sections.find((s) => s.name === body.subject)?.key;
+          if (!sectionSlug) {
+            return NextResponse.json({ error: `Unknown subject for ${examCfg.examName}` }, { status: 400 });
+          }
+          const picked = await pickExamScopedSection(
+            supabase,
+            examCode,
+            sectionSlug,
+            body.topic || null,
+            totalQuestions
+          );
+          title = title || (body.topic ? `${body.topic}, Topic Test` : `${body.subject}, Practice Test`);
+          questions = deduplicateQuestions(picked).slice(0, totalQuestions);
+          break;
         }
 
         if (body.topic) {
@@ -621,6 +653,35 @@ async function pickTopicQuestions(
   const unseen = shuffleArray(valid.filter((q) => !seen.has(q.id)));
   const seenPool = shuffleArray(valid.filter((q) => seen.has(q.id)));
   return [...unseen, ...seenPool].slice(0, limit);
+}
+
+/**
+ * Exam-scoped section / topic picker for non-default exams. Pulls ONLY from this
+ * exam's own valid pool (via examContent — never a literal schema/view here),
+ * filtered by section slug and, when given, a topic tag. Shuffled; no SSC RPC.
+ */
+async function pickExamScopedSection(
+  supabase: SupabaseClient,
+  examCode: string,
+  sectionSlug: string,
+  topic: string | null,
+  limit: number
+): Promise<ValidatedQuestion[]> {
+  const content = examContent(supabase, examCode);
+  if (topic) {
+    // Topic lives on the raw questions view; resolve its ids, then take valid rows.
+    const { data: cand } = await content.questions().select("id").eq("section", sectionSlug).eq("topic", topic);
+    const ids = (cand ?? []).map((r) => r.id as string);
+    if (ids.length === 0) return [];
+    const rows: ValidatedQuestion[] = [];
+    for (let i = 0; i < ids.length; i += 200) {
+      const { data } = await content.validQuestions().select("*").in("id", ids.slice(i, i + 200));
+      if (data) rows.push(...(data as ValidatedQuestion[]));
+    }
+    return shuffleArray(rows).slice(0, limit);
+  }
+  const { data } = await content.validQuestions().select("*").eq("section_slug", sectionSlug).limit(limit * 6);
+  return shuffleArray((data as ValidatedQuestion[] | null) ?? []).slice(0, limit);
 }
 
 function deduplicateQuestions(array: ValidatedQuestion[]): ValidatedQuestion[] {

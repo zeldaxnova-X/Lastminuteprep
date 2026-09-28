@@ -85,42 +85,20 @@ function catalogEntry(code: string | null): ExamEntry | undefined {
   return EXAM_CATALOG.find((e) => e.code === code);
 }
 
-// A full-mock deep-link for ANY exam: the CBT instructions screen starts a mock
-// built from that exam's blueprint and scored by its config (sectional locks and
-// option count included). This is the authentic CBT experience per exam.
-function fullMockHref(code: string, name: string, config: ExamConfig): string {
-  const params = new URLSearchParams({
-    exam_type: "random_test",
-    exam_code: code,
-    questions: String(getTotalQuestions(config)),
-    time: String(config.totalDurationMinutes),
-    title: `${name} Mock`,
-    free: "1",
-  });
-  return `/test/instructions?${params.toString()}`;
-}
-
-// Start-session modes for an exam. SSC exposes its rich create-flow (PYP / Topic /
-// Random); every other exam gets the config-driven Full Mock. Future exams gain
-// PYP/Topic here once their create-flow is wired.
+// Start-session modes for an exam — fully data-driven from its config, so every
+// exam (current and future) gets the same three authentic modes: Previous Year
+// Paper, Topic Test, and a full config-scored Mock. All route through the
+// exam-aware /test/create flow (?exam=<code>), which reads that exam's papers,
+// subjects and blueprint.
 function modesFor(code: string, name: string, config: ExamConfig): ExamMode[] {
-  if (code === "ssc-cgl") {
-    return [
-      { key: "pyp", href: "/test/create?mode=pyp", icon: BookOpen, title: "Previous Year Paper", desc: "Real SSC CGL shift papers (2020–2024) with official TCS answer keys.", cta: "Select paper" },
-      { key: "subject", href: "/test/create?mode=subject", icon: Target, title: "Topic Test", desc: "Target Reasoning, GA, Quant, or English individually.", cta: "Select subject" },
-      { key: "random", href: "/test/create?mode=random", icon: Shuffle, title: "Random Mock", desc: "A balanced 100-question mock, 25 per section, drawn from the bank.", cta: "Launch mock" },
-    ];
-  }
+  const total = getTotalQuestions(config);
   const nSec = config.sections.length;
+  const subjects = config.sections.map((s) => s.name).join(", ");
+  const to = (mode: string) => `/test/create?exam=${code}&mode=${mode}`;
   return [
-    {
-      key: "fullmock",
-      href: fullMockHref(code, name, config),
-      icon: Shuffle,
-      title: "Full Mock",
-      desc: `A full ${getTotalQuestions(config)}-question mock across ${nSec} sections, ${config.totalDurationMinutes} minutes — scored on the real ${name} pattern.`,
-      cta: "Start mock",
-    },
+    { key: "pyp", href: to("pyp"), icon: BookOpen, title: "Previous Year Paper", desc: `Real ${name} shift papers with official answer keys.`, cta: "Select paper" },
+    { key: "subject", href: to("subject_test"), icon: Target, title: "Topic Test", desc: `Target ${subjects} individually, or drill a weak topic.`, cta: "Select topic" },
+    { key: "random", href: to("random_test"), icon: Shuffle, title: "Full Mock", desc: `A full ${total}-question mock across ${nSec} sections, ${config.totalDurationMinutes} min — scored on the real ${name} pattern.`, cta: "Start mock" },
   ];
 }
 

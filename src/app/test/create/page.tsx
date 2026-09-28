@@ -11,8 +11,10 @@ import {
   ArrowRight,
   Loader2,
 } from "lucide-react";
-import type { ExamType, Subject, PaperType } from "@/types/database.types";
+import type { ExamType, PaperType } from "@/types/database.types";
 import { formatPaperDisplayName } from "@/lib/paper-formatter";
+import { getExamEntry, DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
+import { getTotalQuestions } from "@/lib/exam/exam-config";
 
 interface PaperItem {
   paper_id: string;
@@ -26,15 +28,25 @@ interface PaperItem {
 
 interface CoverageData {
   overall: { total: number; done: number; remaining: number };
-  by_subject: { subject: Subject; total: number; done: number; remaining: number }[];
+  by_subject: { subject: string; total: number; done: number; remaining: number }[];
 }
 
 function TestCreationForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const modeParam = searchParams.get("mode");
-  
-  const initialMode: ExamType = 
+
+  // Which exam this create-flow is for (drives papers, subjects, mock shape).
+  const examEntry = getExamEntry(searchParams.get("exam"));
+  const examCode = examEntry.code;
+  const config = examEntry.builtinConfig;
+  const isDefaultExam = examCode === DEFAULT_EXAM_CODE;
+  // Subjects = this exam's own section names (SSC: Quant/Reasoning/…; SBI: English
+  // Language / Numerical Ability / Reasoning Ability).
+  const SUBJECTS: string[] = config.sections.map((s) => s.name);
+  const mockTotal = getTotalQuestions(config);
+
+  const initialMode: ExamType =
     modeParam === "subject_test" ? "subject_test" :
     modeParam === "random_test" ? "random_test" : "previous_year_paper";
 
@@ -44,23 +56,17 @@ function TestCreationForm() {
 
   const [selectedPaperId, setSelectedPaperId] = useState<string>("");
   // A MarksenseAI drill deep-links here with ?subject=<full name>; honour it.
-  const SUBJECTS: Subject[] = [
-    "General Intelligence & Reasoning",
-    "General Awareness",
-    "Quantitative Aptitude",
-    "English Comprehension",
-  ];
   const subjectParam = searchParams.get("subject");
-  const initialSubject: Subject =
-    subjectParam && (SUBJECTS as string[]).includes(subjectParam)
-      ? (subjectParam as Subject)
-      : "Quantitative Aptitude";
-  const [selectedSubject, setSelectedSubject] = useState<Subject>(initialSubject);
-  const [questionCount, setQuestionCount] = useState<number>(100);
+  const initialSubject: string =
+    subjectParam && SUBJECTS.includes(subjectParam) ? subjectParam : SUBJECTS[0];
+  const [selectedSubject, setSelectedSubject] = useState<string>(initialSubject);
+  const [questionCount, setQuestionCount] = useState<number>(mockTotal);
 
   // Per-user question-bank coverage (done vs remaining unique questions).
   const [coverage, setCoverage] = useState<CoverageData | null>(null);
   useEffect(() => {
+    // Coverage tracking is SSC-only for now; skip for other exams.
+    if (!isDefaultExam) return;
     let alive = true;
     fetch("/api/cbt/analytics/coverage")
       .then((r) => (r.ok ? r.json() : null))
@@ -69,8 +75,8 @@ function TestCreationForm() {
     return () => {
       alive = false;
     };
-  }, []);
-  const remainingBySubject = (subject: Subject): number | null =>
+  }, [isDefaultExam]);
+  const remainingBySubject = (subject: string): number | null =>
     coverage?.by_subject.find((s) => s.subject === subject)?.remaining ?? null;
 
   // Plan gate: /test/create only offers real (non-sample) modes, so a FREE user
@@ -92,7 +98,7 @@ function TestCreationForm() {
     async function fetchPapers() {
       setLoadingPapers(true);
       try {
-        const res = await fetch("/api/cbt/papers");
+        const res = await fetch(`/api/cbt/papers?exam=${encodeURIComponent(examCode)}`);
         const json = await res.json();
         if (json.papers) {
           setPapersList(json.papers);
@@ -107,11 +113,13 @@ function TestCreationForm() {
       }
     }
     fetchPapers();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [examCode]);
 
   const handleProceed = () => {
     const params = new URLSearchParams();
     params.set("exam_type", examType);
+    params.set("exam_code", examCode);
     if (examType === "previous_year_paper" && selectedPaperId) {
       params.set("paper_id", selectedPaperId);
       const paper = papersList.find((p) => p.paper_id === selectedPaperId);
@@ -124,10 +132,10 @@ function TestCreationForm() {
       params.set("questions", questionCount.toString());
       params.set("time", Math.round(questionCount * 0.6).toString());
     } else {
-      params.set("questions", "100");
-      params.set("time", "60");
+      params.set("questions", String(mockTotal));
+      params.set("time", String(config.totalDurationMinutes));
     }
-    
+
     router.push(`/test/instructions?${params.toString()}`);
   };
 
@@ -220,7 +228,7 @@ function TestCreationForm() {
         >
           <BookOpen className={`w-5 h-5 mb-2 ${examType === "previous_year_paper" ? "text-blue-600" : "text-gray-400"}`} />
           <div className="text-sm font-bold text-gray-900">Previous Year Paper</div>
-          <div className="text-xs text-gray-500 mt-0.5">138 Shift Papers (2020–2024)</div>
+          <div className="text-xs text-gray-500 mt-0.5">Official shift papers</div>
         </button>
 
         <button
@@ -233,7 +241,7 @@ function TestCreationForm() {
         >
           <Layers className={`w-5 h-5 mb-2 ${examType === "subject_test" ? "text-blue-600" : "text-gray-400"}`} />
           <div className="text-sm font-bold text-gray-900">Topic Test</div>
-          <div className="text-xs text-gray-500 mt-0.5">Quant, Reasoning, English, GA</div>
+          <div className="text-xs text-gray-500 mt-0.5">{SUBJECTS.join(", ")}</div>
         </button>
 
         <button
@@ -246,7 +254,7 @@ function TestCreationForm() {
         >
           <Shuffle className={`w-5 h-5 mb-2 ${examType === "random_test" ? "text-blue-600" : "text-gray-400"}`} />
           <div className="text-sm font-bold text-gray-900">Random Mock</div>
-          <div className="text-xs text-gray-500 mt-0.5">Balanced 100 Qs (25 per section)</div>
+          <div className="text-xs text-gray-500 mt-0.5">Full {mockTotal}-question mock</div>
         </button>
       </div>
 
@@ -285,7 +293,7 @@ function TestCreationForm() {
                 Select Subject
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {(["Quantitative Aptitude", "General Intelligence & Reasoning", "English Comprehension", "General Awareness"] as Subject[]).map((subj) => {
+                {SUBJECTS.map((subj) => {
                   const left = remainingBySubject(subj);
                   return (
                     <button
@@ -337,9 +345,9 @@ function TestCreationForm() {
         {examType === "random_test" && (
           <div className="bg-white border border-gray-200 p-4 rounded-lg text-xs text-gray-600 leading-relaxed space-y-1">
             <p className="font-semibold text-gray-900 mb-1">Random Mock Configuration</p>
-            <p>• Total Questions: <strong>100 Questions</strong></p>
-            <p>• Duration: <strong>60 Minutes</strong></p>
-            <p>• Distribution: <strong>25 Quant • 25 Reasoning • 25 English • 25 GA</strong></p>
+            <p>• Total Questions: <strong>{mockTotal} Questions</strong></p>
+            <p>• Duration: <strong>{config.totalDurationMinutes} Minutes</strong></p>
+            <p>• Distribution: <strong>{config.sections.map((s) => `${s.questionCount} ${s.name}`).join(" • ")}</strong></p>
           </div>
         )}
 
