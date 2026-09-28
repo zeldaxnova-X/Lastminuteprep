@@ -15,6 +15,7 @@ const PROTECTED_PATTERNS: RegExp[] = [
   /^\/analytics(\/|$)/,
   /^\/revision(\/|$)/,
   /^\/bookmarks(\/|$)/,
+  /^\/marksense(\/|$)/, // MarksenseAI hub (/marksense/profile) — paid, sign-in required
   /^\/test\/create(\/|$)/,
   /^\/test\/[^/]+\/mentor(\/|$)/,
 ];
