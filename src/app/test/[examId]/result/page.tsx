@@ -77,6 +77,7 @@ interface ReportData {
   canReport?: boolean;
   canMentor?: boolean;
   maxScore?: number;
+  exam_code?: string;
 }
 
 const CONF_TONE: Record<string, string> = {
@@ -264,7 +265,7 @@ export default function ExamResultPage() {
 
         {/* Longitudinal tie-in: connects this attempt to the MarksenseAI profile
             (self-gates to mentor viewers; also triggers the post-mock refresh). */}
-        {analysis && <ProfileTieIn />}
+        {analysis && <ProfileTieIn exam={data?.exam_code} />}
 
         {/* Sections (deterministic, every report viewer) + calibration (mentor). */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

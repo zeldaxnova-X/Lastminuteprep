@@ -50,12 +50,17 @@ export default function MarksenseHubPage() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [tab, setTab] = useState<Tab>("overview");
+  // Which exam's report this is (each exam has its own). Read on the client.
+  const [examCode, setExamCode] = useState("ssc-cgl");
+  const q = (path: string) => `${path}${path.includes("?") ? "&" : "?"}exam=${encodeURIComponent(examCode)}`;
 
   useEffect(() => {
+    const ex = new URLSearchParams(window.location.search).get("exam") || "ssc-cgl";
+    setExamCode(ex);
     let alive = true;
     Promise.all([
-      fetch("/api/marksense/profile").then((r) => r.json()),
-      fetch("/api/marksense/trends").then((r) => r.json()).catch(() => null),
+      fetch(`/api/marksense/profile?exam=${ex}`).then((r) => r.json()),
+      fetch(`/api/marksense/trends?exam=${ex}`).then((r) => r.json()).catch(() => null),
       fetch("/api/cbt/history?limit=1").then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
       .then(([p, t, h]) => {
@@ -75,15 +80,16 @@ export default function MarksenseHubPage() {
     setRefreshing(true);
     try {
       const [p, t] = await Promise.all([
-        fetch("/api/marksense/profile", { method: "POST" }).then((r) => (r.ok ? r.json() : null)),
-        fetch("/api/marksense/trends").then((r) => r.json()).catch(() => null),
+        fetch(q("/api/marksense/profile"), { method: "POST" }).then((r) => (r.ok ? r.json() : null)),
+        fetch(q("/api/marksense/trends")).then((r) => r.json()).catch(() => null),
       ]);
       if (p) setData(p);
       if (t) setTrends(t);
     } finally {
       setRefreshing(false);
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [examCode]);
 
   const locked = !loading && data?.locked === true;
   const s = data?.signals;
@@ -123,7 +129,7 @@ export default function MarksenseHubPage() {
               </div>
               {s && (
                 <div className="grid grid-cols-4 gap-x-5 gap-y-2 sm:gap-x-7">
-                  <HeroStat label="Latest" value={`${s.score.latestNet}`} sub="/ 200" />
+                  <HeroStat label="Latest" value={`${s.score.latestNet}`} sub={`/ ${s.score.maxScore}`} />
                   <HeroStat label="Best" value={`${s.score.bestNet}`} sub={`avg ${s.score.avgNet}`} />
                   <HeroStat
                     label="Trend"
@@ -211,7 +217,7 @@ export default function MarksenseHubPage() {
                       <SectionTrendsChart points={trends!.points} />
                     </section>
                   )}
-                  <MarksenseEvolution />
+                  <MarksenseEvolution exam={examCode} />
                 </div>
               )}
 
@@ -231,7 +237,7 @@ export default function MarksenseHubPage() {
                 </div>
               )}
 
-              {tab === "coach" && <ChatPanel persona={persona ?? null} />}
+              {tab === "coach" && <ChatPanel persona={persona ?? null} exam={examCode} />}
             </>
           )}
 
@@ -240,6 +246,7 @@ export default function MarksenseHubPage() {
               attempts={data?.attemptsAnalyzed ?? 0}
               minTests={data?.minTests ?? 2}
               needMore={data?.reason === "need_more_tests"}
+              examCode={examCode}
             />
           )}
         </main>
@@ -342,7 +349,7 @@ function OverviewTab({
 }
 
 /* Gate state: needs >= minTests completed mocks before a report is generated. */
-function NotReady({ attempts, minTests, needMore }: { attempts: number; minTests: number; needMore: boolean }) {
+function NotReady({ attempts, minTests, needMore, examCode }: { attempts: number; minTests: number; needMore: boolean; examCode?: string }) {
   const remaining = Math.max(0, minTests - attempts);
   return (
     <div className="rounded-2xl border border-gold-bright/25 bg-surface p-6 text-center sm:p-8">
@@ -379,7 +386,7 @@ function NotReady({ attempts, minTests, needMore }: { attempts: number; minTests
       </div>
 
       <Link
-        href="/test/create?mode=random_test"
+        href={`/test/create?exam=${encodeURIComponent(examCode ?? "ssc-cgl")}&mode=random_test`}
         className="mt-5 inline-flex items-center gap-1.5 rounded-lg bg-gold-bright px-4 py-2 text-sm font-semibold text-white transition-premium hover:bg-gold"
       >
         {remaining > 0 ? `Take ${remaining === 1 ? "one more mock" : `${remaining} more mocks`}` : "Take a mock"}

@@ -33,13 +33,13 @@ function fmtDate(iso: string): string {
   }
 }
 
-export function MarksenseEvolution() {
+export function MarksenseEvolution({ exam }: { exam?: string }) {
   const [data, setData] = useState<Timeline | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let alive = true;
-    fetch("/api/marksense/timeline")
+    fetch(`/api/marksense/timeline${exam ? `?exam=${encodeURIComponent(exam)}` : ""}`)
       .then((r) => r.json())
       .then((d: Timeline) => alive && setData(d))
       .catch(() => alive && setData(null))
@@ -47,7 +47,7 @@ export function MarksenseEvolution() {
     return () => {
       alive = false;
     };
-  }, []);
+  }, [exam]);
 
   if (loading || !data || data.locked) return null;
 

@@ -13,11 +13,15 @@ import { allAccessPriceInr } from "@/lib/payments/pricing";
 export function MarksenseEntry({
   plan,
   onUnlock,
+  examCode,
 }: {
   plan: "free" | "pro" | "mentor";
   onUnlock?: () => void;
+  /** Opens this exam's MarksenseAI profile (each exam has its own). */
+  examCode?: string;
 }) {
   const active = plan === "mentor";
+  const href = examCode ? `/marksense/profile?exam=${encodeURIComponent(examCode)}` : "/marksense/profile";
 
   return (
     <section className="relative overflow-hidden rounded-2xl bg-panel-dark shadow-lift">
@@ -47,7 +51,7 @@ export function MarksenseEntry({
         <div className="flex-shrink-0">
           {active ? (
             <Link
-              href="/marksense/profile"
+              href={href}
               className="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-panel-dark transition-premium hover:bg-white/90"
             >
               Open MarksenseAI <ArrowRight className="h-4 w-4" />

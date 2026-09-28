@@ -23,7 +23,7 @@ const SUGGESTIONS = [
  * strictly scoped to exam prep. Non-streaming, keeps its own message history and
  * sends it each turn.
  */
-export function ChatPanel({ persona }: { persona: string | null }) {
+export function ChatPanel({ persona, exam }: { persona: string | null; exam?: string }) {
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
@@ -43,7 +43,7 @@ export function ChatPanel({ persona }: { persona: string | null }) {
     setInput("");
     setSending(true);
     try {
-      const r = await fetch("/api/marksense/chat", {
+      const r = await fetch(`/api/marksense/chat${exam ? `?exam=${encodeURIComponent(exam)}` : ""}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: next }),

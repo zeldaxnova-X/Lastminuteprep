@@ -175,6 +175,7 @@ export async function GET(
   return NextResponse.json({
     result,
     plan: viewer.plan,
+    exam_code: examCode, // which exam this attempt is for (MarksenseAI per-exam)
     // canReport = the caller may see the FULL report for this attempt (plan or ₹9
     // unlock). Kept as the key the results page already branches on.
     canReport: fullReport,

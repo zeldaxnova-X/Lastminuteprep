@@ -12,13 +12,16 @@ import type { ProfileResponse } from "./learner-profile";
  * viewer is on MarksenseAI and has a profile), so it is safe to drop on any
  * result page. Fetching a stale profile here triggers the post-mock refresh.
  */
-export function ProfileTieIn() {
+export function ProfileTieIn({ exam }: { exam?: string }) {
   const [data, setData] = useState<ProfileResponse | null>(null);
   const [loading, setLoading] = useState(true);
+  const examQ = exam ? `?exam=${encodeURIComponent(exam)}` : "";
+  const profileHref = `/marksense/profile${examQ}`;
+  const createBase = `/test/create?exam=${encodeURIComponent(exam ?? "ssc-cgl")}`;
 
   useEffect(() => {
     let alive = true;
-    fetch("/api/marksense/profile")
+    fetch(`/api/marksense/profile${examQ}`)
       .then((r) => r.json())
       .then((d: ProfileResponse) => alive && setData(d))
       .catch(() => alive && setData(null))
@@ -26,7 +29,8 @@ export function ProfileTieIn() {
     return () => {
       alive = false;
     };
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [exam]);
 
   // Not a MarksenseAI viewer: stay invisible.
   if (!loading && (!data || data.locked)) return null;
@@ -52,7 +56,7 @@ export function ProfileTieIn() {
             </span>
           </p>
           <Link
-            href="/test/create?mode=random_test"
+            href={`${createBase}&mode=random_test`}
             className="inline-flex items-center gap-1.5 rounded-lg bg-gold-bright px-3.5 py-2 text-xs font-semibold text-white transition-premium hover:bg-gold"
           >
             Take another mock <ArrowRight className="h-3.5 w-3.5" />
@@ -64,7 +68,7 @@ export function ProfileTieIn() {
 
   const weak = data?.profile?.weakpoints?.slice(0, 3) ?? [];
   const drillHref = (subject: string | null) =>
-    subject ? `/test/create?mode=subject_test&subject=${encodeURIComponent(subject)}` : "/test/create?mode=subject_test";
+    subject ? `${createBase}&mode=subject_test&subject=${encodeURIComponent(subject)}` : `${createBase}&mode=subject_test`;
 
   return (
     <section className="overflow-hidden rounded-2xl border border-gold-bright/30 bg-gradient-to-br from-gold-soft/50 to-surface shadow-soft">
@@ -73,7 +77,7 @@ export function ProfileTieIn() {
           <Sparkles className="h-4 w-4 text-gold" />
           This mock updated your MarksenseAI profile
         </p>
-        <Link href="/marksense/profile" className="flex items-center gap-1 text-xs font-semibold text-gold">
+        <Link href={profileHref} className="flex items-center gap-1 text-xs font-semibold text-gold">
           See full profile <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>

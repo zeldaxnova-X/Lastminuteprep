@@ -627,7 +627,7 @@ function ExamDashboard({
           {plan === "mentor" && planExpiresAt && (
             <p className="text-xs font-medium text-ink-tertiary">MarksenseAI renews {fmtDate(planExpiresAt)}</p>
           )}
-          <MarksenseEntry plan={plan} onUnlock={onUpgrade} />
+          <MarksenseEntry plan={plan} onUnlock={onUpgrade} examCode={examCode} />
         </section>
       )}
 
