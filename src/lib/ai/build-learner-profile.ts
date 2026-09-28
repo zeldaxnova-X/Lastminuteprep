@@ -17,6 +17,7 @@ import {
 } from "./learner-signals";
 import { generateLearnerProfile, type LearnerProfile } from "./learner-profile";
 import { aiEnabled } from "./deepseek";
+import { DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
 
 export interface LearnerProfileRow {
   signals: LearnerSignals | null;
@@ -49,6 +50,7 @@ export const MIN_TESTS_FOR_PROFILE = 2;
 async function snapshotProfile(
   supabase: SupabaseClient,
   userId: string,
+  examCode: string,
   signals: LearnerSignals,
   hash: string,
   profile: LearnerProfile | null
@@ -56,6 +58,7 @@ async function snapshotProfile(
   await supabase.from("learner_profile_snapshots").upsert(
     {
       user_id: userId,
+      exam_code: examCode,
       attempts_analyzed: signals.attemptsAnalyzed,
       signals_hash: hash,
       persona: profile?.persona ?? null,
@@ -70,7 +73,7 @@ async function snapshotProfile(
         .slice(0, 5)
         .map((t) => ({ topic: t.topic, accuracyPct: t.accuracyPct })),
     },
-    { onConflict: "user_id,signals_hash", ignoreDuplicates: true }
+    { onConflict: "user_id,exam_code,signals_hash", ignoreDuplicates: true }
   );
 }
 
@@ -81,9 +84,10 @@ async function snapshotProfile(
 export async function buildLearnerProfile(
   supabase: SupabaseClient,
   userId: string,
+  examCode: string = DEFAULT_EXAM_CODE,
   force = false
 ): Promise<BuildResult> {
-  const signals = await loadLearnerSignals(supabase, userId);
+  const signals = await loadLearnerSignals(supabase, userId, examCode);
   if (!signals) return { ok: false, reason: "no analyzed attempts", regenerated: false, attemptsAnalyzed: 0 };
 
   // Gate: a proper report needs >= MIN_TESTS_FOR_PROFILE completed mocks. Below
@@ -103,6 +107,7 @@ export async function buildLearnerProfile(
     .from("learner_profiles")
     .select("profile, signals_hash, generated_at")
     .eq("user_id", userId)
+    .eq("exam_code", examCode)
     .maybeSingle();
 
   const unchanged = existing?.signals_hash === hash && !!existing?.profile;
@@ -112,8 +117,9 @@ export async function buildLearnerProfile(
     await supabase
       .from("learner_profiles")
       .update({ signals, stale: false, updated_at: new Date().toISOString() })
-      .eq("user_id", userId);
-    await snapshotProfile(supabase, userId, signals, hash, (existing.profile as LearnerProfile) ?? null);
+      .eq("user_id", userId)
+      .eq("exam_code", examCode);
+    await snapshotProfile(supabase, userId, examCode, signals, hash, (existing.profile as LearnerProfile) ?? null);
     return {
       ok: true,
       regenerated: false,
@@ -135,6 +141,7 @@ export async function buildLearnerProfile(
   await supabase.from("learner_profiles").upsert(
     {
       user_id: userId,
+      exam_code: examCode,
       signals,
       // Keep a prior good profile if the AI call degraded this time.
       ...(profile
@@ -145,13 +152,13 @@ export async function buildLearnerProfile(
       stale: false,
       updated_at: now,
     },
-    { onConflict: "user_id" }
+    { onConflict: "user_id,exam_code" }
   );
 
   const storedProfile =
     profile ?? ((existing?.profile as LearnerProfile | undefined) ?? null);
 
-  await snapshotProfile(supabase, userId, signals, hash, storedProfile);
+  await snapshotProfile(supabase, userId, examCode, signals, hash, storedProfile);
 
   return {
     ok: true,
@@ -173,10 +180,12 @@ export async function buildLearnerProfile(
  */
 export async function markProfileStale(
   supabase: SupabaseClient,
-  userId: string
+  userId: string,
+  examCode: string = DEFAULT_EXAM_CODE
 ): Promise<void> {
   await supabase
     .from("learner_profiles")
     .update({ stale: true, updated_at: new Date().toISOString() })
-    .eq("user_id", userId);
+    .eq("user_id", userId)
+    .eq("exam_code", examCode);
 }

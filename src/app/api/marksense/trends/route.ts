@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getSessionContext, json401, serviceClient } from "@/lib/auth/api-guard";
 import { getViewer, canSeeMentor } from "@/lib/auth/plan";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
+import { getExamEntry } from "@/lib/exam/registry";
 
 /**
  * GET /api/marksense/trends
@@ -9,7 +10,7 @@ import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
  * sections over time). Reads each completed attempt's stored MentorAnalysis and
  * emits one point per mock with net score and per-section accuracy. Mentor-gated.
  */
-export async function GET() {
+export async function GET(request: Request) {
   const { user } = await getSessionContext();
   if (!user) return json401();
 
@@ -18,11 +19,13 @@ export async function GET() {
     return NextResponse.json({ locked: true }, { status: 200 });
   }
 
+  const examCode = getExamEntry(new URL(request.url).searchParams.get("exam")).code;
   const db = serviceClient();
   const { data: attempts } = await db
     .from("exam_attempts")
     .select("id, created_at")
     .eq("user_id", user.id)
+    .eq("exam_code", examCode)
     .in("status", ["completed", "auto_submitted"])
     .order("created_at", { ascending: true });
 

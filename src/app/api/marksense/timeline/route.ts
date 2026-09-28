@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getSessionContext, json401 } from "@/lib/auth/api-guard";
 import { getViewer, canSeeMentor } from "@/lib/auth/plan";
+import { getExamEntry } from "@/lib/exam/registry";
 
 interface SnapshotRow {
   attempts_analyzed: number;
@@ -22,7 +23,7 @@ interface SnapshotRow {
  * computed weakpoint diff (resolved / persistent / new) and persona changes.
  * Mentor-gated. Reads via the user-scoped client (RLS restricts to own rows).
  */
-export async function GET() {
+export async function GET(request: Request) {
   const { user, supabase } = await getSessionContext();
   if (!user) return json401();
 
@@ -31,12 +32,14 @@ export async function GET() {
     return NextResponse.json({ locked: true, plan: viewer.plan }, { status: 200 });
   }
 
+  const examCode = getExamEntry(new URL(request.url).searchParams.get("exam")).code;
   const { data: rows } = await supabase
     .from("learner_profile_snapshots")
     .select(
       "attempts_analyzed, persona, projected_gain, latest_net, best_net, avg_net, overall_accuracy, calibration, pacing, weak_topics, generated_at"
     )
     .eq("user_id", user.id)
+    .eq("exam_code", examCode)
     .order("generated_at", { ascending: true })
     .returns<SnapshotRow[]>();
 

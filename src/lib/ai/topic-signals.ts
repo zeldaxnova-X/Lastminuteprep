@@ -8,6 +8,8 @@
  */
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { TopicSignal } from "./learner-signals";
+import { contentObjectName } from "@/lib/exam/content-repo";
+import { DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
 
 const WEAK_MAX_PCT = 65;
 const STRONG_MIN_PCT = 75;
@@ -25,12 +27,14 @@ export interface DerivedTopicSignals {
  */
 export async function loadTopicSignals(
   db: SupabaseClient,
-  userId: string
+  userId: string,
+  examCode: string = DEFAULT_EXAM_CODE
 ): Promise<DerivedTopicSignals | null> {
   const { data: attempts } = await db
     .from("exam_attempts")
     .select("id")
     .eq("user_id", userId)
+    .eq("exam_code", examCode)
     .in("status", ["completed", "auto_submitted"]);
   if (!attempts || attempts.length === 0) return null;
   const attemptIds = attempts.map((a) => a.id as string);
@@ -44,10 +48,11 @@ export async function loadTopicSignals(
   // Map each answered question to its topic/section (chunked to keep the IN small).
   const qids = [...new Set(answers.map((a) => a.question_id as string))];
   const meta = new Map<string, { topic: string; section: string }>();
+  const qTable = contentObjectName(examCode, "questions"); // exam's own question view
   for (let i = 0; i < qids.length; i += 800) {
     const chunk = qids.slice(i, i + 800);
     const { data: qs } = await db
-      .from("questions")
+      .from(qTable)
       .select("id, topic, section")
       .in("id", chunk);
     for (const q of qs ?? []) {

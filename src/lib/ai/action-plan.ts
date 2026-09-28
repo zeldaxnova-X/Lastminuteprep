@@ -6,6 +6,8 @@
  * signal-driven, so it is dynamic per user and needs no AI to work.
  */
 import type { LearnerSignals, TopicSignal } from "./learner-signals";
+import { getExamEntry, DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
+import { getTotalQuestions } from "@/lib/exam/exam-config";
 
 export type TaskKind = "topic" | "section" | "strategy" | "mock";
 export type TaskPriority = "high" | "medium" | "low";
@@ -20,20 +22,18 @@ export interface ActionTask {
   cta?: { label: string; href: string };
 }
 
-/** section slug -> the canonical Subject display name the test flow expects. */
-const SECTION_TO_SUBJECT: Record<string, string> = {
-  quantitative_aptitude: "Quantitative Aptitude",
-  reasoning: "General Intelligence & Reasoning",
-  general_awareness: "General Awareness",
-  english_comprehension: "English Comprehension",
-};
+/** Per-exam section-slug -> Subject display name, from the exam's own config. */
+function sectionSubjectMap(examCode: string): Record<string, string> {
+  const cfg = getExamEntry(examCode).builtinConfig;
+  return Object.fromEntries(cfg.sections.map((s) => [s.key, s.name]));
+}
 
-/** Build a topic-test deep link straight to the CBT instructions screen. */
-function topicTestHref(topic: string, sectionSlug?: string, count = 15): string | null {
-  const subject = sectionSlug ? SECTION_TO_SUBJECT[sectionSlug] : undefined;
+/** Build a topic-test deep link (exam-scoped) to the CBT instructions screen. */
+function topicTestHref(examCode: string, subject: string | undefined, topic: string, count = 15): string | null {
   if (!subject) return null;
   const p = new URLSearchParams({
     exam_type: "subject_test",
+    exam_code: examCode,
     subject,
     topic,
     questions: String(count),
@@ -43,11 +43,11 @@ function topicTestHref(topic: string, sectionSlug?: string, count = 15): string 
   return `/test/instructions?${p.toString()}`;
 }
 
-function subjectTestHref(sectionSlug: string, count = 25): string | null {
-  const subject = SECTION_TO_SUBJECT[sectionSlug];
+function subjectTestHref(examCode: string, subject: string | undefined, count = 25): string | null {
   if (!subject) return null;
   const p = new URLSearchParams({
     exam_type: "subject_test",
+    exam_code: examCode,
     subject,
     questions: String(count),
     time: String(Math.round(count * 0.6)),
@@ -65,12 +65,16 @@ const topicMetric = (t: TopicSignal) =>
  * pacing), a weakest-section drill if topics are thin, and always a full mock
  * to keep the trend honest.
  */
-export function buildActionPlan(signals: LearnerSignals): ActionTask[] {
+export function buildActionPlan(signals: LearnerSignals, examCode: string = DEFAULT_EXAM_CODE): ActionTask[] {
   const tasks: ActionTask[] = [];
+  const sectionToSubject = sectionSubjectMap(examCode);
+  const subjectToSection: Record<string, string> = Object.fromEntries(
+    Object.entries(sectionToSubject).map(([slug, name]) => [name, slug])
+  );
 
   // 1) Weak topics, each with a ready-to-start topic test from the bank.
   for (const t of signals.topicWeakpoints.slice(0, 4)) {
-    const href = topicTestHref(t.topic, t.section);
+    const href = topicTestHref(examCode, t.section ? sectionToSubject[t.section] : undefined, t.topic);
     tasks.push({
       id: `topic:${t.topic}`,
       kind: "topic",
@@ -119,8 +123,10 @@ export function buildActionPlan(signals: LearnerSignals): ActionTask[] {
   // 4) If we don't have enough topic detail yet, drill the weakest section.
   if (signals.topicWeakpoints.length < 2 && signals.sections.length > 0) {
     const weakest = [...signals.sections].sort((a, b) => a.accuracyPct - b.accuracyPct)[0];
-    const slug = SUBJECT_TO_SECTION[weakest.name] ?? weakest.name;
-    const href = subjectTestHref(slug);
+    // signals.sections[].name is the section display name; pass it straight through
+    // (it is already a valid subject for this exam). Guard against an unknown name.
+    const subject = subjectToSection[weakest.name] ? weakest.name : undefined;
+    const href = subjectTestHref(examCode, subject);
     if (weakest.accuracyPct < 70) {
       tasks.push({
         id: `section:${weakest.name}`,
@@ -134,22 +140,26 @@ export function buildActionPlan(signals: LearnerSignals): ActionTask[] {
     }
   }
 
-  // 5) Always: a full mock to keep the trend measured.
+  // 5) Always: a full mock to keep the trend measured (exam-scoped).
+  const cfg = getExamEntry(examCode).builtinConfig;
+  const totalQ = getTotalQuestions(cfg);
+  const mockHref = `/test/instructions?${new URLSearchParams({
+    exam_type: "random_test",
+    exam_code: examCode,
+    questions: String(totalQ),
+    time: String(cfg.totalDurationMinutes),
+    title: `${cfg.examName} Mock`,
+  }).toString()}`;
   tasks.push({
     id: "mock:full",
     kind: "mock",
     priority: "low",
-    title: "Take a full 100-question mock",
+    title: `Take a full ${totalQ}-question mock`,
     detail:
       "Consolidate the above and keep your score trend honest. One full mock a week is the rhythm that moves the number.",
-    cta: { label: "Start a full mock", href: "/test/create?mode=random_test" },
+    cta: { label: "Start a full mock", href: mockHref },
   });
 
   const order: Record<TaskPriority, number> = { high: 0, medium: 1, low: 2 };
   return tasks.sort((a, b) => order[a.priority] - order[b.priority]);
 }
-
-/** Reverse map for section drills (Subject display name -> slug). */
-const SUBJECT_TO_SECTION: Record<string, string> = Object.fromEntries(
-  Object.entries(SECTION_TO_SUBJECT).map(([slug, name]) => [name, slug])
-);

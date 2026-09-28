@@ -4,6 +4,7 @@ import { getViewer, canSeeMentor } from "@/lib/auth/plan";
 import { deepseekConverse, sanitizeProse, aiEnabled, type ChatMessage } from "@/lib/ai/deepseek";
 import type { LearnerSignals } from "@/lib/ai/learner-signals";
 import type { LearnerProfile } from "@/lib/ai/learner-profile";
+import { getExamEntry } from "@/lib/exam/registry";
 
 const MAX_TURNS = 12; // cap history sent to the model
 const MAX_LEN = 1000; // per-message char cap
@@ -66,12 +67,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No user message" }, { status: 400 });
   }
 
-  // Ground the coach in the user's stored profile (service role reads own row).
+  // Ground the coach in the user's stored profile for THIS exam (per-exam rows).
+  const examCode = getExamEntry(new URL(req.url).searchParams.get("exam")).code;
   const db = serviceClient();
   const { data: row } = await db
     .from("learner_profiles")
     .select("signals, profile")
     .eq("user_id", user.id)
+    .eq("exam_code", examCode)
     .maybeSingle();
 
   const messages: ChatMessage[] = [

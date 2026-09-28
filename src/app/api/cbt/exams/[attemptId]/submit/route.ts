@@ -325,7 +325,8 @@ export async function POST(
       // stale. Flag it cheaply here (no inline AI call); the dashboard refreshes
       // it on next load. Owner-only; anonymous samples have no profile.
       const ownerId = (attempt as { user_id?: string | null }).user_id ?? null;
-      if (ownerId) await markProfileStale(supabase, ownerId);
+      const attemptExam = (attempt as { exam_code?: string }).exam_code;
+      if (ownerId) await markProfileStale(supabase, ownerId, attemptExam);
     } catch (mirrorErr) {
       console.error("Canonical mirror/report failed (non-fatal):", mirrorErr);
     }

@@ -16,7 +16,7 @@
  * All marking comes from the ExamConfig, so a different exam changes the analysis
  * with zero code edits.
  */
-import { type ExamConfig, getSection } from "./exam-config";
+import { type ExamConfig, getSection, getOptionsCount } from "./exam-config";
 import {
   scoreSession,
   isEvaluated,
@@ -67,7 +67,7 @@ export interface FlaggedQuestion {
 
 export interface SkipStrategy {
   breakEvenAccuracy: number; // accuracy where attempting turns +EV (config-derived)
-  blindGuessEV: number; // EV of a random 1-of-4 guess under this config
+  blindGuessEV: number; // EV of a random blind guess under this config's option count
   guessed: ConfidenceBucket;
   guessingHelped: boolean; // guess accuracy ≥ break-even
   /** Wrong answers marked Guessed or Unsure, the classic score leak. */
@@ -204,7 +204,10 @@ export function analyzeSession(
   const breakEvenAccuracy = config.marksCorrect + penalty > 0
     ? penalty / (config.marksCorrect + penalty)
     : 0;
-  const blindGuessEV = round3(0.25 * config.marksCorrect + 0.75 * config.marksWrong);
+  // EV of a random blind guess under THIS exam's option count (SSC 1/4, SBI 1/5).
+  const nOpts = getOptionsCount(config);
+  const pRight = nOpts > 0 ? 1 / nOpts : 0.25;
+  const blindGuessEV = round3(pRight * config.marksCorrect + (1 - pRight) * config.marksWrong);
 
   const shouldHaveSkipped: FlaggedQuestion[] = [];
   let marksLostShouldHaveSkipped = 0;

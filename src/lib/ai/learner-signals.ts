@@ -10,6 +10,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { MentorAnalysis } from "@/lib/exam/mentor-analysis";
 import { loadTopicSignals } from "./topic-signals";
+import { DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
 
 /** A topic counts as a weakpoint below this accuracy, a strength at/above STRONG. */
 const WEAK_MAX_PCT = 65;
@@ -256,13 +257,16 @@ export function aggregateSignals(attempts: AttemptDatum[]): LearnerSignals {
  */
 export async function loadLearnerSignals(
   supabase: SupabaseClient,
-  userId: string
+  userId: string,
+  examCode: string = DEFAULT_EXAM_CODE
 ): Promise<LearnerSignals | null> {
-  // Completed attempts, oldest first. session_id in mentor_reports === attempt.id.
+  // Completed attempts for THIS exam, oldest first (each exam is its own entity,
+  // never mixed). session_id in mentor_reports === attempt.id.
   const { data: attempts } = await supabase
     .from("exam_attempts")
     .select("id, created_at")
     .eq("user_id", userId)
+    .eq("exam_code", examCode)
     .in("status", ["completed", "auto_submitted"])
     .order("created_at", { ascending: true });
 
@@ -293,7 +297,7 @@ export async function loadLearnerSignals(
   // Topic weak/strong come from the freshly tagged bank (the frozen analyses
   // predate topic tags), computed live from the answer log so they work for
   // every past attempt. Overrides the (empty) aggregate topic lists.
-  const derived = await loadTopicSignals(supabase, userId);
+  const derived = await loadTopicSignals(supabase, userId, examCode);
   if (derived) {
     signals.topicWeakpoints = derived.weak;
     signals.topicStrengths = derived.strong;

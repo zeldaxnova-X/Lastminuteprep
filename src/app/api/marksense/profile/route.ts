@@ -4,6 +4,12 @@ import { getViewer, canSeeMentor } from "@/lib/auth/plan";
 import { buildLearnerProfile, MIN_TESTS_FOR_PROFILE } from "@/lib/ai/build-learner-profile";
 import { buildActionPlan } from "@/lib/ai/action-plan";
 import { aiEnabled } from "@/lib/ai/deepseek";
+import { getExamEntry } from "@/lib/exam/registry";
+
+/** Validated exam_code from ?exam= (defaults to SSC CGL). */
+function examParam(request: Request): string {
+  return getExamEntry(new URL(request.url).searchParams.get("exam")).code;
+}
 
 /**
  * GET /api/marksense/profile
@@ -11,7 +17,7 @@ import { aiEnabled } from "@/lib/ai/deepseek";
  * missing or stale (cheap when the signals are unchanged, since the AI call is
  * skipped). Mentor-plan gated: this is the paid, cross-attempt intelligence.
  */
-export async function GET() {
+export async function GET(request: Request) {
   const { user } = await getSessionContext();
   if (!user) return json401();
 
@@ -23,10 +29,11 @@ export async function GET() {
     );
   }
 
+  const examCode = examParam(request);
   // Service role: reads any attempt's stored analysis + writes learner_profiles
   // (RLS blocks client writes). Identity is already proven above.
   const db = serviceClient();
-  const built = await buildLearnerProfile(db, user.id, false);
+  const built = await buildLearnerProfile(db, user.id, examCode, false);
 
   if (!built.ok || !built.row) {
     return NextResponse.json({
@@ -49,7 +56,7 @@ export async function GET() {
     generatedAt: built.row.generatedAt,
     signals: built.row.signals,
     profile: built.row.profile,
-    taskList: built.row.signals ? buildActionPlan(built.row.signals) : [],
+    taskList: built.row.signals ? buildActionPlan(built.row.signals, examCode) : [],
   });
 }
 
@@ -57,7 +64,7 @@ export async function GET() {
  * POST /api/marksense/profile
  * Force a fresh AI regeneration (the "refresh my profile" button).
  */
-export async function POST() {
+export async function POST(request: Request) {
   const { user } = await getSessionContext();
   if (!user) return json401();
 
@@ -66,8 +73,9 @@ export async function POST() {
     return NextResponse.json({ locked: true, plan: viewer.plan }, { status: 200 });
   }
 
+  const examCode = examParam(request);
   const db = serviceClient();
-  const built = await buildLearnerProfile(db, user.id, true);
+  const built = await buildLearnerProfile(db, user.id, examCode, true);
 
   if (!built.ok || !built.row) {
     return NextResponse.json(
@@ -90,6 +98,6 @@ export async function POST() {
     generatedAt: built.row.generatedAt,
     signals: built.row.signals,
     profile: built.row.profile,
-    taskList: built.row.signals ? buildActionPlan(built.row.signals) : [],
+    taskList: built.row.signals ? buildActionPlan(built.row.signals, examCode) : [],
   });
 }
