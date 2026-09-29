@@ -440,7 +440,7 @@ function Stats({ questionCount }: { questionCount: number }) {
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
         <Stat value={<LiveQuestionCount initial={questionCount} />} label="Questions in the bank" />
         <Stat value={<CountUp end={100} />} label="Questions per full mock" />
-        <Stat value="4" label="Sections · 15 min each" />
+        <Stat value={<CountUp end={3} />} label="Exams live now" />
         <Stat value={<>+2 / <span className="text-danger">−0.5</span></>} label="SSC CGL marking, live now" />
       </div>
     </section>

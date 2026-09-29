@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { countBankQuestions } from "@/lib/stats";
 
 /**
  * GET /api/stats/questions
@@ -13,16 +14,11 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   try {
     const supabase = createServerSupabaseClient();
-    const { count, error } = await supabase
-      .from("questions")
-      .select("id", { count: "exact", head: true });
-
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
+    // Count across every live exam (SSC + SBI + IBPS + …), not just the default.
+    const questions = await countBankQuestions(supabase);
 
     return NextResponse.json(
-      { questions: count ?? 0 },
+      { questions },
       {
         headers: {
           "Cache-Control": "public, max-age=30, s-maxage=30, stale-while-revalidate=120",
