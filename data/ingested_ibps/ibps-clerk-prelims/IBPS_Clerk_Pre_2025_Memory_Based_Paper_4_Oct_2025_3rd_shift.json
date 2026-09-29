@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS-Clerk-Pre-2025-Memory-Based-Paper-4-Oct-2025-3rd-shift.pdf",
+ "format": "adda_inline",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of runs scored by two players, A and B, on Monday and Tuesday.\n\nFind the total number of runs scored by Player A on Monday and Tuesday together.",
+   "options": [
+    "110",
+    "140",
+    "100",
+    "130",
+    "150"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "14920c2034b51975b7719bd95fc4f65b5479f70cd4ed8e591e66633c1e5d0dbe"
+  },
+  {
+   "question_number": 2,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of runs scored by two players, A and B, on Monday and Tuesday.\n\nThe number of runs scored by Player B on Tuesday is what percentage more than the runs scored by Player B on Monday?",
+   "options": [
+    "40%",
+    "45%",
+    "80%",
+    "55%",
+    "60%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c4fcb10846ee6e666e6db9f9ed863b68db18493bf310ef2e91c29f2c3eaf49d7"
+  },
+  {
+   "question_number": 3,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of runs scored by two players, A and B, on Monday and Tuesday.\n\nFind the ratio of the total runs scored by Player A to the total runs scored by Player B on both days together.",
+   "options": [
+    "1 : 1",
+    "12 : 13",
+    "13 : 16",
+    "14 : 15",
+    "15 : 17"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "51464e66529a924ad81d10ea7c56dab7c89a2d4b27b7106f502c83efcbbe9284"
+  },
+  {
+   "question_number": 4,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of runs scored by two players, A and B, on Monday and Tuesday.\n\nFind the average number of runs scored by both players on Monday.",
+   "options": [
+    "60",
+    "70",
+    "65",
+    "75",
+    "100"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4da00338a4afe27dd0bfb7a95dc8ba3151ee0727a2aa53de7f00661438cbcabe"
+  },
+  {
+   "question_number": 5,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of runs scored by two players, A and B, on Monday and Tuesday.\n\nThe difference between the total runs scored by A on both the days and the runs scored by Player B on Tuesday is what percentage of the runs scored by Player B on Monday?",
+   "options": [
+    "80%",
+    "90%",
+    "105%",
+    "110%",
+    "100%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8d6d2bc2fcdb6131afbf95bb168e06e1da0eb69517d4c66283d89b349cdb41d7"
+  },
+  {
+   "question_number": 6,
+   "section": "numerical_ability",
+   "stem_text": "A person's income is 25% more than his expenditure. If his monthly expenditure is Rs 24,000, then find his monthly savings.",
+   "options": [
+    "Rs 5,000",
+    "Rs 5,500",
+    "Rs 6,000",
+    "Rs 6,500",
+    "Rs 7,000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "75ad82cffd231c209ee74682b4f94435fa1428bfd6310479a3cdf702945d4012"
+  },
+  {
+   "question_number": 7,
+   "section": "numerical_ability",
+   "stem_text": "A certain sum is invested at 10% per annum simple interest for 3 years and earns an interest of Rs 1800. If the same sum is invested at 20% per annum compound interest for 2 years, then find the amount received after 2 years.",
+   "options": [
+    "Rs 9,600",
+    "Rs 10,080",
+    "Rs 10,800",
+    "Rs 8,640",
+    "Rs 12,000"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "de6ac594b04e0188e9e1d7df5f458e31faaf9b486c34c579bed9cb5a13d6da9d"
+  },
+  {
+   "question_number": 8,
+   "section": "numerical_ability",
+   "stem_text": "A vessel contains 40 liters of a milk-water mixture in the ratio 3 : 2. 10 liters of the mixture is taken out and replaced with 10 liters of pure milk. Find the ratio of milk to water in the final mixture.",
+   "options": [
+    "7 : 3",
+    "4 : 1",
+    "17 : 8",
+    "9 : 4",
+    "5 : 2"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3f233c490ec0730c34245e41331cc4d1e9577896149abc403f939b2a7c83be23"
+  },
+  {
+   "question_number": 9,
+   "section": "numerical_ability",
+   "stem_text": "A and B started a partnership by investing Rs 1200 and Rs 1500, respectively. Both invested their money for 1 year. If the profit share of A is Rs 3000, then find the profit share of B.",
+   "options": [
+    "Rs 3500",
+    "Rs 3600",
+    "Rs 3750",
+    "Rs 3900",
+    "Rs 4000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c336a1b3ec1eb95ba1703c2315d1b674266838d14420462a50178047e4a3c5e3"
+  },
+  {
+   "question_number": 10,
+   "section": "numerical_ability",
+   "stem_text": "Pipe A can fill a tank in 4 hours, while Pipe B can fill the same tank in 8 hours. Both pipes are opened together for 2 hours, after which Pipe A is closed. Find the additional time taken by Pipe B to fill the remaining part of the tank.",
+   "options": [
+    "1 hour",
+    "1.5 hours",
+    "2 hours",
+    "2.5 hours",
+    "3 hours"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a9f013afccc020e2327f1a4d4e6963ab0fa1093c8d0bee271918370681fcc407"
+  },
+  {
+   "question_number": 11,
+   "section": "numerical_ability",
+   "stem_text": "The area of Square A is 256 cm². The ratio of the side of Square A to the side of Square B is 4 : 5, respectively. Find the perimeter of Square B.",
+   "options": [
+    "60 cm",
+    "64 cm",
+    "72 cm",
+    "80 cm",
+    "84 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9e59d906b0c592b619ea22f510abc7c64dbbd79d654f1018a3fcdaa0e780c7e6"
+  },
+  {
+   "question_number": 12,
+   "section": "numerical_ability",
+   "stem_text": "What is the total number of doors manufactured by Shop Y? Study the following table carefully and answer the questions given below. The table shows the number of Metal, Plastic, and Wooden doors manufactured by three shops (X, Y, and Z) during a month. Shops Metal Doors Plastic Doors Wooden Doors X 48 36 24 Y 42 54 30 Z 60 30 42",
+   "options": [
+    "118",
+    "120",
+    "124",
+    "126",
+    "128"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9f929076d900eb82f34a8ec47cbaa8ad35b568d67ea73a3354ca9ff778c8bf90"
+  },
+  {
+   "question_number": 13,
+   "section": "numerical_ability",
+   "stem_text": "The number of Plastic doors manufactured by Shop X is what percentage of the Metal doors manufactured by Shop Z? Study the following table carefully and answer the questions given below. The table shows the number of Metal, Plastic, and Wooden doors manufactured by three shops (X, Y, and Z) during a month. Shops Metal Doors Plastic Doors Wooden Doors X 48 36 24 Y 42 54 30 Z 60 30 42",
+   "options": [
+    "50%",
+    "55%",
+    "60%",
+    "65%",
+    "70%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3b39834713c7ae828b6488f0d594e3fab01c308d3b6a7d0bf8180805fa0c3e95"
+  },
+  {
+   "question_number": 14,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio of the total number of doors manufactured by Shop X to that of Shop Z. Study the following table carefully and answer the questions given below. The table shows the number of Metal, Plastic, and Wooden doors manufactured by three shops (X, Y, and Z) during a month. Shops Metal Doors Plastic Doors Wooden Doors X 48 36 24 Y 42 54 30 Z 60 30 42",
+   "options": [
+    "9 : 11",
+    "9 : 10",
+    "3 : 4",
+    "4 : 5",
+    "5 : 6"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c61d0678490d727aa4d26ff8e18f27ad27c8b127aaaab568cc9e768d615c1968"
+  },
+  {
+   "question_number": 15,
+   "section": "numerical_ability",
+   "stem_text": "The average number of Wooden doors manufactured by all three shops is: Study the following table carefully and answer the questions given below. The table shows the number of Metal, Plastic, and Wooden doors manufactured by three shops (X, Y, and Z) during a month. Shops Metal Doors Plastic Doors Wooden Doors X 48 36 24 Y 42 54 30 Z 60 30 42",
+   "options": [
+    "30",
+    "32",
+    "34",
+    "36",
+    "38"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "76fdaa0f6b2bfccb15fc31f4a51b27ad7b2ff29bd55797e9e55643cf553e4746"
+  },
+  {
+   "question_number": 16,
+   "section": "numerical_ability",
+   "stem_text": "The total number of Metal and Plastic doors manufactured by Shop Y together is how many more than the Wooden doors manufactured by Shop Z? Study the following table carefully and answer the questions given below. The table shows the number of Metal, Plastic, and Wooden doors manufactured by three shops (X, Y, and Z) during a month. Shops Metal Doors Plastic Doors Wooden Doors X 48 36 24 Y 42 54 30 Z 60 30 42",
+   "options": [
+    "48",
+    "50",
+    "52",
+    "54",
+    "56"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "06e77b47f11e5b0a5a40ac1cc2b019eba0e241f2ce18634da7f27b1f4d556cb1"
+  },
+  {
+   "question_number": 17,
+   "section": "numerical_ability",
+   "stem_text": "50% of A is equal to 25% of B. If the value of A is 20, find the sum of A and B.",
+   "options": [
+    "50",
+    "55",
+    "60",
+    "65",
+    "70"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e8048ec4b0b74b90323316dead302c61d21f82249ebd6e8ba4522b374554ae2e"
+  },
+  {
+   "question_number": 18,
+   "section": "numerical_ability",
+   "stem_text": "A shopkeeper allows a 25% discount on the marked price of an article and incurs a 10% loss. If the marked price of the article is ₹180, find the cost price of the article.",
+   "options": [
+    "Rs 145",
+    "Rs 150",
+    "Rs 155",
+    "Rs 160",
+    "Rs 165"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fbfd96931800558c151c800ee0427adb578fc12eab232260ac9a7cad3a8bc9dc"
+  },
+  {
+   "question_number": 19,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of 4 students in a class is 28 kg. When the teacher's weight is included, the average weight increases by 5 kg. Find the weight of the teacher.",
+   "options": [
+    "53 kg",
+    "55 kg",
+    "57 kg",
+    "60 kg",
+    "61 kg"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "121064f08878cde2c9b2d346427c3d13c29e3aab6e192ce3e859c181a63d5bab"
+  },
+  {
+   "question_number": 20,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of the present ages of A and B is 4 : 7. If the sum of their present ages is 66 years, then find the present age of B.",
+   "options": [
+    "40 years",
+    "42 years",
+    "44 years",
+    "46 years",
+    "48 years"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "011b73a4c24c44e69ca6743d3867ba1da811a67967329615e7b17f0a316ff244"
+  },
+  {
+   "question_number": 21,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following questions? 750÷25×2.5 ×2 =? 384÷32+0.5",
+   "options": [
+    "6",
+    "12",
+    "18",
+    "3",
+    "7"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "867ad70a241589012321691ad0b5814fc72ad31d80e5a3647d041e4e6a721029"
+  },
+  {
+   "question_number": 22,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: of 250 + of 180 = ? 5 9 + 20",
+   "options": [
+    "130",
+    "150",
+    "120",
+    "110",
+    "140"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1ebdb5d3150826c3476ab3bd9616462a79369911218e3ee8cd175cc85d8123a8"
+  },
+  {
+   "question_number": 23,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following questions? 3454 + 3564 + 7777 ÷ 1100 = ?",
+   "options": [
+    "7205.07",
+    "7025.07",
+    "6025.17",
+    "8020.17",
+    "7125.15"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "52c19799d73b99e4cfa98a270e1f47360611979edffeaa869e597e21164d5058"
+  },
+  {
+   "question_number": 24,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following questions? √784÷ ∛343×√625-∛1728= ?",
+   "options": [
+    "78",
+    "88",
+    "98",
+    "83",
+    "76"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "16ac32beb37a21c999bfb7c7e143b65aa9427d3281b9fbb4c1acbaf378aacce1"
+  },
+  {
+   "question_number": 25,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 2500 ÷ 25 + 12 × 4 = ?",
+   "options": [
+    "140",
+    "148",
+    "142",
+    "145",
+    "150"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b02efd705d4d78b4c9096a08ebc90d515d8cc5539e5787c32833d6f74371ce66"
+  },
+  {
+   "question_number": 26,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following questions? 23% of 600 + 33% of 800 = ? + 53% of 400",
+   "options": [
+    "170",
+    "180",
+    "190",
+    "210",
+    "150"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8bbe565a84291c9f3e446af3dc25b7a5225152908631d8e3daac21664ed43ae0"
+  },
+  {
+   "question_number": 27,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following questions? 777 ÷ 700 + 5555 ÷ 5000 – 3333 ÷ 3300 =?",
+   "options": [
+    "1.0211",
+    "2.111",
+    "1.211",
+    "0.211",
+    "2.011"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "bf36e361f5a51c141aa7882638b02ddcbfd9b7bb6634f135fc271d624b198fcc"
+  },
+  {
+   "question_number": 28,
+   "section": "numerical_ability",
+   "stem_text": "200% of 115 = ? What will come in place of the question mark (?) in the following questions?",
+   "options": [
+    "230",
+    "225",
+    "240",
+    "235",
+    "220"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d637718d4ac5a3879434206b51cf47a1f6aa08bf7ac434ec56bdfce0a7e6c512"
+  },
+  {
+   "question_number": 29,
+   "section": "numerical_ability",
+   "stem_text": "Find the value of given question. 56 + 35 + 44 + 55",
+   "options": [
+    "190",
+    "120",
+    "130",
+    "140",
+    "150"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "484ab5ba3f6daf300f1be6be373b6ec63c2914e0caa6ba619ccdbabb9f60008e"
+  },
+  {
+   "question_number": 30,
+   "section": "numerical_ability",
+   "stem_text": "(976 + 624) ÷ 50 + ? = 3000 ÷ 6 What will come in place of the question mark (?) in the following question?",
+   "options": [
+    "471",
+    "468",
+    "491",
+    "476",
+    "499"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b5cfba7d39c9a8a9ddfc064f6af6c8ad75ae0b7c88d9d7e5e4c5aa4ea52d2b5f"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "19, 21, 44, 134, ?, 2692 Find the missing number in the following number series.",
+   "options": [
+    "537",
+    "547",
+    "541",
+    "538",
+    "540"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b9226d5b5ca2a63d385000f0607b874e1daea9c066f41497ea071c82daefee70"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "19, 56, ?, 116, 139, 158 Find the missing number in the following number series.",
+   "options": [
+    "59",
+    "78",
+    "81",
+    "87",
+    "61"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fc4d51aacaf1e754ea11237d965b32cffba7c6a06f1b5a3f3b3299e2032763a9"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "12, 10, 17, 47, ? 909 Find the missing number in the following number series.",
+   "options": [
+    "180",
+    "183",
+    "140",
+    "220",
+    "320"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e092993aea4b070416e1a90a980c65d25062098ebadab55b724656b1e2bf5455"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "12, 13, 28, 87, ?, 1765 Find the missing number in the following number series.",
+   "options": [
+    "342",
+    "352",
+    "350",
+    "346",
+    "338"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "548a004902e435683337196400dac5a9c9e248e23396e45e19a949bbcd36a990"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "8, 16, 48, 192, ?, 5760 Find the missing number in the following number series.",
+   "options": [
+    "944",
+    "960",
+    "884",
+    "841",
+    "900"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1a453c2aafc0c75d818df48b7ce7850060af3af46594999e982cbfb374ad7ea3"
+  },
+  {
+   "question_number": 36,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nWhat does the passage suggest about Colonel Arvind Mehta's transition from military life to oceanography?",
+   "options": [
+    "He pursued oceanography reluctantly after failing to find other suitable post-retirement opportunities",
+    "He enrolled in the programme primarily to reconnect with Dr. Okafor whom he had met during military service",
+    "Retirement caused him significant psychological distress that oceanography helped him gradually overcome",
+    "His disciplined military background was redirected productively toward a new intellectual pursuit driven by genuine curiosity",
+    "His interest in oceans developed only after completing the advanced oceanography programme at the institute"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "63c7ed099a07613feef6878401487ccccc1c6be776b9bfea17d443fc87ce3746"
+  },
+  {
+   "question_number": 37,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nAccording to the passage, what made the experiment designed by Colonel Mehta and Dr. Okafor particularly challenging?",
+   "options": [
+    "Securing a research vessel capable of travelling to remote oceanic locations within a limited budget",
+    "Collecting living bioluminescent specimens without subjecting them to pressure changes that would destroy their cellular structure",
+    "Convincing policymakers to fund research into deep-sea ecosystems that had already been extensively studied",
+    "Identifying the precise ocean location where bioluminescent organisms were most densely concentrated",
+    "Training crew members to operate remotely controlled underwater vehicles at extreme ocean depths safely"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b6a1942b413530c781c372e6683df94afd371f299b44bc8133c5520c96191dc2"
+  },
+  {
+   "question_number": 38,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nWhich of the following statements is/are correct according to the passage? (I) Colonel Mehta and Dr. Okafor shared a mutual frustration about inadequate policymaker attention toward ocean health. (II) The research vessel was equipped with a sampling chamber capable of descending four thousand metres below the surface. (III) The discovered species had previously been documented in marine science journals before their voyage began.",
+   "options": [
+    "Only (I)",
+    "Only (III)",
+    "Both (I) and (II)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "be7da2914f230d91a3d3006b7aaa56a6574d9251bc0965af49a95451bd67afb0"
+  },
+  {
+   "question_number": 39,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nChoose the most appropriate word to fill in the blank given in the passage.",
+   "options": [
+    "above",
+    "across",
+    "beneath",
+    "beyond",
+    "within"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0320ec8e695fc18ee0867dca3c3f98baa3c6bfc1f59a65b8b4d40ae4c18db41e"
+  },
+  {
+   "question_number": 40,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nChoose the word most similar in meaning to \"highly\" as used in the passage.",
+   "options": [
+    "moderately",
+    "exceptionally",
+    "occasionally",
+    "marginally",
+    "adequately"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "065117b154df803b4e63eaaa63a4df7e5cc50d500aca7ef67aa4ece763ad0020"
+  },
+  {
+   "question_number": 41,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nChoose the word most similar in meaning to \"exploit\" as used in the passage.",
+   "options": [
+    "preserve",
+    "protect",
+    "study",
+    "restore",
+    "misuse"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "72cbbe5bb96c0a205ac4c502fa9d09a8d82969ab8ff41986e6e3e50fa77c97a6"
+  },
+  {
+   "question_number": 42,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nChoose the word most similar in meaning to \"enable\" as used in the passage.",
+   "options": [
+    "restrict",
+    "prevent",
+    "allow",
+    "delay",
+    "discourage"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d3064624d603ee1fe455a04853af768e59bc76298fa5359a0bf87a5d9c0b1f7e"
+  },
+  {
+   "question_number": 43,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nWhich of the following is incorrect according to the passage?",
+   "options": [
+    "The footage captured during the voyage was later featured in one of the world's most respected marine science journals",
+    "The team deliberately embedded strict ecological protocols throughout every stage of their research methodology",
+    "Colonel Mehta's persistence shaped by decades of military planning eventually helped secure the necessary funding",
+    "Funding and institutional support for the experiment was secured within six months of the duo's initial research proposal",
+    "Dr. Okafor's enthusiasm for deep-sea ecosystems was described as infectious and his brilliance as quietly evident"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "85726f500ccadda8814e7482001ca4fc920bbfa16b9bf898c28fc1555974953e"
+  },
+  {
+   "question_number": 44,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Colonel Arvind Mehta had spent thirty-two years commanding men across mountain passes and desert frontiers before the sea claimed his imagination entirely. Retirement, rather than slowing him down, had redirected his disciplined energy toward an altogether different kind of mission. Within a year of hanging up his uniform, he had enrolled in an advanced oceanography programme at a coastal research institute, driven by a conviction that the world _________________ the ocean surface remained one of the last genuinely unexplored frontiers available to a curious and determined mind. It was during this programme that he met Dr. Samuel Okafor, a Nigerian marine scientist with a quiet brilliance and an infectious enthusiasm for deep-sea ecosystems. The two men, separated by decades of different life experiences yet united by a shared obsession with the unknown, formed an unlikely but highly effective partnership. Their friendship deepened over shared meals, late-night research discussions, and a mutual frustration with how little attention policymakers paid to the health of the world's oceans. Together, they designed an ambitious experiment aimed at studying bioluminescent organisms living at extreme ocean depths — creatures that produce their own light in an environment where sunlight never reaches. Securing funding and institutional support took two exhausting years, but Colonel Mehta's persistence, sharpened by decades of military planning, eventually prevailed. The duo boarded a specialised marine research vessel equipped with remotely operated underwater vehicles and a pressure-resistant sampling chamber capable of descending four thousand metres below the surface. The experiment was designed to enable scientists to collect living bioluminescent specimens without exposing them to pressure changes that would destroy their cellular structure — a technical challenge that had defeated previous research attempts. Critically, the team was determined not to exploit the fragile deep-sea environment beyond what minimal scientific sampling required, embedding strict ecological protocols into every stage of their methodology. Three weeks into the voyage, their equipment captured footage of an entirely unknown species glowing in absolute darkness — a discovery that would eventually appear in one of the world's most respected marine science journals and remind both men why curiosity, at any age, remains worth following.\n\nWhat can be most reasonably inferred about the partnership between Colonel Mehta and Dr. Okafor?",
+   "options": [
+    "Their collaboration was purely professional with no personal friendship developing during the research programme",
+    "The two men had collaborated on previous marine research projects before meeting at the coastal research institute",
+    "Dr. Okafor initially opposed Colonel Mehta's involvement believing military professionals lacked scientific credibility",
+    "Their partnership succeeded primarily because Dr. Okafor managed all technical aspects while Colonel Mehta handled only funding",
+    "Despite contrasting life backgrounds their shared passion for unexplored oceanic knowledge made them a complementary and effective team"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "48b928219136fc7780e025bfa7574ba673469e24fdcbbf1519df43d14789787d"
+  },
+  {
+   "question_number": 45,
+   "section": "english",
+   "stem_text": "The committee decided to ________ the implementation of the new policy until all stakeholders had been consulted. In the question below, a part is omitted which is then replaced by a blank. Choose the word from the given options that will fit into the blank most appropriately.",
+   "options": [
+    "postpone",
+    "celebrate",
+    "predicts",
+    "admired",
+    "believes"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "da6fb68f793f89ad67d8d34a7d899a6dd35326758d4326dd34807dbdcac219e9"
+  },
+  {
+   "question_number": 46,
+   "section": "english",
+   "stem_text": "I don't ________ the committee will approve the proposal without reviewing the revised budget first. In the question below, a part is omitted which is then replaced by a blank. Choose the word from the given options that will fit into the blank most appropriately.",
+   "options": [
+    "assumes",
+    "expects",
+    "imagines",
+    "felt",
+    "think"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "757f1afdd03389460e1551a061b2222ee7a029b3b10e9311c7129ec1f89e8234"
+  },
+  {
+   "question_number": 47,
+   "section": "english",
+   "stem_text": "The museum took special measures to ________ the centuries-old manuscripts from moisture and insects. In the question below, a part is omitted which is then replaced by a blank. Choose the word from the given options that will fit into the blank most appropriately.",
+   "options": [
+    "borrow",
+    "disturb",
+    "wander",
+    "preserve",
+    "entertain"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "62f8bf1e999edf41d176ac330a4e33ddad716e42b10897f05ffc7751d034dde3"
+  },
+  {
+   "question_number": 48,
+   "section": "english",
+   "stem_text": "The sun's ________ reflected off the water, forcing the sailors to squint. In the question below, a part is omitted which is then replaced by a blank. Choose the word from the given options that will fit into the blank most appropriately.",
+   "options": [
+    "glare",
+    "colour",
+    "murmur",
+    "texture",
+    "silence"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "da59e18880e95662cf4ba82819ada8d2481b4181be52b7c9e66ba84261f55540"
+  },
+  {
+   "question_number": 49,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically incorrect.",
+   "options": [
+    "The summit delegates signed the non-proliferation declaration before departing.",
+    "The border patrol intercepted a large smuggling vessel near the coastal checkpoint.",
+    "The jury delivered its unanimous verdict after three days of careful deliberation.",
+    "She don't require additional clearance to access the high-security archive wing.",
+    "All are correct"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f6b9c1964cd2993ebafbd6c4b75c56f77203a59187390419fa2f344700cb3deb"
+  },
+  {
+   "question_number": 50,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically incorrect.",
+   "options": [
+    "Millions of pilgrims had already reached the holy city before the festival began.",
+    "The wildfire destroyed several hectares of dry scrubland before it was contained.",
+    "The opposition bloc and the ruling party has agreed to form a coalition government.",
+    "The undersea cable was repaired after disrupting internet access across the region.",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2369ab38b1034e38d1cd84467a5058c8d6a01e3fd09bfbcbd859a87c9a818855"
+  },
+  {
+   "question_number": 51,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "The stranded miners has been waiting for rescue since the tunnel collapsed Friday.",
+    "The spacecraft don't carry any crew during its first autonomous test flight.",
+    "The prime minister, along with senior advisors, were present at the crisis briefing.",
+    "The drought had already devastated the harvest before any relief funds arrived.",
+    "All are incorrect"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b480ad2f49f31511581bd9331ec29075cdc7ba9a884942b86082fb32712d8981"
+  },
+  {
+   "question_number": 52,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically incorrect.",
+   "options": [
+    "The glacier has been retreating steadily since the last three decades.",
+    "The naval fleet completed its patrol along the disputed maritime boundary.",
+    "Neither the warden nor the guards were informed about the prison transfer.",
+    "The lunar probe transmitted detailed surface data back to the ground station.",
+    "All are correct"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2e2a0e2feba835e05968b3474446209067d8868e5bb1945213d692f232399d17"
+  },
+  {
+   "question_number": 53,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically incorrect.",
+   "options": [
+    "The hostage negotiators arrived at the location within minutes of the alert.",
+    "Every one of the recruits have cleared the physical fitness examination successfully.",
+    "The earthquake survivors were airlifted to the nearest medical facility overnight.",
+    "The ambassador and the consul are attending the independence day reception tomorrow.",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "85b30c1f56c54bd01007dcd39cbe76b7e6044b9db18b2997d6141458af337ee0"
+  },
+  {
+   "question_number": 54,
+   "section": "english",
+   "stem_text": "Which of the following should be the FIRST sentence after rearrangement? Given sentences are not in their exact position. Rearrange them to make a coherent paragraph and answer the questions based on the correct sequence.",
+   "options": [
+    "The second boy picked up the other box and checked its contents to ensure that nothing had been misplaced.",
+    "After confirming the label, the first boy carefully lifted his box and thanked the station staff for their assistance.",
+    "Inside the first boy's box were three essential items—a compass, a torch, and a first-aid kit—that he had packed for the trekking camp.",
+    "Two boys reached the railway platform carrying similar-looking wooden boxes, which led to some confusion among the passengers.",
+    "The first boy's box, containing these items, was kept next to the coach entrance so that he could identify it easily before boarding. (F) Once both boys had collected the correct boxes, they boarded the train and settled into their respective seats. (a) D (b) C (c) B (d) F (e) A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3139e9c5457f9f6d4e6fdfdf9de92cbf0c7a021523e2161641bc6e26ea948cd5"
+  },
+  {
+   "question_number": 55,
+   "section": "english",
+   "stem_text": "Which of the following should be the THIRD sentence after rearrangement? Given sentences are not in their exact position. Rearrange them to make a coherent paragraph and answer the questions based on the correct sequence.",
+   "options": [
+    "The second boy picked up the other box and checked its contents to ensure that nothing had been misplaced.",
+    "After confirming the label, the first boy carefully lifted his box and thanked the station staff for their assistance.",
+    "Inside the first boy's box were three essential items—a compass, a torch, and a first-aid kit—that he had packed for the trekking camp.",
+    "Two boys reached the railway platform carrying similar-looking wooden boxes, which led to some confusion among the passengers.",
+    "The first boy's box, containing these items, was kept next to the coach entrance so that he could identify it easily before boarding. (F) Once both boys had collected the correct boxes, they boarded the train and settled into their respective seats. (a) E (b) A (c) B (d) D (e) C"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bb4d52fd02d6b2d420d3299b2a99ea919795bc80b7f7280a24cba6433ed3796b"
+  },
+  {
+   "question_number": 56,
+   "section": "english",
+   "stem_text": "Which of the following should be the SIXTH sentence after rearrangement? Given sentences are not in their exact position. Rearrange them to make a coherent paragraph and answer the questions based on the correct sequence.",
+   "options": [
+    "The second boy picked up the other box and checked its contents to ensure that nothing had been misplaced.",
+    "After confirming the label, the first boy carefully lifted his box and thanked the station staff for their assistance.",
+    "Inside the first boy's box were three essential items—a compass, a torch, and a first-aid kit—that he had packed for the trekking camp.",
+    "Two boys reached the railway platform carrying similar-looking wooden boxes, which led to some confusion among the passengers.",
+    "The first boy's box, containing these items, was kept next to the coach entrance so that he could identify it easily before boarding. (F) Once both boys had collected the correct boxes, they boarded the train and settled into their respective seats. (a) F (b) D (c) A (d) C (e) E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "40b1d4621badcca0f5f05f75d9157b56fd2578a603ab85b55e59284d74b8817d"
+  },
+  {
+   "question_number": 57,
+   "section": "english",
+   "stem_text": "Which of the following should be the FOURTH sentence after rearrangement? Given sentences are not in their exact position. Rearrange them to make a coherent paragraph and answer the questions based on the correct sequence.",
+   "options": [
+    "The second boy picked up the other box and checked its contents to ensure that nothing had been misplaced.",
+    "After confirming the label, the first boy carefully lifted his box and thanked the station staff for their assistance.",
+    "Inside the first boy's box were three essential items—a compass, a torch, and a first-aid kit—that he had packed for the trekking camp.",
+    "Two boys reached the railway platform carrying similar-looking wooden boxes, which led to some confusion among the passengers.",
+    "The first boy's box, containing these items, was kept next to the coach entrance so that he could identify it easily before boarding. (F) Once both boys had collected the correct boxes, they boarded the train and settled into their respective seats. (a) F (b) C (c) A (d) E (e) B"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4cbcf175471c6675221248a8cd71e6e7c9f9093af5b3089ad752ec28ea4d6c49"
+  },
+  {
+   "question_number": 58,
+   "section": "english",
+   "stem_text": ". Which of the following should be the FIFTH sentence after rearrangement? Given sentences are not in their exact position. Rearrange them to make a coherent paragraph and answer the questions based on the correct sequence.",
+   "options": [
+    "The second boy picked up the other box and checked its contents to ensure that nothing had been misplaced.",
+    "After confirming the label, the first boy carefully lifted his box and thanked the station staff for their assistance.",
+    "Inside the first boy's box were three essential items—a compass, a torch, and a first-aid kit—that he had packed for the trekking camp.",
+    "Two boys reached the railway platform carrying similar-looking wooden boxes, which led to some confusion among the passengers.",
+    "The first boy's box, containing these items, was kept next to the coach entrance so that he could identify it easily before boarding. (F) Once both boys had collected the correct boxes, they boarded the train and settled into their respective seats. (a) C (b) B (c) F (d) D (e) A"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f7b9130bacc24487d58d01f7a5b636a5d433c945179d121a04406d4dc5a8373a"
+  },
+  {
+   "question_number": 59,
+   "section": "english",
+   "stem_text": "WARE (I) The artisan displayed his handmade wares at the annual craft exhibition. (II) The hikers decided to ware their backpacks before beginning the steep climb. (III) The antique shop is known for selling rare silverware and other decorative wares. A word has been given in the question and used in the sentences below. Identify the statements where the word has been used in a contextually and grammatically correct manner.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (II)",
+    "Only (III)",
+    "Both (I) and (III)",
+    "All of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fb3958d4ed7c9d75ceecf4a3508dd1cda223d8275ea5e39e96a45e2666091cbd"
+  },
+  {
+   "question_number": 60,
+   "section": "english",
+   "stem_text": "The sudden policy change was expected to effect the daily wages of thousands of contractual workers across the region. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "policy",
+    "effect",
+    "wages",
+    "contractual",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ee7ea12f5e84c6f6b3122f5b066684205a11a0bc21505823f02ff92d22e23999"
+  },
+  {
+   "question_number": 61,
+   "section": "english",
+   "stem_text": "The officer was asked to immediatly verify the pending applications and submit a consolidated report to the branch head. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "officer",
+    "immediatly",
+    "consolidated",
+    "branch",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7e4934793592defeb334f3d5241f0465ed178d99382c478a429dff2acb53c01e"
+  },
+  {
+   "question_number": 62,
+   "section": "english",
+   "stem_text": "The cashier politely informed the customer that his withdrawl limit had been exhausted for the current business day. In the following sentence, four words have-been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "cashier",
+    "informed",
+    "withdrawl",
+    "current",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7c550263a9f05f54c83d4a163c243b33aee0fe840bbf2f94622a8524eb27844d"
+  },
+  {
+   "question_number": 63,
+   "section": "english",
+   "stem_text": "The newly appointed clerk carefully sorted the incoming correspondance and placed every file in the designated cabinet. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "newly",
+    "carefully",
+    "correspondance",
+    "designated",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "be081e3e238a0917a8ef062036ac48fefa7095aecf648e82a40fdb8f6f106389"
+  },
+  {
+   "question_number": 64,
+   "section": "english",
+   "stem_text": "COLUMN I",
+   "options": [
+    "The company was willing to hire more people, but",
+    "The new government policy aimed at promoting",
+    "Despite having enough resources and potential, COLUMN II",
+    "reducing unemployment rate in the country.",
+    "there were not enough qualified candidates available. (F) the project failed to take off as planned. In the question below, two columns are given, each containing three phrases/sentences. Choose the option that will connect the phrases to form meaningful and correct sentences. (a) A-E (b) B-D (c) C-F & A-E (d) A-F & B-D (e) None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "904fb9e52f9519fcf3af0486508652716a31a56f4f99b8dda3514515cfcbd1e1"
+  },
+  {
+   "question_number": 65,
+   "section": "english",
+   "stem_text": "COLUMN I",
+   "options": [
+    "The research team presented",
+    "Despite being a popular tourist destination,",
+    "The company's social media campaign was successful, COLUMN II",
+    "used has been criticized by some experts.",
+    "the town faces several environmental challenges. (F) leading to a sharp rise in customer engagement. In the question below, two columns are given, each containing three phrases/sentences. Choose the option that will connect the phrases to form meaningful and correct sentences. (a) A-F & B-E (b) A-F & C-D (c) B-E & C-F (d) A-E & B-D (e) None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2cbbeba32862656dd2959a17c8de576eb15b36ff370a5d7085053a3e16a4b011"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "How many persons live between A and E? Study the following information carefully and answer the questions given below. Eight persons- A, B, C, D, E, F, G and H live on different floors of the eight storey building (but not necessarily in the same order) such that the bottom most floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on till the topmost floor is numbered as 8. D lives on an odd numbered floor. H lives three floors below D. Only three persons live between H and B. As many persons live below B as above E. G lives immediately above E. Only two persons live between G and C. F lives above C but below A.",
+   "options": [
+    "Three",
+    "Five",
+    "Two",
+    "Four",
+    "One"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cc72b028c5afd3be34d17b2779d149ab9a1523d3761c55af6006c23fe7d2447c"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement(s) is/are true? I. F lives on the sixth floor II. No one lives below C III. F lives immediately above B Study the following information carefully and answer the questions given below. Eight persons- A, B, C, D, E, F, G and H live on different floors of the eight storey building (but not necessarily in the same order) such that the bottom most floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on till the topmost floor is numbered as 8. D lives on an odd numbered floor. H lives three floors below D. Only three persons live between H and B. As many persons live below B as above E. G lives immediately above E. Only two persons live between G and C. F lives above C but below A.",
+   "options": [
+    "Only I",
+    "Both II and III",
+    "Only II",
+    "Both I and II",
+    "All I, II and III"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b8e678b4457d7070763c7f5dd4f7ccc124c5dad23c2cef24ef5ca57ceae7eeff"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "On which among the following floor does H live? Study the following information carefully and answer the questions given below. Eight persons- A, B, C, D, E, F, G and H live on different floors of the eight storey building (but not necessarily in the same order) such that the bottom most floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on till the topmost floor is numbered as 8. D lives on an odd numbered floor. H lives three floors below D. Only three persons live between H and B. As many persons live below B as above E. G lives immediately above E. Only two persons live between G and C. F lives above C but below A.",
+   "options": [
+    "3rd floor",
+    "5th floor",
+    "2nd floor",
+    "6th floor",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5010a2c4caf16752125a16a3bf32f2e89bd8114db3ecdb50675d3778ad0249bb"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and thus form a group. Who among the following does not belong to the group? Study the following information carefully and answer the questions given below. Eight persons- A, B, C, D, E, F, G and H live on different floors of the eight storey building (but not necessarily in the same order) such that the bottom most floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on till the topmost floor is numbered as 8. D lives on an odd numbered floor. H lives three floors below D. Only three persons live between H and B. As many persons live below B as above E. G lives immediately above E. Only two persons live between G and C. F lives above C but below A.",
+   "options": [
+    "A",
+    "H",
+    "G",
+    "B",
+    "C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "59801261db5c7363353c33a00ae09ec26a876fe10b54ab6154b1adf3b251c51e"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "If all the persons live in alphabetical order from top to bottom floors, then the position of how many persons changed? Study the following information carefully and answer the questions given below. Eight persons- A, B, C, D, E, F, G and H live on different floors of the eight storey building (but not necessarily in the same order) such that the bottom most floor is numbered as 1 and the floor immediately above it is numbered as 2 and so on till the topmost floor is numbered as 8. D lives on an odd numbered floor. H lives three floors below D. Only three persons live between H and B. As many persons live below B as above E. G lives immediately above E. Only two persons live between G and C. F lives above C but below A.",
+   "options": [
+    "Two",
+    "Three",
+    "Six",
+    "Seven",
+    "Four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9d2b0d5963f74e7fbc171050a9e48817c3193be221224d81828f497bdf6616d5"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "How many such symbols are there in the above arrangement each of which is immediately preceded by a consonant and also immediately followed by a digit? The following question is based on the alphanumeric-symbol series given below. Study it carefully and answer the questions. 3 G 6 @ B K 9 # T $ 2 E U Q € ★ 5 M F % L 8 R V © 7 W S 4 H A",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1e33329794f375101a3b7a806a2b9a44f6103aef0111205ca05e7508245123e3"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Which of the following is 3rd to the left of the 10th element from the right end of the given series? The following question is based on the alphanumeric-symbol series given below. Study it carefully and answer the questions. 3 G 6 @ B K 9 # T $ 2 E U Q € ★ 5 M F % L 8 R V © 7 W S 4 H A",
+   "options": [
+    "F",
+    "5",
+    "T",
+    "%",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "32d7b06e2c41c873481033a727e162ed5241d6a720fdd7408df74c7bf108d100"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Which of the following pairs of elements has the second element immediately followed by the first element? The following question is based on the alphanumeric-symbol series given below. Study it carefully and answer the questions. 3 G 6 @ B K 9 # T $ 2 E U Q € ★ 5 M F % L 8 R V © 7 W S 4 H A",
+   "options": [
+    "6@",
+    "LU",
+    "B9",
+    "RV",
+    "Both [a] and [d]"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "dd515a97fb8df3510d1be93d0fcc8ca50bc23dec67f481c238a52f036a5d0eb5"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "How many such letters are there in the above arrangement, each of which is immediately followed by a symbol and immediately preceded by a vowel? The following question is based on the alphanumeric-symbol series given below. Study it carefully and answer the questions. 3 G 6 @ B K 9 # T $ 2 E U Q € ★ 5 M F % L 8 R V © 7 W S 4 H A",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "16b04a03e5810072a961d110f5a87dadcc1d1d2175820ebbbfcc1d6e6a63510d"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "If we remove all the symbols from the given series then which of the following is 5th to the right of the 12th element from the left end? The following question is based on the alphanumeric-symbol series given below. Study it carefully and answer the questions. 3 G 6 @ B K 9 # T $ 2 E U Q € ★ 5 M F % L 8 R V © 7 W S 4 H A",
+   "options": [
+    "2",
+    "H",
+    "A",
+    "R",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7ac24bbcf8fabda84e67c26a1f43560b5e56e81fc36913c4281b048cdd605d31"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Who among the following sits second to the right of the one who sits opposite to P? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W – are sitting around a square-shaped table in such a way that four of them sit at the four corners of the table while the remaining four sit in the middle of the four sides, but not necessarily in the same order. The persons sitting at the corners face outside, whereas the persons sitting in the middle of the sides face the centre. S sits third to the left of V. Two persons between S and Q. P sits immediate left of Q. R sits two places away from P and is not immediate neighbour of V. T sits on the middle of the sides of the table. U is neither immediate neighbour of T nor immediate neighbour of S.",
+   "options": [
+    "Q",
+    "V",
+    "S",
+    "R",
+    "U"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "db9e81907c5b08cb060322e6cb70311446dc15f996378f8320ee8d5393cb9fff"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "What is the position of R with respect to W? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W – are sitting around a square-shaped table in such a way that four of them sit at the four corners of the table while the remaining four sit in the middle of the four sides, but not necessarily in the same order. The persons sitting at the corners face outside, whereas the persons sitting in the middle of the sides face the centre. S sits third to the left of V. Two persons between S and Q. P sits immediate left of Q. R sits two places away from P and is not immediate neighbour of V. T sits on the middle of the sides of the table. U is neither immediate neighbour of T nor immediate neighbour of S.",
+   "options": [
+    "Immediate left",
+    "Third to the right",
+    "Second to the right",
+    "Opposite",
+    "Third to the left"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "45e073c50616f25ced7c4f8de9638541af2f2afab151f077939db2d866bb0140"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "How many persons sit between Q and U when counted from the left of U? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W – are sitting around a square-shaped table in such a way that four of them sit at the four corners of the table while the remaining four sit in the middle of the four sides, but not necessarily in the same order. The persons sitting at the corners face outside, whereas the persons sitting in the middle of the sides face the centre. S sits third to the left of V. Two persons between S and Q. P sits immediate left of Q. R sits two places away from P and is not immediate neighbour of V. T sits on the middle of the sides of the table. U is neither immediate neighbour of T nor immediate neighbour of S.",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "96348e64c817dead9832b99a7b32b7e167fc1c932bc5d5e080d79a8f472b9947"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and thus form a group. Find the one who does not belong to the group. Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W – are sitting around a square-shaped table in such a way that four of them sit at the four corners of the table while the remaining four sit in the middle of the four sides, but not necessarily in the same order. The persons sitting at the corners face outside, whereas the persons sitting in the middle of the sides face the centre. S sits third to the left of V. Two persons between S and Q. P sits immediate left of Q. R sits two places away from P and is not immediate neighbour of V. T sits on the middle of the sides of the table. U is neither immediate neighbour of T nor immediate neighbour of S.",
+   "options": [
+    "P",
+    "U",
+    "S",
+    "R",
+    "Q"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b83658d2d499258a98c96ba91e306a84e08e6be9e4c545e2f207befd32ffc0f0"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement(s) is/are true? I. V sits immediately left of U. II. Q sits opposite to W. III. R sits at one of the corners. Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W – are sitting around a square-shaped table in such a way that four of them sit at the four corners of the table while the remaining four sit in the middle of the four sides, but not necessarily in the same order. The persons sitting at the corners face outside, whereas the persons sitting in the middle of the sides face the centre. S sits third to the left of V. Two persons between S and Q. P sits immediate left of Q. R sits two places away from P and is not immediate neighbour of V. T sits on the middle of the sides of the table. U is neither immediate neighbour of T nor immediate neighbour of S.",
+   "options": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Both II and III",
+    "All I, II and III"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "005183eba5b37bea22352a76ce37c4ac980bb5e3d71af8e0629435f9c37d3396"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Statements:All table is ocean. No ocean is river. Only a few river is story. Conclusions: I. All table can be ocean. II. Some ocean is not story. In the question below, three statements are given followed by two conclusions numbered I and II. You have to assume all the statements to be true, even if they seem to be at variance from commonly known facts. Then decide which of the given conclusions logically follows from the information given in the statements.",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7a081cfc4620f8a6d4d6a168bc8f86913c595623677353fcccde20809332fba2"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Statements: Only tickets are reservation Some passengers are tickets Only a few train is passengers Conclusions: I. All tickets being passengers is a possibility II. No reservation is trainIn each question below some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer-",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "01a057e437552c376ae15bed2d627d4763c616fb3667fe213a7c734d9b202b5b"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Statements: Only a few plant is green All green is energy Some habitat is energy Conclusions: I. All plant being habitat is a possibility II. No green is habitat In each question below some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer-",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "afd7705cc2af0a7402b8c658ae552c1550d71fef2f32e204b22718ca3fe0ca07"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Who sits sixth to the right of N? Study the following information carefully and answer the questions given below: A certain number of persons sit in a linear row and face north. C sits third to the right of G. Five persons sit between G and K. R sits second to the right of K. Two persons sit between R and M who sits second from one of the extreme ends of the row. The number of persons sit to the right of R is same as the number of persons sit to the left of O. O sits seventh to the left of M. One person sit between O and N.",
+   "options": [
+    "M",
+    "R",
+    "K",
+    "Unknown person",
+    "G"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "288c41d9064c0e5a32671551125492c132316924c6cd42a2c3249a40096586b9"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "What is the position of G with respect to R? Study the following information carefully and answer the questions given below: A certain number of persons sit in a linear row and face north. C sits third to the right of G. Five persons sit between G and K. R sits second to the right of K. Two persons sit between R and M who sits second from one of the extreme ends of the row. The number of persons sit to the right of R is same as the number of persons sit to the left of O. O sits seventh to the left of M. One person sit between O and N.",
+   "options": [
+    "6th to the left",
+    "6th to the right",
+    "8th to the left",
+    "5th to the right",
+    "7th to the left"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e576697beddfaf7982c57d82801587ae93003892b61c9a35ef19ba460e08ffff"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": ". How many persons sit in this row? Study the following information carefully and answer the questions given below: A certain number of persons sit in a linear row and face north. C sits third to the right of G. Five persons sit between G and K. R sits second to the right of K. Two persons sit between R and M who sits second from one of the extreme ends of the row. The number of persons sit to the right of R is same as the number of persons sit to the left of O. O sits seventh to the left of M. One person sit between O and N.",
+   "options": [
+    "12",
+    "11",
+    "22",
+    "13",
+    "14"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cd353ac07c07afd582d61f7aa9ddc9a5539137d55c99c181c1bac6e3f4f7e865"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Statements: F ≥ G < H = I, J ≤ K = H > LConclusions: I. F > L II. I ≤ J The statements given below establish the relationships among certain elements. They are followed by two conclusions, numbered I and II. Determine which conclusion(s) logically follow(s) and choose the correct answer.",
+   "options": [
+    "If only conclusion I is true.",
+    "If only conclusion II is true.",
+    "If either conclusion I or II is true.",
+    "If both conclusions I and II are true.",
+    "If neither conclusion I nor II is true."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "415b8e4d18f6cb79416f862ae39be728553a305859d174d2e094c0a78fa4b935"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "The following statements describe the relationships among certain elements. Read them carefully and identify which of the conclusions, I and II, logically follow(s). Statements: A = B > C < D, E ≥ F = C ≤ G Conclusions: I. B > F II. E < D",
+   "options": [
+    "If only conclusion I is true.",
+    "If only conclusion II is true.",
+    "If either conclusion I or II is true.",
+    "If both conclusions I and II are true.",
+    "If neither conclusion I nor II is true."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8214798e399470f7e12c659534393866e18cf18f4d954b825612b574c9238914"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "The statements given below establish the relationships among certain elements. They are followed by two conclusions, numbered I and II. Determine which conclusion(s) logically follow(s) and choose the correct answer. Statements: H < K = L > M, N ≤ O > P = L Conclusions: I. H < O II. M > N",
+   "options": [
+    "If only conclusion I is true.",
+    "If only conclusion II is true.",
+    "If either conclusion I or II is true.",
+    "If both conclusions I and II are true.",
+    "If neither conclusion I nor II is true."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "930ef1e1aa2f12eb1bfa461ef8cbd4b6cafeb94a7caa6590fd730fda61ecfb54"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "If a four-letter meaningful word is formed by using the first, fifth, eighth and ninth letters from the left end of the word \"CONDITION\", then what will be the second letter from the left end of that meaningful word? If more than one meaningful word is formed, mark the answer as Y and if no meaningful word is formed, mark the answer as Z.",
+   "options": [
+    "C",
+    "O",
+    "Z",
+    "I",
+    "Y"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b19ffdc3280ef9f38bd0f5d9f50d5f64a05888842e2e5c319110ff9ccd46387e"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "What is the shortest distance between W and M? Study the following information carefully and answer the questions given below. S is 8m south of W. X is 5m east of S. N is 6m east of M which is 4m south of X. N is 9m north of V. G is 6m west of V. O is 3m north of G. Q is 5m west of O. P is 6m north of Q.",
+   "options": [
+    "16m",
+    "18m",
+    "14m",
+    "13m",
+    "10m"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e6566cc91dc56c7610a23f940f029f7bcfa3c1f268969cc838af1e93b9f3e01e"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "In which direction is S with respect to V? Study the following information carefully and answer the questions given below. S is 8m south of W. X is 5m east of S. N is 6m east of M which is 4m south of X. N is 9m north of V. G is 6m west of V. O is 3m north of G. Q is 5m west of O. P is 6m north of Q.",
+   "options": [
+    "North",
+    "North-east",
+    "South",
+    "South-west",
+    "North-west"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e7f127c5e7c1bb2007e8c767324bf7d076573b4459ce2caa34470475224cb6ac"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence form a group. Which among the following does not belong to that group? Study the following information carefully and answer the questions given below. S is 8m south of W. X is 5m east of S. N is 6m east of M which is 4m south of X. N is 9m north of V. G is 6m west of V. O is 3m north of G. Q is 5m west of O. P is 6m north of Q.",
+   "options": [
+    "W-N",
+    "S-V",
+    "P-G",
+    "Q-V",
+    "G-N"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2293ea737d6f2fcfa5fff6e58a5f0c1f6af7c1776366c8b84d8aa50a60f5614e"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "In the number ‘49583682’, how many pairs of the digits have the same number between them (both forward and backward direction) in the number series?",
+   "options": [
+    "None",
+    "One",
+    "Three",
+    "Two",
+    "More than three"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1e9c00ece41dc45a90160c8168ac7cf4c90e1ffa451f7d4ca0879227f6a4c230"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence form a group. Which one does not belong to the group? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G and H – live in a four-storey building. The ground floor is numbered 1, the floor above it is 2, then 3, and the topmost floor is numbered 4. Each floor has two flats – Flat P and Flat Q. Flat P is to the west of Flat Q. Flat P of Floor 2 is immediately above Flat P of Floor 1 and immediately below Flat P of Floor 3, and so on. Similarly, Flat Q of Floor 2 is immediately above Flat Q of Floor 1 and immediately below Flat Q of Floor 3. D lives on an odd number floor two floors above H. D and H live in the different named flat. F lives above D. C lives to the south west of F. One floor gap is there between C’s floor and A’s floor. C and A live in the different named flat. C’s flat is immediately above E’s flat. B lives above G.",
+   "options": [
+    "D",
+    "C",
+    "H",
+    "E",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f52438f4018f451eed94b98e17cf7b44e886df5c231cbd24e146b2e14d09336d"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Which of the following combination is/are correct? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G and H – live in a four-storey building. The ground floor is numbered 1, the floor above it is 2, then 3, and the topmost floor is numbered 4. Each floor has two flats – Flat P and Flat Q. Flat P is to the west of Flat Q. Flat P of Floor 2 is immediately above Flat P of Floor 1 and immediately below Flat P of Floor 3, and so on. Similarly, Flat Q of Floor 2 is immediately above Flat Q of Floor 1 and immediately below Flat Q of Floor 3. D lives on an odd number floor two floors above H. D and H live in the different named flat. F lives above D. C lives to the south west of F. One floor gap is there between C’s floor and A’s floor. C and A live in the different named flat. C’s flat is immediately above E’s flat. B lives above G.",
+   "options": [
+    "C - Floor 1, Flat P",
+    "E – Floor 2, Flat Q",
+    "D - Floor 3, Flat P",
+    "G – Floor 2, Flat Q",
+    "H – Floor 1, Flat Q"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0bd1c33beafa89b740bd3bfab241a4640c5b4c45323719b22c2e7ba5e0ba2cda"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who lives in the same floor as E? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G and H – live in a four-storey building. The ground floor is numbered 1, the floor above it is 2, then 3, and the topmost floor is numbered 4. Each floor has two flats – Flat P and Flat Q. Flat P is to the west of Flat Q. Flat P of Floor 2 is immediately above Flat P of Floor 1 and immediately below Flat P of Floor 3, and so on. Similarly, Flat Q of Floor 2 is immediately above Flat Q of Floor 1 and immediately below Flat Q of Floor 3. D lives on an odd number floor two floors above H. D and H live in the different named flat. F lives above D. C lives to the south west of F. One floor gap is there between C’s floor and A’s floor. C and A live in the different named flat. C’s flat is immediately above E’s flat. B lives above G.",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "F",
+    "G"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8da88818a2c437ad85f3abae1a9bc4b0634d0a3c5488812a4c3a303b3e17abc1"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "In which direction does F lives with respect to A? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G and H – live in a four-storey building. The ground floor is numbered 1, the floor above it is 2, then 3, and the topmost floor is numbered 4. Each floor has two flats – Flat P and Flat Q. Flat P is to the west of Flat Q. Flat P of Floor 2 is immediately above Flat P of Floor 1 and immediately below Flat P of Floor 3, and so on. Similarly, Flat Q of Floor 2 is immediately above Flat Q of Floor 1 and immediately below Flat Q of Floor 3. D lives on an odd number floor two floors above H. D and H live in the different named flat. F lives above D. C lives to the south west of F. One floor gap is there between C’s floor and A’s floor. C and A live in the different named flat. C’s flat is immediately above E’s flat. B lives above G.",
+   "options": [
+    "North-East",
+    "East",
+    "North",
+    "South-East",
+    "North-West"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7001467fb9a2a65c2f71996173249d6eec201b7d9d06edf4359320ec7881f30a"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "What is the sum of the floor numbers of C, G and H? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G and H – live in a four-storey building. The ground floor is numbered 1, the floor above it is 2, then 3, and the topmost floor is numbered 4. Each floor has two flats – Flat P and Flat Q. Flat P is to the west of Flat Q. Flat P of Floor 2 is immediately above Flat P of Floor 1 and immediately below Flat P of Floor 3, and so on. Similarly, Flat Q of Floor 2 is immediately above Flat Q of Floor 1 and immediately below Flat Q of Floor 3. D lives on an odd number floor two floors above H. D and H live in the different named flat. F lives above D. C lives to the south west of F. One floor gap is there between C’s floor and A’s floor. C and A live in the different named flat. C’s flat is immediately above E’s flat. B lives above G.",
+   "options": [
+    "3",
+    "6",
+    "4",
+    "5",
+    "8"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1242e6ea88d382a8962863768cfaae1bddf172750965be18e84abac67e3e372d"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "In the word \"BLUEBERRY\", all the letters that come before 'O' in the alphabetical series are replaced with their immediate succeeding letter, while the remaining letters remain unchanged. After that, all the letters are arranged in alphabetical order from left to right. Which letter is third from the right end in the new arrangement?",
+   "options": [
+    "F",
+    "M",
+    "R",
+    "C",
+    "U"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "96ea7eec6b66957469a50efc8ed6d90f0e9f562983a41bba6293f908582cc627"
+  }
+ ],
+ "section_confidence": 0.947,
+ "section_order": [
+  "numerical_ability",
+  "english",
+  "reasoning"
+ ]
+}

@@ -1,0 +1,1487 @@
+{
+ "file": "fc51a51c5ccbba77bc0768f35997efab.pdf",
+ "format": "prepp",
+ "accepted": 98,
+ "rejected": 2,
+ "reasons": {
+  "empty_or_short_stem": 2
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. We didn't have a /(A) lot of success with /(B) the garden, but /(C) we worked hard on it. /(D) No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3dafd8557dd5395f7f0e1666e837c9c77cd0736e9e50d03cacf3188c9adea8ba"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. Rarely I had seen such /(A) a ramshackle boat and /(B) never had I actually been /(C) expected to get on board one. /(D) No error /(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f2defe2aab2a0191caee4b8ec50e596a55b264aa3901e564463aca2a92d7b6fc"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. The film is set in the period /(A) where the divide between the /(B) rich and the poor was much /(C) greater than it is now. /(D) No error/(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4a6b73fc2bd2d03af5b0c071ed76c10b2851f538fbfde5f57339bb76f7ba401f"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. If he would have waited /(A) a bit longer, we /(B) would have given /(C) him the result. /(D)No error/(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2370a6368373d49420cc76669b9b05dd0324eb5959aba2fcbc19b4c00bb106b5"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". As I walked past the church I heard someone to play Handel's 'Messiah' on the organ.",
+   "options": [
+    "Playing",
+    "Played",
+    "To being played",
+    "to have been played",
+    "No Improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0890bceff3285f38540eb58061d8c505c9768ffcad59b5f38303508ef961d22e"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". How long had been you living there before the war broke out?",
+   "options": [
+    "had you been living",
+    "you had been living",
+    "have you been living",
+    "had you being living",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "591aa15c69754ebec8a2d317f44828ca8c28703d17b9b840078529021b11a4ee"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". Lester and Graves were more hardworking and more determined than the others.",
+   "options": [
+    "more hardworking and determined",
+    "hardworking and more determined",
+    "more hard work and determine",
+    "most hardworking and most determined",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "42b73d9e6f659a089473c0bd75960aa00db7d5d71b1492ed2fd1eb22d1179402"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". The closer students get to their exams, the most nervous they become.",
+   "options": [
+    "The more nervous they become",
+    "The most nervously they become",
+    "more nervous they become",
+    "nervous they become",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dfacd31b523b575c797266019e844ed884c7ae4a3f06b737f265079c2b41746d"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". The majority of the people was pleased to see the government fall.",
+   "options": [
+    "The majority of the people were",
+    "The majority of the people is",
+    "The majority of the people be",
+    "The majority of the people has",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "32823453096f49ac8359b34424c703d24636b73ef48b164bd3ed74efd77a1287"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "In the following sentence, four words have been printed in bold. One of these words might either be wrongly spelt or inappropriate in the context of the sentence. Find out the word that is inappropriate or wrongly spelt, if any. If the words printed in bold are correctly spelt and appropriate in the context of the sentence then mark (5) i.e. ‘all correct’ as your answer. Decades-old advice about alcohol has recently come under fire, with two recent studies sugesting that even a moderate drinking habit may raise the risk of early death.",
+   "options": [
+    "Decades",
+    "Recently",
+    "Sugesting",
+    "Moderate",
+    "All correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "36f4d9eb804eb60b5287a8788e123ab0207e819fa56d2ccafa7238a955d331f7"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "In the following sentence, four words have been printed in bold. One of these words might either be wrongly spelt or inappropriate in the context of the sentence. Find out the word that is inappropriate or wrongly spelt, if any. If the words printed in bold are correctly spelt and appropriate in the context of the sentence then mark (5) i.e. ‘all correct’ as your answer. The state has sought to boost this component of the prime minister’s scheme by launching a separate public- private partnership modal of affordable housing in January.",
+   "options": [
+    "Sought",
+    "Launching",
+    "Modal",
+    "Affordable",
+    "All correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5912a03cf7399c4df507ef4d3acd69710bacf3707b641db52b5801ad3963d3d6"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "In the following sentence, four words have been printed in bold. One of these words might either be wrongly spelt or inappropriate in the context of the sentence. Find out the word that is inappropriate or wrongly spelt, if any. If the words printed in bold are correctly spelt and appropriate in the context of the sentence then mark (5) i.e. ‘all correct’ as your answer. The Election Commission should not allow room for controversy that erodes its image and opens doors for citicism.",
+   "options": [
+    "Commission",
+    "Controversy",
+    "Erodes",
+    "Citicism",
+    "All correct"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cfa77c758570bda877994dbcb7cff29ddfb6645e217642139b0490bdc9047d13"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "In the following sentence, a part of the sentence has been printed in bold. One of the bold parts is not acceptable in Standard English. Pick up that part and mark its number. If there is no error in the bold parts, mark (5) i.e. ''No Error'' as the answer. There were some figures upon a sheet of paper, with the names of some club friends opposite to them, from which it was conjecturred that before his death he was endeavouring to make out his losses or winnings at cards.",
+   "options": [
+    "Sheet",
+    "Opposite",
+    "Conjecturred",
+    "Endeavouring",
+    "No Error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "13625ae9b8a9d6d789443751fdcd563ec8fbcd4f65ef115c11f547336ba92984"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. Ralph was trying very hard to reach the ________of the mountain, but he fainted from a lack of oxygen.",
+   "options": [
+    "Trophy",
+    "Galaxy",
+    "Valley",
+    "Pinnacle",
+    "Trough"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f3864f39cdf1c48a40f6a4981bbe1a0e35b86f32ea966e6669f54deaa990b9d1"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Fill in the blank with an appropriate word. There were ________ scenes in the courtroom as the famous actor was pronounced guilty and sent to prison.",
+   "options": [
+    "Serene",
+    "Tepid",
+    "Mellifluous",
+    "Acrimonious",
+    "Superfluous"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6b82999716b98d6d9e36f52b7a62b9c2b29c0e2a9ce354503b40ea13a111e927"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Fill in the blank with an appropriate word. Almost all observers are not very ________ about the future of the India-Pakistan relationship and many believe some form of conflict between the two countries is inevitable.",
+   "options": [
+    "Sanguine",
+    "Dispirited",
+    "Germane",
+    "Pessimistic",
+    "Anxious"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dc58172952dc4ecfbb43331e99d863d625062670c62304c7901b1fe4a677b7d6"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Using traditional modelling and machine learning ________, researchers in the UK and the USA are working on predicting regions where conflicts could occur in the future.",
+   "options": [
+    "Paradigms",
+    "Methodologies",
+    "Combinations",
+    "Analyses",
+    "Tools"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "998a7bfea2e7741e61e7f8cfe2a7c0c7383b6d95262cfbb979c338cb72e74a2b"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Fill in the blank with an appropriate word. The new government has to quickly formulate policies that will ________ the private sector to invest and create jobs as unemployment is at an all time high.",
+   "options": [
+    "Activate",
+    "Fulminate",
+    "Motivate",
+    "Eradicate",
+    "Eliminate"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f6dcadcc3cd233760470fb2f12051739fd144a100c948acef1fd3e11f9cc93cf"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Below are given some sentences out of which the sentence numbered 4 has been correctly placed. The rest of the sentences A,B,C,D,E,F need to be arranged correctly in order to form a logical order. A. Cover and move the bowl to a warm place and allow it to set for 6-10 hours. B. Rinse a pot well as this reduces the chance of milk solids getting stuck to the bottom. C. When the curd is set, move it to a refrigerator.",
+   "options": [
+    "F",
+    "C",
+    "E",
+    "A",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d7566053e3e9ef67acccad0d7074559fbd7966b334245f3fb05a862d695e3a1a"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Below are given some sentences out of which the sentence numbered 4 has been correctly placed. The rest of the sentences A,B,C,D,E,F need to be arranged correctly in order to form a logical order. A. Cover and move the bowl to a warm place and allow it to set for 6-10 hours. B. Rinse a pot well as this reduces the chance of milk solids getting stuck to the bottom. C. When the curd is set, move it to a refrigerator.\n\nWhich of the following is the SIXTH statement?",
+   "options": [
+    "F",
+    "D",
+    "E",
+    "A",
+    "B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2086a0b67776138f4d47fa59f362222b1ad3f18cb8b899bbe0d842fa666c0ba8"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Which of the following is the SECOND statement?",
+   "options": [
+    "F",
+    "D",
+    "E",
+    "A",
+    "B"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "eebff1b7e507a78a1d4ad4b1080347e10755e32520f3d9c3af50adba600c8d29"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Which of the following is the FIRST statement?",
+   "options": [
+    "F",
+    "D",
+    "E",
+    "A",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7aeb3cd4a83d9f7799df390451d6ea9894eb777a4a42fc3af39ba6aa9acbf29e"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Directions: Read the following passage and answer the questions given below. Biodiversity for food and agriculture is among the earth’s most important resources. Crops, farm animals, aquatic organisms, forest trees, micro-organisms, and invertebrates – thousands of species and their genetic variability make up the web of biodiversity in ecosystems that the world’s food production depends on. Biodiversity is indispensable, be it insects pollinating plants, microscopic bacteria needed for making cheese, diverse breeds of livestock needed for making a living even in the harshest of environments, or the thousands of varieties of crops that sustain food security worldwide. For thousands of years, humankind has used, developed, and relied on biodiversity for food and agriculture. Biodiversity, and in particular genetic diversity, is being lost at an alarming rate. With the erosion of these resources, mankind loses the potential to adapt to new socio-economic and environmental conditions, such as population growth and climate change. Maintaining biodiversity for food and agriculture is a global responsibility. Risking biodiversity to man-made or other factors will always lead to an extremely large scale famine of sheer magnitude. The FAO Commission on Genetic Resources for Food and Agriculture is an international forum that specifically deals with all components of biodiversity for sustaining food and agriculture. The importance of agricultural biodiversity encompasses socio-cultural, economic, and environmental elements. All domesticated crops and animals result from the management of biodiversity, which is constantly responding to new challenges to maintain and increase productivity under constantly varying conditions and population pressures. Agricultural biodiversity is essential to satisfy basic human needs for food and livelihood security. Biodiversity, food, and nutrition interact on a number of key issues. It contributes directly to food security, nutrition, and well-being by providing a variety of plants and animals from domesticated and wild sources. Biodiversity can also serve as a safety-net to vulnerable households relying on it during times of crisis, provide income opportunities to the rural poor, and sustain productive agricultural ecosystems. Coping mechanisms based on indigenous plants are particularly important for the most vulnerable people who have little access to formal employment, land, or market opportunities. Wild indigenous plants provide alternate sources of food when harvests fail. Choose the word closest in meaning to the word Famine:",
+   "options": [
+    "Abundance",
+    "Avid",
+    "Deprivation",
+    "Thirst",
+    "Magnitude"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c28226587e5e5add2222c582589fdd63c8d4ad370842c9f715ac73558cfb78fc"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Directions: Read the following passage and answer the questions given below. Biodiversity for food and agriculture is among the earth’s most important resources. Crops, farm animals, aquatic organisms, forest trees, micro-organisms, and invertebrates – thousands of species and their genetic variability make up the web of biodiversity in ecosystems that the world’s food production depends on. Biodiversity is indispensable, be it insects pollinating plants, microscopic bacteria needed for making cheese, diverse breeds of livestock needed for making a living even in the harshest of environments, or the thousands of varieties of crops that sustain food security worldwide. For thousands of years, humankind has used, developed, and relied on biodiversity for food and agriculture. Biodiversity, and in particular genetic diversity, is being lost at an alarming rate. With the erosion of these resources, mankind loses the potential to adapt to new socio-economic and environmental conditions, such as population growth and climate change. Maintaining biodiversity for food and agriculture is a global responsibility. Risking biodiversity to man-made or other factors will always lead to an extremely large scale famine of sheer magnitude. The FAO Commission on Genetic Resources for Food and Agriculture is an international forum that specifically deals with all components of biodiversity for sustaining food and agriculture. The importance of agricultural biodiversity encompasses socio-cultural, economic, and environmental elements. All domesticated crops and animals result from the management of biodiversity, which is constantly responding to new challenges to maintain and increase productivity under constantly varying conditions and population pressures. Agricultural biodiversity is essential to satisfy basic human needs for food and livelihood security. Biodiversity, food, and nutrition interact on a number of key issues. It contributes directly to food security, nutrition, and well-being by providing a variety of plants and animals from domesticated and wild sources. Biodiversity can also serve as a safety-net to vulnerable households relying on it during times of crisis, provide income opportunities to the rural poor, and sustain productive agricultural ecosystems. Coping mechanisms based on indigenous plants are particularly important for the most vulnerable people who have little access to formal employment, land, or market opportunities. Wild indigenous plants provide alternate sources of food when harvests fail. Choose the word closest in meaning to the word Famine:\n\nWhat is the correct synonym of the word Relying.",
+   "options": [
+    "Depending",
+    "Scolding",
+    "Enjoying",
+    "Anticipating",
+    "Dejecting"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e7d92e2dd45a3115e9bfabb827fc9f5f394a3df82a4eed4f9e5e37159d193419"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Choose the word opposite in meaning to the word Sustaining",
+   "options": [
+    "Providing",
+    "Skirmishing",
+    "Comforting",
+    "Cheering",
+    "Abandoning"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "52507319ea9a72b20f1602bf8653c3d209f05757bc689dd1bffda4ba6a2f54e3"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "What happens when the Biodiversity is lost at an alarming rate?",
+   "options": [
+    "Mankind will adapt to new socio-economic systems",
+    "Artificial and genetically modified system will be engineered.",
+    "The potential to adapt to new socio-economic conditions is lost.",
+    "Massive droughts will cause food shortages.",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "26771cb48b437bde821bf2a18c85fb0a84383a672f287073719919e4900590be"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Which of the following statement is true according to the passage?",
+   "options": [
+    "Biodiversity helps to sustain the vulnerable households",
+    "Provides income opportunities to the rural poor",
+    "Sustains productive agricultural ecosystems",
+    "None of the above",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e5b45a3895ae1c3d7a3649442b0b1d6b5dbaf358adf0ddab885d2af1c365836c"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Agricultural biodiversity encompasses which of the following?",
+   "options": [
+    "Social elements",
+    "Environmental elements",
+    "Cultural elements",
+    "Economic elements",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3b8893b2f28120afb673028f19be3b80fb78d4a1e8abdfb27e8f26ec7cb54bfc"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which of the following is not true according to the passage?",
+   "options": [
+    "Coping mechanisms based on Indigenous plants are important for vulnerable people",
+    "Rural poor destroys biodiversity through deforestation",
+    "Thousands of species and Genetic variability makes up the net of Biodiversity",
+    "Biodiversity is constantly responding to new challenges to maintain and increase productivity",
+    "Satisfying basic human needs for food requires Biodiversity"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8cb747f4fedfc67daa834e0c633c86d7e2a887e20d46723f44173373a686b3fc"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Based on the given data answer the following questions given below: The following bar graph given below shows the number of shirt sold by 5 different shops. If the ratio of number of casual shirts to formal shirts sold by shop C is 5 : 3 then find the total number of formal shirts.",
+   "options": [
+    "12000",
+    "15000",
+    "9000",
+    "6000",
+    "18000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6ceaa24e86027b8d082c124c74283cbf2bac9fcaf517cebd397e83fdab8f19e6"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "If the ratio of casual and formal shirts sold by shop B is 3 : 1 and the ratio of casual and formal shirt sold by shop E is 1 : 3 then find the ratio of casual and formal shirts sold by both shops.",
+   "options": [
+    "7 : 6",
+    "4 : 3",
+    "3 : 5",
+    "9 : 7",
+    "2 : 3"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "55526e52e91950ba4f9e819a08e101626a2dd3aa6f6178707c61c15c8a46a091"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "Find the average number of shirts sold by all the shop together.",
+   "options": [
+    "16000",
+    "18000",
+    "20000",
+    "12000",
+    "15000"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "edbc9a43ba3f5cdbc7241c7cc133ae929fda73b3fe59ad2290e9e504cbfb9155"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio of shirts sold by B and E together to A and C together.",
+   "options": [
+    "3 : 2",
+    "4 : 5",
+    "1 : 2",
+    "1 : 3",
+    "5 : 6"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "58e9f84cebbba9089789d5b47fa45c8d5b0d0ddd52a075785df5eb6b98de523d"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "Find the shirts sold by shop A is how much percent more or less than shirts sold by shop E.",
+   "options": [
+    "33.33% more",
+    "25% more",
+    "25% less",
+    "33.33% less",
+    "50% more"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ac0451728eed3228ee0a9fa2d5f8051d253f8d92ac5e971c8e8083c8fa154961"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "The length and breadth of a rectangle are in the ratio of 5 : 3 and perimeter is 48 cm then find the area of the rectangle.",
+   "options": [
+    "135 cm2",
+    "120 cm2",
+    "150 cm2",
+    "105 cm2",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a1acd68030f1f3c2a6a9f29146b30dbbf10a7ec0a68699128c7520f1b0f4b77c"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "If 8 years ago, the ratio of age of A and B was 2 : 3 and 2 years hence age will be 3 : 4 then what is the present age of A?",
+   "options": [
+    "30 years",
+    "38 years",
+    "28 years",
+    "34 years",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "05e84da7d22c16a039fb1411812ad496fa861c5a30942829a6634d562842c0bf"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "1, 5, 20, 57, 121, 221, 365",
+   "options": [
+    "57",
+    "20",
+    "121",
+    "5",
+    "365"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d501771753e84613f707385289c9ab70e94f6217b8abadaa09df62488ef7cc42"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "A shopkeeper has increased the cost price of an article by Rs. 240 and gives discount of 20%. If he still makes the profit of Rs. 96, then find the cost price of the article.",
+   "options": [
+    "Rs. 586",
+    "Rs. 720",
+    "Rs. 500",
+    "Rs. 600",
+    "Rs. 480"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "cbd6e79d6f8318f7b06fcc4a42ea2f4a834c16e32e3adccac1241033dbb2eaed"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "A person invests 50% of his salary in a fixed deposit. Out of the remaining salary, he pays 10% for rent, spends 60% on miscellaneous expenditure, and saves Rs. 7200. What will be the salary of the person?",
+   "options": [
+    "Rs. 24000",
+    "Rs. 4800",
+    "Rs. 48000",
+    "Rs. 60000",
+    "Rs. 72000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ea0514290f2f6e53b0a111c580fdd618c84303465d751717124fd398902ffd9b"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong number in the series 7, 3.5, 3.5, 7, 29, 224",
+   "options": [
+    "7",
+    "29",
+    "224",
+    "3.5",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7032aa0a8330e1937e86acfe9c284a80aaf46c89ed206abbe8485d74dab1b13f"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "A join a business with Rs. 15600 and after 8 months B joins with Rs. 20800. The total profit at the end of the year is Rs. 195000, then B’s profit share is:",
+   "options": [
+    "Rs. 65000",
+    "Rs. 57000",
+    "Rs. 62000",
+    "Rs. 60000",
+    "Rs. 55000"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fe9314839b2093f9a81fb6b1f6e70bcbb9da8c1e75d940b15193ef1c6e9cc8a4"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following questions? 133 + 253 = ? - 242",
+   "options": [
+    "17,282",
+    "18,398",
+    "19,773",
+    "14,364",
+    "15,542"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "709fb81cace1792536e7131b168e13ce7be6d7e1c41ecb2bfde3d4ee5d27aaa9"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "In 240 litre mixture, 200 litre is milk and rest is water. If 30 litre mixture is taken out and 5 litre milk and 5 litre water is added again, then find the quantity of milk in final mixture.",
+   "options": [
+    "100 litre",
+    "200 litre",
+    "180 litre",
+    "40 litre",
+    "175 litre"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5a0a67c450c0347691a18ca57aa474b7751e7f187645a512800857609b74ef17"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place (?) in the following equation 2 × 5 - 15 of (1/3) + 3 = ?",
+   "options": [
+    "8",
+    "12",
+    "15",
+    "3",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "fda17791acb9e1a323486d0658ac2cfe723dfbb90c045d09ca2baac4abf62e4d"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘x’ in the following question? ∛1331 - √121+ 144 = (12)x",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "4",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f93a9050b3e7ebe6ffef924e7f6a3d0ba3e15ac123ec111a896244fb678e4b85"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘x’ in the following question? √400 + (20)2 - 388 = 2x",
+   "options": [
+    "5",
+    "4",
+    "32",
+    "8",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "af0a703200acfa4ff6b2c2049533741ecd8e93769ab6acc75a4f80acc2430db0"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "Simplify : 12 ÷ 2 + 15 - 3 - 2 × 4",
+   "options": [
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9ae138ad3a76c5b7fd648112eee0f2b30d01e70de01e6cdfa1533b160143b579"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What is the interest earned if Rs. 40000 is compounded annually at 12.5% p.a. for 2 years?",
+   "options": [
+    "Rs. 10000",
+    "Rs. 5000",
+    "Rs. 10025",
+    "Rs. 5625",
+    "Rs. 10625"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b63c7e6a78689f086236246a07f94f3152a07ba290b92024969693fc7a92d0a6"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘?’ in the following equation. 15% of 40 - 20% of 75 + 12.5% of 80 = ?",
+   "options": [
+    "0",
+    "1",
+    "15",
+    "5",
+    "10"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0e9fbaaefed4c906f983af3b22ab6b9b60a3aa8bde28903120a1ecc3601e1c35"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark (?) in the question? 25.25 + 0.5 × 2.5 + 32.5 = ?",
+   "options": [
+    "60",
+    "76",
+    "55",
+    "45",
+    "59"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "191140f5d448c6e9a296a9dd37376f23305d776768b98fbd5606534d7c3bb72d"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark(?) in the following questions? 1/2 - 3/5 + 14/3 = ? + 5/6",
+   "options": [
+    "56/15",
+    "53/15",
+    "52/15",
+    "49/15",
+    "47/15"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f185c3141c0f68a2ccf0e5a0cd046989393e760ddad55f8f95642817b37f78e8"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "player of age 22 joins the team, what will be the new average age of team?",
+   "options": [
+    "23 years",
+    "21. years",
+    "22 years",
+    "23.5 years",
+    "22.5 years"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b1e4d8e1a0f0e1020e0ec12e61975dc73694fea699b58754191e9a6739c8a62f"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "A train moving at speed of 36 km/hr crosses a platform in 30 secs. If the length of platform is equal to 20% of length of train, then find the length of platform.",
+   "options": [
+    "50 km",
+    "300 m",
+    "50 m",
+    "30 m",
+    "90 m"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e6f74da8e016ef055903fa6e0eba94affb18e2018706dc19b573bfefc35a1680"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "In the following number series, a wrong number is given. Find out the wrong number. 10, 30, 60, 130, 222",
+   "options": [
+    "60",
+    "222",
+    "30",
+    "130",
+    "10"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "28fb1b7ee33a4abdd25e9732e72df439010ec3085aa5c2fc26139b87fa97d0da"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "In the following number series, a wrong number is given. Find out the wrong number. 16, 26, 39, 52, 68",
+   "options": [
+    "16",
+    "26",
+    "39",
+    "52",
+    "68"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c9c9e8643191c1fae3743e39eb90162e37c9f70691157fbb18c9f0e3145e2e7e"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "A is 15% more efficient than B. B can do 75% of the work in 86 days. In how many days both A and B working together can complete the work?",
+   "options": [
+    "123/5 days",
+    "160/3 days",
+    "150/7 days",
+    "170/9 days",
+    "143/3 days"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ba9d260d798706bd903a606a43e8d2e8a831de57e77a04eb8829099435eea3ab"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "32% of ? = 3596 - 832",
+   "options": [
+    "520.5",
+    "7900",
+    "684.5",
+    "8637.5",
+    "6800"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "360771de32714f99191874e0351e0025fb60272f96bf3d3b0e21a2be223cdf01"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "A boat can cover a distance of 16 km in 4 hours while going upstream. If the speed is thrice while going downstream, find the speed of the stream.",
+   "options": [
+    "4 km/h",
+    "8 km/h",
+    "6 km/h",
+    "3 km/h",
+    "10 km/h"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "568c81011a221e1be7073d3b3a21e3c79f901f02b88c515a984b55a75c5b9bb7"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What is the value of ? 45% of 150 + 35% of 70 = ?",
+   "options": [
+    "83",
+    "79",
+    "92",
+    "99",
+    "89"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "01217f7071d12dab3741012f41e3bf96300c6a8bdbe1f04c3fbb22928017e0b0"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "Simplify the expression : - (2/3) + (4/7) - (1/3) - (19/21)",
+   "options": [
+    "0",
+    "3",
+    "6",
+    "8",
+    "10"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b9f303c7e8a8139a086d162781e5c22c7b78eb105f3f21896398d2d9a703c9af"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 35% of √400 + 150 = ? + √121",
+   "options": [
+    "130",
+    "135",
+    "146",
+    "150",
+    "200"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "909fbdf786e8d2f975487a290c68371a6d4fce15155f5c0e18105fc5285eb9cf"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "50% of √144 + 251 + 112 = ?",
+   "options": [
+    "270",
+    "320",
+    "340",
+    "369",
+    "400"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "87e5d28e93070cd38d42880988c6ab1fc4c9d8e81840c9494d9caa3f45a865f2"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘?’ in the following equation. (10 × 7 + 8 of 10)/(36 ÷ 3 - 7) = ?",
+   "options": [
+    "15",
+    "20",
+    "30",
+    "6",
+    "10"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "563b36383110877436b0cb27d63a289043ace9af284daff0907e623a79490266"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong number in the series 145, 172, 201, 232, 266",
+   "options": [
+    "232",
+    "145",
+    "201",
+    "266",
+    "172"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "458dcb58e8825b21cc965589bed3bff3a6fad2f8738fd1389aa5c0f786d7aaeb"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information and answer the given questions: Eight persons A, B, C, D, E, F, G, and H are seated around a circular table facing towards the centre with equal distance between them but not necessarily in the same order. Two persons were sitting between A and B. C was sitting second to the left of B. Three people were sitting between E and F but F was not adjacent to C. Neither D nor G is sitting opposite C. B and H are immediate neighbours of D. Who was sitting third to the right of D?",
+   "options": [
+    "B",
+    "A",
+    "G",
+    "H",
+    "C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e5243bf28aa191b29b186793971770e790699d7f3c2b2d9cce576b1834beed03"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "If all the persons are made to sit in the alphabetical order i.e., from A to Z in the anticlockwise direction, then the positions of how many persons will remain unchanged in the new arrangement, excluding A?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "707137c4b385b69804c19cad027e0a0cc120118b96ef3bd5fe1d7df1b4fc9ef1"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Who is sitting at the immediate right of C?",
+   "options": [
+    "A",
+    "B",
+    "F",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "bf686aafd2db47e071f8680b1b4000536e707c623babe324a243e36c5eabe668"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Who among the following is sitting opposite D?",
+   "options": [
+    "G",
+    "A",
+    "C",
+    "H",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "19296a4f0e4aac25ba26224a04c86a8b2ddc4fb7ed2368e58244b8b72c445298"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Four of the five are alike in a certain way and thus form a group. Find the one that does not belong to that group.",
+   "options": [
+    "BG",
+    "EF",
+    "AG",
+    "CH",
+    "AD"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1946ae6fea17c87048cfbea3065ca43a676866209b2b9ef7c8e97bb3a8079a3f"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "If in a certain code language, IMPETUS is written as JLQDUTT and PENSIVE is written as QDORJUF, then how will CHANGED be written in that language?",
+   "options": [
+    "DGBMHDP",
+    "DGBMHDN",
+    "DGBMHED",
+    "DGBMHDE",
+    "DEVGHRN"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "21ea22700133e8e0f8fe42a39c14c1623c8e0cd739d364d652bdd8611c4b4d1f"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions: There is seven persons in the family. W is the daughter of T and aunt of X who is female. J is the only son of V and father of X. W is unmarried sister of N, who is daughter of L . T is not the father in law of J. How V is related to X?",
+   "options": [
+    "Paternal Grandfather",
+    "Maternal Grandfather",
+    "Paternal Grandmother",
+    "Maternal Grandmother",
+    "Cannot be determined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7fd890e7f67bebd6f2ec010fd0da8c59aa63b36a0c5675caa06767ed06e3f330"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "How J is related to W?",
+   "options": [
+    "Husband",
+    "Brother",
+    "Sister",
+    "Brother in law",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "07072b2bba39fb321858f77afe726148ce20e005d75adde58312a37e0b1b28e4"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "If J has one sibling, then how that sibling is related to N?",
+   "options": [
+    "Brother",
+    "Sister",
+    "Sister in law",
+    "Brother in law",
+    "Cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d4b79eeb6686281677561aa29bfc1861b05ad4e435c94355efa168868b4bcea0"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions: Ten people A, B, C, D, E, P, Q, R, S, and T are sitting in two parallel rows facing each other. A, B, C, D, and E are sitting in first row and facing towards south direction and P, Q, R, S and T are sitting in second row and facing towards the north direction. Q is sitting at one of an extreme end of the row. Only one person is sitting between Q and S. The person who is facing S is sitting on the immediate left of D. Neither R nor S faces C. T is an immediate neighbor of S and P. The person who faces Q will not sit on the left of A. A sit third to the left of E. Who faces S?",
+   "options": [
+    "D",
+    "A",
+    "C",
+    "B",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "708652f0e372c323aa473714c66ea3994a188a83554ca55ff1a53d1dda328a4b"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions: Ten people A, B, C, D, E, P, Q, R, S, and T are sitting in two parallel rows facing each other. A, B, C, D, and E are sitting in first row and facing towards south direction and P, Q, R, S and T are sitting in second row and facing towards the north direction. Q is sitting at one of an extreme end of the row. Only one person is sitting between Q and S. The person who is facing S is sitting on the immediate left of D. Neither R nor S faces C. T is an immediate neighbor of S and P. The person who faces Q will not sit on the left of A. A sit third to the left of E.\n\nWho sit second to the right of the person who faces T?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a8be9c70bf6ce6d5035c59778408c995bea488aa131a8d914a24f4c5bfe5b7f0"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "If B and P exchanges their position, then who is sitting opposite to P?",
+   "options": [
+    "A",
+    "T",
+    "C",
+    "R",
+    "S"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "07ff73b3985babf03dd08a416a884a743b4acfb94ce58968f5f3b295531c4d5e"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Four of the five are alike in a certain way so form a group. Which of the following does not belong to the group?",
+   "options": [
+    "E",
+    "Q",
+    "C",
+    "R",
+    "P"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2ebcd639df46591f017f8cfe277632912ed2cab20fb62f3ea2bc80403e97940b"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Choose the incorrect pair:",
+   "options": [
+    "E,D",
+    "B,A",
+    "S,R",
+    "T,P",
+    "D,B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "716535f9d64ed31f51e5d5d1e5a754dac64bf65d1f0b39b2674d6bee26bd06f6"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only apples are mangoes. Some oranges are not peaches. Some apples are peaches. Conclusions: I. Some oranges are not apples. II. Few mangoes are not oranges.",
+   "options": [
+    "Only I follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Only II follows",
+    "Both follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9c3c4ad9f0dfbc4ed29034cc9774fb248a8dbd1581c522255448cd370dbfd414"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Statements: No tap is clip. Only a few tablets are tab. All taps are tabs. Conclusions: I. Aleast some tablets are tap. II. All tablets can be tab.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cd244bcca03cc6d2c4794f1bf954570528be496402f1440c981928b8721b4974"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Statements: All keys are tattoo. Only a few wires are desk. Some keys are not desk. Conclusions: I. All desk being tattoo is a possibility. II. Atleast some tattoos are wire.",
+   "options": [
+    "Both I and II follow",
+    "Only II follows",
+    "Only I follows",
+    "Either I or II follows",
+    "None follow"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "77f64ed33a112ee624629575e459b8ffa2be6da4cf9ee0784b15d804261feff3"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully to answer the given questions. Eight people A, B, C, D, E, F, G and H are living in a four-storey building such that the ground floor is numbered as 1, above it is floor 2, and then the top floor is numbered 4. Each of the floors has two flats in it as flat Y and flat Z. Flat Y of floor 2 is immediately above the flat Y of floor 1 and immediately below the flat Y of floor 3 and so on. In the same way, flat Z of floor 2 is immediately above flat Z of floor 1 and immediately below flat Z of floor 3 and so on. Flat Y is in the west of flat Z. A lives to the east of C on an odd-numbered floor. F lives immediately above E and both live in the same flat. There is a gap of one floor between the floors of H and F. No one lives to the west of H. E lives three floors below G and both live in the same flat Z. D does not live on floor number 1. Who lives in flat Z, first floor?",
+   "options": [
+    "G",
+    "B",
+    "H",
+    "E",
+    "F"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "17f2f1f8ddb50854982a4e30667473f01f8d44558c7c9213aceeaf540f48452d"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully to answer the given questions. Eight people A, B, C, D, E, F, G and H are living in a four-storey building such that the ground floor is numbered as 1, above it is floor 2, and then the top floor is numbered 4. Each of the floors has two flats in it as flat Y and flat Z. Flat Y of floor 2 is immediately above the flat Y of floor 1 and immediately below the flat Y of floor 3 and so on. In the same way, flat Z of floor 2 is immediately above flat Z of floor 1 and immediately below flat Z of floor 3 and so on. Flat Y is in the west of flat Z. A lives to the east of C on an odd-numbered floor. F lives immediately above E and both live in the same flat. There is a gap of one floor between the floors of H and F. No one lives to the west of H. E lives three floors below G and both live in the same flat Z. D does not live on floor number 1.\n\nWhich of the following is false?",
+   "options": [
+    "F lives to the east of D",
+    "G lives above C",
+    "E and F live on the same floor",
+    "C lives in flat Y",
+    "One floor gap between A and B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5b0d625d2e63abcb1868f76b40a6d319dd61ed933198d663f98ef3b45921f4b1"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully to answer the given questions. Eight people A, B, C, D, E, F, G and H are living in a four-storey building such that the ground floor is numbered as 1, above it is floor 2, and then the top floor is numbered 4. Each of the floors has two flats in it as flat Y and flat Z. Flat Y of floor 2 is immediately above the flat Y of floor 1 and immediately below the flat Y of floor 3 and so on. In the same way, flat Z of floor 2 is immediately above flat Z of floor 1 and immediately below flat Z of floor 3 and so on. Flat Y is in the west of flat Z. A lives to the east of C on an odd-numbered floor. F lives immediately above E and both live in the same flat. There is a gap of one floor between the floors of H and F. No one lives to the west of H. E lives three floors below G and both live in the same flat Z. D does not live on floor number 1.\n\nWho among the following lives in the same floor?",
+   "options": [
+    "F and B",
+    "H and E",
+    "C and F",
+    "E and B",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4f97e17730fb092be23f9fb3924c6df0e4cc3444be883bf04a3e7ed436c70fe4"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully to answer the given questions. Eight people A, B, C, D, E, F, G and H are living in a four-storey building such that the ground floor is numbered as 1, above it is floor 2, and then the top floor is numbered 4. Each of the floors has two flats in it as flat Y and flat Z. Flat Y of floor 2 is immediately above the flat Y of floor 1 and immediately below the flat Y of floor 3 and so on. In the same way, flat Z of floor 2 is immediately above flat Z of floor 1 and immediately below flat Z of floor 3 and so on. Flat Y is in the west of flat Z. A lives to the east of C on an odd-numbered floor. F lives immediately above E and both live in the same flat. There is a gap of one floor between the floors of H and F. No one lives to the west of H. E lives three floors below G and both live in the same flat Z. D does not live on floor number 1.\n\nWhich of the following does not belong to the group?",
+   "options": [
+    "G",
+    "H",
+    "C",
+    "B",
+    "D"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cd51e5dd4bc54e4b7ce718606b1724c3e8a7d8b2ef39d1b61f1f366fdf7316de"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully to answer the given questions. Eight people A, B, C, D, E, F, G and H are living in a four-storey building such that the ground floor is numbered as 1, above it is floor 2, and then the top floor is numbered 4. Each of the floors has two flats in it as flat Y and flat Z. Flat Y of floor 2 is immediately above the flat Y of floor 1 and immediately below the flat Y of floor 3 and so on. In the same way, flat Z of floor 2 is immediately above flat Z of floor 1 and immediately below flat Z of floor 3 and so on. Flat Y is in the west of flat Z. A lives to the east of C on an odd-numbered floor. F lives immediately above E and both live in the same flat. There is a gap of one floor between the floors of H and F. No one lives to the west of H. E lives three floors below G and both live in the same flat Z. D does not live on floor number 1.\n\nHow many people live below F ?",
+   "options": [
+    "Four",
+    "Three",
+    "Two",
+    "Six",
+    "Five"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8a9c57709f1d18fcb42530ff3e88c6ad62729ccf368f580ddcf0e6262c2f4831"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; G M Z P Q R S U T A B I J K O N S P C E D F A H L G I M S V P O How many vowels are there between the 9th element from the right end and 5th element from the left end?",
+   "options": [
+    "Six",
+    "Nine",
+    "Eleven",
+    "Fourteen",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ac5697a0bb7d8693ebc60909f0547c87b92bd180c02bcf574d877e67cec5a8ad"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; G M Z P Q R S U T A B I J K O N S P C E D F A H L G I M S V P O How many vowels are there between the 9th element from the right end and 5th element from the left end?\n\nHow many elements are there which are immediately followed by vowel and immediately preceded by consonant?",
+   "options": [
+    "Four",
+    "Two",
+    "Seven",
+    "Eight",
+    "Six"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3fbdfb4522d8e51b803130646b27ae74e35478db30c2fff2df4cd42afda36d59"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; G M Z P Q R S U T A B I J K O N S P C E D F A H L G I M S V P O How many vowels are there between the 9th element from the right end and 5th element from the left end?\n\nHow many elements are there between the 15th element from the left end and 23rd element from the right end?",
+   "options": [
+    "Three",
+    "Four",
+    "Eight",
+    "Six",
+    "Two"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "eea08aeea8300baeb83f5fbcab4bc9164623a684246099d1cb759cc2e7fe2ed3"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; G M Z P Q R S U T A B I J K O N S P C E D F A H L G I M S V P O How many vowels are there between the 9th element from the right end and 5th element from the left end?\n\nWhich of the following element is 7th from the left of the 21st from the left end?",
+   "options": [
+    "M",
+    "O",
+    "I",
+    "K",
+    "J"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "672febfac749d8f6a0728b975ddf96b5d42ee0d1bf4f5cdb64eec18ae0fc9409"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the instructions carefully and answer the question below. There are six persons – P, Q, R, S, T and W. They have different weights. The weight of the second heaviest person is 120 kg and the weight of the second lightest person is 78 kg. Sum of the weights of S and T is 250 kg. The weight of T is 120. Sum of the weight of W and Q is 128 kg. Only two persons have weight more than P. R is heavier than both W and Q but W is not the lightest. Who is the heaviest person?",
+   "options": [
+    "W",
+    "S",
+    "P",
+    "Q",
+    "R"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "122168563b5bfde7cc2aaf4ee9b92cc420988f84c55ecb959ab3a31e4bfb4008"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "How many pairs of digits are there in the number '932675481' that has as many numbers between them as in the numerical series in both forward and backward direction?",
+   "options": [
+    "Three",
+    "Two",
+    "One",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c46dc57299ee5bb266695484831f4320faa0eed851594c75e2dd28636dc94633"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make a meaningful word from 1st and 3rd letter letters of the word 'AIR' and 1st and 4th letter of the word 'PORT' then which will be the second letter from the left? If more than one word will be formed then marked it as 'X' otherwise marked it as 'Y'.",
+   "options": [
+    "X",
+    "Y",
+    "R",
+    "P",
+    "T"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "02ac4f433185e1ff2866732f04538f0a41fcca7ee9333d3f46009dfde6d8a751"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; Eight friends - D, F, H, N, Q, R, T and W are seated in a straight line, but not necessarily in the same order. All are facing in the north direction. N sits at the immediate left of W. H sits at the right of D. N is seated at one of the positions to the left of D. F is seated at one of the extreme ends. There are three people sitting between F and W. N is seated fourth to the left of Q. F does not sit to the left of D. R is seated at the left of W but not at the immediate left of N. How many people sit between T and Q?",
+   "options": [
+    "Three",
+    "Four",
+    "Two",
+    "Five",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1337ef0f570a8e4d3eea81a346cabb090b678fe2af18bba1d99b9f4994e60ebc"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; Eight friends - D, F, H, N, Q, R, T and W are seated in a straight line, but not necessarily in the same order. All are facing in the north direction. N sits at the immediate left of W. H sits at the right of D. N is seated at one of the positions to the left of D. F is seated at one of the extreme ends. There are three people sitting between F and W. N is seated fourth to the left of Q. F does not sit to the left of D. R is seated at the left of W but not at the immediate left of N.\n\nWho are the immediate neighbours of D?",
+   "options": [
+    "T, N",
+    "N, W",
+    "R, F",
+    "W, H",
+    "H, Q"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "05939c7145ac881ae39d043b97d1ac46f8b8df05f24257ad6610a10c1d2a3b6b"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions below; Eight friends - D, F, H, N, Q, R, T and W are seated in a straight line, but not necessarily in the same order. All are facing in the north direction. N sits at the immediate left of W. H sits at the right of D. N is seated at one of the positions to the left of D. F is seated at one of the extreme ends. There are three people sitting between F and W. N is seated fourth to the left of Q. F does not sit to the left of D. R is seated at the left of W but not at the immediate left of N.\n\nWho is seated fifth to the right of R?",
+   "options": [
+    "D",
+    "Q",
+    "N",
+    "W",
+    "H"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "da3fca8d8508cef3aedf945eb80f130a562d022f2d4607ce08fcd53eedc35112"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way, find the one who does not belong to that group.",
+   "options": [
+    "R, T",
+    "H, Q",
+    "F, R",
+    "W, D",
+    "N, W"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "89d94ed44f5c262902fa9fc985e66acf0066f7d0e2cde8bbc9ac8f956374c744"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If T and H interchange their positions, who sits immediate left of T?",
+   "options": [
+    "N",
+    "D",
+    "Q",
+    "F",
+    "W"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ff46481f277c281238e080af1f8ba690f2741c39198cc3b712d5275e02c4f548"
+  }
+ ],
+ "section_confidence": 0.97,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

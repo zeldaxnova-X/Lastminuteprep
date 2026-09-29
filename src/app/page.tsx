@@ -32,10 +32,10 @@ const HOME_OG = "/api/og?title=" + encodeURIComponent("Real CBT mocks. Real sect
 export const metadata = {
   title: "LastMilePrep: The last mile is where exams are won",
   description:
-    "Free full CBT mocks for SSC CGL and SBI Clerk with the real sectional locks, then MarksenseAI reads your confidence and shows you exactly how to score more. No sign-up to take a full mock; unlock the full report from ₹9.",
+    "Free full CBT mocks for SSC CGL, SBI Clerk and IBPS Clerk with the real sectional locks, then MarksenseAI reads your confidence and shows you exactly how to score more. No sign-up to take a full mock; unlock the full report from ₹9.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "LastMilePrep, real CBT mocks for SSC CGL & SBI Clerk",
+    title: "LastMilePrep, real CBT mocks for SSC CGL, SBI Clerk & IBPS Clerk",
     description:
       "Take a real sectional-timed mock free, then MarksenseAI turns your attempt into the decisions worth the most marks. Full report from ₹9, or All-Access for every exam.",
     url: "https://lastmileprep.in/",
@@ -43,15 +43,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LastMilePrep, real CBT mocks for SSC CGL & SBI Clerk",
+    title: "LastMilePrep, real CBT mocks for SSC CGL, SBI Clerk & IBPS Clerk",
     description:
       "Take a real sectional-timed mock free, then MarksenseAI turns your attempt into the decisions worth the most marks. Full report from ₹9.",
     images: [HOME_OG],
   },
 };
 
-/* Exam line-up shown on the landing page. SSC CGL and SBI Clerk are live; the
-   rest render as greyed-out "Included at launch" placeholders (IBPS Clerk next). */
+/* Exam line-up shown on the landing page. SSC CGL, SBI Clerk and IBPS Clerk are
+   live; the rest render as greyed-out "Included at launch" placeholders. */
 const EXAMS: {
   id: string;
   name: string;
@@ -61,8 +61,8 @@ const EXAMS: {
   href?: string;
 }[] = [
   { id: "ssc-cgl", name: "SSC CGL", sub: "Tier 1 · full CBT + MarksenseAI", logo: "/images/exams/ssc-cgl.png", status: "live", href: "/sample" },
-  { id: "ibps-clerk", name: "IBPS Clerk", sub: "Prelims + Mains", logo: "/images/exams/ibps-clerk.png", status: "soon" },
   { id: "sbi-clerk", name: "SBI Clerk", sub: "Prelims · full CBT + MarksenseAI", logo: "/images/exams/sbi.svg", status: "live", href: "/sample" },
+  { id: "ibps-clerk", name: "IBPS Clerk", sub: "Prelims · full CBT + MarksenseAI", logo: "/images/exams/ibps-clerk.png", status: "live", href: "/sample" },
   { id: "jee-main", name: "JEE Main", sub: "Engineering entrance", logo: "/images/exams/jee-main.webp", status: "soon" },
   { id: "neet-ug", name: "NEET UG", sub: "Medical entrance", logo: "/images/exams/neet-ug.webp", status: "soon" },
 ];
@@ -259,8 +259,8 @@ function ExamBreadth() {
           One engine, every major exam
         </h2>
         <p className="mt-3 text-base text-ink-secondary">
-          SSC CGL Tier 1 and SBI Clerk Prelims are live today; IBPS Clerk, JEE Main
-          and NEET UG are on the way, each included the day it launches.
+          SSC CGL Tier 1, SBI Clerk Prelims and IBPS Clerk Prelims are live today;
+          JEE Main and NEET UG are on the way, each included the day it launches.
         </p>
       </Reveal>
 
@@ -433,8 +433,8 @@ function Stats({ questionCount }: { questionCount: number }) {
         </h2>
         <p className="mt-3 text-base text-ink-secondary">
           Every exam gets its real pattern and its real negative marking, never a
-          generic quiz. SSC CGL Tier 1 is live now, scored on its own +2 / −0.5.
-          IBPS Clerk, SBI Clerk and more follow with their own schemes.
+          generic quiz. SSC CGL Tier 1 is scored on its own +2 / −0.5; SBI Clerk and
+          IBPS Clerk Prelims on +1 / −0.25 with 20-minute sectional locks. More follow.
         </p>
       </Reveal>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">

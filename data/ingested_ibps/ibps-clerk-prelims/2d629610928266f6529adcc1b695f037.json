@@ -1,0 +1,1472 @@
+{
+ "file": "2d629610928266f6529adcc1b695f037.pdf",
+ "format": "prepp",
+ "accepted": 97,
+ "rejected": 3,
+ "reasons": {
+  "empty_or_short_stem": 3
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Directions: The following questions are based on the series of numbers given below. 7 1 2 5 9 6 3 8 4 5 3 2 7 8 5 1 6 4 3 9 2 1 7 6 9 8 3 6 2 1 5 4 9 Product of 6th number from extreme left and 9th number from extreme right?",
+   "options": [
+    "54",
+    "55",
+    "65",
+    "78",
+    "45 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9947a60f04cb3d1a05b825b0e7502a08510bca7efcf834e56cf500a54f8633c5"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "How many 5 are immediately followed by perfect square?",
+   "options": [
+    "One",
+    "Two",
+    "Four",
+    "Three",
+    "None Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e0be946fb192de1115a8141a456362264b8358cef8eb05d6bf92fb6a2f711b14"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "How many even numbers are there between 10th number from extreme left and 7th no. from the extreme right?",
+   "options": [
+    "6",
+    "5",
+    "8",
+    "7",
+    "9 Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e41cff8a6e5a01f896b2e7f84f240c803013af450a0195bb559aeb6e7e9a562d"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “DECLARING“ which have as many letters between them in the word as in alphabetical series?",
+   "options": [
+    "Three",
+    "Two",
+    "One",
+    "Four",
+    "More than four Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4f974499f1c844c19fb63249297fcf497c52c0588dc67e587c467573e6d99ed0"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. Eight people viz. A, B, C, D, P, Q, R and S have to deliver lectures on 10th & 25th of different months viz. May, June, September and December but not necessarily in the same order. Not more than 2 person will give lecture in the same month. Only one of the given persons will deliver lecture on each day. A delivers his lecture on 10th of a month which has only 30 days. Only 3 lectures have been given between A & B. P delivers the lecture immediately after B. Number of person who give lecture after P is same as the number of person who give lecture before Q. Only 2 person give lecture between Q & C. R and C give their lecture in the same month. D gives the lecture before S. Who gives the lecture immediately after R?",
+   "options": [
+    "Q",
+    "C",
+    "P",
+    "A",
+    "None of these. Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "94b9f6615a620088b77f94aab1a50623b4e358bc555d6482f5f22bc86788c523"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Four of the following are same in some pattern thus forms a group. Who doesn’t belong to the group?",
+   "options": [
+    "P",
+    "R",
+    "D",
+    "S",
+    "C Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8deec668c7ae1c38adb76d32f29a43057ef80ed9fa69e9260d628e08efd89c44"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "Who gives the lecture on 10th December?",
+   "options": [
+    "B",
+    "R",
+    "A",
+    "Q",
+    "S Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0f5f1a102071bdc8eb847916e9b775b4b024bb4f62cd2b860c2c53d384665f91"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "How many lectures have been delivered after D?",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "5",
+    "1 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a1920fc544ed0e271a829b466cc82c6649e21cb70d91120fc4bc44030c9c57a2"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Who among the following doesn’t deliver the lecture in a month of 31 days?",
+   "options": [
+    "P",
+    "B",
+    "Q",
+    "S",
+    "A Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "bbb956a05deb023ce2877a573da606b238e3cc6266d536d44e55e7897262b1de"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below. Six students A, B, C, D, E and F. Each of them has different heights. C is taller than only one student. D is taller than C but shorter than A. E is taller than A and F but not the tallest. B is taller than F. The height of the second tallest among them is 119 cm. One who is the third shortest among them is having the height of 102 cm. Who among the following is the tallest?",
+   "options": [
+    "A",
+    "B",
+    "E",
+    "D",
+    "Can’t say Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ffd1bde7a528f8b5d631edc33264e299fb97cf51a4c0821e0651e0035e7d8686"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below. Six students A, B, C, D, E and F. Each of them has different heights. C is taller than only one student. D is taller than C but shorter than A. E is taller than A and F but not the tallest. B is taller than F. The height of the second tallest among them is 119 cm. One who is the third shortest among them is having the height of 102 cm.\n\nWho among the following is the third shortest?",
+   "options": [
+    "A",
+    "B",
+    "E",
+    "D",
+    "Can’t say Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "67f2bdd8c465d47a4774fe3606e402ebbd023f61717b11f911e02613561bb930"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below. Six students A, B, C, D, E and F. Each of them has different heights. C is taller than only one student. D is taller than C but shorter than A. E is taller than A and F but not the tallest. B is taller than F. The height of the second tallest among them is 119 cm. One who is the third shortest among them is having the height of 102 cm.\n\nWhat is the possible height of B?",
+   "options": [
+    "117 cm",
+    "123 cm",
+    "119 cm",
+    "107 cm",
+    "102 cm Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9d4168893347204d236debfa4b147454e64c3417b31b63f8dc0e3ab8f23d7024"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. Twelve people are sitting in 2 rows, 6 in each. D, E, F, J, K and L in row 1 facing North and S, T, U, X, Y and Z in row 2 facing South but not necessarily in the same order. People in both row face each other. D sits at 2nd position from one of the ends of the row. Only 2 people sit between D and E. The one who faces E sits to the immediate left of S. Only 2 people sit between T and S. Two people sit between J and the one who faces T. J faces one of the immediate neighbors of U. X sits second to the left of U. U sits at one of the positions to the right of Z. More than 2 people sit between F and the one who faces Z. K sits at one of the positions to the left of L. Who among the following faces U?",
+   "options": [
+    "K",
+    "J",
+    "F",
+    "L",
+    "D Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "89ee5f0d5db7dc6a985a87b07b5a4a03ca442c913ab0a4e79445eb5d4ed4ee9f"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. Twelve people are sitting in 2 rows, 6 in each. D, E, F, J, K and L in row 1 facing North and S, T, U, X, Y and Z in row 2 facing South but not necessarily in the same order. People in both row face each other. D sits at 2nd position from one of the ends of the row. Only 2 people sit between D and E. The one who faces E sits to the immediate left of S. Only 2 people sit between T and S. Two people sit between J and the one who faces T. J faces one of the immediate neighbors of U. X sits second to the left of U. U sits at one of the positions to the right of Z. More than 2 people sit between F and the one who faces Z. K sits at one of the positions to the left of L.\n\nHow many person sit between F and the one who faces X?",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "1",
+    "None Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7c4e80e78597698d265b009e670e77ec358cc4c00d3786e40e279a30b1063613"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the given questions. Twelve people are sitting in 2 rows, 6 in each. D, E, F, J, K and L in row 1 facing North and S, T, U, X, Y and Z in row 2 facing South but not necessarily in the same order. People in both row face each other. D sits at 2nd position from one of the ends of the row. Only 2 people sit between D and E. The one who faces E sits to the immediate left of S. Only 2 people sit between T and S. Two people sit between J and the one who faces T. J faces one of the immediate neighbors of U. X sits second to the left of U. U sits at one of the positions to the right of Z. More than 2 people sit between F and the one who faces Z. K sits at one of the positions to the left of L.\n\nWhat is the position of T with respect to S?",
+   "options": [
+    "3rd to the left",
+    "3rd to the right",
+    "2nd to the left",
+    "2nd to the right",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b143f146e68cf7eb3e7652a44afeb7e6da6b59d5def83fce88271dc997c0853b"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Four of the following are similar in some pattern thus forms a group. Who among then doesn’t belong to the group?",
+   "options": [
+    "T",
+    "K",
+    "F",
+    "Z",
+    "L Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5681df044fc5a5a0b497a17be40ea748b0921cf5a55eb397b5d66ccae27fa34c"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "Who sits opposite to the one who sits 2nd to the left of S?",
+   "options": [
+    "L",
+    "D",
+    "K",
+    "F",
+    "None of these Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c4fc3d390557a33676e65034917304892f9510cc23959d5bab69f2fd26778a99"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "B and R are only children of C. H is the grandson of C. Only one of the children of C is married. Q is married to R. F and Q are daughters of J. How F is related to H?",
+   "options": [
+    "Aunt",
+    "Uncle",
+    "Sister",
+    "Mother",
+    "Neice Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3f31153045e250b6a206f6cf5f2349c655dc5fd384ce2a3831101ac051f47fb3"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "If M is the mother of Q then how B is related to H?",
+   "options": [
+    "Aunt (22)",
+    "Uncle",
+    "Sister",
+    "Mother",
+    "Cannot be determined Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "927507b39357e0c4c4750c02d06d3d5600fd252ead1cd9820d8daad2dd15cbe3"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "How R is related to J?",
+   "options": [
+    "Son-in-law",
+    "Son",
+    "Uncle",
+    "Brother",
+    "Nephew Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "421f14c7c8df6493251739bd489b2babedded1c17db11ebe3da5dcba92df306c"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "Direc\u0000on: Study the following informa\u0000on carefully and answer the ques\u0000on given below. Eight persons A, B, C, D, E, F, G and H sits on a square shape table with four sitting at corners and facing inside while those sitting at the edges faces outside, B faces the centre and C is third to the right of B. Three people are sitting between D and E, A is second to the left of D. Two person sits between E and F. H sits immediately left of D. D is facing inside. Who was sitting opposite to E?",
+   "options": [
+    "A",
+    "D",
+    "C",
+    "H",
+    "F Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aee7ded08094cd012e3cc6775aa0721ab08cd65f71e5be108b0107d9d572c23e"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Direc\u0000on: Study the following informa\u0000on carefully and answer the ques\u0000on given below. Eight persons A, B, C, D, E, F, G and H sits on a square shape table with four sitting at corners and facing inside while those sitting at the edges faces outside, B faces the centre and C is third to the right of B. Three people are sitting between D and E, A is second to the left of D. Two person sits between E and F. H sits immediately left of D. D is facing inside.\n\nWho was sitting second to left of H?",
+   "options": [
+    "G",
+    "A",
+    "C",
+    "F",
+    "Either A or C Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2e641480d77ab409b4b741b314b0f319f3d52641f4ba6cd20ca30f816366bd00"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "What was the position of C with respect to A?",
+   "options": [
+    "Immediate right",
+    "Immediate left",
+    "Third to right",
+    "Third to left",
+    "Opposite Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e4a857008ef79eb8f4386185b91e44bf137d0798f7230bad71dc3a3f0dc6c8b2"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "Which of the following does not belong the group?",
+   "options": [
+    "F – C",
+    "B – A",
+    "D – E",
+    "H – G",
+    "G – B Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f86e69458de74287fd19caa329b8a007a77dfc70db42ae8ad65510a3faeae17f"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "In the following question, three statements are given followed by two conclusions I, II. You have to consider the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and decide which of the following logically follows from the given statements disregarding the commonly known facts. Statements: No date is a fruit. All fruits are juices. No juice is a soup. Conclusions: I. All soups can never be juices. II. No soup is a date.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follow",
+    "Either I or II follows",
+    "None follows Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9f6e402acfaf5921ab8ea854a89f42f7c331554d6f900ec9e4971ff47a33c425"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question, three statements are given followed by two conclusions I, II. You have to consider the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and decide which of the following logically follows from the given statements disregarding the commonly known facts. Statements: 1) Some words are letters. 2) Some letters are alphabets. 3) All alphabets are sentences. Conclusions: 1) At least some words are alphabet. 2) No word is an alphabet.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2979082d5536a21c052c89f02f394e2bf0dc0890dc7adebfd7fd3636a76fed1f"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question, three statements are given followed by two conclusions I, II. You have to consider the given statements to be true even, if they seem to be at variance with (29) commonly known facts. Read all the conclusions and decide which of the following logically follows from the given statements disregarding the commonly known facts. Statements: Some words are letters. Some letters are alphabets. All alphabets are sentences. Conclusions: I. Atleast some letters are sentences. II. All sentences are words.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7b4213880dba421e73a87f8241f524c42c5c1b2d4203e28bf0b70d696290a09c"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question, two statements are given followed by two conclusions I, II. You have to consider the given statements to be true even, if they seem to be at variance with commonly known facts. Read all the conclusions and decide which of the following logically follows from the given statements disregarding the commonly known facts. Statements: All cakes are fruits. No biscuit is a jam. Conclusions: I. All biscuits are cakes. II. No cake is a jam.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follow",
+    "Both I and II follows (30) Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "420aa1e25a27eae48a20972f703ebeebe6aab1a6afba495ad64c8a9891f22b32"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below. Seven persons – P, Q, R, S, T, U, and V are traveling in seven different places which are – Mumbai, Chennai, Bangalore, Jaipur, Kolkata, Pune and Haridwar but not necessarily in the same order. P travels neither to Pune nor to Jaipur. R travels not before U. There are three persons between the one who travels to Mumbai and the one who travels to Kolkata. Q travels to Haridwar after the one who travels to Kolkata. S travels to Chennai. The one who travels immediately after the one who travels to Chennai, travels to Pune. U travels exactly between S and V. U travels immediately after the one who travels to Mumbai. There are three persons between the one who travels to Pune and the one who travels to Jaipur. Who among the following travels to Jaipur?",
+   "options": [
+    "V",
+    "T",
+    "U",
+    "Q",
+    "P Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3acdaa4cf096fab4b6639c7224c7c54f4df0929f72eb6e32d65fcd2f690ca7da"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below. Seven persons – P, Q, R, S, T, U, and V are traveling in seven different places which are – Mumbai, Chennai, Bangalore, Jaipur, Kolkata, Pune and Haridwar but not necessarily in the same order. P travels neither to Pune nor to Jaipur. R travels not before U. There are three persons between the one who travels to Mumbai and the one who travels to Kolkata. Q travels to Haridwar after the one who travels to Kolkata. S travels to Chennai. The one who travels immediately after the one who travels to Chennai, travels to Pune. U travels exactly between S and V. U travels immediately after the one who travels to Mumbai. There are three persons between the one who travels to Pune and the one who travels to Jaipur.\n\nWho among the following persons travels in between U and T?",
+   "options": [
+    "V",
+    "R",
+    "P",
+    "Q",
+    "Can’t say Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0a47caf1e76ee74759523359b1dc103323a3a7ce58c46e995bddb5b6b6e79c60"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "V travels to which among the following places?",
+   "options": [
+    "Jaipur",
+    "Bangalore",
+    "Mumbai",
+    "Pune",
+    "Can’t say Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "212c4cb20d2ca5695d3ddd6d5b646eadb12d30369302f8fd77d73ea7edd8af78"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Who among the following travels to Kolkata?",
+   "options": [
+    "U",
+    "R",
+    "P",
+    "Q",
+    "None of these Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d614f8ccb44c95eb6b4ffec7430e8b62b5d7369f439269a8c2f95d4f71473a59"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "Which among the following is true?",
+   "options": [
+    "P travels before Q",
+    "T travels after V",
+    "R travels after S",
+    "None of these",
+    "Both 1) and 3) Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0f83b8eae1ec42002de5cadd72a680832694c91f40434a0163ace2d91df072a7"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Below bar graph represents the number of desktops and laptops in four labs A, B, C and D. Study the graph and answer the following questions: What is the sum of desktops in lab A and C, and laptops in lab B and D?",
+   "options": [
+    "1200",
+    "8100",
+    "5400",
+    "9000",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f34c3e8b6befe94bef9efbd01b6c56d10bf44ffab2dc156a17cba3c6c47ee103"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What is the ratio of laptops in lab D to desktops in lab D?",
+   "options": [
+    "2 : 1",
+    "3 : 5",
+    "4 : 9",
+    "3 : 7",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a76d13d40828e3bbd8980e9a45ebcbd71ef97f9517a31074a7987004d7b9f693"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "Laptops in lab A is what percent of desktop in lab D?",
+   "options": [
+    "52%",
+    "50%",
+    "62%",
+    "71%",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22e9c1dc36071c1f1b0e4c3a7041bbfe09f090921ff489b29cfbc32b5856aee5"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What is the approximate average number of laptops in labs A,C and D?",
+   "options": [
+    "1926",
+    "1967",
+    "1867 (42)",
+    "1600",
+    "2100 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2b343326752b2c7098d62d7b8afb5ce32fe4ad8c1a0589aba4ab89ee590f90cd"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "A person lent a sum of Rs. 9000 on simple interest at 10% per annum for 3 years. Find the difference in interest received by him, if he had lent the same sum on compound interest at 20% per annum for 2 years.",
+   "options": [
+    "Rs. 1960",
+    "Rs. 1160",
+    "Rs. 1260",
+    "Rs. 2700",
+    "Rs. 1240 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "92e40bf229717167d879841b276fc1e913be945eb27c47baefab3c7c1f3fb4aa"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "A person travels from A to B with a speed of 6 km/hr in 120 min, if his speed becomes 15 km/hr, then find the difference in time.",
+   "options": [
+    "80 mins",
+    "72 mins",
+    "48 mins",
+    "36 mins",
+    "108 mins Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "65b2e3950f65ee8f562463ce268a4e24541cff0075113eab0bd57bfb9206861a"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "Length and breadth of a rectangle are in the ratio of 4 ∶ 3. If the area of rectangle is 108 m2, find the area of square whose side is equal to the breadth of the rectangle.",
+   "options": [
+    "44 m2",
+    "56 m2",
+    "81 m2",
+    "58 m2",
+    "None of these Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dd62527862b821b075bc107e6fcafecbca8e835f80f94968ee09501fa7817a76"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "A boat goes 8 km upstream in 2 hours and 12 km downstream in 1.5 hours. Find the speed of current.",
+   "options": [
+    "6 km/hr",
+    "8 km/hr",
+    "2 km/hr",
+    "4 km/hr",
+    "12 km/hr Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a64f99f740813a1bc1ab0f46918caf01520a29f341eac12303dc42383c4bdef8"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "A purchased three quantities of radio for Rs. 2100 of equal cost price. If profit percentage is 20%, then find the profit on each quantity.",
+   "options": [
+    "Rs. 120",
+    "Rs. 140",
+    "Rs. 280",
+    "Rs. 200",
+    "Rs. 100 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "75074584350fc8a87eb3d497035602a6b51dd177834615bbac13dd3b6887aae9"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of 10 boys is increased by 1.5 kg when Arjun whose weight is 45 kg is replaced by Rohan. Find the weight of Rohan?",
+   "options": [
+    "64 kg",
+    "60 kg",
+    "68 kg",
+    "72 kg",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "98454ceb6d3a45eaf3ee9c4f99d354f115f36180ff3b3f19069c513714021c3f"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 3 × 63 + 74 ÷ √4 - √121 = ?",
+   "options": [
+    "210",
+    "129",
+    "215 (45)",
+    "240",
+    "281 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "129c4eefefc30029bfe3890533a21154ec17ba572976b19bfd1022d0eba6ec98"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "Find the value of ? in the following question? 4×9×13×28 =√? 104×63",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "5",
+    "8 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "11fbee22fba5789c89510d22666cb19e7037b45de27d6eedfdf98fe45b12f6b4"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 1 + 1 + 1 = 5 3 6 8 ?",
+   "options": [
+    "12",
+    "6",
+    "8",
+    "10",
+    "1 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "94a2afa542a5beeff694512ffd5964f260ea3cd6216f998eea965d307dbc13a6"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "52 + 20 × 4 -16 = ?",
+   "options": [
+    "89",
+    "68",
+    "78",
+    "28",
+    "34 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7494adbc5205d46ef0998c0a444f59b7ec6c4329ac4f1cdf8651303c0ac74b9f"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 155 + 20 × 4 - 176 = ? + 21",
+   "options": [
+    "46",
+    "44",
+    "38",
+    "76",
+    "-22 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "447bad119c298c65c3015f3c1a0585efe16032e245893fb3d91ed74452f0d935"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 50% of ? + 30% of 80 = 124",
+   "options": [
+    "360 (47)",
+    "280",
+    "200",
+    "250",
+    "120 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7401a9def9b7a6b5137bfa04664eadc7874b0001adf124e30c5b3eae615990a0"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? √49 + 62 = 39 + 102 - ?",
+   "options": [
+    "96",
+    "100",
+    "120",
+    "92",
+    "88 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "54276d5e3fd657b5d756b3d58c946bf798ce342619aac0663ee760c643962cbd"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 31 +51 +71 =? 4 2 8",
+   "options": [
+    "15.8",
+    "16.2",
+    "19.4",
+    "18.2",
+    "11.8 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6783bbf5833bb48acdf32c9e686b4b3d4259397ca4f6e8fca661ec5c13db6be8"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question? 1903 ÷ 11 + 2331 ÷ 7 = ?",
+   "options": [
+    "508",
+    "506",
+    "570",
+    "521",
+    "None of these Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "19dd9165f9d603e39671faadb65992c1f9295ee1d1a9bd9f509c610d0cef680e"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of '?' in the following question?",
+   "options": [
+    "182",
+    "156",
+    "146",
+    "177",
+    "183 Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1251a0b89d22bde941d417ef6f6cf8e2071990ed7702970e0a197d160e66be09"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "If 1 is added to 30% of a number and the result so obtained is divided by 7, the output is 103. Find the original number.",
+   "options": [
+    "3500",
+    "3600",
+    "3200",
+    "2400",
+    "2600 Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "92cd27e2e00a25a7acaca1f251ebdaf813e414021c59fee6ece9e6cbed83f5a0"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "100 chocolates are distributed between A, B and C. A has 9 more than B and C has 2 less than A. Find the number of chocolates C has.",
+   "options": [
+    "39",
+    "28",
+    "35",
+    "36",
+    "37 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9aff6dbeb0526e383eed72569af9acfe5973972bf489ce35a52422decd26b8d3"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following number series? 4, 8, 24, 96, 480, ?",
+   "options": [
+    "2680",
+    "1680",
+    "2880",
+    "2400",
+    "960 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "26563a91cad4f476a67fe3a7b56f8be6bb894ed1214bfd6a83d521eb1ec178e7"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following number series? 112, 87, 67, 52, 42, ?",
+   "options": [
+    "38",
+    "27",
+    "37",
+    "35",
+    "36 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c4e676848aae57410ce92fbd6c42b7dbcb60a013066b1852f72f9430d2db9089"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following number series? 11, 15, 21, 29, 39, ?",
+   "options": [
+    "52",
+    "51",
+    "61",
+    "41",
+    "50 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fae18a9874f8aef749bb310df52c0bc8fe55b8b326f9d991b7f9799c0c526acc"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following number series? 23, 27, 18, 34, 9, ?",
+   "options": [
+    "46",
+    "45",
+    "40",
+    "34",
+    "25 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b5b809ee25f6bf5b136aeb6d3c4b4ffa73be5f786d37e2196ebf82afc1678a56"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following number series? 11, 14, 22, 40, 73, ?",
+   "options": [
+    "116",
+    "126",
+    "132 (51)",
+    "112",
+    "122 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ea98e57c7576f28a64bc19a70ff0500713ccc3df3e6da20b4d4935b0d7829645"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "Presently Naman is six years younger than Anu and Anu is 10 years younger than Bittu. Six years hence the respective ratio between Bittu’s age and Naman’s age will be 3 ∶ 2. Find Anu’s present age?",
+   "options": [
+    "32 years",
+    "28 years",
+    "20 years",
+    "30 years",
+    "None of these Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "06a140871cf46752902bf6a0fb5d19b60d59a18eefae963983ac615747b7f919"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "At 20% discount the selling price of a refrigerator is Rs 24,000, what is the selling price if the discount is 30%?",
+   "options": [
+    "Rs 12,000",
+    "Rs 14,640",
+    "Rs 21,000",
+    "Rs 30,000",
+    "Rs 40,000 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c7fc58ef7725f7e8eaceabf1026e6c9bb27cc197f9c9dbfb061ebd25c23b0af3"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Read the caselet given below and answer the questions that follow: The population of town A and B is 800 and 1200 respectively. If the percentage of farmers in town A is 30% of the population and of town B is 60% of the population.The ratio of male to female in town A is 2 : 3, and the ratio of male to female in town B is 7 : 5. Farmers of town A works for 9 hours a day and of B works for 6 hours a day. What is the ratio of number of farmer-hours of a day of town A to town B?",
+   "options": [
+    "3 : 2",
+    "4 : 3",
+    "8 : 3",
+    "1 : 2",
+    "2 : 3 Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "534433f1932ef4441bb0ff4bba99a453eeec1125ebeb7289fb7562b7cb00c768"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "What is the difference between the number of females of town A and B?",
+   "options": [
+    "60",
+    "20",
+    "90",
+    "120",
+    "200 Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bfa1a63b34c8a54b747c635e9b70a42f7a632fa4f06eed212a4d6e6feff9d18f"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "What is the total number of males of town A and B?",
+   "options": [
+    "1120",
+    "720",
+    "1020",
+    "1220",
+    "None of these (53) Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5eacb4d5c556dbbbcfc7ed0337dff02b67cb7a9aaf1f5705146030ba1e3979a0"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "The number of female in town A is what percentage of the total number of male and female in town B?",
+   "options": [
+    "32%",
+    "36%",
+    "40%",
+    "50%",
+    "24% Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f7b0d9d22a388655c755063b83c5d60a55bb536aa52cbee643afe160b1fd415a"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "What is the average number of farmers in both town A and B?",
+   "options": [
+    "300",
+    "320",
+    "480",
+    "960",
+    "1920 Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f3f4af5dd81609675c4c84f40127d98005f4b462fa5b1a0ac1b63cda16a1e906"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "A sentence/part of the sentence is emboldened. Five alternatives are given to the emboldened part which will improve the sentence. Choose the correct alternative and choose the option corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\" She could not exit her children out of sight even for a few hours.",
+   "options": [
+    "Forced her child",
+    "No correction required",
+    "Like her children",
+    "Let her children",
+    "Abandon the child Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "12db61e96eff01c6d0725d3f3597548d1b4e5439a6b19abb3b7d6ad595636aa6"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "A sentence/part of the sentence is emboldened. Five alternatives are given to the emboldened part which will improve the sentence. Choose the correct alternative and choose the option (54) corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\" There are only two locations which accomodates all the requirements of our guests.",
+   "options": [
+    "Likely to accomodated",
+    "That understood",
+    "No correction required",
+    "Considerably evaluates",
+    "Which meet Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4c113375d85ff0b555478694c432cea58c47b90ec104c24a3abf944bfb3eef25"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "A sentence/part of the sentence is emboldened. Five alternatives are given to the emboldened part which will improve the sentence. Choose the correct alternative and choose the option corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\". The possibility of failure is the biggest deterrent to the trying avoiding risks",
+   "options": [
+    "Try for avoid",
+    "The trial to avoid",
+    "The avoidance",
+    "No correction required",
+    "Those avoiding Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "47d40962ec045583ae7aa2f1412df0d497fbfdd293dfa98455e29f66f2a3fc09"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "part which will improve the sentence. Choose the correct alternative and choose the option corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\" The author went to law school but eventually dropped out due to lack of interest",
+   "options": [
+    "Mostly dropping out",
+    "Will drops out",
+    "To dropped out",
+    "No correction required",
+    "Now dropped from Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4d3457d89a23672b0cfd806e2c675c0efa4218d2dce175962931c4494b036bdb"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "A sentence/part of the sentence is emboldened. Five alternatives are given to the emboldened part which will improve the sentence. Choose the correct alternative and choose the option corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\". A lot rides on the company we keep as the opinions of our peers affect the way we deal with circumstances",
+   "options": [
+    "No correction required",
+    "Having dealt with",
+    "We deal by",
+    "Dealing with",
+    "To deal on Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dacf67f804e9e9cfa675692c7d3b94df668f9a5314b8c302e07718db22b3bd9f"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "A sentence/part of the sentence is emboldened. Five alternatives are given to the emboldened part which will improve the sentence. Choose the correct alternative and choose the option corresponding to it. In case no improvement is needed, click the button corresponding to \"No improvement required\" The accessibility of the internet and its reach in remote locations is why reason it so popular.",
+   "options": [
+    "No correction required",
+    "Why",
+    "The reason for",
+    "How result is",
+    "What makes it Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "44927c098b1e4fe4108a21456704b5dd68df71b4d5c83b827a4ebd71efe930e7"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "This question comprises 3 sentences - A, B and C each of which comprises a sentence using the word WAIT. Identify the sentences where the word has been correctly used and mark that combination (A) Wait your options before investing (B) How long must we wait? (C) The longer we wait time the less is the chance of recovery",
+   "options": [
+    "Only A",
+    "Only A and C",
+    "Only B and C",
+    "Only B",
+    "All A, B and C Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ad71ad3990f7fa8a846e0b8bbf87f9939cc98506d9a76ba3d1aaa76aad8ad3c7"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990. Which of the following fits the blank labelled (A)?",
+   "options": [
+    "Many",
+    "Small",
+    "Due",
+    "Reasons",
+    "Much Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dabc72de845d0deb508007db10bcb7095c0a83ad478a921e1b3293f8a4dcc6a4"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (B)?",
+   "options": [
+    "Late",
+    "Start",
+    "Hours",
+    "Years",
+    "On Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "415ac29e6c662a8a25b76a32e6bece8ab1270953a2ac4759656d953e85b12e38"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (C)?",
+   "options": [
+    "Run",
+    "Sleep",
+    "State",
+    "Fast",
+    "Food Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d805233f27ed70e6dbc71a33df3228659738701d4f451712821c516c54ab758d"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (D)?",
+   "options": [
+    "Causes",
+    "Affect",
+    "Start",
+    "Raise",
+    "Effects Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7bf9a1353dfb3fdb6738455c140c03e13067bf0ad90a851122ca4d2cd1e41f35"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (E)?",
+   "options": [
+    "Excluding",
+    "Pairing",
+    "Stating",
+    "Including",
+    "None of the above Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "916f2cb07f5fc7156f90301d880a1727dd955c8e6017b6447a368e26f2696ba9"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (F)?",
+   "options": [
+    "Correct",
+    "Consider",
+    "Talk",
+    "Called",
+    "None of the above Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "927389148ed19789ad0998e0525c333e2a975b2771de09d45a447610ea1239dc"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labelled (A)-(G) is given. You are required to fill the correct word in the blanks. A person’s quality of life can be disrupted due to___(A)___different reasons. One important yet underestimated cause for that is sleep loss (National Sleep Foundation 2007). Working___(B)___are constantly increasing along (57) with an emphasis on active leisure. In certain jobs, people face___(C)____restriction. Some professions such as health care, security and transportation require working at night. In such fields, the effect of acute total sleep deprivation (SD) on performance is crucial. Furthermore, people tend to stretch their capacity and compromise their nightly sleep, thus becoming chronically sleep deprived. When considering the___(D)___of sleep loss, the distinction between total and partial SD is important. Although both conditions induce several negative effects ___(E)___impairments in cognitive performance, the underlying mechanisms seem to be somewhat different. Particularly, results on the recovery from SD have suggested different physiological processes. In this review, we separately___(F)___the effects of acute total and chronic partial SD and describe the effects on cognitive performance. The emphasis on acute total SD reflects the quantity of studies carried out___(G)___with partial SD. The effects of aging and gender, as well as interindividual differences, are discussed. We concentrate on the studies that have been published since 1990.\n\nWhich of the following fits the blank labelled (G)?",
+   "options": [
+    "Collapsed",
+    "Sharing",
+    "Rule",
+    "Compared",
+    "All of the above Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a199a043f292e677a58bffbdca00c29b051509d5f7e5f41208fdd1d74235ff11"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There are friends that you have polite chats with, and there are your best friends. They're the people who root for you, no matter what. You tell them your deepest, darkest secrets, and instead of heading for the door, they stick around and your bond with them grows stronger. A friend recently sent me news about some phenomenal successes he is enjoying in a new business venture. I responded enthusiastically about his amazing gifts. He e-mailed back: \"You, my friend, are too much! But I must say, I love having my own cheering section!\" I responded, without even thinking, \"What are friends for?\" Precisely! Friendship is about being what a hero of mine described as \"balcony people\" instead of \"basement people.\" Basement people are those who live in our minds, telling us we will never amount to anything, that we are doomed to fail and that we are royal screw-ups. Balcony people are those who are consistently cheering us on. \"Go for it,\" they say to our attempts to find our voice, to live in ever-widening circles, to dare, to create, to break through our lives' sound barriers. While not all of us are made to be married or to live in an intentional formal community, be it a kibbutz, ashram, monastery, convent or commune, all of us are created to live in some form of friendship. Friendships are what help us be human. My best friends and I get together regularly to share the deepest part of life, the part that is about being as opposed to doing. Sure, we speak about what we do in our jobs, our other relationships, our spiritual, athletic, medical, familial doings. But the experiential, life-giving juice that feeds our soul and binds us together over the years and takes us to ever deeper dimensions is the conversation we have at the being level. That's the place where your soul stands naked before someone else and receives unconditional acceptance in return. From time to time, we speak about what an exasperation-free oasis our friendship is. Both of us have had some important relationships that soured because someone got exasperated with us. Not that we didn't deserve it. But there is something about my best friends, who just don't get exasperated with me, no matter how much I deserve it. As a result, I am not guarded with them, and when we fall back into old patterns of thinking, \"If I tell him this, the friendship is over,\" that's where we have over the years taken the risk to tell it all. That's where the friendship is made even stronger. What is a suitable title for the given passage?",
+   "options": [
+    "What Are Friends For?",
+    "Friendship (60)",
+    "Friends and Enemies",
+    "Friends and Family",
+    "Both 1 and 2 Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "cfb643659d0551e2cab961b2a4833a7bd1410bd77b01cf07ddc9674a5c0a6676"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There are friends that you have polite chats with, and there are your best friends. They're the people who root for you, no matter what. You tell them your deepest, darkest secrets, and instead of heading for the door, they stick around and your bond with them grows stronger. A friend recently sent me news about some phenomenal successes he is enjoying in a new business venture. I responded enthusiastically about his amazing gifts. He e-mailed back: \"You, my friend, are too much! But I must say, I love having my own cheering section!\" I responded, without even thinking, \"What are friends for?\" Precisely! Friendship is about being what a hero of mine described as \"balcony people\" instead of \"basement people.\" Basement people are those who live in our minds, telling us we will never amount to anything, that we are doomed to fail and that we are royal screw-ups. Balcony people are those who are consistently cheering us on. \"Go for it,\" they say to our attempts to find our voice, to live in ever-widening circles, to dare, to create, to break through our lives' sound barriers. While not all of us are made to be married or to live in an intentional formal community, be it a kibbutz, ashram, monastery, convent or commune, all of us are created to live in some form of friendship. Friendships are what help us be human. My best friends and I get together regularly to share the deepest part of life, the part that is about being as opposed to doing. Sure, we speak about what we do in our jobs, our other relationships, our spiritual, athletic, medical, familial doings. But the experiential, life-giving juice that feeds our soul and binds us together over the years and takes us to ever deeper dimensions is the conversation we have at the being level. That's the place where your soul stands naked before someone else and receives unconditional acceptance in return. From time to time, we speak about what an exasperation-free oasis our friendship is. Both of us have had some important relationships that soured because someone got exasperated with us. Not that we didn't deserve it. But there is something about my best friends, who just don't get exasperated with me, no matter how much I deserve it. As a result, I am not guarded with them, and when we fall back into old patterns of thinking, \"If I tell him this, the friendship is over,\" that's where we have over the years taken the risk to tell it all. That's where the friendship is made even stronger.\n\nWhich of the following words is the closest in meaning to 'exasperate'?",
+   "options": [
+    "Angry",
+    "Excited",
+    "Fiesty",
+    "Happy",
+    "None of the above Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a170d06e4499887c00b7797dad5da8e67e90f8c1a3aa9f7e5f3976a29db4c2c6"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There are friends that you have polite chats with, and there are your best friends. They're the people who root for you, no matter what. You tell them your deepest, darkest secrets, and instead of heading for the door, they stick around and your bond with them grows stronger. A friend recently sent me news about some phenomenal successes he is enjoying in a new business venture. I responded enthusiastically about his amazing gifts. He e-mailed back: \"You, my friend, are too much! But I must say, I love having my own cheering section!\" I responded, without even thinking, \"What are friends for?\" Precisely! Friendship is about being what a hero of mine described as \"balcony people\" instead of \"basement people.\" Basement people are those who live in our minds, telling us we will never amount to anything, that we are doomed to fail and that we are royal screw-ups. Balcony people are those who are consistently cheering us on. \"Go for it,\" they say to our attempts to find our voice, to live in ever-widening circles, to dare, to create, to break through our lives' sound barriers. While not all of us are made to be married or to live in an intentional formal community, be it a kibbutz, ashram, monastery, convent or commune, all of us are created to live in some form of friendship. Friendships are what help us be human. My best friends and I get together regularly to share the deepest part of life, the part that is about being as opposed to doing. Sure, we speak about what we do in our jobs, our other relationships, our spiritual, athletic, medical, familial doings. But the experiential, life-giving juice that feeds our soul and binds us together over the years and takes us to ever deeper dimensions is the conversation we have at the being level. That's the place where your soul stands naked before someone else and receives unconditional acceptance in return. From time to time, we speak about what an exasperation-free oasis our friendship is. Both of us have had some important relationships that soured because someone got exasperated with us. Not that we didn't deserve it. But there is something about my best friends, who just don't get exasperated with me, no matter how much I deserve it. As a result, I am not guarded with them, and when we fall back into old patterns of thinking, \"If I tell him this, the friendship is over,\" that's where we have over the years taken the risk to tell it all. That's where the friendship is made even stronger.\n\nWhich of the following words is opposite in meaning to 'enthusiastic'?",
+   "options": [
+    "Eager",
+    "Indifferent",
+    "Restless",
+    "Apologetic",
+    "None of the above Solution"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ad31e891c9b2c70f2b72e45d147403e0f8d59fac540b21dbb675a1833548fa2c"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There are friends that you have polite chats with, and there are your best friends. They're the people who root for you, no matter what. You tell them your deepest, darkest secrets, and instead of heading for the door, they stick around and your bond with them grows stronger. A friend recently sent me news about some phenomenal successes he is enjoying in a new business venture. I responded enthusiastically about his amazing gifts. He e-mailed back: \"You, my friend, are too much! But I must say, I love having my own cheering section!\" I responded, without even thinking, \"What are friends for?\" Precisely! Friendship is about being what a hero of mine described as \"balcony people\" instead of \"basement people.\" Basement people are those who live in our minds, telling us we will never amount to anything, that we are doomed to fail and that we are royal screw-ups. Balcony people are those who are consistently cheering us on. \"Go for it,\" they say to our attempts to find our voice, to live in ever-widening circles, to dare, to create, to break through our lives' sound barriers. While not all of us are made to be married or to live in an intentional formal community, be it a kibbutz, ashram, monastery, convent or commune, all of us are created to live in some form of friendship. Friendships are what help us be human. My best friends and I get together regularly to share the deepest part of life, the part that is about being as opposed to doing. Sure, we speak about what we do in our jobs, our other relationships, our spiritual, athletic, medical, familial doings. But the experiential, life-giving juice that feeds our soul and binds us together over the years and takes us to ever deeper dimensions is the conversation we have at the being level. That's the place where your soul stands naked before someone else and receives unconditional acceptance in return. From time to time, we speak about what an exasperation-free oasis our friendship is. Both of us have had some important relationships that soured because someone got exasperated with us. Not that we didn't deserve it. But there is something about my best friends, who just don't get exasperated with me, no matter how much I deserve it. As a result, I am not guarded with them, and when we fall back into old patterns of thinking, \"If I tell him this, the friendship is over,\" that's where we have over the years taken the risk to tell it all. That's where the friendship is made even stronger.\n\nWhat is the kind of friendship that the author is talking about?",
+   "options": [
+    "A friendship that started in high school",
+    "A friendship that knows no bounds of age or gender",
+    "A friendship where you don't have to stay guarded",
+    "A friendship that lasts forever",
+    "None of the above Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3250e44d81460f4a49f9ed27af43b4f759aea3c9235f1adeb7f2077d722bf8f5"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "What does the author mean by the phrase 'heading for the door'?",
+   "options": [
+    "Leaving someone",
+    "Running into a door",
+    "Facing a door",
+    "Being stuck in a dilemma",
+    "Both 1 and 4 Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a759597a62607255cca7791c69c6ae774ba644577ce50ad26e732129fd679182"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Who are 'balcony people'?",
+   "options": [
+    "The people who hate us",
+    "The people who spy on us",
+    "The people who constantly cheer us on",
+    "The people who betray us",
+    "The people who abandon us Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "11e36359665268fd61a2c49f689c48bfa338b2e0b03e8967f6543aa503c7650f"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "What are some of the things that the author talks about with his best friends?",
+   "options": [
+    "Relationships",
+    "Work",
+    "Health",
+    "Family",
+    "All of the above Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b28f914f71d01c73490e5b9fe769fcd19a68a0c0254a6d29d924c6f0d14448b7"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "What does the author seem to value the most about his best friends? (62)",
+   "options": [
+    "That they never leave him even when he faulters",
+    "That they love him",
+    "That they talk about important things",
+    "That they are nice people",
+    "All of the above Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8a26daeb91c4d903f01984297736111c7d2748074eeaa32c3177bc49a7512ef9"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "This question comprises 3 sentences - A, B, and C each of which comprises a sentence using the word DUE. Identify the sentences where the word has been correctly used and mark that combination. (A) The next round of talks is not due till January (B) The bill is due at the end of the month. (C) Do your due diligence before investing",
+   "options": [
+    "Only A and B",
+    "Only B and C",
+    "All A, B and C",
+    "Only C",
+    "Only A Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1aac242aac1d77c29f4f7639aa3678401cff5a152962d01981dae1f1e78b72fc"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. The minister promised (A)/ a written response (B)/ to the journalist's (C)/ question regarding a polls (D).",
+   "options": [
+    "C",
+    "No error",
+    "B",
+    "D",
+    "A Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c61042cd10e22e0595806c4a674e6f4a70ea2df0890a7322a953d5b0a87f037a"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select (63) 'No Error'. The candidate's 'teamwork' skills (A)/ and determination convinced (B)/ the recruiters that he was (C)/ perfect to the job (D)",
+   "options": [
+    "B",
+    "A",
+    "No error",
+    "C",
+    "D Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b1b055871ca07bb2c74df88ee473453d9595dfaea0f53b0b9e000f991494f2aa"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. The anecdote shared (A)/ by the main speaker (B)/ provided some light relief (C)/ at the conference (D)",
+   "options": [
+    "B",
+    "D",
+    "C",
+    "A",
+    "No error Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3381fc627f48d5c3987a5ff33574ba7ef4acc74e081d271af5a08ebd1e491367"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. It is good ideas (A) / to study the culture (B)/ and lay of the country (C)/ you are going to visit(D)",
+   "options": [
+    "B",
+    "D",
+    "C",
+    "A",
+    "No error Solution"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f78b2c84f2a4d02b607b1c72c3097991b57b1b504105f30190ba48b8ed9e5163"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. She is working (A)/ dedicatedly (B)/ in that company (C)/ for thirteen years. (D)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error Solution"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "88398036b8b296b1079abd81b3aa156b34dae3e3cfa4edda51dcf2c7854238f0"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. Please come (A)/ on time (B)/ so that we don't (C)/ miss the train. (D)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error Solution"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "aab9daf091c0102d0c95cf511e143a757fa65e62198bfcbdc74ee44cd4b50edf"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "In the following question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. I don't (A)/ feel well (B)/ unless I will (C)/ go to the party. (D) No error.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error Solution"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "30f5f0a1577ecfb72c0a34272b8a1151fdb4778b0000f8dc1e9ed191e51d3d7e"
+  }
+ ],
+ "section_confidence": 0.971,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

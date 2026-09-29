@@ -1,0 +1,1487 @@
+{
+ "file": "77bea25939d20de04c22dcd81959aa73.pdf",
+ "format": "prepp",
+ "accepted": 98,
+ "rejected": 2,
+ "reasons": {
+  "empty_or_short_stem": 2
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Read the passage and answer the following questions. Medical practice at the start of the 21st century is at a crossroads. On the one hand, due to scientific and technological advances, there is an unprecedented ______ to improve the quality of life for people suffering from various ailments. On the other hand, health inequalities are widening and access to affordable and good quality healthcare is becoming difficult for vast sections of the population. Policymakers and the public look to doctors to provide the necessary leadership to tackle shortcomings, and help design better systems of care so that everyone can benefit from modern medicine. But are doctors up to the task? What should be done to ensure that they rise to the occasion? Are they still true to the Hippocratic tradition and the vocational nature of medicine, or have they become hypocrites, interested only in money? How can we restore doctors’ pride and support them and at the same time gain the confidence of patients and policymakers? Whilst the context is important, and not everything from the NHS will be directly applicable in India, there are parallels between the UK situation and what is happening here. I have had the privilege of meeting many dedicated and committed doctors over the years in India. Equally, I hear frequent laments about a lack of professionalism and comments about doctors overcharging, ordering unnecessary interventions, and being interested only in money. This last issue of a close relationship between money and medicine is especially pertinent to the Indian health system, as a vast proportion of healthcare is in the fee-for-service sector as the HLEG observed in its report. From paying huge amounts to secure admissions to both under- and postgraduate programmes (I am told that students can expect to pay Rs two crore to get a postgraduate place in specialties like orthopaedics and radiology), to receiving commissions for referring patients for tests/procedures (with referral commissions reportedly representing a substantial proportion of the costs of laboratory tests, for example), to hospital doctors being given ‘quotas’ of admissions or procedures to retain their admitting privileges (leading to unnecessary interventions), there seems to be a malignant financial angle to almost every patient interaction in the private sector. Although in theory there is a comprehensive public health system, it is disorganized, with widespread absenteeism and poor facilities, and does not inspire confidence, with the result that even the poor choose the fee-for-service private sector. My purpose here is not to make judgments. Regardless of which healthcare system one looks at, there will always be good and bad doctors. This is because they are both victims and perpetrators. They are victims of a less than perfect science, a society that demands zero risks, and the pervading moral and ethical culture. They are also perpetrators of the crimes they are charged with as they fail to address and adapt to the changing societal and healthcare context. Which of the following is the main idea of the passage?",
+   "options": [
+    "Lack of medical students in India.",
+    "Failure of doctors to gain confidence of patients.",
+    "Unethical practices in the healthcare system",
+    "Negligence of the government towards the health care sector.",
+    "Doctors are the biggest victims of the society today"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "61fe3699b4dcdb4aedff59bf6035ff8b3d5c0f27ef72e7b111f4fb04bf53a18a"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "Which of the following words fits in the sentence? On the one hand, due to scientific and technological advances, there is an unprecedented ______ to improve the quality of life for people suffering from various ailments.",
+   "options": [
+    "Growth",
+    "Desire",
+    "Hope",
+    "Potential",
+    "Stress"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "28a84dc1677c392da25219a631320a62323f152588e0db7e7c91de358229d9bb"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "Which of the following can be inferred from the passage? I. There are complaints of doctors charging more than what is appropriate. II. Doctors are often in danger as people demand zero risk and science is not perfect. III. Society is not completely benefitting from the advancements of science and medicine.",
+   "options": [
+    "Only II",
+    "Only III",
+    "Both I and II",
+    "Both II and III",
+    "All of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f1cca903aac310e7ba0e3f038f6baf17239154c9264548c1555dae6a1c14fd90"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Which of the following is true according to the passage? I. Policy makers cannot involve doctors in the policy making process as most of them are hypocrites interested only in money. II. The role of doctors has been questioned as many of them have been engaged in money making policies. III. There is a need to support the doctors as well as gain confidence of the public.",
+   "options": [
+    "Only II",
+    "Only III",
+    "Both II and III",
+    "Both I and II",
+    "All of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1da937d2463338948ea522e6585ba63d373efe3c1b9beec014bc7ed93ae1c663"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "Which of the following is true according to the passage? I. Policy makers cannot involve doctors in the policy making process as most of them are hypocrites interested only in money. II. The role of doctors has been questioned as many of them have been engaged in money making policies. III. There is a need to support the doctors as well as gain confidence of the public.\n\nWhich of the following is MOST SIMILAR in meaning to the word 'pervading'?",
+   "options": [
+    "Infuse",
+    "Optimistic",
+    "Verbose",
+    "Damaging",
+    "Bolster"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ef40a92c0ff71519ac65c8eb94675331ff0743ff318e68fbebd369579ba571b8"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "Which of the following is true according to the passage? I. Policy makers cannot involve doctors in the policy making process as most of them are hypocrites interested only in money. II. The role of doctors has been questioned as many of them have been engaged in money making policies. III. There is a need to support the doctors as well as gain confidence of the public.\n\nWhich of the following is MOST OPPOSITE in meaning to the word 'malignant'?",
+   "options": [
+    "Acrimonious",
+    "Tiring",
+    "Ostentatious",
+    "Benevolent",
+    "Punctilious"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6078aa539aa43f78d9b83e0105de34de6dbc94006cae2f6ee345748479d545b9"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Which of the following is true according to the passage? I. Policy makers cannot involve doctors in the policy making process as most of them are hypocrites interested only in money. II. The role of doctors has been questioned as many of them have been engaged in money making policies. III. There is a need to support the doctors as well as gain confidence of the public.\n\nWhich of the following is MOST OPPOSITE in meaning to the word 'PERTINENT'?",
+   "options": [
+    "Irrelevant",
+    "Apposite",
+    "Gigantic",
+    "Demanded",
+    "Concealing"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "eedd04b06248393ced604f9955bfc0c60e46eb5f3e943396bce6a1050c81f4b4"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors select ‘No error’ as your answer. Man is entirely different (A) / than other animals (B) / in the utter helplessness (C) / of his babyhood. (D) / No Error (E)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "(E)"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d1af60f2e4143697cdc0dcc6c7bb22fbe71cbbcf18f46fe7d24c8715850dd383"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors select ‘No error’ as your answer. He lack the (A) / power of imparting, (B) / although he is (C) / a good mathematical scholar. (D) / No error (E)",
+   "options": [
+    "(A)",
+    "(B)",
+    "(C)",
+    "(D)",
+    "No error"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ee80e8929851cece6e7f43687cfe0ff24269f7eaaba231089ade467a3b028ed6"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "In the following question, some parts of the sentence may have an error. The error, if any, will be in one part of the sentence. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors select ‘No error’ as your answer. What Dr. Joshi mainly aimed at, (A) / was to promote the (B) / self-development of the young minds (C) / committed for their charge. (D) / No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "017e807ede86337b723e7be30b31a80db7014a88df60c2720dbf561d55ec467d"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Determine the erroneous part in the options given below. If there is no error, choose Option 5- No error. The sceneries/ was so beautiful/ that John was mesmerized/ and captivated by all that he saw./ No error",
+   "options": [
+    "The sceneries",
+    "was so beautiful",
+    "that John was mesmerized",
+    "and captivated by all that he saw",
+    "No error"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "359b31e9a45ac906564308c08b32ac9f9e5bd63707c2753bf7573ba868eac03f"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "The sentence given below may contain an error. Identify the part containing the error, if any, and mark it as you answer. If there is no error anywhere in the sentence, mark No Error(E) as your answer. More than one (A) person are (B) a secret (C) undercover agent. (D) No Error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c569b1e757195331cdba3e39bcc0403680276fbb5b8d6d38d7d72ffc2549b927"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below carefully and then answer the questions that follow. Pompeii was an ____(1)____ city located in what is now the comune of Pompei near Naples in the Campania region of Italy. Pompeii, along with Herculaneum and many villas in the surrounding area (e.g. at Boscoreale, Stabiae), was buried under 4 to 6 m (13 to 20 ft) of volcanic ash and pumice in the ____(2)____of Mount Vesuvius in AD 79. Largely preserved under the ash, the excavated city offered a unique snapshot of Roman life, _____(3)_____ at the moment it was buried, and extraordinarily detailed insight into the everyday life of its inhabitants, although much of the evidence was lost in the early excavations. It was a wealthy town, enjoying many fine public buildings and ____(4)____ private houses with lavish decorations, furnishings and works of art which were the main attractions for the early excavators. Organic remains, including wooden objects and human bodies, were entombed in the ash. Over time, they decayed, leaving voids that archaeologists found could be used as moulds to make plaster casts of unique — and often ____(5)____— figures in their final moments of life. Which of the following is the most appropriate answer for blank no. 1?",
+   "options": [
+    "former",
+    "artificial",
+    "ancient",
+    "advanced",
+    "fraudulent"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "667658a80a99c59142afa9b49ad3ff4ec76716bf9468d696c27dd0d239d8f553"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below carefully and then answer the questions that follow. Pompeii was an ____(1)____ city located in what is now the comune of Pompei near Naples in the Campania region of Italy. Pompeii, along with Herculaneum and many villas in the surrounding area (e.g. at Boscoreale, Stabiae), was buried under 4 to 6 m (13 to 20 ft) of volcanic ash and pumice in the ____(2)____of Mount Vesuvius in AD 79. Largely preserved under the ash, the excavated city offered a unique snapshot of Roman life, _____(3)_____ at the moment it was buried, and extraordinarily detailed insight into the everyday life of its inhabitants, although much of the evidence was lost in the early excavations. It was a wealthy town, enjoying many fine public buildings and ____(4)____ private houses with lavish decorations, furnishings and works of art which were the main attractions for the early excavators. Organic remains, including wooden objects and human bodies, were entombed in the ash. Over time, they decayed, leaving voids that archaeologists found could be used as moulds to make plaster casts of unique — and often ____(5)____— figures in their final moments of life. Which of the following is the most appropriate answer for blank no.\n\nWhich of the following is the most appropriate answer for blank no. 2?",
+   "options": [
+    "tremors",
+    "eruption",
+    "crash",
+    "depletion",
+    "inflation"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8fe69c9d66973309aec98103e7916aa34605663b7a84dfa6aeec1eb292a19faf"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below carefully and then answer the questions that follow. Pompeii was an ____(1)____ city located in what is now the comune of Pompei near Naples in the Campania region of Italy. Pompeii, along with Herculaneum and many villas in the surrounding area (e.g. at Boscoreale, Stabiae), was buried under 4 to 6 m (13 to 20 ft) of volcanic ash and pumice in the ____(2)____of Mount Vesuvius in AD 79. Largely preserved under the ash, the excavated city offered a unique snapshot of Roman life, _____(3)_____ at the moment it was buried, and extraordinarily detailed insight into the everyday life of its inhabitants, although much of the evidence was lost in the early excavations. It was a wealthy town, enjoying many fine public buildings and ____(4)____ private houses with lavish decorations, furnishings and works of art which were the main attractions for the early excavators. Organic remains, including wooden objects and human bodies, were entombed in the ash. Over time, they decayed, leaving voids that archaeologists found could be used as moulds to make plaster casts of unique — and often ____(5)____— figures in their final moments of life. Which of the following is the most appropriate answer for blank no.\n\nWhich of the following is the most appropriate answer for blank no. 3?",
+   "options": [
+    "flowed",
+    "melting",
+    "terminate",
+    "frozen",
+    "created"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8f36822d3ba176ae35cb700f4d3f10e3ae1f10cd029e6197ff6cc46a2d12b79b"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below carefully and then answer the questions that follow. Pompeii was an ____(1)____ city located in what is now the comune of Pompei near Naples in the Campania region of Italy. Pompeii, along with Herculaneum and many villas in the surrounding area (e.g. at Boscoreale, Stabiae), was buried under 4 to 6 m (13 to 20 ft) of volcanic ash and pumice in the ____(2)____of Mount Vesuvius in AD 79. Largely preserved under the ash, the excavated city offered a unique snapshot of Roman life, _____(3)_____ at the moment it was buried, and extraordinarily detailed insight into the everyday life of its inhabitants, although much of the evidence was lost in the early excavations. It was a wealthy town, enjoying many fine public buildings and ____(4)____ private houses with lavish decorations, furnishings and works of art which were the main attractions for the early excavators. Organic remains, including wooden objects and human bodies, were entombed in the ash. Over time, they decayed, leaving voids that archaeologists found could be used as moulds to make plaster casts of unique — and often ____(5)____— figures in their final moments of life. Which of the following is the most appropriate answer for blank no.\n\nWhich of the following is the most appropriate answer for blank no. 4?",
+   "options": [
+    "despondent",
+    "modest",
+    "defective",
+    "imitation",
+    "luxurious"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "fdea14c137759ac8f89de8ddb2417d27d6bdbeeb1478ad10b5ff005ca3eeafc7"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below carefully and then answer the questions that follow. Pompeii was an ____(1)____ city located in what is now the comune of Pompei near Naples in the Campania region of Italy. Pompeii, along with Herculaneum and many villas in the surrounding area (e.g. at Boscoreale, Stabiae), was buried under 4 to 6 m (13 to 20 ft) of volcanic ash and pumice in the ____(2)____of Mount Vesuvius in AD 79. Largely preserved under the ash, the excavated city offered a unique snapshot of Roman life, _____(3)_____ at the moment it was buried, and extraordinarily detailed insight into the everyday life of its inhabitants, although much of the evidence was lost in the early excavations. It was a wealthy town, enjoying many fine public buildings and ____(4)____ private houses with lavish decorations, furnishings and works of art which were the main attractions for the early excavators. Organic remains, including wooden objects and human bodies, were entombed in the ash. Over time, they decayed, leaving voids that archaeologists found could be used as moulds to make plaster casts of unique — and often ____(5)____— figures in their final moments of life. Which of the following is the most appropriate answer for blank no.\n\nWhich of the following is the most appropriate answer for blank no. 5?",
+   "options": [
+    "gruesome",
+    "pleasant",
+    "magnificent",
+    "generous",
+    "faulty"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b8beb04535e504ce9a54eb95b74972c215ccff646e820a47887a549561f5a396"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "In the following question, four words are given in bold, of which one word is misspelled. Find the misspelled word. To win a title without him spoke volumes of that team’s strennth.",
+   "options": [
+    "title",
+    "spoke",
+    "volumes",
+    "strennth",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8955ad8079df07f96fed3ee391112eac5a9067a3d9f2bd70cc77aa349767d290"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "In the following question, four words are given in bold, of which one word is misspelled. Find the misspelled word. Meanwhile, cases of Omicron climbed to 33 after a fully vacinated person who travelled to Zimbabwe and South Africa before coming to Delhi tested positive for the new strain in the national capital on Saturday.",
+   "options": [
+    "climbed",
+    "vacinated",
+    "positive",
+    "national",
+    "no error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "53e25367720dd8b9c94c7097b7bf85ca6474af7f6a8b7fa9fb7411f238430754"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "In the following question, four words are given in bold, of which one word is misspelled. Find the misspelled word. The main reason for hapiness is that the farmers' have won.",
+   "options": [
+    "reason",
+    "hapiness",
+    "farmers",
+    "won",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bfd061ff7f4e4fc2fb5d099df38639ef907b6e0f9ff034179d5944d222c6dea9"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "In the following question, four words are given in bold, of which one word is misspelled. Find the misspelled word. The government has said the ambitious project will complement the Purvanchal Development Corridor",
+   "options": [
+    "government",
+    "ambitious",
+    "complement",
+    "Corridor",
+    "No error"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e59a51f6113d74123da3f3946041aabe772ba7a3f3ac7bed19468bdc4f5ea700"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "In the following question, four words are given in bold, of which one word is misspelled. Find the misspelled word. \"The tourism sector is ecspected to grow insignificantly\", he said.",
+   "options": [
+    "tourism",
+    "ecspected",
+    "grow",
+    "insignificantly",
+    "no error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4b71c707d4b74cf0e0a005d2816b60d67532a0bf17e9e637d250f557f9f17173"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Rearrange the following five segments (A), (B), (C), (D) and (E) in the proper sequence to form a meaningful paragraph; then answer the questions given below them. A. NPCIL is a dividend-paying company with the highest credit rating of AAA by CRISIL and CARE B. At present, NPCIL operates 22 nuclear power reactors with an installed capacity of 6780 MW. C. NPCIL is responsible for siting, design, construction, commissioning and operation of nuclear power reactors. D. Nuclear Power Corporation of India Limited (NPCIL), formed in 1987, is a Public Sector Enterprise under the administrative control of Department of Atomic Energy (DAE). E. Safety is given overriding priority in all facets of nuclear power reactors. Which is the first sentence according to the paragraph?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "859a07f9afbc859f3b6af08cce59d789ffd7134dad2804defa582af573351d32"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Which is the third sentence according to the paragraph?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0e5964e504d8925d71ee6fb614e7c37794d2bad0e845f95f8b475453dee4c575"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Which is the fourth sentence according to the paragraph?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c27f0175099de74f2970fc04f4ba2a2917d52fc9ce5c2e1d53bf205bdb0accfd"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Which is the fifth sentence according to the paragraph?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a4a4bacd11a16171e13de8f924b47229fd097ecbda9b91fbd4a400e435683396"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Arrange the following parts of a sentence in the correct order and mark the correct option. A. done to pacify the B. wouldn't damage C. spirits so that they D. the crops or cause anyone grief E. these sacrifices were",
+   "options": [
+    "EACBD",
+    "EDCAB",
+    "BACDE",
+    "ADCBE",
+    "BCADE"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1207f428bd276cd6342c298c439072ef62b9bf51c0aef0c3abe4221ab8745d4b"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Arrange the following parts of a sentence in the correct order and mark the correct option. A. remain indifferent B. stride forward C. even if others D. you should E. to the humanitarian cause",
+   "options": [
+    "CABED",
+    "BACED",
+    "DBCEA",
+    "ECBAD",
+    "CAEDB"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "270f04b246fe185961d98ca0c9b6a07ae6d9c166348859a051f7aec363f68cdf"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. a person B. quickly wins C. nice expensive clothes D. who wears E. the admiration of many",
+   "options": [
+    "EBDCA",
+    "ADCBE",
+    "BDEAC",
+    "CDEAB",
+    "DEACB"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a05d82ebf1df6a9f12b149ca834ec54cab936e7e9f52a04edb58b86eaf39d295"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Direction: The table below shows the number of employees in 5 companies, as well as the male to female ratio in these employees. Examine the table carefully and answer the questions that follow. Total Males : Companies Employees Females A 720 5 ∶ 3 B 690 13 ∶ 10 C 740 16 ∶ 21 D 1050 22 ∶ 13 E 1230 2 ∶ 1 Find the ratio of males in company A and B together to females in company A and C together.",
+   "options": [
+    "25 ∶ 21",
+    "15 ∶ 24",
+    "23 ∶ 34",
+    "18 ∶ 25",
+    "28 ∶ 23"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "caff97cb8b0fe0e4f457a5918f0db02b42888aa1bd3ba274489cf1dc6dd54758"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "Find the average number of employees working in companies A, B, D and E.",
+   "options": [
+    "922.5",
+    "675",
+    "1050.8",
+    "580",
+    "950"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ab52bbdb2938a5628a960da6aee59d5cb6f2c353c5916f518c551f21a1cefe7d"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "Females in company D is what percent more than females in company A.",
+   "options": [
+    "70%",
+    "30%",
+    "44.44%",
+    "60%",
+    "25%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3917b23e87dc1d3fff851d6e2b4defc2529d2faecfc1b2b787bbd1fa411ccb7b"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the number of males in companies C and D together to females in companies B and E together.",
+   "options": [
+    "480",
+    "250",
+    "180",
+    "270",
+    "340"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c0de2acf17fea73cedb1482ca7a40a577c115ed31d53841e703d519b5ac09ef1"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "If 90 males left the company ‘B’ and 200 new females took new recruit in company ‘B’ then find the percentage of females in company now.",
+   "options": [
+    "60%",
+    "62.5%",
+    "40%",
+    "33.33%",
+    "75%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5a0151c1c87311e7f5174f54694ea736beece004d1e336f4605732cd7a75ba7e"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (18)7.9 × (3)0.1 × (6)0.1 ÷ {(3)4 × (6)4} = (18)?",
+   "options": [
+    "8",
+    "4",
+    "3",
+    "9",
+    "5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "44f923bb24febcf09b480d423274790458c8ba0083cb62dc9379ad0f651999bb"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2-2 × 4-3 ÷ 8-4 = 2?",
+   "options": [
+    "12",
+    "18",
+    "20",
+    "-4",
+    "4"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "329f68f20e24c1a74a0b065ddb6bb72a58a5236d47876fa8a6a469c401c4e6a1"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 181 +92 −101 =12+ ? 3 3 3 3",
+   "options": [
+    "10",
+    "15",
+    "18",
+    "16",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3c90e98621a99c1554d233532c1911b24c447058f7dacd69c2ee384a9122c498"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (? - 0.5) ÷ 0.4 = 150 ÷ 2",
+   "options": [
+    "20.5",
+    "30.5",
+    "29.5",
+    "25.5",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "add7e08a6eccf8e810294478c0f212b97ccfe6fc9a2e8c074ab40195e818c31f"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? √324 + 92 - 72 = 2 × (?)2",
+   "options": [
+    "25",
+    "5",
+    "10",
+    "125",
+    "20"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "784dc2ee2647bfff6bc14899545aa6a897d34a7898ac80429915cdcb88a9a98b"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark (?) in the following question? 45% of 260 + 130% of 180 = ?",
+   "options": [
+    "341",
+    "351",
+    "531",
+    "331",
+    "361"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b225d0481a5d76626729cc531374d29eb7dc9a461108d513285bf4c661ca8d9b"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "50% of 280 - (2/7) of 490 = 30 - ?",
+   "options": [
+    "30",
+    "20",
+    "35",
+    "40",
+    "25"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd28eac0ce240d40a5693e03f6baf612444920847cdc191f30155e70be51ecc0"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? √1024 × 40 + (20)2 + 0.5% of 9600 + 469 = (?)3",
+   "options": [
+    "14",
+    "15",
+    "21",
+    "13",
+    "19"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6ddc37d8adfaa4f8a52a9623d4b5cacf982f867dfef2ede1147edadf96772d56"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark ‘?’ in the following question? 90 × 20% of 105 ÷ 3 = ?",
+   "options": [
+    "630",
+    "600",
+    "615",
+    "610",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b492f13a5abd775bc81800ea1f901e83685924cd4b5f95eb60a32e4ee64767b7"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 433 + 514 - 787 - 8 × ?% of 320 = 0",
+   "options": [
+    "6.25",
+    "6",
+    "6.5",
+    "7.5",
+    "5"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9192d4dc328cd23ee57ec633a99688afc1c54c3c87f6e4f9694c6c555aa10d99"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given, find out that number. 23, 45, 89, 177, 363, 705",
+   "options": [
+    "177",
+    "45",
+    "89",
+    "363",
+    "705"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9fdab0b0c8ea80489aeb160cf27b797897935c1d62d27a3252bfd7b7963215b0"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given, find out that number. 100800, 14400, 2400, 480, 240, 40",
+   "options": [
+    "40",
+    "240",
+    "14400",
+    "480",
+    "2400"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cf3e22cbe6c6ea91626e1527da0a0368a584b70fdfc159298817c7c874bee4ab"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given. Find out that number. 540, 540, 270, 135, 22.5, 4.5",
+   "options": [
+    "540",
+    "270",
+    "22.5",
+    "135",
+    "4.5"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5f524b04abeb728e4f971f05d1d7d172332591df49c3f23078ff3458add1261c"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given. Find out that number. 38, 39, 43, 52, 70, 93, 129",
+   "options": [
+    "70",
+    "52",
+    "93",
+    "129",
+    "39"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "893faebf3647cd788eac65b80a877cb5281cd75ead2995d86a563e33ec11a2a2"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given. Find out that number. 18, 35, 69, 136, 273, 545",
+   "options": [
+    "69",
+    "35",
+    "18",
+    "136",
+    "273"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a79ff24bd49d8ab4b545eced219625ceaeaf6b134cfeb3a0ace2632e560860a3"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "Two pots contain equal quantity of mixture of Alcohol and water. The ratio of alcohol and water in these pots is 2 ∶ 3 and 4 ∶ 1, respectively. Radha mixed content of the two pots together. Find the ratio of Alcohol and water in new mixture.",
+   "options": [
+    "4 ∶ 3",
+    "2 ∶ 3",
+    "3 ∶ 2",
+    "3 ∶ 4",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "294282bb309efe3384075b11f52a5fd18e93bbd4c1e286818ba4ab741d166f5b"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "The total population of a town is 2800 where number of males is 720 more than that of females. If the number of males reduces by 40% and that of females increases by 20%, then find the new population of town.",
+   "options": [
+    "2236",
+    "2440",
+    "2304",
+    "2316",
+    "2060"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c713bd18065a0126d529684b87c306195bcabc8c9b5708fa4c8d1ddd55ef6fca"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "The speed of a boat with the stream is 10 km/hr and while returning its speed becomes 6 km/hr. Find the speed of boat in still water and the speed of stream.",
+   "options": [
+    "8 km/hr and 2 km/hr",
+    "7 km/hr and 3 km/hr",
+    "6 km/hr and 2 km/hr",
+    "9 km/hr and 1 km/hr",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d83e77f7a80861a66a4c49335581a0095611f23488c459b5e8e79fb2cf61d04a"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "Sanju, Suraj and Sanjay can complete a work in 12 days, 16 days and 24 days respectively. In how many days will the three of them to do the same work together?",
+   "options": [
+    "16/3 days",
+    "58/9 days",
+    "6 days",
+    "8 days",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8a2be112fbecfa1de68e5e35feb223b98126bea8a607f766a3fd54bcbacf44ff"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "The length of two trains are 130 m and 150 m are running at the speed of 52 km/hr and 74 km/hr, respectively on parallel tracks in opposite direction. In how many seconds will they cross each other?",
+   "options": [
+    "5",
+    "8",
+    "10",
+    "12",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d25d5b7660e789a4e7dce359f168ea70d66f2aa9eb52614925e21d476c135691"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "After 5 years, the ratio between ages of A and B will be 5 : 8 and after 8 years, the sum of ages will be 71 years. Find the present age of B.",
+   "options": [
+    "33 years",
+    "32 years",
+    "28 years",
+    "40 years",
+    "35 years"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "bab010e4c4867f57fb273094585002bb703c86faf4842ad239ac4732e1d10dd0"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "Raj sells a cricket bat of marked price Rs. 500 at a discount of 10% and gives a ball costing Rs. 10 free with each bat. Still, he makes a profit of 25%, the cost price of the bat is –",
+   "options": [
+    "Rs. 410",
+    "Rs. 458",
+    "Rs. 352",
+    "Rs. 450",
+    "Rs. 420"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1f50c40200e8351c508fe6db451242ec3b829d065c81b24461e2141b582f4ff4"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "The sum of the radius and height of a cylinder is 19 m. The total surface area of the cylinder is 1,672 m2. What is the volume of the cylinder?",
+   "options": [
+    "3080 m3",
+    "2940 m3",
+    "3420 m3",
+    "2860 m3",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dae1c25552fc6f140608abe787bcd4214ffc6fa7526da57e047528433fa6d972"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "P is 10500, SI is 12% and T is 10 years. 1/3rd of interest earned from A invested in B for 5 years. Find the amount received from B after 5 years.",
+   "options": [
+    "7240",
+    "5480",
+    "6720",
+    "2520",
+    "6250"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ee9071b42199f9c330c4631d7a1c37a403f65f654e1e2ea10289f65fa089b911"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "A, B and C started a business each investing 10000 Rs. Initially. After 6 months, C withdraws Rs. 2000, A invests 2000 more and B invests 6000 more. At the end of year total profit was 50490 Rs. Find the share of B?",
+   "options": [
+    "Rs. 19890",
+    "Rs. 28500",
+    "Rs. 24200",
+    "Rs. 21570",
+    "Rs. 20560"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d69d2f871604351b73b2887046ec70d20f819c9fad9bea282f21fbc75ff719bd"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What is the probability of getting an even number when a die is thrown ? 1",
+   "options": [
+    "6 2",
+    "3 1",
+    "2 5",
+    "6",
+    "Answer not known"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cd7ebf98206d28626d9a055887a05f26e749c3999eaa23474da52865a9133d3d"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "A train starts from a place at 9 a.m. and arrives the destination at 7 p.m. on the next day. If the speed of the train is 12.5 m/s. Find the distance traveled by the train.",
+   "options": [
+    "1562 km",
+    "1530 km",
+    "1580 km",
+    "1498 km",
+    "1425 km"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "591760eb00e7f7a48ea120c4bf42a51b982ecdac445ad4033bfeb96d1acdbfae"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A dishonest shopkeeper used to sell onions at Rs. 30/kg. If a customer bought 2 kg of onions. He gave 750g instead of 1 kg to a customer, find the shopkeeper’s actual profit percentage.",
+   "options": [
+    "5%",
+    "10%",
+    "25%",
+    "33.33%",
+    "50%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ca3d98efad88685121849f4f3b6d787ce3220f31769b8ea14e96ed553f1fa021"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "Pipe A and B can fill the tank in 10 hours and 20 hours respectively where as pipe C can empty the tank in 8 hours. If all the pipes are opened together at the same time, what is the time to fill the tank ?",
+   "options": [
+    "45 hr",
+    "36 hr",
+    "40 hr",
+    "27 hr",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d0e579fdfde2d0d18b8b259df2a2f7e69937d1940561a76bc7dd82fa089192fa"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "Raju and Arun are two business partners. They invest their capital in the ratio 7 : 9. After 6 months, a third person Jitu joins them with a capital of two third of that of Arun. After a year, profit share of Raju was Rs 5600 then find total profit.",
+   "options": [
+    "15200",
+    "12400",
+    "16400",
+    "30400",
+    "24600"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6b0b2c90b60e8940cfc812400fdd64dce646003352973be12f74df1097838c6b"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Seven persons A, B, C, D, E, F and G are sitting around the circular table but not necessarily in same order. All are facing towards center. Two persons sit between F and G. G does not sit second to the left of D. D sits third to the right of C. B sits fourth to the right of A. E sits second to the right of A. D is immediate left of E. Who among the following sits exactly between G and C?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e57945a35468059b3c042e9381801e42c87cbc243ff5abb2a49918d24009a0ad"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Seven persons A, B, C, D, E, F and G are sitting around the circular table but not necessarily in same order. All are facing towards center. Two persons sit between F and G. G does not sit second to the left of D. D sits third to the right of C. B sits fourth to the right of A. E sits second to the right of A. D is immediate left of E.\n\nWho among the following sits third to the left of E?",
+   "options": [
+    "C",
+    "A",
+    "D",
+    "F",
+    "B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "778dcdff23bcfae0bfcd8fc9d83844db16e0e4f8368397d59727ad1d2f0c2e69"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the following questions. Seven persons A, B, C, D, E, F and G are sitting around the circular table but not necessarily in same order. All are facing towards center. Two persons sit between F and G. G does not sit second to the left of D. D sits third to the right of C. B sits fourth to the right of A. E sits second to the right of A. D is immediate left of E.\n\nWhat is the position of E with respect to B?",
+   "options": [
+    "Second to the right",
+    "Second to the left",
+    "Third to the right",
+    "Third to the left",
+    "None of the above given option"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "65e4cf1a01e2d145ded2a022ec76de847d55d2feef0575008cc4d5d9dee35755"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Four among the five are same in a certain way thus form a group. Which among the following is odd one out?",
+   "options": [
+    "E - D",
+    "D - A",
+    "C - B",
+    "G - E",
+    "F - A"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "10484e598a462a4b7afeb9e02d41d7e1cd6167a4e9b02fbe9db11ae7b7d92480"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Which statement among the following is true regarding arrangement?",
+   "options": [
+    "E sits immediate right of G",
+    "Only one person sit between F and B when count clockwise from B",
+    "C and F are immediate neighbor of each other",
+    "Both A 2) and 3)",
+    "All statements are true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8c4dbf3efedc8cdf5be9c874a6bd331e1b5892a8207387060b94017f9fd615e2"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word \"RESOLVE\" each of which has as many letters between them in the word (in both forward and backward direction), as they have between them in English alphabetical series?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than Three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "58180a6f3d5f3b542034084e17463f5295d2b535ccc482ebf90728ffd7265be5"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some fan is AC. Only a few AC is cooler. Conclusions: I. Some fan is cooler. II. No fan is cooler.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follow",
+    "Both conclusions I and II follow",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cc56e4112e5d94486acbfd4dcf931c8a21ad3e48fa8e574978ac75d28be7c075"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: I. Some gases are liquids II. Only a few gases are water Conclusions: I. Some gases are water II. Some gases are not water",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion Ii follows",
+    "Either conclusion I or II follws",
+    "Neither conclusion I or II follows",
+    "Both conclusion I and II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c73f7b6de680e62a0b70127f94a6c35ea4381c7b796a81892f6c18428e1bfb15"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All Toy is Bottle. A little Toy are Machine. Conclusions: I. No Toy is Bottle. II. Some Machine are Bottle.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5be362889a1a54cb88eebd6313e15ee3d694ab9aa6e562e4fe58de88516fa8f2"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow. Seven people P, Q, R, S, T, U and V. All of them have their birthdays in different months namely January, March, April, May, June, July and August. No two persons share the same birthday month. P's birthday is in January. There are the same number of person having their birthday before and after R. Only one person's birthday is there between S and R. Q's birthday is in the month having 31 days but not in August. There are two person's birthday between Q and V. T's birthday is before U's birthday. Q's birthday is not before R. In which month does S have his birthday?",
+   "options": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "July"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c4627b5e9f4a9f9d8a7f8afe20d3306c7135c12d0494bdb464bd1e6de8e3b8b2"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow. Seven people P, Q, R, S, T, U and V. All of them have their birthdays in different months namely January, March, April, May, June, July and August. No two persons share the same birthday month. P's birthday is in January. There are the same number of person having their birthday before and after R. Only one person's birthday is there between S and R. Q's birthday is in the month having 31 days but not in August. There are two person's birthday between Q and V. T's birthday is before U's birthday. Q's birthday is not before R.\n\nWhose birthday is in the month of June?",
+   "options": [
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "924aa87d96d5cae0eca01d67c3358f4aa4945c43de49eeaedcedfdeb59b9d49c"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow. Seven people P, Q, R, S, T, U and V. All of them have their birthdays in different months namely January, March, April, May, June, July and August. No two persons share the same birthday month. P's birthday is in January. There are the same number of person having their birthday before and after R. Only one person's birthday is there between S and R. Q's birthday is in the month having 31 days but not in August. There are two person's birthday between Q and V. T's birthday is before U's birthday. Q's birthday is not before R.\n\nHow many persons have their birthday before Q?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than Four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "35be1c43da423b30abb50f2af42504a654cc52dfcac81c8bbf7fff52034b0531"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Four among the five are same in a certain way thus form a group. Who among the following is odd one out",
+   "options": [
+    "P",
+    "S",
+    "R",
+    "T",
+    "Q"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6d92beb2211bed9e2338f9e99e71dce3c223e95b1ab4b299be195ee1eb04b2aa"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Who is having his birthday at the last?",
+   "options": [
+    "U",
+    "V",
+    "R",
+    "T",
+    "None of the above given option"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e048bf987f6dd5a82ca62a7c8c4d3630cf550be34199c4ca2b044be31babcf66"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions given below: P is 9m to the west of R. R is 7m to the north of T, who is 5m to the east of S. S is 4m north of Q. Q is 14m to the south of U, Where V is the midpoint of U and S. What is the distance between V and Q?",
+   "options": [
+    "14m",
+    "9m",
+    "10m",
+    "15m",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f0ab26575e918c8e4317a1f3db3bf9e3461a2df37d5080fb2eaf814d309e7382"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Point P is in which direction with respect to V?",
+   "options": [
+    "Northeast",
+    "North",
+    "Southwest",
+    "Southeast",
+    "Northwest"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a5032041c0d0ee444b861e5c258d018c41af476a590637451466e7c3d2b3e97d"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "If a point W is drawn 7m to the south of point P, them what will be the distance between W and S?",
+   "options": [
+    "9m",
+    "10m",
+    "8m",
+    "12m",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8c6ca2a2a08a86d8d5701321292b8d7fb3ceb16a6020be2ec260dc13fcf57761"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Each of the vowels in the word “OBLIQUE” is replaced by the previous letter and each consonant is replaced by next letter in alphabetical series. How many letters occur more than once in this newly formed word?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f51f8a649fed54a993031ce7a11d9d24a0f42957a51ca2775df30c9481bf2c53"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the following questions. An uncertain number of person is sitting in a row facing towards North. Q is sitting second from on the extreme ends. S is sitting seventh to the right of M. L is sitting exactly in between Q and S. O is sitting third to the left of R. Only two people are sitting between Q and M. Only one person is sitting between S and O. P is sitting second to the left of N who is sitting fourth to the right of R. R is not an immediate neighbour of S. Who is sitting at the extreme right end of the row?",
+   "options": [
+    "P",
+    "R",
+    "S",
+    "N",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fdb873ea2ae3d8ec5a723f6539eca508184002f75c2c6af268caf08cc7353036"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the following questions. An uncertain number of person is sitting in a row facing towards North. Q is sitting second from on the extreme ends. S is sitting seventh to the right of M. L is sitting exactly in between Q and S. O is sitting third to the left of R. Only two people are sitting between Q and M. Only one person is sitting between S and O. P is sitting second to the left of N who is sitting fourth to the right of R. R is not an immediate neighbour of S.\n\nHow many people are sitting in the row?",
+   "options": [
+    "23",
+    "21",
+    "25",
+    "22",
+    "17"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "10644ca1e5444978acfe76d3436f815b7509c897f709e58cf28bbb82b554aed0"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the following questions. An uncertain number of person is sitting in a row facing towards North. Q is sitting second from on the extreme ends. S is sitting seventh to the right of M. L is sitting exactly in between Q and S. O is sitting third to the left of R. Only two people are sitting between Q and M. Only one person is sitting between S and O. P is sitting second to the left of N who is sitting fourth to the right of R. R is not an immediate neighbour of S.\n\nHow many people are sitting in between L and O?",
+   "options": [
+    "Five",
+    "Seven",
+    "Six",
+    "Four",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fe92734eb69a482c668389450f50b48e286d137297b088a300002e61f2c2b1d2"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the following questions. An uncertain number of person is sitting in a row facing towards North. Q is sitting second from on the extreme ends. S is sitting seventh to the right of M. L is sitting exactly in between Q and S. O is sitting third to the left of R. Only two people are sitting between Q and M. Only one person is sitting between S and O. P is sitting second to the left of N who is sitting fourth to the right of R. R is not an immediate neighbour of S.\n\nWhich of the following statement is correct regarding P?",
+   "options": [
+    "Second to the right of N",
+    "Second to the left of R",
+    "Second from one the extreme ends",
+    "Immediate neighbour of N",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "cec959c976ed9a222f16ca165c2e55306739eb126043f0720b6609bb5b899ac2"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the following questions. An uncertain number of person is sitting in a row facing towards North. Q is sitting second from on the extreme ends. S is sitting seventh to the right of M. L is sitting exactly in between Q and S. O is sitting third to the left of R. Only two people are sitting between Q and M. Only one person is sitting between S and O. P is sitting second to the left of N who is sitting fourth to the right of R. R is not an immediate neighbour of S.\n\nWho is sitting exactly in between R and N?",
+   "options": [
+    "P",
+    "J",
+    "M",
+    "Q",
+    "none of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7c89d9fd63e204bfc139cbd5585ca8329d2d072e8d2e73a451d4c493a9dfbef3"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the following questions assuming the given statements to be true, find which of the conclusion among given conclusions is/ are definitely true, and then give your answers accordingly. Statements: A < Z ≥ P > Q < L ≤ M < R = S Conclusions: I. M > P II. L < S",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follow",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6d105651c6feca2666d5f75cec1170a93b26b3efcb3f242a62dc5819a8bcda52"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, Find which of the conclusion among the given conclusions is/are definitely true and then give your answers accordingly. Statement: A = G ≤ M > Z > X ≥ T Conclusion: I. Z > T II. Z = T",
+   "options": [
+    "Only II follow",
+    "Both I and II follow",
+    "Only I follow",
+    "Neither I nor II follow",
+    "Either I or II follow"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "88aa7ec4562c1ddf8b482f0e2f21ddef2640c9d8ab92b22efa0087b63dd46c51"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A < B = C > E ≥ D ≥ F Conclusions: I. E > F II. E = F",
+   "options": [
+    "Either Conclusion I or II is true.",
+    "Both Conclusions I and II are true.",
+    "Neither Conclusion I nor II is true.",
+    "Only Conclusion I is true.",
+    "Only Conclusion II is true."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "462e0074443f840d67f2a7f00431acfe7e65f36a4f8898baa92bd4b42e82e6ea"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is /are definitely true and then give your answers accordingly. Statement: I ≤ J ≥ K > L ≥ M = N < O Conclusions: I. O < J II. K ≥ N",
+   "options": [
+    "Only conclusion I is true",
+    "Only conclusion II is true",
+    "Either conclusion I or II is true",
+    "Both conclusion I and II are true",
+    "Neither conclusion I nor II is true"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "af57fe553662ab10283bcadebd6014a1eff0c4d77ab712598757f708cbd7af23"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the information given below carefully and answer the questions that follow. Eight persons M, O, P, Q, R, S, T and U live on eight different flats of a four-storey building but not necessary in the same order, where the bottom most floor is 1 and the floor above is numbered 2 and so on. There are 2 types of flats on each floor, flat A and flat B are such that flat A is towards the west of flat B. Flat A of floor 1 is immediately below of flat A of floor 2, which is immediately below of flat A of floor 3 and so on, similarly for flat B. The dimensions of each of the flats are same. If one person lives immediately above or below the other then they have the same flat. There are two floors between the floors of U and R (both of them may or may not live in the same type of flat). U lives south-west of M. Q lives 2 floors above M (both live in the same type of flat). O lives immediately above S, who doesn’t live anywhere below M’s floor. P doesn’t live on a floor above M. Who lives immediately above O?",
+   "options": [
+    "M",
+    "Q",
+    "R",
+    "L",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "78afac1a91a36291c835fa679fedad074a530d9fcf694912ac4959f2e6ad7e11"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the information given below carefully and answer the questions that follow. Eight persons M, O, P, Q, R, S, T and U live on eight different flats of a four-storey building but not necessary in the same order, where the bottom most floor is 1 and the floor above is numbered 2 and so on. There are 2 types of flats on each floor, flat A and flat B are such that flat A is towards the west of flat B. Flat A of floor 1 is immediately below of flat A of floor 2, which is immediately below of flat A of floor 3 and so on, similarly for flat B. The dimensions of each of the flats are same. If one person lives immediately above or below the other then they have the same flat. There are two floors between the floors of U and R (both of them may or may not live in the same type of flat). U lives south-west of M. Q lives 2 floors above M (both live in the same type of flat). O lives immediately above S, who doesn’t live anywhere below M’s floor. P doesn’t live on a floor above M.\n\nHow many persons live below Q (in the same type of flat)?",
+   "options": [
+    "2",
+    "3",
+    "1",
+    "0",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b0d657648d8e78e8dd780283b2093d48ee8c2ae3b44d13cd50973b2bb4e4a569"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Q lives in the northeast of _____",
+   "options": [
+    "O",
+    "M",
+    "T",
+    "R",
+    "Both (a) and (b)"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d9bc1209e64d5d06dba949c0182ca4c41f92dc8a7c53571cf5ba03823f0ec4c5"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who lives immediately above P in the same type of flat?",
+   "options": [
+    "O",
+    "S",
+    "T",
+    "M",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2730a7fd874c420cd593320d9bafe15b8c4db074d65f4822c1cba435eb483e7e"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following series carefully and answer the question given below. M F J O L Q W E R T Y U P A H D G I N X Z C V B S K How many vowels are there in the given series which is immediately followed by a letter which comes after ‘M’ in alphabetical series?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than four"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "77e3bdde12af445b227f70c31c0b1751afc0daf80d63ffb7b598dc5d533490c6"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following series carefully and answer the question given below.\n\nWhich of the following element is tenth to the left of the seventh from the right end?",
+   "options": [
+    "Q",
+    "T",
+    "G",
+    "X",
+    "Y"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "51a89a288d964cda7cf27ef5196de04efacd1368927e737b57d0508c9bf1039b"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If all the vowels in the above arrangement are dropped then which of the following element is twelfth from the left end?",
+   "options": [
+    "H",
+    "G",
+    "D",
+    "P",
+    "Y"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "01c2b3d88723f7f28cbce0839ebc9058f963594fff243dd8467103f990ddffb0"
+  }
+ ],
+ "section_confidence": 0.975,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

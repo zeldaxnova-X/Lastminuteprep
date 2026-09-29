@@ -1,0 +1,1502 @@
+{
+ "file": "0fc7d5fce7f02ef5102db58db4bbab1f.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "empty_or_short_stem": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "numerical_ability",
+   "stem_text": "In a mixture, the initial ratio of A and B is 1 ∶ 4, If 25% of the mixture is taken out and 20 litres of B is added, then the amount of B becomes 44 litres then find the initial amount of A.",
+   "options": [
+    "8 litre",
+    "6 litre",
+    "5 litre",
+    "4 litre",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "61c0f462e10b68ad2319d0cf33d244689f3073174cc22e00777680074fa6207e"
+  },
+  {
+   "question_number": 2,
+   "section": "numerical_ability",
+   "stem_text": "A and B start a business by investing a capital Rs. 3000 and Rs. 2000. After 6 months, C joins the business with the capital of Rs. 5000 and A doubles its investment. If their profit is Rs. 36000 after one year, then find the difference between the profit of A and C.",
+   "options": [
+    "Rs. 10,000",
+    "Rs. 18,000",
+    "Rs. 24,000",
+    "Rs. 8,000",
+    "Rs. 9,000"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b8d8d9226832ead1f8a082475b55ffc2e54c9b3ab4bffb791cb6152673bb9469"
+  },
+  {
+   "question_number": 3,
+   "section": "numerical_ability",
+   "stem_text": "The cost price of the two articles A and B are Rs. 500 and Rs. 600 respectively. If both the articles were sold at the same price and the profit earned by both the articles were 2x% and x% respectively, then find the selling price article A.",
+   "options": [
+    "Rs. 550",
+    "Rs. 650",
+    "Rs. 750",
+    "Rs. 850",
+    "Rs. 950"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0066c2985f09a83c5223a3dd4f590a5c45b8066a6214b066baec800c2d325c7c"
+  },
+  {
+   "question_number": 4,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? √289 + √361 – √225 = ?",
+   "options": [
+    "17",
+    "21",
+    "19",
+    "23",
+    "15"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "062a8e9a20e309bd441eeaf27e753a418d410249964861f14b7fb3bcab2e154f"
+  },
+  {
+   "question_number": 5,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 25% of 240 + 50 = ?",
+   "options": [
+    "100",
+    "110",
+    "80",
+    "120",
+    "90"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fda9c4a0988ab238d3409dffa21602dcf4835eba29d46002ae0c6486dc78f369"
+  },
+  {
+   "question_number": 6,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 17 × 6 – 30% of ? = 42",
+   "options": [
+    "100",
+    "-100",
+    "200",
+    "-200",
+    "50"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e4a3d7acb221d2b5e10dc0b374b267aec2429a8b38d09fb1dc73945863e1186c"
+  },
+  {
+   "question_number": 7,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 11 × (-4) + 189 ÷ 7 = ?",
+   "options": [
+    "8",
+    "12",
+    "-8",
+    "-17",
+    "17"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b22d997804951eff0825b42bf078f479d750ba75bb17fa8e66fadf2c34c9daf7"
+  },
+  {
+   "question_number": 8,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 60% of 500 ÷ 0.25 + √169 = ?",
+   "options": [
+    "1162",
+    "1262",
+    "1194",
+    "1213",
+    "1254"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4725a863b219623a21b9094d02e248738bdabc09bbfebf4ff5973338a24f1318"
+  },
+  {
+   "question_number": 9,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 2/3 of (15 - 6) - (- 9) = ?",
+   "options": [
+    "3",
+    "- 3",
+    "- 15",
+    "-12",
+    "15"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b7faadd26309eb4f07eb9b4948d93876a83c35a4195d51495772f4a1540e0932"
+  },
+  {
+   "question_number": 10,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 40% of 1500 - 276 = (?)2",
+   "options": [
+    "22",
+    "12",
+    "18",
+    "8",
+    "20"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d7728ac108c03d885dff1ff26aa4c916ca1dfb9e2c0da8c2c2291f1e4d2eb7a4"
+  },
+  {
+   "question_number": 11,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? −−−−−−−−−−−−−−−−−−− −−−−−−−−−−−−− −−−−−−−−− √43+√33+√4+√25 =?",
+   "options": [
+    "12",
+    "- 9",
+    "7",
+    "11",
+    "- 6"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3a82266956e82bb08b971cf9a369e2da8b0f583673e23dcd11d3a29bf17e1aea"
+  },
+  {
+   "question_number": 12,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 12 × 2 - √25 + 6 = ?",
+   "options": [
+    "25",
+    "35",
+    "12",
+    "6",
+    "15"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cf6c363b6701681ae6f970e6eb5ef1e23e6b951a09e266e2a82f265dfda0122b"
+  },
+  {
+   "question_number": 13,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 0.25 × ? + 121 ÷ 11 = 111",
+   "options": [
+    "350",
+    "450",
+    "420",
+    "400",
+    "500"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "90a811a10b6a041349886202346987416e99472a87c0997fff3ba7c1f4373838"
+  },
+  {
+   "question_number": 14,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? √144 + √36 - 15 = ?",
+   "options": [
+    "1",
+    "3",
+    "8",
+    "9",
+    "11"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0ee6bad0afff7b08a6c794b9b3bedbca37020442a405435ffc0d73f7cdcef008"
+  },
+  {
+   "question_number": 15,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 25% of 48 + 9 × 11 - ? + 44 = 3",
+   "options": [
+    "152",
+    "140",
+    "150",
+    "160",
+    "170"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ba591a58a57f738b8e6ff2c94fe662c169bfbefaafd807a0095cb9535c3b8351"
+  },
+  {
+   "question_number": 16,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? (2 ÷ 5 ÷ 7) × 14 + 112 = ?",
+   "options": [
+    "110",
+    "109.5",
+    "112.8",
+    "115",
+    "120.6"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e18423d527c0391509fef73ce7776d48b591dababbd77c5c56c76455c7261678"
+  },
+  {
+   "question_number": 17,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 25% of 480 + 200 + ? = 800",
+   "options": [
+    "360",
+    "520",
+    "240",
+    "480",
+    "500"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3eca966f0cb0dd038e22a8595ff4d16813ddc337a70b11a5b8864c7e07eadb12"
+  },
+  {
+   "question_number": 18,
+   "section": "numerical_ability",
+   "stem_text": "A starts a business with the investment of Rs.10,000. After 4 months, B invests Rs. 20,000 and A also doubles his investment. If after one year, the total profit is Rs.45000, then find the share of A in the total profit.",
+   "options": [
+    "Rs. 25,000",
+    "Rs. 20,000",
+    "Rs. 30,000",
+    "Rs. 15,000",
+    "Rs. 23,000"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e2a10e864634f707f4308f935e391416798afc8d1880606a3036c70f4353f779"
+  },
+  {
+   "question_number": 19,
+   "section": "numerical_ability",
+   "stem_text": "Two years hence, the ages of A and B are in the ratio of 3 ∶ 4 and 8 years ago the ratio of ages of A and B were in the ratio of 2 ∶ 3. Find the present age of A.",
+   "options": [
+    "28 years",
+    "30 years",
+    "24 years",
+    "38 years",
+    "26 years"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5adc1d1368617ff1044279c38ba9216d392dec117e3e1840dd75fd213abcd680"
+  },
+  {
+   "question_number": 20,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of time taken by A, B and C to complete a work alone is 4 ∶ 6 ∶ 3. If they together complete a work in 8 days, then in how many days A will complete 3/4th of the work?",
+   "options": [
+    "9 days",
+    "18 days",
+    "27 days",
+    "13 days",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c19d282da5a68ace19656cdbb97b9253dd3bc1874b7029adba85d779ae40db64"
+  },
+  {
+   "question_number": 21,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. x2 = 4 II. y2 - 6y + 8 = 0",
+   "options": [
+    "x > y",
+    "x ≥ y",
+    "x < y",
+    "x ≤ y",
+    "x = y or the relation cannot be determined"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "579a17bf80d0537620e38c5472f6b9f811da950a8b36e2f03736e8472d648bb9"
+  },
+  {
+   "question_number": 22,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. x2 + 10x + 21 = 0 II. y2 + 11y + 28 = 0",
+   "options": [
+    "x > y",
+    "x ≥ y",
+    "x < y",
+    "x ≤ y",
+    "x = y or the relation cannot be determined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2b61709f5d512cf9297dc69ce2fe2f610476f7c439b8eb61af595d3de81cdf56"
+  },
+  {
+   "question_number": 23,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. 2x2 – 19x + 44 = 0 II. y2 -17y + 72 = 0",
+   "options": [
+    "x > y",
+    "x ≥ y",
+    "x < y",
+    "x ≤ y",
+    "x = y or the relation cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7da128c1197f670da47e87dbe08be8bf5d923d37cfcf501665c1f36251b05db3"
+  },
+  {
+   "question_number": 24,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. 3x2 –4x + 1 = 0 II. 2y2 –5y + 3 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or the relationship between x and y cannot be established."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3dd8710db21f432fa4f6ffdf4942ca22c2a7ba9e20e8ed8602a3a03d1fc4a169"
+  },
+  {
+   "question_number": 25,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. Solve both the equations and mark the appropriate answer. I. x2 + 2x –15 = 0 II. y2 + 9y + 20 = 0",
+   "options": [
+    "y > x",
+    "y < x",
+    "y ≤ x",
+    "y ≥ x",
+    "x = y or the relationship between x and y cannot be established."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9ff8ea390ae1b760eef8141634050c7810823a9bb1410673980e0b665b34d973"
+  },
+  {
+   "question_number": 26,
+   "section": "numerical_ability",
+   "stem_text": "Train A running at the speed of 30 km/h can cross another train B running in opposite direction in 20 seconds. Find the speed of train B if sum of length of both trains is 600 m.",
+   "options": [
+    "72 km/h",
+    "70 km/h",
+    "60 km/h",
+    "78 km/h",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e8bd7cff0f3d65c6111fc17b3e25bb1c9f97a12cd2d1cc60f69d1b35b3bb19b2"
+  },
+  {
+   "question_number": 27,
+   "section": "numerical_ability",
+   "stem_text": "If the speed of the boat in still water is 9 km/h and the downstream speed is 6 km/h more than the upstream speed. Then find the distance covered by boat in 5 hours 20 min. downstream.",
+   "options": [
+    "56 km",
+    "64 km",
+    "48 km",
+    "64.5 km",
+    "48.7 km"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "348f2f06f97db6e7dd0ef93911e5dc7515ef1c14d26a15a83233ee511ce843f8"
+  },
+  {
+   "question_number": 28,
+   "section": "numerical_ability",
+   "stem_text": "The sum of the sides of a square and a rectangle is 208 cm. If the perimeter of the rectangle is 164 cm, then find the length of the side of the square.",
+   "options": [
+    "8 cm",
+    "11 cm",
+    "15 cm",
+    "6 cm",
+    "21 cm"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4646bf2325a0e2651df1431c4e0afdbda6a69c3afc45118383c02696d2c95d4b"
+  },
+  {
+   "question_number": 29,
+   "section": "numerical_ability",
+   "stem_text": "A person spends 10% of his income on medical, 20% of his income spend on traveling, and the rest of his income spend on others. If the left expenditure is Rs. 3500 then, find the total income?",
+   "options": [
+    "Rs. 6000",
+    "Rs. 4000",
+    "Rs. 4500",
+    "Rs. 5000",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4bfe9191d42756bc097f6f9c321720b453f55eb607ca5d2c5f59232858379519"
+  },
+  {
+   "question_number": 30,
+   "section": "numerical_ability",
+   "stem_text": "A person invests a sum of money in the two banks in the ratio of 2 : 3 at 10% and 20% rate of interest respectively. If the interest earned in the second part of the amount is 6000 then what is the interest in the first part of the amount.",
+   "options": [
+    "Rs. 2,000",
+    "Rs. 3000",
+    "Rs. 1500",
+    "Rs. 2500",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "717ac98f5ed2a2baa6ed596c76a36100c0e90b0810a7019644d20a9087dbb14f"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Based on the given line graph answer the following question given below: The following line graph shows the number of photos and videos clicked by 5 persons in 2019. Find the total number of photos and videos clicked by all the five persons.",
+   "options": [
+    "124",
+    "146",
+    "134",
+    "136",
+    "138"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6258750ec47ae68ea91e1d51a7a9fd42498e926c29e60b474c2bc9ddec6e20ff"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "If R clicked the number of photos and videos in the ratio of 9 : 7 then find the number of videos clicked by R.",
+   "options": [
+    "18",
+    "16",
+    "20",
+    "12",
+    "14"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c70b8776df08fba4a73423a1521d98e009b492087d3df16751dc3a3d00c5fc9b"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "Find the number of photos and videos clicked by S is how much more or less than the photos and videos clicked by T.",
+   "options": [
+    "40% more",
+    "60% more",
+    "60% less",
+    "40% less",
+    "80% more"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f06654e70d8e705e251910f83baaaf5ce8bf4205021734891739d8415d0b71d4"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the average number of photos and videos clicked by P and S together to the average number of photos and videos clicked by Q and R together.",
+   "options": [
+    "11 : 5",
+    "7 : 9",
+    "7 : 5",
+    "10 : 9",
+    "8 : 5"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "80d9b027a7bd1ba2b56aca4b3b6900832227690a931a2fd62324398c8ac17903"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "If the next year R clicked 12 more photos and S clicked 8 more videos the find the ratio of total number of photos and videos clicked by R and S.",
+   "options": [
+    "1 : 1",
+    "7 : 9",
+    "2 : 3",
+    "3 : 2",
+    "5 : 6"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "90ced76eb7cc43594fd95d0fa0798996b51d75e3d912c4fc64d1db61842f3ddd"
+  },
+  {
+   "question_number": 36,
+   "section": "reasoning",
+   "stem_text": "Directions:- In the following question assuming the given statement to be true, find which of the conclusions among the given conclusions is / are definitely true and then give your answer accordingly. Statements: P ≥ R < S < T < E = F Conclusions: I. S ≥ E II. F > R",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either I or II follows",
+    "Neither conclusion I nor II follows",
+    "Both I and II are follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c1290eca100dbf047f3180ace9b97379bfb81227f0ee3923a255b792f05f7be4"
+  },
+  {
+   "question_number": 37,
+   "section": "reasoning",
+   "stem_text": "Directions:- In the following question assuming the given statement to be true, find which of the conclusions among the given conclusions is / are definitely true and then give your answer accordingly. Statements: X = Y ≥ Z > P ≥ Q < S Conclusions: I. Z < S II. Y ≥ Q",
+   "options": [
+    "Only conclusion I is follows",
+    "Only conclusion II is follows",
+    "Either I or II follows",
+    "Neither I not II follows",
+    "Both conclusions I and II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7e0cfe5057a180b774436294f15f54cf60c000ad0da67f0e327d35542267f6b3"
+  },
+  {
+   "question_number": 38,
+   "section": "reasoning",
+   "stem_text": "Directions:- In the following question assuming the given statement to be true, find which of the conclusions among the given conclusions is / are definitely true and then give your answer accordingly. Statements: P ≤ Q < R > S ≥ U < X Conclusions: I. P < R II. Q < X",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either I or II follows",
+    "Neither I nor II is follows",
+    "Both conclusions I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6f476ffa7279de80e6348de7057d1ee27439080c20aa5738c7ac7af6ce8830e1"
+  },
+  {
+   "question_number": 39,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following given information carefully and answer the questions. Eight persons A, B, C, D, E, F, G and H are purchasing some items for the different occasions but not necessarily in the same order.Two persons purchase items between A and D. Only one person purchase item between H and G, who purchases just after D. Only one person purchases between F and B where, F purchases before B. Only three persons purchase after G. The number of people who purchase before C and after F are the same. Who among the following purchases just after C?",
+   "options": [
+    "B",
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c4739d4f465b234112f138eeea267b4c9c9c9046b568f05527a2b65603d6eec9"
+  },
+  {
+   "question_number": 40,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following given information carefully and answer the questions. Eight persons A, B, C, D, E, F, G and H are purchasing some items for the different occasions but not necessarily in the same order.Two persons purchase items between A and D. Only one person purchase item between H and G, who purchases just after D. Only one person purchases between F and B where, F purchases before B. Only three persons purchase after G. The number of people who purchase before C and after F are the same.\n\nHow many people purchase items between E and H?",
+   "options": [
+    "Three",
+    "Four",
+    "Two",
+    "Five",
+    "One"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cbd429c9b7c58f0f1bf3aca2e49a505fe3853afcb9432e020bf38ea7e85a1b08"
+  },
+  {
+   "question_number": 41,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following given information carefully and answer the questions. Eight persons A, B, C, D, E, F, G and H are purchasing some items for the different occasions but not necessarily in the same order.Two persons purchase items between A and D. Only one person purchase item between H and G, who purchases just after D. Only one person purchases between F and B where, F purchases before B. Only three persons purchase after G. The number of people who purchase before C and after F are the same.\n\nWho among the following people bought the item first?",
+   "options": [
+    "H",
+    "E",
+    "D",
+    "A",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b7a2209bc619350c04981c5cab04d8055d3f2fe319c27e1839ec7ebad6c212b6"
+  },
+  {
+   "question_number": 42,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following given information carefully and answer the questions. Eight persons A, B, C, D, E, F, G and H are purchasing some items for the different occasions but not necessarily in the same order.Two persons purchase items between A and D. Only one person purchase item between H and G, who purchases just after D. Only one person purchases between F and B where, F purchases before B. Only three persons purchase after G. The number of people who purchase before C and after F are the same.\n\nHow many persons purchase after E?",
+   "options": [
+    "Five",
+    "Six",
+    "Seven",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "64a6d62d105112697b69afe80f867a49b6402e502eaaa4eed7709482cdc543d8"
+  },
+  {
+   "question_number": 43,
+   "section": "reasoning",
+   "stem_text": "Choose the incorrect pair:",
+   "options": [
+    "AE",
+    "DG",
+    "DC",
+    "FH",
+    "EC"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e82e8869b552b52486010f1bc78e05375a38a6ce6fc676353b1a472a872a4bf7"
+  },
+  {
+   "question_number": 44,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions given below: 9 2 7 5 2 1 3 9 8 6 4 1 3 6 4 7 8 2 1 5 9 7 6 3 2 1 4 8 5 2 9 7 3 1 7 6 If all the even numbers are removed from the above series, which number will be 17th from the left end?",
+   "options": [
+    "3",
+    "7",
+    "5",
+    "9",
+    "1"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "56984cd0b1b7bfa92f16e7f12b60c5358ac034599fe83889b28d8ab22c956b53"
+  },
+  {
+   "question_number": 45,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions given below: 9 2 7 5 2 1 3 9 8 6 4 1 3 6 4 7 8 2 1 5 9 7 6 3 2 1 4 8 5 2 9 7 3 1 7 6 If all the even numbers are removed from the above series, which number will be 17th from the left end?\n\nHow many odd numbers are there between the 7th letter from the right end and 14th letter from the left end?",
+   "options": [
+    "5",
+    "8",
+    "9",
+    "10",
+    "6"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "efa4a371a15db53934e19bf0f72ddf7116715f202313cce752c5cdadba092d65"
+  },
+  {
+   "question_number": 46,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given questions given below: 9 2 7 5 2 1 3 9 8 6 4 1 3 6 4 7 8 2 1 5 9 7 6 3 2 1 4 8 5 2 9 7 3 1 7 6 If all the even numbers are removed from the above series, which number will be 17th from the left end?\n\nWhich of the following numbers comes exactly in between the numbers of 16th from the right end and 19th from the left end?",
+   "options": [
+    "1",
+    "9",
+    "7",
+    "6",
+    "5"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2bcc681dc72b367a8139b9ff33c19373b418df186caa210f7dc5c37215d90164"
+  },
+  {
+   "question_number": 47,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H were born on the same day of the same month but in different years which are 1951, 1955, 1963, 1976, 1985, 1997, 2001, and 2004. All their ages are to be considered from the base year i.e. 2020. The difference between the age of A and B is twice the age of B. Difference between the age of B and D is 4 years. The age of E is not less than G’s age and he is 9 years older than H. Difference between the age of C and F is not more than 5 years. Who is the second youngest person?",
+   "options": [
+    "C",
+    "B",
+    "F",
+    "G",
+    "Either A or C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bdcd25ab69f4ac3630ed433d3bc58162e19d8af707f83b6b1dd289510d67ee2c"
+  },
+  {
+   "question_number": 48,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H were born on the same day of the same month but in different years which are 1951, 1955, 1963, 1976, 1985, 1997, 2001, and 2004. All their ages are to be considered from the base year i.e. 2020. The difference between the age of A and B is twice the age of B. Difference between the age of B and D is 4 years. The age of E is not less than G’s age and he is 9 years older than H. Difference between the age of C and F is not more than 5 years.\n\nWhat is the difference between the age of A and G?",
+   "options": [
+    "31 years",
+    "53 years",
+    "41 years",
+    "28 years",
+    "7 years"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "78148b729ab9e3c0f093682bcf9403caa7d3ebd2c3ebb6eedd637dda70811bd0"
+  },
+  {
+   "question_number": 49,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions given below. Eight persons A, B, C, D, E, F, G, and H were born on the same day of the same month but in different years which are 1951, 1955, 1963, 1976, 1985, 1997, 2001, and 2004. All their ages are to be considered from the base year i.e. 2020. The difference between the age of A and B is twice the age of B. Difference between the age of B and D is 4 years. The age of E is not less than G’s age and he is 9 years older than H. Difference between the age of C and F is not more than 5 years.\n\nWhose ages are the prime numbers?",
+   "options": [
+    "B and H",
+    "C and F",
+    "B and D",
+    "Only D",
+    "B and C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "93298c2f5dc7495e97c19186af11c5ed945e3bb34f7e3bba939fc77aa7fb8a2b"
+  },
+  {
+   "question_number": 50,
+   "section": "reasoning",
+   "stem_text": "If C is the oldest person then who among the following is just younger to F?",
+   "options": [
+    "E",
+    "A",
+    "G",
+    "B",
+    "C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "51233949797d89928d1b77ce43c1e9296319e28b3089af7bca29265952104094"
+  },
+  {
+   "question_number": 51,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is not correct according to the arrangement?",
+   "options": [
+    "D was born in an odd year",
+    "H is 16 years older than B",
+    "Three people born between A and B",
+    "B was born in year 1997",
+    "A is younger than C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "bab98872b344ba52dca728c9e46972c4459368c0bb17ef812b6808b7a3633826"
+  },
+  {
+   "question_number": 52,
+   "section": "reasoning",
+   "stem_text": "If in the word 'SOFTWARE', all the vowels are first arranged alphabetically and then all the consonants are arranged alphabetically and then all the vowels are replaced by the next letters and the consonants are replaced by the previous letters from English alphabet. Which letter will be fourth from the left end?",
+   "options": [
+    "E",
+    "P",
+    "Q",
+    "R",
+    "F"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "525f6819500f321997dc7f24217ffc84edfbb382be5a17ddd200adf7f562b3c4"
+  },
+  {
+   "question_number": 53,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the instructions carefully and answer the question below. There are Five persons – A, B, C, D and E. They have different weights and total weight is 160. The weight of the second heaviest person is 35 kg and the weight of the second lightest person is 28 kg. Sum of the weight of A and B is 52 kg and A is lighter than B. Sum of the weight of C and D is 63 kg and C is heavier than D. D is the second lightest person. A is the lightest person and his weight is 22 kg. What will be the weight of E?",
+   "options": [
+    "34",
+    "56",
+    "54",
+    "45",
+    "22"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5e65bd1d49766aa220ff1b3ceec6cd55e69a47b908e5c5309120e4ba7e770a15"
+  },
+  {
+   "question_number": 54,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the instructions carefully and answer the question below. There are Five persons – A, B, C, D and E. They have different weights and total weight is 160. The weight of the second heaviest person is 35 kg and the weight of the second lightest person is 28 kg. Sum of the weight of A and B is 52 kg and A is lighter than B. Sum of the weight of C and D is 63 kg and C is heavier than D. D is the second lightest person. A is the lightest person and his weight is 22 kg.\n\nWho is the third lightest person?",
+   "options": [
+    "E",
+    "B",
+    "A",
+    "C",
+    "D"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2a9c156190391ea89a4dfc88cc07245c6f7e76d8a62c2d7a75b67b6c20dd15d8"
+  },
+  {
+   "question_number": 55,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the instructions carefully and answer the question below. There are Five persons – A, B, C, D and E. They have different weights and total weight is 160. The weight of the second heaviest person is 35 kg and the weight of the second lightest person is 28 kg. Sum of the weight of A and B is 52 kg and A is lighter than B. Sum of the weight of C and D is 63 kg and C is heavier than D. D is the second lightest person. A is the lightest person and his weight is 22 kg.\n\nWhat is the possible weight of C?",
+   "options": [
+    "46",
+    "54",
+    "35",
+    "39",
+    "28"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3aa8cc649d1fd0c7df1460183c400a022e8ae2a58ed1fdf9418ddee126775d0c"
+  },
+  {
+   "question_number": 56,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some slippers are sandals. All shoes are pillows. Only a few pillows are sandals. Conclusions: I. Some pillows are not sandals. II. At Least some shoes are slippers.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e331071a17cd12cf4e13ac71bb98ab5d6717728eac729cf340b3c2f8c65b220e"
+  },
+  {
+   "question_number": 57,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All keys are tattoo. Only a few wires are desk. Some keys are not desk. Conclusions: I. Some keys are not wire. II. Few wires can be tattoo.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e1916ee80820a26554911ef636492359570f8fdc69400db9c0911c5dca6a651d"
+  },
+  {
+   "question_number": 58,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All pens are boxes. Only a few boxes are bats. All tables are boxes. Conclusions: I. Few tables are bat. II. Some bats are not pens.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "99d3d387413f296859fcca38607d8accb5da05a40e235a18d5be64fc6b56e23b"
+  },
+  {
+   "question_number": 59,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some chapatis are parathas. Some chargers are mobile. Only a few chapatis are mobile. Conclusions: I. Some chapatis are not chargers. II. All chapatis can be parathas.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "905f1a735d066aa464fa717eebbb0a81a9b52a7eb36e246090065aa8271eb037"
+  },
+  {
+   "question_number": 60,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the questions given below: Eight family members Raja, Anita, Komal, Simran, Mohit, Arpit, Pratima and Neha, have their birthday on either 4th or 23rd of four different months among April, May, June and July but not necessarily in the same order. Komal has a birthday on the 23rd of the month of 30 days. As many people have birthdays before Pratima as after Simran. Neha and Arpit have their birthday in the same month having 31st days but not in May. Two people have birthdays between Komal and Raja. Mohit has a birthday before Anita. Anita does not have a birthday in May. Neha having birthday before Arpit. Simran having Birthday in the Month of june. Who has a birthday on 23rd June?",
+   "options": [
+    "Anita",
+    "Komal",
+    "Pratima",
+    "Arpit",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3cf31785532057295256ce2259299c57059863c895f4e8feeb2b0c3dc0318787"
+  },
+  {
+   "question_number": 61,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the questions given below: Eight family members Raja, Anita, Komal, Simran, Mohit, Arpit, Pratima and Neha, have their birthday on either 4th or 23rd of four different months among April, May, June and July but not necessarily in the same order. Komal has a birthday on the 23rd of the month of 30 days. As many people have birthdays before Pratima as after Simran. Neha and Arpit have their birthday in the same month having 31st days but not in May. Two people have birthdays between Komal and Raja. Mohit has a birthday before Anita. Anita does not have a birthday in May. Neha having birthday before Arpit. Simran having Birthday in the Month of june.\n\nWho among the following has a birthday between 23rd May and 4th July?",
+   "options": [
+    "Pratima",
+    "Komal",
+    "Arpit",
+    "Both Pratima and Komal",
+    "Both Komal and Arpit"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2a475b65cc20c1c811bc8e3bdd3f8b6b217483f4b5f9b3af42405e8b11f657a1"
+  },
+  {
+   "question_number": 62,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the questions given below: Eight family members Raja, Anita, Komal, Simran, Mohit, Arpit, Pratima and Neha, have their birthday on either 4th or 23rd of four different months among April, May, June and July but not necessarily in the same order. Komal has a birthday on the 23rd of the month of 30 days. As many people have birthdays before Pratima as after Simran. Neha and Arpit have their birthday in the same month having 31st days but not in May. Two people have birthdays between Komal and Raja. Mohit has a birthday before Anita. Anita does not have a birthday in May. Neha having birthday before Arpit. Simran having Birthday in the Month of june.\n\nHow many people have their birthday between Anita and Neha?",
+   "options": [
+    "Two",
+    "Three",
+    "Four",
+    "One",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4e3def2461fe102af62d31cb8a1cd082b60193ed181772ff8f04dc158a210fe9"
+  },
+  {
+   "question_number": 63,
+   "section": "reasoning",
+   "stem_text": "On which date Raja has his birthday?",
+   "options": [
+    "4th April",
+    "23rd July",
+    "4th June",
+    "23rd May",
+    "4th May"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ab6618ce2c829f63b706215eebb525dd003f1ee729e534d134af6c6f785ec4c0"
+  },
+  {
+   "question_number": 64,
+   "section": "reasoning",
+   "stem_text": "How many persons have their birthday before Neha?",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "6",
+    "7"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6dd6aaf38c016b10d078a6d3c649a7522048eec0cfaae0e27f8bde8f75f5d874"
+  },
+  {
+   "question_number": 65,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “CASHEWNUT” that have the same number of letters between them in the word (in both forward and backward directions), as they have in the English alphabetical series?",
+   "options": [
+    "Three",
+    "One",
+    "Four",
+    "Two",
+    "More than three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5ff08c9ab48e682daf8128e7ce7a0a680247913b7410c0fcabbb7f5c259aa8d6"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the question given below. Eight persons A, B, C, D, E, F, G and H are living in an eight floor building but not necessarily in the same order. The lowermost floor is 1 and the topmost floor is 8. G lives on an odd numbered floor and only one person lives between G and E. F lives on the topmost floor. Two persons lives between F and D. Number of persons below C is equal to the number of persons above A. G lives below the floor of D but not immediately below. E does not live on the lowermost floor. A and B both live above D. Who lives on the second floor?",
+   "options": [
+    "A",
+    "F",
+    "C",
+    "E",
+    "H"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4f4fcbe3fe350e1dcdc11fd2975ec4a6b7a0ae5adfaa0d283726e720188b492f"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the question given below. Eight persons A, B, C, D, E, F, G and H are living in an eight floor building but not necessarily in the same order. The lowermost floor is 1 and the topmost floor is 8. G lives on an odd numbered floor and only one person lives between G and E. F lives on the topmost floor. Two persons lives between F and D. Number of persons below C is equal to the number of persons above A. G lives below the floor of D but not immediately below. E does not live on the lowermost floor. A and B both live above D.\n\nWho lives immediately above H?",
+   "options": [
+    "C",
+    "D",
+    "G",
+    "B",
+    "A"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "15b10cf401499e54fdbaa8f9a560989ccb98eaf3a93f0b822e4395dce05c94a3"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the question given below. Eight persons A, B, C, D, E, F, G and H are living in an eight floor building but not necessarily in the same order. The lowermost floor is 1 and the topmost floor is 8. G lives on an odd numbered floor and only one person lives between G and E. F lives on the topmost floor. Two persons lives between F and D. Number of persons below C is equal to the number of persons above A. G lives below the floor of D but not immediately below. E does not live on the lowermost floor. A and B both live above D.\n\nWho lives on lowermost floor?",
+   "options": [
+    "C",
+    "D",
+    "G",
+    "E",
+    "A"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d2e2405c58ffb83ac24c7ce4753c842211b6b9d3ae8d10c621a7789234183cad"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Four of the five are alike in a certain way hence form a group. Find which one of the following does not belong to this group?",
+   "options": [
+    "C",
+    "B",
+    "H",
+    "F",
+    "G"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "26e41c6998cb5a2e7130b8e7f803f7ac04ff6332c44f461a7659fa8b2877a6aa"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "How many persons live above G?",
+   "options": [
+    "Seven",
+    "Six",
+    "Four",
+    "Five",
+    "Two"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1a6db1c156679ba79b3adfe5cb435de01d58109b27ae883d88ba7f0b647d16bb"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. We interviewed fourteen /(A) applicants for /(B) the post, none /(C) of who we thought suitable. /(D) No error/(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4a151d14c244bf69314628491ed41484f896cd072d741587a063305b4e24414d"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select the option 'No error'. We got fewer (A)/ dollars this week (B)/ because the drop (C)/ in the exchange rate. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9a3131ad98cc876e4db90b5ec7b8deddab23876333b6b11cf8ed8444c9918ade"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. They are sending /(A) the new consignment /(B) over for /(C) Tom and I to check. /(D) No error/(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f30ad3e1edbc7f12cff0699dccef58cfb4259edd5d82e4528d42722b7eca1b63"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. Either my brother (A)/ or my parents is (B)/ going to bring (C)/ the sleeping bags. (D)/ No error(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b37927ed2414612d4101a649612567c13fb3f86d320e9bf69390f2f1b4dcb1c6"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "Directions: In the following question, some part of the sentence may have an error. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from errors, select option 'No error'. Both the doctor and the (A)/ surgeon has advised (B)/ me to have (C)/ my gall bladder out. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a3436124876da0f49344971ab5a3abcc505c5f8ddcff089bd70df574b4b7ac6e"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. The little girl chained herself to the tree as a form of peaceful protest against _______.",
+   "options": [
+    "Illusion",
+    "Deforestation",
+    "Plantation",
+    "Trafficking",
+    "Consumption"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5c1ed6385d685a16909fa050129cab34fdcfee34a4cfbaebd6a9d7ecb815f86d"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. The bank robbers planned the _________ with the utmost precision but no one could have expected what happened.",
+   "options": [
+    "Heist",
+    "Poaching",
+    "Kidnapping",
+    "Sacrifice",
+    "Ultimatum"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd01678992f203f9b14b2425b9ba32dc260c942734fd56f9f3989085fb77b69e"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. Casey had been having recurring _________ for 3 nights in a row and she was extremely scared.",
+   "options": [
+    "Joke",
+    "Paranormal",
+    "Daydream",
+    "Nightmare",
+    "Dream"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f879d1bf86d5422d4a821056c26df6a1eb3daee1317b930debef336c975f1326"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. The researches were provided with a hefty grant to study magnetic fields in the _________ cold of Antarctica.",
+   "options": [
+    "Scorching",
+    "Flooded",
+    "Formative",
+    "Primitive",
+    "Sub-Zero"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f3b3d16d147be19b3f99169e5f6f3bd587c47889d07f436c7fa0fbc6477d42c1"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word from the given options that could fit in the blank correctly. The lions and cheetahs poached from the _________ were enclosed in tiny spaces and transported.",
+   "options": [
+    "Sanctuary",
+    "Aquarium",
+    "North Pole",
+    "Pandemic",
+    "Podium"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4bf9214d370bfa165466caa54153b0c3cce0e5921c8d9b428593e525c5609d88"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". The plastic has to be compatible of the body tissues that make contact with it.",
+   "options": [
+    "Compatible with",
+    "Compatible at",
+    "Compatible",
+    "Compatible by",
+    "No Improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4335a44460066c88e5ebef6a9c083a3a0afa11392929c5681f9d9a4b2173da2c"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". If either parent has the disease, there is a much higher chance that the child will develop it.",
+   "options": [
+    "If neither parent has the disease",
+    "If or not either parent has the disease",
+    "Whether either parent has the disease",
+    "If either parent have the disease",
+    "No improvement"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "171b73b813bb8d24752f7f8a0293b8ffcde6a3ab5ec237cf653e84f8c1f36bed"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". The parents are not afraid to be firm about those matters that seems important to them.",
+   "options": [
+    "these matters that seems",
+    "those matters that seem",
+    "those matter that seem",
+    "these matter who seems",
+    "No Improvement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b16a7557cced23892d923dc67b4ee86691726028d337a08f7ec5b09cff0b1407"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". The astonishing waiter was now watching from the other end of the room.",
+   "options": [
+    "The astonished waiter",
+    "The waiter astonishing",
+    "The astonishes waiter",
+    "The waiter astonished",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4a09c943dd3bed3103155b78c0c1445a16e908ab37c4b63f1a16f81f625a5ec8"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to \"No improvement\". Psychosis is also part of this debate, even although problems arising from it affect a relatively small number of people.",
+   "options": [
+    "even though problems arising",
+    "even problems arising",
+    "even but problems arising",
+    "even so problems arising",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a5ffd62282321282d50917330a9dac1eb3dd7c6f1cea213d5c889742a38d17e7"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Below in each question some sentences are given, find the sentence which is not really contributing to the main theme and that of the passage or find the odd sentence out and rearrange the remaining sentences to make a coherent paragraph. If none of the options is correct as it is then choose option (E). If the sequence is the one which is not given, then choose option (D) as your choice. (A)The demand for gold is falling/ (B) and the metal's fading appeal / (C) partly as a result of government measures, higher local prices (D) among more youthful customers/(E) thus available in India.",
+   "options": [
+    "AEBD",
+    "ACBD",
+    "ABDE",
+    "None of the above",
+    "No improvements required."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c973974348b01cc97e8cb069e5e1d27d1f2a35788c375da6536d36f151bbfd2d"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "contributing to the main theme and that of the passage or find the odd sentence out and rearrange the remaining sentences to make a coherent paragraph. If none of the options is correct as it is then choose option (E). If the sequence is the one which is not given, then choose option (D) as your choice. (A)The U.S. government is concerned about India's revised/ (B) plans of Amazon.com and Walmart Inc / (C)e- commerce regulations and has told that the/ (D) the budget highlights/ (E) policy will hinder the Indian investment.",
+   "options": [
+    "ABDE",
+    "ACBD",
+    "ACEB",
+    "None of the above.",
+    "No improvements required."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "054f4396bd57442ac7c9e96d6a48074f1883c5fd45a7aecfaeb179055a2cdf93"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Below in each question some sentences are given, find the sentence which is not really contributing to the main theme and that of the passage or find the odd sentence out and rearrange the remaining sentences to make a coherent paragraph. If none of the options is correct as it is then choose option (E). If the sequence is the one which is not given, then choose option (D) as your choice. (A) and public statements of support for the comedian/ (B) these prompted a social media campaign/ (C) from the likes of Katy Perry, Kevin Hart, Alec Baldwin and Ashton Kutcher/ (D) at the party/ (E) calling for her replacement.",
+   "options": [
+    "AEBD",
+    "ABDE",
+    "BEAC",
+    "None of the above.",
+    "No improvements required."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "49341b2625fd423afa5941b5514ea25e419b3c5a90a742dc39ceb859c0dfd7a3"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the following questions: Many observational and epidemiological studies have shown a connection between obesity and sleep deprivation in Americans. Alarmingly, 28% of American adults sleep less than six hours a night. One common reason for this connection is that sleep restriction affects the regulation of appetite hormones like ghrelin and leptin. Energy balance is tightly regulated by a hormonal system, involving ghrelin and leptin, which conveys information from the body to brain centers that control energy intake and expenditure. Restricted sleep is thought to increase ghrelin and decrease leptin, which promotes hunger. Sleep restriction is also thought to increase cortisol release, increasing eating behavior. Another proposed mechanism is that people, who stay awake longer, are exposed to a higher energy intake, specifically by snacking. Nevertheless, these explanations have been questioned. The effect of neuronal activity on food stimuli, an increase in energy intake, and the effect on energy expenditure will be reviewed in relation to sleep deprivation and obesity. In one study published in The American Journal of Clinical Nutrition, researchers examined the effect on brain response to food stimuli in habitual and restricted sleep normal-weight individuals. The neuronal pattern found in the restricted sleep group was similar to one that would occur when the body is at low body weight and is trying to restore body stores. This study concluded that the restricted sleep group had a greater food intake and greater brain stimuli to areas that are linked with motivation and desire. The stimulated brain areas were the orbitofrontal cortex, insula, thalamus, precuneus, cingulate, gyrus, and supramarginal gyrus. With food being widely accessible, this could be one reason associated with weight gain during sleep restriction. However, studies have shown that there are differences between brain responses to satiety and food stimulation in obese and lean individuals. Further research needs to be conducted to see if sleep restriction affects this difference. What is the opposite of the word restriction?",
+   "options": [
+    "Curtail",
+    "Stringent",
+    "Liberation",
+    "Curb",
+    "Impede"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f54f3e3ad129adeaf53877d09982b18d0fad8c81505bda5109966fedbd799b96"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Choose the correct synonym of the word promote.",
+   "options": [
+    "Obstruct",
+    "Calibrate",
+    "Digress",
+    "Advocate",
+    "Demote"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "baf5cfb20c51e2da86fab4490de0ade4497b624233c8c0dc41047dd94d424d33"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Restricted sleep is thought to:",
+   "options": [
+    "Increase leptin to make one active",
+    "Provide a huge surge in energy",
+    "Decrease ghrelin in the brain",
+    "Lower leptin and make one hungry",
+    "Promotes more food stimuli"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "89b832eaf52d8eea5297e8426cf7ce01e129eeeb2fa2d9b9534b3ee17eeb1457"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Which of the following statement is true as per the passage?",
+   "options": [
+    "People who stay awake take in low energy.",
+    "A major portion of American adults sleep eight hours a day.",
+    "Neuronal patterns during less sleep are similar to the ones while having low body weight.",
+    "High calorie intakes at night without sleeping helps productivity.",
+    "None of the above."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "56d4cce4fa30eadac4f0b9bcf8da068a7b62f33c026404f37bc16b53febcc2c2"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "The hormones ghrelin and leptin are responsible for the regulation of?",
+   "options": [
+    "The amount of food we eat.",
+    "The energy balance in the body.",
+    "Brain responses to our memories.",
+    "Much needed sleep cycles.",
+    "All of the above."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cffd9c5049f5a91fe67ef7daa48dbffb3873a0988082dc1bd2e7234a3167000b"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Sleep restriction is thought to increase which hormone?",
+   "options": [
+    "Cingulate",
+    "Leptin",
+    "Cortisol",
+    "Cholesterol",
+    "Precuneus"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e32d64796fb9be4b062df8e336f4c5742e68b6cdcb162aab8cc01e1019df7c97"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "The restricted sleep group had greater brain stimuli linked to:",
+   "options": [
+    "Desire and Motivation",
+    "Responses and Reaction",
+    "Energy expenditure",
+    "General awareness and sensitivity",
+    "None of the above"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3a0433a7cb7e64d41fb2b3fa06f0c48127f349889522a16ad0af70cfe0ca9c5c"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Directions: In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in their correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. An brought (A) kitten was abandoned (B) to the veterinarian (C) after it was hit by a truck and broke (D) its leg.",
+   "options": [
+    "A-C",
+    "C-D",
+    "A-B",
+    "D-B",
+    "No Rearrangement"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1e332df281b06e6b7e7d88784d9073e796e6008d2b29ab3b76d45cf1ef7db38f"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of words that replace each other. If the sentence is correct as it is, select ‘5’ as your option. News responsibility (A) have a channels (B) to make (C) sure that the information to give the public (D) is true.",
+   "options": [
+    "A-C and B-D",
+    "B-D",
+    "D-A and B-C",
+    "B-A",
+    "No Rearrangement"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e649a7d73e37ac6a2f5ef78a237573b89adffc6234a7d5f5b86094ec8a2ddd43"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "In each of the questions given below, four words are given in bold. These four words may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of words that replace each other. If the sentence is correct as it is, select ‘5’ as your option. Lucky (A) has dreams, (B) but not everyone is everyone (C) to have their dreams realized (D).",
+   "options": [
+    "C-D and A-B",
+    "A-C",
+    "D-B",
+    "B-D and C-A",
+    "No Rearrangement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d8335d21c647a3fc3d2dabe8cfca3d248fb8691913bab74cc848cec7fec079bd"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "In each of the questions given below, four words are given in bold. These four words may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of words that replace each other. If the sentence is correct as it is, select ‘5’ as your option. Since (A) she could not decided (B) a visit to the salon, (C) she afford (D) to cut her own hair.",
+   "options": [
+    "A-C and B-D",
+    "D-B",
+    "A-D and B-C",
+    "A-C",
+    "No Rearrangement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e66842517eb7427376a9c2ba7774ef4b28d19301790a0d559eb85046a7521411"
+  }
+ ],
+ "section_confidence": 0.903,
+ "section_order": [
+  "numerical_ability",
+  "reasoning",
+  "english"
+ ]
+}

@@ -16,6 +16,7 @@ import { LEGAL_VERSION } from "@/lib/legal";
 import {
   SSC_CGL_TIER1_CONFIG,
   SBI_CLERK_PRELIMS_CONFIG,
+  IBPS_CLERK_PRELIMS_CONFIG,
   getMaxScore,
   getTotalQuestions,
   type ExamConfig,
@@ -78,7 +79,7 @@ interface ExamEntry {
 const EXAM_CATALOG: ExamEntry[] = [
   { code: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", live: true, config: SSC_CGL_TIER1_CONFIG },
   { code: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", live: true, config: SBI_CLERK_PRELIMS_CONFIG },
-  { code: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", live: false },
+  { code: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims · 2025 pattern", live: true, config: IBPS_CLERK_PRELIMS_CONFIG },
 ];
 
 function catalogEntry(code: string | null): ExamEntry | undefined {
@@ -348,7 +349,7 @@ function ExamHub({
             Choose your exam
           </h1>
           <p className="text-sm text-ink-secondary">
-            SSC CGL and SBI Clerk are live today. Open one to start a session.
+            SSC CGL, SBI Clerk and IBPS Clerk are live today. Open one to start a session.
           </p>
         </div>
         <PlanBadge plan={plan} loading={loading} />

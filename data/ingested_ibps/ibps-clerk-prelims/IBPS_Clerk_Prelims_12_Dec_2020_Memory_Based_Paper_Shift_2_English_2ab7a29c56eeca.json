@@ -1,0 +1,1502 @@
+{
+ "file": "IBPS_Clerk_Prelims_12_Dec_2020_Memory_Based_Paper_Shift_2_English_2ab7a29c56eeca8734c585642f302cce.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "empty_or_short_stem": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Four sentences are given. You need to find if they are grammatically correct or incorrect and mark the answer accordingly. (P) The center of the island has not been inhabited since fifty years. (Q) You've been really moody ever since that letter arrived. (R) The channel has shown about four wildlife documentaries this week! (S) John Grisham has written some of the most successful legal thrillers.",
+   "options": [
+    "Only P is incorrect",
+    "P and Q are incorrect",
+    "Only R is incorrect",
+    "Q and S incorrect",
+    "All are correct"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2b6143bb35f4f6c77ade5479f55553c0a5ed796247b46d657b6bdaa2bd2a71d6"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "Four sentences are given. You need to find if they are grammatically correct or incorrect and mark the answer accordingly. (P) I suppose that we could have gone to the hotel. (Q) She wondered how much food she should take. (R) He could be staying with friends in London. (S) She might have been waiting for us.",
+   "options": [
+    "Only P is incorrect",
+    "Only S is incorrect",
+    "Only Q is incorrect",
+    "Only R is incorrect",
+    "All are correct"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "aef429eaa5709e6c16dc150481d19b3c0bb7ddeea03e61ec9db1dace6796cd55"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "Four sentences are given. You need to find if they are grammatically correct or incorrect and mark the answer accordingly. (P) India’s green energy plan would generate business prospects worth $20 billion. (Q) He puted salt into the sugar bowl by mistake. (R) High state and central taxes have fuelled the increase. (S) The agent has put a price of 7.2 lac rupees on our house.",
+   "options": [
+    "Only P is incorrect",
+    "Only Q is incorrect",
+    "Only R is incorrect",
+    "Only S is incorrect",
+    "All are incorrect"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "064fdce3bde0a550f5ee5bdecf55ecf25a526f44bb70170729a53ca51bc9936b"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Four sentences are given. You need to find if they are grammatically correct or incorrect and mark the answer accordingly. (P) I have been a teacher for four years. (Q) Sara and Scott had find their flat by then. (R) Sara and Scott were looking for a new flat at the time. (S) I had been living in London for four years when I met him.",
+   "options": [
+    "Only P is incorrect",
+    "Only Q is incorrect",
+    "Only R is incorrect",
+    "All are incorrect",
+    "Only S is incorrect"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d1675e91b60bff214df25c90c0a9a56fc55d2b48ebc6b269a8ed1bc9820e75c0"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "Direction: A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to “No improvement”. Dozens of lower court has rejected cases pressed by Trump and his allies.",
+   "options": [
+    "lower court have rejected",
+    "lower courts have rejected",
+    "lower courts has rejected",
+    "lower courts have rejecting",
+    "No improvement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5fbe8602ec65c9798fa3f3ecbd1025001a01080d5270b0cb961b350eaca20dc3"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "Direction: A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to “No improvement”. A representative for CD Project did not immediately respond for a request for comment.",
+   "options": [
+    "respond with",
+    "respond at",
+    "respond to",
+    "respond on",
+    "No improvement"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "20d67e38c289b59e1d45797c6ef5770104afae42167f2667af5fe255740ee86b"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Direction: A sentence/a part of the sentence is given in bold. Five alternatives are given to the emboldened part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to “No improvement”. Indian-American astronaut Raja Chari is among 18 astronauts who has been selected by NASA for its ambitious manned mission to the Moon and beyond.",
+   "options": [
+    "who has selected",
+    "who have been selected",
+    "who had been selected",
+    "that has been selected",
+    "No improvement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fd90aa3604dd3ff7f4b2d0cd6445ed84b486f27eb390dd5974f4114bba8bb21c"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Direction: A sentence/a part of the sentence is underlined. Five alternatives are given to the underlined part which will improve the meaning of the sentence. Choose the correct alternative. In case no improvement is needed, click the option corresponding to “No improvement”. Chari along with other astronauts, will form the Artemis Team and help pave the way for the next lunar missions, including sending the first woman and next man to walk on the lunar surface in 2024.",
+   "options": [
+    "and helped pave",
+    "and would help pave",
+    "and help paved",
+    "and help paving",
+    "No improvement"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ac580f8d314c2fffd88376078ad2616ee3101a02e49465cfbc8bf3af5b43fa48"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate option from the words given below. Politicians today are seen as old fashioned, _______ and self-obsessed individuals.",
+   "options": [
+    "Honest",
+    "Caring",
+    "Sincere",
+    "Corrupt",
+    "Fair"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "02f4eaa3626f85f46d40a5922252893842420b2370f2bc32ced905ec870b2983"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word from the options given below. Getting rid of the _______ garbage was the topmost priority of the residential association.",
+   "options": [
+    "Pleasant",
+    "Foul",
+    "Arduous",
+    "Calamity",
+    "Knack"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "77331d3e6e05bbb7780f1200ef5a49fd36ac1311560f65326d0cdf8304390d42"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word from the options given below. Scoring three consecutive goals was his way of giving a _______ reply to the people who criticised him.",
+   "options": [
+    "Befitting",
+    "Inappropriate",
+    "Calamitous",
+    "Lazy",
+    "Impassionate"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "88f13315958ea568545c75d0dad121c5837a53fb7de57ca26f895fa922897d18"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word from the options given below. The extremely hot weather made people feel ______ and tired.",
+   "options": [
+    "Lively",
+    "Confused",
+    "Impassive",
+    "Sober",
+    "Lethargic"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0a8e626ab609e880f686c05a324f31974bd234838793f15119804b41529fda75"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word from the options given below. The manager gave a very _______ speech that uplifted the spirits of the employees.",
+   "options": [
+    "Detached",
+    "Insane",
+    "Passionate",
+    "Boring",
+    "Passive"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ea0c2f417000fdbca4f06519d337913751c70f6283371536cabbda691e9de3f5"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word form the options given below: The fierce struggle for press freedom did not end _______ was it any less diminished.",
+   "options": [
+    "And",
+    "But",
+    "Yet",
+    "For",
+    "Nor"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7794ab011bfe81c4d8fcdeae129f9a552dae21fdcc581cc5dbd6deb957606777"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Fill in the blank with the most appropriate word from the list of options given below: The referee allowed the teams to play on without blowing the final whistle _______ one of them scored a winning goal.",
+   "options": [
+    "Unless",
+    "Still",
+    "Until",
+    "Through",
+    "Yet"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a2332159a29fe20245ecc01b8bb43a31977a5e4146fcea4a10bb28ceb664400d"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word The ability of the film(A) to attract those into fantasy dramma(B) as much as those into political(C) intrigue deserves special appreciation(D).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "06a2261dcff8a95a476825aca8b8171581ea99065760f2fc80c204a01c1dc0a2"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word The refugees(A) having nowhere(B) else to go prepared(C) for the long haull(D) to lands unknown.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "528ab38c13fb48105a500a8e46367feb092a4995dead98d61e2e377483b5b2ec"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word The passionate(A) and ecstetic(B) fans filled the stadium during the match days to cheer(C) and shout for their favourite(D) team.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "acd92691e0d2eced317364bf34006b53f29068232aa6fb88cf8f6be8ebfe30eb"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Rearrange the following five sentences/ group of sentences (A), (B), (C), (D), and (E) in the proper sequence to form a meaningful paragraph; then answer the questions given below them. A. In return for Morocco’s decision to establish formal ties with Israel, the U.S. has recognized Moroccan sovereignty over Western Sahara, a disputed territory in northwestern Africa, which has been under Moroccan control for decades. B. It got what it wanted from the deal with Israel, a country with which it had developed covert ties for decades. C. Morocco has become the fourth Arab country to normalize ties with Israel in five months. D. Morocco has long been campaigning internationally, using economic pressure and diplomacy, for recognition of its claims to Western Sahara. E. On December 10, U.S. President Donald Trump first announced this deal between Morocco and Israel, claiming that the series of normalization agreements between Arab countries (the UAE, Bahrain, Sudan, and now Morocco) and the Jewish state was bringing peace to West Asia. Which of the following should be the FIRST sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b8896072d3d00aaf62b57ffd07da41c4fd9ac7b8b34b21c12ed35f20b168fd51"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Which of the following should be the SECOND sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5d4730eaf4c994bc50a1256f7a79649f03ab04cac7ce9e215656062f9b988938"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Which of the following should be the THIRD sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "62eda7125e2fe7ca65d459a3f80825f3126659702ac4a27009d1ec0a6fc8bea6"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Which of the following should be the FOURTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e619933109bb253ea05f934adb9f1115fdd72081aa3d28a44356b83c9209076c"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Which of the following should be the FIFTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ec5167cd787a1418deaa82f6d6a191b83524c9da71de016815c1abd2bda808f3"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Read the passage carefully and answer the questions which follow. Some words may be highlighted for you. An American explorer has found plastic waste on the seafloor while breaking the record for the deepest ever dive. Victor Vescovo descended nearly 11km (seven miles) to the deepest place in the ocean - the Pacific Ocean's Mariana Trench. He spent four hours exploring the bottom of the trench in his submersible, built to withstand the immense pressure of the deep. He found sea creatures, but also found a plastic bag and sweet wrappers. It is the third time humans have reached the ocean's extreme depth. The first dive to the bottom of the Mariana Trench took place in 1960 by US Navy lieutenant Don Walsh and Swiss engineer Jacques Piccard in a vessel called the bathyscaphe Trieste. Movie director James Cameron then made a solo plunge half a century later in 2012 in his bright green sub. The latest descent, which reached 10,927m (35,849ft) beneath the waves, is now the deepest by 11m - making Victor Vescovo the new record holder. As well as the Mariana Trench in the Pacific, in the last six months dives have also taken place in the Puerto Rico Trench in the Atlantic Ocean (8,376m/27,480ft down), the South Sandwich Trench in the Southern Ocean (7,433m/24,388ft) and the Java Trench in the Indian Ocean (7,192m/23,596ft). The final challenge will be to reach the bottom of the Molloy Deep in the Arctic Ocean, which is currently scheduled for August 2019. The 4.6m-long, 3.7m-high submersible - called the DSV Limiting Factor - was built by the US-based company Triton Submarines, with the aim of having a vessel that could make repeated dives to any part of the ocean. After the Five Deeps Expedition is complete later this year, the plan is to pass the submersible onto science institutions so researchers can continue to use it. The challenges of exploring the deep ocean - even with robotic vehicles - has made the ocean trenches one of the last frontiers on the planet. Once thought to be remote, desolate areas, the deep sea teems with life. There is also growing evidence that they are carbon sinks, playing a role in regulating the Earth's chemistry and climate. What did Victor Vescovo find when he descended into the Mariana Trench?",
+   "options": [
+    "Algae and fungi",
+    "Toy soldiers",
+    "Plastic bag and balloons",
+    "Sea creatures, a plastic bag and sweet wrappers",
+    "Billboards and hoardings"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "faddcf7cf42f581a0ed958845640805046f94ad222ebd55a4a7e448236c63493"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Why was the DSV-Limiting Factor built?",
+   "options": [
+    "To help Victor Vescovo in all his missions",
+    "To facilitate repeated dives to any part of the ocean",
+    "To make Victor Vescovo's rivals jealous",
+    "To make rectifications in the previous dives",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b1a1448f4aa1c38df916cc06be9cdc8ac9a9a7b94bddefe02becc5596106ac70"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Which of the following is/are correctly matched? A. Puerto Rico Trench- Southern Ocean B. Mariana Trench- Atlantic Ocean C. Java Trench- Indian Ocean D. South Sandwich Trench- Arctic Ocean E. Molloy Deep- Antarctic Ocean",
+   "options": [
+    "A and B",
+    "Only E",
+    "Only C",
+    "Only B",
+    "B and E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4749278d1df23bf841891687347b0c455edfc6f69746d91591975ee3989e7bdd"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "What is the tone of the passage?",
+   "options": [
+    "Descriptive",
+    "Analytical",
+    "Sarcastic",
+    "Impassioned",
+    "Biased"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "41eabb433b8bb855cac4f4facb3b456d8e7be6c9831980063f1250e45b492e55"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "What is the synonym of the word 'immense'?",
+   "options": [
+    "Meagre",
+    "Methodical",
+    "Tiny",
+    "Obtuse",
+    "Extensive"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ceb239a1e84655ce7ba844cccef4df2d579f30a683eb4e09ea44bda5176a62ca"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "What is the antonym of the word 'desolate'?",
+   "options": [
+    "Dilapidated",
+    "Populous",
+    "Decapitated",
+    "Prone",
+    "Catalytic"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7ec4db6b4e6910e7ef5bac3d837167aa09da154e1f1587d2fb6ed52521bde82b"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which among the following is opposite in meaning to the word 'beneath'?",
+   "options": [
+    "Adrift",
+    "Aloft",
+    "Assemble",
+    "Attach",
+    "Admonish"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2c87d425a4619131ac61f604fc35da6f9b1deb2728b66532b86e61bf7ac299d1"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 33 + 38 × 2.5 + 4 + (73 – 37) ÷ 4 = ?",
+   "options": [
+    "216",
+    "116",
+    "141",
+    "131",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ee1f2c9d508d856f0382f8a1f69b20930f3fc9e828f13a61aad5585a78ca1524"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 44 × 3.25 + 7.25 × 36 = ?",
+   "options": [
+    "402",
+    "414",
+    "394",
+    "404",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a7f2e5917e059adeef10afecf5709b7e62571ec39fdfb79dbd0568574bc7d7df"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 3 4 2 2 2 3 8 ÷ 2 + 5 × 7 – (2 ) = ?",
+   "options": [
+    "1193",
+    "1200",
+    "1243",
+    "1157",
+    "1300"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0ca75374792322bf7a53eb13c3f338864cb86d9cf9cb33927a06755da0854aa4"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of milk and water in the mixture is 7 ∶ 2. If 90 litres of mixture is replaced with water, then the ratio of milk and water becomes 2 ∶ 7. What was the initial quantity of milk in the mixture?",
+   "options": [
+    "49 L",
+    "98 L",
+    "90 L",
+    "140 L",
+    "50 L"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "704625bb6ca806a48d84de8abb4c14ef3bb75ab21a7e8b746d42ae8f9a5047ab"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 13.57 + 29.49 + 23.46 = ? + 50.79",
+   "options": [
+    "15.73",
+    "19.45",
+    "16.87",
+    "23.74",
+    "13.63"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2fe431d9897d65354d71d44d3983dcabb318d0edce7119029767b27ce6e4c1be"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of monthly earning of Rohit and Ravi is 5 : 4 and their expenditure ratio is 6 : 5. If they save in the ratio 3 : 2 and their combined saving is Rs. 5000 then what is the half yearly earning of Rohit?",
+   "options": [
+    "180000",
+    "144000",
+    "90000",
+    "15000",
+    "12000"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d9deeb4a4630bfb07cac4a1d8e2c9da5abc5c5b6d0a04fa12a7eb4679cda91c6"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of (?) in the following questions? 162% of 624 × 41% of ? = 5304 3 6",
+   "options": [
+    "1220",
+    "1100",
+    "1224",
+    "1300",
+    "4800"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "37b3c639948f2ee45433a26eea48421457dec0f95d121488295aa8bbda0948fb"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of (?) in the following questions? 62 + 55 − 41 − 21 = ? 3 9 6 2",
+   "options": [
+    "62 3",
+    "55 9",
+    "41 6",
+    "32 3",
+    "21 3"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b876f47c3d82e9be0d2dfdcc3c9c56526503dadc6322849d8aef8cc3d3a14871"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 60% of (30 + 80 ÷ 2) – 22 = ?",
+   "options": [
+    "10",
+    "30",
+    "25",
+    "20",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "78af99c4185b353af7275b2578863f156df457d9a56f99c1ee8ad38499ed5f17"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "The average age of a family of three members five years ago was 47 years and father is 5 years older than mother if the present age of the son is 31 years then what is the present age of the mother?",
+   "options": [
+    "60 years",
+    "55 years",
+    "65 years",
+    "70 years",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d68d3fb2f6a71d8092efa401ad06e62d7cdd3290ba2e069790553da04377e951"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "X and Y invested Rs. 45,000 and Rs. 30,000, but Y left after p months and ratio of their profit after a year is 9 ∶ 4. What will be the value of p?",
+   "options": [
+    "9 months",
+    "8 months",
+    "6 months",
+    "10 months",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "79cbd08724fa01b7c8e1a8075e70d1e0d41ea7b45b97efa279eebdb81a53da47"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "A completed a work in 24 days and B completed the same work in 30 days. They started together and worked for 12 days, and after 12 days A left the work and B do the remaining work alone. Then find the number of days to complete the remaining work.",
+   "options": [
+    "3 days",
+    "8 days",
+    "5 days",
+    "2 days",
+    "7 days"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9c7a981805547926719f078e6c40643f5fbe8f299510b5fd4d7047431df185b7"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 416/16 + 12 × 2.5 – 12.5% of 400 = ?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "5"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "152770bef044160bdad1832ce217d86ba3820e4dd6c1c96ca4d4235117c3f08e"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question?",
+   "options": [
+    "18",
+    "18.5",
+    "17",
+    "17.5",
+    "19"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cd3bfab43cf49153accf8e2123c5a672cb112f666162c1e7deb9911e442221e9"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "If the simple interest on a certain amount at a rate of 15% for 3 years is Rs 1350, then what will be the simple interest for next 2.5 years?",
+   "options": [
+    "Rs 900",
+    "Rs. 1250",
+    "Rs. 1125",
+    "Rs. 2250",
+    "Rs 450"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "85536f5498220c101cd2392b99beac7fbbcb64608ed64ea0e5c54d37014209d2"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "The length of a rectangle is increased by 25% and breadth was decreased by 20% then what will be the percentage change in the area of the rectangle?",
+   "options": [
+    "15 % increase",
+    "25% increase",
+    "10% increase",
+    "0%",
+    "20% decrease"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d7c3bfd66a8602a187ea2031d4726b8b690fc0f364c859e2f56bd5035c476ada"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "A man can row 8 km/hr in still water and speed of stream is 2 km/hr. If it will take 2 hours more to travel upstream the same distance than downstream, then what will be the distance travelled during downstream?",
+   "options": [
+    "30 km",
+    "20 km",
+    "45 km",
+    "50 km",
+    "35 km"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4fcbfa28abcf6102062dc2d649718218d1501c7f2a468f85e3701a542d97e41c"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following number series? 34 17 17 34 ?",
+   "options": [
+    "51",
+    "68",
+    "136",
+    "85",
+    "102"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d438e1c6821d11b3f4f61d90cdfe7351956dd8c164598478c7a63adcc76e67c9"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following number series? 400, 100, 50, 37.5, ?",
+   "options": [
+    "25",
+    "37.5",
+    "12.5",
+    "20",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e856c4029c61259af3fa9f3d1f06c1038b8c340eefb63b91e64e9e38a80bdb9a"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following number series? 3, 20, 39, 62, ?",
+   "options": [
+    "90",
+    "98",
+    "91",
+    "78",
+    "73"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e2b5d54f7f9e4f934fcba26b24ddc9be976ff4d7abcdefa054194ee96a184773"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following number series? 1, 362, 762, 1203, ?",
+   "options": [
+    "1857",
+    "1688",
+    "1687",
+    "1781",
+    "1683"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "40a3e4aeb90e64d144f585585cdaf01bb5b778e695646aaea7f00ff970c960d3"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following number series? 1, 6, 13, 23, ?, 56",
+   "options": [
+    "37",
+    "47",
+    "27",
+    "57",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "081adc9cbf23f847b8a53148467e87d8edad3d8906e3d65a5f95bdb5a946b056"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following questions? 14 + 24 − 1 + 15 = ? 3 9 12 6",
+   "options": [
+    "235/36",
+    "245/36",
+    "234/72",
+    "243/72",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2b3a0ed57f091ed7aa50a31a95ac72253c43d06696eaab7431b936d21fe52e17"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "A person sold an article at a loss of 8%. Had he sold it at gain of 16%, he would have received Rs.2400 more. To gain 20% he should have sold it for:",
+   "options": [
+    "Rs.12000",
+    "Rs.10000",
+    "Rs.14000",
+    "Rs.13000",
+    "Rs.15000"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "260c21816b2e18deb2c924aa367f11c3ed8b1359f58cfc57b5d364f1e1b03af2"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "Two solutions A and B having sugar concentrations of 65% and 85% respectively are required to make a mixture. In what ratio these two solutions be mixed to get a mixture of sugar concentration 73%",
+   "options": [
+    "4 ∶ 3",
+    "3 ∶ 2",
+    "1 ∶ 3",
+    "3 ∶ 5",
+    "2 : 3"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6fdda54ec66d6f75959b0cc51169d3bac1a1ace03025c794fc6b4576f795c657"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Read the given bar graph carefully and answer the following questions accordingly. The bar graph below shows the total number of Red, Blue and Green balls being sold by 4 shops A, B, C and D in the year 2020. What is the average number of total balls sold by all the shop together in year 2020?",
+   "options": [
+    "175",
+    "150",
+    "125",
+    "200",
+    "100"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1e5d29e3039ff7a06f5fc3a5fe883c518f2188464cd73c02a1c16b82dcf1b68e"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "If balls sold by shop A is represented by a pie chart, then find the central angle of Green balls sold by shop A.",
+   "options": [
+    "100°",
+    "50°",
+    "90°",
+    "60°",
+    "120°"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c0eb79aeb1e1d2dffc05b1cf6802be4f70d335a151734b277fec9cf234c05bcd"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the total number of balls sold by the Shop A and the total number of balls sold by the Shop B.",
+   "options": [
+    "50",
+    "60",
+    "70",
+    "30",
+    "40"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3850c35b191261e7a0049e7eb0aa84d75ff26bca54411cece7b9503361d437ce"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "The number of Green balls sold by shops A and shop D is what percent less than the number of Red balls sold by shops A, B and C(approximate value)?",
+   "options": [
+    "55.55%",
+    "44.55%",
+    "33.33%",
+    "66.66%",
+    "50%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4644ff055f37b68cb797a8f7377369a5f7940d95d3629e25274ff493ff1723c5"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio of the number of Red balls sold by all the four shops to that of Blue balls sold by all the four shops.",
+   "options": [
+    "26 : 27",
+    "25 : 27",
+    "27 : 26",
+    "27 : 25",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "70cd52e6623a989ecf7b2ad45d95297321b788d48c648eb13fac6eb55cabb7fa"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Read the information given below and answer the question that follows. Information about the number of boys and the ratio of boys and girls from school P, Q, R, S, T is given below: Name of the Number of Ratio of boys school boys and girls P 111 3 : 2 Q 125 5 : 4 R 102 2 : 3 S 140 7 : 8 T 150 3 : 2 What is the average number of students from school Q, R and S?",
+   "options": [
+    "240",
+    "210",
+    "260",
+    "250",
+    "200"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "169b7be06f48b7addcd2388a722b0bd9320f3e9120f3c93dba345a717437914d"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Read the information given below and answer the question that follows.\n\nWhat is the ratio between total number of students from school P and school R?",
+   "options": [
+    "51 : 31",
+    "33 : 55",
+    "37 : 51",
+    "51 : 37",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4faa7193758bba178fdf6584c6d93d84bd03abf215fd727a2aa3acadd126efdb"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "Number of girls from school S is how much percentage more or less than number of girls from school T?",
+   "options": [
+    "60%",
+    "30%",
+    "50%",
+    "80%",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d803b9223d554e924214b54179650be56912fe5fb3bc35a047ac97f842ca9330"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What is the difference between total number of students from school R and total number of students from school Q?",
+   "options": [
+    "50",
+    "20",
+    "40",
+    "10",
+    "30"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3ac7365c8d8e89da684981c4c442eca4420705513c0167b97b9481540ada5880"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "What is the total number of girls from school R, S and T?",
+   "options": [
+    "413",
+    "400",
+    "313",
+    "300",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "48c957f2fe5707a7a6a6c2b73b126245a5fe722e5b08c7917adae2e3a0ba4575"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "In the given number, 448534739 how many pairs of digits are there which have as many digits between them both in (forward and backward) in the given number as they have in the number series?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "547073af4f37e6f325ec3e6a1a0a535d99e1a79e6b231da53daa70cfdd452bc9"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions followed by it. Eight persons, A, B, C, D, E, F, G and H buy some stuff on different occasions. Four persons buy between E and F. A buys on the fifth number. B buys just after D. Neither E nor F buys first or at the last. The number of persons who buy between A and D is equal to the number of persons who buy between A and F. G buys after H but not on the 6th number. C does not buy at the first number. Which of the following buys stuff on 5th number?",
+   "options": [
+    "D",
+    "F",
+    "E",
+    "A",
+    "H"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "67751564579fcf7f7bd625034257bf0844f792f038e455cbf1c4e1f02b3460a5"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Three statements are given below, followed by a question. Read them and answer accordingly. I. E buys stuff just before B II. Three persons buy stuff between F and B. III. G buys in the last.",
+   "options": [
+    "None of the statements is true",
+    "I & II does not follow",
+    "Only II does not follow",
+    "II & III does not follow",
+    "All follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aee81ffceaaec093547fcfacf317c2df1a9a4b97fe8bea3259ae0c2dbea80c42"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Three statements are given below, followed by a question. Read them and answer accordingly. I. E buys stuff at the second number. II. C buys stuff just after A. III. One person buys stuff between D and A.",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "II & III are true",
+    "I, II & III are true",
+    "None is true"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e1e33b4bb745104f9d62d7198289b4cc265e775d8942b049374f5999fc917194"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Had they bought in reverse alphabetical order, how many of them would have bought at the same rank?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5f2ded748d11c7a578cabe5983d047b6d4c596db21b45dabdb4f9fc615a36aa3"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Four of the following persons are similar somehow and form a group, which of the following does not belong to that group?",
+   "options": [
+    "D",
+    "H",
+    "F",
+    "A",
+    "B"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d525e7988bbd388b96d7eb7c9caa37761cd14b854ece2ac8e242a67d0c57c1d5"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: L > M > N ≥ O = P < Q > R Conclusions: I) L > R II) L ≤ R",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "None follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "60238bacb20af40df01bc354a711c7466564c04e9d12080cd1f9cb7584891877"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: K > Q = L > M ≤ O = N Conclusions: I) K > M II) O ≤ K",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "None follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5e512cc9fe173ac0122f8174c4ad0031f592ac42e749917f117ff87ca4b24d88"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: J > M ≥ P ≥ Q > R > T Conclusions: I) J = Q II) P > T",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "None follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9d1c46a5afd226903088a3dc276629dfbee83292edebfa514b1361e8cb780859"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following instructions carefully to answer the given questions that follow: There are seven persons (A - G), who were born in different years - 1961, 1968, 1972, 1988, 1993, 1999, and 2013. All the age calculations are done taking the base year as 2020. D was born in a leap year but not in the year 1988. Only three persons were born between D and F. C is the eldest person among them all. The sum of the ages of A and F is a multiple of 13. B was born in an odd-numbered year but not in 1993 nor he was the last one to be born. The difference between the ages of G and D is 4 years. Who was born in the year 1993?",
+   "options": [
+    "A",
+    "E",
+    "B",
+    "D",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b429ced98b1a328674d9bba5d3c73f1d59c50fc04a53ebb87c0aa96b4da1de50"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following instructions carefully to answer the given questions that follow: There are seven persons (A - G), who were born in different years - 1961, 1968, 1972, 1988, 1993, 1999, and 2013. All the age calculations are done taking the base year as 2020. D was born in a leap year but not in the year 1988. Only three persons were born between D and F. C is the eldest person among them all. The sum of the ages of A and F is a multiple of 13. B was born in an odd-numbered year but not in 1993 nor he was the last one to be born. The difference between the ages of G and D is 4 years.\n\nWhat is the sum of the ages of C and B?",
+   "options": [
+    "81",
+    "79",
+    "80",
+    "77",
+    "83"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "05cf7d2fcbc58773caccbc2fc4ecbdc6c6e870867a91e4d3f74245a52dac446a"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following instructions carefully to answer the given questions that follow: There are seven persons (A - G), who were born in different years - 1961, 1968, 1972, 1988, 1993, 1999, and 2013. All the age calculations are done taking the base year as 2020. D was born in a leap year but not in the year 1988. Only three persons were born between D and F. C is the eldest person among them all. The sum of the ages of A and F is a multiple of 13. B was born in an odd-numbered year but not in 1993 nor he was the last one to be born. The difference between the ages of G and D is 4 years.\n\nHow many persons are born between G and D?",
+   "options": [
+    "None",
+    "One",
+    "Three",
+    "Two",
+    "Four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1b8393f636a39e3b668e42b0e93f010d80f0194962639b063699d758fceee53b"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Four of the five are alike in a certain way thus form a group. Which one does not belong to that group?",
+   "options": [
+    "F",
+    "G",
+    "B",
+    "E",
+    "C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "df80fe7f00c7dfa20ec2a107b04de9011ae76271dfda93c996f9677ba7388ce4"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "B was born in which year?",
+   "options": [
+    "1999",
+    "2013",
+    "1993",
+    "1988",
+    "1968"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "af0f051fda141c65373b99ef05513ae8a9640826ca10dd5ab48189dbb0437f8c"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make a meaningful word from the 1st, 4th, 6th, and 10th letters of the word \"DEVELOPMENT\" using each letter only once, then the third letter of the word is your answer. If no such word can be formed, mark your answer as 'X', and if more than one word can be formed, mark your answer as 'Y'.",
+   "options": [
+    "X",
+    "D",
+    "Y",
+    "E",
+    "N"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7f4fb762b2dddf38c496a1082777351ed332d388d1efa3737a77c3629a839c12"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the following questions: Eight persons A, B, C, D, E, F, G, and H had celebrated their birthdays in different months of the same year which are January, March, May, June, July, August, November, December but not necessarily in the same order. G is celebrating his birthday in one of the months which has 30 days but before November. Three persons celebrate between H and G. C's birthday celebration is just before H. The number of persons who celebrate after C is one less than the number of persons who celebrate before A. The number of birthdays between G and D is the same as the number of birthdays between G and F. Also D celebrates his birthday just before C. B celebrates his birthday before E. Four of the following five are alike in a certain way and hence form a group. Which of the following does not belong to the group?",
+   "options": [
+    "F",
+    "C",
+    "H",
+    "D",
+    "A"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c78b7e7b0aa4faa907acbe8f9145aef6c30edbeed81cd3afd7499a611dc32515"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the following questions: Eight persons A, B, C, D, E, F, G, and H had celebrated their birthdays in different months of the same year which are January, March, May, June, July, August, November, December but not necessarily in the same order. G is celebrating his birthday in one of the months which has 30 days but before November. Three persons celebrate between H and G. C's birthday celebration is just before H. The number of persons who celebrate after C is one less than the number of persons who celebrate before A. The number of birthdays between G and D is the same as the number of birthdays between G and F. Also D celebrates his birthday just before C. B celebrates his birthday before E. Four of the following five are alike in a certain way and hence form a group.\n\nWho among the following celebrates his birthday just after A?",
+   "options": [
+    "B",
+    "A",
+    "G",
+    "H",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "61728537aea4c09b20b1df45cda625c714bacd1d24791e02a9b9e877d189a771"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the given information carefully and answer the following questions: Eight persons A, B, C, D, E, F, G, and H had celebrated their birthdays in different months of the same year which are January, March, May, June, July, August, November, December but not necessarily in the same order. G is celebrating his birthday in one of the months which has 30 days but before November. Three persons celebrate between H and G. C's birthday celebration is just before H. The number of persons who celebrate after C is one less than the number of persons who celebrate before A. The number of birthdays between G and D is the same as the number of birthdays between G and F. Also D celebrates his birthday just before C. B celebrates his birthday before E. Four of the following five are alike in a certain way and hence form a group.\n\nHow many persons celebrate birthday between F and D?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1da1c6b760e30fc99a4d64fdb448d6cfe33c2bb24d4763f696f74fb0effbd48b"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "E celebrates his birthday in which month?",
+   "options": [
+    "December",
+    "August",
+    "July",
+    "May",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "85aafbe9ede14c1929f1a749672e8da4e046e087112b39a74bf20b0bf519f66c"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Who among the following celebrates his birthday in November?",
+   "options": [
+    "G",
+    "B",
+    "H",
+    "C",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c59ee4cc0ec3e3e77ed33bed115a23862a441a58093739683ef5136a572082d4"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "In a certain code language MOBILE is written as OQDKNG and TABLET is written as VCDNGV then how can we write COMPUTER in that code language?",
+   "options": [
+    "EQOSWVGT",
+    "EQORWVGT",
+    "EQORWVGU",
+    "FQORWVGT",
+    "GQORWVGT"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "690e36031dde9eff95d45036360b8d7dc7b254926bedb7105b65910155fc677d"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Directions:- Study the information given below carefully and answer the questions that follow. There are 6 points which are at a distance of each other in different directions. Point A is 5m South of B. point C is 10m west of A. D is 15m north of C. E is 15m east of D. F is 10m south of E. What is the direction of E with respect to B?",
+   "options": [
+    "East",
+    "North - west",
+    "North - East",
+    "South - West",
+    "South - East"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "746e79f5c884f872884fae379eb5f4ac845de1ce0900491a7301b5ca29ae7ac7"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "If Point F is moving towards South Direction till point G so that Point G is in East direction of Point A then what is the distance between Point G and Point C?",
+   "options": [
+    "10m",
+    "20m",
+    "5m",
+    "15m",
+    "25m"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f7c693e37ac70c98f40c69f5238d1bb16fb6424891675cbda5f39960be3f3a4d"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V, and W were sitting around a circular table facing inward with equal distance between them but not necessarily in the same order. Two persons were sitting between R and P. Q was sitting second to the right of R. P was sitting second to the right of S. V was sitting second to the right of U. V and W are not neighbours. T is not a neighbour of P or R. Who was sitting opposite R?",
+   "options": [
+    "Q",
+    "S",
+    "U",
+    "W",
+    "P"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "93c35d997108cadad792d5e9c73cfbcb24220d97b23b0afb5e5b97ccde910ac2"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "If all the persons are made to sit in the alphabetical order from the right of P, then the positions of how many persons will remain unchanged in the new arrangement, excluding P?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "22f2d215d3bc8a63df93edc665dd3b9d138f660355f8dbe6d8dec6b7af5d2d22"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Who is sitting at the immediate right of V?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f3d6da8514609749a05baec59ec61899b34d6c0e374e4a7bb4da4d54856daf74"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Who was sitting third to the right of T?",
+   "options": [
+    "P",
+    "S",
+    "V",
+    "W",
+    "Q"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c6970acf41af239bdb182b19780118afe0cee3eb80dd386d4a87d97881c81f30"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Directions: The following questions are based on the five numbers given below. 712 843 648 257 423 If one is subtracted from the middle digit of all the numbers, then which of the following numbers is the largest?",
+   "options": [
+    "712",
+    "843",
+    "648",
+    "257",
+    "423"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "de038c205b4bcac1b3bd01ef4d736d37d0ed0c87a2aa2f880c7456e4692841b0"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "If the first and second digits are interchanged, which of the following becomes the second-largest number?",
+   "options": [
+    "712",
+    "843",
+    "648",
+    "257",
+    "423"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7753db03cdc2661864146f9108fe65ec019a81b099124f0164c74b184d173194"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "If we subtract 1 from the odd number and 2 from the even number, which of the following becomes the second smallest number?",
+   "options": [
+    "712",
+    "843",
+    "648",
+    "257",
+    "423"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "814e6e65f6ba13e0277bc4e53e4988363e05f3aae46c93f9ab1c9588b18bfee9"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "If we arrange all the digits of each number in ascending order, which of the following becomes the largest number?",
+   "options": [
+    "712",
+    "843",
+    "648",
+    "257",
+    "423"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "386f3ebecc3b0dd13a142cbd22aca174394536c6ebfe14b9eededd99bdbff5d2"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some mugs are plates No spoon is mug Some spoons are plates Conclusions: I. No spoon is plate II. Some plates can be mugs",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "abf55edc5300aaa7f83290651057cde50e4e3d718566ea1f5de23d1e7969f730"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All chocolates are chips All chips are cookies All cookies are coffee Conclusions: I. All chocolates are coffee II. All chips can be cookies",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3e09801c0ce33d9965ee45e473f676ba8fd69d45f250ed3661840aa64c171d2b"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few tangy is sweet No sour is spicy Only a few sweet are sour Conclusions: I. All spicy can never be tangy II. Some sweet are sour",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4b524ab54758763f3300a7247ddd7740adf726c14ef3b6f50dbe6a429753b4f2"
+  }
+ ],
+ "section_confidence": 0.926,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

@@ -1,0 +1,1444 @@
+{
+ "file": "IBPS-Clerk-Pre-2025-Memory-Based-Paper-4-Oct-2025-2nd-shift.pdf",
+ "format": "adda_inline",
+ "accepted": 95,
+ "rejected": 5,
+ "reasons": {
+  "missing_option": 1,
+  "duplicate_options": 1,
+  "empty_or_short_stem": 4
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "numerical_ability",
+   "stem_text": "Read the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of a town from 2002 to 2006.\n\nThe population in 2006 is approximately what percentage of the population in 2003?",
+   "options": [
+    "135%",
+    "144.44%",
+    "140%",
+    "150%",
+    "155.56%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6994dcb6e32aaa1b05e3a185c2e1a6e61f1028290d5ca8361f6121ae1dec9170"
+  },
+  {
+   "question_number": 2,
+   "section": "numerical_ability",
+   "stem_text": "Read the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of a town from 2002 to 2006.\n\nThe average annual increase in population from 2002 to 2006 is:",
+   "options": [
+    "32.5 thousand",
+    "35 thousand",
+    "37.5 thousand",
+    "40 thousand",
+    "42.5 thousand"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "14be04334e1cd35a5df63fc2243b23bea5164530fe4d552f4df2873798b2e52b"
+  },
+  {
+   "question_number": 3,
+   "section": "numerical_ability",
+   "stem_text": "Read the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of a town from 2002 to 2006.\n\nThe population in 2005 exceeds the average population of 2002 and 2004 by how many thousand?",
+   "options": [
+    "50",
+    "55",
+    "65",
+    "60",
+    "70"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "993d6e3d27c745fac00410968e900413a6cb02be58c84e423de3deca5c5e0b64"
+  },
+  {
+   "question_number": 4,
+   "section": "numerical_ability",
+   "stem_text": "Read the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of a town from 2002 to 2006.\n\nThe increase in population from 2004 to 2006 is what percentage more than the increase from 2002 to 2004?",
+   "options": [
+    "40%",
+    "50%",
+    "60%",
+    "75%",
+    "80%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "69f186ed617624d2ead4296fdb706d176b5b927da41242a31f0589698462d4e6"
+  },
+  {
+   "question_number": 5,
+   "section": "numerical_ability",
+   "stem_text": "Read the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of a town from 2002 to 2006.\n\nIf 40% of the population in 2006 are females, then the number of males in 2006 is how many thousand less than the total population in 2002?",
+   "options": [
+    "6",
+    "3",
+    "8",
+    "10",
+    "12"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7d5c4593ed759b56ddf2cf58c431a3263280cd45e09401db746a3c4a044af159"
+  },
+  {
+   "question_number": 6,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 150% of 240 + 25% of 160 = ?",
+   "options": [
+    "380",
+    "390",
+    "400",
+    "410",
+    "420"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ad11851b9fb86179767fc6d1fc09e0bee4e450847379fa27c0d46e8c14d8c85e"
+  },
+  {
+   "question_number": 7,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 1 (√4900 − ∛1728) × = ? 2",
+   "options": [
+    "28",
+    "29",
+    "30",
+    "31",
+    "32"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9a3c85fda6ec2d9868b228221f235e193635c5c6b3a3e8a2ebca0d280cb4e0e9"
+  },
+  {
+   "question_number": 8,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 25.678 − 8.432 − 7.246 − 3 = ?",
+   "options": [
+    "6.5",
+    "6.9",
+    "7",
+    "7.05",
+    "7.1"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "40a5f957f4eab73e085c57c1dcdce8b2d74242235e798219c301f6167599fe1c"
+  },
+  {
+   "question_number": 9,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? √(?) × √1600 = 2000",
+   "options": [
+    "2500",
+    "2601",
+    "2401",
+    "2304",
+    "2209"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f8c2800d9e3c484ffd739664a7957480f305492de5093b7e04219fc81358d1d0"
+  },
+  {
+   "question_number": 10,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 6859 + 1331 − 3277 = ?",
+   "options": [
+    "4913",
+    "1512",
+    "5650",
+    "4170",
+    "7218"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b04208d111fb1a3e3261d9e28dc016b822c4b7f6204cb9b0319a86f9309d3c15"
+  },
+  {
+   "question_number": 11,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 40% of 150 + 20% of 200 = ?",
+   "options": [
+    "90",
+    "100",
+    "114",
+    "105",
+    "110"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f161b1beb4d44729c7b8f1c43081c0f27aa0110ba3b2c75f2135e788c49354ae"
+  },
+  {
+   "question_number": 12,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 3750 ÷ 12.5 + 180 = ?",
+   "options": [
+    "460",
+    "480",
+    "410",
+    "490",
+    "500"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d77112812524242e5980193b0adfc2896447b1f128429b530e24fe748860e84b"
+  },
+  {
+   "question_number": 13,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? ∛512 + 25% of 16 = ? + 3",
+   "options": [
+    "8",
+    "9",
+    "7",
+    "10",
+    "6"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ec2ee5756bc4611819ea21fa45b0a8c32df1fc00107f539c799262f02b550653"
+  },
+  {
+   "question_number": 14,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? (96)² + (?) = (140)² − (60)² − 816",
+   "options": [
+    "5968",
+    "5984",
+    "6000",
+    "6016",
+    "6032"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "50778c2d7ff863cc226344875eb75b4fdfbfd5fa6c6ad8efd53bdf1844e94e67"
+  },
+  {
+   "question_number": 15,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? 1 √49 + 3 × 4 + ? = 35 2",
+   "options": [
+    "12",
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3dac0b2997b6f48083eaba2bf8cf6545da1faf5bcc474ec2ee7fdf78419aa406"
+  },
+  {
+   "question_number": 16,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following questions? (?)² = 64 × 441 × 1/49",
+   "options": [
+    "20",
+    "22",
+    "14",
+    "26",
+    "24"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3c9474b5311d38749c9e52f7050cfe1413cc0c4c3ce1b6fc8fbf465e33c143da"
+  },
+  {
+   "question_number": 17,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 845 + 55 + ? = 1000 + 50",
+   "options": [
+    "140",
+    "150",
+    "160",
+    "130",
+    "120"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6d0d7c73247842f19e049683814ccc11c46a4fab4ee3eb1b393861372938277d"
+  },
+  {
+   "question_number": 18,
+   "section": "numerical_ability",
+   "stem_text": "Study the following table carefully and answer the questions that follow. The table shows the number of School Textbooks sold by four stores (A, B, C and D) during a month. Stores Mathematics Science English Social Science Computer Science A 320 260 180 220 140 B 280 300 220 180 160 C 360 240 200 260 120 D 300 280 240 200 180\n\nThe total number of textbooks sold by Store C is approximately what percentage more than the total number of textbooks sold by Store A?",
+   "options": [
+    "2%",
+    "5%",
+    "8%",
+    "11%",
+    "18%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4259930130bf4f5b304c939a5021422db81573998bf721e1648b5ebbc8d17ece"
+  },
+  {
+   "question_number": 19,
+   "section": "numerical_ability",
+   "stem_text": "Study the following table carefully and answer the questions that follow. The table shows the number of School Textbooks sold by four stores (A, B, C and D) during a month. Stores Mathematics Science English Social Science Computer Science A 320 260 180 220 140 B 280 300 220 180 160 C 360 240 200 260 120 D 300 280 240 200 180\n\nThe number of Computer Science textbooks sold by Stores B and D together is how many more or less than the number of Mathematics textbooks sold by Stores A and C together?",
+   "options": [
+    "340",
+    "180",
+    "270",
+    "450",
+    "290"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cf8d7930b8f333569655d263ad328d22847382dc2d075534de28f3254dd3856f"
+  },
+  {
+   "question_number": 20,
+   "section": "numerical_ability",
+   "stem_text": "Study the following table carefully and answer the questions that follow. The table shows the number of School Textbooks sold by four stores (A, B, C and D) during a month. Stores Mathematics Science English Social Science Computer Science A 320 260 180 220 140 B 280 300 220 180 160 C 360 240 200 260 120 D 300 280 240 200 180\n\nFind the average number of Social Science textbooks sold by all four stores.",
+   "options": [
+    "205",
+    "210",
+    "215",
+    "220",
+    "225"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "603e1eb4bab86242a0978fdb1dd3884da2170fde22789b92041c013347938d81"
+  },
+  {
+   "question_number": 21,
+   "section": "numerical_ability",
+   "stem_text": "Study the following table carefully and answer the questions that follow. The table shows the number of School Textbooks sold by four stores (A, B, C and D) during a month. Stores Mathematics Science English Social Science Computer Science A 320 260 180 220 140 B 280 300 220 180 160 C 360 240 200 260 120 D 300 280 240 200 180\n\nFind the ratio of the total number of English textbooks sold by store C to the total number of Social Science textbooks sold by store B.",
+   "options": [
+    "18:33",
+    "10:3",
+    "10:9",
+    "10:11",
+    "11:5"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "10675859203549da5fff2cf38e86fd08dd0359834b53d3915c6d2d50c13b4804"
+  },
+  {
+   "question_number": 22,
+   "section": "numerical_ability",
+   "stem_text": "Study the following table carefully and answer the questions that follow. The table shows the number of School Textbooks sold by four stores (A, B, C and D) during a month. Stores Mathematics Science English Social Science Computer Science A 320 260 180 220 140 B 280 300 220 180 160 C 360 240 200 260 120 D 300 280 240 200 180\n\nIf 25% of the Mathematics textbooks sold by Store B were returned by customers, then how many Mathematics textbooks finally remained sold by Store B?",
+   "options": [
+    "200",
+    "210",
+    "235",
+    "215",
+    "220"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2b2556b9959a1b2c8073c69c34613770e31b7affd564187f4104e08ae7d21a82"
+  },
+  {
+   "question_number": 23,
+   "section": "numerical_ability",
+   "stem_text": "A & B entered into a business with capitals of Rs 24,000 and Rs 30,000 respectively. After 4 months, B left the business. If at the end of the year the total profit is Rs 3,400, then find the profit share of B.",
+   "options": [
+    "Rs 800",
+    "Rs 900",
+    "Rs 1000",
+    "Rs 1100",
+    "Rs 1200"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c2e280dcf5003d9d337660abe10b832f709fdf521669b1a195aeb9caf1efec74"
+  },
+  {
+   "question_number": 25,
+   "section": "numerical_ability",
+   "stem_text": "The population of a town was 25,000. It increased by 10% in the first year and decreased by 20% in the second year. What is the population at the end of two years?",
+   "options": [
+    "21000",
+    "22000",
+    "23000",
+    "24000",
+    "25000"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cf8c5144403effe2c0b6d837e54140b850ac7747b4777250bc64cbf4097a0829"
+  },
+  {
+   "question_number": 26,
+   "section": "numerical_ability",
+   "stem_text": "The average of A, B and C is 72. A is 24 more than B. If the ratio of (A + B) to C is 5 : 4, then find the value of B.",
+   "options": [
+    "40",
+    "48",
+    "56",
+    "64",
+    "72"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "84b653076bc8096b378b4bd1df63689d2b4b15c9f7944e1a7bf50aa9ce43baad"
+  },
+  {
+   "question_number": 27,
+   "section": "numerical_ability",
+   "stem_text": "The present ages of a mother and daughter together are 60 years. Five years ago, the mother’s age was three times the daughter’s age. Find the present age of the mother (in years).",
+   "options": [
+    "40",
+    "42.5",
+    "45.5",
+    "48",
+    "50.5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bf620c92a2d28d8edb590d1ee399135a001905d759ed75ec88d733365dacfe5c"
+  },
+  {
+   "question_number": 28,
+   "section": "numerical_ability",
+   "stem_text": "The marked price of a shirt is Rs. 1050 and P bought it for Rs. 756, after getting two successive discounts. If the first discount is 10%, then find the second discount?",
+   "options": [
+    "15%",
+    "20%",
+    "22%",
+    "24%",
+    "12%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0ee5a3c03aa18ad61c69802471ad843d276011643f6f109a82928f4c4c8c7ce5"
+  },
+  {
+   "question_number": 29,
+   "section": "numerical_ability",
+   "stem_text": "In 150 liters of pure milk, 50 liters of water is added. Then 20% of the mixture is removed. After that, y liters of water is added such that water becomes 50% of the final mixture. Find the value of y.",
+   "options": [
+    "25",
+    "80",
+    "35",
+    "40",
+    "55"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0c3a8cf9dc01afb79d2e484aa225e936e61d95aad319d7d313b5e78d33c77932"
+  },
+  {
+   "question_number": 30,
+   "section": "numerical_ability",
+   "stem_text": "A and B invested Rs 450 and Rs 800 on simple interest at rate of 20% p.a. and 10% p.a. for two years respectively. Find the ratio between the interest received by B and A respectively?",
+   "options": [
+    "9 : 8",
+    "8 : 9",
+    "4 : 5",
+    "8 : 11",
+    "8 : 7"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e490603c71189e08ee182f6984f0160de2901d16df903aa791d8815bce2aa602"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "There average of four negative and two positive numbers is zero and the average of the two positive number is 25. What could be the possible lowest number among the set of negative numbers. (All number are integers)",
+   "options": [
+    "-1",
+    "-2",
+    "47",
+    "1",
+    "-47"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9c11f627844fee8aa7264d49817775c4d46671fe27bc82cd753bd18ef3cc19a1"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of side of two squares X and Y is 5 : 9 respectively. If difference between diagonal of these two squares is 16√2 cm, then find the difference between area of these two squares (in cm square)?",
+   "options": [
+    "896",
+    "256",
+    "796",
+    "596",
+    "696"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c8ea731ba445111acb615b9a36c15a6c5a5924fd59ac86dd5fe6ab52067b03a7"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "A class has two sections. The average marks of all the students in the class is 70. The average marks of Section A are 65, and the average marks of Section B are 85. What is the ratio of the number of students in Section A to Section B?",
+   "options": [
+    "2:7",
+    "17:24",
+    "3:1",
+    "1:7",
+    "2:3"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "60ac5c6295c84d8d835872bf4face134d739f02d1bd7238d36fbff51fe196ac2"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "A train crosses a bridge which is 240 meters long in 28 seconds and the same train crosses a static pole in 16 seconds. Find the length and the speed of the train (in meters & km/hr) respectively?",
+   "options": [
+    "240 & 72",
+    "360 & 72",
+    "480 & 72",
+    "320 & 72",
+    "400 & 72"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "52bb44bb129a17e6ab716c14803fab0093806bf255b8683232beda187b66396b"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of speed of a boat in upstream to that of in downstream is 3:5 and the speed of stream is 4m/sec, Find the time taken by boat to cover the total distance of 120 meters in both upstream and downstream together?",
+   "options": [
+    "14sec",
+    "12sec",
+    "15sec",
+    "16sec",
+    "26sec"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "da785d063411b594ec8620d0dd7b28f6b4026ff05deb0c03a40f7ad169293206"
+  },
+  {
+   "question_number": 36,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nWhich of the following statements is/are correct according to the passage? (I) Tonewoods are prized not only for physical properties but also for the unique acoustic resonance they provide to instruments. (II) The United States Lacey Act amendments made it compulsory for guitar companies to trace timber back to its origin with documented precision. (III) Every piece of timber within a sustainably managed forest meets the exacting standards required for premium guitar production.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (II)",
+    "Only (III)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "030b831e1c476e9b31d330a691d2d5602eaf6ef343da069477aa2a845d8fda0b"
+  },
+  {
+   "question_number": 37,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nWhich of the following statements is/are incorrect according to the passage? (I) Composite carbon fibre necks and reclaimed urban timber are completely replacing traditional tonewoods across all guitar manufacturers. (II) Some California guitar manufacturers have built direct partnerships with certified sustainable forestry operations in Canada and Germany. (III) Certain manufacturers have begun storing legally sourced wood decades in advance to insulate themselves from supply disruptions.",
+   "options": [
+    "Only (I)",
+    "Only (II)",
+    "Both (I) and (III)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3e15e2c388b3c3a88949ddafa86ee8a7148696ed3ad9368aecc388a1c9ecf7c7"
+  },
+  {
+   "question_number": 38,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nWhich of the following statements is/are TRUE about the characteristics of trees and timber required for premium guitar production? (I) Wood selected for guitar making must be straight-grained, knot-free, adequately aged, and harvested at the right stage of tree maturity. (II) Within any forest, most available trees naturally meet the strict quality standards that boutique guitar manufacturers require. (III) Selective tonewood harvesting causes damage extending beyond targeted trees to surrounding forest ecosystems.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (III)",
+    "Only (II)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cea04d4ed4596da8fd734cbbec97a33d101f6c21a5e268d8cef006cf5da60fb3"
+  },
+  {
+   "question_number": 39,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nWhat does the passage suggest about the role of regulatory pressure in reshaping California's guitar manufacturing industry?",
+   "options": [
+    "Regulations have completely shut down guitar manufacturing by making timber imports legally impossible for boutique producers",
+    "Regulations have primarily benefited large corporations while pushing boutique guitar makers out of the market",
+    "Regulatory frameworks have encouraged guitar companies to relocate their manufacturing operations outside the United States",
+    "Government pressure has forced manufacturers to abandon acoustic guitars entirely in favour of electric instruments",
+    "Federal legislation has compelled manufacturers to establish traceable and documented timber sourcing practices"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d17627a36b89bf68ce00d8fafdc755927269d49a6301049e14badf000f2e5864"
+  },
+  {
+   "question_number": 40,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nAccording to the passage, why does tonewood harvesting cause disproportionate damage even within sustainably managed forests?",
+   "options": [
+    "Sustainable forest management prohibits selective harvesting making it impossible to extract only the finest quality timber",
+    "Guitar manufacturers deliberately target the oldest trees causing irreversible damage to ancient forest ecosystems",
+    "Only a small fraction of available timber meets required standards meaning much surrounding forest is disturbed during selection",
+    "Tonewood extraction requires complete forest clearing since individual tree selection is technically impossible at scale",
+    "Sustainably managed forests produce inferior tonewoods forcing manufacturers to secretly source from unprotected regions"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4f304997490b64a804b900323d7277c364adf7002cf44ae3375d89ca5140afef"
+  },
+  {
+   "question_number": 41,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nChoose the word most similar in meaning to \"impart\" as used in the passage.",
+   "options": [
+    "Remove",
+    "Withhold",
+    "Demand",
+    "Convey",
+    "Extract"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4dbd5cec50b9b269fdf70c2ba8aab00775f8203fc721481f96fc025738c2d72a"
+  },
+  {
+   "question_number": 42,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nChoose the word most similar in meaning to \"exacting\" as used in the passage.",
+   "options": [
+    "Flexible",
+    "Lenient",
+    "Relaxed",
+    "Ordinary",
+    "Stringent"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9f03b37e9181c52b7c318b80c333543962f86de835560619c5f61b7cca0d1624"
+  },
+  {
+   "question_number": 43,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nChoose the most appropriate word to fill in the blank:",
+   "options": [
+    "planted",
+    "discarded",
+    "harvested",
+    "processed",
+    "transported"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "59555ca385f80ac4a20a90620a6ffadeac6a361fb82d191600b52e3f7fc03921"
+  },
+  {
+   "question_number": 44,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nWhat alternative approaches have some guitar manufacturers adopted to reduce dependence on traditional tonewoods?",
+   "options": [
+    "Completely abandoning handcrafted production and shifting toward mass manufacturing using synthetic materials",
+    "Lobbying governments to relax environmental regulations to ensure continued access to traditional forest timber",
+    "Investing in composite materials, reclaimed urban timber, and plantation-grown alternatives with acoustic properties",
+    "Importing finished guitar components from countries with less stringent environmental and forestry regulations",
+    "Replacing all wooden components with carbon fibre making acoustic resonance entirely independent of natural materials"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a80a93e28ad44f49fd8798a5ce763cdc634acf2463db39b3b5007d3ae793a4e5"
+  },
+  {
+   "question_number": 45,
+   "section": "english",
+   "stem_text": "Read the following passage and answer the given questions. Behind every handcrafted guitar sold in California lies a supply chain that stretches deep into forests thousands of miles away. For decades, boutique guitar manufacturers in the state have depended on specific tonewoods — spruce for soundboards, mahogany for necks, rosewood for fingerboards — prized not merely for their physical properties but for the unique acoustic resonance they impart to an instrument. Yet the very forests that supply these materials are under mounting pressure, forcing the industry to confront an uncomfortable question: can fine guitar making survive without contributing to deforestation? The problem is not simply one of demand. Tonewoods are extraordinarily selective materials. A luthier crafting a high-end acoustic guitar requires wood that is straight-grained, free of knots, aged adequately, and ______________ at precisely the right stage of the tree's maturity. This specificity means that even within a sustainably managed forest, only a small fraction of available timber meets the exacting standards that premium guitar production demands. Indiscriminate logging in pursuit of these select pieces causes disproportionate damage to surrounding forest ecosystems. Regulatory pressure has also intensified. Amendments to the United States Lacey Act have made it a federal offence to import wood harvested in violation of the laws of the source country, compelling California guitar companies to trace every piece of timber back to its origin with documented precision. Several manufacturers have responded by building direct partnerships with certified sustainable forestry operations in countries such as Canada, Germany, and responsibly managed regions of South America. Some companies have gone further, investing in alternative materials research. Composite carbon fibre necks, reclaimed urban timber, and plantation-grown alternatives such as Sitka spruce cultivated specifically for acoustic properties are gradually entering production lines. Certain manufacturers have begun seasoning and storing legally sourced wood decades in advance, building strategic timber reserves that insulate them from both supply disruptions and regulatory uncertainty. The finest guitars, it turns out, require not only skilled hands but also an ethical and carefully managed relationship with the forests that make them possible.\n\nThe passage mentions that certain manufacturers have begun \"seasoning and storing legally sourced wood decades in advance.\" What does this strategy most accurately reveal about the guitar manufacturing industry?",
+   "options": [
+    "Manufacturers are stockpiling timber illegally to circumvent the provisions of the amended United States Lacey Act",
+    "Forward-looking manufacturers treat sustainably sourced timber as a long-term strategic asset rather than a routine raw material",
+    "Storing wood in advance indicates that guitar manufacturers have abandoned investment in alternative material research entirely",
+    "This practice suggests manufacturers believe plantation-grown alternatives will permanently fail to meet acoustic quality standards",
+    "Advance timber storage reflects manufacturers' intention to exit the guitar industry once existing wood reserves are fully exhausted"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "20a6bb44c7c198a2603f44f3c6b4ed1553247d082227c5eacd38e418223a4b59"
+  },
+  {
+   "question_number": 50,
+   "section": "english",
+   "stem_text": "The warden considered it esential to maintain discipline among the inmates, conducting surprise inspections every alternate week. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as your answer and if all the words are correct in their spellings and usage, choose ‘All are correct’ as the answer.",
+   "options": [
+    "surprise",
+    "discipline",
+    "inmates",
+    "esential",
+    "All are correct"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6ff34b40a6848db69e8e603b9f630604b4abebd876fd013c07935249cfdf6a9a"
+  },
+  {
+   "question_number": 51,
+   "section": "english",
+   "stem_text": "The officer promptly responded to the customer's grievance and assured him of a satisfactory resolution within two working days. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as your answer and if all the words are correct in their spellings and usage, choose ‘All are correct’ as the answer.",
+   "options": [
+    "officer",
+    "responded",
+    "grievance",
+    "satisfactory",
+    "All are correct"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "301792527c1351dd955e58fc979e51ad053ad3e4714d9248a11a819f5e325af7"
+  },
+  {
+   "question_number": 52,
+   "section": "english",
+   "stem_text": "The probationer was assigned a routine task of reconciling the daily transections before the close of business hours. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as your answer and if all the words are correct in their spellings and usage, choose ‘All are correct’ as the answer.",
+   "options": [
+    "probationer",
+    "assigned",
+    "routine",
+    "transections",
+    "All are correct"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0922df78d0ab4609e95654f075a127f67d7ca3d3bbfc5371011d47a35877f98a"
+  },
+  {
+   "question_number": 53,
+   "section": "english",
+   "stem_text": "The teller carefully counted the cash, matched it against the ledger and reported the balance to the branch manager. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as your answer and if all the words are correct in their spellings and usage, choose ‘All are correct’ as the answer.",
+   "options": [
+    "teller",
+    "counted",
+    "ledger",
+    "balance",
+    "All are correct"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9b0ad5fb3b406abc3481eaacf9df9e14590392d0d4781c35acf41110c13ed949"
+  },
+  {
+   "question_number": 54,
+   "section": "english",
+   "stem_text": "The junoir prefect diligently supervised the morning assembly, ensuring every participant adhered to the prescribed code of conduct. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as your answer and if all the words are correct in their spellings and usage, choose ‘All are correct’ as the answer.",
+   "options": [
+    "junoir",
+    "diligently",
+    "participant",
+    "prescribed",
+    "All are correct"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3d62629b5afb8a8b89755d035100de8fe3fe0d0162e17b08f1f8d190f809ce6e"
+  },
+  {
+   "question_number": 55,
+   "section": "english",
+   "stem_text": "BOARD (I) The manager decided to board the proposal before presenting it to the clients. (II) The passengers were asked to board the train at Platform 4 ten minutes before departure. (III) She was invited to join the board of directors because of her extensive experience in finance. A word has been given in the question and used in the sentences below. Identify the statements where the word has been used in a contextually and grammatically correct manner.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (II)",
+    "Both (II) and (III)",
+    "Only (III)",
+    "All of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ad750489af01288d498358023614e9f770be37f18c86139ea40885ed48b79ce0"
+  },
+  {
+   "question_number": 56,
+   "section": "english",
+   "stem_text": "In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Planting trees is one of the most effective ways to improve the environment, but achieving long-term success requires following certain steps. Before beginning any plantation drive, it is important to ____(A)____ suitable native species according to the local climate and soil conditions. Experts recommend preparing the land properly, ensuring adequate spacing, and combining tree planting with water conservation measures so that young plants receive the support they need. These practices can be ____(B)____ with regular monitoring to increase the survival rate of saplings. Another important aspect is protecting newly planted trees from grazing animals, pests, and extreme weather. Local communities, schools, and volunteers can ____(C)____ together to care for the plants during the first few years, when they are most vulnerable. Simple measures such as mulching, watering during dry periods, and replacing damaged saplings will help to ____(D)____ healthy growth and improve the overall success of the project. When these guidelines are followed consistently, tree plantation campaigns can create lasting environmental benefits. They improve air quality, reduce soil erosion, support biodiversity, and make surrounding areas more resilient to climate change. Such well-planned efforts can ____(E)____ a healthier and greener future for generations to come.\n\nWhich of the following words will fit in the given blank",
+   "options": [
+    "? (a) select",
+    "borrow",
+    "collect",
+    "reject",
+    "disturb"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3935c68067c97db37a9f626d55353b60cc26380a3a383879252be00dea9f366f"
+  },
+  {
+   "question_number": 57,
+   "section": "english",
+   "stem_text": "In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Planting trees is one of the most effective ways to improve the environment, but achieving long-term success requires following certain steps. Before beginning any plantation drive, it is important to ____(A)____ suitable native species according to the local climate and soil conditions. Experts recommend preparing the land properly, ensuring adequate spacing, and combining tree planting with water conservation measures so that young plants receive the support they need. These practices can be ____(B)____ with regular monitoring to increase the survival rate of saplings. Another important aspect is protecting newly planted trees from grazing animals, pests, and extreme weather. Local communities, schools, and volunteers can ____(C)____ together to care for the plants during the first few years, when they are most vulnerable. Simple measures such as mulching, watering during dry periods, and replacing damaged saplings will help to ____(D)____ healthy growth and improve the overall success of the project. When these guidelines are followed consistently, tree plantation campaigns can create lasting environmental benefits. They improve air quality, reduce soil erosion, support biodiversity, and make surrounding areas more resilient to climate change. Such well-planned efforts can ____(E)____ a healthier and greener future for generations to come.\n\nWhich of the following words will fit in the given blank (B)?",
+   "options": [
+    "separated",
+    "combined",
+    "removed",
+    "exchanged",
+    "postponed"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e63fa81ad4d9dccc8fff96ec3a2b1a0caaec3ef496523a4e3e04bea5d2456fe4"
+  },
+  {
+   "question_number": 58,
+   "section": "english",
+   "stem_text": "In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Planting trees is one of the most effective ways to improve the environment, but achieving long-term success requires following certain steps. Before beginning any plantation drive, it is important to ____(A)____ suitable native species according to the local climate and soil conditions. Experts recommend preparing the land properly, ensuring adequate spacing, and combining tree planting with water conservation measures so that young plants receive the support they need. These practices can be ____(B)____ with regular monitoring to increase the survival rate of saplings. Another important aspect is protecting newly planted trees from grazing animals, pests, and extreme weather. Local communities, schools, and volunteers can ____(C)____ together to care for the plants during the first few years, when they are most vulnerable. Simple measures such as mulching, watering during dry periods, and replacing damaged saplings will help to ____(D)____ healthy growth and improve the overall success of the project. When these guidelines are followed consistently, tree plantation campaigns can create lasting environmental benefits. They improve air quality, reduce soil erosion, support biodiversity, and make surrounding areas more resilient to climate change. Such well-planned efforts can ____(E)____ a healthier and greener future for generations to come.\n\nWhich of the following words will fit in the given blank (C)?",
+   "options": [
+    "compete",
+    "hesitate",
+    "work",
+    "divide",
+    "disappear"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3ce3664a40779551d2677dbbac49bbe58e9c0a0592fa779f54518e0e67667a61"
+  },
+  {
+   "question_number": 59,
+   "section": "english",
+   "stem_text": "In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Planting trees is one of the most effective ways to improve the environment, but achieving long-term success requires following certain steps. Before beginning any plantation drive, it is important to ____(A)____ suitable native species according to the local climate and soil conditions. Experts recommend preparing the land properly, ensuring adequate spacing, and combining tree planting with water conservation measures so that young plants receive the support they need. These practices can be ____(B)____ with regular monitoring to increase the survival rate of saplings. Another important aspect is protecting newly planted trees from grazing animals, pests, and extreme weather. Local communities, schools, and volunteers can ____(C)____ together to care for the plants during the first few years, when they are most vulnerable. Simple measures such as mulching, watering during dry periods, and replacing damaged saplings will help to ____(D)____ healthy growth and improve the overall success of the project. When these guidelines are followed consistently, tree plantation campaigns can create lasting environmental benefits. They improve air quality, reduce soil erosion, support biodiversity, and make surrounding areas more resilient to climate change. Such well-planned efforts can ____(E)____ a healthier and greener future for generations to come.\n\nWhich of the following words will fit in the given blank (D)?",
+   "options": [
+    "prevent",
+    "ignore",
+    "reduce",
+    "ensure",
+    "interrupt"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6fdd1a63748a82a9c6e2b71819634bf7853bd1ffc3abed74d6cbad83068dd9b9"
+  },
+  {
+   "question_number": 60,
+   "section": "english",
+   "stem_text": "In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Planting trees is one of the most effective ways to improve the environment, but achieving long-term success requires following certain steps. Before beginning any plantation drive, it is important to ____(A)____ suitable native species according to the local climate and soil conditions. Experts recommend preparing the land properly, ensuring adequate spacing, and combining tree planting with water conservation measures so that young plants receive the support they need. These practices can be ____(B)____ with regular monitoring to increase the survival rate of saplings. Another important aspect is protecting newly planted trees from grazing animals, pests, and extreme weather. Local communities, schools, and volunteers can ____(C)____ together to care for the plants during the first few years, when they are most vulnerable. Simple measures such as mulching, watering during dry periods, and replacing damaged saplings will help to ____(D)____ healthy growth and improve the overall success of the project. When these guidelines are followed consistently, tree plantation campaigns can create lasting environmental benefits. They improve air quality, reduce soil erosion, support biodiversity, and make surrounding areas more resilient to climate change. Such well-planned efforts can ____(E)____ a healthier and greener future for generations to come.\n\nWhich of the following words will fit in the given blank (E)?",
+   "options": [
+    "damage",
+    "threaten",
+    "weaken",
+    "postpone",
+    "create"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "46c832d6807e0013edb0a0afcab69b4ed285def6afcad840465a6715da154449"
+  },
+  {
+   "question_number": 61,
+   "section": "english",
+   "stem_text": "The sentence is divided into four segments: (A), (B), (C), and (D). Identify the segment that contains a grammatical error. If the sentence is both grammatically and contextually correct, select “No error” as the correct answer.\n\nThe frog",
+   "options": [
+    "/ is capable of",
+    "/ surviving in",
+    "/ both land and water.",
+    "(a) A (b) B (c) C (d) D",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "780558bd2e7a34f146a0bf7469cd0f383fa298e3b5b9fe5acca887cb388ed24d"
+  },
+  {
+   "question_number": 62,
+   "section": "english",
+   "stem_text": "The sentence is divided into four segments: (A), (B), (C), and (D). Identify the segment that contains a grammatical error. If the sentence is both grammatically and contextually correct, select “No error” as the correct answer.\n\nThe committee approved",
+   "options": [
+    "/ the proposal",
+    "/ of implement the",
+    "/ revised procedure immediately.",
+    "(a) A (b) B (c) C (d) D",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e20aaa032b826351c453ce910df89a9600e1b6b1ef28e00d9d5b5354af2bfa76"
+  },
+  {
+   "question_number": 63,
+   "section": "english",
+   "stem_text": "The sentence is divided into four segments: (A), (B), (C), and (D). Identify the segment that contains a grammatical error. If the sentence is both grammatically and contextually correct, select “No error” as the correct answer.\n\nThe athlete had",
+   "options": [
+    "/ broke the previous",
+    "/ championship record before",
+    "/ turning professional.",
+    "(a) A (b) B (c) C (d) D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "463ff856996b28ca3bf384e56311a33d5a8bc42928d8a9f57b8c6adcd807e63c"
+  },
+  {
+   "question_number": 64,
+   "section": "english",
+   "stem_text": "The sentence is divided into four segments: (A), (B), (C), and (D). Identify the segment that contains a grammatical error. If the sentence is both grammatically and contextually correct, select “No error” as the correct answer.\n\nThe horse was",
+   "options": [
+    "/ in not mood",
+    "/ to continue the race",
+    "/ after the long journey.",
+    "(a) A (b) B (c) C (d) D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d9001d6fc30265fbfbd881cb610abd96eadefd9eacbd5e5921f97afaad3815ff"
+  },
+  {
+   "question_number": 65,
+   "section": "english",
+   "stem_text": "The sentence is divided into four segments: (A), (B), (C), and (D). Identify the segment that contains a grammatical error. If the sentence is both grammatically and contextually correct, select “No error” as the correct answer.\n\nThe research",
+   "options": [
+    "/ findings has encouraged",
+    "/ several institutions to",
+    "/ revise their policies.",
+    "(a) A (b) B (c) C (d) D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b975c0b76ba68e08bda4a15980a00663d4749be6ada1d6e1b848233a8040c49c"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Study the following information carefully and answer the questions given below. Eight boxes- I, J, K, L, M, N, O and P are kept one above another in a single stack but not necessarily in the same order. Four boxes are kept between box K and box M. Box N is kept two boxes above box K. Two boxes are kept between box N and box P. Box P and box I are kept adjacent to each other. Box J is kept immediately above box O. As many boxes are kept below box O as above box L.\n\nHow many boxes are kept between box N and box O?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "939030dc858b223341632244d55a5ddeffa050d9a89c5e41ea0c241c808eefc9"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Study the following information carefully and answer the questions given below. Eight boxes- I, J, K, L, M, N, O and P are kept one above another in a single stack but not necessarily in the same order. Four boxes are kept between box K and box M. Box N is kept two boxes above box K. Two boxes are kept between box N and box P. Box P and box I are kept adjacent to each other. Box J is kept immediately above box O. As many boxes are kept below box O as above box L.\n\nIf all the boxes are arranged in alphabetical order from top to bottom, then how many boxes remain unchanged in their position?",
+   "options": [
+    "Three",
+    "Five",
+    "Two",
+    "Four",
+    "One"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0d97d492c9ef598f2a503b2c7ce155f4e49be43833aae392f08f3244b5ffe760"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Study the following information carefully and answer the questions given below. Eight boxes- I, J, K, L, M, N, O and P are kept one above another in a single stack but not necessarily in the same order. Four boxes are kept between box K and box M. Box N is kept two boxes above box K. Two boxes are kept between box N and box P. Box P and box I are kept adjacent to each other. Box J is kept immediately above box O. As many boxes are kept below box O as above box L.\n\nWhich among the following box is kept above box P?",
+   "options": [
+    "Box K",
+    "Box M",
+    "Box N",
+    "Box J",
+    "Both box K and box N"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "96496b2012f290661bccdaa08816ce88ce47b97d8dd25b58c7d8e865ff9d435b"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Study the following information carefully and answer the questions given below. Eight boxes- I, J, K, L, M, N, O and P are kept one above another in a single stack but not necessarily in the same order. Four boxes are kept between box K and box M. Box N is kept two boxes above box K. Two boxes are kept between box N and box P. Box P and box I are kept adjacent to each other. Box J is kept immediately above box O. As many boxes are kept below box O as above box L.\n\nWhich of the following statement(s) is/are not true? I. No box is kept below box M II. Box I is kept below box O III. Even number of boxes are kept below box L",
+   "options": [
+    "Only I",
+    "Both I and II",
+    "Both II and III",
+    "Only II",
+    "Only III"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "426c9dd42ec66cc5d5c61e85a11367b51557e2767afe29782ed78e65bc92b62d"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "What is the code for the words \"Justice prevail\"? Study the following information carefully and answer the questions given below: In a certain code language: \"Justice delayed is denied\" is coded as \"bv hj kr jh\" \"Police denied public safety\" is coded as \" jh rt nh tf\" \"Delayed trial denied justice\" is coded as \"hj jh jc bv\" \"Public justice must prevail\" is coded as \"hj xt bo nh\"",
+   "options": [
+    "xt hj",
+    "hj bo",
+    "bv hj",
+    "bo hj",
+    "Can’t be determined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4d36b865339360e1fabfef9f7ca49b4bdea93124ba77c77ba33e286200dd9963"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Which among the following word pair is coded as \"kr nh\"? Study the following information carefully and answer the questions given below: In a certain code language: \"Justice delayed is denied\" is coded as \"bv hj kr jh\" \"Police denied public safety\" is coded as \" jh rt nh tf\" \"Delayed trial denied justice\" is coded as \"hj jh jc bv\" \"Public justice must prevail\" is coded as \"hj xt bo nh\"",
+   "options": [
+    "Police public",
+    "Is public",
+    "Police safety",
+    "Public trial",
+    "Can’t be determined"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "afcc327798979423c55f8418ae893db758e2388e87d5e5096d779d5cf5610464"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "If \"Delayed prevail order\" is coded as \"bv bo ot\", then what is the code for \"Must order\"? Study the following information carefully and answer the questions given below: In a certain code language: \"Justice delayed is denied\" is coded as \"bv hj kr jh\" \"Police denied public safety\" is coded as \" jh rt nh tf\" \"Delayed trial denied justice\" is coded as \"hj jh jc bv\" \"Public justice must prevail\" is coded as \"hj xt bo nh\"",
+   "options": [
+    "bo xt",
+    "xt jc",
+    "ot xt",
+    "bv xt",
+    "ot bo"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f586926a6f104dda6a776b6510150228e7c61394b02da062d8cdad2bf9c83d0d"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Which among the following statement is/are not correct? I. Public is coded as “nh”. II. Police can be coded as “rt”. III. Delayed trial is coded as “bv xt”. Study the following information carefully and answer the questions given below: In a certain code language: \"Justice delayed is denied\" is coded as \"bv hj kr jh\" \"Police denied public safety\" is coded as \" jh rt nh tf\" \"Delayed trial denied justice\" is coded as \"hj jh jc bv\" \"Public justice must prevail\" is coded as \"hj xt bo nh\"",
+   "options": [
+    "Both I and II",
+    "Only II",
+    "Only III",
+    "Both II and III",
+    "All I, II and III"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "71171f018c210bcdf9f91a81812adc517369a7eee716dfcb70f319870c1a45db"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "What is the code of the word “trial”? Study the following information carefully and answer the questions given below: In a certain code language: \"Justice delayed is denied\" is coded as \"bv hj kr jh\" \"Police denied public safety\" is coded as \" jh rt nh tf\" \"Delayed trial denied justice\" is coded as \"hj jh jc bv\" \"Public justice must prevail\" is coded as \"hj xt bo nh\"",
+   "options": [
+    "bv",
+    "jc",
+    "jh",
+    "tf",
+    "hj"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cce256747b78a07e89696d8c520a8ac17723d2e6559e29b6f747aae72924456a"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Who among the following lives in Flat A of 3rd floor? Study the following information carefully and answer the questions given below. There are eight persons A, B, C, D, E, F, G and H live in a building (but not necessarily in the same order) having four floors such that the ground floor is numbered as 1 and the floor just above it is numbered as 2 and so on till the topmost floor is numbered as 4. Each of the floors consists of two types of flats i.e., flat-A and flat -B. Flat-A of floor 2 is immediately above the flat - A of floor 1 and immediately below flat - A of floor 3 and in the same way flat -B of floor 2 is immediately above the flat - B of floor 1 and immediately below the flat-B of floor 3 and so on. Also, flat -A is in the west of flat-B. G lives in flat-B. H lives to the west of F. H and A live in the same type of flat. A lives above H. C and B live on the same floor. B lives below the floor of D and both live in the same type of flat. E lives above G. E and G do not live in the same type of flat. There is one floor gap between G’s floor and F's floor. E lives on an even-numbered floor.",
+   "options": [
+    "D",
+    "A",
+    "C",
+    "B",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8761dcab7a51f35f59e769d314b372c0602aa8d48748e56d0df8fbe0667dbdaa"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Who lives immediately above G in same type of flat as G lives? Study the following information carefully and answer the questions given below. There are eight persons A, B, C, D, E, F, G and H live in a building (but not necessarily in the same order) having four floors such that the ground floor is numbered as 1 and the floor just above it is numbered as 2 and so on till the topmost floor is numbered as 4. Each of the floors consists of two types of flats i.e., flat-A and flat -B. Flat-A of floor 2 is immediately above the flat - A of floor 1 and immediately below flat - A of floor 3 and in the same way flat -B of floor 2 is immediately above the flat - B of floor 1 and immediately below the flat-B of floor 3 and so on. Also, flat -A is in the west of flat-B. G lives in flat-B. H lives to the west of F. H and A live in the same type of flat. A lives above H. C and B live on the same floor. B lives below the floor of D and both live in the same type of flat. E lives above G. E and G do not live in the same type of flat. There is one floor gap between G’s floor and F's floor. E lives on an even-numbered floor.",
+   "options": [
+    "B",
+    "C",
+    "A",
+    "D",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ac6dfad6029366035ad1a8b81d2e54ad7177041ad9d5948bb4495615c11fdfb8"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Who among the following lives in Flat A of 2nd floor? Study the following information carefully and answer the questions given below. There are eight persons A, B, C, D, E, F, G and H live in a building (but not necessarily in the same order) having four floors such that the ground floor is numbered as 1 and the floor just above it is numbered as 2 and so on till the topmost floor is numbered as 4. Each of the floors consists of two types of flats i.e., flat-A and flat -B. Flat-A of floor 2 is immediately above the flat - A of floor 1 and immediately below flat - A of floor 3 and in the same way flat -B of floor 2 is immediately above the flat - B of floor 1 and immediately below the flat-B of floor 3 and so on. Also, flat -A is in the west of flat-B. G lives in flat-B. H lives to the west of F. H and A live in the same type of flat. A lives above H. C and B live on the same floor. B lives below the floor of D and both live in the same type of flat. E lives above G. E and G do not live in the same type of flat. There is one floor gap between G’s floor and F's floor. E lives on an even-numbered floor.",
+   "options": [
+    "D",
+    "H",
+    "C",
+    "E",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f5c2e942e59ee6325419fb5ba76fb2aa6ed9d228cb78aaef394537857f4c4c36"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Who lives exactly between G and F in the same type of flat? Study the following information carefully and answer the questions given below. There are eight persons A, B, C, D, E, F, G and H live in a building (but not necessarily in the same order) having four floors such that the ground floor is numbered as 1 and the floor just above it is numbered as 2 and so on till the topmost floor is numbered as 4. Each of the floors consists of two types of flats i.e., flat-A and flat -B. Flat-A of floor 2 is immediately above the flat - A of floor 1 and immediately below flat - A of floor 3 and in the same way flat -B of floor 2 is immediately above the flat - B of floor 1 and immediately below the flat-B of floor 3 and so on. Also, flat -A is in the west of flat-B. G lives in flat-B. H lives to the west of F. H and A live in the same type of flat. A lives above H. C and B live on the same floor. B lives below the floor of D and both live in the same type of flat. E lives above G. E and G do not live in the same type of flat. There is one floor gap between G’s floor and F's floor. E lives on an even-numbered floor.",
+   "options": [
+    "D",
+    "A",
+    "B",
+    "Either E or D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2422a44148395f2b75a1c972e2ceab13c3d7b2318ebb4afb067bab052ea57b30"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": ". Which of the following statement is true? Study the following information carefully and answer the questions given below. There are eight persons A, B, C, D, E, F, G and H live in a building (but not necessarily in the same order) having four floors such that the ground floor is numbered as 1 and the floor just above it is numbered as 2 and so on till the topmost floor is numbered as 4. Each of the floors consists of two types of flats i.e., flat-A and flat -B. Flat-A of floor 2 is immediately above the flat - A of floor 1 and immediately below flat - A of floor 3 and in the same way flat -B of floor 2 is immediately above the flat - B of floor 1 and immediately below the flat-B of floor 3 and so on. Also, flat -A is in the west of flat-B. G lives in flat-B. H lives to the west of F. H and A live in the same type of flat. A lives above H. C and B live on the same floor. B lives below the floor of D and both live in the same type of flat. E lives above G. E and G do not live in the same type of flat. There is one floor gap between G’s floor and F's floor. E lives on an even-numbered floor.",
+   "options": [
+    "D lives on a floor below F in the same type of flat",
+    "A lives on a floor above D",
+    "E and H live on consecutive floors",
+    "D lives to the west of E",
+    "B and F live in same type of flat"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f75548ffa3bbaeb9fa7c328ff09e04d144372adc070f07abd8acb4e0330d9a82"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "If in the given series each number is increased by 1, how many numbers will be odd? Read the given series carefully and answer the questions based on it: 413 876 263 514 891",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "41cbeba10258e25cf4f5b56144f2247e4eb87879b98975e1c792053c3268db93"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "If the digits of each number are arranged in ascending order, which number becomes the smallest? Read the given series carefully and answer the questions based on it: 413 876 263 514 891",
+   "options": [
+    "413",
+    "876",
+    "263",
+    "514",
+    "891"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cec1e2bc6b926f0877fb1f0bc0d39713fea5346073255c3bbcc97c6b1196dd22"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "What is the product of the first digit of the third number from the left and the last digit of the second number from the right? Read the given series carefully and answer the questions based on it: 413 876 263 514 891",
+   "options": [
+    "12",
+    "15",
+    "8",
+    "20",
+    "24"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a65b8ccf4162c67e6c8e106ad54b8e8ba2145a476993d761d6cd49cf9f030434"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "If the even digits of each number is removed, which number will be the highest? Read the given series carefully and answer the questions based on it: 413 876 263 514 891",
+   "options": [
+    "413",
+    "876",
+    "263",
+    "514",
+    "891"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "49cefe1f67e90a56b7d6990c511464c93a11920ceb59842c5e0212a68cd56d47"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "What is the sum of the highest digit of third number from left end and second highest digits of fourth number from the right end in the series? Read the given series carefully and answer the questions based on it: 413 876 263 514 891",
+   "options": [
+    "12",
+    "13",
+    "24",
+    "15",
+    "26"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9038f1eb2efc65772a24547cacb50fde9f3eb00f47639b1da182a8f7444e3f89"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "How many females are in the family? Read the given information carefully and answer the related questions: A is unmarried sister of U who is spouse of K. D is son-in-law of K’s mother. M is parent of B who is child of D. N is grandfather of B and H. J is spouse of N but their daughter-in-law is not M. J’s son has a child. K, H and B are of same gender.",
+   "options": [
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c17b4204e5651ef04c74517ec459b4ff2f5ae51a6e14f2d587ecaaa3378694ca"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "What is the relation of U’s child with respect to B? Read the given information carefully and answer the related questions: A is unmarried sister of U who is spouse of K. D is son-in-law of K’s mother. M is parent of B who is child of D. N is grandfather of B and H. J is spouse of N but their daughter-in-law is not M. J’s son has a child. K, H and B are of same gender.",
+   "options": [
+    "Uncle",
+    "Brother",
+    "Sister",
+    "Cousin",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "25a3add570b90a8740d305a365c76c6c642e565c2b5410a9aceae47e02b561cf"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Who among the following is child of K? Read the given information carefully and answer the related questions: A is unmarried sister of U who is spouse of K. D is son-in-law of K’s mother. M is parent of B who is child of D. N is grandfather of B and H. J is spouse of N but their daughter-in-law is not M. J’s son has a child. K, H and B are of same gender.",
+   "options": [
+    "B",
+    "H",
+    "M",
+    "J",
+    "Cannot be determined"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f60b9532f2433ddfe45e71723e44424fdd5e04386c7c5dd9dd97c714fe92e1b1"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “BUTTERFLY” in both forward and backward directions each of which has as many letters between them in the word as in the English alphabetical series?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a9811f29a01a34634dff2d5506e97d5517db13bfa394429edf2df6b6429e95c9"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Who among the following was born in June? Read the given information carefully and answer the questions that follow. Eight persons – A, B, C, D, E, F, G, and H were born on the same date but in different months of the same year, namely January, March, April, June, July, August, November and December (not necessarily in the same order). H was born in the month having even number of days after the month of April. Three persons were born between H and D. There was a gap of three months between the birth months of D and C. A was born after C. As many persons were born before A as after F. Two persons were born between F and E. B was born after E.",
+   "options": [
+    "A",
+    "H",
+    "C",
+    "E",
+    "B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4f16b9d66a7106a1ceff8cfaf30f95639329909244e83c0073a843ef90687c76"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain manner and hence form a group. Which one does not belong to that group? Read the given information carefully and answer the questions that follow. Eight persons – A, B, C, D, E, F, G, and H were born on the same date but in different months of the same year, namely January, March, April, June, July, August, November and December (not necessarily in the same order). H was born in the month having even number of days after the month of April. Three persons were born between H and D. There was a gap of three months between the birth months of D and C. A was born after C. As many persons were born before A as after F. Two persons were born between F and E. B was born after E.",
+   "options": [
+    "C",
+    "F",
+    "A",
+    "D",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "45af0174b965a24a3aa88c005bdcdf824bb12de448f129639f423843f0a8401a"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "G was born in which of the following months? Read the given information carefully and answer the questions that follow. Eight persons – A, B, C, D, E, F, G, and H were born on the same date but in different months of the same year, namely January, March, April, June, July, August, November and December (not necessarily in the same order). H was born in the month having even number of days after the month of April. Three persons were born between H and D. There was a gap of three months between the birth months of D and C. A was born after C. As many persons were born before A as after F. Two persons were born between F and E. B was born after E.",
+   "options": [
+    "May",
+    "June",
+    "July",
+    "August",
+    "March"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c755b88b4d293dad4e97ded7b1dd16564bc38c143138a70277d7db3243130d6c"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "How many persons were born between F and H? Read the given information carefully and answer the questions that follow. Eight persons – A, B, C, D, E, F, G, and H were born on the same date but in different months of the same year, namely January, March, April, June, July, August, November and December (not necessarily in the same order). H was born in the month having even number of days after the month of April. Three persons were born between H and D. There was a gap of three months between the birth months of D and C. A was born after C. As many persons were born before A as after F. Two persons were born between F and E. B was born after E.",
+   "options": [
+    "None",
+    "Two",
+    "Five",
+    "Four",
+    "Three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5e2b152d4383ee69aea5d31b3b9ef99987400d80a0f37401c671cef3ebd376f6"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "If all the persons are arranged in alphabetical order from first month to the last month, then how many persons will remain at the same position? Read the given information carefully and answer the questions that follow. Eight persons – A, B, C, D, E, F, G, and H were born on the same date but in different months of the same year, namely January, March, April, June, July, August, November and December (not necessarily in the same order). H was born in the month having even number of days after the month of April. Three persons were born between H and D. There was a gap of three months between the birth months of D and C. A was born after C. As many persons were born before A as after F. Two persons were born between F and E. B was born after E.",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "124526947612052335c775e2403773cd411804af0ea6352e3268bf4db0e8f282"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Statements: Only a few magnet is pole All magnet is material Some material is metal Conclusions: I. All material being pole is a possibility II. Some magnet is not pole. In each question below some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically does not follow from the given statements, disregarding commonly known facts. Give answer-",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d13f9643821f51037546c3aaedac5dd8b9350b36bd4d9856fac172c4f431d455"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Statements: All doors are tables. Some tables are not wooden. Only wooden is plastic. Conclusions: I. All plastic can never be doors II. Some wooden are not tables In each question below, two statements are given followed by two conclusions numbered I and II. You have to assume all the statements to be true, even if they seem to be at variance from commonly known facts. Then decide which of the given conclusions logically follows from the information given in the statements.",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "386859ddf9f9d93f2cd75404f290d065e309bcc369c3e6e01a506267cafa6c8a"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Statements: Only a few Notes are Important All Notes are Papers No Papers are File Conclusions: I. Some notes are not file II. No important are file. In each question below, two statements are given followed by two conclusions numbered I and II. You have to assume all the statements to be true, even if they seem to be at variance from commonly known facts. Then decide which of the given conclusions logically follows from the information given in the statements.",
+   "options": [
+    "If only conclusion I follows",
+    "If only conclusion II follows",
+    "If either conclusion I or II follows",
+    "If neither conclusion I nor II follows",
+    "If both conclusions I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "421a080cec0a0c12795d44a0a90706b9443cb1782cb57bc3a3dc8f4053ddba0e"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who among the following is the third shortest person? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W have different heights (not necessarily in the same order). No two persons have the same height. R is taller than V but shorter than S. T is taller than Q. Only three persons are shorter than V. Q is three persons shorter than R. The sum of height of R and W is 320 cm. T is shorter than R but taller than W. As many persons are taller than W as shorter than P. S is not shorter than P. Height of R is 168cm.",
+   "options": [
+    "P",
+    "U",
+    "Q",
+    "S",
+    "V"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "12c6d17b216d6cda6358766e3db3146d2b0b0fdbe07c04e70e303da91446f2da"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "How many persons are taller than P? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W have different heights (not necessarily in the same order). No two persons have the same height. R is taller than V but shorter than S. T is taller than Q. Only three persons are shorter than V. Q is three persons shorter than R. The sum of height of R and W is 320 cm. T is shorter than R but taller than W. As many persons are taller than W as shorter than P. S is not shorter than P. Height of R is 168cm.",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5f255786e51acff654cafd5a501a87b6e2bf8475297041d7efc00eb889b8ac9f"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is true? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W have different heights (not necessarily in the same order). No two persons have the same height. R is taller than V but shorter than S. T is taller than Q. Only three persons are shorter than V. Q is three persons shorter than R. The sum of height of R and W is 320 cm. T is shorter than R but taller than W. As many persons are taller than W as shorter than P. S is not shorter than P. Height of R is 168cm.",
+   "options": [
+    "P is not taller than V.",
+    "U is the shortest person.",
+    "Exactly two persons are taller than P.",
+    "Q is taller than R.",
+    "W is the fourth shortest person."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "db3e9ab050423da15313d6c7e6ea90ae1169f4942e8bbd6e99cf88c974a83f55"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "What is the possible height of T? Study the following information carefully and answer the questions given below. Eight persons – P, Q, R, S, T, U, V and W have different heights (not necessarily in the same order). No two persons have the same height. R is taller than V but shorter than S. T is taller than Q. Only three persons are shorter than V. Q is three persons shorter than R. The sum of height of R and W is 320 cm. T is shorter than R but taller than W. As many persons are taller than W as shorter than P. S is not shorter than P. Height of R is 168cm.",
+   "options": [
+    "170cm",
+    "172cm",
+    "160cm",
+    "151cm",
+    "148cm"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f03867aae8fadba3dc3399e2bdc61b986cdb51a2af15f856d6cc2f4002184c5f"
+  }
+ ],
+ "section_confidence": 0.867,
+ "section_order": [
+  "numerical_ability",
+  "english",
+  "reasoning"
+ ]
+}

@@ -170,6 +170,32 @@ export const SBI_CLERK_PRELIMS_CONFIG: ExamConfig = {
   ],
 };
 
+/**
+ * IBPS Clerk Prelims config. Its OWN entity, but the Prelims blueprint is
+ * identical in shape to SBI Clerk Prelims — 5 options (A–E), 1/−0.25 marking,
+ * 3 sections (English 30 / Numerical 35 / Reasoning 35), 20-min sectional locks,
+ * 60-min total. Kept in sync with the DB seed in
+ * supabase/migrations/20260929000000_ibps_clerk_prelims.sql.
+ */
+export const IBPS_CLERK_PRELIMS_CONFIG: ExamConfig = {
+  schemaVersion: 1,
+  examSlug: "ibps-clerk-prelims",
+  examName: "IBPS Clerk Prelims",
+  tier: null,
+  totalDurationMinutes: 60,
+  hasSectionTimeLocks: true,
+  defaultLanguage: "en",
+  negativeMarking: true,
+  marksCorrect: 1,
+  marksWrong: -0.25,
+  optionsCount: 5,
+  sections: [
+    { key: "english", name: "English Language", order: 1, questionCount: 30, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
+    { key: "numerical_ability", name: "Numerical Ability", order: 2, questionCount: 35, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
+    { key: "reasoning", name: "Reasoning Ability", order: 3, questionCount: 35, marksCorrect: 1, marksWrong: -0.25, questionType: "single_correct_mcq", optionsCount: 5, timeLimitMinutes: 20 },
+  ],
+};
+
 /* ------------------------------------------------------------------ *
  * Pure config readers, the ONLY sanctioned way for engine/scorer/mentor
  * to obtain marking numbers. Never hardcode +2 / −0.5 in those modules.

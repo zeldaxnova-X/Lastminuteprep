@@ -25,6 +25,16 @@ const EXAMS = {
     marksCorrect: 1,
     marksWrong: 0.25,
     datasetVersion: "sbi-2.0",
+    idPrefix: "sbi",
+  },
+  "ibps-clerk-prelims": {
+    schema: "ibps_clerk",
+    examLabel: "IBPS Clerk",
+    optionsCount: 5,
+    marksCorrect: 1,
+    marksWrong: 0.25,
+    datasetVersion: "ibps-1.0",
+    idPrefix: "ibps",
   },
 };
 
@@ -35,20 +45,35 @@ function dbUrl() {
   return m[1];
 }
 
+/** Strip NUL + other C0 control chars (keep \n, \t) that leak from PDF text —
+ *  Postgres jsonb/text cannot store \u0000. */
+function sanitize(s) {
+  // eslint-disable-next-line no-control-regex
+  return (s || "").replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, "");
+}
+
 function normHash(s) {
   const t = (s || "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
   return crypto.createHash("sha256").update(t).digest("hex");
 }
 
 /** Deterministic paper id from the source filename → idempotent re-runs. */
-function paperIdFrom(file) {
-  return "sbi_" + path.basename(file).replace(/\.json$/i, "").replace(/[^A-Za-z0-9]+/g, "_").slice(0, 80);
+function paperIdFrom(file, prefix) {
+  return `${prefix}_` + path.basename(file).replace(/\.json$/i, "").replace(/[^A-Za-z0-9]+/g, "_").slice(0, 80);
+}
+
+const _MON = { jan: "Jan", feb: "Feb", mar: "Mar", apr: "Apr", may: "May", jun: "Jun", jul: "Jul", aug: "Aug", sep: "Sep", oct: "Oct", nov: "Nov", dec: "Dec" };
+/** "DD Mon" from a filename (e.g. 26_Aug_2023 → "26 Aug"), or null. Used to keep
+ *  paper_name_canonical unique when two shifts share a year+shift number. */
+function dateFromName(name) {
+  const m = name.match(/(\d{1,2})(?:st|nd|rd|th)?[_\s-]*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/i);
+  return m ? `${parseInt(m[1], 10)} ${_MON[m[2].toLowerCase()]}` : null;
 }
 
 function metaFromName(name) {
   const year = (name.match(/20\d{2}/) || [])[0] || null;
-  const shift = (name.match(/Shift[_\s-]*([12])/i) || [])[1] || null;
-  return { year: year ? parseInt(year, 10) : null, shift: shift ? `Shift ${shift}` : null };
+  const shift = (name.match(/Shift[_\s-]*([1-4])/i) || [])[1] || null;
+  return { year: year ? parseInt(year, 10) : null, shift: shift ? `Shift ${shift}` : null, date: dateFromName(name) };
 }
 
 function optionBlocks(text, i) {
@@ -85,13 +110,14 @@ async function main() {
     const rep = JSON.parse(fs.readFileSync(file, "utf8"));
     const questions = rep.questions || [];
     totalIn += questions.length;
-    const paperId = paperIdFrom(file);
-    const { year, shift } = metaFromName(rep.file || file);
+    const paperId = paperIdFrom(file, exam.idPrefix);
+    const { year, shift, date } = metaFromName(rep.file || file);
     const rows = [];
     let dup = 0, qc = 0;
 
     for (const q of questions) {
-      const opts = (q.options || []).map((o) => (o || "").trim());
+      const opts = (q.options || []).map((o) => sanitize(o).trim());
+      q.stem_text = sanitize(q.stem_text);
       // defensive QC
       if (!q.stem_text || q.stem_text.length < 8) { qc++; continue; }
       if (opts.length !== exam.optionsCount || opts.some((o) => !o)) { qc++; continue; }
@@ -135,7 +161,10 @@ async function main() {
     const sectionsOrder = JSON.stringify(rep.section_order || []);
     // Canonical name must be unique. Use year+shift when present; else fall back
     // to the (unique) source filename so hash-named papers don't collide.
-    const label = `${exam.examLabel} Prelims ${year || ""} ${shift || ""}`.replace(/\s+/g, " ").trim();
+    // Include the date (when present) so two shifts on different dates in the same
+    // year don't collide on paper_name_canonical (unique). Fall back to the unique
+    // source filename when year/shift are unknown (hash-named papers).
+    const label = `${exam.examLabel} Prelims ${date || ""} ${year || ""} ${shift || ""}`.replace(/\s+/g, " ").trim();
     const canonical = year && shift ? label : `${exam.examLabel} Prelims — ${(rep.file || paperId).replace(/\.pdf$/i, "")}`;
     await client.query(
       `insert into ${exam.schema}.papers

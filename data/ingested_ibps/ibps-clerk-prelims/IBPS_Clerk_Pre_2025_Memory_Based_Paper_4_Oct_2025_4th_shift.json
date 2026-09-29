@@ -1,0 +1,1457 @@
+{
+ "file": "IBPS-Clerk-Pre-2025-Memory-Based-Paper-4-Oct-2025-4th-shift.pdf",
+ "format": "adda_inline",
+ "accepted": 96,
+ "rejected": 4,
+ "reasons": {
+  "empty_or_short_stem": 4
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of coolers sold by six shops—P, Q, R, X, Y and Z—during a particular month.\n\nFind the total number of coolers sold by shops P and X together.",
+   "options": [
+    "560",
+    "580",
+    "300",
+    "620",
+    "640"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7a9e8b08a2e6fca361042fc4116bc80cc0df6742b6415199fa3ba21efb83569b"
+  },
+  {
+   "question_number": 2,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of coolers sold by six shops—P, Q, R, X, Y and Z—during a particular month.\n\nThe number of coolers sold by shop Q is what percent more than that sold by shop R?",
+   "options": [
+    "50%",
+    "60%",
+    "66.67%",
+    "75%",
+    "80%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7fcfbb8e3575d4505813f242b77b1c9b7103e2fe99e4e960da198ec0c208380c"
+  },
+  {
+   "question_number": 3,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of coolers sold by six shops—P, Q, R, X, Y and Z—during a particular month.\n\nFind the ratio of the number of coolers sold by shops Y and Z together to that sold by shops P and Q together.",
+   "options": [
+    "20:27",
+    "25:27",
+    "27:25",
+    "23:25",
+    "25:23"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9b64d27e60ab36ea6a43c3001461c1cd89640aa1789c11f16824afc2fe5ea81d"
+  },
+  {
+   "question_number": 4,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of coolers sold by six shops—P, Q, R, X, Y and Z—during a particular month.\n\nFind the average number of coolers sold by shops P, R, X and Z.",
+   "options": [
+    "240",
+    "245",
+    "255",
+    "175",
+    "260"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e2718fdd944fd04c082afd99fd5a25a30781a1193fdc1d75d41e34f82a1c58e7"
+  },
+  {
+   "question_number": 5,
+   "section": "numerical_ability",
+   "stem_text": "Study the following bar graph carefully and answer the questions given below. The bar graph shows the number of coolers sold by six shops—P, Q, R, X, Y and Z—during a particular month.\n\nThe number of coolers sold by shop X is what percent of the total number of coolers sold by all six shops?",
+   "options": [
+    "5%",
+    "2%",
+    "10%",
+    "14%",
+    "31%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6050a02291300247e15ae05f62fdac99a08a09b4de84dbdf342d6512e7dcfb27"
+  },
+  {
+   "question_number": 6,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 18³ + 7² – 9² = ?",
+   "options": [
+    "5800",
+    "5805",
+    "5810",
+    "5820",
+    "5815"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "68f15ffc396f480a7895a3419fbd6fe94c16311dc7b7b8e575597bee61147ced"
+  },
+  {
+   "question_number": 7,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 36 ÷ 1.44 + 16 ÷ 2.56 + 20 = ?",
+   "options": [
+    "51.25",
+    "101.25",
+    "122.25",
+    "102.5",
+    "113.25"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b448e4bbbbb40159bcbfe519c71b93055e613840d39876e0073b047cabadab59"
+  },
+  {
+   "question_number": 8,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 24 × 18 – 56 + ? = 95% of 400",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aa1758d25dcb8465258f41d300dfde08962b2020c73a10d0f0f0431e0e5dcf6f"
+  },
+  {
+   "question_number": 9,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 42% of 800 – ? = 18% of 600",
+   "options": [
+    "218",
+    "226",
+    "228",
+    "230",
+    "232"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c2d8b59cc600139e803cf4c198d4e9a7435af7c42aa938ae9519fab7e116e9df"
+  },
+  {
+   "question_number": 10,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 15% of 640 + 35% of 400 + 20% of 220 = ?",
+   "options": [
+    "270",
+    "276",
+    "280",
+    "284",
+    "288"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ef9933163743c7a7a0ad2c173b3a9ae5fa22106dd80f24dcb3b6e3e39470cdb1"
+  },
+  {
+   "question_number": 11,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 6² + 8² + 12² = ?",
+   "options": [
+    "214",
+    "415",
+    "316",
+    "217",
+    "244"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "01bba624c4d963a34c19e1ac13186e1916877842eb4c89bd61f3b5d2dc3f07f4"
+  },
+  {
+   "question_number": 12,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 18 × 14 + 32 – ? = 35% of 400",
+   "options": [
+    "134",
+    "144",
+    "154",
+    "164",
+    "174"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8f6d6d720a95284ab753a522f75e32d6b637ae2d3e1d1d4517eb56e315a4505c"
+  },
+  {
+   "question_number": 13,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 40% of 450 + 24% of 500 – 20% of 350 = ?",
+   "options": [
+    "220",
+    "230",
+    "240",
+    "250",
+    "260"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6afc41a3d1251fd2b4643fa3585b34713fdd96f8ea14f5e408b9dbe122cf9724"
+  },
+  {
+   "question_number": 14,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 15² × 96 ÷ 24 = 225 × ?²",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "787496dc0d4470933f2d3b3b46d4a37b2aa7a75671f11b38c636081efb4524bd"
+  },
+  {
+   "question_number": 15,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 1 2 1 1 7 +6 −5 +3 =? 2 3 6 3",
+   "options": [
+    "12 1/3",
+    "12 2/3",
+    "12 1/2",
+    "12 5/6",
+    "12 1/6"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a5a1e5d74b4a80d3ad8525a811739915662d849d22b5362e382fe461bc91ed0f"
+  },
+  {
+   "question_number": 16,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: 3 8 27 of of of4608=? 4 9 32",
+   "options": [
+    "2592",
+    "2646",
+    "2700",
+    "2764",
+    "2808"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8010ff623c9e7db424345d7d5796d3d0a6cf9895a42a19b2338eec4f6223aa71"
+  },
+  {
+   "question_number": 17,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question (?) mark in following the question: (1.69)⁴ ÷ (2197 ÷ 1000)³ × (0.13 × 10)³ = ?",
+   "options": [
+    "2.56",
+    "3.24",
+    "1.44",
+    "1.69",
+    "4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "65d799aeb997fede21362cba14f120c823c874e6a51cf4e26281f6d63dbb96b2"
+  },
+  {
+   "question_number": 18,
+   "section": "numerical_ability",
+   "stem_text": "Study the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of five cities—A, B, C, D and E.\n\nWhat is the total population of Cities A and D together?",
+   "options": [
+    "560 thousand",
+    "580 thousand",
+    "600 thousand",
+    "620 thousand",
+    "640 thousand"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a917b9976dfc3a1ebcd152d14537ecbee49548c0b6e13e1217efbea4a4ac4592"
+  },
+  {
+   "question_number": 19,
+   "section": "numerical_ability",
+   "stem_text": "Study the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of five cities—A, B, C, D and E.\n\nThe population of City D is what percent more than that of City A?",
+   "options": [
+    "40%",
+    "45%",
+    "50%",
+    "55%",
+    "60%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "41cdbf5a0500e22a93894681d571e4e8e696a113ad4cd8e437161a5bc8b11619"
+  },
+  {
+   "question_number": 20,
+   "section": "numerical_ability",
+   "stem_text": "Study the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of five cities—A, B, C, D and E.\n\nFind the ratio of the total population of Cities B and C together to that of Cities A and E together.",
+   "options": [
+    "10 : 9",
+    "9 : 8",
+    "10 : 19",
+    "11 : 10",
+    "12 : 11"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "00b1de7e2a629900e5f00be76c74a9a481af251941a58fe08b3d1d2fedee61cf"
+  },
+  {
+   "question_number": 21,
+   "section": "numerical_ability",
+   "stem_text": "Study the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of five cities—A, B, C, D and E.\n\nFind the average population of Cities B, C and D.",
+   "options": [
+    "300 thousand",
+    "310 thousand",
+    "325 thousand",
+    "330 thousand",
+    "320 thousand"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "62c735768822742717bc70ef38bf8d69372ca9195b7a8e507f0d65b45aaf871c"
+  },
+  {
+   "question_number": 22,
+   "section": "numerical_ability",
+   "stem_text": "Study the following line graph carefully and answer the questions given below. The line graph shows the total population (in thousands) of five cities—A, B, C, D and E.\n\nThe population of City B is what percent of the total population of all five cities?",
+   "options": [
+    "18%",
+    "20%",
+    "21.5%",
+    "22.67%",
+    "21.33%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "880ea51c1731a2dfbfea03dfcd19fc158553f8bab0b2a1122163fdec4cf4019a"
+  },
+  {
+   "question_number": 23,
+   "section": "numerical_ability",
+   "stem_text": "How many students like only Physics? Read the following information carefully and answer the questions given below. In a school, 600 students like at least one subject among Physics and Chemistry. The number of students who like Physics is 60% of the total students. The number of students who like both Physics and Chemistry is 40% of the students who like Physics. The number of students who like only Chemistry is 24 more than the number of students who like only Physics.",
+   "options": [
+    "192",
+    "216",
+    "204",
+    "228",
+    "240"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7b4c753f1cb36b35f6c69a1ab018365fd880cd21bc0408ec0967340cd21cfa56"
+  },
+  {
+   "question_number": 24,
+   "section": "numerical_ability",
+   "stem_text": "How many students like only Chemistry? Read the following information carefully and answer the questions given below. In a school, 600 students like at least one subject among Physics and Chemistry. The number of students who like Physics is 60% of the total students. The number of students who like both Physics and Chemistry is 40% of the students who like Physics. The number of students who like only Chemistry is 24 more than the number of students who like only Physics.",
+   "options": [
+    "216",
+    "228",
+    "240",
+    "252",
+    "264"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2f34e867756ac624e46563be744e12c03484cea70022070caf8d105aaafb3029"
+  },
+  {
+   "question_number": 25,
+   "section": "numerical_ability",
+   "stem_text": "The number of students who like both Physics and Chemistry is what percent of the total students? Read the following information carefully and answer the questions given below. In a school, 600 students like at least one subject among Physics and Chemistry. The number of students who like Physics is 60% of the total students. The number of students who like both Physics and Chemistry is 40% of the students who like Physics. The number of students who like only Chemistry is 24 more than the number of students who like only Physics.",
+   "options": [
+    "20%",
+    "22%",
+    "28%",
+    "26%",
+    "24%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "939fb6d20e2cf116ccc153fb8b0d5b9774f89377cc570ae828d60162f5302b2e"
+  },
+  {
+   "question_number": 26,
+   "section": "numerical_ability",
+   "stem_text": "Rohit invest twice the sum invested by Shikhar and withdraws half of sum after 8 months and again withdraws half of the remaining sum after next 8 months. Find Ratio of profit share of Rohit and Shikhar after 2 year?",
+   "options": [
+    "3 : 4",
+    "7 : 6",
+    "4 : 3",
+    "6 : 7",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5b76cc87202491a017ff11e1d59961729f6a777ce9bcc7a96d8821f991e296a9"
+  },
+  {
+   "question_number": 27,
+   "section": "numerical_ability",
+   "stem_text": "In a school total 360 students passed the exam, while 60% of total boys passed the exam and 40% of total girls passed the exam. If 66 2/3% of total passed boys is 160, then find total students in the school?",
+   "options": [
+    "960",
+    "720",
+    "800",
+    "600",
+    "700"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "861c3a51b4fd49e72ffcee0615281700919f6f49aa1cd52ae4d4fd3a0ce3e4c9"
+  },
+  {
+   "question_number": 28,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of 24 students in a class is 35 kg. If two new students are added to the class and then the average weight of the class is increased by 2 kg, then find the weight of two new students?",
+   "options": [
+    "81 kg",
+    "108 kg",
+    "122 kg",
+    "96 kg",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fde9b3d46cab30f83dba45fb38fb3f6e63fd89ef6fa2c09ab72f016fc3483482"
+  },
+  {
+   "question_number": 29,
+   "section": "numerical_ability",
+   "stem_text": "10 years ago, the age of A is 150% more than B. 8 years hence, the age of A will be 75% more than that of B. If the average of present age of A, B and C is 33 years, then find the difference between age of A and C (in years)?",
+   "options": [
+    "37",
+    "33",
+    "31",
+    "39",
+    "35"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "04646bf7c40752e1ba9d57b75a1414dc32d89cc3191d8bfeff337173475c9618"
+  },
+  {
+   "question_number": 30,
+   "section": "numerical_ability",
+   "stem_text": "X can complete a work in 15 days and Y can do it in 12 days. X and Z together can complete the entire work in 12 days. First, X and Y work together for 5 days. Then X leaves and Z joins Y. In how many days the total work completed.",
+   "options": [
+    "26 days",
+    "7.5 days",
+    "12 days",
+    "18 days",
+    "21 days"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "84afd0aef5dbb8e36fd5e3b3a17dfea62346f42f9dfd13cd8044451aff8eae35"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "An amount doubles in 5 years at simple interest. In what time will it become 12 times of itself at the same rate?",
+   "options": [
+    "30",
+    "50",
+    "55",
+    "36",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4d1f1e3df71dd3ac07150452c3fa2bec6b2ddd448313c177df0536a629f20700"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "There are two jars P and Q containing a mixture of milk and water. Jar P has 20 liters of mixture which has 70% milk. Jar Q has 30 liters of mixture which has milk and water in 3:2 ratio. The content of both the jars are mixed in jar Z. What is the % of milk in the new mixture?",
+   "options": [
+    "22%",
+    "38%",
+    "42%",
+    "75%",
+    "64%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "02a52845993b4654d3dd864ddb4b1460998eb2fc5fbb00b001eddae33f0d1ced"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "Train A having length 200 meters crosses train B running in same direction in 100 seconds. If the difference between the speeds of both the trains is 6 m/s and train B crosses a 480 meters long platform in 40 seconds, then find the speed of train A (in meters/second)?",
+   "options": [
+    "28",
+    "24",
+    "20",
+    "18",
+    "30"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5ee6bab968cc1011a8a03e1b88674af7b168d6afba7bef27884cb875091fd8c1"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "The perimeter of semicircle is 36 cm and the radius of the semicircle is equal to the breath of a rectangle. If area of rectangle is 147 cm², then find the length of rectangle?",
+   "options": [
+    "10.5 cm",
+    "28 cm",
+    "14 cm",
+    "21 cm",
+    "35 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "895db84af73bbfe6521ac1582cb966b78d9232a963b4dad6058e903410a85451"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "a, b, c, d and e are 5 consecutive even numbers. If the sum of ‘a’ and ‘d’ is 162, then what is the sum of all the numbers?",
+   "options": [
+    "400",
+    "380",
+    "420",
+    "410",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cfe41fdb069f994d04ff29bff77ccde0181e9d1ec5cd87b8d42a592c52ed236f"
+  },
+  {
+   "question_number": 36,
+   "section": "english",
+   "stem_text": "Choose the most appropriate word to fill in the blank given in the passage. Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "However",
+    "Therefore",
+    "Meanwhile",
+    "Indeed",
+    "Nevertheless"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "16c7f5c1c8ea06a2c50beb678d47e7485dc7b36c09d4b386a057defbce1be66c"
+  },
+  {
+   "question_number": 37,
+   "section": "english",
+   "stem_text": "What does the phrase \"feel the pinch\" most nearly mean as used in the passage? Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "To suffer physical discomfort due to harsh weather",
+    "To struggle with financial hardship and difficulty",
+    "To feel overwhelmed by sudden relationship changes",
+    "To experience exhaustion from excessive manual work",
+    "To feel disappointed after failing a personal goal"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "47276e097e8717929bd58dd5bd8642831e7bc2aa1a0bd441c4f8efc252fdece0"
+  },
+  {
+   "question_number": 38,
+   "section": "english",
+   "stem_text": "Choose the word most similar in meaning to \"form\" as used in the passage. Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "shape",
+    "outline",
+    "design",
+    "arrange",
+    "establish"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f701e3946626ef726bbe06c17e8a46162af5bb44735f3d099e8ed18f00fe6bd5"
+  },
+  {
+   "question_number": 39,
+   "section": "english",
+   "stem_text": "What does the passage suggest about the Minis and their forest? Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "They saw the forest purely as a commercial resource",
+    "They had recently migrated from an urban region",
+    "They drew sustenance and identity from the land",
+    "They depended mainly on government food supplies",
+    "They invited planners to develop their forested hills"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "165ed2185340366f716189998ef0e65217c57720b6158b51d1be2112e43efb06"
+  },
+  {
+   "question_number": 40,
+   "section": "english",
+   "stem_text": "What can be inferred about Pavitra's character from the passage? Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "Pavitra had formally studied agroforestry at an institution",
+    "Pavitra persisted quietly despite initial skepticism from elders",
+    "Pavitra had previously failed at several community projects",
+    "Pavitra sought government funding before starting the work",
+    "Pavitra paused the initiative temporarily during the lockdown"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4d53a64874e9ca7e59f3c86902a73ab699e80ddb9a505f640702859dde9a2a00"
+  },
+  {
+   "question_number": 41,
+   "section": "english",
+   "stem_text": "What role did the lockdown play in the Minis' agroforestry success? Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "It destroyed existing infrastructure forcing them to restart",
+    "Development planners included the Minis in policy frameworks",
+    "Government relief provided essential agricultural equipment",
+    "Outside investors funded the initiative recognising its potential",
+    "It brought back workers whose labour expanded harvesting"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2ff82a76341a9d16d68c66276dc85a4e7f22559882b837420a0fa92bacf87c7f"
+  },
+  {
+   "question_number": 42,
+   "section": "english",
+   "stem_text": "Consider the following statements and identify which is/are correct: (I) Migrant workers returned with savings they invested in Pavitra's initiative. (II) The initiative was on communal land integrating food crops with tree cultivation. (III) The harvest ensured food security and surplus was sold in nearby markets. Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (III)",
+    "Only (II)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ecf5828d58653a95b30c2db06c551986d81ddd53269216d9f319fc01413f62d0"
+  },
+  {
+   "question_number": 43,
+   "section": "english",
+   "stem_text": "Consider the following statements and identify which is/are incorrect: (I) The Minis drew sustenance and identity from forests outsiders rarely visited. (II) Pavitra was described as loud and outspoken inspiring immediate community confidence. (III) Before lockdown only a handful of households participated in the initiative. Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "Only (I)",
+    "Both (I) and (III)",
+    "Only (II)",
+    "Both (II) and (III)",
+    "All (I), (II) and (III)"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "04a0ce831172f9ec96f08a5d0d4d57edd677b9be35165e847497d033bff3893d"
+  },
+  {
+   "question_number": 44,
+   "section": "english",
+   "stem_text": ". What central lesson does the passage convey through the story of the Minis? Read the following passage and answer the given questions. When the rest of the world was shutting down, a small tribal community tucked into the forested hills of central India was quietly doing the opposite. The group, known locally as the Minis, had long maintained an intimate relationship with the land around them, drawing sustenance and identity from forests that outsiders rarely visited and development planners rarely considered. The seeds of what would become a remarkable community effort were planted in 2019, when Pavitra, a young tribal resident with a quiet but determined vision, began to form the foundation of an agroforestry initiative on communal land. Pavitra believed that integrating food crops with tree cultivation could generate stable, year-round income for families who had historically depended on uncertain forest produce and seasonal labour in distant cities. Progress was slow initially, with only a handful of households willing to participate in what many elders viewed with cautious skepticism. Then the lockdown arrived. Migrant workers who had left the village years earlier to form part of the urban labour force returned home suddenly and without income. For weeks, these families began to feel the pinch of unemployment, depleted savings, and an uncertain future. Rather than remaining idle, many turned to Pavitra's agroforestry plots, lending their labour and, gradually, their commitment. ______________, what followed surprised even the most optimistic among them. With a larger collective workforce tending the land, harvesting expanded significantly. The Minis conducted a substantial harvest during the lockdown period that not only ensured food security for participating households but generated surplus produce sold to nearby markets. Families that had previously earned single incomes reported that their household earnings had effectively doubled within one growing season. The Minis had discovered something that no government scheme had managed to deliver — that when crisis drives a community back to its roots, the land, tended with collective care, rarely disappoints.",
+   "options": [
+    "Government schemes best deliver sustainable agricultural development",
+    "Tribal communities should permanently avoid seeking urban work",
+    "Agroforestry is universally superior to all other farming methods",
+    "Returning urban workers always transform rural agricultural output",
+    "Crisis can unite communities enabling collective effort to succeed"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e8c139189368456d5169aa38916357d43c3160034fb5541c06d9d55a0e1f1df1"
+  },
+  {
+   "question_number": 45,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank",
+   "options": [
+    "? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________(A) in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) accumulate (b) dissolve (c) fluctuate (d) diminish (e) scatter"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e6769fc058d2a1294f463ecea44afa1d3bcccc973056f425d1c67587462b7171"
+  },
+  {
+   "question_number": 46,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (B)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) examine (b) preserve (c) postpone (d) obtain (e) surrender"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3c23f252688e9e7229dc9a81a9ba90685282fb408579829db7dbb9ed9a57f9d1"
+  },
+  {
+   "question_number": 47,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (C)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) parallel (b) identical (c) adjacent (d) immune (e) confined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7914d68647f174a3006a941e9f0a18271c627c37840f8ed1199abf18771fb102"
+  },
+  {
+   "question_number": 48,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (D)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) to redeem (b) redeemed (c) redeeming (d) redeems (e) redemption"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8a15a3252178c131be45e7b960a8acd2be1eca3daad59ff80e3bcd84338b58da"
+  },
+  {
+   "question_number": 49,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (E)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) consume (b) surrender (c) undergo (d) deliver (e) preserve"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9e30f16ec95f03e0f55446d7b309a1d864763d0f7696def449190790e956b072"
+  },
+  {
+   "question_number": 50,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (F)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) restrain (b) postpone (c) maximize (d) discard (e) complicate"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e1ab187deff4f9d0eb283334a527c888dc5e36ba05e8459da85ee2a2a0ef3644"
+  },
+  {
+   "question_number": 51,
+   "section": "english",
+   "stem_text": "Which of the following words will fit in the given blank (G)? In the following passage there are blanks, each of which has been denoted by letters. For each blank, five options are given. Choose the most appropriate word from the options that fits the blank appropriately. Many airlines have introduced loyalty programmes that reward frequent travellers with credit points for every journey they complete. These points gradually _______________",
+   "options": [
+    "in a member's account and can later be redeemed for a variety of travel-related benefits. Depending on the airline's policy, passengers may use the accumulated points to _______________",
+    "discounted flight tickets, cabin upgrades, hotel reservations, or even shopping vouchers. However, travellers should carefully review the programme guidelines because certain rewards remain _______________",
+    "to specific routes, travel periods, or membership categories. In addition, most airlines require members _______________",
+    "their points before a specified expiry date, failing which the unused balance may lapse automatically. Experts also recommend comparing redemption values before making a booking, as some options _______________",
+    "greater value than others. By planning purchases wisely and monitoring promotional offers, passengers can _______________ (F) the overall benefit of their accumulated credit points. Consequently, these programmes have become an increasingly popular _______________ (G) for encouraging customer loyalty in the aviation industry. (a) mechanism (b) interval (c) obstacle (d) territory (e) occurrence"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e7577656706022f86eb81ac1170425dcdf4de226b6f6b4c264cc62fa14d252ac"
+  },
+  {
+   "question_number": 52,
+   "section": "english",
+   "stem_text": "The magician performed a slieght of hand so swiftly that the entire audience was left completely baffled. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "magician",
+    "slieght",
+    "swiftly",
+    "audience",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b0286dbb60068b135258adfa4d2bf4115834a49ee38c7cfe42bd8b17e56a550c"
+  },
+  {
+   "question_number": 53,
+   "section": "english",
+   "stem_text": "The retired banker had served the institution for over thirty ears and was honoured with a gold medal at the farewell ceremony. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "retired",
+    "served",
+    "ears",
+    "honoured",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0bda0273f9d6701dfab62d0aece9d682e657bc293547812ae0b4f7852c1eb35b"
+  },
+  {
+   "question_number": 54,
+   "section": "english",
+   "stem_text": "The horrifying incident turned into a nightmair for the witnesses who had gathered near the accident spot. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "horrifying",
+    "nightmair",
+    "witnesses",
+    "gathered",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "513d9efb6d8aa70154c493da9e78697c1d1a3bbf5d8106e4ed5ddb697cab9301"
+  },
+  {
+   "question_number": 55,
+   "section": "english",
+   "stem_text": "The veteran officer handled the delicate situation with remarkable composure and restored order without any confrontation. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "veteran",
+    "handled",
+    "delicate",
+    "composure",
+    "All are correct"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ebc7e4a5584735ab6dc2ef5e1d98d632786c334738a391b9cd57ec208b869d3d"
+  },
+  {
+   "question_number": 56,
+   "section": "english",
+   "stem_text": "The prisoner made a desperate attempt to ecsape from the heavily guarded detention centre late at night. In the following sentence, four words have been highlighted which may be misspelt or inappropriate in their usage. Mark the erroneous word as the answer and if all the words are correct in their spellings and usage, then choose ‘All are correct’ as the answer.",
+   "options": [
+    "prisoner",
+    "desperate",
+    "ecsape",
+    "heavily",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "68d05e82aec3788fadcf0488b8013bffee68a196f9d52c115fb63ed23aea5c98"
+  },
+  {
+   "question_number": 57,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "The typhoon has caused widespread destruction since the last four consecutive days.",
+    "Neither the warden nor the security staff were notified of the inmate's transfer.",
+    "The seized cargo vessel was towed to the nearest port for detailed inspection.",
+    "The coalition partners has failed to reach consensus on the revised electoral map.",
+    "All are incorrect"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3c07e6f86d689dfbc1fdaecdc153398d678877751cc4c2edc3eb3be0d3882d57"
+  },
+  {
+   "question_number": 58,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "The marathon runner don't follow a fixed hydration schedule during long races.",
+    "The rebel factions has agreed to lay down arms under the mediated peace framework.",
+    "The opposition leader and the deputy spokesperson is addressing the press shortly.",
+    "The parliament passed the landmark data protection bill after three rounds of debate.",
+    "All are incorrect"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "873aab183b0d12a8590d3d38111921ad2cf0fb75d52a4ef178d05ec5ca77fd0c"
+  },
+  {
+   "question_number": 59,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "The sniper don't operate without direct authorisation from the field commander.",
+    "Each of the accused persons have appeared before the special tribunal individually.",
+    "The visiting dignitary and the protocol officer was escorted to the state guesthouse.",
+    "The cyclone weakened into a deep depression before making landfall near the delta.",
+    "All are incorrect"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "688c85628d008317053fb9cc5abebb948702b61a0881527ace13ae44005ea10c"
+  },
+  {
+   "question_number": 60,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "She seen the accused leaving the premises just minutes before the incident occurred.",
+    "The border skirmish have intensified despite repeated calls for mutual restraint.",
+    "Each of the nominated candidates have filed their affidavit with the election body.",
+    "The submarine completed its stealth mission and returned to the naval base undetected.",
+    "All are incorrect"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "276676c6890dedb0ccbe8de2f7ac4bbed3850a6d096d79ceaf89b5478d2b87ef"
+  },
+  {
+   "question_number": 61,
+   "section": "english",
+   "stem_text": "Identify the sentence that is grammatically correct.",
+   "options": [
+    "The glacier don't retreat at a uniform rate across all its exposed surface zones.",
+    "Every one of the hostages were safely released before midnight by the armed group.",
+    "The missile defence system and the radar unit was tested during the joint exercise.",
+    "The journalist filed her report from the conflict zone before the curfew began.",
+    "All are incorrect"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6f9358b8d4eee8df8ee663b037c485c91d37ed8cb8d972a5bbf690179a4cbd81"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "If we add 2 to all the even digits of the number '5526734473' and then arrange them in ascending order from left to right, then what will be the 5th digit from left end after rearrangement?",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "38fe699cef2b0a7a67a535d3a97c21c1224b24fbbc5679696860970dbefe0bc0"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "In which of the following months was B born? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – were born in eight different months of the same year – January, March, April, May, July, August, November and December (not necessarily in the same order). G was born before E. There is exactly two months gap between E and G. D was born two persons after E but not in November. Two persons were born between D and H. H was born two persons after A. C was born after A. Less than four persons were born between C and F.",
+   "options": [
+    "April",
+    "May",
+    "November",
+    "March",
+    "December"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "23fee05979aa873c334c166eeca4d735a0cb3e849398f59f5ba1fa9f459434f0"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Which pair among the following was born in consecutive months as per the calendar? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – were born in eight different months of the same year – January, March, April, May, July, August, November and December (not necessarily in the same order). G was born before E. There is exactly two months gap between E and G. D was born two persons after E but not in November. Two persons were born between D and H. H was born two persons after A. C was born after A. Less than four persons were born between C and F.",
+   "options": [
+    "D and B",
+    "F and D",
+    "E and F",
+    "C and B",
+    "G and B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "59764590bf7dabc59315917919f40662d440bc7028e20c6d668e0772d6ac18d8"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "If all the persons are arranged in alphabetical order from the first given month to the last given month, then how many persons remain in the same position? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – were born in eight different months of the same year – January, March, April, May, July, August, November and December (not necessarily in the same order). G was born before E. There is exactly two months gap between E and G. D was born two persons after E but not in November. Two persons were born between D and H. H was born two persons after A. C was born after A. Less than four persons were born between C and F.",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0577f4e6083f5825032d55516bb10082e8ad2f7471e12770a0b9aaf90a680ef1"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is NOT correct? I. G was born after E. II. A was born in a month having 31 days. III. As many persons were born before E as after D. Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – were born in eight different months of the same year – January, March, April, May, July, August, November and December (not necessarily in the same order). G was born before E. There is exactly two months gap between E and G. D was born two persons after E but not in November. Two persons were born between D and H. H was born two persons after A. C was born after A. Less than four persons were born between C and F.",
+   "options": [
+    "Only I",
+    "Only II",
+    "Only III",
+    "Only I and II",
+    "Only I and III"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8798ab3d38a176f40906f4703935ce5af302d6c3ef197d54012deae6110436a4"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence form a group. Which of the following does not belong to the group? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – were born in eight different months of the same year – January, March, April, May, July, August, November and December (not necessarily in the same order). G was born before E. There is exactly two months gap between E and G. D was born two persons after E but not in November. Two persons were born between D and H. H was born two persons after A. C was born after A. Less than four persons were born between C and F.",
+   "options": [
+    "F",
+    "G",
+    "C",
+    "H",
+    "D"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "71c3f75161b0acdcbe94565c7e65e0a0f2af05640f924b5b30fa02a390f9f07a"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "How many such consonants are there in the above arrangement each of which is immediately preceded by a digit and immediately followed by a symbol? Study the following alphanumeric symbol series carefully and answer the given questions: 3 A C G 5 * K 2 Z V E 8 & S # X 7 % R Y @ N 9 Q +",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than three"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1f0810858b625767228858d3f9b7fb691a1f37aebdee86667c0b975330bd9923"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Which of the following element is exactly midway between the fifth element from the left end and the seventh element from the right end of the arrangement? Study the following alphanumeric symbol series carefully and answer the given questions: 3 A C G 5 * K 2 Z V E 8 & S # X 7 % R Y @ N 9 Q +",
+   "options": [
+    "8",
+    "S",
+    "X",
+    "V",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "684deaf1b4e9706e244aef0298f9cbdfc1720931255c598244431bceb8ec5ee1"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Which of the following element will be 4th to the left of the 10thletter from the left end after the rearrangement? Study the following alphanumeric symbol series carefully and answer the given questions: 3 A C G 5 * K 2 Z V E 8 & S # X 7 % R Y @ N 9 Q +",
+   "options": [
+    "8",
+    "R",
+    "Y",
+    "*",
+    "#"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3997a822e0d495a95f7c6c971606ac07c66912ce536b9596d124b6c7bacda480"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "How many such digits are there in the above arrangement, each of which is immediately followed by a consonant but not immediately preceded by a symbol? Study the following alphanumeric symbol series carefully and answer the given questions: 3 A C G 5 * K 2 Z V E 8 & S # X 7 % R Y @ N 9 Q +",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0cd69dbe8295bc0ec5e3df9e033dc6e9e54435b083c67151cb038179a25d37f8"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "What is the position of 'N' with respect to the ninth element from the right end of the series? Study the following alphanumeric symbol series carefully and answer the given questions: 3 A C G 5 * K 2 Z V E 8 & S # X 7 % R Y @ N 9 Q +",
+   "options": [
+    "Immediately to the left",
+    "Fifth to the right",
+    "Third to the left",
+    "Fourth to the right",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c8d64bec30450c6eacec0d34e004eb5d22e6bbeef0a1c6c9a996f8cec46d089f"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "How many pairs of digits are there in the number “73914265” each of which have as many digits between them as in the number series (both in the forward and backward directions)?",
+   "options": [
+    "Four",
+    "Two",
+    "Three",
+    "Five",
+    "More than five"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e1628c38c7c9619c55e72d87e02c9e34d5fbda8266688a7dea349ef6a79daa20"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Who goes to the seminar three persons after F? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – go to attend a seminar one after another, but not necessarily in the same order. C attends seminar four persons after B. H attends seminar immediately before C but three persons before A. As many persons attend seminar before A as after G. Only one person attend seminar between G and E. D doesn’t attend seminar before F.",
+   "options": [
+    "A",
+    "D",
+    "B",
+    "E",
+    "H"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cddca3e0f23f09dfe1055eff07d11c1bee3369b5cd220a2421f474a5991a24ea"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "How many persons go before the person who goes immediately before A? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – go to attend a seminar one after another, but not necessarily in the same order. C attends seminar four persons after B. H attends seminar immediately before C but three persons before A. As many persons attend seminar before A as after G. Only one person attend seminar between G and E. D doesn’t attend seminar before F.",
+   "options": [
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "More than five"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "dff5b4bbe6f83dede6022a222f89be3611b6956338fd5cddb57c3ef8fefd2d7a"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "In which of the following pairs first person goes before the second person? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – go to attend a seminar one after another, but not necessarily in the same order. C attends seminar four persons after B. H attends seminar immediately before C but three persons before A. As many persons attend seminar before A as after G. Only one person attend seminar between G and E. D doesn’t attend seminar before F.",
+   "options": [
+    "C and F",
+    "D and F",
+    "A and G",
+    "E and B",
+    "G and D"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a1586398b7d6e7aab6b8575efe751b0da6dc693227827f100af5c984e5f7140c"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "If B is related to G and in the same way A is related to D then who among the following is related to E? Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – go to attend a seminar one after another, but not necessarily in the same order. C attends seminar four persons after B. H attends seminar immediately before C but three persons before A. As many persons attend seminar before A as after G. Only one person attend seminar between G and E. D doesn’t attend seminar before F.",
+   "options": [
+    "B",
+    "H",
+    "F",
+    "A",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b40021997d514f57ebed2ff335b17946babe43b2e7443681980b0fa5e2773f74"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is/are true? I. Exactly four persons go after C. II. E goes before G. III. A goes in the last position. Read the following information carefully and answer the questions given below. Eight persons – A, B, C, D, E, F, G, and H – go to attend a seminar one after another, but not necessarily in the same order. C attends seminar four persons after B. H attends seminar immediately before C but three persons before A. As many persons attend seminar before A as after G. Only one person attend seminar between G and E. D doesn’t attend seminar before F.",
+   "options": [
+    "Only I",
+    "Only II",
+    "Only III",
+    "Both I and III",
+    "Both II and III"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "93f782482945a5c897119f40036c8fb8d412c57cefc7039a009243de9ddbc02c"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "If weight of bag B is 7kg then what is the sum of weighs of bag A and C? Study the following information carefully and answer the questions given below: Six bags – A, B, C, D, E, and F – are kept on a weighing machine to compare their weights, but not necessarily in the same order. The weight of each bag is a distinct integer. D is heavier than more than three bags. Only one bag weighs between D and B. C weighs less than B and 6kg less than F. A weighs heavier than C. D is heavier than F which weighs 10kg. E is heavier than A but lighter than B. Weight of bag E is an even number.",
+   "options": [
+    "8kg",
+    "4kg",
+    "9kg",
+    "11kg",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a4a24c01b7263cf7f35f7e0d681d7e90462e376fcff2e221823c4239b094eea4"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "What is the possible weight of bag E? Study the following information carefully and answer the questions given below: Six bags – A, B, C, D, E, and F – are kept on a weighing machine to compare their weights, but not necessarily in the same order. The weight of each bag is a distinct integer. D is heavier than more than three bags. Only one bag weighs between D and B. C weighs less than B and 6kg less than F. A weighs heavier than C. D is heavier than F which weighs 10kg. E is heavier than A but lighter than B. Weight of bag E is an even number.",
+   "options": [
+    "3 kg",
+    "6 kg",
+    "12 kg",
+    "9 kg",
+    "7 kg"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "03162d1b722db4d407606238cac12e06d9871d7768b0c39d354c83681733ef08"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": ". Which of the following statements is correct? Study the following information carefully and answer the questions given below: Six bags – A, B, C, D, E, and F – are kept on a weighing machine to compare their weights, but not necessarily in the same order. The weight of each bag is a distinct integer. D is heavier than more than three bags. Only one bag weighs between D and B. C weighs less than B and 6kg less than F. A weighs heavier than C. D is heavier than F which weighs 10kg. E is heavier than A but lighter than B. Weight of bag E is an even number.",
+   "options": [
+    "F is the third heaviest bag.",
+    "A weighs more than D.",
+    "Weight of bag C is the least",
+    "Only one bag is heavier than D.",
+    "B is the heaviest bag."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5c75c02728886ed1bc23da49b9adb3a663343e5623ecb47bc393c56f1131e74e"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Statements: E > A ≥ C < D = F > J ≥ H Conclusion I: A > F II: A ≤ DIn these questions, relationship between different elements is shown in the statements. The statements are followed by two conclusions. Give answer.",
+   "options": [
+    "If only conclusion I is true",
+    "If only conclusion II is true",
+    "If either conclusion I or II is true",
+    "If neither conclusion I nor II is true",
+    "If both conclusion I and II is true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a3756eb0e49a890277329576cc1877a0bc87eb0e64d9778e441e5aa61858781a"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "In these questions, relationship between different elements is show in the statements. The statements are followed by conclusions. Study the conclusions based on the given statements and select the appropriate answer:",
+   "options": [
+    "If only conclusion I is true.",
+    "If only conclusion II is true.",
+    "If either conclusion I or II is true.",
+    "If neither conclusion I nor II is true.",
+    "If both conclusions I and II are true."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "203f84cfeca10fc474974e7a87ad7d742af27c5d03fe9a1e17d3dd801802d011"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Statements: D > V ≥ S ≤ X; K ≥ B= V ≤ A Conclusions: I. S ≤ A II. D > K In each of the following questions assuming the given statements to be true, find which of the two conclusions I and II given below is/are definitely true and give your answer accordingly.",
+   "options": [
+    "If only conclusion I is true.",
+    "If only conclusion II is true.",
+    "If either conclusion I or II is true.",
+    "If neither conclusion I nor II is true.",
+    "If both conclusions I and II are true."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ed37ab64b1e8dc0c65111e8d6709ed23279ffa45052c2ca0b31ac67a9e58b4cb"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Statements: P ≤ R > U = S < N ≤ O > T Conclusion: I: U ≥ N II: S < OIn each of the following questions assuming the given statements to be true, find which of the two conclusions I and II given below is/are definitely true and give your answer accordingly.",
+   "options": [
+    "If either conclusion I or II is true",
+    "If neither conclusion I nor II is true",
+    "If only conclusion I is true",
+    "If both conclusions I and II are true",
+    "If only conclusion II is true"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "34337ff3389a9c9cc58668fdf3a88cd005e0b096645c528dfcbdb2e4bc29481e"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "If a meaningful word is formed by using the first, eighth, ninth, and tenth letters (from the left end) of the word \"COMPLEXITY\", then which of the following will be the second letter from the left end of the meaningful word thus formed? If more than one such meaningful word is formed, mark Y as your answer. If no meaningful word is formed, mark Z as your answer.",
+   "options": [
+    "C",
+    "Y",
+    "I",
+    "Z",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2c271a67231bc72fd411b7f1ac687b17e9516e9618286a161349b9e94342b548"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Who among the following sits sixth to the left of G? Study the following information carefully and answer the questions given below. An uncertain number of persons sit in a row facing north. Four persons sit between M and K. K sits second to the right of A. H sits fifth to the right of A. O sits immediate left of M and sits third from one of the extreme ends. The number of persons sit between O and A is one more than the number of persons sit to the right of H. E sits second to the left of H. G sits three places away E.",
+   "options": [
+    "K",
+    "Unknown person",
+    "M",
+    "A",
+    "H"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e42fb3a94dcd648fdddbe9c60a3c63d8a2c8a52ce411e974cac476c160f26350"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "What is the position of K in the row? Study the following information carefully and answer the questions given below. An uncertain number of persons sit in a row facing north. Four persons sit between M and K. K sits second to the right of A. H sits fifth to the right of A. O sits immediate left of M and sits third from one of the extreme ends. The number of persons sit between O and A is one more than the number of persons sit to the right of H. E sits second to the left of H. G sits three places away E.",
+   "options": [
+    "Seventh from the left end",
+    "Seventh from the right end",
+    "Eighth from the left end",
+    "Ninth from the left end",
+    "Fifth from the right end"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5501cfbcc14424e071ef44dff398c329f23bbdffdd860cc4e15e82ac91966dc5"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "How many persons are sitting in the row? Study the following information carefully and answer the questions given below. An uncertain number of persons sit in a row facing north. Four persons sit between M and K. K sits second to the right of A. H sits fifth to the right of A. O sits immediate left of M and sits third from one of the extreme ends. The number of persons sit between O and A is one more than the number of persons sit to the right of H. E sits second to the left of H. G sits three places away E.",
+   "options": [
+    "13",
+    "14",
+    "15",
+    "16",
+    "17"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0e738be9b51a40e6f8dd3be22199df56c4d012dfcef847c2fc72a2a19de988cf"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "What is the position of O with respect to H? Study the following information carefully and answer the questions given below. An uncertain number of persons sit in a row facing north. Four persons sit between M and K. K sits second to the right of A. H sits fifth to the right of A. O sits immediate left of M and sits third from one of the extreme ends. The number of persons sit between O and A is one more than the number of persons sit to the right of H. E sits second to the left of H. G sits three places away E.",
+   "options": [
+    "Ninth to the right",
+    "Eighth to the left",
+    "Ninth to the left",
+    "Immediately right",
+    "Immediately left"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8ffa805db28143bf0ca125808d2496354cca3464ad092870236745714ee22194"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Find the odd one out.",
+   "options": [
+    "SPN",
+    "KHG",
+    "YVT",
+    "TQO",
+    "GDB"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "da1c5136e25a2236e9db6c129b9e01d6bc07b4799a5886a3d0f949236eabdc83"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Who is sitting exactly opposite to Q? Study the information carefully and answer the questions given below. Eight persons P, Q, R, S, T, U, V, and W are sitting in a circle facing the centre but not necessarily in the same order. P sits second to the right of Q. S is an immediate neighbour of Q. T is third to the right of S. V is second to the right of T. W is not an immediate neighbour of T. R does not face S.",
+   "options": [
+    "P",
+    "S",
+    "T",
+    "V",
+    "U"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "eb440f7b51d357e9fa5e4bf07162e0b779d9730768c866cc7a6202f8c49a6507"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Who are the immediate neighbours of U? Study the information carefully and answer the questions given below. Eight persons P, Q, R, S, T, U, V, and W are sitting in a circle facing the centre but not necessarily in the same order. P sits second to the right of Q. S is an immediate neighbour of Q. T is third to the right of S. V is second to the right of T. W is not an immediate neighbour of T. R does not face S.",
+   "options": [
+    "S and T",
+    "T and V",
+    "Q and W",
+    "S and R",
+    "T and W"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "15c6575d6d44011570b97f7fb86a07ad581969c7081107ca806c587c3edf4a5f"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "How many persons are seated between T and P when counted clockwise from P? Study the information carefully and answer the questions given below. Eight persons P, Q, R, S, T, U, V, and W are sitting in a circle facing the centre but not necessarily in the same order. P sits second to the right of Q. S is an immediate neighbour of Q. T is third to the right of S. V is second to the right of T. W is not an immediate neighbour of T. R does not face S.",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c9d4743657280ecce045ed410c8f84a22ccdfb76506a3227d2c844b339a8caa5"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is true? Study the information carefully and answer the questions given below. Eight persons P, Q, R, S, T, U, V, and W are sitting in a circle facing the centre but not necessarily in the same order. P sits second to the right of Q. S is an immediate neighbour of Q. T is third to the right of S. V is second to the right of T. W is not an immediate neighbour of T. R does not face S.",
+   "options": [
+    "W is an immediate neighbour of T",
+    "P is second to the right of R",
+    "U is second to the left of P",
+    "V is third to the right of R",
+    "Q is third to the left of S"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "762eeb31c897ee0a92e266ffa06cd5c837003edcadb4b5332e690002a1ef0fc4"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "Who sits third to the right of the person who sits immediate right of P?Study the information carefully and answer the questions given below. Eight persons P, Q, R, S, T, U, V, and W are sitting in a circle facing the centre but not necessarily in the same order. P sits second to the right of Q. S is an immediate neighbour of Q. T is third to the right of S. V is second to the right of T. W is not an immediate neighbour of T. R does not face S.",
+   "options": [
+    "R",
+    "T",
+    "V",
+    "W",
+    "S"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "633b7f5179337e61aedce4821e6f39be62aba754b83a0eb84541ce03dc0f5e18"
+  }
+ ],
+ "section_confidence": 0.935,
+ "section_order": [
+  "numerical_ability",
+  "english",
+  "reasoning"
+ ]
+}

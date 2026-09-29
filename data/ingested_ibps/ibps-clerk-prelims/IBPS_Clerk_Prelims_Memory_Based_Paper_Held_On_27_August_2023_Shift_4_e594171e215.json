@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_On_27_August_2023_Shift_4__e594171e215d89ffe183de131d6f8d81.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. There are Eight boxes A, B, C, D, E, F, G and H placed one above the other but not necessarily in the same order. Two boxes are placed between B and E. H is placed immediately below E. B is place above E. One box is placed between F and B. D is placed one of the position above E and one of the position below F but not immediately above or below. One box is placed between G and C. A and F should not be placed above G. Which box is placed immediately below C?",
+   "options": [
+    "A",
+    "E",
+    "B",
+    "H",
+    "F"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d1c2fd1687558690114ffa9c90083247de000259315dd5342e1133cf2f80d0d0"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. There are Eight boxes A, B, C, D, E, F, G and H placed one above the other but not necessarily in the same order. Two boxes are placed between B and E. H is placed immediately below E. B is place above E. One box is placed between F and B. D is placed one of the position above E and one of the position below F but not immediately above or below. One box is placed between G and C. A and F should not be placed above G.\n\nHow many boxes are placed between G and D?",
+   "options": [
+    "Three",
+    "One",
+    "Four",
+    "more than four",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "01608632aec4618cccaf050eaf71e71224686f3a74df3317ca55029a1782f28b"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions given below. There are Eight boxes A, B, C, D, E, F, G and H placed one above the other but not necessarily in the same order. Two boxes are placed between B and E. H is placed immediately below E. B is place above E. One box is placed between F and B. D is placed one of the position above E and one of the position below F but not immediately above or below. One box is placed between G and C. A and F should not be placed above G.\n\nWhat is the position of D?",
+   "options": [
+    "Third from the top",
+    "Third from the bottom",
+    "Fourth from the top",
+    "Second from the bottom",
+    "None of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "632f16216d796c1e6c2760dc961d350e3000755a6e2f955b2f75e45a00db9840"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Four of following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+   "options": [
+    "G - C",
+    "A - H",
+    "C - E",
+    "B - F",
+    "E - D"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1832b82d980c053c81ca02876c038cecb7a063a042efcc2e1f4f18aca96fc055"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "If boxes G and A interchanged their positions, then which box will be placed immediately above G?",
+   "options": [
+    "F",
+    "D",
+    "C",
+    "B",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5c1fa915892846bdfea82347d51c27121a8c27123045d8ec1c3a00281d270077"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the instructions carefully and answer the question below. In a certain code language: ‘People love eating cake’ is written as ‘si da ta no’. ‘Right time will come’ is written as ‘hi mu ke ri’. ‘Cake shows the love’ is written as ‘da pe le no’. ‘Right people make food’ is written as ‘ta yi je mu’. What is the code for the word ‘cake’?",
+   "options": [
+    "no",
+    "si",
+    "da",
+    "Either 1 or 2",
+    "Either 1 or 3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2a665c49c82e23efc8e6bea7947511ef96456572169b52cd720e5b42f7d61a98"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "What does the code ‘ta’ mean?",
+   "options": [
+    "Time",
+    "People",
+    "Love",
+    "Food",
+    "Right"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0f32ebc96e6dc1c46584db843e97bf3bf8428116b4fb466459235730e7b6165c"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "What is the code for the word ‘right’?",
+   "options": [
+    "no",
+    "yi",
+    "ke",
+    "mu",
+    "je"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0e46d54b97417b075bc5a6cd1f30dbabc460682e5b3749385af8e164c2f57006"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "What does the code ‘si’ mean?",
+   "options": [
+    "People",
+    "Love",
+    "Eating",
+    "Cake",
+    "Can’t be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "737d6550a4130bde1bddcb7dc77f0d123300e120abb1b29eb6047c3463cb7bba"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/are definitely true and then give your answers accordingly Statements: P ≤ R = D > L = N; H < I > A > C ≥ P Conclusions: I. L < I II. L ≤ I",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Both follows",
+    "None follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "e179059632238e52f30191a423946be4c5380288b42538c829527dd4c7e0cd91"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/ are definitely true and then give your answers accordingly Statements: G ≥ M = P > C; Q < R = B < C Conclusions: I. M > R II. G ≥ B",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both follows",
+    "Either I or II follows",
+    "None follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9c10d881f9f111d0fca4add457ae3ef65592a886ed3273e2314daa0d0a224eb0"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/ are definitely true and then give your answers accordingly Statements: B > G < F < S; A > M < F < S Conclusions: I. B > A II. S > M",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5eb353385163deae47bc1120e51aec3463f1431085daa41568c6cf3a74843d63"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the questions given below: An uncertain number of persons sit in a linear row. All of them face north. Four persons sit between A and B. C sits fourth to the right of B. D sits third to the right of A. E sits fifth to the right of F. E sits immediate left of G who sits third from the one of the extreme ends of the row. B sits sixth to the right of H, who is not immediate neighbour of A. As many persons sit between C and F as many between F and D. H sits second to the left of I, who sits fourth from extreme end. G sits fourth to the right of D. Who among the following person sits sixth to the right of B?",
+   "options": [
+    "F",
+    "E",
+    "G",
+    "D",
+    "I"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "082fc5f91a3f3657457e6217b498dce51413e01e5c67a586dad2b5a18d3ee781"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the questions given below: An uncertain number of persons sit in a linear row. All of them face north. Four persons sit between A and B. C sits fourth to the right of B. D sits third to the right of A. E sits fifth to the right of F. E sits immediate left of G who sits third from the one of the extreme ends of the row. B sits sixth to the right of H, who is not immediate neighbour of A. As many persons sit between C and F as many between F and D. H sits second to the left of I, who sits fourth from extreme end. G sits fourth to the right of D.\n\nHow many persons are in the row?",
+   "options": [
+    "18",
+    "15",
+    "19",
+    "22",
+    "25"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d5bf75ebc4df567782c8767a21d5426c898af3448c157ae939dbdca02759ad7f"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the questions given below: An uncertain number of persons sit in a linear row. All of them face north. Four persons sit between A and B. C sits fourth to the right of B. D sits third to the right of A. E sits fifth to the right of F. E sits immediate left of G who sits third from the one of the extreme ends of the row. B sits sixth to the right of H, who is not immediate neighbour of A. As many persons sit between C and F as many between F and D. H sits second to the left of I, who sits fourth from extreme end. G sits fourth to the right of D.\n\nHow many persons sit between A and F?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "72ac038010486d59e237f9c9ae9618785e12663bfca06095c3b752bb268ddaaf"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions which follow: A man starts walking from point K, he walks 12m in the east direction and reached at point L, after that he takes left turn and walks 5m to reach at point P. From the point P, he takes right turn and walks 10m to reach at point Q and again takes right turn and walks 13m to reach at point A. Finally he takes right turn and walks 12m to reach at point B. What is the direction of P with respect to B?",
+   "options": [
+    "South-East",
+    "North-East",
+    "South-West",
+    "North-West",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1b4f88b0ab843635df970441b6d3f049291f314d59d86e8813015a3433076c73"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "If a person walks 8m towards the south from point K and he takes a left turn and walks for another 10m, which of the following point would he reach?",
+   "options": [
+    "A",
+    "P",
+    "B",
+    "Q",
+    "Cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1da6c4187b40b6b18779fae1684cbf0d5730012b716573ed7e874fd1c13ab675"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "What is the shortest distance between L and Q?",
+   "options": [
+    "3√5m",
+    "4√5m",
+    "6√5m",
+    "5√5m",
+    "2√5m"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "131108ecc9110bd13836ddc65be69055a2fae0bfed6692f705731371e5e48770"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "If a person walks 22m towards West from point Q, which of the following points would he cross and how far will he be from point K?",
+   "options": [
+    "L, 5m",
+    "P, 5m",
+    "B, 6m",
+    "P, 12m",
+    "L, 10m"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9733f05e7f04307daaa0264476e6c7ace7633f4046afd8e74fcd8f8e803fc95a"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Cat is Tiger. No Lion is Cat. Conclusions: I. Some Tiger being Lion is a possibility. II. All Cat is Tiger.",
+   "options": [
+    "Neither I nor II follow",
+    "Either I or II follow",
+    "Only II follow",
+    "Only I follow",
+    "Both I and II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "26dbac438b01e9757b30820c00d673d0f4956c915711771c08b2c921e4a59af4"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below three statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Ink is Red. Only a few Red is Blue. No Blue is Ink. Conclusions: I. All Blue being Red is a possibility. II. Some Red is not Blue.",
+   "options": [
+    "Both I and II follows",
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "57b5cfe2de953a6c8e855242a249481222aa4b699506bdd13ea82d1c6cdfb551"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Tables are chair. Only a few Chair are Desk. No Desk is Cupboard. Conclusion: I. Some Tables are not Cupboard. II. Some Chair are not Desk.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "Neither I nor II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f7bfde85a4aeca2f4c1d712f3c19f32e9d8ba64a9b1bd7473c2677bbe1bd1db3"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I, and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some land is Road. Only a few Road is Hill. All Hill is Mountain. Conclusions: I. Some Land is Mountain. II. Some Land is not Mountain",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "35bdf5c5784b556b3b5adfa6d08d4372840ffbbfdd90c57042c6a84721a34a65"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight people – A,B, C, D, E, F, G, and H live in two flats – A and B. There are four floors and each of the floors has two flats, Flat A and Flat B such that Flat B is to the west of Flat A. Flat A of Floor 1 is just below the Flat A of Floor 2 similarly Flat B of Floor 2 is just above the Flat B of Floor 1 and so on. A lives on the top floor of the same flat as C. H lives to the East of G on the same floor but not at the bottommost st floor. F lives on the same floor as E, who lives in same flat immediately above B. C lives on the 1 floor of Flat B. Who lives on the top floor of Flat A?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8c1f3829e5bff6e7d18f9881ac15870bdd58875b11453f851feb2fd9dfdfbaa6"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight people – A,B, C, D, E, F, G, and H live in two flats – A and B. There are four floors and each of the floors has two flats, Flat A and Flat B such that Flat B is to the west of Flat A. Flat A of Floor 1 is just below the Flat A of Floor 2 similarly Flat B of Floor 2 is just above the Flat B of Floor 1 and so on. A lives on the top floor of the same flat as C. H lives to the East of G on the same floor but not at the bottommost st floor. F lives on the same floor as E, who lives in same flat immediately above B. C lives on the 1 floor of Flat B.\n\nHow many floor are there in between the one who lives at the bottommost floor of Flat A and D?",
+   "options": [
+    "No floor",
+    "4 floor",
+    "3 floor",
+    "2 floor",
+    "1 floor"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a51119e9051b31490bcd9edbe3112ebca71284c198f2e7ad52940af00ce25c12"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight people – A,B, C, D, E, F, G, and H live in two flats – A and B. There are four floors and each of the floors has two flats, Flat A and Flat B such that Flat B is to the west of Flat A. Flat A of Floor 1 is just below the Flat A of Floor 2 similarly Flat B of Floor 2 is just above the Flat B of Floor 1 and so on. A lives on the top floor of the same flat as C. H lives to the East of G on the same floor but not at the bottommost st floor. F lives on the same floor as E, who lives in same flat immediately above B. C lives on the 1 floor of Flat B.\n\nWho lives on the same floor as the one who lives immediately below A?",
+   "options": [
+    "A",
+    "G",
+    "E",
+    "H",
+    "C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0c9bb1210be182b98c3b47c9c1dcd76c5b62a226bed51f08aff688705cb3e959"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight people – A,B, C, D, E, F, G, and H live in two flats – A and B. There are four floors and each of the floors has two flats, Flat A and Flat B such that Flat B is to the west of Flat A. Flat A of Floor 1 is just below the Flat A of Floor 2 similarly Flat B of Floor 2 is just above the Flat B of Floor 1 and so on. A lives on the top floor of the same flat as C. H lives to the East of G on the same floor but not at the bottommost st floor. F lives on the same floor as E, who lives in same flat immediately above B. C lives on the 1 floor of Flat B.\n\nWho lives on the bottommost floor?",
+   "options": [
+    "G",
+    "A",
+    "D",
+    "B",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "47c6f171d47aecff3e3713bedb509dc202e14edf986450e5b767054ca0bd7a93"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight people – A,B, C, D, E, F, G, and H live in two flats – A and B. There are four floors and each of the floors has two flats, Flat A and Flat B such that Flat B is to the west of Flat A. Flat A of Floor 1 is just below the Flat A of Floor 2 similarly Flat B of Floor 2 is just above the Flat B of Floor 1 and so on. A lives on the top floor of the same flat as C. H lives to the East of G on the same floor but not at the bottommost st floor. F lives on the same floor as E, who lives in same flat immediately above B. C lives on the 1 floor of Flat B.\n\nHow many people live below H in total?",
+   "options": [
+    "4 people",
+    "3 people",
+    "2 people",
+    "1 person",
+    "No one."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ed40843344484db3c2252d66efc6f0e660f64c490acc40d7f8107d32ff816bde"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word \"PORTABLE\" each of which has as many letters between them in the word (in the forward direction) as they have between them in the English alphabetical order?",
+   "options": [
+    "Three",
+    "Four",
+    "Two",
+    "Five",
+    "One"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6ef03ff7f5dc9589002bd5364ea60d751ffad6e57ce852449abd1de2f81adcb4"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "If it is possible to make only one meaningful English word with the second, the fourth, and the sixth letters of the word ATTEMPT, which of the following will be the first letter of that word? If no such word can be made give ‘X’ as the answer and if more than one such word can be made give ‘Y’ as the answer.",
+   "options": [
+    "T",
+    "E",
+    "P",
+    "X",
+    "Y"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "081f300fb7282d42bbbe34881712b5ac676efc6f9e7f8d2da556a992f10cba3c"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement and answer the question: 7 T @ 5 M D 9 X % V O $ 2 B ! 7 3 > 6 G & K 1 What is the sum of the numbers between ‘@’ and ‘$’ in the given arrangement?",
+   "options": [
+    "11",
+    "13",
+    "14",
+    "16",
+    "17"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3a823969f7608ef528fca9e9d93caf795890b124916cc9480e69b6566fe9f2d7"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "In the given arrangement, how many such symbols are there which are immediately followed by a number and immediately preceded by a letter?",
+   "options": [
+    "Four",
+    "Three",
+    "One",
+    "None",
+    "Two"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b1aec79d6867eb870edfd0bc8dcc3888c61949a33f59db73e596ddb89ab9840f"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "th If all the symbols are dropped from the arrangement then which element will be the 4 element to the nd left of the 2 element from the right end of the arrangement to form?",
+   "options": [
+    "2",
+    "B",
+    "3",
+    "7",
+    "O"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e003abfad081c98191d3b95d9db37913f3cac5f6b5f0b9db72c495fc7b74a707"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "In the given arrangement, how many numbers are there between ‘M’ and ‘!’?",
+   "options": [
+    "None",
+    "Four",
+    "One",
+    "Three",
+    "Two"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "496170f86ed273b20812b5cbcc190baa2119b8c8385bbeff3e2a5cd814ec42d0"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "th th In the given arrangement, which element is 8 to the right of the 5 element from the left end?",
+   "options": [
+    "2",
+    "$",
+    "O",
+    "V",
+    "%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c01c84a4d882670a7fefb15dc91e4feab641adc2cc07aa496a95be9f7e796fbe"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (92 × 18 ÷ 6 of 5 - 3) = ? - 25",
+   "options": [
+    "77. 2",
+    "75. 2",
+    "72. 2",
+    "70. 2",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "59de4e51258c2c95726dc733ed1836081f9d3d7ebcdf1c6863ec29ea3ec27157"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark '?' in the following question? 2 3 3 45 % of 620 - 32% of 975 + 8 = 4 - 3 - ?",
+   "options": [
+    "7",
+    "3",
+    "11",
+    "6",
+    "9"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7e52bdc53fce04100f0494a82e946917226a8ed4cdab459218dad104f1fa0560"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "Simplify: 1720 – 258 + 428 × 15",
+   "options": [
+    "245",
+    "587",
+    "6475",
+    "7882",
+    "7924"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c571552e44d8a015b791360deda5a97604df94d8d875882cb22f7747c5ec171f"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "find the value of 7 − 17 + 21 + 35 . 9 12 6 4 108",
+   "options": [
+    "12 146",
+    "9",
+    "189 12 209",
+    "18 418",
+    "18"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f0264884cccae7846e3b204b5102929e88b73dd37cfc9ca61a760d71e81da53f"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 3 2 ? 2 × 4 × 8 ÷ 16 = 2",
+   "options": [
+    "12",
+    "11",
+    "8",
+    "9",
+    "10"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "13f1150d2411c91fc9c4582928ef960fb40bf9d50729fe799298a64c6c8a7f64"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 25 × 40 + 20 ÷ ? = 1020",
+   "options": [
+    "2",
+    "3",
+    "10",
+    "12",
+    "1"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "66fc214f8a0ef4930805b5f3c99b665c5b1134f4ab46e4b387720effce535322"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 36% of 250 - 40% of 130 = 150% of (?) - 22",
+   "options": [
+    "69",
+    "30",
+    "40",
+    "20",
+    "60"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b28945af6f32e280e274c57d371cb8a8520ef637cd0cfad2d661ffb42da0b53d"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 68% of 720 + 41% of 390 = ?",
+   "options": [
+    "549.5",
+    "649.5",
+    "749.5",
+    "249.5",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5ced59aec4d8e6d14b5efac93f301591846e54d0483f2ab9b6b7ca9291aefa7e"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark (?) in the following question? 2 40% of 370 + 75% of 280 + ? ÷ 8 = (19)",
+   "options": [
+    "24",
+    "16",
+    "32",
+    "40",
+    "48"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "46b094fae012834469e458206ec2f48e2636b0b78bd6ed8eeee56e797fe6d167"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark? 1 500 of – {4 × (50 ÷ ?)} = 80 5",
+   "options": [
+    "20",
+    "30",
+    "10",
+    "40",
+    "50"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f83e14e8ce3ebd9fd57223428562d88eb98d525772e73fd08a9710877be6c612"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 3 (3 + 113 ) ÷ 2 + (20 × 5) = ?",
+   "options": [
+    "200",
+    "120",
+    "250",
+    "170",
+    "160"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "db1767d030f8653cfb3ee2adbd12b2764d3a36d6ff0bc58ebb2622f4cc0f99e6"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark ‘?’ in the following question? 18000 ÷ 6 ÷ 5 ÷ 4 ÷ 3 ÷ 2 = ?",
+   "options": [
+    "25",
+    "15",
+    "35",
+    "55",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c3df541d99f8c2b58e9a65753da1933b62707872b2cf85cb6f3979f21f30740a"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What value can come in place of the question mark (?) in the question below? (70% of 40) + (?% of 200) = (55% of 280) – 100",
+   "options": [
+    "12",
+    "10",
+    "13",
+    "15",
+    "16"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7eca1809158992f6b521f87279fad6277c645775c2c6499ea37081acb9f577a7"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 2 2 13 – 10 = ? + 20",
+   "options": [
+    "9",
+    "7",
+    "8",
+    "11",
+    "6"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22cf2576bced91b72fdf4c0720259b84ccd430ab7235b40a6e9e4a8c228975b3"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? (750 – 185 + 235 – 415) ÷ 11 = ?",
+   "options": [
+    "25",
+    "30",
+    "35",
+    "40",
+    "15"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "be5c9b9f9e4b2fc49a69fa09a3df4cd01b84889ffebceb864bc2db67123deda6"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "A box contains three colored marbles, such that the number of blue, yellow and grey marbles is 8, 7 and 5 respectively. Find the probability of picking two marbles, one being blue marble and the other being grey marble.",
+   "options": [
+    "13/19",
+    "7/19",
+    "5/12",
+    "4/19",
+    "3/19"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "32e11233d486be428979c7d6f11d91cefa01919221f897221acb4c4c7ba67ddf"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "P, Q and R together can complete a work in 10 days. P and Q together can complete the work in 20 days. Q and R together can complete the work in 15 days. Find the time taken by P and R together to complete the work.",
+   "options": [
+    "18 days",
+    "14 days",
+    "16 days",
+    "12 days",
+    "22 days"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d52dcc0f4e4664da5324952a99203c36056b9432bf4fe2e185a6883a8004f18e"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "The average of the 6 consecutive even numbers is 129. Find the fifth term of 6 consecutive odd numbers where the 1st term of 6 consecutive even numbers is 7 less than the first term of 6 consecutive odd numbers.",
+   "options": [
+    "134",
+    "144",
+    "124",
+    "139",
+    "129"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6674c5f142b9072da36afaf6ffe8c6fba5a6dd5c4315bfc25e7adf4e93b9d2fe"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "A, B, and C started a business with investments of Rs.2400, Rs.2000, and Rs.3000. After 6 months, B increased his investment by 25% while C decreased his investment by 20%. If the total profit after 1 year is Rs.9800, then find the profit share of C.",
+   "options": [
+    "Rs. 3550",
+    "Rs. 3750",
+    "Rs. 3600",
+    "Rs. 3700",
+    "Rs. 3800"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "774ab98bc71603b98deeb214d22e1a6fe2d99fdebd397169532bf0a95badef76"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "The time taken by two trains A and B to cross each other in opposite and same directions are in a ratio of 1: 4. Both trains can cross a pole in 8 seconds and the speed of train A is 90 km/hr. Find the length of train B.(provided that the speed of train A is more than the Speed of train B).",
+   "options": [
+    "125 m",
+    "135 m",
+    "130 m",
+    "120 m",
+    "150 m"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6aabc623fba2931e7a749944ce33942cb9052e07f34eea3761463a67c85693f9"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "If the breadth of the rectangle is 80% of the length of the rectangle.Perimeter of the rectangle is 54 cm. Find the area of the rectangle.",
+   "options": [
+    "185 cm²",
+    "180 cm²",
+    "175 cm²",
+    "150 cm²",
+    "170 cm²"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5b9b42442483b4158c56d79b549bd6f3a14ccf3a234cb610bf3dd10efb8a46c7"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "Three pips A, B, and C together can fill a tank in 8 hrs. The efficiency of pipe C is 20% less than pipe A's and pipe B's efficiency is 50% more than pipe C. Find the time pipe B requires to fill the tank.",
+   "options": [
+    "18 hours",
+    "20 hours",
+    "23 hours",
+    "22 hours",
+    "21 hours"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e17d3b3d4563aa871f7bc18bcfd39890be0983864f501e9739112ce173320011"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "Time taken by the bus to cover the 420 km distance is 7 hours more than the car. If the speed of the car is 10 kmph more than the bus then find the speed of the bus.",
+   "options": [
+    "12 kmph",
+    "15 kmph",
+    "20 kmph",
+    "25 kmph",
+    "10kmph"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f2606ea119197bf6f07606f072dc6f2d8e4808af72e3fc071227e47254ed57b1"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "An amount x receives Rs. 1344 as the simple interest for 3 years at 14% per annum and the same amounts to Rs. 2240 in the 5 years. Find the value of x.",
+   "options": [
+    "Rs.3600",
+    "Rs. 3700",
+    "Rs. 3200",
+    "Rs. 3900",
+    "Rs.3500"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "07b04416768949005fff745b7787b797dfadf43c948a7d60a3a1b51b0349453e"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Cost price to marked price of the article are in the ratio 2: 3.If the discount percentage of the article is 20% and the article profit earned by selling the article is Rs. 120.Find the cost price of the article.",
+   "options": [
+    "Rs.500",
+    "Rs.450",
+    "Rs.600",
+    "Rs.550",
+    "Rs.400"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9b3dfcc5af55743ff7879a2fdc9e62668b077a907d9773651c9ae926628d7811"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "A vessel consists of 200 litres which is 60% are milk and remaining are water now 50% of the mixture is removed and x litres of milk is added then the ratio of milk to water is 5: 2. Find the value of x.",
+   "options": [
+    "50 litres",
+    "55 litres",
+    "35 litres",
+    "40 litres",
+    "45 litres"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2bace5736eed6815c1a5c902e93ef3efaf5e49d492e11b84febad9544eb17a7f"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "A boat can row 180 km upstream , with the speed of still water in 30 kmph and the difference between time taken upstream and downstream is 2.5 hours. Find the speed of the stream.",
+   "options": [
+    "5 kmph",
+    "7 kmph",
+    "6 kmph",
+    "4 kmph",
+    "8 kmph"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e3ac57c9c949b0cdfc892eeb6864a382a1b1dd52f8a7e02219d211b50345e5e9"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "Number of literate to Illiterate are in the ratio 7: 6 and 80% of the males are literate and 60% of the females are Illiterate. if the number of Illiterate males are 240. Find the difference between the number of literate females and Illiterate males.",
+   "options": [
+    "160",
+    "130",
+    "140",
+    "100",
+    "120"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6da0f6260227ce6936841e4891132311fefcb6cf9e1a0c9b0b82793690e3f65f"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "A, B and C entered into the partnership with the amount of Rs. 5500, Rs. 6500 and Rs. 6750 respectively. After 8 months C left the business and at the end of the year the profit of A is Rs. 2200. Find the total profit earned by all A, B, and C.",
+   "options": [
+    "Rs.6540",
+    "Rs.6600",
+    "Rs.6120",
+    "Rs. 4420",
+    "Rs. 6580"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "035e4dcacc888fc66867c21360296957ba2960d727cbd5a40df74b7d4aff298e"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of present age of A to B is 5: 4. If the age of B after 6 years is equal to the present age of A. Average age of A, B and C is 30 then find the difference between the present age of A and the present age of C.",
+   "options": [
+    "14",
+    "10",
+    "6",
+    "8",
+    "12"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ececafa47da3c5eb33b5d1b906efc6df02d5cf7db53957fe89ed5f7604b40c4c"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The following bar graph shows the total number of professors teaching (History +Physics) and Number of Professors teaching Physics in four different colleges A, B, C and D. Number of professors teaching History in college C and D is approximately what percentage of the total number of teachers teaching physics in all the colleges.",
+   "options": [
+    "38%",
+    "42%",
+    "36%",
+    "56%",
+    "51%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1dec127070409a000227c8ad233a701b0a0c3f9bd3509b9146c92220be2a0465"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "If the number of professors teaching history in college A is increased by 25% and the number of professors teaching physics in college A is increased by 50% and the average number of professors teaching History, Physics and Maths in college A is 110. Find the number of professors teaching Math.",
+   "options": [
+    "111",
+    "151",
+    "131",
+    "181",
+    "121"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "82821bc000cea6ac26d244babbcf3870cb9e3baac0b17fa0ca94f1b3b4ff38ec"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "Average number of professors teaching History in college A,B,C,D and E is 62 and the average number of professors teaching Physics in College A, B, C, D and E is 70. Find the Total number of professors teaching Physics and History in college E.",
+   "options": [
+    "161",
+    "151",
+    "142",
+    "132",
+    "149"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8747707c7faba1d7d51d5e2d7c92ee6c61c6150127f9c475ba6d158cfeb557c9"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between 1/6 of the number of professors teaching History in college C and 1/8 th of the number of professors teaching physics in college D.",
+   "options": [
+    "7",
+    "5",
+    "3",
+    "4",
+    "6"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e77a81e36454142bd9a3880a341be9edef47bc5a3135a12494be0892e70449e2"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "If the number of professors teaching History in College A is 4 more than the number of professors teaching English in college A and the number of professors teaching English in college B is 75% of the number of professors teaching history in college B. Find the number of persons teaching English in College A and College B.",
+   "options": [
+    "154",
+    "124",
+    "114",
+    "134",
+    "164"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0e5835b503104f7bd74515ea710f2dac298f8e9f1909e175e864910ea551a512"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Read the passage and answer the following questions. India is a land of great tourism potential. From Kashmir to Kanyakumari, from Arunachal Pradesh to Gujarat, every region has its own uniqueness and flavour. Be it cold/hot deserts (Ladakh/Rajasthan), rivers (Ganges and Brahmaputra), forests (Niligiri & North East) or islands (Andaman and Nicobar), each landform is bound to mesmerize tourists. Moreover, the wide variety in the landscape offers a range of choices to tourists from within India and abroad. In October 2017, the Union Ministry of Tourism in collaboration with other central ministries, state governments and stakeholders successfully organized “Paryatan Parv” across the country. The 21-day program was organized with the objective of drawing focus on the benefits of tourism, showcasing the cultural diversity of the country and reinforcing the principle of “Tourism for All”. India’s tourism sector witnessed a growth of 4.5 per cent in terms of foreign tourist arrivals (FTAs) with 8.2 million arrivals in 2015, and a growth of 4.1 per cent in foreign exchange earnings (FEEs) of USD 21.1 billion. However, tourism-associated economic and social infrastructure – hotels, connectivity, human resources, hygiene, health facilities, etc are largely under-developed in India. The poor quality of infrastructure is reflected in India’s 112th rank in the ICT readiness component and 104th rank in the health and hygiene components of the WEF’s Travel and Tourism Competitiveness Index 2017. The safety and security of tourists, especially of foreign tourists, is a major roadblock to tourism development. Attacks on foreign nationals, especially on women, raise questions about India’s ability to welcome tourists from far away countries. A majority of the tourist spots in the country are not accessible to poor, women and elderly. This is because of the high costs of travelling, poor connectivity and a series of permissions required for various reasons. Tourism not only creates jobs in the tertiary sector but also encourages growth in the primary and secondary sectors of industry. Hence, it is high time, the government encourages the participation of the private sector in a big way for the all-round development of the tourism sector that has the potential to act as the key driver of inclusive growth. What does the word 'encourages' mean?",
+   "options": [
+    "causes (someone) to lose confidence or enthusiasm.",
+    "prevents or tries to prevent (something) by showing disapproval or creating difficulties",
+    "gives support, confidence, or hope to (someone).",
+    "care taken to avoid danger or mistakes.",
+    "advice, especially that given formally."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5acbde0c5b8fdc047a91cbf906dce4b97a12bc8980d46453fc0162ab08ac436e"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "What does the word 'potential' mean in the context?",
+   "options": [
+    "the possibility of something happening in the future.",
+    "an inherent mental or physical power.",
+    "not having been developed.",
+    "having great power, influence, or effect.",
+    "lacking the power to perform physically demanding tasks."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bd97ba1abe50ecf5a562ed14ca1be6f15f273a17a891843b903adb76539a1626"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "What was the focus of the 'Paryatan Parv?'",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all of these",
+    "none of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "364aa9e3c48dd9a7a76818df5596b280095bc224b081eb2b7182385f6bda671f"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Which program was organized to draw focus towards the benefits of tourism?",
+   "options": [
+    "Tourism for All",
+    "Swach Bharat",
+    "Kehlo India",
+    "Paryatan Parv",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0d31c2af465d3b1ac36b674defeb765b4d16886aef2012a21164df7b406802d0"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "How many foreign tourist arrivals (FTA) were recorded in 2015?",
+   "options": [
+    "1.1 billion",
+    "8.2 million",
+    "21.1 million",
+    "8.2. billion",
+    "21.1 billion"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1ba2029744e52dc2cf48409cd748c1e413f8d2eda735dc1dbbc63d5aa3b437ec"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "Which of the following statements is true as per the passage?",
+   "options": [
+    "all except 1",
+    "all except 2",
+    "all except 3",
+    "all of these",
+    "none of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "00396a75dc6f8fcda32860191a7414fb220fe0019ca7d1d4576ba23db2b999c7"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "What are the challenges faced by the Indian tourism industry?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all of these",
+    "none of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0af2933d4bc1a74a93807da803232ad2f9d5c5a13b14dc08aeddbffdc4f186bd"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "What does the word 'collaboration' mean?",
+   "options": [
+    "the refusal to accept or comply with something.",
+    "unwilling to help others or do what they ask.",
+    "the ability not to be affected by something, especially adversely.",
+    "the action of working with someone to produce something.",
+    "deliberately unhelpful."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0c3507dbe46d8219db8f633cc9830f19f179f7eef0c1217a39e19f9212e0e689"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Which of the following statements is true as per the passage?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all of these",
+    "none of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d2131749f0188948e04c4646e74b131f42fb49d99aeea5abbb0589c4bf063fef"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "What is India's rank in terms of health and hygiene in WEF's Travel and Tourism Competitiveness Index 2017?",
+   "options": [
+    "104th",
+    "114th",
+    "122th",
+    "100th",
+    "14th"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b41478ca960fa24d19b52fc5dc6e28c0dffec9a58cce3beff1a9d654382d1601"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. devastated an already B. the lockdown C. a lot of suffering D. fragile economy E. and caused",
+   "options": [
+    "CEDAB",
+    "BADEC",
+    "BECAD",
+    "CDEBA",
+    "CDABE"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1b4fdf858afed43829c58cb2c5770876529879aa8bb5b1a77d81274827656d34"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. on a large scale is B. calculating the key parameters C. mapping the sky D. of cosmic expansion E. crucial for",
+   "options": [
+    "CEDBA",
+    "BACED",
+    "DBCAE",
+    "DABCE",
+    "CAEBD"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f0dfd77e1d942be255b8be836fa98f74bc4179debf8812a2c6f2505e5d541072"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. though the pressures of B. the havoc caused by C. the lockdown have D. begun to ease up E. the coronavirus continues unabated",
+   "options": [
+    "BEACD",
+    "BECAD",
+    "ABECD",
+    "ABCED",
+    "DEABC"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7b587fe4810fe2239fd9b9152584e1dd78129e6c7704e0989e93b34637faa801"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Directions: Given below are five scattered segments of a sentence. Indicate the correct sequence which correctly assembles the segments and completes the sentence. A. limited government health spending B. to bankruptcy, decreased treatment satisfaction, C. the financial burden of lifelong treatment D. and poor quality of life, exacerbated by E. for non-communicable diseases often leads",
+   "options": [
+    "ADCEB",
+    "BACDE",
+    "BDACE",
+    "CEBDA",
+    "EBDAC"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9c575b32489bb1a94609fcf936508edde5bb6de54a9c22b08a6643d97102d1ce"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: Fill in the blanks in the passage below, with the word from among the options given for each blank labeled (A) to (E). Choose the word that fits in each blank most appropriately in the context of the passage. Banking institutions play a crucial role in the ____A____ system by providing a range of financial services to individuals and businesses. One of the key functions of banks is to accept ____B_____from customers and offer them interest on their deposits. Banks also lend money to borrowers, charging them _____C___on the loans provided. In addition, banks facilitate electronic ___D_____and enable customers to make payments and transfers easily. Lastly, banks play a significant role in managing risk by offering ____E______ services to protect against potential losses. Select The most appropriate option to fill in blank A.",
+   "options": [
+    "economic",
+    "educational",
+    "environmental",
+    "entertainment",
+    "exploration"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ef7609b1f2761cd357fd956441ac12a25d628454eb9fc136b03ed363362e7a26"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank B.",
+   "options": [
+    "deposits",
+    "withdrawals",
+    "invoices",
+    "statements",
+    "receipts"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0486cfaf3b58f926f29abcb618a095e4a609f7dbde47233f8f67d5cacdbceb4a"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank C.",
+   "options": [
+    "profit",
+    "interest",
+    "penalties",
+    "taxes",
+    "dividends"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e79fd63e5690d8bdeb4fd4c7393deb2de5157eea463a5a51ed2587be4b132d16"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank D.",
+   "options": [
+    "transactions",
+    "negotiations",
+    "resolutions",
+    "predictions",
+    "interventions"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e53bce5f0b07abd762211391faa59a6d6218818fb3a8aa506090b9441f919a46"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank E.",
+   "options": [
+    "insurance",
+    "advertising",
+    "counseling",
+    "auditing",
+    "marketing"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ce76b1d23433007e726d0e55a3f20c62dada5e53098945ea4efccaab7f913f12"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. The former cricketer (A)/ visit recently an orphanage (B)/ fueling speculation that (C)/ he is planning to adopt a child in his area. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7f0cb9f3ec6f9d635b23516db8ae24c6d7f9904f0ed415176c2031c9fcdce593"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. The children neither wanted (A)/ to go back home early (B)/ from vacation or to miss (C)/ their adventures planned for the trip. (D)/ No Error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5d7366721669c7ba4e4e366dbed20475568dd67556666e32b053ed926b681d98"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. The team of researchers from Australia (A)/ are working tirelessly (B)/ to uncover the mysteries (C)/ of the ancient civilization. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "360e11771f8c0e9968a70026b1b6447843a7125a5769f4f1465d971e3d53b3bb"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. The company's annual profits have rose (A)/ significantly since (B)/ the new CEO took over (C)/ last year in April. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a62a1c0bf696f5b7a77a567b81bffd2f14b835bbd3cc8aff7af5d102084baca5"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DISCOUNT A. They find it difficult to discount the smashing victory he finally attained in Tunisia. B. You will have to discount for the disappearance of the money. C. They usually give you a discount if you buy multiple copies.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both A and C",
+    "Only C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "de5fd40b54a8d755580bf348166ba5804d1f7001abea53e4938ce0f821722a71"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. OBJECT A. The thought of working nights fills me with object horror. B. The object of the game is to improve children's math skills. C. Working people everywhere object to paying taxes.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fbb2bd5551595e9f8310371811363d39374fa52c3b43896abe3c1dc7050a89a6"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Directions: Given below is a word, followed by three sentences that consist of that word. Identify the sentence(s) that express(es) the meaning of the word. DESERT A. They rejoined the group as Sarah passed out desert and coffee. B. The geological prospecting team ranged over the desert in search of valuable deposits of oil. C. His life in the regiment had been such a hell that he decided to desert.",
+   "options": [
+    "Only A",
+    "Both A and B",
+    "Only B",
+    "Both B and C",
+    "Only C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4e5de27d8f730fd47e2ee77b207bfcfcadc28484f34ad9934888187373d6fb8f"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Direction: There are two blanks in the sentence given below. From the pair of words given in the options, choose the one that fits into the blanks most appropriately. ______ of education holds the key for development, for with it will come better governance, lesser inequality and a better ______ of life.",
+   "options": [
+    "Proliferation, quality",
+    "Widespread, status",
+    "Recognition, rank",
+    "Prosperity, alteration",
+    "Burgeon, knowledge"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7354d32ca957eee47ae10c9337b1e4f58d4a5d8e71e7ade07d5ee7f110577d8d"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Direction: Choose the correct alternative which fits both the blanks and makes the sentence contextually and meaningfully correct. In the last two and half years, the world has _______ two major shocks- the COVID-19 pandemic and the conflict in Ukraine. These shocks have produced _______ impact on the global economy.",
+   "options": [
+    "Noted; Intellectual",
+    "Witnessed; Profound",
+    "Behold; Scholarly",
+    "Attended; Sagacious",
+    "Validated; Erudite"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "06898ce3210fdeb7f7ec65b5c13e21f79c3b50d7b3b9b26105f0a67cd6707139"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Direction: Choose the correct alternative which fits both the blanks and makes the sentence contextually and meaningfully correct. The Reserve Bank of India, chiefly known as RBI, is India’s central bank and regulatory body responsible for __________ of the Indian banking system. It is under the ___________ of Ministry of Finance, Government of India.",
+   "options": [
+    "Distribution; Sponsorship",
+    "Regulation; Sponsorship",
+    "Distribution; Ownership",
+    "Regulation; Ownership",
+    "None of these."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e0b36e1efb9348e36c3a43e14bb1849b0e870e40155e1fdd580509d2540362d0"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "Direction: Choose the correct alternative which fits both the blanks and makes the sentence contextually and meaningfully correct. WHO is the United Nations agency that _______ nations, partners and people to promote health and keep the world safe. It also _____ the vulnerable-so everyone, everywhere can attain the highest level of health.",
+   "options": [
+    "Joins; Provides",
+    "Dissociates; Caters",
+    "Connects; Serves",
+    "Connects; Provides",
+    "Connects; Caters"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c500001e1e3fdfefa0e6c8bfb01dc3dd30b13b0236121458284bdcf50ecfc6bc"
+  }
+ ],
+ "section_confidence": 0.942,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

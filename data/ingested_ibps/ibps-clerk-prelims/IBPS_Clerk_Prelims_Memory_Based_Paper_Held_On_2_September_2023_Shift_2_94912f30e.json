@@ -1,0 +1,1502 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_On_2_September_2023_Shift_2__94912f30edc7c5d7e8cc5e8f8097a730.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "empty_or_short_stem": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the questions that follow. There are eight people P, Q, R, S, T, U, V, and W who lives in an eight-floor apartment but not necessarily in the same order. The lowermost floor is numbered 1, the floor immediately above 1 is numbered 2, and so on. The number of people living between Q and U is the same as the number of people between U and P. Q lives below U but not immediately. Only one person lives between R and P who lives immediately below T. V lives on the odd numbered floor but not on the lowermost floor. Only two person lives between R and S. S lives on the odd-numbered floor below the sixth floor. Who Lives on fifth floor?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "54a7943f7499353e84bdfc7a13608217d7c38a96fe16cb6da80fadcea87ef8a1"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the questions that follow. There are eight people P, Q, R, S, T, U, V, and W who lives in an eight-floor apartment but not necessarily in the same order. The lowermost floor is numbered 1, the floor immediately above 1 is numbered 2, and so on. The number of people living between Q and U is the same as the number of people between U and P. Q lives below U but not immediately. Only one person lives between R and P who lives immediately below T. V lives on the odd numbered floor but not on the lowermost floor. Only two person lives between R and S. S lives on the odd-numbered floor below the sixth floor.\n\nHow many person lives between P and W?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "0"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9afa6bfd71f533645a7592d060cbcbd9ad634825f77c9e1483f5e20de964174c"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the questions that follow. There are eight people P, Q, R, S, T, U, V, and W who lives in an eight-floor apartment but not necessarily in the same order. The lowermost floor is numbered 1, the floor immediately above 1 is numbered 2, and so on. The number of people living between Q and U is the same as the number of people between U and P. Q lives below U but not immediately. Only one person lives between R and P who lives immediately below T. V lives on the odd numbered floor but not on the lowermost floor. Only two person lives between R and S. S lives on the odd-numbered floor below the sixth floor.\n\nWho lives on the lowermost floor?",
+   "options": [
+    "W",
+    "P",
+    "Q",
+    "R",
+    "S"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c49c9da81d81517b1cc6306bf69c786044fd5648f7ef191bb27a071275f2a18d"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "If all the persons are arranged alphabetically from bottom to top then how many persons remains on same floor?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "97624c4208a640b3f1e9ad2a5ca5afe73d9ef4eab50a9af383cf124ec22a59e7"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their arrangement find the one which does not belong to that group?",
+   "options": [
+    "Q",
+    "U",
+    "P",
+    "T",
+    "R"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "764cc1dcb77d486a85c5dc0fcc90a7cb7fad8f5291ba1d7a09bf5a14862f801a"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of digits are there in the number ‘15769843’, each of which has as many digits between them in the number (both forward and backward direction only) as they have between them in the Numeric Series?",
+   "options": [
+    "Four",
+    "Five",
+    "Two",
+    "Three",
+    "More than five"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "31587faf3ecfa30a9d8ea94c63589c2411234f5f9f8eaa3a16e9520c913a4c7b"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Select the odd letters from the given alternatives.",
+   "options": [
+    "JBEC",
+    "SJCF",
+    "MDHA",
+    "ZOFE",
+    "YGQB"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "93b7a4207882d394e186b44abec1467910cb69319dee035c48705ede6794f14e"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the question that follows. There are seven persons, A, B, C, D, E, F and G have different heights and weights. A is taller than C but not heavier than B, E is heavier than B but not as much heavy as G, C is heaviest, D is second tallest and also heavier than G, G is taller than E but not as much tall as F, B is taller than E but shorter than G, A is shorter than E but heavier than F. How many persons are taller than E?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "21ea9aa90894528e01d269f39c40116247b0568445acdd60dc11b769bf891879"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the question that follows. There are seven persons, A, B, C, D, E, F and G have different heights and weights. A is taller than C but not heavier than B, E is heavier than B but not as much heavy as G, C is heaviest, D is second tallest and also heavier than G, G is taller than E but not as much tall as F, B is taller than E but shorter than G, A is shorter than E but heavier than F.\n\nHow many persons are heavier than B?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "No One"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3a6b17235f21d9c126c8dc1f0232d9d9b90600bbcb3c27e8acfdce3e0c4d9271"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the question that follows. There are seven persons, A, B, C, D, E, F and G have different heights and weights. A is taller than C but not heavier than B, E is heavier than B but not as much heavy as G, C is heaviest, D is second tallest and also heavier than G, G is taller than E but not as much tall as F, B is taller than E but shorter than G, A is shorter than E but heavier than F.\n\nWho is heavier than D?",
+   "options": [
+    "F",
+    "B",
+    "E",
+    "C",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "21b4090fa4209637c6ebcad3d101de003b7231267c8d5bc1f5ef7df09b58d8d7"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "If it’s possible to make a meaningful word from the 2nd, 4th, 7th, and 8th letters of the word 'EMPANELS', then which will be the last letter of the word? Mark ‘X’ if no such word can be formed, ‘Z’ if more than 1 such word can be formed.",
+   "options": [
+    "M",
+    "Z",
+    "X",
+    "A",
+    "S"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "21bd14e305eedddf9aac05e25d1938e4ded75b0db69c1f0dd6bfd1454855efa3"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the given information carefully and answer the questions followed by it. Eight boxes, A, B, C, D, E, F, G, and H are arranged (but not in the given order) in a stacked manner in such a way that the box which is at the bottommost position is numbered 1 and the one which is at the topmost position is numbered 8. F is not below A. There are 3 boxes between E and A. G is at the fifth position. G is placed below C but above D. Neither E nor A is placed at the bottommost or the topmost position. At least three boxes are there above F. B is at the lowest position. Two boxes are there between A and H. E is placed above A. Which box is at the topmost position?",
+   "options": [
+    "H",
+    "C",
+    "D",
+    "Either H or C",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "26a6294fbbfb790f64b624583be68472d19aa928f217e46db5df5131cfc2002f"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the given information carefully and answer the questions followed by it. Eight boxes, A, B, C, D, E, F, G, and H are arranged (but not in the given order) in a stacked manner in such a way that the box which is at the bottommost position is numbered 1 and the one which is at the topmost position is numbered 8. F is not below A. There are 3 boxes between E and A. G is at the fifth position. G is placed below C but above D. Neither E nor A is placed at the bottommost or the topmost position. At least three boxes are there above F. B is at the lowest position. Two boxes are there between A and H. E is placed above A.\n\nHow many boxes are placed between F and A?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "None",
+    "4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "706e38da63059b3384b9045c205fccbe54bd48977e53756b2594c83ee459f727"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "If we interchange the box at position 1 with position 2, box at position 3 with 4, box at position 5 with 6 and box at 7 with 8, how many boxes will be there between B and H?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "26d7109247d16f3ac970ca1b4b20bd67b8fb27515c6e24f12937cba017979d15"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "How many boxes will be at the same place if we rearrange all the boxes in alphabetical order starting with box A at the lowermost position?",
+   "options": [
+    "None",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ae25301f59e492d7c302202be89d9f2d72f8521be58314af778d263387c70850"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Four of the following are alike in a certain way and so form a group. Which of the following does not belong to that group?",
+   "options": [
+    "H",
+    "D",
+    "A",
+    "C",
+    "F"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1b07a221e9496f10749c6accf14a0dd3132768bf15a2d12d3e85cd95911b4911"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: V @ 2 3 K 6 # P % S 1 7 & * G I © 5 9 8 $ Y D A € 4 ¥ Z B O How many such vowels are there in the above arrangement each of which is immediately preceded by a consonant and followed by a symbol?",
+   "options": [
+    "Three",
+    "Five",
+    "None",
+    "Two",
+    "One"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1e282b8dfe467defcde5e45f4bf921b5c3233b9072e420d0c83cb7afae9a84bd"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+   "options": [
+    "V3@",
+    "YD€",
+    "6%#",
+    "1*7",
+    "I9©"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "29d0b47f04cec0e68b860c344378d8e0178537dd6c0267a1fff51f8a35e868b6"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "Which of the following is the seventh to the left of the sixteenth element from the right end of the above arrangement?",
+   "options": [
+    "@",
+    "€",
+    "P",
+    "1",
+    "I"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "88855e9d9bb23dc980d7aa99b73ce28a2f358c2f90e65de3cc28901b1a9c896c"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "If all the numbers in the above arrangement are dropped, then which of the following will be the thirteenth from the left end?",
+   "options": [
+    "@",
+    "€",
+    "%",
+    "1",
+    "$"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "19b637c4ef65340f201f20485685dceedae002d27ace3739d95b3d800ae2c325"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+   "options": [
+    "2@V",
+    "P#6",
+    "5©I",
+    "9$Y",
+    "Z¥4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ec0cdfe7375593fb6a61c44ae86db16b3c9d6af2e5e02b6be87ea89a3ab7358e"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the questions given below: A certain number of persons are sitting in a single line. All are facing to North. Z sits third to the left of X. Four persons are sitting between C and V, who is an immediate neighbor of Z. B sits second from the extreme end. There are as many persons sitting between B and N as between N and M. L sits fourth to the left of M. C sits immediate right of B. N is an immediate neighbor of V. O, who is 4th from an extreme end, sits exactly between X and M. As many persons sit between Z and __ as between O and __.",
+   "options": [
+    "V",
+    "N",
+    "X",
+    "L",
+    "An uncertain person"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "48be37c05feed3104cbfb85b611d154379ff7bdbc08c5da17ff4770de0344db8"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "If A sits exactly between Z and C, then which of the following statements is/are true with respect to the final arrangement?",
+   "options": [
+    "L sits to the seventh to the left of A.",
+    "Only three persons sit between A and B.",
+    "N sits fourth to the right of A.",
+    "Both 1) and 2)",
+    "Both 1) and 3)"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "794968525872890e66c95b2957efd0de6d22e0f39796ac10b2ece8ea0ea36164"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "How many persons are sitting between Z and M?",
+   "options": [
+    "Six",
+    "Eight",
+    "Five",
+    "Seven",
+    "Nine"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3bd1d4707b1d7cdf0a2334a4c653f5944ddc7f45d4c064876f29ae3d89c0c1ee"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "How many persons are sitting in the row?",
+   "options": [
+    "19",
+    "13",
+    "15",
+    "16",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cf13025554d27b74d9539d4d28d45921c6711763eec0bc40ae6ec81238afa081"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: K < L = M ≥ N; O < P ≥ N = Q Conclusion: I. M > O II. K > N",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "80a83cfca7a0408e43d13de9deb9842430359df1e24a4331616869fb22497467"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A > B ≥ C ≥ D; D = E < F = G ≤ H Conclusion: I. D ≤ F II. A < H",
+   "options": [
+    "Only I follow",
+    "Either I or II follows",
+    "Only II follow",
+    "Both I and II follow",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "78d12de9919d76b7ff200bc30b6eb3fde8692c9738a99672d800e1714f3b6cbf"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: Y ≥ R < E; R > P ≥ C = A Conclusions: I. Y > A II. E ≥ C",
+   "options": [
+    "Only I is True",
+    "Neither I nor II is True",
+    "Both I and II are True",
+    "Either I or II is True",
+    "Only II is True"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2949b7de92c19a6bdb7a12fe6655ee6783947228a14b315cd8acb0a03b88343b"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question, assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: S ≤ T < U; V ≥ W; U > V Conclusions: I. V < T II. V ≥ T",
+   "options": [
+    "None is True",
+    "Both I and II are True",
+    "Only II is True",
+    "Only I is True",
+    "Either I or II is True"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "01dbb18dbf06bff8ac5226914e77128ee6ae9b5655ed27b82360d0d1cddfafd0"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the questions that follow. There are 8 people viz, A, B, C, D, E, F, G and H are sitting around a square table. Some of them are facing inside and some are facing outside. Four of them are sitting in the corner and four of them are sitting in the middle. rd A sits 3 to the left of B, who faces outside. B sits in one corner. The one who sits opposite A faces inside. D rd and F face inside. H sits 3 to the left of F. E and G are neighbours of A. The one who sits opposite B faces away from the centre. The neighbours of D are facing the opposite directions (If one of the neighbours of D is facing outside, the other one is facing inside). G and F are facing the opposite direction. F is a neighbour of B and sits rd opposite D. G is sitting 3 to the right of C. Who is sitting to the immediate left of E?",
+   "options": [
+    "H",
+    "F",
+    "D",
+    "A",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "97aadaaceed195ed9eaf09d757646a402e887c30c113735f632a409e48b1469b"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the questions that follow. There are 8 people viz, A, B, C, D, E, F, G and H are sitting around a square table. Some of them are facing inside and some are facing outside. Four of them are sitting in the corner and four of them are sitting in the middle. rd A sits 3 to the left of B, who faces outside. B sits in one corner. The one who sits opposite A faces inside. D rd and F face inside. H sits 3 to the left of F. E and G are neighbours of A. The one who sits opposite B faces away from the centre. The neighbours of D are facing the opposite directions (If one of the neighbours of D is facing outside, the other one is facing inside). G and F are facing the opposite direction. F is a neighbour of B and sits rd opposite D. G is sitting 3 to the right of C.\n\nWho is sitting opposite to A?",
+   "options": [
+    "H",
+    "B",
+    "F",
+    "C",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d94e953b45ffc482bef5e2c3fa56222aa246f67dd809510e73f37900f8a8efcd"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the questions that follow. There are 8 people viz, A, B, C, D, E, F, G and H are sitting around a square table. Some of them are facing inside and some are facing outside. Four of them are sitting in the corner and four of them are sitting in the middle. rd A sits 3 to the left of B, who faces outside. B sits in one corner. The one who sits opposite A faces inside. D rd and F face inside. H sits 3 to the left of F. E and G are neighbours of A. The one who sits opposite B faces away from the centre. The neighbours of D are facing the opposite directions (If one of the neighbours of D is facing outside, the other one is facing inside). G and F are facing the opposite direction. F is a neighbour of B and sits rd opposite D. G is sitting 3 to the right of C.\n\nHow many people are facing inside?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "Cannot be determined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "eb213b3c0b3eeee957524bb50847971e875839123758488e501adb2e0af98845"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "nd Who is sitting 2 to the right of the person, who is sitting opposite to G?",
+   "options": [
+    "B",
+    "F",
+    "E",
+    "H",
+    "A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c59f8e904c2f9f745fe94d39f9e0cfeafb1e679e9e45f7d6384271f3dd71e498"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "rd If G and B interchange their position then who will sit 3 to the left of B?",
+   "options": [
+    "D",
+    "C",
+    "A",
+    "H",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a9f7bbe848f208fc981472ccd7395b477d5b019137ce0daab552e3687a21778f"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The following bar graph shows the marks scored by two persons A and B in three different subjects, Psychology, Maths and History. Marks scored by person A in history is what percentage of the total marks secured by B in given three subjects.",
+   "options": [
+    "34.87%",
+    "31.67%",
+    "30.78%",
+    "28.26%",
+    "22.89%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3fa02be81a2729eab2b700cf5e7abb464323a410c19c6c316bbe0dc7e39fd7c3"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the 5/17 of the sum of the marks scored by person B in Psychology and History and 3/5 of the sum of the marks scored by person A in Psychology and History.",
+   "options": [
+    "47",
+    "51",
+    "31",
+    "41",
+    "37"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c7337ae888827de30d95ca5cf8917b81ff32fc6f041f385e58805b834d83a05d"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between marks scored by B in Maths and Psychology to the mark scored by A in Maths and History.",
+   "options": [
+    "17: 18",
+    "15: 19",
+    "15: 16",
+    "12: 13",
+    "14: 15"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "deb9e5f3d909740c329d2911b23df20cfc95f036159e8b95a612e3431685d9b3"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "Marks scored by person B in history is 25% of the total marks secured in exam by person B including physics then find marks scored by person B in physics in how much more or less than marks scored person B in Maths.",
+   "options": [
+    "45",
+    "25",
+    "30",
+    "35",
+    "40"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "107286646a5aca5c76157ca0e19385cd15a3e66008c56c5a416b6cee2dbafdef"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "Marks scored by person A in psychology is 10 more than the marks scored by person A in chemistry and the marks scored by person B in chemistry is 20% more than marks scored by A in chemistry then find marks scored by B in chemistry.",
+   "options": [
+    "78",
+    "72",
+    "74",
+    "66",
+    "68"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c0d08d3f099d503be981874f01d9f278b1d553b1743ff2bdfa14f52b4438b78c"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 6, 3, 3, 4.5, 9, ?",
+   "options": [
+    "18",
+    "27",
+    "22.5",
+    "36.5",
+    "18.5"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "73aade2fceb57aeb33d2eb01be6d92d39018047ecf2778eda9becb4287f5a4be"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 7776, 1296, 216, 36, ?",
+   "options": [
+    "6",
+    "4",
+    "9",
+    "12",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0cd40a49317e18643463d60b7eb02effe433d7e8a614ccd378174ce6542b50aa"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 50, 51, 55, ?, 80, 105",
+   "options": [
+    "51",
+    "47",
+    "56",
+    "64",
+    "67"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "897ff68ebcfce61f863e6e48d7170b728372cf700c3df07c010e2bca833bf90b"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 676, 729, 784, 841, ?",
+   "options": [
+    "900",
+    "961",
+    "909",
+    "987",
+    "1000"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0e4a6c78b48d394c51db4383b40a8b3fa2803b32ed2db0d86f69258046ce0813"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "A series is given, with one term missing. Choose the correct option from the given ones below that will complete the series 12, 6, 6, 9, 18, 45, ?",
+   "options": [
+    "115",
+    "130",
+    "125",
+    "135",
+    "144"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2b8d3c8e22de903102dcfb69ac116e82c7c0d91b0b5c3bf26575710a08176677"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "A mixture containing 60 liters contains milk and water in the ratio of 3: 2. If 1/3 rd of 50% of the mixture is withdrawn and replaced with the x litres of water now the water in the container is 10 more than the milk. Find the value of x.",
+   "options": [
+    "35",
+    "40",
+    "20",
+    "25",
+    "30"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f19924ab0e9e563a8434266a0c541f39ddfb02af530be05d7ea5af833b01e103"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "Perimeter of the circle is 120 cm , if the side of the square is 70% of the radius of the circle then find the perimeter of the square. (Use π = 3)",
+   "options": [
+    "60 cm",
+    "48 cm",
+    "52 cm",
+    "56 cm",
+    "44 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2abde4400664d6bba580379addea626c10ce0314dd7daff9e41c113d684613f7"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "Average speed of upstream and downstream speed of the boat is 28 kmph. If the speed of the boat is 4 times the speed of the stream in still water. If the total time taken by the boat to upstream and downstream is 8 hours Find the distance traveled by boat upstream.",
+   "options": [
+    "145 km",
+    "105 km",
+    "135 km",
+    "125 km",
+    "115 km"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7d600ea21ecf78ac5a345f62e473a2f285d3e980b06f7deb715ec3908b0eb19b"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "A, B and C started a business with an investment of Rs. 7500, Rs. 12500 and Rs. 13500. After 8 months A left and B and C continued till the end of the year. If profit of C is Rs. 2000 more than B. Then find the profit share of A.",
+   "options": [
+    "Rs. 15000",
+    "Rs. 12500",
+    "Rs. 14000",
+    "Rs. 10000",
+    "Rs. 12000"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "330493b3a0cd5b436c60224849191e47ad8c572e1fa139130af015169d08e567"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "A, B and C alone can complete the whole work in 10 days, 15 days and 20 days respectively. If A and B started the work together for 2 days and left the work, then C and D together can complete the remaining work in 5 days. Find the time taken by D alone to complete the whole work.",
+   "options": [
+    "10 days",
+    "15 days",
+    "14 days",
+    "12 days",
+    "16 days"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ec0a2a22b4392b35a9866b4f8e48946877088bb8416e6b5ddb49f2a7576946ce"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "Age of person A and B are in the ratio 4: 7. The age of C after 6 years is equal to the present age of A. If the average A, B and C is 28 years . Find the age of person A after 6 years.",
+   "options": [
+    "40",
+    "30",
+    "28",
+    "32",
+    "36"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "52cb6fceb131718dc2fafc9d2ba64f5fb793c6e876b2057cc86d85b29f7f0bcc"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "Person A has invested a certain amount at 30% p.a. CI. After 2 years, the interest earned is Rs. 1690.5. Find the sum of money invested.",
+   "options": [
+    "Rs. 2750",
+    "Rs. 2850",
+    "Rs. 2250",
+    "Rs. 2450",
+    "Rs. 2350"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "91edd3f47d48f0d410a2918142e94b7247b718ca853c29f284eb5b0e1f81d676"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "Car A traveling from point P to Q with the speed of with the speed of 30 kmph and return back with the speed of x kmph If, the average speed of the whole journey is 360/11 kmph. Find the distance traveled by car if they travel with the speed of x kmph in 4 hours.",
+   "options": [
+    "120 km",
+    "132 km",
+    "121 km",
+    "144 km",
+    "160 km"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ec8f7f56fac941f5bc222013165310e038b627b6305294b6b29bff1d7131d030"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "In a class consists of x students and their average weight is 44. If the person whose weight is 64 kg is replaced by a person whose weight is 72 kg then the average increases by 0.25, then find the value of x.",
+   "options": [
+    "58",
+    "40",
+    "32",
+    "36",
+    "42"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6aaafb2907fcc37837a1e737d9c89fd0e45f61f77fc4263bf018b35ac44c99f6"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "Sum of two numbers is 150. One-fourth of one number exceeds the one-fifth of the other number by 6. Find the larger number.",
+   "options": [
+    "90",
+    "75",
+    "80",
+    "60",
+    "70"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "804a3e7c51c9779b911fef1a73a1c37a73d5df09e0c4b02ffe800ba1413c5b0f"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 32% of 150 + 50 = ? - 52 - 12.5% of 40",
+   "options": [
+    "155",
+    "125",
+    "145",
+    "165",
+    "135"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7b6c85ac8bb3edb504ebaf2771f96a1481301961b24d53aca82bd400508295bc"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ? in the following question ? 12.5% of (1120÷20) +25% of (1320÷30) = ?",
+   "options": [
+    "28",
+    "18",
+    "39",
+    "48",
+    "35"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aa9f8a166fd2a9e15c6292ade7451637621f888059728f636cd91c6a0902a807"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of '?' in the following question? 3 80 × 10% + 40 × 160 ÷ 4 of 4 = ? + 50",
+   "options": [
+    "-11",
+    "-17",
+    "7",
+    "3",
+    "11"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b108793814763c2a00f50da5e6cef13352dc799b6f5997199106f2d25c0e10b0"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "Simplify: 23 × 15 - 60 + 248 ÷ 31",
+   "options": [
+    "213",
+    "245",
+    "293",
+    "315",
+    "384"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7d0576839462b3566123cd4bd0ab818419b2730e2a8f62fba4a30fe0fd0d9b8b"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following question? 2 2 2 6 + 8 = (?)",
+   "options": [
+    "10",
+    "20",
+    "15",
+    "12",
+    "11"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c5bc8c9e43081c99535c45dec4c9c75d5e85be3b95b3d2cbe3c49d84ac1cccfb"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 13 × 5 + 20 = 42 ÷ 14 + ?% of 41",
+   "options": [
+    "200",
+    "199",
+    "201",
+    "198",
+    "None of these."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6683b32ae34009230491f9ed3f8e7c97f92798f4757707f61f18610f134c8ef3"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 3 (50/7) of 294 - 8 = 1750 - ?",
+   "options": [
+    "185",
+    "292",
+    "312",
+    "182",
+    "162"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "066817d15911fb91fece0f013f478a16fa73523e018e135e6a9f885cba7605e2"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 24% of 2250 + 15% of ? = 600",
+   "options": [
+    "-400",
+    "400",
+    "-100",
+    "200",
+    "-200"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4886b69b90bc261c85cbb8c3a1027581cc25483baddf208bcf2b5f56f9c1fd75"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 4848 ÷ 24 × 11 - 222 = ?",
+   "options": [
+    "200",
+    "2444",
+    "1500",
+    "2000",
+    "1600"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a7cdb43cf47ee09bcd98a064900a1e0084b56c0375967973d92c6778d6bb3ae1"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (1/24) of 720 + (1/9) of 378 = 10 + ?",
+   "options": [
+    "72",
+    "50",
+    "62",
+    "60",
+    "52"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f66aedb1c5ffa1dca7d29a3cd00f35b4545114b869440922ac84ed4f81cc0990"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 4 ? 2 ÷ 32 × √64 = 4",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "204f71ae73f5caa443c731e85ad49dbd7377044415e356777d14998d3e0321d7"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 193 – 49 × 2 – 36/2 = 151 – ?",
+   "options": [
+    "90",
+    "77",
+    "75",
+    "74",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e93a9ba8664f1c9c9ead02f7a31b83a4d8f0df1e0956d24d7bbaa8aaf5a842d5"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 ? = 512 ÷ 81 ÷ 72 × 2916",
+   "options": [
+    "26",
+    "17",
+    "16",
+    "18",
+    "None of these."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "acecf7435a25c87e6b2dd5c90155e13d1ae843b852fc437aded2f56c0f2380e9"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "What value can come in place of the question mark (?) in the question below? 2 9 × 5 × 1/3 of 22 + (10) = ?",
+   "options": [
+    "420",
+    "445",
+    "435",
+    "430",
+    "440"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "002a4d16e0390b4bc222366549ab0ab4ef8e33f7e13c11a77f6be8ddb573ae97"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 252 + 520 ÷ 20 + 420 = 121 + ?",
+   "options": [
+    "477",
+    "577",
+    "677",
+    "587",
+    "None of these."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "884a9e8711ed2c5da483cab63f7f41bda3aab86a9cac32f920379b5f7d05dabc"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There is a global growing demand and supply for organic foods. This has resulted from increased health awareness and food safety, a growing demand to protect the environment and animal welfare. The International Federation of Organic Agriculture Movement (IFOAM) defines organic production as a process “that relies on ecological processes, biodiversity and cycles adapted to local conditions rather than the use of inputs with adverse effects” (IFOAM, 2010). Marketing the product will provide the link that will satisfy both the demand and the supply. Thus marketing the products will provide the link between the producers and the consumers. While the marketing of these products is developed in the U.S.A, the Asian marketing is just developing. In most Asian countries, organic production is mainly for small farmers in order to assist them to be self- sufficient and improve the quality of the soil. It is mainly done for export. Organic food production in Asia is yet to develop. Though the Asian countries form 25 per cent of the members of (IFOAM) the area engaged in organic farming is still very small as by 2003 all the Asian countries had only utilised less than 1 per cent of all agricultural land in organic farming with the exception of China IFOAM, 2004). The local markets in Asia are not established and are only emerging. Marketing initiatives are in the process of being launched. There are National Initiatives to develop the organic sector. There are initiatives by NGOs supporting to practice organic agriculture and training them on how to market organic food products. Most of the organic farming has support from the grassroots level. In most Asian countries there is a very rare national scale of organic production and only India has a government initiative. The Indian government (Agricultural and Processed Food Products Export Development Authority (APFPEDA)) initiative is only meant to assist in exporting of the organic food and not to develop the domestic market. APFPEDA offers training to producers and certification agencies, research and development services: promoting certification programs, developing policies, improving the quality of services, promoting Indian organic foods. The main challenges facing organic food marketing are the pricing competition and logistics arrangements. The organic foods have to compete with other non-organic foods in terms of pricing, varieties and the frequency of production. The organic food products are expensive to produce. Their infrastructure is yet to be developed and thus it is hard for marketing organisations to sell them at a competitive price. The organic food products are expensive both in the Asian countries and in the US. In US organic foods are 10 to 30 per cent more expensive than the conventional food products (Dimitri & Oberholtzer, 209). There are ways to develop and help support marketing organisations for organic food products in Asia. The local initiatives should provide those strategies that eliminate intermediaries, thus reducing the prices of the products and thus encouraging more buyers, while at the same time promoting the producers. Any non-commercial external funding should be accompanied by organisations own increase in capital investment. This assures continuity after the external funding is pulled out. Most of the marketing organisations start small whereby some do not even have an office and operate from home. This may be satisfactory to start with, but as the company grows, it should have an official location of operation. What is the synonym of the given word? Adverse",
+   "options": [
+    "Mild",
+    "Clement",
+    "Dire",
+    "Equable",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5ae5342aff77b90b6554b022d5b528bec5b890bb70b3b0ce0a33107a0621501c"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Read the given passage carefully and answer the questions that follow. There is a global growing demand and supply for organic foods. This has resulted from increased health awareness and food safety, a growing demand to protect the environment and animal welfare. The International Federation of Organic Agriculture Movement (IFOAM) defines organic production as a process “that relies on ecological processes, biodiversity and cycles adapted to local conditions rather than the use of inputs with adverse effects” (IFOAM, 2010). Marketing the product will provide the link that will satisfy both the demand and the supply. Thus marketing the products will provide the link between the producers and the consumers. While the marketing of these products is developed in the U.S.A, the Asian marketing is just developing. In most Asian countries, organic production is mainly for small farmers in order to assist them to be self- sufficient and improve the quality of the soil. It is mainly done for export. Organic food production in Asia is yet to develop. Though the Asian countries form 25 per cent of the members of (IFOAM) the area engaged in organic farming is still very small as by 2003 all the Asian countries had only utilised less than 1 per cent of all agricultural land in organic farming with the exception of China IFOAM, 2004). The local markets in Asia are not established and are only emerging. Marketing initiatives are in the process of being launched. There are National Initiatives to develop the organic sector. There are initiatives by NGOs supporting to practice organic agriculture and training them on how to market organic food products. Most of the organic farming has support from the grassroots level. In most Asian countries there is a very rare national scale of organic production and only India has a government initiative. The Indian government (Agricultural and Processed Food Products Export Development Authority (APFPEDA)) initiative is only meant to assist in exporting of the organic food and not to develop the domestic market. APFPEDA offers training to producers and certification agencies, research and development services: promoting certification programs, developing policies, improving the quality of services, promoting Indian organic foods. The main challenges facing organic food marketing are the pricing competition and logistics arrangements. The organic foods have to compete with other non-organic foods in terms of pricing, varieties and the frequency of production. The organic food products are expensive to produce. Their infrastructure is yet to be developed and thus it is hard for marketing organisations to sell them at a competitive price. The organic food products are expensive both in the Asian countries and in the US. In US organic foods are 10 to 30 per cent more expensive than the conventional food products (Dimitri & Oberholtzer, 209). There are ways to develop and help support marketing organisations for organic food products in Asia. The local initiatives should provide those strategies that eliminate intermediaries, thus reducing the prices of the products and thus encouraging more buyers, while at the same time promoting the producers. Any non-commercial external funding should be accompanied by organisations own increase in capital investment. This assures continuity after the external funding is pulled out. Most of the marketing organisations start small whereby some do not even have an office and operate from home. This may be satisfactory to start with, but as the company grows, it should have an official location of operation. What is the synonym of the given word? Adverse\n\nWhat is the antonym of the given word? Initiative",
+   "options": [
+    "Capability",
+    "Enterprise",
+    "Ingenuity",
+    "Creativity",
+    "None of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "160e6a48bdee0136857fa984a856ce825650f74964f1260dbc5ab7456555e978"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "Why is there an increase in the demand for organic products?",
+   "options": [
+    "Increased health awareness",
+    "Increased awareness about food safety",
+    "A growing demand to protect the environment",
+    "A growing demand to protect animal welfare",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2df2c57d60480c17d75d91b1298cf305a99f054f2526823130898318db49827e"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "What are the drawbacks of APFPEDA?",
+   "options": [
+    "There are no drawbacks",
+    "Only assisting in the export of the organic food",
+    "Not assisting in developing the domestic market",
+    "Both 2 and 3",
+    "All of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a6f585d532cc7d9ce09c70fb8c8403e7118bf990125457858ea4f7acd5d61285"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "What is the synonym of the given word? Eliminate",
+   "options": [
+    "Initiate",
+    "Expatriate",
+    "Obliterate",
+    "Unfasten",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4ab3c3b1b871dd65c6d6c3c95f98ecff8f68d07ce511a11251690d1f796ce0db"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "According to International Federation of Organic Agriculture Movement (IFOAM), what is organic production?",
+   "options": [
+    "A process that relies on natural processes adapted to local conditions",
+    "A process that does not include the use of inputs with adverse effects",
+    "A process that has some elements of man-made indulgence",
+    "Both 1 and 2",
+    "All of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "08171447d41e7d2d10b3f13e0f4e45670f5c795bae18ff63637c7ee2279991cb"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "What is the status of the marketing of organic products in Asia?",
+   "options": [
+    "It is better than USA",
+    "It is at par with USA",
+    "It is emerging in Asia",
+    "Both 2 and 3",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "40c918d1bf687104de209ef4065cf309fa4287c07c99caf075069aedc1511465"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "What are the reasons for the undergrowth of organic product markets in Asia?",
+   "options": [
+    "There is no support",
+    "Government initiative is not very evident in Asia",
+    "Support is at grassroot level",
+    "Both 1 and 3",
+    "All of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a7ecee372e9d862d1c489d40bc4631d075ac0d3cb4ea40c19243e26ee847dd0f"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "What are the challenges faced by organic food marketing?",
+   "options": [
+    "Pricing competition with the industrialised products",
+    "Logistic arrangement",
+    "Industrialised products are way cheaper than the organic ones",
+    "Both 1 and 2",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a1cef5249efc09a63e63e3325299b95a3e97235c23f5c594f89f5863c6c8ebf1"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "What are some of the ways to develop and help support marketing organisations for organic food products in Asia?",
+   "options": [
+    "Intermediaries should be removed",
+    "Promotion of the ones producing the products",
+    "Location of production should be chosen wisely",
+    "Both 1 and 2",
+    "All of the above"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ec861959f5b81d9af691be05c6c69782d1069b8f212080049ee7eb431b74f6b1"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. The father was (A)/ overwhelmed for joy (B)/ at the success (C)/ of his only son. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "941a0eb344efe75cf95feff08ef4e365f0b96a045385dfaf2a1c13d98333589e"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. He is the most (A)/ intelligent and also (B)/ the very talented student (C)/ of the college. (D)/ No error (E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "97f17c5dfff679caf93bdada03e9e6c6baae2d3f11f8e4d714135d5c0e0862e9"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. You should gone (A)/ for learning new (B)/ skills on this vacation (C)/ to utilize your time. (D)/ No Error(E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d879e01faa94144fb3ee9d28e03b394d2999375554c48fd6a27dbba9b8462f63"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Direction: The given sentence is divided into four parts: A, B, C, and D. Choose the part that contains an error as your answer. If the sentence is error-free, mark E i.e. No error as your answer. He's a honorable man (A)/ who respects everyone (B)/ and gets respect (C)/ from everyone in society. (D)/ No Error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2fee19dbb251f480d3442bf0087de76eb8cdd839e83fa4103e4788340a656aa6"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: Given below are five scattered segments of a sentence. Indicate the correct sequence that correctly assembles the segments and makes a coherent sentence. A. camaraderie of fellow morning walkers B. it's about immersing in nature's beauty, C. observing changing weather patterns, D. and finding happiness in the E. the joy of walking transcends mere exercise;",
+   "options": [
+    "AEBDC",
+    "DBCAE",
+    "ECABD",
+    "EBCDA",
+    "BADCE"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "96df372b15517e19bda17d6d5969d7ab889ecd3bfed8fbe8a331756e1b591b2c"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Directions: Given below are five scattered segments of a sentence. Indicate the correct sequence that correctly assembles the segments and makes a coherent sentence. A. social media, inundated with B. as a breeding ground for misinformation, C. poses mental health risks and serves D. exacerbating collective anxiety and polarization E. raw footage of conflicts,",
+   "options": [
+    "BACDE",
+    "DCBEA",
+    "AECBD",
+    "EACBD",
+    "CADBE"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a015e896a2ef86d9c241b1cf6270519318573549f48cc8914369e0962b23eab6"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Directions: Given below are five scattered segments of a sentence. Indicate the correct sequence that correctly assembles the segments and makes a coherent sentence. A. for raising living standards in India, B. address income inequality and C. an exclusive focus on size may not D. while economic growth is vital E. could lead to undesirable outcomes",
+   "options": [
+    "DACBE",
+    "BEDCA",
+    "ACBDE",
+    "EBCDA",
+    "DCEAB"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "91b8b4668e289591dc64f360b37eb5a71d7b85b16a576d5ed711a0e386682dcf"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Directions: Given below are five scattered segments of a sentence. Indicate the correct sequence that correctly assembles the segments and makes a coherent sentence. A. to become a semiconductor powerhouse B. India's $10 billion Semicon India Program C. build supply chain resilience, D. and leverage its design prowess E. strives to reduce semiconductor import dependence,",
+   "options": [
+    "BEACD",
+    "BECDA",
+    "CEDBA",
+    "ABCDE",
+    "ECBDA"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1939d477e7d3ad6c390d7b6616214ffea0fac20f80f371681467be6e2396ac9d"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically correct. If the sentence is already correct, select 'No correction required' as your answer. The museum was so interesting that we could have spend all day there.",
+   "options": [
+    "Spent all day there",
+    "Have spent all day there",
+    "Spent all the day there",
+    "Spend the day there",
+    "No correction required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e0d33588a274ca6d0c985936434f2ceb715c50cb970b57fbe5f14e39a7970422"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Directions: Select the phrase from the options below that should replace the underlined phrase in the sentence to make it grammatically correct. If the sentence is already correct, select 'No correction required' as your answer. For the past several years, our organization has been instrumental and we have putted a significant effort into promoting sustainable practices.",
+   "options": [
+    "Have put a significant effort",
+    "Have put in a significant effort",
+    "We putted a significant effort",
+    "Had put a significant effort",
+    "No correction required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4512623feeff41225916d093f45e502e18e939a601acbd1abb8ba712505ad0d9"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Directions: In the following passage, some words have been deleted. Select the most appropriate option to fill in each blank. Reports in recent weeks suggest that Russian intelligence gravely miscalculated the Ukrainian ___(1)___ before the war. When the Kyiv regime stayed put in the face of Russia’s multi-axis assault, the Russian generals had to change their ___(2)___, from lightning strikes across the country to a focused ground invasion in the east. Even that was made complicated by Ukraine’s resistance, which got military and financial ___(3)___ from the West. As the war dragged on, the West’s ___(4)___ to punish Russia only hardened, leading to crippling sanctions on the Russian economy. So, Mr. Putin is now in a spot, despite the limited battlefield gains of his troops: managing the sanctions-hit economy itself is a tall task; continuing the war would be costly, and there is no ___(5)___ that he would meet his strategic goals through a long-term war. And for Ukraine, despite its resistance capabilities and the support from the West, taking back territories using force remains ___(6)___. So, to break the ___(7)___, what both sides can do is agree to a ceasefire and start direct talks seeking a political solution. The UN and Turkey-mediated talks that saw a ___(8)___ in July in shipping grain from Ukraine’s ports via the Black Sea are a model worth being followed. Regional players with communication lines open to Moscow and Kyiv should ___(9)___ them to come to the table. If a war of ___(10)___ is allowed to grind on, it would continue to hurt all stakeholders, besides holding the global economy hostage. Select the most appropriate option to fill in blank number 1.",
+   "options": [
+    "Conveyance",
+    "Resistance",
+    "Instance",
+    "Ignorance",
+    "Relevance"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aa98907abb99a11847ee6f4c82b8da00e110294da70b1c68c8b8059e17580071"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 2.",
+   "options": [
+    "Tragedy",
+    "Parity",
+    "Dodgy",
+    "Prodigy",
+    "Strategy"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "edc1c1d21514de9ef82708225bde26d1de3ecc42e59562e903d77ee603da841c"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 3.",
+   "options": [
+    "Resistance",
+    "Hesitance",
+    "Assistance",
+    "Recurrence",
+    "Affluence"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1854e66fce12c1a00a7d4f75c85c7d3e3f182d3bc243226ff64f8a83a937a150"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 4.",
+   "options": [
+    "Resolve",
+    "Involve",
+    "Evolve",
+    "Absolve",
+    "Clove"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "760bd896f2a1ecfd2bb2c8e144e1125a3846dd21413377bdfc4de0e59b08c1d1"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 5.",
+   "options": [
+    "Uncertainty",
+    "Sovereignty",
+    "Dignity",
+    "Certainty",
+    "Extremity"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2312d32153139b1f91fd078ab1921ebb48c23cd5544ddad26c45c80fa85e0ccc"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 6.",
+   "options": [
+    "Impractical",
+    "Economical",
+    "Rhetorical",
+    "Reciprocal",
+    "Radical"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "85c2824477c4df733ea7558f49fe1ed1f9ef36bf90f2d20def06dad8d6bc8955"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 7.",
+   "options": [
+    "Acclimate",
+    "Stalemate",
+    "Legitimate",
+    "Amalgamate",
+    "Inmate"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0ead34422e553cec1c39bdcd2f4db0a95fe814177a1df6e57ede7177b088cc20"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 8.",
+   "options": [
+    "Borough",
+    "Rumor",
+    "Existence",
+    "Breakthrough",
+    "Thorough"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9df2dc2aad7e2a806b864cf5ea4d11c4f8d86def8cbeb2e7ffbe225a05c4ee65"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 9.",
+   "options": [
+    "Blush",
+    "Crush",
+    "Push",
+    "Lush",
+    "Rush"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "005714c79e61b633597c9292987a2370db9cbee95fabea5048b847873a4e751f"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 10.",
+   "options": [
+    "Intervention",
+    "Abomination",
+    "Expulsion",
+    "Revulsion",
+    "Attrition"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2ae2bbc6c0c5b34ee381c9d8b4511e3f5d53ba3fdb615e19c7cc25ef9354e2f9"
+  }
+ ],
+ "section_confidence": 0.966,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

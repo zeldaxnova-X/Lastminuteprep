@@ -1,0 +1,1487 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_On_3_September_2022_Shift_4__4f51bbf62e626f928e02709c63f4fe36.pdf",
+ "format": "prepp",
+ "accepted": 98,
+ "rejected": 2,
+ "reasons": {
+  "empty_or_short_stem": 2
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: Once upon a time, there was a man named Jack who owned a small jewellery shop in a quaint town. He was well-known for his exquisite designs and excellent craftsmanship. Jack was also a proud brother of a talented athlete named Max, who was a rising star in the world of track and field. However, the year 2020 brought a lot of pain and suffering to the world as the COVID-19 pandemic spread across the globe. Tragically, Max became one of the millions of people who lost their lives to the virus. Jack was shattered by the news and struggled to come to terms with the loss of his beloved brother. As days passed, Jack realized that he needed to do something to honor Max's memory and keep his love for sports alive. He decided to create a sports academy for young athletes in the town, where they could train and develop their skills, just like his brother did. Jack poured all his energy and resources into setting up the academy. He called it \"Solid Far Sports Academy,\" inspired by Max's never-give-up attitude, which always pushed him to go solid and far beyond his limits. The academy quickly gained popularity, and young athletes from all around the town began to flock to it, eager to learn from the best coaches and facilities. Jack was proud of what he had accomplished, and he knew that Max would have been too. Over time, the academy became a symbol of hope and inspiration for the young athletes. They learned not just about sports, but also about the importance of perseverance, hard work, and determination, which are the same qualities that Max embodied during his career. Jack found great comfort in seeing the academy thrive and grow. It was his way of keeping his brother's legacy alive and sharing his love for sports with others. He knew that Max would have been proud of the impact that the Solid Far Sports Academy had on the young athletes in the town. In conclusion, Jack turned his grief into something positive by creating the Solid Far Sports Academy to honor his brother's memory. The academy not only helped young athletes develop their skills but also served as a reminder of the power of love and dedication, which can overcome even the toughest challenges in life. What inspired Jack to name his sports academy \"Solid Far Sports Academy\"?",
+   "options": [
+    "His love for sports",
+    "His brother's never-give-up attitude",
+    "The location of the academy",
+    "His passion for jewellery making",
+    "None of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7cd1999e09c9a82fd94575c427c3ffa2ca909174f40a1e4d268666966c1901c7"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "What did the Solid Far Sports Academy become a symbol of for the young athletes?",
+   "options": [
+    "Hard work and determination",
+    "Love and dedication",
+    "Hope and inspiration",
+    "A place to make friends",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4f39691f4d479c001c2921faf1146b88d788a6cdb7dfbfcb61d2e92c2ec33634"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Which statement is false as per the passage?",
+   "options": [
+    "Max was a rising star in the world of track and field.",
+    "The COVID-19 pandemic brought a lot of pain and suffering to the world.",
+    "The Solid Far Sports Academy was a place for young athletes to train and develop their skills.",
+    "Jack found great discomfort in seeing the academy thrive and grow.",
+    "The Solid Far Sports Academy became a symbol of hope and inspiration for young athletes."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "430dea790a554da9197aed1393de8b9f155fdac8fdaa78688f57ac34b70d540d"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "Which statement is true as per the passage?",
+   "options": [
+    "The COVID-19 pandemic brought a lot of joy and happiness to the world.",
+    "Jack's brother, Max, was a musician who played the guitar.",
+    "The Solid Far Sports Academy only had one coach.",
+    "The academy became a symbol of hope and inspiration for young athletes.",
+    "Jack's jewellery shop was known for selling cheap and low-quality jewellery."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "484dacaebc5bd1feae256987845c855506a3f87fb80c3e9311905108065f31f4"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "Which statement is false as per the passage?",
+   "options": [
+    "Jack owned a small jewellery shop in a quaint town.",
+    "Max was a talented athlete who died due to COVID-19.",
+    "Jack opened a grocery store to honour his brother's memory.",
+    "The Solid Far Sports Academy helped young athletes develop their skills.",
+    "Max's never-give-up attitude inspired Jack to name the academy Solid Far Sports Academy."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cc921d258010bb6181df7d5b1e43441659f25329103fcffd9d480ca985ebdcda"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Choose the antonym of the word 'quaint' from the passage.",
+   "options": [
+    "Unique",
+    "modular",
+    "Spacious",
+    "Ordinary",
+    "Common"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e44071eac30393decc4b5de5c69b6c067ed8bf7345f30267a56bc921aed0c8f1"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Choose the antonym of the word 'far' from the passage",
+   "options": [
+    "Distant",
+    "Remote",
+    "Proximate",
+    "Removed",
+    "Separated"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "88604f24cf3990a8010d296e10f258a77b947b208c35f71377296ec65bf6a2c8"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Choose the synonym of the word 'solid ' from the passage ?",
+   "options": [
+    "Secure",
+    "Liquid",
+    "Gaseous",
+    "Soft",
+    "Malleable"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "86c166469a69bec0a765acf8d904bc6643323e3616dcc62b0f5f0f006040173d"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "Which of the following words best describes Max's attitude towards sports as depicted in the passage?",
+   "options": [
+    "Apathetic",
+    "Ambivalent",
+    "Determined",
+    "Indifferent",
+    "Pessimistic"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "74ad43c868290c821ad5d65350d65bc9fc82466bff0527dde6638c214debbe8e"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Direction: Select the most appropriate option to fill in the blank The company has decided to ________ a new marketing campaign next month",
+   "options": [
+    "launch",
+    "launched",
+    "launching",
+    "launchable",
+    "launcher"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e008c70436265540b15544902933bc186e41c35a7d7037d8637b3ab78dee37b5"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Direction: Select the most appropriate option to fill in the blank The government has announced a decrease __________ the price of petrol and diesel.",
+   "options": [
+    "under",
+    "in",
+    "of",
+    "to",
+    "on"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9966a297d446deac16281bb78d227d87b6b58f25f5cd1952ef84bc3ace536741"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Direction: Choose the appropriate option that fills in the given sentence correctly: Right now, the concern is about banks not lowering their lending rates fast enough, _______________ the repo rate has been coming down.",
+   "options": [
+    "because",
+    "since",
+    "although",
+    "from",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "358dac0d11fbe8555563c9b32fb1b05571a4ba46a9684004bf8b30c36712199c"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Direction: Choose the appropriate option that fills in the given sentence correctly: Banks should be left free to set their lending rates, in accordance with their cost of funds and market conditions, _____ borrower profile.",
+   "options": [
+    "rather with",
+    "not from",
+    "apart from",
+    "with",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "99f81730eec17ae495e94dc44aeedd74268b297a85b673a32cb423ae4d950a60"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Direction: Choose the appropriate option that fills in the given sentence correctly: Single-use plastic refers to the entire class of items that are used once and then _________.",
+   "options": [
+    "disposed",
+    "disposed off",
+    "disposed of",
+    "dispose off",
+    "None of the above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "638bdeda2f5cce45558225d9fc7a53631dd4ef6f943b6a558187a53c2a7e1582"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually incorrect. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "The manager, along with his team, is working hard to meet the project deadline.",
+    "She is one of the few people who always keep their promises.",
+    "The new restaurant, which is run by a celebrity chef, is attracting a lot of customers.",
+    "Both the parents as well as the teachers are responsible for the overall development of a child.",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2d799a17ff41f4a43bfc2abd1e83bb5ecb6d7d21c0b953931f78a23a45ef4762"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The company's profits have increased by 20% over the last quarter, and the management is considering expansion plans.",
+    "Running a marathon and lifting weights are great ways to stay fit and healthy.",
+    "The author wrote about the struggles of being an immigrant in a foreign land, and her book became a bestseller.",
+    "My sister, along with her friends, is planning a surprise party for my parents' anniversary.",
+    "All are correct"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8018bb0c9b64391418a0a7c14bf3262b3d9e1234059bc45bf0286c783d34aa69"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "Shivani, together with a friend, practise yoga every day.",
+    "It is the people with insecurities which make life difficult.",
+    "Widows were forbidden to remarry and were stoned to death if they do.",
+    "Neither the lion nor the bears have escaped from the zoo.",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "30af00cfeeb343b38ea26671f3ad0d34d0d5afec6a1c017c9ce0125e4fd17ed0"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "Roosevelt towards the end of his life seemed contents to make haste slowly.",
+    "The emperor had already received soft cloth made of camel hairs, brocades, sable furs, jade girdles, fifty camels and one thousand ponies as her bride price.",
+    "She went to great pain to see that all her guests were provided with whatever they needed.",
+    "In the case of the guinea pig, the number of offspring varies between two and five.",
+    "All are correct."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9e97d58dbb6b06714ab746945d5075f30bc9f098c04a3d4a6b6ed393618259da"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Directions: In each of the questions below, four sentences are given that may or may not contain an error. Choose the one that is grammatically as well as contextually correct and meaningful. If all the sentences are correct, mark 'All are correct as your answer'.",
+   "options": [
+    "A number of potential buyers has expressed interest in the company.",
+    "The fall in the number of deaths from heart disease are generally attributed to improvements in diet.",
+    "None of the competitors could catch up with the untiring runner who was in the lead.",
+    "The number of students at the college have grown from 200 to over 500.",
+    "All are correct."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "73bec86179cb1d8dd0107fc9dd9b07ca3edc5b892ff5b522ba2120a3ce3188e8"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Directions: Rearrange the following five sentences (A), (B), (C), (D), and (E) in the proper sequence to form a meaningful paragraph, then answer the questions below them. A. Hence, we need, not only strict laws but also a thorough economic reform to reduce the poverty line. B. In recent periods, many campaigns have been organized against employing children in mines, factories, motor garages, restaurants, tea stalls, and shops. C. There are various households that employ poor children though only a few provide their child-servants with adequate food and clothing. D. It is the extreme poverty of their parents that forces the children to adopt such a profession at a minor age. E. They are deprived of education and their wages are paid to their parents and the money is rarely spent on them. Which of these should be the THIRD sentence after rearrangement?",
+   "options": [
+    "C",
+    "E",
+    "B",
+    "A",
+    "D"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ff80b1ccc8c8c337ae7e96f8be31b4d212228944a7e3a9b08bbfe7cc8a557348"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Which of these should be the FIFTH sentence after rearrangement?",
+   "options": [
+    "E",
+    "C",
+    "A",
+    "D",
+    "B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "271cf9407cc556d5b37d7527d071d0689f6bd108fc29b643c86c478d4a30306b"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Which of these should be the FIRST sentence after rearrangement?",
+   "options": [
+    "B",
+    "E",
+    "D",
+    "C",
+    "A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a3edfec4dbcd0c3a969dfc4cb8fd90e835746d98b59d4514b16e7e35118734ed"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Which of these should be the FOURTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "C",
+    "E",
+    "D",
+    "B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "091ef408ea41d606c093d054b2febe1d0318b75e8ab874de2b57456c6fce46df"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Which of these should be the SECOND sentence after rearrangement?",
+   "options": [
+    "D",
+    "E",
+    "C",
+    "A",
+    "B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dd9e76052e34f77537a46f927f180c8d38bdcd4bb3532e5e4bd606442819a20d"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The CEO praposed(A) a new strategy for the growth(B) of the company, which was met with mixed reactions(C) from the board members. However, after thorough discussion and analysis, the strategy was finally implemented(D) and led to significant improvement(E) in the company's performance.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "65aee55283439615aa8e7b5ffc0eb42b68afffa0f0a361a43fee2630d83b11d7"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The adopsion(A) of the latest technology(B) and improving the efficiency(C) of logistics operations require(D) continuous updating of knowledge(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cecb4800f648c333bcbc13ac81786ea3ccfaa9d3e11988dd4be62fb321bc4805"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The scope of the HRD Ministry with referrence(A) to language(B) extends to education(C) and the promotion(D) of cultural expression(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "61bc9c3c3bbe12b25e8aa7903db4ee9324a5e02e9427018cf9b3914e65c02379"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. We are moraly(A) and politically(B) entitled(C) to ask if the dream of Marine Le Pen has become that of a significant(D) portion of the French population(E)?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "de990358bc466dd90e4d232def9a7efd219c1fb6c19d8d4fec640520196e0a00"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. If these are the “pull factors” that keep New Delhi firmly(A) anchored(B) to Moscow, the absense(C) of any “push factors” is another(D) reason for this situation(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1521d63ca981193c307cfbb9f666d8359576701dd9593d3eaf3764d304c47864"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 30% × 400 + 200 × 3 + 100 ÷ 2 = ?",
+   "options": [
+    "770",
+    "780",
+    "750",
+    "725",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3be5c3d27d92177b4a889275042d9779a2376d11b67cf7ba6d270baabb396a35"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 4784 ÷ √2116 + 760 ÷ 5 = ?",
+   "options": [
+    "14",
+    "18",
+    "12",
+    "16",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "476952454eb7979a5bfee1fa5247c919dfd315c629d8e2299bea3dd7c7765c58"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark(?) in the following questions? 6992 ÷ 19 – ?% of 652 = – 4196",
+   "options": [
+    "600",
+    "665",
+    "700",
+    "555",
+    "670"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8012fced055c891b803446e3535569ed21662a9f6b9743421e2e4df3cc8c9132"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 12 – 25% of 28 – 2 = ?",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "8",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "09e509a5257e8d89981c7f880a81f4e82bcfc0ea4b02581d654fbd0f2f54405d"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place (?) in the place of following question.",
+   "options": [
+    "4",
+    "-3",
+    "2",
+    "1",
+    "-2.8"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c7a123889f156e91ac6f33f878630965a5724760b6138d68afdd8d5e822e6c29"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 43.50% of 2200 + 47.25% of 400 – 147 = ?",
+   "options": [
+    "922",
+    "925",
+    "999",
+    "930",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fc73d0d62e0dfc16c76d1991021a2d1b6b418c1169b4fe6372f75be8896f3d2e"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (√729 + √961) ÷ 2 + ? = 219",
+   "options": [
+    "180",
+    "200",
+    "195",
+    "190",
+    "150"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ae4e192f76a2df982c214a0db4c381caec63bb34ac9b94327108cb667e4b412a"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of (?) in the following question 84 ÷ 3 + (7/13) × 650 = ?",
+   "options": [
+    "158",
+    "268",
+    "378",
+    "448",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "258e1c5d641d09bfc3c2071f47ee6277215e94d0364ff212477c1a3e92a9fcef"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of (?) in the following question (? × 32) + 180 = (130 × 3) + 590",
+   "options": [
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6a1adcd891a9134e552f2ba8c4874756164139b7d220eed9facbde0e5b55a235"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? {(44× 5) + 180} ÷ 8 = ? – 60",
+   "options": [
+    "110",
+    "120",
+    "130",
+    "410",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "43d33f645f02e06f300ce7a1080110c25fb08877cbd1bf087d1a57147061e8b6"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 4 × 3 × 65 × ? = 45 13 8 2",
+   "options": [
+    "14",
+    "17",
+    "10",
+    "12",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "72c874b27197513bed4bea34f56b2746544ed393e89af034308084754aba755b"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 37.5% of 800 – 6.25% of 1600 = ?",
+   "options": [
+    "300",
+    "400",
+    "200",
+    "600",
+    "500"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "018365cea482ff776e23901614a2a3cabe62b50eaa2e3e904378db549cb8a1ae"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? ? ÷ 1156 = 6859 × 0.64 ÷ ? ÷ 19",
+   "options": [
+    "516.8",
+    "412.8",
+    "616.2",
+    "164.3",
+    "293.8"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7edf701d09caad80375a2f91f441f67b45d973df84c71bf2bcbfd9133e717f75"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? ?% of (56 ÷ 7) = 36 - 20",
+   "options": [
+    "180",
+    "150",
+    "175",
+    "200",
+    "96"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4d27e92d8cf0c73a34c93ff3acf291b4150808a18678ec21ff8f6a02092f1410"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? 15% of 450 + 17 × 5.5 = ?",
+   "options": [
+    "144",
+    "174",
+    "161",
+    "165",
+    "147"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "195c0a26ed56fe9e627c4524adf0283d4bda18c1fffa187df3af9d2924c16b80"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of a group of 30 students is 42 kg. When Sita joins the group the average is reduced by 1 kg but when Gita joins the group the average is increased by 1 kg. Find the average weight of Sita and Gita.",
+   "options": [
+    "46.5 kg",
+    "44.5 kg",
+    "43 kg",
+    "41 kg",
+    "42 kg"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4be1e4c051ebb82f5902f53be69e2d3e33234001cc2f484d8863621c5d32ff57"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "Age of P is 25 years and Q is 5 years younger than R and ratio of their age is 2 ∶ 3. Find the ratio of age of R and S if average age of all four is 30 years.",
+   "options": [
+    "14 : 13",
+    "13 : 14",
+    "14 : 3",
+    "3 : 14",
+    "3 : 4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1d1f3b4301cbf713f62e47556dddab11816f1593043b83d053d2f40bf8e9a069"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "Akshay puts a sum of money at 4 years, on simple interest at a certain rate. If the rate was increased by 5%, he would have fetched Rs. 1500 more. Then find the amount borrowed by Akshay.",
+   "options": [
+    "Rs. 5,000",
+    "Rs. 7,500",
+    "Rs. 8,000",
+    "Rs. 6,000",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2a0e3fbb79c08caac9042aac0c944c3f21219ef25a283decce09f1706d86dc42"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "A boat covers 480 km in upstream and takes 40 hour more than in downstream for the same distance. Time taken by the boat to cover 180 km upstream is 18 hours. Find the speed of boat in still water.",
+   "options": [
+    "28 km/hr",
+    "35 km/hr",
+    "42 km/hr",
+    "21 km/hr",
+    "25 km/hr"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9bb897bc1b959f111741c28431bfc493ac561dc86cf5f46909c2f5889725ef46"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "A trader marked his goods 60% more than the cost price. If he increased the selling price by 25%, his profit will be double. If the M.R.P of his goods is Rs. 480 then, what was the actual selling price of goods?",
+   "options": [
+    "Rs. 450",
+    "Rs. 600",
+    "Rs. 500",
+    "Rs. 550",
+    "Rs. 400"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8c73c29f83c380b897289d0926585b7dc05c3e23d6f101bb8a5100a238203926"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark '?' in the following number series? 17, 33, 65, ?, 257, 513",
+   "options": [
+    "130",
+    "120",
+    "115",
+    "129",
+    "90"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "dfb02f18d65b4eff71a11be464602863b9888b4059d8c5e8408b68fd644b4a98"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 4, 2, 2, 3, ?, 15",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "9"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "db1fe2ac25305fc90e077e867cc144d73ed365989e99f0125fec5b8a8781a813"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 130, 115, 135, 110, ?, 105",
+   "options": [
+    "120",
+    "130",
+    "140",
+    "100",
+    "110"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5d8d5b8e899f23770c77bce8e5d60c56485f51a3943f5a0bb0213d686feea0ee"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 11, 19, 35, 59, ?, 131",
+   "options": [
+    "82",
+    "91",
+    "87",
+    "97",
+    "103"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6aa10ed71b1df426878ff500ed4ba95eb940f4c6bb1eb1bcffe893348ab80fb4"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 11, 10, 19, 56, ?, 1114",
+   "options": [
+    "223",
+    "211",
+    "203",
+    "239",
+    "197"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ebb4a872643a7b8e91e6e774c2377e435d8ecb7f90ccf714088e1e28ac59e7cd"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following pie chart and table carefully based on that answer the following questions:- There are five students Ram, Shyam, Shikha, Pooja, and Narender in an exam. Marks obtained by them in Hindi and Math:- The total marks obtained by Ram and Shyam in math is how much percent less than to the total marks obtained by Shikha and Pooja in math?",
+   "options": [
+    "18.18%",
+    "22.22%",
+    "81.81%",
+    "15.18%",
+    "42.33%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1bfd3779ffd2faba54aa3b841795fa3776daca4eb1adaea532f5902c2e715612"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "Find the respective ratio between the marks obtained by Shikha in Hindi and Math together with the marks obtained by all the students in Math.",
+   "options": [
+    "18 ∶ 11",
+    "1 ∶ 1",
+    "2 ∶ 3",
+    "9 ∶ 23",
+    "23 ∶ 4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a8df1e9690630916509b8fb4df0df8b4773e03a9af6872686b7f60a44a4cb436"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "The total marks obtained by Ram in Hindi and Math is how much percent more than to the total marks obtained by Narender in Hindi and Math?",
+   "options": [
+    "55%",
+    "45%",
+    "35%",
+    "81.82%",
+    "82.82%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "42c8f05509f76884c5bea5649b92fca7118f272c9df418dd32d9e11822e35beb"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "If the marks obtained by Narender in Hindi were increased by 14% of the original marks, what would be his new percentage in Hindi if the maximum marks in Hindi were 140?",
+   "options": [
+    "95%",
+    "63.33%",
+    "40.72%",
+    "41.72%",
+    "50.72%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "629f4140c16957f7eb9f84809535b7b16b24ae8fb8443e7a4eace7e5fb742d48"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "Marks obtained by Pooja in Math is what percent of the total marks obtained by all the students in Math?",
+   "options": [
+    "27%",
+    "26.08%",
+    "34%",
+    "31.5%",
+    "22%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "57d305cd933393903ed2257f2045b28aafbb4e373f12d33d1b00ee27a2161385"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of Iron and Zinc in 3 types of alloy of equal quantity is 2 ∶ 3, 4 ∶ 5 and 2 ∶ 1 respectively. If all 3 alloys are mixed together, what is the ratio of Iron and Zinc the new mixture?",
+   "options": [
+    "67 ∶ 68",
+    "63 ∶ 67",
+    "68 ∶ 67",
+    "67 ∶ 60",
+    "65 ∶ 64"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fcbb16d62eb0d91a9c7ab7c537af831cc2930095d9de0333c136ec6d257860d9"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "Train P and Q each having length 120 metres moving in opposite direction. Both train cross each other in 12 seconds. If train P cross a 240 metres long platform in 36 seconds. Then, find the ratio of speed of the trains.",
+   "options": [
+    "2 : 3",
+    "1 : 4",
+    "1 : 5",
+    "1 : 1",
+    "2 : 5"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b8aa623853081f7831ab29492818a73afee9d4cf65d54c3eaf3d28082bb5bf65"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A can do a work twice as fast as B and C working together. B can complete a work in 8 days and C can complete the same work in 24 days. Find the time taken by A to complete the work.",
+   "options": [
+    "11 days",
+    "7 days",
+    "10 days",
+    "3 days",
+    "4 days"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "47569fc68003591ab7549b74792186e15c283ac728c3a2d94efe49e3961ff93c"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "The area of a square and a rectangle are equal. The length of the rectangle is greater than the side of a square by 5 cm and its breadth is less than the side of square by 4 cm. What will be the perimeter of the rectangle?",
+   "options": [
+    "84 cm",
+    "82 cm",
+    "76 cm",
+    "72 cm",
+    "92 cm"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1e1736fcd8012a7fb2fbc673ea5716f3c264215d7d2ed00498c6761e944002d0"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "Roshan and akash enter into a partnership. Roshan contributes Rs. 2000 for 6 months, Akash contributes Rs. 1000 for 5 months. If the total profit be Rs. 340, then Roshan’s share in the profit is?",
+   "options": [
+    "Rs. 240",
+    "Rs. 150",
+    "Rs. 180",
+    "Rs. 120",
+    "Rs. 300"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "874d44e27b0aa3a9ba8d1bdeee691471238485a156553f53bc909da2538fa44b"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the questions. Seven persons, A, B, C, D, E, F and G go to movies on different days of the week starting from Monday to Sunday but not necessarily in the same order. One person goes between G and C, A goes on one of the days before C. G goes on Friday. D goes on the second day of the week. Three persons go-between D and F. B does not go on Monday or Thursday. The number of persons who goes after C is equal to the number of persons goes before G. A goes for movie on which of the following days?",
+   "options": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Sunday"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "27c79222a1d4ae5aa052ee7a67a9abbd0ee9d98664567b3694f2fe05759ab42f"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the questions. Seven persons, A, B, C, D, E, F and G go to movies on different days of the week starting from Monday to Sunday but not necessarily in the same order. One person goes between G and C, A goes on one of the days before C. G goes on Friday. D goes on the second day of the week. Three persons go-between D and F. B does not go on Monday or Thursday. The number of persons who goes after C is equal to the number of persons goes before G.\n\nHow many person/ persons go for movie after E?",
+   "options": [
+    "No One",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "49259339405b1c9682559b1d35725f7e85fa772a7b30093609eb646782a170bf"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the questions. Seven persons, A, B, C, D, E, F and G go to movies on different days of the week starting from Monday to Sunday but not necessarily in the same order. One person goes between G and C, A goes on one of the days before C. G goes on Friday. D goes on the second day of the week. Three persons go-between D and F. B does not go on Monday or Thursday. The number of persons who goes after C is equal to the number of persons goes before G.\n\nWho among the following goes for movie on Saturday?",
+   "options": [
+    "A",
+    "F",
+    "E",
+    "G",
+    "D"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "126bda03117145e56ef65f931b09af3e3bb554446e01311b96595eb0f94bb7da"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the given information carefully and answer the questions. Seven persons, A, B, C, D, E, F and G go to movies on different days of the week starting from Monday to Sunday but not necessarily in the same order. One person goes between G and C, A goes on one of the days before C. G goes on Friday. D goes on the second day of the week. Three persons go-between D and F. B does not go on Monday or Thursday. The number of persons who goes after C is equal to the number of persons goes before G.\n\nWho among the following goes for movie just before E?",
+   "options": [
+    "F",
+    "D",
+    "C",
+    "A",
+    "G"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b9121f6b19844a06f067515b3048c8bda2dd88cfb5fe1cf3442c5b3c6aaa79a4"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "The number of persons go for movie before C is same as the number of persons who go for movie after _____?",
+   "options": [
+    "B",
+    "E",
+    "F",
+    "G",
+    "D"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a467d4673bbb2a859940005cbc469b50aae5b880d984ada3a0062c8c929afd21"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "In the given word ‘TELEVISION’ if the vowels are changed to the next letters and the consonants are changed to the previous letters as per the alphabetical series, then which letter/letters are repeated more than once?",
+   "options": [
+    "P, M",
+    "R, U",
+    "S, K",
+    "F, J",
+    "F, K"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8a3760d878501da284f2e0c3f1c7c0a326a88a1412a6c1b4d8866e0295f016dd"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H. th Who deliver the lecture on 17 April?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c99bbf13838f5504e66c6b2d18631ef51321e2c96e9db7bc6c348ef3a63ec8d5"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nWho among the following deliver the lecture immediately after D?",
+   "options": [
+    "C",
+    "A",
+    "G",
+    "H",
+    "B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e312d8b843c5e1d49dfe31d8bcd732bf22c895bf061f5f3825a29c8c3245f08e"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Eight friends A, B, C, D, E, F, G and H have to deliver lectures on either the 6th or 17th of four different months among January, March, April and July but not necessarily in the same order. Not more than 2 persons will give a lecture in a month. Only one person will deliver a lecture each day. A delivers his lecture on the 6th of a month which has only 31 days but not in the month of March. E delivers the lecture immediately after B. Only three lectures were delivered between A and B. Only two persons give lectures between F and C and C is not the last one. The number of persons who give the lecture after E is the same as the number of persons who give the lecture before F. G and C give their lectures in the same month. D gives the lecture before H.\n\nHow many lectures delivered after C?",
+   "options": [
+    "Four",
+    "Two",
+    "One",
+    "Six",
+    "Five"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0b3380376cdb925f3e9e8ac62cfcf0ab7b08df55ed49993fb2565151737ea212"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "th Who deliver the lecture on 6 March?",
+   "options": [
+    "G",
+    "B",
+    "C",
+    "H",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cc2aee5611fc5875141da681d77d2d84f9583f28cff0e74c861cbf8732062241"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "How many person (s) deliver lectures between B and F?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "342f2afc8192a8d0e71ea3e8bf4bdfbccc3a7c2c9965c4e414aaa99d45f848c6"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the questions given below: An uncertain number of persons sit in a linear row. All of them face north. Four persons sit between A and B. C sits fourth to the right of B. D sits third to the right of A. E sits fifth to the right of F. E sits immediate left of G who sits third from the one of the extreme ends of the row. B sits sixth to the right of H, who is not immediate neighbour of A. As many persons sit between C and F as many between F and D. H sits second to the left of I, who sits fourth from extreme end. G sits fourth to the right of D. How many persons sit between A and F?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "72ac038010486d59e237f9c9ae9618785e12663bfca06095c3b752bb268ddaaf"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "How many persons are in the row?",
+   "options": [
+    "18",
+    "15",
+    "19",
+    "22",
+    "25"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "66a44059d6c894b444effa1c8d0e29641dc25048189b583f225bb06318e8b29e"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the following questions. Six students P, R, T, V, X, And Z scored different marks in an exam. Z scored fewer marks than R. P scored more marks than T but less than Z. The one who scored third-lowest marks scored 39 marks. T doesn't score the least marks. V scored fewer marks than only two students. Who scored 35 marks?",
+   "options": [
+    "X",
+    "T",
+    "V",
+    "Cannot be determined",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "827d6d4fdbb1b6fbb32eb95f1e28a72804eb3f52f6dcafa5df7919cc77fc802a"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the following questions. Six students P, R, T, V, X, And Z scored different marks in an exam. Z scored fewer marks than R. P scored more marks than T but less than Z. The one who scored third-lowest marks scored 39 marks. T doesn't score the least marks. V scored fewer marks than only two students.\n\nWho scored more marks than P but less than R?",
+   "options": [
+    "V",
+    "X",
+    "Z",
+    "Either I or III",
+    "Both I and III"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0aca150e35f4e4e9865a3b895762efe3184bc076739efc5a6fdc3f1f336624a5"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: 2 # C D 6 % F I M K H 8 © @ T U V 4 € 2 7 8 $ H O K W 5 Y 4 ¥ Y A P @ Which of the following is the sixth to the left of the twenty-fourth element from the left end of the above arrangement?",
+   "options": [
+    "4",
+    "V",
+    "@",
+    "H",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "192a80f6adfa221fb5c66594c94b17ee00e7f36e841818a61417e78f9eabb3da"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "If all the even numbers are dropped from the given series, then which of the following element will be 10th from the right end?",
+   "options": [
+    "#",
+    "O",
+    "Y",
+    "7",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b6ca24e0bdc62dadb675851b6e3a9193b41a380ed403ab6588dc959c53405f1c"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "How many such vowels are there in the above arrangement each of which is immediately followed by a consonant but not immediately preceded by a number?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "More than three",
+    "None"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8a9b92ae1db3510b59aa693df2507ddd9facb7c68259f445e8d95909eb1c4822"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Which of the following is the ninth to the right of the twenty third element from the right end of the above arrangement?",
+   "options": [
+    "8",
+    "@",
+    "©",
+    "4",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9de2b0fe32cba496665016ba074cd23539e82e817bb58892c3fe2215100d98ab"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+   "options": [
+    "C6F",
+    "H©T",
+    "7$O",
+    "V€7",
+    "4YA"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "493b1760b8dbe462991e79c9cb1d1c8999f83cbf92a2a617eaacd3fd8b865c7e"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few Pens are Book. Some Book is Table. Conclusions: I. All Book is Table. II. Some Pens are Table.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "95155575f377b9f0b2de2ed0e654bd5fdffed4b074a8448dfb2503effd91a574"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Photos are Cameras. Only a few Cameras are Balloons. Conclusions: I. Some Photos are Balloons. II. No Photos are Balloons.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "78622baafa2e005a3d8cc7e575fa2a9250f26177a4e2365b3061267ccea4a96d"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: No Bags are Pocket. Only a few Pockets are Backpack. Conclusions: I. Some Bags are not Pocket. II. Some Backpack is Bags.",
+   "options": [
+    "Only I follow",
+    "Only II follows",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "79c325b37ce12e2a42c5598c0aa36f897c32093f8adbcea9b28751fe804f8c02"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Some pure are cap. Some fresh are cap. Conclusion: I. No fresh is pure. II. Some fresh is pure.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f52755c6224ba0213106b6b7fa5c4b377ade2592e907a86208bdc63362f47243"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “SONOGRAPHY” that have the same number of letters between them in the word (in both forward and backward directions), as they have in the English alphabetical series?",
+   "options": [
+    "More than four",
+    "One",
+    "Two",
+    "Four",
+    "Three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "175a9bcedd84ee52c4991ca7348020dcccb523df244872530b8c984a061d42dd"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Seven boxes contain different mobile of different companies- Sony, Samsung, Lenovo, Apple, Oppo, Realme, Vivo are placed one above the another but not necessarily in the same order. Each box has a number written on it from 1 to 7 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. Apple is placed just below Vivo. Two boxes are placed between Apple and Oppo. Only one box is placed above Oppo. There are two boxes are placed in between Vivo and Realme. The mobile Oppo is placed immediately below Lenovo. The box which contains Samsung is immediately above Realme. Which mobile is in the bottommost box?",
+   "options": [
+    "Sony",
+    "Apple",
+    "Samsung",
+    "Lenovo",
+    "Realme"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5a92b89ba88d59cd4ba62e0ddb88f5e62bb85c839386770c4af8967a7ab0773d"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Seven boxes contain different mobile of different companies- Sony, Samsung, Lenovo, Apple, Oppo, Realme, Vivo are placed one above the another but not necessarily in the same order. Each box has a number written on it from 1 to 7 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. Apple is placed just below Vivo. Two boxes are placed between Apple and Oppo. Only one box is placed above Oppo. There are two boxes are placed in between Vivo and Realme. The mobile Oppo is placed immediately below Lenovo. The box which contains Samsung is immediately above Realme.\n\nHow many boxes are placed between Lenovo and Vivo?",
+   "options": [
+    "2",
+    "3",
+    "1",
+    "4",
+    "No box"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dcde2a57498e9f64518e9efd6f4483448e7f6a36086587c8e521c9193c799420"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Seven boxes contain different mobile of different companies- Sony, Samsung, Lenovo, Apple, Oppo, Realme, Vivo are placed one above the another but not necessarily in the same order. Each box has a number written on it from 1 to 7 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. Apple is placed just below Vivo. Two boxes are placed between Apple and Oppo. Only one box is placed above Oppo. There are two boxes are placed in between Vivo and Realme. The mobile Oppo is placed immediately below Lenovo. The box which contains Samsung is immediately above Realme.\n\nWhich mobile is placed immediately above Sony?",
+   "options": [
+    "Vivo",
+    "Oppo",
+    "Samsung",
+    "Lenovo",
+    "Apple"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "886e8930abb9ff6607619274865a73ce50ce32441bd8bd1d4899336e3689e0c8"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Seven boxes contain different mobile of different companies- Sony, Samsung, Lenovo, Apple, Oppo, Realme, Vivo are placed one above the another but not necessarily in the same order. Each box has a number written on it from 1 to 7 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. Apple is placed just below Vivo. Two boxes are placed between Apple and Oppo. Only one box is placed above Oppo. There are two boxes are placed in between Vivo and Realme. The mobile Oppo is placed immediately below Lenovo. The box which contains Samsung is immediately above Realme.\n\nWhich mobile is placed immediately below Apple?",
+   "options": [
+    "Vivo",
+    "Oppo",
+    "Samsung",
+    "Lenovo",
+    "Realme"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5e668813603fc93c938c0a28ae0226c7b8ca0f69009611816c5a0b3c51ef7bbf"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the given information carefully and answer the following questions below. Seven boxes contain different mobile of different companies- Sony, Samsung, Lenovo, Apple, Oppo, Realme, Vivo are placed one above the another but not necessarily in the same order. Each box has a number written on it from 1 to 7 but not necessarily in that order. The boxes are arranged in ascending order such that the lowest numbered box is at the top and the highest numbered one at the bottom. Apple is placed just below Vivo. Two boxes are placed between Apple and Oppo. Only one box is placed above Oppo. There are two boxes are placed in between Vivo and Realme. The mobile Oppo is placed immediately below Lenovo. The box which contains Samsung is immediately above Realme.\n\nWhich mobile is placed between Oppo and Vivo?",
+   "options": [
+    "Apple",
+    "Sony",
+    "Samsung",
+    "Lenovo",
+    "Realme"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8793ffdfdfdef049d6766a31a8eb60ef327fae62f91db930613f55da57bec4e1"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "Directions: In these question, relationships between different elements are shown in the statements. These statements are followed by two conclusions. Statement: T ≤ D < L > V = E ≥ X Conclusions: I. D ≥ X II. X ≤ V",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Either conclusion I or conclusion II follows",
+    "Neither conclusion I nor conclusion II follows",
+    "Both conclusion I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5921a6354bd9996d0fc4919c3424662228842f5ad539ffe0809c40010bac8156"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/ are definitely true and then give your answers accordingly. Statements: J < G ≥ L > N < K ≤ F < T = H Conclusions: I. F > L II.K < H",
+   "options": [
+    "Only II follows",
+    "Only I follows",
+    "Both I and II follow",
+    "Either I or II follow",
+    "None follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b8f27574e645ee8be0d8b330bea20e31a5a07aed16f55167cb5d3d7d692581c5"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Directions: - In these questions, the relationship between different elements is shown in the statements. These statements are followed by two conclusions. Marks answer as an option given. Statements: L > I ≤ P = W; X = K > L = T Conclusions: I. T > P II. T = W",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Both I or II follow",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c0e4273e6673348fe164a2952894d4b68025aa7d987ab6ac6c6836a217b7e899"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "Directions: - Relationship between different elements is shown in the statements below. These Statements are followed by 2 Conclusions. Mark your answer on the basis of given statements and conclusions. Statement: B = U ≤ L = K ≥ M; J ≤ K Conclusions: I) B = K II) B < K",
+   "options": [
+    "None follows",
+    "Only I) follows",
+    "Either I) or II) follows",
+    "Both follow",
+    "Only II) follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e693225f02a56a5fa966d221c3478a965b60cb8afa2fa2b7ce3f80a8e980dc2a"
+  }
+ ],
+ "section_confidence": 0.922,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

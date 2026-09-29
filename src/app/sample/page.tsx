@@ -15,11 +15,11 @@ import { sectionsFromQuestions } from "@/lib/cbt-sections";
 // Local UX hint only (not a security control — the server enforces the caps).
 const SAMPLE_USED_KEY = "lastmileprep_sample_used_v1";
 
-/** Exams offered on the free-mock picker. SSC CGL + SBI Clerk are live. */
+/** Exams offered on the free-mock picker. SSC CGL, SBI Clerk + IBPS Clerk are live. */
 const EXAMS: Array<{ slug: string; name: string; tagline: string; logo: string; live: boolean; title: string }> = [
   { slug: "ssc-cgl", name: "SSC CGL", tagline: "Tier 1 · 2026 pattern", logo: "/images/exams/ssc-cgl.png", live: true, title: "SSC CGL Full Mock" },
   { slug: "sbi-clerk", name: "SBI Clerk", tagline: "Prelims · 2025 pattern", logo: "/images/exams/sbi.svg", live: true, title: "SBI Clerk Prelims Mock" },
-  { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims + Mains", logo: "/images/exams/ibps-clerk.png", live: false, title: "" },
+  { slug: "ibps-clerk", name: "IBPS Clerk", tagline: "Prelims · 2025 pattern", logo: "/images/exams/ibps-clerk.png", live: true, title: "IBPS Clerk Prelims Mock" },
 ];
 
 export default function SamplePage() {
@@ -123,8 +123,8 @@ export default function SamplePage() {
                 Choose your exam
               </h1>
               <p className="mx-auto mt-2 max-w-md text-sm text-ink-secondary">
-                Pick an exam to start a full mock in the real CBT interface. No signup, no card. SSC CGL is
-                live today.
+                Pick an exam to start a full mock in the real CBT interface. No signup, no card. SSC CGL,
+                SBI Clerk and IBPS Clerk are live today.
               </p>
             </div>
 

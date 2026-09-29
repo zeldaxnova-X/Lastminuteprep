@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_On_4_September_2022_Shift_2__03e4a3bfc54ab57fc2440f86235fc763.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Read the passage and answer the questions. Social media has brought a new idea in networking where people with similar interests or from similar backgrounds and cultures can connect and share in expertise, knowledge, education, and entertainment, among other aspects. Through the sharing of articles, blogs, pictures, and videos, a person’s audience helps to increase their networks and followers, meet friends, and make new acquaintances online; not only locally but also worldwide. In addition, social media has eliminated many communication barriers enabling people to interact and freely share information about various topics of interest. From an economic perspective, social media helps drive the economy through the ease of advertising where a large customer base is reached effectively in a short time. Companies find new customers through advertising on social networks and thereby increase the awareness of their brand including those that celebrate and express particular cultures. In addition, social media has changed market research since businesses can study their customers through the details on their profiles as opposed to traditional research. Information is shared online with little or no spending, which helps improve profits for companies. This does not only occur locally but also internationally where global economic activity has become possible with social media sites like Facebook aiding businesses to promote their products and align them to specific customer needs. However, social media has some negative effects such as cyberbullying and harassment, reduced productivity, and a threat to privacy. Cyberbullying entails online attacks including insults and threats. Women, girls, and school children can become victims of online harassment and bullying. In addition, social media affects productivity as it distracts employees from work. This can lead to a loss of billions due to reduced productivity. Furthermore, social media can lead to identity theft and stalking when a user fails to protect their privacy. It is difficult to maintain privacy online and any negative post could have enduring risk on the user. The positive effects of social media on social and economic issues can be inferred as more than the negative effects. They include enhanced socialization and economic progress with networking helping to increase the number of one’s clients and friends while also providing a platform for celebrating and enhancing one’s culture. Nonetheless, despite these impacts being relevant at the national as well as the global level, social media also has some negative effects including cyberbullying and online harassment, reduced productivity, and privacy infringement, among others. Malcom X once said, “The media’s the most powerful entity on earth…because it controls the masses.” Though this reference was to mainstream media, this famous quote is applicable to social media, which was non-existent at a time. According to the passage, the word 'expertise' means-",
+   "options": [
+    "inability to do something successfully.",
+    "lack of skill or ability.",
+    "expert skill or knowledge in a particular field.",
+    "the state of not achieving maximum productivity.",
+    "the ability to understand something."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "34a6cdfe575551b1478568a918668e366f89b3bf1c7be9a9e1873f7cc7369773"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "What does the word 'threat' mean?",
+   "options": [
+    "the possibility or likelihood of some future event occurring.",
+    "a person or thing likely to cause damage or danger.",
+    "the state or fact of something's being likely.",
+    "the condition of being protected from or unlikely to cause danger, risk, or injury.",
+    "the action of protecting, or the state of being protected."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6e22cd342302ab532089ebacbcf74a11bc8b115c8120e4e1322a2827a9396be3"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "What can be shared through social media?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all of the above",
+    "none of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fb55426eb18142a44cf6030f93f181ef8916c3a58951212ac6d3979212985ced"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "Which social media site helps businesses to promote products?",
+   "options": [
+    "Instagram",
+    "Facebook",
+    "LinkedIn",
+    "Orkut",
+    "Snapchat"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e491de5fe6e4c333fb4f2980991e42e024868b1b14ee6463b0aad1ee12ff607d"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "How has social media been able to eliminate communication barriers?",
+   "options": [
+    "by being provided freely to everyone",
+    "by producing latest technology",
+    "by providing mobile phones to everyone",
+    "by enabling people to interact and freely share information",
+    "by aiding businesses"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2261a9c87a87a9f11334d65eb5a2d12b3cc576fb2e03509a59758f578955260f"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "What are some of the negative effects of social media?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all except 3",
+    "all except 1"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9d8f625540edb9e345c02e7cf57bf37553277e24354d3c2c1605ea30cd2a4730"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Who can become easy victims of online bullying and harassment?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all except 1",
+    "all except 2"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "13c6af3ef06b6f13679104c3c9d722b4cae712a802aa428429dad490000cc06f"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "What are the positive effects of social media?",
+   "options": [
+    "Only 1",
+    "Only 2",
+    "Only 3",
+    "All of the above",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6310b16dcce5e16a531abdf52da2634278e53ab2e07b5fd1569777cde5b54413"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "What does the word 'barrier' mean?",
+   "options": [
+    "an unfavourable circumstance or condition.",
+    "a condition or circumstance that puts one in a favourable or superior position.",
+    "a circumstance or obstacle that keeps people or things apart or prevents communication or progress.",
+    "financial or material help given to a country or area in need.",
+    "promote or encourage (something)."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6f53c379e056c3f661561e6c80bb06e277ea22e25c0da721dbb7c72f61dae042"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "How does social media help from an economic perspective?",
+   "options": [
+    "only 1",
+    "only 2",
+    "only 3",
+    "all of these",
+    "none of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d7bece214b3907917db1db4e9a119570d8fa421e6eb82718ebbb056b5c09a36c"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Directions: There are four sentences given as options, some of which may contain an error. Choose the sentence that is grammatically and contextually correct. If all the given sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The student's homeworks are due tomorrow.",
+    "The dog's tail wagged excitedly upon seeing its owner.",
+    "The team have won the championship for three consecutive years.",
+    "A book can takes you on a journey to different worlds.",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6a2e9f8d9a810d6082e98ac6ee3ad5b72e3b4540fa8bdeabda1e0fcd2cea3da8"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Directions: There are four sentences given as options, some of which may contain an error. Choose the sentence that is grammatically and contextually correct. If all the given sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The children's toys is scattered around the room.",
+    "The cat's fur feels soft to the touch.",
+    "The company have announced their quarterly earnings.",
+    "A apple a day keeps the doctors away.",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b89b2da3919acc05e903468bceca1e8ac16467b326bfe8b2040a43ad5b399c9b"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "Directions: There are four sentences given as options, some of which may contain an error. Choose the sentence that is grammatically and contextually correct. If all the given sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The train arrived late due to heavily rainfall.",
+    "The cat's purring can be heard across the room.",
+    "The company have recently hired a new CEO.",
+    "My brother and I enjoys playing video games together.",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "547225e7602e0ea03343f5fd789b67247865b43e77d85340472ef0f5ca58097b"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Directions: There are four sentences given as options, some of which may contain an error. Choose the sentence that is grammatically and contextually correct. If all the given sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The book I borrowed from the library is interesting.",
+    "The child's toys needs to be put away",
+    "The team have won the championship three times in a row.",
+    "My parents and I is planning a vacation next month.",
+    "All are correct"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5524ad896b0dbf639264fb9d42440e6e50b21f381a4123b1cc479e1f2cbfb75e"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Directions: There are four sentences given as options, some of which may contain an error. Choose the sentence that is grammatically and contextually correct. If all the given sentences are correct, mark 'All are correct' as your answer.",
+   "options": [
+    "The students has completed their assignments on time.",
+    "The company's profits have grown steadily over the past year.",
+    "The dog's barking could heard from a distance.",
+    "My friend and I is going to the movies tonight.",
+    "All are correct"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4d58b7c713c5cf1ccac27250df289cd7fe3d5d1999333668d189d7826ccf71ff"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "In the following sentence, some parts have been printed in bold. One of the bold parts is incorrectly spelled. Pick up that part and choose its number. If there is no error in the bold parts, choose option 5- No error as the answer. Women's suffrage, coeducational studies, and affirmative action policies might change the way \"femininity\" is expressed, but these practices could not significantly change the overall status of women.",
+   "options": [
+    "Suffrage",
+    "Affirmative",
+    "Femininity",
+    "Significantly",
+    "No error"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "029e9e39b3399dba0882cb06702784d155697c9f5b7821351ba053f353503e3a"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "In the following sentence, some parts have been printed in bold. One of the bold parts is incorrectly spelled. Pick up that part and choose its number. If there is no error in the bold parts, choose option 5- No error as the answer. The political office can be held only for a limited period which must be relinsquished upon completion of one's term or another exigency.",
+   "options": [
+    "Political",
+    "Relinsquished",
+    "Completion",
+    "Exigency",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "88e0f5e34e49b5b01a4eeb2bc8680782169e65e687cda2688ebb58acd5eb471a"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "In the following sentence, some parts have been printed in bold. One of the bold parts is incorrectly spelled. Pick up that part and choose its number. If there is no error in the bold parts, choose option 5- No error as the answer. Riding on the laguna in Abidjan, Ivory Coast's economic hub, the unusual complex floats on a platform made from 700,000 discarded bottles and other boyant debris.",
+   "options": [
+    "Laguna",
+    "Hub",
+    "Discarded",
+    "Boyant",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "dc4e2c5c798b23bddfe334e72204d5d1ac27f122e2205b33db0c6eddf605df8d"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "In the following sentence, some parts have been printed in bold. One of the bold parts is incorrectly spelled. Pick up that part and choose its number. If there is no error in the bold parts, choose option 5- No error as the answer. Ordinary people are not endowed with adequate patience and insight that would enable them to make a correct assesment of the situation.",
+   "options": [
+    "Endowed",
+    "Adequate",
+    "Insight",
+    "Assesment",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "92d3fbfdbc0e374cd3ef2292ee40994558c4a44b654716062d584904bd7d8741"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "In the following sentence, some parts have been printed in bold. One of the bold parts is incorrectly spelled. Pick up that part and choose its number. If there is no error in the bold parts, choose option 5- No error as the answer. Marx's adherence to class perspective convinced him that a class-divided society cannot have homogeneous interests.",
+   "options": [
+    "Adherence",
+    "Perspective",
+    "Society",
+    "Homogeneous",
+    "No errors"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "8ba95e61029f49614d3665f2ad98384e7d60c3eabc160f4959419b67f767f29f"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Fill in the blank with the appropriate word. In May 1835 Van Buren was ______ nominated by the Democratic convention at Baltimore.",
+   "options": [
+    "Differently",
+    "Divergently",
+    "Oppositely",
+    "Inconsistently",
+    "Unanimously"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "17a33d401ca8a9911d8146bda65c404419ea8ec330a452a4441b6c6c70113de8"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Fill in the blank with the appropriate word. Rita begged her husband to quit his unhealthy _______ of smoking cigars.",
+   "options": [
+    "Decency",
+    "Virtue",
+    "Vice",
+    "Happiness",
+    "Honor"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cea77034c22ad7b3189ed44898b559a3b1840538042aa8c7646a26de13542cfb"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Fill in the blanks. Raymond wrote imaginary tales for young children containing ___________ characters and events like the Wayfarer Merlion who divided the sea.",
+   "options": [
+    "grotesque",
+    "fantastic",
+    "corresponding",
+    "appropriate",
+    "none of the above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a349a30eec382bcebdd5984cf6fbafae7e69aa57653a6b99758e161f89bda3de"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Fill in the blanks. Mr. Loddstone was ___________ on his henchman to aid in the cover up of the murder.",
+   "options": [
+    "Believing",
+    "Calculating",
+    "Accounting",
+    "Counting",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1889b9b652c4cabce1c94747f192510c10ccb07e0356612fd7145eded123874a"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Pick out the most appropriate word from the given words to fill in the blank to make the sentence meaningfully correct. In terms of treating acne, neem paste is observed to ______ much of grease and bacteria that can exacerbate the condition.",
+   "options": [
+    "Keep",
+    "Create",
+    "Increase",
+    "Eliminate",
+    "Allow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "dac347dd77caf8224a2182bd4f083be5bbbdcad53a325339baf7c59e8ea19a77"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "The following sentences form a paragraph. The sentences are numbered as P, Q, R, S and T. These five parts are not given in proper order. Read the sentences and choose the alternative that arranges them in correct order. P. Flights from European airports are down by 90% from a year ago, for example Q. But it is to be hoped that the huge reduction in motor traffic caused by the virus will not be completely reversed R. It is clear that the ways we travel, and use transport, will not be the same after the coronavirus outbreak as they were before S. Already, cities including Milan and New York have announced ambitious plans to reconfigure roads T. There are no comparable figures that suggest how many car journeys the UK should expect in six months or a year’s time Which of the following is the SECOND sentence of the paragraph?",
+   "options": [
+    "T",
+    "P",
+    "R",
+    "S",
+    "Q"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0cb8b4ac818b297ad2e4315c4592597482d99fb2091ab904cbc269037850f72c"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "The following sentences form a paragraph. The sentences are numbered as P, Q, R, S and T. These five parts are not given in proper order. Read the sentences and choose the alternative that arranges them in correct order. P. Flights from European airports are down by 90% from a year ago, for example Q. But it is to be hoped that the huge reduction in motor traffic caused by the virus will not be completely reversed R. It is clear that the ways we travel, and use transport, will not be the same after the coronavirus outbreak as they were before S. Already, cities including Milan and New York have announced ambitious plans to reconfigure roads T.\n\nWhich of the following is the FIRST sentence of the paragraph?",
+   "options": [
+    "R",
+    "S",
+    "T",
+    "Q",
+    "P"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d9306c5cba99bb9659dfc224e4b0187b5461c5b4ea7c50214c851e00970d9682"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "The following sentences form a paragraph. The sentences are numbered as P, Q, R, S and T. These five parts are not given in proper order. Read the sentences and choose the alternative that arranges them in correct order. P. Flights from European airports are down by 90% from a year ago, for example Q. But it is to be hoped that the huge reduction in motor traffic caused by the virus will not be completely reversed R. It is clear that the ways we travel, and use transport, will not be the same after the coronavirus outbreak as they were before S. Already, cities including Milan and New York have announced ambitious plans to reconfigure roads T.\n\nWhich of the following is the FIFTH sentence of the paragraph?",
+   "options": [
+    "P",
+    "Q",
+    "S",
+    "R",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d0b27564b7d3a0a480feeb930b9f709e5129fd82c512e8ea516203fd379e2608"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "The following sentences form a paragraph. The sentences are numbered as P, Q, R, S and T. These five parts are not given in proper order. Read the sentences and choose the alternative that arranges them in correct order. P. Flights from European airports are down by 90% from a year ago, for example Q. But it is to be hoped that the huge reduction in motor traffic caused by the virus will not be completely reversed R. It is clear that the ways we travel, and use transport, will not be the same after the coronavirus outbreak as they were before S. Already, cities including Milan and New York have announced ambitious plans to reconfigure roads T.\n\nWhich of the following is the FOURTH sentence of the paragraph?",
+   "options": [
+    "P",
+    "R",
+    "Q",
+    "S",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8fe19be2f42019dd34e80a67c39846cd646cdae1b03df379a768db49fc89b776"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "The following sentences form a paragraph. The sentences are numbered as P, Q, R, S and T. These five parts are not given in proper order. Read the sentences and choose the alternative that arranges them in correct order. P. Flights from European airports are down by 90% from a year ago, for example Q. But it is to be hoped that the huge reduction in motor traffic caused by the virus will not be completely reversed R. It is clear that the ways we travel, and use transport, will not be the same after the coronavirus outbreak as they were before S. Already, cities including Milan and New York have announced ambitious plans to reconfigure roads T.\n\nWhich of the following is the THIRD sentence of the paragraph?",
+   "options": [
+    "P",
+    "R",
+    "Q",
+    "S",
+    "T"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "fa9b1d14419624e780065fd19250f1f2bf9b3e5397a6551d9107ca8f1b5d0c18"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark ‘?’ in the following question? 60% of 80 ÷ 16 × 30% of 70 = ?",
+   "options": [
+    "60",
+    "61",
+    "62",
+    "63",
+    "65"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "341989cdae47bf360a688167918ff1aa0a1b716301227293d77e08018fedaace"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? √144 + 12 – 96 + √289 + 144 = ?",
+   "options": [
+    "31",
+    "89",
+    "62",
+    "44",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a2af4b5b38de1d276bf5f315ae48ca9688afd6ddf0d75a327dbad9aa7c465d27"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 11 × 66 – 21 × 22 + 91 × 19 = ?",
+   "options": [
+    "1993",
+    "1994",
+    "1995",
+    "1996",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8294e53566957650816e92b7a511a67e9bb7d0342efad7a7cf507eaac5e9f484"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of question mark(?) in the question? 2 [(130) ÷ 25 × 15] ÷ 30 = ?",
+   "options": [
+    "352",
+    "314",
+    "326",
+    "338",
+    "426"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "12e30ebf069f4a0cdc63b287804abdc87b2f6681887eb8384d53fad0390a6247"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark(?) in the following questions? 2 ? = (7/5) of 55 + (3/8) of 1376 − 5",
+   "options": [
+    "568",
+    "506",
+    "554",
+    "550",
+    "571"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "64da9c5cb215bb039ee26973e16a97969e7581b3bc7c3927df18fba68417bd09"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following question? 2 18% of 27 + 2% of 207 = (?)",
+   "options": [
+    "4",
+    "6",
+    "5",
+    "3",
+    "2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "aefbbf91c1fc79985e6ca76241873473efb15139c5888201a17475df05704475"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of (?) in the following question √1296 - √576 = √? + 3 × 2",
+   "options": [
+    "12",
+    "14",
+    "17",
+    "9",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d7324a61712c0c6c33d1bc8457a1fe96e2227e23b73d4a983b34ebd27e3a7f57"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (608.40 × ?) ÷ 225 + 37 = 375",
+   "options": [
+    "114",
+    "125",
+    "157",
+    "168",
+    "135"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "dd2cf80fae13c6c7c9b9b2842dc9bf55d1688fec11838d667d88730f030e25c7"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 21 + 31 + ? + 21 = 13 5 2 4 3 12",
+   "options": [
+    "51 3",
+    "31 3",
+    "61 3",
+    "41 3",
+    "none of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "fea642aa4286d6237d0ca61aea2e684ba2a8e7c63240dfe37ab64e5520f03937"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 7 × 1.5 ÷ 4 – 2.8 × 0.5 = ?",
+   "options": [
+    "49/40",
+    "49/30",
+    "48/40",
+    "49/50",
+    "49/45"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "31de94a349b230ced9fe855b2e2ac3ebbb72bbc22d95dca0aac739ad5ee1acad"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? 2160 ÷ 36 – 5 × 8.2 = ?",
+   "options": [
+    "23",
+    "24",
+    "21",
+    "22",
+    "19"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7c367dbe735c189a16c55a841c8549328617458d5393cbb5c902103258e77611"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question: 50% of ? = 20% of 40 + 60% of 80",
+   "options": [
+    "100",
+    "42",
+    "96",
+    "148",
+    "112"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0e33c0a81e4e838abe542e32de3de9294c08fb7409b49b87c815269941c16a8f"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question mark ‘?’ in the following question: 65% of 300 + 30% of 600 – 620 + 360 = ?",
+   "options": [
+    "110",
+    "115",
+    "120",
+    "125",
+    "100"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f2b97dddba43df91dcee377832530888534267ebd5639e1532823aacd130d667"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 2 2 140 + 4 – 5 × 6 = ?",
+   "options": [
+    "12",
+    "2",
+    "16",
+    "6",
+    "22"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "34bb21c42f641fb4d1fbfac1f4bc4b056516ecce468d1cfe61e6815d1b71b99c"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question. ∛4913 of (35 × ? + 386) = 17",
+   "options": [
+    "12",
+    "11",
+    "-11",
+    "-12",
+    "3"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d5f12968765f5e5df6776b1f235dcc9ff5b6d20532312ca089bd5252821615b2"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following table carefully and answer the questions that follow: Types/Brands customers (in Decathlon Puma Nike Hundreds) Running shoes 40 50 60 Football shoes 50 40 65 Cricket shoes 60 95 90 Hiking shoes 85 60 55 Approximately, what percent is the sales of Decathlon less than the sales of Puma?",
+   "options": [
+    "4%",
+    "8%",
+    "6%",
+    "3%",
+    "10%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "39a1b93d224bbc041921b94695a13326b57c18dac7f42c834d00f7b881a28473"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "Direction: Read the following table carefully and answer the questions that follow: Types/Brands customers (in Decathlon Puma Nike Hundreds) Running shoes 40 50 60 Football shoes 50 40 65 Cricket shoes 60 95 90 Hiking shoes 85 60 55 Approximately, what percent is the sales of Decathlon less than the sales of Puma?\n\nWhat is the difference between the sales of Cricket shoes and Football shoes of three brands?",
+   "options": [
+    "93",
+    "81",
+    "90",
+    "74",
+    "86"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b1b279689638545f35814d7ba8297f9ee546c1168155691bf76f3bcef0e34572"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "Approximately, what percent of total sales of shoes of Nike is the sales of Nike Football shoes?",
+   "options": [
+    "28%",
+    "22%",
+    "29%",
+    "20%",
+    "24%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "207d5c1d86b2c54489290df45a7b51f3d259e3076991c5c023458801e1e308ed"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the sales of Running and Hiking shoes over three brands.",
+   "options": [
+    "1 : 3",
+    "3 : 4",
+    "2 : 3",
+    "4 : 3",
+    "2 : 1"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e94b832ae645b3fb4a3f4cd88de3904bf8ecc5e006cc64f58b9bbeb72d73404c"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What is the average sales of three brands?",
+   "options": [
+    "260",
+    "275",
+    "234",
+    "240",
+    "250"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9da536d2101817ac254028093368d2f0e1ed4c45df007929b15116c82c89937a"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "Perimeter of the square is 4/5 of the area of rectangle whose length 11 cm and width is 6 cm less than the length. What is the length of the square?",
+   "options": [
+    "12 cm",
+    "15 cm",
+    "121 cm",
+    "11 cm",
+    "100 cm"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c4dca03bb0a6063b0e3ae357d585e5a00a1109ad3129db4834eb2f828dff0384"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "The ratio between the age of Father and Mother is 8 : 7. After 8 years, the total age of the father and mother is 91 years. Find the present age of the father.",
+   "options": [
+    "40 years",
+    "36 years",
+    "30 years",
+    "35 years",
+    "45 years"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f41b8fa64ba8307684b1d12c9894cf5459b0f0c548b0044fb2cc16b959d02c0e"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "Two trains start at the same time from A and B towards each other at a speed of 25 m/s and 75 m/s. when they meet each other it was found that one train is travelled 360 km more than another train, find the distance between two stations A and B",
+   "options": [
+    "840",
+    "720",
+    "680",
+    "700",
+    "800"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "086f2f0f33fbebe45eab7f97bf2e550d6fbb0581849e0433a0bf8060f582397b"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "There are 3 numbers. The average of the first two numbers is 12 more than the average of the last two numbers. What is the difference between the first and the last number?",
+   "options": [
+    "18",
+    "24",
+    "26",
+    "16",
+    "25"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a5e42fd5c7709a6f041aa9f51d40da1ec804ddb4259763b75510d2d4045e8f54"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "Amit spends 40% of his salary on food items, 20% of the remaining amount on entertainment and 20% of the remaining amount for paying various bills. If Amit saves Rs.24,000, what is his total salary?",
+   "options": [
+    "Rs. 60,500",
+    "Rs. 72,000",
+    "Rs. 65,500",
+    "Rs. 62,500",
+    "Rs. 72,500"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "96d258fb70c6065a8670096551d28f3098e55683aa9833036eb3c4504883508c"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "In the following number series, a wrong number is given. Find out the wrong number. 20, 22, 28, 42, 70, 134",
+   "options": [
+    "20",
+    "70",
+    "22",
+    "134",
+    "42"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8f1469df387dace0ea74d4130ba3980220e6aa0b478b3e86d7edca416fae4166"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "In the following number series, a wrong number is given. Find out the wrong number. 24, 8, 12, 18, 36, 90",
+   "options": [
+    "18",
+    "36",
+    "12",
+    "8",
+    "24"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b5221141bd8e411e4dfd612e02f7dcd6acf1c37d77dcec35c17e40f7d8dd0e4d"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 12, 12, 16, 34, 84, 182",
+   "options": [
+    "12",
+    "84",
+    "34",
+    "16",
+    "182"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a46e2f5844b04299e0aca6f363ebf58c26fc279740d79b49821c0847387d7f3d"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, a wrong number is given. Find out that number. 24, 47, 45, 91, 90, 179",
+   "options": [
+    "91",
+    "47",
+    "179",
+    "90",
+    "45"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1055280fb9b10d371b5494a4da39e6bbc188f546eca42ad25d2fec3a1055f6c5"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 2, 9, 34, 99, 184, 189",
+   "options": [
+    "9",
+    "34",
+    "99",
+    "184",
+    "189"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "273438673b5b8615884e5c67cb690e2ea0da7653baea4222554730c73949bdfc"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "In downstream a boat cover 32 km in 2 hours and the speed of the boat in still water is 12 km/h. How much time will the boat take to cover the same distance in the upstream?",
+   "options": [
+    "6",
+    "3",
+    "2",
+    "4",
+    "None"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "aa38117c4f5034a72b2d368781cef687204d55fbd6806a323cd021d1a21eb23c"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "A and B can do a piece of work in 25 days. B and C can do the same work in 20 days while C and A can do the same work in 10 days. In how many days they together can do the work?",
+   "options": [
+    "19/200 days",
+    "13/200 days",
+    "200/21 days",
+    "200/19 days",
+    "200/13 days"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e8582cd1643a11c089ddf09b712fbd166f48aed254c93f40db0609cf111f48b9"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "A shopkeeper sold a laptop for Rs. 22,400 after giving 20% discount on the marked price and made 12% profit on the cost price. What would have been the profit percentage if it was sold at marked price?",
+   "options": [
+    "55%",
+    "40%",
+    "22%",
+    "30%",
+    "50%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f39258b4caee4ac571dff5430a24110e577d52fdbf748c7784e39d1e90f1ec26"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "If the difference between Compound interest and simple interest on a certain sum of money at 5 % per annum for 2 years is Rs. 25.50. Find the sum of money.",
+   "options": [
+    "Rs. 12,000",
+    "Rs. 10,200",
+    "Rs. 13,000",
+    "Rs. 10,000",
+    "Rs. 15,000"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6c883b6784a20c37041b77760c9ec058519e777697fa369ff58b3e4174f14169"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "A and B are partners in a business firm. A puts in Rs. 22000 and B put in Rs. 20000. A receives 30% of the profit for managing the business and remaining balance is divided in the ratio of their capitals. If the total profit is Rs. 60000, find total share of A.",
+   "options": [
+    "Rs. 40000",
+    "Rs. 36000",
+    "Rs. 20000",
+    "Rs. 32000",
+    "Rs. 38000"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3f5624d313d780243b0daa8d941d335282d465750e57fa35d8445e717a1deba4"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions that follow: Eight persons Palak, Qadir, Ravi, Saroj, Wasim, Xen, Yoyo and Zen were born in different years 1988, 1989, 1991, 1992, 1993, 1994, 1997 and 1999 but not necessarily in the same order. The present ages can be calculated based on the year 2020. Yoyo was born in a leap year. The age of Zen is more than 30. There is a gap of two years in Yoyo and Qadir. The number of persons born in between Palak and Wasim was two more than Ravi and Wasim. The difference between the age of Ravi and Wasim is 6 years. Zen is born in odd number of years but not in 1997. Saroj was born before Xen. Saroj was not born in 1993. What is the present age of Qadir?",
+   "options": [
+    "24 years",
+    "25 years",
+    "26 years",
+    "27 years",
+    "28 years"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fc8bd59e27f9eaab7265a17b1dcc6b53604c16b896c85479245246b5a7223297"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions that follow: Eight persons Palak, Qadir, Ravi, Saroj, Wasim, Xen, Yoyo and Zen were born in different years 1988, 1989, 1991, 1992, 1993, 1994, 1997 and 1999 but not necessarily in the same order. The present ages can be calculated based on the year 2020. Yoyo was born in a leap year. The age of Zen is more than 30. There is a gap of two years in Yoyo and Qadir. The number of persons born in between Palak and Wasim was two more than Ravi and Wasim. The difference between the age of Ravi and Wasim is 6 years. Zen is born in odd number of years but not in 1997. Saroj was born before Xen. Saroj was not born in 1993.\n\nHow many persons born between Palak and Wasim?",
+   "options": [
+    "Three",
+    "Two",
+    "More than four",
+    "Four",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f2926dea8a3fa136b4ef253f3902ed8cbd1f06396d924ec9e9d79cb43d80e3b9"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following information carefully and answer the questions that follow: Eight persons Palak, Qadir, Ravi, Saroj, Wasim, Xen, Yoyo and Zen were born in different years 1988, 1989, 1991, 1992, 1993, 1994, 1997 and 1999 but not necessarily in the same order. The present ages can be calculated based on the year 2020. Yoyo was born in a leap year. The age of Zen is more than 30. There is a gap of two years in Yoyo and Qadir. The number of persons born in between Palak and Wasim was two more than Ravi and Wasim. The difference between the age of Ravi and Wasim is 6 years. Zen is born in odd number of years but not in 1997. Saroj was born before Xen. Saroj was not born in 1993.\n\nWhich statement is not correct for Yoyo?",
+   "options": [
+    "Yoyo is born between Palak and Ravi",
+    "Yoyo was born in the year 1992",
+    "Yoyo's present age is 25 years.",
+    "Only (1) and (2)",
+    "Only (2) and (3)"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "606ed69dd081e2bc4889f4dc014c8ba74b7e1ce0962aec09f606d3df975bda82"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "Saroj is related to Palak, in the same way Qadir is related to Wasim. Who is related to Ravi?",
+   "options": [
+    "Qadir",
+    "Saroj",
+    "Wasim",
+    "Yoyo",
+    "Xen"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "68f38e53171da1f2fa31ea09d11b9dabe34ce31ff0f6766e34102f661d81f446"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "Who was born in the year 1989?",
+   "options": [
+    "Xen",
+    "Zen",
+    "Ravi",
+    "Saroj",
+    "Palak"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "81657a956979b52419dea032baff851ee63cb2ed29c9660594429f12270beff2"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "nd th th th If it is possible to make a meaningful word with the 2 , 5 , 7 and 8 letters of the word FREQUENT, which of the following will be the third letter of that word, if more than one such word can be formed, give 'X' as the answer and if no such word can be formed, give 'Y' as the answer?",
+   "options": [
+    "O",
+    "E",
+    "X",
+    "Y",
+    "R"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c643ea09be6ff3666c3ced75f47b27daa162212dd14d302117eececf6fecce40"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information carefully and answer the questions given below. There are seven persons who are working in the same company on different designations and the person who is working on that designation is named A, B, C, D, E, F, and G but not necessarily in the same order. They have different designations starting from the Clerk, Officer, Assistant Manager, Manager, Assistant General Manager, General manager, Director. Director is the topmost post of the company and the clerk is the lowermost post of the company. Three positions between A and B. A is senior to B and working on the post of director. only one person holds the position between C and F. C is a manager. The number of positions between D and A is the same as the number of positions between C and B. Two persons hold positions between E and F. On which position does D works?",
+   "options": [
+    "General manager",
+    "Assistant General manager",
+    "Assistant manager",
+    "officer",
+    "clerk"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d4f0614b0fac51850d55c6697b1976467382a3d4c2a6de72d6b346b2543836e9"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "On which position does E works?",
+   "options": [
+    "General manager",
+    "Assistant General manager",
+    "Assistant manager",
+    "officer",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5efade81de22d8209851ce06b21932b44449f3f4e7984b20d17b1fbf18f89f56"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Which of the following person works as assistant manager?",
+   "options": [
+    "A",
+    "D",
+    "E",
+    "B",
+    "F"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ddf387897aa50332ee3df04b978db10cd981a7952296c4546cd474dfc098258d"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Which of the following person work on clerk position?",
+   "options": [
+    "E",
+    "F",
+    "B",
+    "C",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f06678ba111961b9f30b6e1b15756e6bc3baa6e4fdba4f4bcd3ede72d3cc5258"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are alike in a certain way and hence form a group, which of the following does not belong to the group?",
+   "options": [
+    "AC",
+    "DB",
+    "EF",
+    "CG",
+    "BG"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b447f564d8ad6c43467d2c18f197fb29709a72e7c9d41789133c80d801ce55d1"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be true, find which of the conclusion(s) among given conclusions is/are definitely true and then give your answers accordingly. Statements: W = Z ≤ Q < O, F ≤ Z < T Conclusions: I. W < T II. O > F",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusions I and II follow",
+    "Either conclusion I or II follows",
+    "None follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "aae9bf211b086b5d70d976cef4747c14f39643d49bbe5990efe544ec2c4d3d2a"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statement to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statement: J ≤ K < T = A ≥ W = C Conclusion: I) W = T II) T > W",
+   "options": [
+    "Only II is true",
+    "Both I and II are true",
+    "Either I and II is true",
+    "Only I is true",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fd7a9964b85287fe6103504ef4a9cf85abcc345088581da207f01758244ff4fd"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A < B ≥ C > D ; C < F ; E ≤ D Conclusions: I. A < F II. E < F",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Either I or II is True",
+    "Neither I nor II is True",
+    "Both I and II is True"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "78e9f7c56f802803eade181b6443329ccdea5321d2af76263c18b8146708e43a"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be true, find which of the conclusion among given some conclusion is/are definitely true and then give your answers accordingly: Statement: L ≥ P > B; M = B < R; U ≥ J > L Conclusion: I. U > P II. L > M",
+   "options": [
+    "Only I Follows",
+    "Only II Follows",
+    "Both I and II Follows",
+    "Either I or II Follows",
+    "Neither I nor II Follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "80abbe7ec88fd32e6be261e136ded84599a6b1871797433c90f806ec3e64b102"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the given questions. An uncertain number of the person is sitting in a straight line facing north. Three-person sit between Ram and Rahul. Abhi sits second to the right of Ram. Only three people sit between Rahul and Arun. Ravi is sitting to the immediate left of Ram. Abhi sits fifth from the extreme right end of the row. Anjali sits on the extreme left end of the row. The same number of people sits between Abhi and Abhishek as between Abhishek and Arun. Sanu sits second to the left of Aditya, who is an immediate neighbour of Rahul. Not more than two people sit between Aditya and Arun. Five people are sitting between Arun and Anjali. The same number of people sit between Arun and Shruti as between Shruti and Anjali. Who is sitting immediate right of Aditya?",
+   "options": [
+    "Arun",
+    "Ram",
+    "Rahul",
+    "Abhi",
+    "Shruti"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6ad5e5036dad9218d4eaa4ddf6f1cba877733fee85a1d3dd62f354a1feac256d"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the given questions. An uncertain number of the person is sitting in a straight line facing north. Three-person sit between Ram and Rahul. Abhi sits second to the right of Ram. Only three people sit between Rahul and Arun. Ravi is sitting to the immediate left of Ram. Abhi sits fifth from the extreme right end of the row. Anjali sits on the extreme left end of the row. The same number of people sits between Abhi and Abhishek as between Abhishek and Arun. Sanu sits second to the left of Aditya, who is an immediate neighbour of Rahul. Not more than two people sit between Aditya and Arun. Five people are sitting between Arun and Anjali. The same number of people sit between Arun and Shruti as between Shruti and Anjali.\n\nWho is sitting extreme left end of the row?",
+   "options": [
+    "Sanu",
+    "Shruti",
+    "Anjali",
+    "Ram",
+    "Rahul"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c9b24634c37ac13c5f6fc08b3a313d81ef0cb96796f6881434196f1046393eee"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question that follows. A certain number of students are sitting on the floor and facing the north direction. Two-person sits between Amit and Bhargav. Neither Krishan nor Rajat sits at any of the extreme ends. Priya sits in the middle of the Row. Mahesh sits adjacent to the Krishan. Priya sits exactly between Rahul and Bhargav. Rajat sits adjacent to Bhargav. Amit is third from the left end. More than Four students sit between Rajat and Ramesh. Mahesh sits at one of the extreme end of the row. Rajat sits right to the Ramesh. Rahul is sitting immediate right of Amit. Sachin is Sitting between Ramesh and Amit. How many students sit in the row?",
+   "options": [
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten",
+    "Eleven"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c398c6c6a0d5cb3299f60429c2299716f27a4982bb48b2d798d5758feb8fb7c9"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question that follows. A certain number of students are sitting on the floor and facing the north direction. Two-person sits between Amit and Bhargav. Neither Krishan nor Rajat sits at any of the extreme ends. Priya sits in the middle of the Row. Mahesh sits adjacent to the Krishan. Priya sits exactly between Rahul and Bhargav. Rajat sits adjacent to Bhargav. Amit is third from the left end. More than Four students sit between Rajat and Ramesh. Mahesh sits at one of the extreme end of the row. Rajat sits right to the Ramesh. Rahul is sitting immediate right of Amit. Sachin is Sitting between Ramesh and Amit.\n\nWho sits fourth to the right of Priya?",
+   "options": [
+    "Mahesh",
+    "Krishan",
+    "Ramesh",
+    "Amit",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd03b6615555404d537eb6a5e106beb8c73f2148993f8080243acd7bebe2f391"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question that follows. A certain number of students are sitting on the floor and facing the north direction. Two-person sits between Amit and Bhargav. Neither Krishan nor Rajat sits at any of the extreme ends. Priya sits in the middle of the Row. Mahesh sits adjacent to the Krishan. Priya sits exactly between Rahul and Bhargav. Rajat sits adjacent to Bhargav. Amit is third from the left end. More than Four students sit between Rajat and Ramesh. Mahesh sits at one of the extreme end of the row. Rajat sits right to the Ramesh. Rahul is sitting immediate right of Amit. Sachin is Sitting between Ramesh and Amit.\n\nWho among the following sits sixth from the left of Krishan?",
+   "options": [
+    "Rajesh",
+    "Krishan",
+    "Mahesh",
+    "Bhargav",
+    "Sachin"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "fa06508f21e0993cd16a6a48cd76a51200261e43ea81f8f824af7dcd8554e720"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I, and II .You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements Some painters are scanner Some scanners are mouse No mouse is keyword Conclusions I. Some painter are mouse II. No painter is mouse",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4929d73203b9016798b0b2e30d83d0957560e587ef5e1949d94c91455163ab7c"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All Cat is Dog Only a few Dog is Deer Some Deer is goat Conclusions: I. All goat is Dog II. Some Deer is Cat",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5c8ed8dd1224e07728ff5e834f3d52619870c5e9bb4c22694b4908269cecfe35"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few Hot is Cold. All Freeze is Cold. Conclusions: I. All Hot can be Freeze. II. Some Freeze is Cold.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6cf86c8cffe921c2bf891834a76e25556294e7f014e1d9c4e4a4391e35beb28b"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the following passage and choose the correct answer. In a certain code, ‘monday february year april’ is written as ‘bi gv oc st’ ‘february may of july’ is written as ‘hm oc da pu’ ‘of monday september wednesday’ is written as ‘nh mk hm gv’ ‘july tuesday year of’ is written as ‘da st rx hm’ What is the code for 'july'?",
+   "options": [
+    "gv",
+    "oc",
+    "mk",
+    "da",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6335e0a3259c73655f485319e76e945216f5e92e4232281949bb9477ffaad187"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "What is the code for 'year of july'?",
+   "options": [
+    "bi hu hm",
+    "tm hm da",
+    "da gv oc",
+    "hu st pu",
+    "hm st da"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "15dc4658342fc0acf7575eb73fded72b73313617c51a4ddd07e5d0bb3e6df635"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "What is the code for 'september'?",
+   "options": [
+    "nh",
+    "pu",
+    "mk",
+    "None of these",
+    "Either option I or option III"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "79e7a83344217175808a06491fc9d85b59f753b4113c6238acb0365001c85dad"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “CAPTURED” that have the same number of letters between them in the word (in both forward and backward directions), as they have in the English alphabetical series?",
+   "options": [
+    "One",
+    "Five",
+    "Four",
+    "Two",
+    "Three"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b693bf79e52531e75cc9aabba19b674dfa4e715ae860eb6d70a0443d84dad4cb"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information given below and answer the question that follows. There are eight members in a family – D, S, G, O, A, E, P and R. There are two married couples in this family. A is the brother-in-law of E, who is the only son of S. O is the father-in-law of D, who is the only sister of A. P is the niece of A. G is the maternal grandfather of R. E has only one son and one daughter. How is S related to P?",
+   "options": [
+    "Uncle",
+    "Father",
+    "Grandfather",
+    "Grandmother",
+    "Can't be determined"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b39ca7335473586ed34bfa6e8d9e164985710ea5b9172f6de4f877f2953fadee"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information given below and answer the question that follows. There are eight members in a family – D, S, G, O, A, E, P and R. There are two married couples in this family. A is the brother-in-law of E, who is the only son of S. O is the father-in-law of D, who is the only sister of A. P is the niece of A. G is the maternal grandfather of R. E has only one son and one daughter.\n\nHow is A related to P?",
+   "options": [
+    "Mother",
+    "Father",
+    "Uncle",
+    "Aunt",
+    "Grandfather"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7adfc7b07461d8deaf2ceb5b82e05dcd8b78276d02a2a4378142e8f45c1e13c7"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information given below and answer the question that follows. There are eight members in a family – D, S, G, O, A, E, P and R. There are two married couples in this family. A is the brother-in-law of E, who is the only son of S. O is the father-in-law of D, who is the only sister of A. P is the niece of A. G is the maternal grandfather of R. E has only one son and one daughter.\n\nHow is A related to R?",
+   "options": [
+    "Mother",
+    "Father",
+    "Aunt",
+    "Uncle",
+    "Can't be determined"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6a48f41bc2e0f07018712865c624de0bc17d37cbdad7d14febe5840b0dba980c"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Following questions are based on the five four-digit numbers given below, Study the following numbers and answer the following question: 243 874 923 456 721 If we arrange all the digits within the numbers in increasing order from left, then how many numbers remain unchanged?",
+   "options": [
+    "One",
+    "None",
+    "Three",
+    "Two",
+    "More than three"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "08c8557558cc9cbacb23b14741d80fb904e7dcd972cb8780c8347770d1336e40"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "If the first and the last digit are interchange in the given sequence then which of the following is the lowest number?",
+   "options": [
+    "243",
+    "874",
+    "923",
+    "456",
+    "721"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "39637c69b16050d3cb014a6a82ee1575ad5facbf48cbd51a1abff707e374b247"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "If third digit of the highest number is divided by third digit of the lowest number then the resultant is?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bf4d68373196cb5b5c8c90e8000e41340831a44dea8ee5a504bf4cc7189aa533"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "If the first digit of each is dropped and the second and the third digit are interchange with each other, then which of the following will become the highest?",
+   "options": [
+    "243",
+    "874",
+    "923",
+    "456",
+    "721"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d5b6aaa3cec3f334a9789b775942c29ead7cd007fb02521816b42321f4bbfcd7"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "If we add all the digits within the given numbers then how many numbers thus formed are divisible by 2?",
+   "options": [
+    "Two",
+    "One",
+    "Four",
+    "Three",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2f216f90340e7ef71f3adef14108bfffb5422e29d8ae9ca01a93211e167db1e5"
+  }
+ ],
+ "section_confidence": 0.922,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

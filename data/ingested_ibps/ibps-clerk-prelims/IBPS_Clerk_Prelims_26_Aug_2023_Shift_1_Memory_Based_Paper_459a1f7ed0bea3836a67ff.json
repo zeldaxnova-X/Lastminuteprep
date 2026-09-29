@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS_Clerk_Prelims_26_Aug_2023_Shift_1_Memory_Based_Paper_459a1f7ed0bea3836a67ff18f85063fb.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension answer the following questions carefully. Eight people P, Q, R, S, T, U, V, and W are sitting on a circular table facing inside. R is sitting second to the right of T. Only two people are sitting between R and Q. S is sitting second to the left of Q. Only three people are sitting between S and V. V is sitting second to the left of U. One person is sitting between T and W. P is not a neighbour of Q. Who is sitting second to the right ofV?",
+   "options": [
+    "S",
+    "R",
+    "U",
+    "P",
+    "T"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f13b41584271aaac6061dd02d98ad7297a443529b99afbcb9306544a27652ab7"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension answer the following questions carefully. Eight people P, Q, R, S, T, U, V, and W are sitting on a circular table facing inside. R is sitting second to the right of T. Only two people are sitting between R and Q. S is sitting second to the left of Q. Only three people are sitting between S and V. V is sitting second to the left of U. One person is sitting between T and W. P is not a neighbour of Q.\n\nWho is sitting infront of R?",
+   "options": [
+    "W",
+    "S",
+    "Q",
+    "P",
+    "U"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0c7aecc8f3b12b56496d1bb0f02d0ddb3cc028f81460f4fa07d96b89e1ac01d9"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension answer the following questions carefully. Eight people P, Q, R, S, T, U, V, and W are sitting on a circular table facing inside. R is sitting second to the right of T. Only two people are sitting between R and Q. S is sitting second to the left of Q. Only three people are sitting between S and V. V is sitting second to the left of U. One person is sitting between T and W. P is not a neighbour of Q.\n\nHow many people are sitting between W and V when counting from right of V?",
+   "options": [
+    "Five",
+    "Two",
+    "Three",
+    "None",
+    "Four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0d44cc4232c0ea31d69fc2176cc34bd73c738c95114ced226ee30b3b25909f51"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension answer the following questions carefully. Eight people P, Q, R, S, T, U, V, and W are sitting on a circular table facing inside. R is sitting second to the right of T. Only two people are sitting between R and Q. S is sitting second to the left of Q. Only three people are sitting between S and V. V is sitting second to the left of U. One person is sitting between T and W. P is not a neighbour of Q.\n\nWho is sitting third to the left of T?",
+   "options": [
+    "W",
+    "S",
+    "P",
+    "U",
+    "V"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3b1cec24bb9abe7322cb2123fe51b302750bd1617e969cd584d09017676d46be"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "As many people are sitting between Q and V sitting between Q and ___?",
+   "options": [
+    "W",
+    "U",
+    "S",
+    "T",
+    "P"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "04d78992794b98f56c0c8551554acd85ca225399f55d8b6d13cf6c6a4bbacfa3"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the below questions: A family consists of seven members-L, M, N, P, I, S, and T. There are two married couples in the family. N is the sister-in-law of S who is the daughter of M. N is the wife of L. S has a sister. Lis the only son of P. I is the son of S's only brother. P is the father of T. M is the spouse of P. How many male members are there in the family?",
+   "options": [
+    "One",
+    "Five",
+    "Two",
+    "Four",
+    "Three"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d94a940ff27f755325f0591a6171a548b417a63e8054de87d74f283f4f413653"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "How T is related to I?",
+   "options": [
+    "Mother",
+    "Sister",
+    "Father",
+    "Uncle",
+    "Aunt"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9bce567277cfd42cfa6e17fc363aa700b8b7198b34d25afc50425b22e431f474"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "If T married to R, then R is _________ of P.",
+   "options": [
+    "Son in law",
+    "Daughter in law",
+    "Father in law",
+    "Mother in law",
+    "None of the above."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd374b9db85c944c9fb1ff74c7b8eaef8d3fb70e4176860b7cf8175733591d5e"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by three conclusions I, II and III. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All fruits are healthy. Some vegetables are not healthy. Only a few fruits are sweet. Conclusions: I. Some sweet things are healthy. II. Some vegetables are healthy.",
+   "options": [
+    "Only I follows.",
+    "Only II follows.",
+    "Either I or II follows.",
+    "Neither I nor II follows.",
+    "Both I and II follows."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4405fb52b436db9601b52bb4a1fa7f067adbde6668d3f0ff7f4a83ba518c4ff9"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some wood are steel. Some steel are not iron. Only a few irons are copper. Conclusions: I. Some iron are not steel. II. All copper being steel is a possibility.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0fe262127d5f93a6c16e51ce51aede05e1b46dda68f4ca99dd28bd44ec54e053"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: Only a few books are notebooks. Some notebooks are notepads. Conclusion: I. All books can be notepads. II. Some books are notepads.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "ecc016bd6841b59342fa5e649112c29d45b7c5d99e30978b4042c711b025d34a"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information to answer the following questions In a certain code, “Ram goes to school” is written as “rx gw ts mh” “He goes hospital” is written as “ez gw lp” “He studies in school” is written as “ez yr ga mh” “Ram works in hospital” is written as “rx kt ga lp” What is code for word “school”?",
+   "options": [
+    "rx",
+    "mh",
+    "lp",
+    "kt",
+    "Cannot be determined"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e5a7287a4e511d7fe4ff75e62dfd4b662fb3adf5960d99e4314e70267c47b49a"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "What is code for word “goes hospital”?",
+   "options": [
+    "kt lp",
+    "rx gw",
+    "ez lp",
+    "gw lp",
+    "yr mh"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c798b6f1613ed4033da450344e0bbd59379f787240836b95cbf1fa0f5b71d93b"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "What is code for word “studies”?",
+   "options": [
+    "gw",
+    "ez",
+    "yr",
+    "rx",
+    "Cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8327c801f4f3faedd4b9ad6ef09d2b5151e1d749fad0edf72224c7c1d38f7370"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "What is code for word “works”?",
+   "options": [
+    "kt",
+    "qa",
+    "yr",
+    "ez",
+    "Cannot be determined"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "313ac98c3ac752b43e25ab337e947f4bd4298d5091294138c9bf5459201691de"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "What is code for word “Ram”?",
+   "options": [
+    "gw",
+    "mh",
+    "ts",
+    "rx",
+    "Cannot be determined"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c6b5da121c762881ec1aa018be33f859ace90d47bdb162cbc1b02578a427e795"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of digits are there in the number '6315784' each of which has as many digits as between them in the number as are there in the general numerical order?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "191233b52ed6f3592dbf924822f320ae211b9edd11bd2ed246bda64cab29dc11"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "How many meaningful four-letter words (Not ending with F) can be made with the alphabets N, R, E and F each being used only once in each word?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "More than three",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5133c53fb6110d73664b4d11287a65d71b011ce69c2bad56728c8b3476ffc091"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the given questions. th th Eight candidates have exam on 5 and 20 of four months among March, May, June and July. H is th one of the candidates. Two candidates have exam between A and B. C has exam on 20 May and immediate before A. E’s exam is immediately after D’s exam. F’s exam is immediately after G’s exam but not in same month. D has exam in the month, which has 30 days. th Who has exam on 5 July?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "96c3ea63483349336d6249df171a446f2b1ef7d017f0d953edda7eead1a2b6c7"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information and answer the given questions. th th Eight candidates have exam on 5 and 20 of four months among March, May, June and July. H is th one of the candidates. Two candidates have exam between A and B. C has exam on 20 May and immediate before A. E’s exam is immediately after D’s exam. F’s exam is immediately after G’s exam but not in same month. D has exam in the month, which has 30 days.\n\nHow many persons have exam after C?",
+   "options": [
+    "Three",
+    "Four",
+    "One",
+    "Five",
+    "Two"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2ba36046d135710ca4d9671b416734bef178cd7189e3a94c6187d334dd6b106a"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "Find odd one.",
+   "options": [
+    "H",
+    "None",
+    "G",
+    "E",
+    "F"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "78089cebb71e1f8ba2b81d559debfa8f6d2a09d49276f1aa1994d23062186246"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "th How many persons have exam between H and the one who has exam on 5 July?",
+   "options": [
+    "Five",
+    "Four",
+    "Three",
+    "Two",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b3e08834ee098f630e9cb65f9cb7cccdc2a647eaa02336feaed06a0ea5ff00df"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "___ has exam on ___ of ___.",
+   "options": [
+    "H – 20 – June",
+    "E – 5 – March",
+    "A – 20 – July",
+    "F – 5– June",
+    "D – 20 – June"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b91882dce22a28ec3622ff51a6ee68400a5c5a96b44a3ec8e476d291ab2698d4"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement and answer the given question carefully B # M I N E & > G P * F $ X R % A ? @ D ! Q In the given arrangement, how many alphabets are there which are immediately preceded by a symbol?",
+   "options": [
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "859fa4e252636cc7074e78ffa98f432c1f9fbb0208b986f90df153c77ab4d166"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement and answer the given question carefully B # M I N E & > G P * F $ X R % A ? @ D !\n\nHow many symbols are there which are immediately preceded by a vowel?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a6f14f04de8e911bb5c5aa897a179594026e0ac6aa350a9e5c3220fe65143018"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "th If we drop all the symbols from the above arrangement, then which is the 7 element from the left end?",
+   "options": [
+    "G",
+    "P",
+    "E",
+    "F",
+    "X"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c6b3891464715c79f3600c61744e940e09390adae6bc37030a2bf6ca5b6271cb"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "th How many symbols are there between 4 element from the right end and E?",
+   "options": [
+    "Four",
+    "Six",
+    "Five",
+    "Three",
+    "Seven"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "491696ec21d45140d72be7bd9423687fc6a35f2cbfa64ab71c2bde5a7cd78405"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension carefully and answer the questions given below. Six people- A, B, C, D, E and F have different heights. B is taller than only C. A has less height than F who is less height than E. Only two people are there in between D and A. The person who has the third lowest height is 140 cm taller. E is 20 cm taller than A. What is the posssible height of F?",
+   "options": [
+    "166 cm",
+    "170 cm",
+    "156 cm",
+    "139 cm",
+    "125 cm"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "17df519a987ee5bfb60c81367a162f1cc22966f747286cea6721e0e63c157a58"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension carefully and answer the questions given below. Six people- A, B, C, D, E and F have different heights. B is taller than only C. A has less height than F who is less height than E. Only two people are there in between D and A. The person who has the third lowest height is 140 cm taller. E is 20 cm taller than A.\n\nWho is the tallest among of all?",
+   "options": [
+    "E",
+    "F",
+    "A",
+    "D",
+    "C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "79ffb8ef6c1fd8a866c8caf70fb773c7756999ddecdbf31efd325a82519cae07"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Directions:- Read the following comprehension carefully and answer the questions given below. Six people- A, B, C, D, E and F have different heights. B is taller than only C. A has less height than F who is less height than E. Only two people are there in between D and A. The person who has the third lowest height is 140 cm taller. E is 20 cm taller than A.\n\nWho is the third tallest?",
+   "options": [
+    "A",
+    "D",
+    "F",
+    "B",
+    "C"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6c6b28d4d2a31d626dc8dafea9d26b93cd46ef76a255409553508ab1fdc98628"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following and answer the given questions: Seven persons A, B, C, D, E, F, and G are going to attend a webinar on seven different days of the week (Monday to Sunday) but not necessarily in the same order. More than three persons go before D, who does not go on Sunday. One person goes between D and F. F goes before D. B goes one of the days after C but not just after. B and E do not go on Sunday and A goes just before C. C goes on Tuesday. Neither B nor D goes on the second last day of the week. E goes just before G. Who among the following person goes just before B.",
+   "options": [
+    "D",
+    "E",
+    "F",
+    "G",
+    "Other than those given as option"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a1826a59f9f9df14f45d68e3fc107736d14c6224671ff895cfaca3834008152d"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following and answer the given questions: Seven persons A, B, C, D, E, F, and G are going to attend a webinar on seven different days of the week (Monday to Sunday) but not necessarily in the same order. More than three persons go before D, who does not go on Sunday. One person goes between D and F. F goes before D. B goes one of the days after C but not just after. B and E do not go on Sunday and A goes just before C. C goes on Tuesday. Neither B nor D goes on the second last day of the week. E goes just before G. Who among the following person goes just before B.\n\nWho among the following person goes on Saturday?",
+   "options": [
+    "B",
+    "E",
+    "G",
+    "D",
+    "Other than those given as option"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c38f01107a5da36727c669916988f99adf5634c69976f0c83ed7c53fb452edec"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following and answer the given questions: Seven persons A, B, C, D, E, F, and G are going to attend a webinar on seven different days of the week (Monday to Sunday) but not necessarily in the same order. More than three persons go before D, who does not go on Sunday. One person goes between D and F. F goes before D. B goes one of the days after C but not just after. B and E do not go on Sunday and A goes just before C. C goes on Tuesday. Neither B nor D goes on the second last day of the week. E goes just before G. Who among the following person goes just before B.\n\nHow many persons go between C and D?",
+   "options": [
+    "Two",
+    "Four",
+    "Three",
+    "Five",
+    "Other than those given as option"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3fc139112f94cc8ac7c85e04f3595b4395fe8d268f50365e28658fe876b3b089"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following and answer the given questions: Seven persons A, B, C, D, E, F, and G are going to attend a webinar on seven different days of the week (Monday to Sunday) but not necessarily in the same order. More than three persons go before D, who does not go on Sunday. One person goes between D and F. F goes before D. B goes one of the days after C but not just after. B and E do not go on Sunday and A goes just before C. C goes on Tuesday. Neither B nor D goes on the second last day of the week. E goes just before G. Who among the following person goes just before B.\n\nWho among the following person goes on sunday?",
+   "options": [
+    "G",
+    "D",
+    "B",
+    "F",
+    "Other than those given as option"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "17df6248885e86a9e93347c2ccd9c27cba71dd02cdb5a9b50d61bc6a3e8cd6c4"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "If A is related to F and B is related to E then D is related to which of the following?",
+   "options": [
+    "C",
+    "E",
+    "G",
+    "B",
+    "Other than those given as option"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c80e32dd3b7f09d43655c7c1a38256f1082fab92af56e7a32f125771bbab35a7"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "A invested Rs. 5000 in a business and after 6 months, B also joined him. At the end of year, B received Rs. 2700 profit out of Rs. 8700. Find the investment of B.",
+   "options": [
+    "Rs. 4000",
+    "Rs. 5400",
+    "Rs. 4800",
+    "Rs. 4500",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "013aa85cc689fea369a668ac1c093948a31579fc9e19ff322480fdd4fd7a9dbc"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "If the marked price of a laptop is Rs. 24,000 which is 20% more than the cost price. The laptop is sold at a profit of Rs. 1000. Find the discount%.",
+   "options": [
+    "12.5%",
+    "21.5%",
+    "22.5%",
+    "25%",
+    "50%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9e6a95a45832b4ee4923d4dc1e99dbc7b514d41dbbb8f33ad05e112b6b0d2394"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "T alone can complete the work in 12 days. T and U together worked on a piece of work and completed one-third work in 3 days. In how many days can U alone complete the same piece of work?",
+   "options": [
+    "36 days",
+    "40 days",
+    "25 days",
+    "30 days",
+    "34 days"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "62ecd64bee570716a56283d3e37ce6f9e5881e6ca280c3ca1307d64961d85c6b"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "The cost price of the two articles A and B are Rs. 500 and Rs. 600 respectively. If both the articles were sold at the same price and the profit earned by both the articles were 2x% and x% respectively, then find the selling price article A.",
+   "options": [
+    "Rs. 550",
+    "Rs. 650",
+    "Rs. 750",
+    "Rs. 850",
+    "Rs. 950"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0066c2985f09a83c5223a3dd4f590a5c45b8066a6214b066baec800c2d325c7c"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "The marked price of an article is 50% above its cost price. If the marked price is Rs. 600, and the profit is 30%. Find the selling price of the article?",
+   "options": [
+    "Rs. 525",
+    "Rs. 515",
+    "Rs. 510",
+    "Rs. 530",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "cd9beafc67149ed6c92b9b6899d273237dcae0f84337c900ebcda8e733dd438f"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Answer the questions based on the information given below. The table given below illustrates the number of bikes sold by four distinct companies in two different consecutive years 2021 and 2022. Company Number of bikes sold in 2021 Number of bikes sold in 2022 A 240 160 B 1120 800 C 960 480 D 640 160 If the number of bikes sold by company 'X' in 2022 is 50% of that by company 'B' in the same year then what is the respective ratio between the number of bikes sold by company 'X' and company 'B' together in 2022 and that by company 'C' and company 'D' together in the same year?",
+   "options": [
+    "5 : 4",
+    "13 : 16",
+    "15 : 8",
+    "21 : 16",
+    "25 : 8"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "25dc17e6c59610c92cce5e1181af855db5a58056ebc62d3b4b34fdb927785b54"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "If the respective ratio of the number of bikes sold by company 'Y' in 2021 to that by company 'D' in the same year is 7:8 then what is the average number of bikes sold by companies 'Y', 'A', 'B', and 'C' together in 2021?",
+   "options": [
+    "720",
+    "760",
+    "780",
+    "800",
+    "820"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4d6db304d39d6cd52dab6811a02118b83c1cdcbbf6976951959304a888e5d576"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "The total number of bikes sold by company 'B' in 2021 and 2022 together is what percent more/less than the total number of bikes sold by company 'C' in 2021 and 2022 together?",
+   "options": [
+    "25%",
+    "33.33%",
+    "50%",
+    "66.66%",
+    "83.33%"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ef5d1d6b9f573c39f1299c1bc6bbb9ed2567eaaf84025fa38c43baff6de1312d"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What is the average number of bikes sold by company 'C' and company 'D' together in the year 2023, if the number of bikes sold by in 2023 is 75% less for company 'C' and 60% less for company 'D' compared to their respective sales in 2021?",
+   "options": [
+    "238",
+    "240",
+    "244",
+    "248",
+    "250"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e84e4f927e6ad02f61a179d6870f01ad954cb4e4eb741d0a1d4058247ecd27b8"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "If company 'D' priced each bike sold in 2021 at 40000 Rs and each bike sold in 2022 at 48000 Rs then what is the average per bike revenue generated by company 'D' when considering the sales from both 2021 and 2022 together?",
+   "options": [
+    "41600 Rs.",
+    "42400 Rs.",
+    "43200 Rs.",
+    "44400 Rs.",
+    "45600 Rs."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "56fd4ac0406d83a57e19a74a2551faebab486c162f078738e8f93c91ceea120e"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 2 (1700 + 1800 – 1300 + 1800 ) ÷ ? = 200 + (5) + 25",
+   "options": [
+    "21",
+    "16",
+    "18",
+    "22",
+    "24"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9cfd0ac2f0293bc02bc4889787e8399379f6f970f21670ecef9907a29f90926b"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 250 × 24 ÷ 12 + 6 + 2 of 3 of 18 = ?",
+   "options": [
+    "416",
+    "612",
+    "614",
+    "610",
+    "510"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a7f350cfe7adec6bbb8c797df079b65eeb40e1cc1ecf0ac839004dd5c3e2b5fb"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What value will come in the place of the question mark ‘?’ in the following question? 2400 ÷ 12 – {26 × 6 + (32 – 5 × 6)} = ?",
+   "options": [
+    "45",
+    "54",
+    "42",
+    "40",
+    "39"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b1b914d2f89dfa64b2d40dc587b71c28cfc7add5882b5cde4fcd9de1272a41be"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 125% of 120 + 50% of 460 - 21 ÷ 7 = 250% of 180 + ?",
+   "options": [
+    "70",
+    "72",
+    "73",
+    "75",
+    "-73"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2996b1dc7e82cf025a2e2c137c050d853105d340cfa8ab72281a7c0e298c19d6"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 ∛512 - √361 + 7 = 19 × √?",
+   "options": [
+    "2",
+    "4",
+    "8",
+    "16",
+    "7"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7d25fcc1bc2efa0a3c5fb9e0843c90f02f6868785771952279f5c26ba849ace2"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ? in the following question ? 25% of 40% of 60% of 3000 = ? × 2",
+   "options": [
+    "90",
+    "35",
+    "20",
+    "10",
+    "55"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3036d119a8b694125f02d8678deaf5a7eaf8259f5260664b043bcc9215ecb37d"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question ? 1/2 1/3 2 256 + 343 + 21 = ? - 16% of 800",
+   "options": [
+    "616",
+    "692",
+    "512",
+    "592",
+    "716"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1d0c9558412bdfb5e4a5f620c6b0eb1a6cba55220a5da665f2d66368bbfa9fb7"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 360 × 9 ÷ 3 + 120 + 900 ÷ 5 = ?",
+   "options": [
+    "1426",
+    "1286",
+    "1380",
+    "1275",
+    "1180"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9a5f751ac3cb9426b63dfc8d002211c7cf33ebbba6c677dd9a92a9dbd94db012"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark in the following question? 260 ÷ ? + 60 × 4 + 10 = 315 + 65 × 3",
+   "options": [
+    "5",
+    "8",
+    "1",
+    "3",
+    "4"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1f92885113192556fa70085cfca3f05b9b59d2ecfd7ef9e175d63191b42619dc"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 15% of 800 + 35 × 4 = ? + 150 ÷ 3",
+   "options": [
+    "210",
+    "110",
+    "240",
+    "150",
+    "190"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5584f9b182e1313dfbeaf2bf28795c548e987db9e7dc48b34be103c07c972edd"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 52 + 65 - 25 - 40 = ? × 4",
+   "options": [
+    "14",
+    "13",
+    "22",
+    "26",
+    "16"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "4ce62162aabe3c02e688fed0a0120c711ca6a9967f584038ebe6b16f2e45b075"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 50% of 170 + 60% of 180 + 110 = ? + 10",
+   "options": [
+    "293",
+    "273",
+    "313",
+    "413",
+    "253"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "19d190f828c18510dce475dba22905ba16fb4450849c1bad917e4b909974891f"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark '?' in the following question? 15 × ? + 20% of 450 = 360 + 15× 8",
+   "options": [
+    "18",
+    "16",
+    "26",
+    "20",
+    "12"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "64fa48ca2d7ddc3e397e043981a399691d0ca399ddfbb0f22270c0c8d455cac6"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? (54/6) × 5 + 12 × (17/2) = ?% of 700",
+   "options": [
+    "20",
+    "21",
+    "35",
+    "25",
+    "11"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c8bbe3dc7fd5168e8ca17e013cfbc8d0dfd1acafbf796898374a96f69d08141b"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following question? (12.5 + 10) ÷ (108 ÷ 36) = ? + √25 - 2.5",
+   "options": [
+    "7",
+    "6",
+    "4",
+    "5",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "74b0b416fa0b5a74efe6fa167e00bb6249feeb5df97cd91a54fd0f4b5bdfe956"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 100, 91, 81, 70, 60, 45",
+   "options": [
+    "91",
+    "81",
+    "60",
+    "70",
+    "45"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7670b7ce65a04b58986ba44786a2416a086c19e7ac825d78e6c89d153713712b"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 98, 128, 162, 200, 242, 266",
+   "options": [
+    "98",
+    "266",
+    "162",
+    "128",
+    "200"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f375422db4828afb56df6b1c32afce06d5dfc0a381cf8b0a475d8f8384a0b5eb"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 42, 54, 66, 78, 90, 100",
+   "options": [
+    "100",
+    "90",
+    "78",
+    "66",
+    "42"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2d69e3c7ae9e505c5dfaf7604db3e2467551980dcb32f675f041b9d111c79d20"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 27, 25, 22, 17, 10, 1",
+   "options": [
+    "27",
+    "25",
+    "22",
+    "10",
+    "1"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "568eb320ec4de9cdd95dd1ce04ae40cda4cdb214f2ee7c550c7c01e07b333305"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong term in the following series. 34, 17, 17, 25.5, 50, 127.5",
+   "options": [
+    "50",
+    "34",
+    "17",
+    "127.5",
+    "25.5"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b3772dcf05949d675bf725378d5e7a8dbbff5e2ee7e1260614779cd4c9e1f689"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "A boat goes 140 km upstream in 7 hours and a distance of 210 km downstream in 7 hours. Find the speed of the boat in still water.",
+   "options": [
+    "30 km/hr",
+    "25 km/hr",
+    "20 km/hr",
+    "24 km/hr",
+    "15 km/hr"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "52ece6699724c8bd8023a0b93fe10881aed987ce18cbf050bf6f81ee8780b4a7"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "The perimeter of a rectangle is 45% more than the perimeter of square. If the breadth of rectangle is 5 2 cm and the difference between areas of square and rectangle is 20 cm , then find out the length of rectangle. (Side of square is natural number)",
+   "options": [
+    "10 cm",
+    "24 cm",
+    "36 cm",
+    "15 cm",
+    "32 cm"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "90fd67013117c67068b7937793bbeabd5bfb3844509578d2abfe6010fc787928"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of Solution “A” and Solution “B” in the bottle is 3 : 2 when 10 L of the mixture is taken out and is replaced by Solution “B”, the ratio becomes 2 : 3. The total quantity of the mixture in the bottle is?",
+   "options": [
+    "32 L",
+    "38 L",
+    "30 L",
+    "29 L",
+    "26 L"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5ca33aaa51af7140cd364d1af32ed13fb977bccc37194062660e470f6bd7c30a"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "Two trains 120 m and 240 m long take 10 seconds to cross each other when moving in the opposite direction. If the faster train crosses the slower train in 18 seconds when moving in the same direction, then the speed of the slower train is",
+   "options": [
+    "42.4 km/h",
+    "28.8 km/h",
+    "32.2 km/h",
+    "24.2 km/h",
+    "14.7 km/h"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1f89a86b087be5240c7709197c289a056b4629875afec641f5dd52d9579c8a16"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "th nd Khushi can do 1/4 of the work in 3 days, Rashmi can do 1/2 of the work in 7 days and Deepa can th do 1/8 of the same work in 2 days. If the total amount paid for the work is Rs. 8,030. How much is Rashmi’s share in it?",
+   "options": [
+    "₹ 2,640",
+    "₹ 2,750",
+    "₹ 2,250",
+    "₹ 2,620",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b54c81e4a0d28c08865704322b30120e126732a07a7d1ca553e81bc629c77b84"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: Mark Peterson was an ordinary man from a humble village. He shared a bond of deep love and concern with his family and the people around him. Stirred by a compelling desire to improve their lives, he hatched a plan. The idea led him outside his comfort zone, and he moved to France to start a business. His venture was based on an everyday staple - salt. He named his new enterprise \"The Salty Grain.\" France boasts an extensive history in salt production, a practice Mark was keen to learn. He soaked up as much as he could from experienced salt producers who shared their insights and tips. Simultaneously, he tirelessly explored innovative approaches to improve the process further. Bolstered by a blend of traditional wisdom and fresh ideas, Mark launched his company. His hard work and perseverance resulted in a unique salt. He sourced it directly from the neighboring sea and processed it with utmost care to maintain high quality. Despite the daunting presence of large corporations and the labyrinth of business regulations, Mark didn't back down. He understood practice makes perfect, so he kept refining his salt-making method. It was a trial-and-error process, but he didn't give up until he produced the perfect grain of salt. Back in his old village, not everyone believed in Mark's dream initially. The journey was anything but easy. Yet, as his company rose to prominence, so did the village's belief in him. The success of \"The Salty Grain\" brought joy and prosperity to his homeland, offering them a renewed sense of hope and pride. Today, Mark's \"The Salty Grain\" is an adored brand worldwide. It aided economic upliftment in his village and instilled a spirit of ambition among the residents. His endeavors provided his family with ample support, and his community reaped the benefits of his successful venture. Yet, despite his global success, Mark remained grounded. Each grain of \"The Salty Grain\" salt carries a story of determination, a story of love for one's roots, and a story of ambition pushing boundaries. And for Mark, this was just the beginning – his journey towards helping his community paints a sea of opportunity ready to be explored. What inspired Mark to begin his enterprise in France?",
+   "options": [
+    "He spontaneously decided to move abroad.",
+    "His love for cooking.",
+    "His family members were already there.",
+    "His desire to elevate the living standard of his family and village.",
+    "He got a scholarship to study salt production in France."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "19e39a1754dcfb80636e816e9b6c57193cdc6f3364ea096666419e2bc3edccf6"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: Mark Peterson was an ordinary man from a humble village. He shared a bond of deep love and concern with his family and the people around him. Stirred by a compelling desire to improve their lives, he hatched a plan. The idea led him outside his comfort zone, and he moved to France to start a business. His venture was based on an everyday staple - salt. He named his new enterprise \"The Salty Grain.\" France boasts an extensive history in salt production, a practice Mark was keen to learn. He soaked up as much as he could from experienced salt producers who shared their insights and tips. Simultaneously, he tirelessly explored innovative approaches to improve the process further. Bolstered by a blend of traditional wisdom and fresh ideas, Mark launched his company. His hard work and perseverance resulted in a unique salt. He sourced it directly from the neighboring sea and processed it with utmost care to maintain high quality. Despite the daunting presence of large corporations and the labyrinth of business regulations, Mark didn't back down. He understood practice makes perfect, so he kept refining his salt-making method. It was a trial-and-error process, but he didn't give up until he produced the perfect grain of salt. Back in his old village, not everyone believed in Mark's dream initially. The journey was anything but easy. Yet, as his company rose to prominence, so did the village's belief in him. The success of \"The Salty Grain\" brought joy and prosperity to his homeland, offering them a renewed sense of hope and pride. Today, Mark's \"The Salty Grain\" is an adored brand worldwide. It aided economic upliftment in his village and instilled a spirit of ambition among the residents. His endeavors provided his family with ample support, and his community reaped the benefits of his successful venture. Yet, despite his global success, Mark remained grounded. Each grain of \"The Salty Grain\" salt carries a story of determination, a story of love for one's roots, and a story of ambition pushing boundaries. And for Mark, this was just the beginning – his journey towards helping his community paints a sea of opportunity ready to be explored.\n\nWhich word from the passage serves a similar meaning to 'Practice'?",
+   "options": [
+    "Desire",
+    "Venture",
+    "Prominence",
+    "Refining",
+    "Wisdom"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a2cb3744b86b51a4150a4e964ec5e85e2027974e784610a6a6318bf0e539be38"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "What term can be used synonymously with 'Tips' as used in the passage?",
+   "options": [
+    "Suggestions",
+    "Guidelines",
+    "Hints",
+    "Proposals",
+    "Instructions"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1bcb9f4b7bc80fcf744e21cba7a904c59bc4c22de6ee70fea50376195ccebba8"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "How did Mark come up with the unique salt?",
+   "options": [
+    "By mixing salt from different parts of the sea.",
+    "He inherited the recipe from his ancestors.",
+    "Through sheer luck.",
+    "By absorbing traditional methods and incorporating innovative approaches.",
+    "He had a formal education in food science."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "224358d16980d5cf3d7b7af658557767d7aef7b3d89bc5d29a74e22131c29b48"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "How did the success of \"The Salty Grain\" impact Mark's home village?",
+   "options": [
+    "It led to an economic downturn.",
+    "It engendered a sense of ambition among the residents and led to economic upliftment.",
+    "Everyone had to leave the village due to increased corporate presence.",
+    "It had no significant impact on the village.",
+    "People started resenting Mark's success."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "cbeef0085e4df12cbc6dd606e91959fa6c7dd773ac25710e1403169aa4c3be1e"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "How did Mark react to his international success?",
+   "options": [
+    "He moved from the village never to return.",
+    "He became arrogant and self-centered.",
+    "He remained humble and grounded.",
+    "He sold his company and retired.",
+    "He relocated his entire village to France."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8c579338ce0766e57d1a315403a43f406d5d0b2f6bac5be23bb80378b3cefabc"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "Find an antonym for 'Success' as applied in this passage's context?",
+   "options": [
+    "Failure",
+    "Difficulty",
+    "Beginning",
+    "Barrier",
+    "Struggle"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "0bc7a9b3baf3e6cac3d040d454db0ace1f3c29aa51487d527c56aa0552464891"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "Which statement is true as per the passage?",
+   "options": [
+    "Mark Peterson's business was unsuccessful as it was overshadowed by large corporations.",
+    "Mark Peterson initially faced opposition from his village during the establishment of \"The Salty Grain.\"",
+    "\"The Salty Grain\" has not brought any significant change to Mark's home village.",
+    "Mark Peterson sourced his salt from the nearby mountains.",
+    "Mark Peterson had no interest in traditional salt production methods."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6de18f49f3f5fad1f503dd8889ffab0e4087e8437fe2b43888f14b2d21253c29"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Which statement is false as per the passage?",
+   "options": [
+    "Today, \"The Salty Grain\" is a well-known brand globally.",
+    "\"The Salty Grain\" sourced its salt directly from the neighboring sea and processed it with high quality.",
+    "Mark Peterson learned from experienced salt producers and developed innovative approaches.",
+    "Despite initial disbelief, Mark Peterson's success with \"The Salty Grain\" eventually brought prosperity and hope to his village.",
+    "Mark Peterson started his salt business in his home village."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0ee365e3bd383b554e90b3bf7b882507d41bc4e254092b6c56db8faeca7f48b4"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. At the funeral(A), hundreds of police fallen(B) paid reverence(C) to their officers(D) officers.",
+   "options": [
+    "A - C",
+    "A - B",
+    "B - D",
+    "A - D",
+    "No arrangements"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "16ed620dd41ab601d06e242206abba7a500d469c22d361748d8cdbfe1c810f49"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct rearrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Taylor’s husband repent(A) to continues(B) for cheating in the past(C), but she isn’t sure that his apologies(D) are sincere.",
+   "options": [
+    "A - C",
+    "C - D",
+    "A - B",
+    "B - C",
+    "No arrangements"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "edfb0eeba5c601107f06478c46937ff36683ab54b0c7ac2fc1f75f483dce21de"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Who(A) are you to actions(B) your children(C) for the same rebuke(D) you have done?",
+   "options": [
+    "A - C",
+    "B - D",
+    "B - C",
+    "A - D",
+    "No arrangement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9c72ed49fe14a894b41e89fb231518caf369ef54510e0167a8ff2148e69cd156"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "In the following question, a sentence is given with four words marked as (A), (B), (C) and (D). These words may or may not be placed in a correct order. Four options with different arrangements of these words have been provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (5) as your answer. Before he promising(A) his knee, the star quarterback(B) was thought(C) to have a injured(D) career in the NFL.",
+   "options": [
+    "C - D",
+    "A - B",
+    "B - C",
+    "A - D",
+    "No arrangements"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "908ee85ab2d16ba06c50ae3b4d8a5d7c4e950057dfa8a3b782a274dae7830c78"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. The new innovation (A)/ of brilliant minds is (B)/ what grants humanity (C)/ amazing technology such as (D)/ space flight or the internet (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "02e440ef7144909413ac2256c036096a4a7d3858dc3a26c58170d6c0eedf0703"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. Neither students nor (A)/ their teacher are (B)/ participating in a wide (C)/ variety of activities, (D)/ both locally and further afield. (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7c574267389fca1b5260d50a02e18a5d8c08f96400ca0570827fe829e99b792b"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. The grandfather (A)/ brought the chocolates (B)/ and distributed (C)/ them between (D)/ his children (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "37d2c31c3ae1ee640e64b32901512c92386b8aa8172039eafd127f848c46a76e"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. Mocking the babbling (A)/ child, Piku the parrot (B)/ continued to repeat (C)/ again everything (D)/ the toddler said (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a9f7dcdbef46b97bc7b3de9106d7a53e519151106d74dc19a8c0589f080e5000"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Directions: The following sentence has been split into five segments. Identify the segment that contains a grammatical error. A South Indian (A)/ woman has lodged (B)/ a complaint after an ambulance (C)/ took almost a hour (D)/ to arrive at an accident (E)/.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c47aa97596d07603886ad16d23d584aa5cce362c66a270f2e1fe9085e613636d"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Select the most appropriate word to fill in the blank- For all their faults, dynastic parties are _____ to build up the personas of their leadership as well as to resist fragmentation in the long run.",
+   "options": [
+    "thrown",
+    "designed",
+    "brighten",
+    "heighten",
+    "before"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "02291da1706a3a5e94dd6e09a6d4d022415e4371528badbcbb033cc2159c1578"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Directions: Select the most appropriate word to fill in the blank. Therefore, in absence of the required infrastructure, the blame for non-compliance cannot be _______ only to the police officer.",
+   "options": [
+    "Gifted",
+    "Rifted",
+    "Shifted",
+    "Lifted",
+    "Hefted"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c3f0ec1513a6f4bde11ae2f40a0108d8a6f5031326abb0851b3148876d4939ee"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Directions: Select the most appropriate word to fill in the blank. The direct message was that NATO would no longer _______ Russian sensitivities on the subject of NATO expansion.",
+   "options": [
+    "Hinder",
+    "Alter",
+    "Deliquesce",
+    "Dissipate",
+    "Consider"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7df67e4cbeab4ee479153cef58aca815654258230d9372b172103734071d1e63"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Directions: Select the most appropriate word to fill in the blank. India’s ruling party’s anti-Muslim inclinations have also _______ additional ammunition to the advocates of “Ghazwa-e-Hind”.",
+   "options": [
+    "Provided",
+    "Divided",
+    "Decided",
+    "Commended",
+    "Redundant"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8e21f1d60fc1e2bdcfdede38c06eaea97b629a70750b521bc1b2b53fa852c84a"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Directions: Select the most appropriate word to fill in the blank. The Indian education system has been _______ from an elite bias since colonial times.",
+   "options": [
+    "Blistering",
+    "Despairing",
+    "Gathering",
+    "Outpouring",
+    "Suffering"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "4d80407d69ec4e02c6a533f2bd6263ea553da04020a70783ec1b9aba4acfa828"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Directions: Given below is a set of five sentences, and when properly sequenced, forms a coherent paragraph. Arrange the sentences in the correct sequence and answer the questions that follow. A. However, talent alone, without the grind of hard work, is like a car without fuel. B. Success is often hailed as the fruit of talent, setting the stage for impressive feats. C. People who put in relentless effort, regardless of their natural talent, have a higher likelihood of achieving success. D. Therefore, one could say that hard work is a necessary companion to talent on the path to achieving success. E. Hard work helps refine and maximize talent, leading to truly commendable accomplishments. Which of the following is the FIRST sentence after the rearrangement?",
+   "options": [
+    "C",
+    "D",
+    "A",
+    "B",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4484a14c0dcaba1a7ac62362db0445ab0f8cd831207c509449c82ff0ef8bea3f"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Which of the following is the SECOND sentence after the rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6f35e2cfd627dd6bcf29ff262c37d91f73e38a3fbd5a6dddb50f26ef3344af1a"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Which of the following is the THIRD sentence after the rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "db7aceaccfb742846e5f15b3f365dd6304857581d675996bcece86c90fd4d226"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Which of the following is the FOURTH sentence after the rearrangement?",
+   "options": [
+    "C",
+    "A",
+    "E",
+    "D",
+    "B"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "07885f0f2087eb167b1856fc27d5a50acccdd2c6f718dc4327a002115df25099"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Which of the following is the FIFTH sentence after the rearrangement?",
+   "options": [
+    "B",
+    "D",
+    "E",
+    "A",
+    "C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a92cd4fb3297e3f14c840c49049c99490ee958827deac49423c699815cab0be5"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Arrange the following statements to form a meaningful and logical paragraph. With each strike, the chisel drew back a bit(A)/ This gave rise to the system of hand-engraving(B)/ In the first place, a legend, image or lettering was drawn(C)/ A chisel was taken and struck by a hammer(D).",
+   "options": [
+    "ACBD",
+    "CDAB",
+    "DBCA",
+    "DCBA",
+    "ABCD"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "11394192a4fdf2ddcdde63abd500589169d2f35adb68c2822797cff47d107360"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "Arrange the following statements to form a meaningful and logical paragraph. For their attention to the client’s real estate needs(A)/ Such agents are often recognized and rewarded(B)/ A good estate agent prioritizes client’s needs before their own(C)/ They will often go out of their way to fulfil these.(D)",
+   "options": [
+    "ABCD",
+    "BACD",
+    "CDAB",
+    "ACBD",
+    "BDAC"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "08f4a498b05ae2028540065f87fa8c44ea874502b648af57435ae256600ff7f2"
+  }
+ ],
+ "section_confidence": 0.863,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

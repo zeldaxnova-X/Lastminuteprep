@@ -32,6 +32,11 @@ const EXAM_HEADER: Record<string, { org: string; exam: string; short: string }> 
     exam: "Junior Associate (Clerk) — Preliminary Examination",
     short: "SBI Clerk CBT",
   },
+  "ibps-clerk": {
+    org: "INSTITUTE OF BANKING PERSONNEL SELECTION",
+    exam: "CRP Clerks — Preliminary Examination",
+    short: "IBPS Clerk CBT",
+  },
 };
 
 function InstructionsContent() {
@@ -140,7 +145,7 @@ function InstructionsContent() {
           </div>
           <table className="w-full text-xs text-gray-700">
             <tbody>
-              <tr><td className="py-1 text-gray-500">Candidate Name:</td><td className="py-1 font-semibold text-gray-900">SSC Aspirant</td></tr>
+              <tr><td className="py-1 text-gray-500">Candidate Name:</td><td className="py-1 font-semibold text-gray-900">Candidate</td></tr>
               <tr><td className="py-1 text-gray-500">Roll Number:</td><td className="py-1 font-semibold text-gray-900">1010101010</td></tr>
               <tr><td className="py-1 text-gray-500">Exam Center:</td><td className="py-1 font-semibold text-gray-900">Digital Assessment Zone (iON Code 0000)</td></tr>
             </tbody>

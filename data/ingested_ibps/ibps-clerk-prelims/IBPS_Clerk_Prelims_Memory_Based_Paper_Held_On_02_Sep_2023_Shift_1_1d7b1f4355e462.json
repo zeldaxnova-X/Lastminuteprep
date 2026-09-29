@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_On_02_Sep_2023_Shift_1__1d7b1f4355e4621285434436aa5da74f.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle facing the center, with equal distance between them but not necessarily in the same order. A sits third to the left of C. Only one person sits between A and G. E sits second to the right of F. F is neither an immediate neighbor of A nor G. Only one person sits between B and E. E is not an immediate neighbor of D. Which of the following information is true regarding H?",
+   "options": [
+    "One of the immediate neighbors of H sits to the immediate right of D",
+    "H is an immediate neighbor of both A and B",
+    "Only three persons sit between H and C",
+    "H sits second to the left of F",
+    "None of the given option is true"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d37e7df972ce86791927aafcbebab9e25208caa57c25f3b1e01e1b2f61f4c7dd"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle facing the center, with equal distance between them but not necessarily in the same order. A sits third to the left of C. Only one person sits between A and G. E sits second to the right of F. F is neither an immediate neighbor of A nor G. Only one person sits between B and E. E is not an immediate neighbor of D.\n\nWho amongst the following represent the people who sit exactly between A and C, when counted from left of C?",
+   "options": [
+    "B, G",
+    "D, F",
+    "E, H",
+    "E, F",
+    "F, H"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f206ce24bcaeb26df870dd6c7911ea3a13cb78edd9312f03add1bdaf35506f8d"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle facing the center, with equal distance between them but not necessarily in the same order. A sits third to the left of C. Only one person sits between A and G. E sits second to the right of F. F is neither an immediate neighbor of A nor G. Only one person sits between B and E. E is not an immediate neighbor of D.\n\nWhat is E's position with respect to the one who is to the immediate right of D?",
+   "options": [
+    "Second to the left",
+    "Third to the right",
+    "Immediate left",
+    "Second to the right",
+    "Third to the left"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e3ea3b514b7df77cbbfc868d6d65e285581a00cbd2dd1ac8df5e09e1ddef0ff7"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle facing the center, with equal distance between them but not necessarily in the same order. A sits third to the left of C. Only one person sits between A and G. E sits second to the right of F. F is neither an immediate neighbor of A nor G. Only one person sits between B and E. E is not an immediate neighbor of D.\n\nHow many persons are sitting between B and D, when counted in anti clockwise direction from B?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "More than three",
+    "Three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fe5b20ee610eb2f8575663b1d450567b5a89a0847024c45d71ea98b52661245b"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. Eight persons A, B, C, D, E, F, G, and H are sitting around a circle facing the center, with equal distance between them but not necessarily in the same order. A sits third to the left of C. Only one person sits between A and G. E sits second to the right of F. F is neither an immediate neighbor of A nor G. Only one person sits between B and E. E is not an immediate neighbor of D.\n\nWho is sitting to the immediate right of G?",
+   "options": [
+    "D",
+    "C",
+    "H",
+    "B",
+    "F"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "6207aa3809591e105eb6905cd850a01cd11747715a0bf5cdc8dfe3ac1ab2a1a4"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully to answer the given questions: 2 P J # 8 @ L B 1 V * Q 6 < G W 9 K C D 3 & % > 5 F R 7 A Y 4 How many symbols and numbers are there in the sequence which are either immediately preceded or immediately followed by the letter which is from the first half of the English alphabet?",
+   "options": [
+    "4",
+    "8",
+    "9",
+    "10",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "93b743a5b02bd20aa1ef1a7ba056c8e12cc0be9114a075116baf14400cf92ea1"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "Four of the following five are similar in relation to their positions in the above sequence and hence form a group. Which one does not belong to that group?",
+   "options": [
+    "Q K 5",
+    "L 6 D",
+    "P L <",
+    "1 G &",
+    "K > 4"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9f98c2dbf1cd68143456b30523c66f4c658f766cfdfc2340a635348a91317c74"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "If each symbol exchanges its position with its immediate right symbol/letter/number. Now, how many letters are there in the sequence which are immediately followed by a number and immediately preceded by a symbol?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "26c571847ffe50e0d28272d289a3483ed0780e0714e9d38c7417e0e3b5ac9f1d"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "P # L is related to Y 7 5 in the same way as @ 1 * is to?",
+   "options": [
+    "R > &",
+    "F > 3",
+    "5 > &",
+    "5 % D",
+    "F % 3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "132367fe584b49a5a2f36115fb2be2e5f167954184ff6989be3b219ab82e4694"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "Which of the following indicates the total number of symbols, letters and numbers respectively which get eliminated from the sequence when every second element of the sequence from your left is dropped from the sequence?",
+   "options": [
+    "5, 9 & 1",
+    "1, 5 & 9",
+    "9, 1 & 5",
+    "8, 0 & 6",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d0251257b49760cd486b2982eb4aa1c0b395bbd26ed39ed8fc06c8e88afff8ee"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters are there in the word “COMPETITION” each of which has as many letters between them as in the English alphabetical series in both forward and backward directions?",
+   "options": [
+    "Two",
+    "Four",
+    "Five",
+    "Three",
+    "One"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "203a92564abf43174b645da3990f393bef72f4741d403fb7f162a17338e0a53a"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the information given below carefully and answer the questions based on it. In a family of 7 members, there are 2 married couples. There is no single parent in the family. T is the only son of P. L is the only daughter of K, who is the father of two children. S is the maternal uncle of I who is a sibling of T. M is the maternal grandmother of T. How L is related to T?",
+   "options": [
+    "Mother",
+    "Mother-in-law",
+    "Father",
+    "Father-in-law",
+    "Sister"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cf3ba6694b9ef72eb62d9beaa5fe63b0c774f48305d51b122321c1ede4e4e6c2"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "How is P related to S?",
+   "options": [
+    "Brother",
+    "Mother-In-Law",
+    "Brother-In-Law",
+    "Father-in-law",
+    "Husband"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "bae40ddb26eab1d3e072f653d5e1bf8224ff33b09fb7ddaf5c0af40395248612"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "How many female members are there in the family?",
+   "options": [
+    "5",
+    "4",
+    "3",
+    "2",
+    "1"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "230f1dd669e994203bef7081606f0c9f8220565a367de3f2fc2fb47d585799f7"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among the given conclusions is/ are definitely true and then give your answers accordingly Statements: Q = O ≤ V ≥ R; A ≥ B; R = A Conclusions: I. V > B II. V = B",
+   "options": [
+    "Only I follows",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Only II follows"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "72cc6afe40bd0c63fb92a1b86d8df1a12255bf3e8f564071e192f58ea49f8359"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A ≥ K ≥ C = D = M ≥ F ≤ G ≤ H = I Conclusions: I. K > D II. I ≤ C",
+   "options": [
+    "Only I is True",
+    "Only II is True",
+    "Both I and II are True",
+    "Either I or II is True",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "92acfd4da9e9d47c9d578298094582afc0372c94e0138aaa2a5050f719bebe6c"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: D < M ≤ T > K; D ≥ J ≥ G; S = K Conclusions: I. T > G II. G ≤ T",
+   "options": [
+    "Only I is true",
+    "Only II is true",
+    "Either I or II is true",
+    "None is true",
+    "Both I and II are true"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c4eeb43d933dee251896bd3c520c8a44b89a8d74908687c87dba5db2788d480f"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information to answer the given questions: Eight persons A, B, C, D, E, F, G, and H joined a company in different months among April, May, th th June, and July but not necessarily in the same order. Each of them joined on either 11 or 18 of the month. Each of them joined in the same year. No two persons joined on the same day. th C joined on 18 of the month, which contains 30 days. F joined just after A but not in the same months. E joined th after G but not on 18 July. B joined just after D. Two persons joined between C and G. th ______ joined on 18 July.",
+   "options": [
+    "C",
+    "B",
+    "A",
+    "H",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fcd0d369904a9a70a084f320ba959917a40ea45d1c3334165697c04bd05d0549"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information to answer the given questions: Eight persons A, B, C, D, E, F, G, and H joined a company in different months among April, May, th th June, and July but not necessarily in the same order. Each of them joined on either 11 or 18 of the month. Each of them joined in the same year. No two persons joined on the same day. th C joined on 18 of the month, which contains 30 days. F joined just after A but not in the same months. E joined th after G but not on 18 July. B joined just after D. Two persons joined between C and G. th ______ joined on 18 July.\n\nHow many persons joined before F?",
+   "options": [
+    "Three",
+    "Four",
+    "Five",
+    "One",
+    "Two"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "54a8a36728d4c4c02c8c5c96de350a4a733d96d6edb99985a1edcbcd33bbbd8c"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Four are the same in a certain way thus forms a group. Which among the following does not belong to the group?",
+   "options": [
+    "D",
+    "B",
+    "F",
+    "C",
+    "G"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c78ef05edd6df296a4ad113307e9fbe7f3fc8c4e289833362f04e7752bdb1a27"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement is correct?",
+   "options": [
+    "B joined in May",
+    "Three persons joined before D",
+    "th F joined on 11 June",
+    "Only two persons joined between G and H",
+    "All are correct"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5fa3b9ec5f57770cce7323dea9b97cb31c37296188119f6e4abc583bc9efb5ee"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "How many persons would have joined on the same day if the persons are arranged in alphabetical order, if they arranged from top to bottom?",
+   "options": [
+    "Three",
+    "Four",
+    "One",
+    "Two",
+    "Five"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d1b06639c9b3b5cc28937bbf472224d60e999e8660cc963ce44f9f03cd7fa4fd"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given three statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All A are B . Only a few C are E . Some B are C. Conclusions: I. Some E can never be A . II. Some E can be A .",
+   "options": [
+    "Both I or II follows",
+    "Only II follows",
+    "Only I follows",
+    "Either I or II follows",
+    "None follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2bbe5e2e58e5bbc2d746ff84f010844755860e0cf6f457729fe1c50faa7f0542"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few people are men. Only a few men are women. Conclusions: I. Some women are men. II. All people are men.",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "None of these follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "87e8c3eb278467e608dd95c8d92ffa53cbcc19eddfcf8c1712b7600341d41e4e"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Direction: In each of the questions below are given three statements by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few Pants are Shirts Some Shirts are Dress All Dresses are Shorts Conclusions: I. Some Shorts are Shirts II. Some Dresses are Pants III. No Shirt is Pant",
+   "options": [
+    "None follows",
+    "Either I or III follows",
+    "Only III & I follow",
+    "Only II & III follow",
+    "Only I follow"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f831a5f3ea6ee9604cc07a1d34b76a907c57e46bda70a53a8cd8c9ae8954038b"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "Statements: Some cars are Bus Only a few Bus are Autos All Autos are trains Conclusions: I. All cars are buses is a Possibility II. Some Buses are Trains III. Some cars are Autos",
+   "options": [
+    "None follows",
+    "Only I & II follows",
+    "Only III & I follow",
+    "Only II & III follow",
+    "Only I follow"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "5d4d28050a5b05f7276c28e9ce12af8bc93c030f2efac4db2fe953c0d6574974"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions following it. Eight people A, B, C, D, E, F, G, and H are sitting in a row facing north, but not necessary in the same order. A sits third from the left end. There are only one people sitting between A and D. F sits at one of the extreme ends. C sits second to the right of A. Only three people sit between A and B. Neither E nor H sits at extreme end. G sits third to the right of D. Only one people sits between E and F. Who sits immediate right of A?",
+   "options": [
+    "G",
+    "H",
+    "C",
+    "B",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5f041c2c1b8a38d97c208eeb6408c8562fb55f04cf3bcab972d7e195611de4ec"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions following it. Eight people A, B, C, D, E, F, G, and H are sitting in a row facing north, but not necessary in the same order. A sits third from the left end. There are only one people sitting between A and D. F sits at one of the extreme ends. C sits second to the right of A. Only three people sit between A and B. Neither E nor H sits at extreme end. G sits third to the right of D. Only one people sits between E and F.\n\nHow many person sit between H and E?",
+   "options": [
+    "Zero",
+    "Two",
+    "Three",
+    "One",
+    "More than three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2f7d6dc4959bcdc7bc242ac1fd78262d147611d8237b438a3cc1ddc2a470fd0c"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions following it. Eight people A, B, C, D, E, F, G, and H are sitting in a row facing north, but not necessary in the same order. A sits third from the left end. There are only one people sitting between A and D. F sits at one of the extreme ends. C sits second to the right of A. Only three people sit between A and B. Neither E nor H sits at extreme end. G sits third to the right of D. Only one people sits between E and F.\n\nWho sits third to the left of F?",
+   "options": [
+    "A",
+    "C",
+    "D",
+    "G",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7d3d8b112e0047d80b1ed3d45860e7831628598b0bf36d1dd03f45e90bc149dd"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions following it. Eight people A, B, C, D, E, F, G, and H are sitting in a row facing north, but not necessary in the same order. A sits third from the left end. There are only one people sitting between A and D. F sits at one of the extreme ends. C sits second to the right of A. Only three people sit between A and B. Neither E nor H sits at extreme end. G sits third to the right of D. Only one people sits between E and F.\n\nWho sits second to the right of H?",
+   "options": [
+    "G",
+    "A",
+    "C",
+    "H",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a47471af4534146b30e734f6caedb1b1d96c55cdcb6031b2e9da21b535019eeb"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions following it. Eight people A, B, C, D, E, F, G, and H are sitting in a row facing north, but not necessary in the same order. A sits third from the left end. There are only one people sitting between A and D. F sits at one of the extreme ends. C sits second to the right of A. Only three people sit between A and B. Neither E nor H sits at extreme end. G sits third to the right of D. Only one people sits between E and F.\n\nWho sits second to the left of E?",
+   "options": [
+    "H",
+    "A",
+    "C",
+    "G",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d5868708bbb2a6c64a88699347b5adffd7f0f62bcf48cc4de3a2bed862ebf881"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. A certain number of persons sit in a row facing north direction. All of the above information is not necessary in the same order. There are five persons between the P and R, which is right of P. Number of persons between P and S is same as it is between R and B. B sits tenth to the right of P. T is second to the left of the R. C is immediate neighbour of R. M is to the immediate left of Q and and five persons between the R and V. Number of persons between B and N is same as it is between B and M. Q is forth to the right of B. What is the total number of persons can be sitting in this row?",
+   "options": [
+    "20",
+    "10",
+    "15",
+    "19",
+    "25"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "658106cb4f9160f1aa8229deedbf28b76b60b150f1317c349d891881810777e0"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. A certain number of persons sit in a row facing north direction. All of the above information is not necessary in the same order. There are five persons between the P and R, which is right of P. Number of persons between P and S is same as it is between R and B. B sits tenth to the right of P. T is second to the left of the R. C is immediate neighbour of R. M is to the immediate left of Q and and five persons between the R and V. Number of persons between B and N is same as it is between B and M. Q is forth to the right of B.\n\nWho is sit exactly between the person V and Q?",
+   "options": [
+    "S",
+    "P",
+    "T",
+    "C",
+    "M"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "672ff0385b09580c391f3c638f3433dfba8c4e8a350adbe15bc72d555ab89213"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the question that follows. A certain number of persons sit in a row facing north direction. All of the above information is not necessary in the same order. There are five persons between the P and R, which is right of P. Number of persons between P and S is same as it is between R and B. B sits tenth to the right of P. T is second to the left of the R. C is immediate neighbour of R. M is to the immediate left of Q and and five persons between the R and V. Number of persons between B and N is same as it is between B and M. Q is forth to the right of B.\n\nWho is sitting in the right end of the row?",
+   "options": [
+    "S",
+    "P",
+    "B",
+    "Q",
+    "C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "367237c699ab349c1fa57039646ef6a0fcd626f156316426306dcc5c0ae6e634"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "How many meaningful English words can be formed with the First, the second, the fourth, and the sixth letters of the word PLATFORM, using each letter only once in each word?",
+   "options": [
+    "Three",
+    "Two",
+    "One",
+    "Four",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "25148bd70040509aa6fa1fe60a7dd98bef6cc68c0bbee36c119cf96e2833268b"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "The given table shows the number of persons (Male + Female) working in three different companies (P, Q, and R) over three different months: January, February, and March. Please read the data carefully and answer the questions. Number Number of Number of persons persons of persons (Male + (Male + (Male + Companies Female) Female) Female) working working in Working in February in March January P 350 400 300 Q 450 500 600 R 700 550 650 Number of persons working in company Q in February is increased by x then the ratio between number of persons working in company Q January to February is 3: 4. Find the value of x.",
+   "options": [
+    "250",
+    "50",
+    "100",
+    "150",
+    "200"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6fd09cf2223313d3a52009e147973852b1da6865aa47257085134f81ca22db80"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the number of persons working in company P and Q in February to the number of persons working in company P and Q in march.",
+   "options": [
+    "1: 2",
+    "2: 1",
+    "2: 3",
+    "1: 1",
+    "3: 2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "97aa1a7277fe04be6c30972e8c93f46cac84aadc3ec640885f29e84f4644d99f"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "If the number of persons working in January from companies P, Q and R is 20%, 40% and x% are married respectively, and the total married working in all three companies P, Q and R in January is 390. Find the value of x.",
+   "options": [
+    "45",
+    "30",
+    "20",
+    "15",
+    "40"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c20c0bef906784e032c5a2b7a9f6c203cc6b27d6ffc268267bdb36696b8a04ce"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "Number of females working in company Q in March is 3/5 th of the total persons working in company Q in march and number of females working in company R in march is 7/13 out of total persons working in the same company ,Find the difference between number of females working in March in company Q and R.",
+   "options": [
+    "35",
+    "10",
+    "15",
+    "30",
+    "25"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9a55da33b5fd82968fd04ba052cfd78893d83cded1d9bca6a18b1249cd913a3d"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "Number of males to females working in January from company P is 4: 3 and 30% of the persons working in company P in February are females then find the total males working in company P in January and February.",
+   "options": [
+    "370",
+    "340",
+    "480",
+    "360",
+    "320"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "016e8bba837c58bee2dee3d93a23fc073b6c79bd393d6463be3e2afafeb5f586"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? 3 (√64 + 3) = 750 + ?",
+   "options": [
+    "576",
+    "581",
+    "588",
+    "590",
+    "622"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b1f25ab4506cb3dfae4f653c2a1620715bd1f8fe76a42c3429d3360dc0644300"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following question? (√36 × √64) /4 = ?",
+   "options": [
+    "14",
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2090531ccae32b7db0b1f8f444a5e46ac183babfeefaeaa6763f895990c5fdec"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 60% of 750 - 30% of 100 + 20% of 200 = ?",
+   "options": [
+    "444",
+    "460",
+    "455",
+    "466",
+    "488"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f589ec1ed39af707a7b51ebd3acedf2f1b74489fe7eea7593cf0598041bb14ea"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark '?' in the following equation? 76/37 × 148/57 × 87/8 = ?",
+   "options": [
+    "68",
+    "78",
+    "73",
+    "64",
+    "58"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d2fa631613a9641ce4d3fb36eb1a7cbdedcff21c947e4ddc3f2be9e5c401225a"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? (47% of 2350) – (41% of 1150) = ?",
+   "options": [
+    "633",
+    "433",
+    "673",
+    "636",
+    "643"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5e33507d845eb428e36246ab601190162972da65a40301553fc0670676c7a2ff"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘?’ in the following question? (200 × 19) ÷ 400 × 10 = ?",
+   "options": [
+    "85",
+    "95",
+    "100",
+    "105",
+    "110"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7a91186d008a5215e0de9d5265de81cb03b414a1744a1c67b317d97279c72cf8"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of ‘?’ in the following question? (240 × 12) ÷ 480 × 10 + 4 = ?",
+   "options": [
+    "44",
+    "56",
+    "64",
+    "35",
+    "12"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "fc90818d5ae62c25e9a56a61367f4a7563281d425fcf8e8d7f9b84d72bab7118"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark '?' in the following question: 726 ÷ 121 + 5 × 6 – 36 = ?.",
+   "options": [
+    "5",
+    "4",
+    "2",
+    "0",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "7bccb11caff3bc14d7186846332d42beddb3febd2c6139e1ddfab8072b9effc8"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What value can come in place of the question mark (?) in the question below? 60% of 450 - 120 = ? + 140",
+   "options": [
+    "9",
+    "10",
+    "20",
+    "25",
+    "15"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0a7f6ee4fad1053776476055669788f46fd084660f9747dea3875055a7ddbf2a"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark in the following equation 13 × 6 - 12 × 4 + 23 = ?",
+   "options": [
+    "53",
+    "43",
+    "33",
+    "23",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a5c1d3b81f16fa953e47ad183ff6a58d046919a9edf08b6837bc0ab60ae61f8c"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of the question mark ‘?’ in the following question? 18000 ÷ 6 ÷ 5 ÷ 4 ÷ 3 ÷ 2 = ?",
+   "options": [
+    "25",
+    "15",
+    "35",
+    "55",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c3df541d99f8c2b58e9a65753da1933b62707872b2cf85cb6f3979f21f30740a"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark (?) in the following question? (√256 × √25) ÷ √16 = ?",
+   "options": [
+    "40",
+    "10",
+    "25",
+    "20",
+    "15"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3a451d768cebad6ec44196f18658ba4086b2a8daf4ddb74f46cd7c799c096d49"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 25 × 40 + 20 ÷ ? = 1020",
+   "options": [
+    "2",
+    "3",
+    "10",
+    "12",
+    "1"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "66fc214f8a0ef4930805b5f3c99b665c5b1134f4ab46e4b387720effce535322"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 3 2 ? 2 × 4 × 8 ÷ 16 = 2",
+   "options": [
+    "12",
+    "11",
+    "8",
+    "9",
+    "10"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "13f1150d2411c91fc9c4582928ef960fb40bf9d50729fe799298a64c6c8a7f64"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of 'x' in the following question? 3x - (1/2) of 80 + 60% of 50 = 110",
+   "options": [
+    "30",
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d59adf8091e09549ae45398498558069426e48b5ac2c0ea1e62a316fdda406c3"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "Shopkeeper sold an article to person A at a profit of 10% and the same article was sold to person B at a profit of 20%. The overall profit is Rs.120 then find the cost price of an article.",
+   "options": [
+    "Rs. 470",
+    "Rs. 400",
+    "Rs. 420",
+    "Rs. 450",
+    "Rs. 480"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d9763b14507bb99fe0230d9a3546b076f75a259089e1acfa33c893682eed4e2b"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "The salary of Kavya is Rs.12500. From her salary, she spends some amount on groceries and the amount spends on rent is Rs.2000 more than groceries. She saves the remaining Rs.4500. Find the ratio of the amount spent on groceries and rent respectively.",
+   "options": [
+    "5: 7",
+    "5: 3",
+    "2: 3",
+    "3: 5",
+    "3: 2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "67f50d812e3620ecacdcd5fd1d0086e9101c0b3a74ed296b95af0f62a6d53c3f"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "Two trains X and Y have a speed of 43 kmph and 29 kmph respectively. Train X crosses aman standing in train Y in 27 seconds while moving in the opposite direction. Find the length of train X.",
+   "options": [
+    "420 m",
+    "480 m",
+    "360 m",
+    "540 m",
+    "510 m"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "08ff7493c1ce3e4ffd58ac33a7f31cf465bcc89c0268b868cde2f9b68014d5a0"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of efficiency of A to B and the ratio of efficiency of B to C is 5: 8 and 28: 15 respectively. If A and C worked together, then the work will be completed in 1212 days.Find the number of days 13 required for B alone to complete the work.",
+   "options": [
+    "18 days",
+    "15 days",
+    "12 days",
+    "16 days",
+    "20 days"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b2f97681c10369adb2ce73d889dc412ac5c87425da3a2ef6246df178b79112f0"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "A person invested an amount of Rs. 2000 partly in a 6% simple interest scheme and the remaining in a 7% simple interest scheme. If the total interest obtained after one year is Rs. 125. Find the amount that is invested in a 6% simple interest scheme.",
+   "options": [
+    "Rs. 1850",
+    "Rs. 1750",
+    "Rs. 1500",
+    "Rs. 1250",
+    "Rs. 1200"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2a3c3299f598a653b449571ee7018e000b87d091ff86ee870f5285389532f42a"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "Ratio between upstream and downstream speed of the boat is 7: 9. If the difference between the time taken by boat to cover 378 km is 4 hours. Find the speed of the stream.",
+   "options": [
+    "8 kmph",
+    "6 kmph",
+    "3 kmph",
+    "4 kmph",
+    "7 kmph"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "46f4179441b08721ded78ad454b50df36305750601ba26da7176e43b7a9f3b4b"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "The side of the square is equal to the radius of the circle whose circumference is 396 cm. Find the area of the square?",
+   "options": [
+    "4239 cm²",
+    "3969 cm²",
+    "3789 cm²",
+    "3459 cm²",
+    "3158 cm²"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2392b179468f0e12064eb8e3a93efbe36008f3eb2ac74b90d607f583242ce157"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "There are three pipes A , B and C connected with the tank A and B are the inlet pipes and time taken by them to fill the tank is 54 minutes and 72 minutes respectively.If Pipe C is an outlet pipe can empty the tank in 108 minutes. If A and B opened for 10 minutes and time taken by pipe C to empty the tank.",
+   "options": [
+    "45 minutes",
+    "50 minutes",
+    "35 minutes",
+    "28 minutes",
+    "42 minutes"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d4fc1a38e0aec22c8eb508dde9a8901fe26df1bc79815f289afa859985feeeff"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "P and Q entered into a partnership with the investment Rs. 9500 and Rs. 6500 respectively. P and Q left after 7 months and 8 months respectively. At the end, the profit share P is Rs. 348 more than the profit share of Q, find the profit share of Q?",
+   "options": [
+    "Rs. 1448",
+    "Rs 1146",
+    "Rs. 1248",
+    "Rs 1568",
+    "Rs. 1736"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7dbdf562c46bcb7b8362afadc0a300a4546599fbe6603855ba0814de9849debe"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "4 years ago, the ratio between the ages of A and B is 11: 8. The age of A after 2 years is 10 years more than the age of B after 4 years. Find the present age of B?",
+   "options": [
+    "45 years",
+    "40 years",
+    "36 years",
+    "38 years",
+    "42 years"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dcc7912e2142f8d4d148061ab09b1f7e35137f1678d84a2cde7fecd6a3632123"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following series? 32 48 24 36 18 ?",
+   "options": [
+    "35",
+    "25",
+    "49",
+    "27",
+    "30"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0be225d788ff1604f6de3f8e023f3aa8f116fbd93c6865081dd22e65c87fd13f"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 21, 34, 55, 89, ?, 233",
+   "options": [
+    "144",
+    "137",
+    "126",
+    "164",
+    "135"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "512fc57c4dc5412972a09d755f66f57e6b7d0af7bf145d86bedb8f49c6ed8a9e"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "Find the missing number in series 5, 10, 16, 23, 31, 40, ?",
+   "options": [
+    "95",
+    "100",
+    "50",
+    "105",
+    "120"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2cd618d65940190ecd11c3ae92bcc16133505d3df47685ebc3ed79469bc6ad03"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 7, ? , 14, 56, 448",
+   "options": [
+    "5",
+    "7",
+    "9",
+    "0",
+    "4"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8ee51c6dd28d11faf6f6da58d7dff23a27bfd107f553f30ead53f1ee1e211381"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 12, 6, 6, 12, 48, 384, ?",
+   "options": [
+    "3072",
+    "3840",
+    "6276",
+    "6144",
+    "5040"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ce57ca9a25c3307a5f6e094f5b1da696a8c22964a3f8cf1f5ab17f6c23bbb157"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Directions: In the following question, the given table has two columns (I and II) containing three phrases each. The phrases are labelled A, B, and C in the first column and P, Q, and R in the second column. A phrase from the first column may or may not connect with a phrase in the second column to make a grammatically and contextually meaningful sentence. Identify the correct option given below that gives the correct sequence in which one or more sentences can be formed. If none of the options make a meaningful sentence, mark 'None of these' as your answer. Column I Column II (A) As long as you are still alive, you (P) encounter the good things in life. will definitely (B) From the moment I saw his (Q) undoubtedly she had been girlfriend, I thought I definitely eavesdropping on his meeting. (C) When Bill opened his office door (R) temperamental similarities and Ann fell onto his floor, he knew between the brothers.",
+   "options": [
+    "A-P and C-Q",
+    "A-Q and B-R",
+    "B-R and C-R",
+    "A-R and B-Q",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "bd2bfdbb058ea7702114185eb63b50d930f4a01edbce70fa696c48a7444b8d9b"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Directions: In the following question, the given table has two columns (I and II) containing three phrases each. The phrases are labelled A, B, and C in the first column and P, Q, and R in the second column. A phrase from the first column may or may not connect with a phrase in the second column to make a grammatically and contextually meaningful sentence. Identify the correct option given below that gives the correct sequence in which one or more sentences can be formed. If none of the options make a meaningful sentence, mark 'None of these' as your answer. Column I Column II (A) If taking a taxi costs too much, (P) headed to the park for our long- you can alternatively awaited picnic. (B) They were gratified to find (Q) use Uber, which may be specific performance and cheaper. (C) Though we saw the clouds (R) almost as well as that self- looming overhead, we, nonetheless, opinionated young architect had.",
+   "options": [
+    "A-Q and C-P",
+    "A-P",
+    "C-Q",
+    "B-Q and C-R",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "668ee1e3073eb8fb4c746cd9f2e6f8118fa6e8ce281867a0d87b13e300a5c962"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "Directions: In the following passage, some words have been deleted. Select the most appropriate option to fill in each blank. There are many other takeaways. While pre-poll surveys suggested that inflation topped voters’ ___(1)___, abortion rights came second. While the Republicans tried to cash in on voter ___(2)___ over high inflation, many of their candidates’ anti-abortion positions did not help them in the polls. Second, the results showed that Donald Trump is not as powerful as he appeared to be. During the Republican primaries, the former U.S. President’s endorsement mattered a lot. But it does not carry the same weight in the general elections. Several of the candidates he ___(3)___ were defeated, while at least two Republican winners were unwelcome to him — Georgia’s Governor Brian Kemp and Florida Governor Ron DeSantis. While Mr. Trump is expected to make his 2024 bid this week, many Republicans are already ___(4)___ him for the party’s less-than-expected performance. The results have also underscored the unstoppable ___(5)___ of Mr. DeSantis. His landslide win in what was called a swing State has ___(6)___ calls by Republican donors for his presidential bid. Many see Mr. DeSantis as a more ideologically disciplined right-winger than Mr. Trump (who, in their view, could lead the party to victory). The midterm has set the stage for 2024. The Democrats have lost ground, but still stay strong. The Republicans are set to take the House but are internally divided, and right-wing extremism is not winning the party votes. How the parties address these challenges will ___(7)___ their fate in 2024. Select the most appropriate option to fill in blank number 1.",
+   "options": [
+    "Discerns",
+    "Yearns",
+    "Concerns",
+    "Scorns",
+    "Adorns"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "10a5d736e0ec9cb27d223f3dcdf89fd5119104854941edb1dbb3180129772e6d"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 2.",
+   "options": [
+    "Contentment",
+    "Achievement",
+    "Abatement",
+    "Attenuation",
+    "Resentment"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "66e8fc5cc09991e00983d578e61edb7b0553300572b2019b6ef4bcbcc2888845"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 3.",
+   "options": [
+    "Endorsed",
+    "Contradicted",
+    "Gainsaid",
+    "Rebutted",
+    "Confronted"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b5cb46352151a92b471bad21190d5387298fa192a8916eb47204f0312462cb5d"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 4.",
+   "options": [
+    "Absolving",
+    "Exonerating",
+    "Vindicating",
+    "Blaming",
+    "Exculpating"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "def6b5fba404b56c4732cbaac8ec2736b22b92f8099ea0281d5f6d12cebdac59"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 5.",
+   "options": [
+    "Disgorge",
+    "Rise",
+    "Relinquish",
+    "Cede",
+    "Spout"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c1551193fcc96d5f9d662925c13f3b27bfee41a3b9be9357130b984bbf44700e"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 6.",
+   "options": [
+    "Undermined",
+    "Impaired",
+    "Sapped",
+    "Impeded",
+    "Strengthened"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "5aa1737d3363d554bc53aa585811ac35da9143882217565f1b27353f8124d69e"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Select the most appropriate option to fill in blank number 7.",
+   "options": [
+    "Withdraw",
+    "Revoke",
+    "Determine",
+    "Rescind",
+    "Adjourn"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c6bf9fad3e1258ff58ae4428bf44f11ba4d3e991d6e370abd7a9c006d2091016"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. He is my best friend, (A)/ and he has informed me (B)/ about him visit to the beautiful city (C)/ of Paris next week. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "daf94eed68a35da2da81d1c02543d87e76ea66fe737cb798ae063abce1712215"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. ChatGPT is doing wonders, (A)/ but the outdated informations provided (B)/ by its free version is creating troubles (C)/ for the people relying on it. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "03d0ea455062d9586043347795f25ee5c13d0eec564420952859755f65b8b151"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. Millions of stars in the sky (A)/ were talking to each other, (B)/ hovering in the endless, dark, cold, (C)/ and silent space of nothingness. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f19d8df0c0c4a0909e501634c315f8a3c0412b0bb4f88cba4b7207080bf24c71"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "Directions: In the following question, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. Microorganisms like harmful bacteria (A)/ can enter into our bodies, (B)/ have devastating effects on our health, (C)/ and even cause deadly poisoning. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7942db69483c13731879b80e3502b7971d0a81827f175f72c9d76089bd0bd482"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. The head minister, (A)/ together with his advisors, (B)/ are attending the G20 Culture (C)/ Ministerial Meeting in Varanasi. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d188e639bedf764ee5cdd21fc410bc5236da1fa4fed87539c42897ac2fb40620"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "Directions: In the following questions, one part of the sentence may have an error. Find out which part of the sentence has an error and click the button corresponding to it. If the sentence is free from error, click the \"No Error\" option. It was a spectacular performance, (A)/ really loud and hyped up, (B)/ and the audience clapped its hands (C)/ after the performance, purely out of joy. (D)/ No error. (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3c5c6b061bd643f1802b0273ceb520caefc2562b5a018a427423d0f823e2be0b"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelled. Find the misspelled word Oil pools are valuable underground accumulations(A) of oil, and oil fields(B) are regions underlein(C) by one or more oil pools originating(D) from organic matter.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "747ac15564e4c8c164d9e2c67d503a4accb2f6b02f9e56afda5b3cd5a6812754"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelled. Find the misspelled word Biodiversity or Biological Diversity is immensely(A) rich in wildlife and cultivated species, diverse(B) in form and function but closely integrated(C) into a system through multiple networks of interdependncies(D)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e3aab70bb16742b2445642153a81959ea00c1e0fa8c22648644f9b9365a4d59b"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelled. Find the misspelled word The clear lesson from the dynamics(A) of both environmental destruction(B) and reconstruction in India is that local communitties(C) everywhere have to be involved in some kind of natural resource management (D)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "6b1d624ccfe6360019240cad407b1248b23f49e70e395f8f869941b55108caab"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelled. Find the misspelled word A poem is a composition in verse(A), usually characterized by concentrated and heightend(B) language in which words are chosen for their sound and suggestive(C) power as well as for their meaning and using techniques such as rhythm(D) and meter.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bf8a68c9839c9acc315871016b0710e18366c5c8a51c67a47f4cc250dd68fd02"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Direction: Evaluate the following word, accompanied by three sentences containing it. Determine the sentence(s) that accurately convey the meaning of the given word. APPRECIATE A. I appreciate your kindness and support during this difficult time. B. My antique collection has significantly appreciated in value over the years. C. The value of my car will appreciate over time, causing it to be worth less in the future.",
+   "options": [
+    "Both A & B",
+    "Both B & C",
+    "Both A & C",
+    "All A, B & C",
+    "Only A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b72e6b1831494fbeafc14ae337fbe3e5d3f1675d456ef88e3bedc1c0e17f130b"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Direction: Evaluate the following word, accompanied by three sentences containing it. Determine the sentence(s) that accurately convey the meaning of the given word. Edition A. The second edition of the fantasy novel included exclusive illustrations. B. The chef prepared a special edition of the dessert, using a recipe from his grandmother. C. Due to heavy traffic, she took an edition route to work this morning.",
+   "options": [
+    "Only A",
+    "Both A & B",
+    "Only C",
+    "All A, B & C",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1fc5132bdffdf65cbd4f908bbe1af41f98d6117bb50c024425e9d44d6310d6ec"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Directions: Read the given passage carefully to answer the following questions. Each question will have five alternatives as its answer. Choose the correct option as your answer. Dolphins, often celebrated in folklore and admired for their intelligence, agility, and friendly demeanor, are indeed one of the sea's most fascinating inhabitants. These mammals, belonging ___ the family Delphinidae, navigate the vast expanses of the ocean with a grace and efficiency that has captivated human imagination for centuries. With over 40 species of dolphins discovered to date, they are a testament to the adaptability and diversity of marine life. One of the most remarkable aspects of dolphins is their sophisticated echolocation ability, which they use to hunt for food and navigate through murky waters. This biological sonar enables dolphins to emit sound waves that bounce off objects, allowing them to \"see\" their surroundings through sound. This skill is not just a testament to their intelligence but also a critical adaptation for survival in the diverse and sometimes challenging environments they inhabit. Dolphins are also known for their complex social structures. They live in pods, which can vary in size from a few individuals to over a thousand, depending on the species and environment. These social units are crucial for their survival, aiding in hunting, raising young, and protecting each other from predators. The intricate social behaviors observed in dolphins, including cooperation, altruism, and even grieving, reflect a level of social intelligence that is rare in the animal kingdom. The relationship between dolphins and the sea is symbiotic and essential. The sea provides a habitat rich in resources, enabling dolphins to thrive. In return, dolphins play a significant role in the marine ecosystem. As apex predators, they help maintain the balance of marine life by controlling fish populations, which can contribute to the health of coral reefs and other marine habitats. Furthermore, dolphins are indicators of ocean health, with their presence or absence often signaling shifts in environmental conditions. Despite their significance, dolphins face numerous threats from human activities, including pollution, climate change, and entanglement in fishing gear. Conservation efforts are essential to ensure that dolphins continue to flourish in the oceans. Protected marine areas, sustainable fishing practices, and ongoing research and education are critical components of these efforts. In conclusion, dolphins are not just captivating creatures of the sea; they are pivotal to the marine ecosystem's health and diversity. Their intelligence, social complexity, and symbiotic relationship with the ocean make them a subject of endless fascination and an important focus for conservation. As we continue to unravel the mysteries of these extraordinary animals, it is imperative that we also take steps to protect them and the vibrant habitat they call home. Choose the synonym for the word \"sophisticated\" as used in the passage:",
+   "options": [
+    "Primitive",
+    "Simple",
+    "Complex",
+    "Unrefined",
+    "Basic"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0b6bbc107b12d2d81f025e9ed6266bc6563f01814003730935344ccb1483b95d"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Why are conservation efforts deemed crucial for dolphins, based on the passage?",
+   "options": [
+    "Due to their diminishing role as apex predators.",
+    "Because dolphins are the main attraction of marine-themed parks.",
+    "To prevent the potential extinction of many dolphin species.",
+    "To ensure the uninterrupted entertainment of humans.",
+    "Because they are the primary source of nutrients for other marine creatures."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a2da7d2c3766ca8eb298d4decec8dbbbea6e2ad40efcf68387de4a3d5a9d0273"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Choose the synonym for the word \"crucial\" as used in the passage.",
+   "options": [
+    "Insignificant",
+    "Vital",
+    "Unimportant",
+    "Trivial",
+    "Optional"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f688fc22f4d68e5617259c4d34a48aa5ce8cb15db1121a116f73b22b803db87d"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "What adaptation do dolphins use for hunting and navigating through murky waters, as described in the passage?",
+   "options": [
+    "Their ability to swim at high speeds.",
+    "Sophisticated echolocation abilities.",
+    "The ability to breathe underwater for extended periods.",
+    "Changing skin color for camouflage.",
+    "Using aquatic plants to trap prey."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e74a0f483a44182b90363a25fc5882f4b1201cfba1a0c9c519914b542c7dcaa8"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Which of the following statement(s) can be true as per the passage? A. Dolphins are known for their remarkable ability to heal from injuries rapidly, including significant wounds from sharks or boats. B. The use of echolocation by dolphins is primarily for communication purposes, rather than for navigation or hunting. C. Dolphins have been observed using tools, such as marine sponges, to protect their snouts while foraging on the seafloor.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "A and C",
+    "All A, B, and C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2f9777d26a7883a946970ab0056d279927c1f7ce7c90242cd936c000760829b1"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Choose the antonym for the word \"diverse\" as used in the passage:",
+   "options": [
+    "Varied",
+    "Homogeneous",
+    "Different",
+    "Disparate",
+    "Multifaceted"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "06f76161cb2f7c17f8b64a0c6bfdf5137dcb12a42d16d655b0b811f8b4dbd10e"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Fill in the Blank: \"These mammals, belonging ___ the family Delphinidae, navigate the vast expanses of the ocean with a grace and efficiency that has captivated human imagination for centuries.\"",
+   "options": [
+    "inside",
+    "against",
+    "over",
+    "to",
+    "under"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "59b423775d5515dba00aa03660611b9294a7573ec44c65258d1122dad3ac7c7e"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Which of the following statement(s) can be false as per the passage? A. Dolphins communicate solely through body language, lacking any form of vocal communication. B. The diet of dolphins consists entirely of plant-based materials, such as seaweed and aquatic plants. C. Dolphins' social structures are flexible, allowing them to form various types of groups based on activities and social connections.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "All A, B, and C",
+    "A and B"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "c3e7e70384d8b90bcf5a4999820dcf2fdbefa526782b92b6c7fe47c69046a7e7"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "What role do dolphins play in maintaining the balance of marine life, according to the passage?",
+   "options": [
+    "They primarily contribute to pollination in marine environments.",
+    "Dolphins are significant in maintaining the aesthetic beauty of the oceans",
+    "As apex predators, they control fish populations contributing to the health of marine habitats.",
+    "Their main role is to provide entertainment for humans and other marine animals.",
+    "Dolphins are primarily responsible for guiding lost sea animals back to their habitats."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3e588678e757064110a802542044f1320c905697e6fc7c37fa80f2c0f205c902"
+  }
+ ],
+ "section_confidence": 0.971,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}

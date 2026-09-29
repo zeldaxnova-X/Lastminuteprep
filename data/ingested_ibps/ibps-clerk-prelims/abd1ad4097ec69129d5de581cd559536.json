@@ -1,0 +1,1502 @@
+{
+ "file": "abd1ad4097ec69129d5de581cd559536.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "empty_or_short_stem": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "The following question contains a sentence with one blank only. Below are given three words as answer choices. You have to choose an option with choices which can make the sentence complete. We are now at a stage where we need a major _______ of our lifestyles and patterns of consumption. A. overhaul B. shopping C. remodelling",
+   "options": [
+    "B and C",
+    "A and C",
+    "Only A",
+    "Only B",
+    "Only C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "454c5b13e4c29d4df5ec7150af345fdbc5b359364178958ec7daeafcdbe4c292"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "The following question contains a sentence with one blank only. Below are given three words as answer choices. You have to choose an option with choices which can make the sentence complete. Governments want to move civil servants out of national capitals to _______ cities, save money and curb the regional inequality. A. burden B. disencumber C. unclog",
+   "options": [
+    "B and C",
+    "A and C",
+    "Only A",
+    "Only C",
+    "Only B"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a8fe5d95ea2bc1219b1b4b1a40163dd7149faffa80dc565b1dfdcf1e07745bc1"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "The following question contains a sentence with one blank only. Below are given three words as answer choices. You have to choose an option with choices which can make the sentence complete. The Arctic is melting rapidly and the tenor of the recent discussions among Arctic countries suggests an even _______ situation. A. woeful B. enervating C. lamentable",
+   "options": [
+    "B and C",
+    "A and C",
+    "Only A",
+    "Only C",
+    "Only B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d1a5b26767c65eed63617c17c3c2fe5a8a26acc76c1ad76932b495a314c3b085"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "The following question contains a sentence with one blank only. Below are given three words as answer choices. You have to choose an option with choices which can make the sentence complete. In past eras, when information travelled at a _______ pace, civil servants had to cluster together. A. snail’s B. sluggish C. ant’s",
+   "options": [
+    "B and C",
+    "A and B",
+    "A and C",
+    "Only A",
+    "Only B"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9a7a764b6592e4f5bcb7265b7b4c3fe3b98f2d09e42e7d918ae24ee168fd1854"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "In each question, one sentence is given. In each sentence, certain words are in bold and numbered from A to D. Below the sentences are given five options with possible pairs of interchange of those bold words. Choose the pair(s) of words that need to be interchanged to make the sentence grammatically correct and meaningful. The Silk Road not only (A)credited as a major trade route (B)from India and China but is also (C)served for facilitating the spread of Buddhism (D)between India to East Asia.",
+   "options": [
+    "A-B",
+    "A-D",
+    "B-C",
+    "A-C, B-D",
+    "A-D, B-C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ea47fb6c114f8267acc77518a3e1c7dbe8505c34f153a2667f08cbbea6aa7b63"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "In each question, one sentence is given. In each sentence, certain words are in bold and numbered from A to D. Below the sentences are given five options with possible pairs of interchange of those bold words. Choose the pair(s) of words which need to be interchanged to make the sentence grammatically correct and meaningful. Women (A)access the bulk of food in Africa, and (B)such they are largely locked out of land ownership, (C)produce to credit, and productive farm inputs (d)yet as fertilizers, pesticides, and farming tools.",
+   "options": [
+    "A-B",
+    "B-C",
+    "A-D",
+    "A-B, C-D",
+    "B-D, A-C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "bbe820114f5085836083c0a01600175459863879ce43789a7cede2fe4a240285"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "In each question, one sentence is given. In each sentence, certain words are in bold and numbered from A to D. Below the sentences are given five options with possible pairs of interchange of those bold words. Choose the pair(s) of words which need to be interchanged to make the sentence grammatically correct and meaningful. The (A)talks last week of Sri Lanka’s new President Gotabaya Rajapaksa to India and his extended (B)visit with Prime Minister Narendra Modi was an (C)bilateral by the two nations to make good (D)affirmation ties a priority for each.",
+   "options": [
+    "A-C",
+    "A-D",
+    "B-D",
+    "A-B,C-D",
+    "A-B, B-C"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "15c4baf4a61b0a295fda90c163de9d914b69930cb813271d56688a8e75b6d05c"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word. Interestingly (a), when these expectations (b) make agents coordinate into another equillibrium (c) path, temporary shocks have permanent effects and cause hysteresis (d).",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "None"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9918c3d3b95481e37ca201d2bfca364add472d995ee18fade949d771f75c1a8c"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word The series (a) focuses on understanding the political (a) economic, and social (c) forces shaping parts of the world that are in crisises (d).",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "None"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5659b360ec53e1519316ac9ec2e1c0880d12cde9246d2f0d030a254758328a25"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is incorrectly spelt. Find the incorrectly spelt word. The show often has a little segment (a) on the history of whatevar (b) pile of carbohydrates (c) the contestants (d) have to construct.",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "None of the above."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f89504eea4dc3e49848783d624e7c442607f5d742a86c7ec74d8081f888cb443"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is incorrectly spelt. Find the incorrectly spelt word. The logic, according (a) to the staffer who drafted the provision (b), was that the education (c) should be good enouf (d) that at least some students are willing to pay.",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "No error"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3f598321bd1a77c595a4d8b2010ed1ad4961d1ec32827fdc174bc6b8ef3bbe07"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "In the following sentence, four words are given in bold out of which one word is misspelt. Find the misspelt word and mark the answer accordingly. The evidense (a) suggests that unclear wording can be dangerous(b) or at best make the treatment(c) less effective(d).",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "None"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "c5205be9ad37d80ba3c3e2182d4de8c09c6ce6962e77e64529d83b870b049138"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "In the following question, one part of the sentence has an error. Read the sentence to find the error and mark the corresponding option. If the sentence has no error choose option 5 ‘No error’ as your answer. Under the smart city umbrella, (1)/ Dubai has also been (2)/ investing heavy in (3)/ technology-based healthcare. (4)/ No error(5)",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "163b4de2817fa4d3700c6448a89eb395aea949d151971175f29098ae4197aa8b"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Read the sentence to find out if there is any error in it. The error if any, will be in one part of the sentence. The number of that part will be the answer. If there is no error, then the answer is (5). Ignore error of punctuations if any. Chandler look at Monica (1)/ and instantly felt a tug (2)/ in his heart that he (3)/ knew was love. (4)/ No Error (5)",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e8b80d3ac0d20daa2a9c8a094e3875cf4e841acc92c41e1072f9000ee47b866c"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "In the following question, one part of the sentence has an error. Read the sentence to find the error and mark the corresponding option. If the sentence has no error choose option 5 ‘No error’ as your answer. In 2014, India's current Prime Minister Narendra Modi (1)/ had come to power promising a tough (2)/ line on Pakistan, but also showed (3)/ interest in holding peace talks.(4)/ No error(5)",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "22d2dd1f1c155d1d178f81bcfdd2e8d02625647a2ae37450c7700a8985ecaf1e"
+  },
+  {
+   "question_number": 16,
+   "section": "english",
+   "stem_text": "In the given question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. We shall meet (A) again as usually (B) at 5 pm to discuss (C) our newly planned business. (D) No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7c17288d89e09edc867394cc83ee3d11a3ccf9a9a20e09a34862e6fb4979719e"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "In the given question, some part of the sentence may have errors. Find out which part of the sentence has an error and select the appropriate option. If a sentence is free from error, select 'No Error'. No sooner had (A) I walked through (B) the door then (C) the phone rang. (D) No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c8301c00a2b3b779537b33bfde4958f0d28759c54c47dcf5d45a3ba4d5d7de97"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen. Which of the following fits the blank labeled (A)?",
+   "options": [
+    "Divider",
+    "Initiator",
+    "Contender",
+    "Campaigner",
+    "None of the Above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2134c25deb1fa89380f633c9282f800fe35628cd26f656a034d3b09a1c2b1677"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen.\n\nWhich of the following fits the blank labeled (B)?",
+   "options": [
+    "Distend",
+    "Absorb",
+    "Distill",
+    "Append",
+    "None of the Above"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "3e0e8e8fec430ab68a12fc6e6158298ad105f85585df79f7f25884bff28ada06"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen.\n\nWhich of the following fits the blank labeled (D)?",
+   "options": [
+    "Discharges",
+    "Disposes",
+    "Effects",
+    "Contains",
+    "None of the Above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "e370ff1f32dc6903eb56c6c0ae8be45ed884effb4d696fee192af388edada729"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen.\n\nWhich of the following fits the blank labeled (E)?",
+   "options": [
+    "Recommended",
+    "Effected",
+    "Instructed",
+    "Affected",
+    "None of the Above"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9447368ffd5aa3f0fef11a552cf2c9f79fc8cee85b27a38b8fe8bda85d13aaac"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen.\n\nWhich of the following fits the blank labeled (F)?",
+   "options": [
+    "Favours",
+    "Impulses",
+    "Harm",
+    "Damages",
+    "None of the Above"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7a9800867b101d04f61193940c68e3abf9783631eece73d92d5337a17eb25b1d"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "In the given question, a passage with seven blanks labeled (A) – (G) is given. You are required to fill the correct word in the blanks. If there was such a thing as a perfect food, eggs would be a ___(A)___. They’re readily available, easy to cook, affordable and packed with protein. Eating eggs alongside other food can help our bodies ___(B)___ more vitamins, too. For example, one study found that adding an egg to salad can increase how much vitamin E we get from the salad. But for decades, eating eggs has also been ___(C)___ due to their high cholesterol content – which some studies have linked to an increased risk of heart disease. One egg yolk ___(D)___ around 185 milligrams of cholesterol, which is more than half of the 300mg daily amount of cholesterol that the US dietary guidelines ___(E)___ until recently. Does that mean eggs, rather than being an ideal food, might actually be doing us ___(F)___? Cholesterol, a yellowish fat produced in our liver and intestines, can be found in every one of our body’s cells. We normally think of it as “bad”. But cholesterol is a ___(G)___ building block in our cell membranes. It also is needed for the body to make vitamin D, and the hormones testosterone and oestrogen.\n\nWhich of the following fits the blank labeled (G)?",
+   "options": [
+    "Crucial",
+    "Suspended",
+    "Expectant",
+    "Subsidiary",
+    "None of the Above"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "b63b4225370c068ac5b585059aba1e941eaefe92fcc04003e656f8fdaeb15a1a"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "At the turn of the 20th century, it is estimated that India probably had many thousands of tigers in the wild. The Wildlife Institute of India (WII) and the National Tiger Conservation Authority (NTCA), Government of India, have been conducting tiger estimation surveys in partnership with NGOs. WWF-India was the key NGO partner of the WII and NTCA in conducting the comprehensive country-wide tiger estimation exercise in 2010-11, which revealed a mean tiger population estimate of 1,706. Based on a census using the pug mark technique, the number of tigers in 2002 stood at 3,642. As per the 2014 tiger estimation exercise conducted by WII in association with the NTCA using camera traps, there were only 2,226 tigers left in the wild in India. The tiger is not just a charismatic species or just another wild animal living in some far away forest. The tiger is a unique animal which plays a massive role in the health and diversity of an ecosystem. It is a top _______ which is at the apex of the food chain and keeps the population of wild hoofed mammals in check, thereby maintaining the balance between prey herbivores and the vegetation upon which they feed. Therefore, the presence of tigers in the forest is an indicator of the well being of the ecosystem. The extinction of this top predator is an indication that its ecosystem is vulnerable, and would not exist for long thereafter. If the tigers go extinct, it would bring down the entire system. For e.g. when the Dodos went extinct in Mauritius, one species of Acacia tree stopped regenerating completely. So when a species goes extinct, it leaves behind a scar, which affects the entire ecosystem. Another reason why we need to save the tiger is that our forests are water catchment areas. Therefore, it’s not just about saving a beautiful animal. It is about making sure that we live a little longer as the forests are known to provide ecological services like clean air, water, pollination, temperature regulation etc. Which of the following is TRUE according to the passage? (A) The number of tigers in India has decreased since 2002. (B) When the Dodos went extinct, one species of Acacia tree stopped regenerating. (C) The entire ecosystem is affected by the extinction of one species.",
+   "options": [
+    "Only (A)",
+    "Only (B)",
+    "(A) and (B)",
+    "(A), (B) and (C)",
+    "Only (C)"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "89c55dc1eed48e29ab2c9940d575c4dde813ad91aaefb27f135a373471f84dbf"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Choose the most appropriate word to be filled in the blank. \"It is a top _______ which is at the apex of the food chain\"",
+   "options": [
+    "Creature",
+    "Animal",
+    "Predator",
+    "Herbivore",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9dfcf50faf2942b773817dc41d9634ca983be33222a055126a74c71ad36fd525"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "Which of the following is NOT TRUE according to the passage? (A) The tiger is not a charismatic species. (B) The presence of tigers in the forest is an indicator of the well being of the ecosystem. (C) The tiger maintains the balance between prey herbivores and the vegetation upon which they feed.",
+   "options": [
+    "Only (A)",
+    "Only (B)",
+    "Only (C)",
+    "(A) and (B)",
+    "None of these."
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4d043308dfabe84cabf0121c86aa768329b8c19678c44cd09d8d8b9473def6fd"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "What is the difference between the census conducted in 2002 and the estimation exercise conducted in 2014?",
+   "options": [
+    "Technique used for counting the number of tigers.",
+    "Region covered for the census",
+    "Species of tiger",
+    "None of the above",
+    "All of the above"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7cf595dcd6bd6b16d37228713ca2623659faa1e37a406bb212bbaaaec14c6e56"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "Which of the following words is opposite in meaning to the word 'massive' ?",
+   "options": [
+    "Hefty",
+    "Lumpish",
+    "Ponderous",
+    "substantial",
+    "Flimsy"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d63a84c218692ca236c556c8ed74210fa6f4f9c30094f288cfc26698ca485852"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "Which of the following is closest in meaning to the word 'vulnerable'?",
+   "options": [
+    "Guarded",
+    "Unsafe",
+    "Invincible",
+    "Fortified",
+    "Sheltered"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "c5d3bc72eb5a00d41a76ee8c74b70eb212fd8712cfc11bebec141706397dce73"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "Which of the following is closest in meaning to the phrase 'to bring down'?",
+   "options": [
+    "To encourage",
+    "To elevate",
+    "To cause to fall by",
+    "To raise",
+    "To lighten"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "935f6b88907899f4d998d73d007d5329f18f7eced72ad3f274edf1a0ddd8dae2"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information carefully and answer the questions that follow. There are eight people A, B, C, D, E, F, G, and H are traveling in different months of the year. The months are given as January, March, April, June, August, September, November and December. F travels in the months having 31 days. There is a difference of three months between the months in which F and C travel according to the calendar. B travels immediately before F. A travels immediately after H. H travels in the month having 31 days. H is not traveling in March or August. The number of people traveling between A and F is the same as the number of people traveling between D and F. G travels exactly after E. D travels in December. In which month is C traveling?",
+   "options": [
+    "March",
+    "April",
+    "November",
+    "December",
+    "June"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8983b7a915ade3697f80ac233b0ce34ba07fea5f297b8156ce286c20ee31822c"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information carefully and answer the questions that follow. There are eight people A, B, C, D, E, F, G, and H are traveling in different months of the year. The months are given as January, March, April, June, August, September, November and December. F travels in the months having 31 days. There is a difference of three months between the months in which F and C travel according to the calendar. B travels immediately before F. A travels immediately after H. H travels in the month having 31 days. H is not traveling in March or August. The number of people traveling between A and F is the same as the number of people traveling between D and F. G travels exactly after E. D travels in December.\n\nWhich of the following statement is true?",
+   "options": [
+    "B - 31- March",
+    "E - 30 - September",
+    "G - 31- December",
+    "E - 30 - August",
+    "A - 30 - June"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1a43ff97c14cde93ed7122bfa723bb38b41722aa95800097ab1f87a52cf00ce3"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the information carefully and answer the questions that follow. There are eight people A, B, C, D, E, F, G, and H are traveling in different months of the year. The months are given as January, March, April, June, August, September, November and December. F travels in the months having 31 days. There is a difference of three months between the months in which F and C travel according to the calendar. B travels immediately before F. A travels immediately after H. H travels in the month having 31 days. H is not traveling in March or August. The number of people traveling between A and F is the same as the number of people traveling between D and F. G travels exactly after E. D travels in December.\n\nHow many people are traveling between F and A?",
+   "options": [
+    "Three",
+    "Two",
+    "One",
+    "Four",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a1079775c56afaf3725527fd5d60ebadf4011afad84956efad4ce15e2b76f172"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "A is traveling in which month?",
+   "options": [
+    "March",
+    "April",
+    "June",
+    "August",
+    "December"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "cfa9be5b8dce1258943a14613aafdb03899080f5e8f0cddef1848cc29c2706fb"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "Who is traveling in the month of November?",
+   "options": [
+    "G",
+    "A",
+    "F",
+    "D",
+    "H"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "de40ad08938ac1cbbacc31729e4f3a6ad609e6bc48761089cf3a116d5077914c"
+  },
+  {
+   "question_number": 36,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question, there are three statements followed by two conclusions I, II & III. You have to take the three given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the three statements disregarding commonly known facts. Statements: No pens are copies. Only pencils are copies. Only few pencils are erasers. Conclusions: I. No pencils are pens. II. Only few pens are erasers.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Both conclusion I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "458eb144481c76d802b33d21056bcbd8adefe8722136a2e98c68bc8a49318cd7"
+  },
+  {
+   "question_number": 37,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question, there are three statements followed by two conclusions I, II & III. You have to take the three given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the three statements disregarding commonly known facts. Statements: Only Girl are Boy No Girls are Men Only few Men are Women Conclusions: I. Some women are not Girl II. Some boys may be men",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Both conclusion I and II follows",
+    "Either I or II follows",
+    "None follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1a27a6d7c8afcc241ffeb7abc89b4bdfe76bba75c15eb0d9445985466d4b1a92"
+  },
+  {
+   "question_number": 38,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question, there are three statements followed by two conclusions I, II & III. You have to take the three given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the three statements disregarding commonly known facts. Statements: All Team are Players. No Teams are Batsmen. Only few Batsmen are bowlers. Conclusions: I. Only few Batsmen are teams. II. All bowlers may be team.",
+   "options": [
+    "Only conclusion I follow",
+    "Only conclusion II follows",
+    "Both conclusion I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "7d977b710aae3ee7962ae104172e2720ac392289e643d2d5d2aa86ed3e414fbd"
+  },
+  {
+   "question_number": 39,
+   "section": "reasoning",
+   "stem_text": "In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Royals are Rajasthan No Chennai is Knight All Royals is Knight Conclusions: I. No Royals is Chennai II. Some Rajasthan are Knight",
+   "options": [
+    "Both I and II follows",
+    "Only II follows",
+    "Neither I nor II follows",
+    "Either I or II follows",
+    "Only I follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f5e041925bda9d0f4ad9a15e81825f8955d9e358a31f8419e588792c95a5eb32"
+  },
+  {
+   "question_number": 40,
+   "section": "reasoning",
+   "stem_text": "In the question below are given two statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some camphor are rubidium All bauxite is titanium All rubidium is bauxite Conclusions: I. All rubidium is titanium II. Some titanium is a camphor",
+   "options": [
+    "Both I and II follow.",
+    "Only II follows",
+    "Only I follows",
+    "Either I or II follow",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "58a0ff7629190214283b2dd3f9e3d332292b9343b73923381709d9743e9171a9"
+  },
+  {
+   "question_number": 41,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement carefully and answer the questions given below: 5 T @ 1 E F © 2 K L % 5 6 B I M 3 * S T Y 5 $ 9 G J # K A Which element will be the eighth to the left of the nineteenth element from the left end in the above arrangement?",
+   "options": [
+    "%",
+    "S",
+    "L",
+    "#",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8d6ac25e042e4560cad86134a7cc149748bc02a8665993ea60e12996840c2950"
+  },
+  {
+   "question_number": 42,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following arrangement carefully and answer the questions given below: 5 T @ 1 E F © 2 K L % 5 6 B I M 3 * S T Y 5 $ 9 G J # K A Which element will be the eighth to the left of the nineteenth element from the left end in the above arrangement?\n\nHow many such consonants are there in the above arrangement each of which is immediately preceded by a letter and followed by a number?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "More than three"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e81a9d6f8d5a692ec8da1d0771525731e8700ea151f2b5a8b1d30d7a26689c9c"
+  },
+  {
+   "question_number": 43,
+   "section": "reasoning",
+   "stem_text": "If the order of the last 15 elements is reversed, which of the following will be fifth to the right of twelfth from the left end?",
+   "options": [
+    "Y",
+    "K",
+    "J",
+    "#",
+    "G"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4aa514fa316d5232f32d2fa98c529abc00c1536e6f32ab171482de9673b50450"
+  },
+  {
+   "question_number": 44,
+   "section": "reasoning",
+   "stem_text": "What should replace the question mark (?) in the following series based on the above arrangement? 5 @ E, © K %, ?, S Y $",
+   "options": [
+    "B M *",
+    "5 B M",
+    "G # A",
+    "6 I 3",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5fa4beb426a4461df60e1218d7dcec627e102873968967f5fc1a41660435f002"
+  },
+  {
+   "question_number": 45,
+   "section": "reasoning",
+   "stem_text": "If all the numbers in the above arrangement are removed, then which element will be the fourteenth element from the left end?",
+   "options": [
+    "S",
+    "Y",
+    "$",
+    "%",
+    "T"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "68eb882d72a8eb9b5090752661a3b5ddc49c4270478a070ac2e678d3b20e844b"
+  },
+  {
+   "question_number": 46,
+   "section": "reasoning",
+   "stem_text": "How many pairs of letters in the word “QUOTERS” have the same number of letters between them in the word (in both forward and backward directions), as they have in the English alphabetical series?",
+   "options": [
+    "One",
+    "Two",
+    "Four",
+    "Three",
+    "More than four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3990db3f3ebac4cf095794704c53465e3ca9094b884c988640310e9ce9e78385"
+  },
+  {
+   "question_number": 47,
+   "section": "reasoning",
+   "stem_text": "Which of the following alternatives is different from the other four?",
+   "options": [
+    "SUT",
+    "MON",
+    "RSQ",
+    "XZY",
+    "KML"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "aefbe0c1758cc9ce2ac1e94e4c10d6c20d7e44d4b86076b1bb8629afd481ad70"
+  },
+  {
+   "question_number": 48,
+   "section": "reasoning",
+   "stem_text": "Directions: Read the information carefully and answer the following questions A certain number of persons are sitting in a row. All of them are facing north. R is sitting 3rd from the left end. One person is sitting between R and T who is not sitting at any end. Three persons are sitting between T and O who is not the immediate neighbour of P. L is sitting immediate right of O. Three persons are sitting between L and N. One person is sitting between N and P who is sixth to the right of L. E is sitting 4th from the right end. Two persons are sitting between E and K who is sitting at one of the end. Four people are sitting between K and B. One person is sitting between B and H. Two persons are sitting between S and P. Number of persons sitting between R and O are equal to the number of persons sitting between S and H. P sits at the left of S. O is sitting at one of the extreme ends. How many persons are sitting in the row?",
+   "options": [
+    "21",
+    "23",
+    "20",
+    "22",
+    "None of these"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c86e9d72e6115999e2e0a9364f4c4e99c52a728f28b7e07f416879933b30b39e"
+  },
+  {
+   "question_number": 49,
+   "section": "reasoning",
+   "stem_text": "The number of persons sitting to the left of L is two less than the number of the persons sitting in the right of ___________.",
+   "options": [
+    "B",
+    "K",
+    "E",
+    "L",
+    "Cannot be determined"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e8d8a96d4f7d900025126bcc14dc70b554094ca4716a87d8fc70db38c7efdadf"
+  },
+  {
+   "question_number": 50,
+   "section": "reasoning",
+   "stem_text": "What is the position of L with respect to H?",
+   "options": [
+    "11th to the left",
+    "10th to the right",
+    "8th to the right",
+    "5th to the right",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "5cb43b55b758099fc259a06a76f489a92d35dade1a397073cfdcf41cbdedc041"
+  },
+  {
+   "question_number": 51,
+   "section": "reasoning",
+   "stem_text": "If X is sitting 2nd from the right end, then how many persons are sitting between K and X?",
+   "options": [
+    "8",
+    "3",
+    "5",
+    "Zero",
+    "2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0a21fa330a175721d16c80a75411925d11df0031c17a538277820a6e8cc91e91"
+  },
+  {
+   "question_number": 52,
+   "section": "reasoning",
+   "stem_text": "Who is sitting third to the right of P?",
+   "options": [
+    "S",
+    "H",
+    "B",
+    "N",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "21e3cbf672e67a2a71492e8211588762777da94f79ca2da843c1a10b0d708808"
+  },
+  {
+   "question_number": 53,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: Eight people – A, B, C, D, E, F, G and H are sitting around a square table (not necessarily in the same order) in such a way that four of them who are sitting at the corners of the table facing outside while other four who are sitting in the middle of each of the four sides are facing inside. Two people who are facing the same direction (either inside or outside) are not sitting with each other. D is not facing inside. G is sitting fifth to the right of D. A is sitting just opposite to G. E is sitting third to the right of A. B is sitting second to the left of E. Neither A nor D is an immediate neighbour of C. F is not sitting just opposite to C. How many people are sitting between B and F, when counted from the left of F?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "6da4f1fa5b124c628c9cd854277af0d7e42a1f8b071b5bfcbebe75edd0183e2d"
+  },
+  {
+   "question_number": 54,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: Eight people – A, B, C, D, E, F, G and H are sitting around a square table (not necessarily in the same order) in such a way that four of them who are sitting at the corners of the table facing outside while other four who are sitting in the middle of each of the four sides are facing inside. Two people who are facing the same direction (either inside or outside) are not sitting with each other. D is not facing inside. G is sitting fifth to the right of D. A is sitting just opposite to G. E is sitting third to the right of A. B is sitting second to the left of E. Neither A nor D is an immediate neighbour of C. F is not sitting just opposite to C.\n\nWho among the following is/are not sitting between C and E, when counted from the left of E?",
+   "options": [
+    "B",
+    "D",
+    "G",
+    "H",
+    "Both D and H"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "818d549becdf5291333ad4fb6d5be289124188724c6be50eb981a95db9cdf1ca"
+  },
+  {
+   "question_number": 55,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: Eight people – A, B, C, D, E, F, G and H are sitting around a square table (not necessarily in the same order) in such a way that four of them who are sitting at the corners of the table facing outside while other four who are sitting in the middle of each of the four sides are facing inside. Two people who are facing the same direction (either inside or outside) are not sitting with each other. D is not facing inside. G is sitting fifth to the right of D. A is sitting just opposite to G. E is sitting third to the right of A. B is sitting second to the left of E. Neither A nor D is an immediate neighbour of C. F is not sitting just opposite to C.\n\nWhich of the following statement is true with respect to H?",
+   "options": [
+    "Neither A nor E is an immediate neighbour of H",
+    "H is not sitting just opposite to C",
+    "G is an immediate neighbour of H",
+    "H is sitting fifth to the right of F",
+    "H is sitting third to the left of B"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1389eb0024048fbe7515d09e1d66f3c929e3b9e791f997221dee74c789e2051e"
+  },
+  {
+   "question_number": 56,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: Eight people – A, B, C, D, E, F, G and H are sitting around a square table (not necessarily in the same order) in such a way that four of them who are sitting at the corners of the table facing outside while other four who are sitting in the middle of each of the four sides are facing inside. Two people who are facing the same direction (either inside or outside) are not sitting with each other. D is not facing inside. G is sitting fifth to the right of D. A is sitting just opposite to G. E is sitting third to the right of A. B is sitting second to the left of E. Neither A nor D is an immediate neighbour of C. F is not sitting just opposite to C.\n\nWhat is the position of B with respect to A?",
+   "options": [
+    "3rd to the left",
+    "3rd to the right",
+    "4th to the left",
+    "4th to the right",
+    "5th to the left"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d4c928a65f9d24f3bdc2fb3bd38c4907a4b4e01b790eaa4c4643bb62049c5ae1"
+  },
+  {
+   "question_number": 57,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: Eight people – A, B, C, D, E, F, G and H are sitting around a square table (not necessarily in the same order) in such a way that four of them who are sitting at the corners of the table facing outside while other four who are sitting in the middle of each of the four sides are facing inside. Two people who are facing the same direction (either inside or outside) are not sitting with each other. D is not facing inside. G is sitting fifth to the right of D. A is sitting just opposite to G. E is sitting third to the right of A. B is sitting second to the left of E. Neither A nor D is an immediate neighbour of C. F is not sitting just opposite to C.\n\nWho among the following are facing inside?",
+   "options": [
+    "A, C, E, G",
+    "A, B, C, G",
+    "A, C, G, H",
+    "C, E, G, H",
+    "E, F, G, H"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2220f61b7e9a6debf8c13f54c7c07b786f7da740c0973afb24aa815cf4b0fe24"
+  },
+  {
+   "question_number": 58,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following passage carefully and give the correct answer. A is the brother of G. G is married to F. L is the father of F. G is the mother of M. Who is the brother - in - law of F?",
+   "options": [
+    "A",
+    "M",
+    "L",
+    "None of these",
+    "Cannot be determined"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "8df0ccfa1d191e8fa76d8ffae6f95b102faed485bc60e8f5b0457275a4de8a1f"
+  },
+  {
+   "question_number": 59,
+   "section": "reasoning",
+   "stem_text": "How M is related to L?",
+   "options": [
+    "Daughter",
+    "Granddaughter",
+    "Grandson",
+    "Son",
+    "Cannot be determined"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "9852a2fb68ee4ba0c4430c831620ec8f4efa151e0448b8b645690986f9fb9dbb"
+  },
+  {
+   "question_number": 60,
+   "section": "reasoning",
+   "stem_text": "How G is related to L?",
+   "options": [
+    "Mother",
+    "Mother - in - law",
+    "Sister",
+    "Daughter -in- law",
+    "Daughter"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cbf2994c4a55d866d55b6a43fa545e6a61609c4680e5738296a515169e81507c"
+  },
+  {
+   "question_number": 61,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions follows: Twelve people – A, B, C, D, E, F, P, Q, R, S, T and U are sitting in two rows with six persons in each row. Each person in row one is facing south and each person in other row is facing north. Each person in row one faces a person from the other row. A, B, C, D, E and F are facing towards north while P, Q, R, S, T and U are facing towards south but not necessarily in the same order. Q is facing the one who is sitting fourth to the right of D. Three persons are sitting between A and D while only two persons are sitting between Q and U. P is not sitting at any of the extreme ends but is facing the one who is sitting immediate left of C. C is not an immediate neighbour of D. B is sitting third to the left of E but not at any of the extreme ends. S is not an immediate neighbour of Q. R is not facing to E. Who among the following is facing to E?",
+   "options": [
+    "P",
+    "Q",
+    "S",
+    "T",
+    "U"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "dfcfe1b7bd7687d48480df0550cf57b41ec57a19ce9c58b3ea6278c6df26a476"
+  },
+  {
+   "question_number": 62,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions follows: Twelve people – A, B, C, D, E, F, P, Q, R, S, T and U are sitting in two rows with six persons in each row. Each person in row one is facing south and each person in other row is facing north. Each person in row one faces a person from the other row. A, B, C, D, E and F are facing towards north while P, Q, R, S, T and U are facing towards south but not necessarily in the same order. Q is facing the one who is sitting fourth to the right of D. Three persons are sitting between A and D while only two persons are sitting between Q and U. P is not sitting at any of the extreme ends but is facing the one who is sitting immediate left of C. C is not an immediate neighbour of D. B is sitting third to the left of E but not at any of the extreme ends. S is not an immediate neighbour of Q. R is not facing to E.\n\nWho among the following is / are not sitting at any of the extreme ends?",
+   "options": [
+    "A",
+    "D",
+    "S",
+    "E",
+    "A and E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e6e9c458e150babb0deda429c9a3212f0587e974e54fa66463c9ed881e7d1806"
+  },
+  {
+   "question_number": 63,
+   "section": "reasoning",
+   "stem_text": "If S is related to F in a certain way, then in the same way who is related to U in the same way?",
+   "options": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "e71a3a34797922bba625eb91b1ca01554cc1d537d731749361c1f6b8821a115c"
+  },
+  {
+   "question_number": 64,
+   "section": "reasoning",
+   "stem_text": "Four of the following five options are alike in a certain way, find out the odd pair?",
+   "options": [
+    "A and C",
+    "D and F",
+    "T and Q",
+    "P and S",
+    "Q and R"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "ce1f0a8410fc3cba24e2cac6d819f26caf7c1eb4d412b03cc516e1ef881f9156"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong number in the given series. 10, 12, 9, 14, 6, 16, 1",
+   "options": [
+    "12",
+    "6",
+    "9",
+    "16",
+    "1"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5c84711c56322ed3d0c8408aae09494529d7b5d260e5133f8ba360ba1fedf6a9"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 1, 3, 6, 24, 120, 720, 5040",
+   "options": [
+    "720",
+    "3",
+    "1",
+    "6",
+    "120"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "dfef635826bb70f2cee645cd73dbc5ec06d0f1ec3bdbc16fd85391222f9a5fc2"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "In each of the following number series, the wrong number is given, find out that number. 5, 6, 13, 40, 161, 803, 4837",
+   "options": [
+    "6",
+    "40",
+    "803",
+    "4837",
+    "161"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "08c57765063be1b133f779ad22cfbd47ab85939d3095193529d994eb644bb4ac"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "Find the wrong number in the given series. 50, 46, 55, 39, 63, 28, 77",
+   "options": [
+    "46",
+    "39",
+    "77",
+    "63",
+    "55"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "19a0b49eeb2dd29b9c63809a571f4c916cc17c06a17b9b19e2cdb5946245f8b6"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "420, 429, 426, 437, 432, 443, 438",
+   "options": [
+    "432",
+    "420",
+    "426",
+    "438",
+    "429"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "67d5ad628e998cb2e23c761d62dcc994ddc9e80b4bddb48519234ab2129dafb9"
+  },
+  {
+   "question_number": 71,
+   "section": "numerical_ability",
+   "stem_text": "The average weight of girls in a school is 36 kg and the average of boys in the same school is 38 kg. Girls are twice the number of boys and the difference of weights of girls and boys is 1020 kg, find the number of boys in the school.",
+   "options": [
+    "30",
+    "40",
+    "60",
+    "50",
+    "70"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3112f4862429abcf8a679bbb541546760c940780c56df19008ee0db4ef80e09f"
+  },
+  {
+   "question_number": 72,
+   "section": "numerical_ability",
+   "stem_text": "Two articles were bought at Rs. 300 each. After selling these articles, the profit percentage earned on the first article is equal to the loss percentage that occurred in the second article. If the difference between the selling price of both the articles is Rs. 150. Find the profit percent or loss percentage on which he sells both articles.",
+   "options": [
+    "25%",
+    "16.66%",
+    "20%",
+    "40%",
+    "33.33%"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "09eae8943a5ab5896e4f36089accd5cc778b4003ecd387940b0f522eda58310e"
+  },
+  {
+   "question_number": 73,
+   "section": "numerical_ability",
+   "stem_text": "A train can cross a pole in 32 sec and a 420-meter platform in 62 seconds. Find the length of the train.",
+   "options": [
+    "520 m",
+    "580 m",
+    "448 m",
+    "360 m",
+    "420 m"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "65d57b0136c236ad8deb45e818f488d3d8abef754ffd708ff117dd1040c6cbdc"
+  },
+  {
+   "question_number": 74,
+   "section": "numerical_ability",
+   "stem_text": "60% of the students participated in an event. The number of boys and the number of girls participating in the event is same. Number of boys which participate is same as the number of boys which do not participated in an event. If 180 girls did not participate, then find the total number of students.",
+   "options": [
+    "1600",
+    "1800",
+    "2400",
+    "2000",
+    "2200"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e58dc2e9d69033cc5fa7054fc50e1d04c2931f9a70e206c59a1da707bba6e729"
+  },
+  {
+   "question_number": 75,
+   "section": "numerical_ability",
+   "stem_text": "The difference between the Compound interest and the Simple Interest on a certain sum of money at 10% per annum for 2 years is Rs. 40. Find the Principal.",
+   "options": [
+    "Rs. 8000",
+    "Rs. 5000",
+    "Rs. 4000",
+    "Rs. 6000",
+    "Rs. 7500"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dbc9235168039f308aaf1a0df0395e130fc89089d3a63e4279b23dc95813c9c6"
+  },
+  {
+   "question_number": 76,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The following bar graph shows the number of children in three different societies (A, B and C) in two years i.e. 2008 and 2018. Read the graph carefully and answer the following questions. What will be the ratio between the total number of children in B in the year 2008 to the C in the year 2018?",
+   "options": [
+    "1 : 2",
+    "5 : 14",
+    "2 : 3",
+    "4 : 5",
+    "3 : 5"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "4535aff1c65be66d3308960aaf2630b3c492aace098f7280512c30b7665f438b"
+  },
+  {
+   "question_number": 77,
+   "section": "numerical_ability",
+   "stem_text": "If 25% of the children in B in the year 2008 is girls, then find the number of boys in the same year.",
+   "options": [
+    "45",
+    "24",
+    "27",
+    "36",
+    "20"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "695d0a616bbfdaf6afd1160a8cf8f4eeb6253fead95dab30e9c2b16dd8935fff"
+  },
+  {
+   "question_number": 78,
+   "section": "numerical_ability",
+   "stem_text": "What is the difference of the average number of children in A and C in both the given years.",
+   "options": [
+    "48",
+    "36",
+    "42",
+    "34",
+    "24"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "bf94058585791748f124215ce128e136f642c5b0c9f074377060083e1a8ecc3f"
+  },
+  {
+   "question_number": 79,
+   "section": "numerical_ability",
+   "stem_text": "If in the year 2018, the average number of children in the society B, C and D is 80, then find the number of children in the society D in the year 2018.",
+   "options": [
+    "124",
+    "132",
+    "112",
+    "108",
+    "102"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "15905df208a9d6da24ed88a782b9ba1d58ef46b09450380d2bb77ec66a7976f2"
+  },
+  {
+   "question_number": 80,
+   "section": "numerical_ability",
+   "stem_text": "Total number of children in C in the year 2018 is how much percent less than the total number of children in A in the same year?",
+   "options": [
+    "20%",
+    "11.11%",
+    "9.09%",
+    "10%",
+    "16.66%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a6cf5de20cf7d7fbc678fc77e33e0c9ea6ed16d1b4028b10f68383895ef8684e"
+  },
+  {
+   "question_number": 81,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. 6x2 + 5x + 1 = 0 II. 3y2 + 4y + 1 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y cannot be established"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "3afc89ac699533e3077999da029eb58849431c20aff0c8d4d142969edb25d596"
+  },
+  {
+   "question_number": 82,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. x2 – 4x + 4 = 0 II. y2 – 5y + 6 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y cannot be established"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d9b0bbb02de066df66e7a0253d6b74f525f8a3371b42649a6c2bcdff53291d0d"
+  },
+  {
+   "question_number": 83,
+   "section": "numerical_ability",
+   "stem_text": "Direction∶ In the following question, two equations numbered I and II are given. You have to solve both the equations and give answer. I. 10x2 + 7x + 1 = 0 II. 6y2 + 7y + 2 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y cannot be established"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dfa5d0c05fc672597d0dda76384b1e3891bda9efdc9b96ad41a1e8b24606cb8b"
+  },
+  {
+   "question_number": 84,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. x2 + x – 20 = 0 II. y2 + 4y – 21 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y cannot be established"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "0c16e80b087215e54a308d85c4b797b6188af50788ae499321e85ee60aff0d3c"
+  },
+  {
+   "question_number": 85,
+   "section": "numerical_ability",
+   "stem_text": "In the given question, two equations numbered l and II are given. You have to solve both the equations and mark the appropriate answer- I. x2 + 8x + 15 = 0 II. y2 + 13y + 42 = 0",
+   "options": [
+    "x > y",
+    "x < y",
+    "x ≥ y",
+    "x ≤ y",
+    "x = y or relation between x and y cannot be established"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3bd31b07b87cc9270de303f081c6f169c2f824d52b92bef96e3f15eaa2f3eff1"
+  },
+  {
+   "question_number": 86,
+   "section": "numerical_ability",
+   "stem_text": "A person invests a certain amount of money at 8% per annum for 3 years at simple interest. If the Invested amount is Rs. 3000, then find the simple interest at 5% per annum for same number of years.",
+   "options": [
+    "Rs. 600",
+    "Rs. 300",
+    "Rs. 500",
+    "Rs. 400",
+    "Rs. 450"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ab7283806b26245be2cd7605af08f779412e55d6616d11b1e841434d8210e6fa"
+  },
+  {
+   "question_number": 87,
+   "section": "numerical_ability",
+   "stem_text": "A boy covers a certain distance in 2 hours. If he increased his speed by 15 km/hr, then he reaches his destination in 24 minutes early than his actual time. What will be his original speed?",
+   "options": [
+    "40",
+    "50",
+    "60",
+    "70",
+    "80"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "039f01df983cc34fbe42df9d5ef5f2b6037d606b646d68ca4579fe33d9795e3a"
+  },
+  {
+   "question_number": 88,
+   "section": "numerical_ability",
+   "stem_text": "The sum of two number is 560. 60% of the first number is equal to the 45% of second number. Find the difference of both the numbers.",
+   "options": [
+    "100",
+    "80",
+    "72",
+    "108",
+    "120"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a2aa5c4c7731bf0d20c5acae034f55073fadddb32bed4a96147493e95948becf"
+  },
+  {
+   "question_number": 89,
+   "section": "numerical_ability",
+   "stem_text": "The half of the sum of the ages of A and B is 5 years more than the age of C. The sum of ages of B and C is 10 years more than the age of A. If the age of A is 42 years, then find the age of B.",
+   "options": [
+    "24 years",
+    "32 years",
+    "28 years",
+    "22 years",
+    "36 years"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "12e6614fe2f4dcbfb4e4fcee5d8eeecea2f4c00190c78231b009dfb2bea47e68"
+  },
+  {
+   "question_number": 90,
+   "section": "numerical_ability",
+   "stem_text": "The expenditure on the fencing of a rectangular park is Rs. 2700 and the cost of fencing per meter is Rs. 50. The length of the rectangular park is 3 m more than the breadth, then what will be the area of the rectangular park?",
+   "options": [
+    "144 m2",
+    "156 m2",
+    "210 m2",
+    "180 m2",
+    "196 m2"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "fe7ede59946b401aeeb149fd0615af5543446b2b2614384aef9143e5a67e32d2"
+  },
+  {
+   "question_number": 91,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 22 + 2 − 8 = ? 3 7 9",
+   "options": [
+    "130/63",
+    "140/63",
+    "120/63",
+    "160/63",
+    "100/63"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d1fd5678ad6964a4818200ac737fb27910a3df233e05448379645729f93b4b51"
+  },
+  {
+   "question_number": 92,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 452 – 100 – 252 = ?",
+   "options": [
+    "1200",
+    "1100",
+    "1300",
+    "1700",
+    "1500"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8db56dd656cdb0533a5ce3f9c92e633f964dbf7f048961ab9e51b1c47eb9b5b6"
+  },
+  {
+   "question_number": 93,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? −−−− −−−− √3 1728 + √3 1331 + √? +12=49",
+   "options": [
+    "256",
+    "225",
+    "196",
+    "169",
+    "324"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "ad58b6020072f29689c614820312268ea0367a3d881681ecd8dffda24010c9f9"
+  },
+  {
+   "question_number": 94,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 256 ÷ 23 × ? = 16% of 3000",
+   "options": [
+    "10",
+    "30",
+    "20",
+    "15",
+    "12"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "23b9864ece88a3a2a4d2d2c321ac6baae24412b500072ba3ac112c1bca408163"
+  },
+  {
+   "question_number": 95,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 120 ÷ x = 14 × 6 – 43",
+   "options": [
+    "4",
+    "6",
+    "12",
+    "8",
+    "10"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1e0963b8a67e820221013af9dad3771c2b053387ee7d9a89d73001e21f80419f"
+  },
+  {
+   "question_number": 96,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 42% of 600 = x – 6% of 300",
+   "options": [
+    "234",
+    "246",
+    "270",
+    "284",
+    "256"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "e63dd2d5c16dc4e5abb1f84e69471d12e8248464efc799a5a37089c0f5abf1ae"
+  },
+  {
+   "question_number": 97,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? −−−−−−−−−−− √81+ ? +95 =16",
+   "options": [
+    "90",
+    "70",
+    "60",
+    "80",
+    "110"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "12af1e57d4087a8bed65ef9537f7b1b357e4136d6f5be2ff876d1fb03c6bfa99"
+  },
+  {
+   "question_number": 98,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? √1024 × 11 + 8 × ? = 32 × 16",
+   "options": [
+    "-30",
+    "24",
+    "-16",
+    "20",
+    "-32"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "027d10f96e6b77f04c57a97b051826dd994d839d4c824e84a0376ba81aa1c843"
+  },
+  {
+   "question_number": 99,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 132−72 =? 20",
+   "options": [
+    "8",
+    "4",
+    "12",
+    "16",
+    "6"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "463f1ac4c72486381bce1beead0a58906e1fc50ccbbd49fc19ed6ad30ea199f7"
+  },
+  {
+   "question_number": 100,
+   "section": "numerical_ability",
+   "stem_text": "What value should come in place of the question mark ‘?’ in the following question? 122 + 162 – ?2 = 102 × 3",
+   "options": [
+    "15",
+    "20",
+    "10",
+    "12",
+    "8"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "eb3ef758d1fcce776301f97be0d0374bb1044653b185a3a5716426e3fd73d7aa"
+  }
+ ],
+ "section_confidence": 0.957,
+ "section_order": [
+  "english",
+  "reasoning",
+  "numerical_ability"
+ ]
+}

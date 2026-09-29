@@ -88,11 +88,11 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: "Does one pass cover every exam?",
-    a: "Yes. Your All-Access pass covers SSC CGL and SBI Clerk today and unlocks IBPS Clerk, NEET, JEE and UPSC the moment each goes live, no repurchase and no separate accounts.",
+    a: "Yes. Your All-Access pass covers SSC CGL, SBI Clerk and IBPS Clerk today and unlocks NEET, JEE and UPSC the moment each goes live, no repurchase and no separate accounts.",
   },
   {
     q: "Which exams are supported?",
-    a: "SSC CGL Tier 1 and SBI Clerk Prelims are live now. IBPS Clerk is next, with NEET, JEE and UPSC on the roadmap, the engine is built to add them, and each is included in your subscription the day it launches.",
+    a: "SSC CGL Tier 1, SBI Clerk Prelims and IBPS Clerk Prelims are live now, with NEET, JEE and UPSC on the roadmap, the engine is built to add them, and each is included in your subscription the day it launches.",
   },
   {
     q: "How does MarksenseAI actually help?",

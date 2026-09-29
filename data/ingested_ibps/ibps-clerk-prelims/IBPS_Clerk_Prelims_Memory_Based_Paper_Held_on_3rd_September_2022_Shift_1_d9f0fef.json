@@ -1,0 +1,1502 @@
+{
+ "file": "IBPS_Clerk_Prelims_Memory_Based_Paper_Held_on_3rd_September_2022_Shift_1__d9f0fef4db2ac6d5f1a2e7af6f7d8aad.pdf",
+ "format": "prepp",
+ "accepted": 99,
+ "rejected": 1,
+ "reasons": {
+  "empty_or_short_stem": 1
+ },
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "english",
+   "stem_text": "Directions: Read the passage given below and answer the questions that follow by choosing the correct/most appropriate options: It was our first trip after marriage, and my husband and I decided to visit Fiji. Being explorers we were most excited to see their second-largest island, Vanua Levu. The night before the trip, our travel broker sent us a message that the hotel had lost our reservation details. So eight hours before we were supposed to leave for the airport, they had to scramble to find a reservation for us. The hotel was a four-hour drive from the airport, and we were unsure if we would even be accommodated. We got to the airport and we were told at one check-in desk that we had to board the flight from the opposite side of the airport. Not only did we have to run through the San Francisco Airport with our 40-pound hiking packs, but we also had to run through security because we were going to miss our boarding time. We dashed through security but, as we boarded, realized that they had overbooked the plane, and two of us were not on board and we were left behind. The airline lost half of our baggage, and we were forced to make the trip without it. During our layover to take off from LAX to Fiji, someone had a heart attack, and the flight attendants were frantically looking for a doctor. Luckily there was one on board, and the person made it off in time. Now two hours delayed, we made the 11-hour flight to Fiji. Everything went smoothly for two weeks, but on the way back, our flight was delayed due to bad weather, and we were stuck on the airport floor. The two of us had some mysterious stomach bug that made us extremely ill for 24 hours. I remember sleeping on the floor, wrapped in my sleeping bag, crying because I was so sick and just wanted to get home. By the time we landed in San Francisco, we were mentally exhausted. We left the airport at 3 a.m. and made the three-hour drive back home! It was such a wild experience but has been our favourite anecdote to tell at gatherings. According to the passage from which city were the couple boarding their flight?",
+   "options": [
+    "Vanua Levu",
+    "San Francisco",
+    "Los Angeles",
+    "Fiji",
+    "Tonga"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "20ca65ca4b7196e6b146114766ae87bd505ebd746b6b15f5a13eea54bf037073"
+  },
+  {
+   "question_number": 2,
+   "section": "english",
+   "stem_text": "According to the passage, how long was the couple's drive back home from the airport?",
+   "options": [
+    "Four hours",
+    "Twenty-four hours",
+    "Eight hours",
+    "Three hours",
+    "Two hours"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5536740b347d9c7f4a6c09ea1cdefbe9327000fba7e8da93600c6cec89065f2b"
+  },
+  {
+   "question_number": 3,
+   "section": "english",
+   "stem_text": "According to the passage, at which airport did, the couple have a layover to take a flight to Fiji?",
+   "options": [
+    "San Francisco",
+    "Fiji",
+    "Vanua Levu",
+    "Los Angeles International Airport (LAX)",
+    "None of these"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b2dd58fca22a3a362f20b072008668d7058c4d489937c1bdc7b3c5cf454107e0"
+  },
+  {
+   "question_number": 4,
+   "section": "english",
+   "stem_text": "According to the passage, the couple was forced to make the trip without what?",
+   "options": [
+    "Baggage",
+    "Sleeping bag",
+    "Boarding pass",
+    "Hiking pack",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "da14d7a237ec703739441b4d826ab32c4669cd8c34b8b75c1346c28e082dad78"
+  },
+  {
+   "question_number": 5,
+   "section": "english",
+   "stem_text": "According to the passage, how long did it take to reach the couple's hotel from the airport?",
+   "options": [
+    "Eight hours",
+    "Twenty-four hours",
+    "Four hours",
+    "Eleven hours",
+    "Two hours"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "be653012d2b58aa5c755816643b4d4ca79634706f85b9dcaddb70d9170a88125"
+  },
+  {
+   "question_number": 6,
+   "section": "english",
+   "stem_text": "Which of the following is/are correct according to the given passage? A.The couple was most excited to see Fiji's largest island, Vanua Levu. B.The couple had to run through the San Francisco Airport with their 40-pound hiking packs. C.The couple had to board an 11-hour flight to reach Fiji.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both B and C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "417326d1de7f9bb03fe081853acf42c1cc55fec2289bb28260d6825ccaf01327"
+  },
+  {
+   "question_number": 7,
+   "section": "english",
+   "stem_text": "Choose the Antonym of the word 'frantic'.",
+   "options": [
+    "Agitated",
+    "Distraught",
+    "Furious",
+    "Calm",
+    "Weird"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2cd4886341af607da0ed20c8b8981ae111bf7fd457f1236113b901918dc2c5cd"
+  },
+  {
+   "question_number": 8,
+   "section": "english",
+   "stem_text": "Choose the Synonym of the word 'scramble'.",
+   "options": [
+    "Retreat",
+    "Rush",
+    "Depart",
+    "Escape",
+    "Evacuate"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7f9a9105f54c6138c6b07f9dcfc6dfe0c4a074cf4b1e3bc7be2ea347e5f8fcee"
+  },
+  {
+   "question_number": 9,
+   "section": "english",
+   "stem_text": "Identify the sentence(s) that express(es) the meaning of the word. PORE A. I pored the water all over the plants. B. My brother has skin problems because of his clogged pores. C. The class pored over the museum's exhibit.",
+   "options": [
+    "Only A",
+    "Only B",
+    "Only C",
+    "Both A and B",
+    "Both B and C"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f625100f47843eb2ad804190fc67221c4944de2f70264b6002ea051af4d33af9"
+  },
+  {
+   "question_number": 10,
+   "section": "english",
+   "stem_text": "In the following sentence, four words or phrases have been printed in bold. One bold part in the sentence is not acceptable in Standard English. Pick up that part and mark its number. If there are no errors in the bold parts, mark (5) i.e. No error as the answer. Providing fresh hopes(A)/ to ginger farmers in South India, the prize(B)/ of ginger rhizomes has been spiralling(C)/ on account of scant supply and huge demand.(D)/ No error",
+   "options": [
+    "hopes",
+    "prize",
+    "spiralling",
+    "demand",
+    "No error"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "153415088427fdc466361dd54b2f1089ef57b1c15096f1b1d4d22fed5eefa915"
+  },
+  {
+   "question_number": 11,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The stratagic(A) dimensions of Indo-Vietnamese relations, initiated(B) during the 1980s, began unfolding in the form of structured(C) and institutional(D) arrangements(E) during the 1990s.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4122c9343142f71ab81bcea49ddcfcd2342771bbe0d2e7d632cde530893f4204"
+  },
+  {
+   "question_number": 12,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. The Hispanics(A) had hoped for solid movemant(B) on the all-important issue(C) of immigration(D) which has turned out to be a huge disappointment(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "77c3fe267a84d39cd19b0972cd85f445b4559cc55b1dc4bada19d0d3b7c1f68a"
+  },
+  {
+   "question_number": 13,
+   "section": "english",
+   "stem_text": "misspelled. Find the misspelled word. By the end of 1995, this had matured(A) into a full-dialogue partnarship(B) and in 1996, India joined the security(C) dialogue platform(D), the ASEAN Regional Forum(E).",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "876174cdef980e0615f792d6cb94b55c508a33a7ea9d62d39664dcb6092e4a24"
+  },
+  {
+   "question_number": 14,
+   "section": "english",
+   "stem_text": "Directions: In the following sentence, five words are given in bold, out of which one word is misspelled. Find the misspelled word. Its priority(A) programs include building massive(B) physical infrastructure(C) that only disrupts(D) the natural infrastructure we desparately(E) need to protect.",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "da87abee28900c1f08aece3e36fafcecdfd37755c21081348f18306d02a3ccf2"
+  },
+  {
+   "question_number": 15,
+   "section": "english",
+   "stem_text": "Directions: Fill in the blanks in the passage below, with the word from among the options given for each blank labelled (1) to (6). Choose the word that fits in each blank most appropriately in the context of the passage. Aside from the nuance of the screen, stage, method, and technical acting, there are also ___(1)___ types of actors and what they do on stage or on cam. An actor may be known to stick to a role that’s similar to all his other previous roles or he may be known to be ___(2)___. Each actor has a distinctive style of his own that the director makes use of to ___(3)___ the quality of his play or film. Personality actors are actors who take their persona with them from role to role. Personality actors make use of their own ___(4)___ in playing the role instead of learning about the character he is playing. As a result, reading the actors’ names alone can tell the audience what to expect in a film since personality actors rarely stray from their usual roles. A character actor is the exact opposite of a personality actor. Character actors ___(5)___ their roles and detach themselves from their characters. They do not allow their own personality to come to the surface as this will make them break character. Chameleon actors are like an upgraded version of character actors. Chameleon actors can play a variety of ___(6)___ roles. They are known to be versatile and can successfully take on any personality and even change their external features for a role. Select The most appropriate option to fill in blank number 1.",
+   "options": [
+    "ordinary",
+    "usual",
+    "conventional",
+    "different",
+    "generic"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1fa0783b131b698013b5eea367a8226d24214ba57695df72f493d2bd0b938d50"
+  },
+  {
+   "question_number": 17,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank number 3.",
+   "options": [
+    "enhance",
+    "undermine",
+    "denounce",
+    "revile",
+    "debase"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "796fd1888ddcd8ffe16fcbf2534380d0f8846addc7f61eefffb312b0b3bdabb3"
+  },
+  {
+   "question_number": 18,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank number 4.",
+   "options": [
+    "temper",
+    "personality",
+    "emotion",
+    "aura",
+    "quality"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "45459ff63d08bb04e4111f9d1eb5a760229cbec3af161916e36fef730b439882"
+  },
+  {
+   "question_number": 19,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank number 5.",
+   "options": [
+    "ignore",
+    "neglect",
+    "research",
+    "investigate",
+    "condemn"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c5582d39b0d4232f3aa29706fc9d984e5c26dd5c59b94d4aff3bbc210c3c957e"
+  },
+  {
+   "question_number": 20,
+   "section": "english",
+   "stem_text": "Select The most appropriate option to fill in blank number 6.",
+   "options": [
+    "matching",
+    "Attendant",
+    "concurrent",
+    "unrelated",
+    "parallel"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "0bfbf1399b8f113a3645f68f5df8fbf70bfd24d53a757a36896fb7b8b574cc06"
+  },
+  {
+   "question_number": 21,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. She told me that all her papers were ready and she should leave for Canada next month.",
+   "options": [
+    "will leave",
+    "shall leave",
+    "could leave",
+    "would leave",
+    "No correction required"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2b46a1992aa5ec93fd43f8640f130a54a2e0b4bdeaa93efe2e15fb9c25d92ca6"
+  },
+  {
+   "question_number": 22,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. The future of the company is at stake as the present CEO of the company neither is honest nor tactful.",
+   "options": [
+    "either is",
+    "is neither",
+    "is either",
+    "is only",
+    "No correction required"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "01b3533d46388eabac5f8db34e2a09d398d67272647ef2483c668406d8f138bd"
+  },
+  {
+   "question_number": 23,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. Although he is my subordinate, he is more senior than me in service.",
+   "options": [
+    "to me",
+    "then me",
+    "as me",
+    "like me",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "3a24e34ccac2ccaedad4108fb7c48269770e393453f57b32b74194f6e9c94078"
+  },
+  {
+   "question_number": 24,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. She is more witty than her sister.",
+   "options": [
+    "wittiest than",
+    "more witty then",
+    "most witty than",
+    "wittier than",
+    "No correction required"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "620aed115c83a962cfdcdb1fc431577533fa90334ed0ba232b6e6f057bb124bf"
+  },
+  {
+   "question_number": 25,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word/phrase that is underlined in the sentence to make it grammatically correct? if the sentence is correct as it is given and no correction is required, select 'No correction required' as the answer. To be successful, you must understand why your failure in the past and take steps to prevent it from happening again.",
+   "options": [
+    "why had you failed",
+    "because you have failed",
+    "why you had failed",
+    "that your failure",
+    "No correction required"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "1f6b127c00b9fd3c8b99c96c16b936513c23cf038451dbd32e487d3a3ed739f9"
+  },
+  {
+   "question_number": 26,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. project in Oman B. commission a solar photovoltaic C. Sterling and Wilson Solar Limited D. first Indian company to E. has become the",
+   "options": [
+    "ABCDE",
+    "EDCBA",
+    "BCDAE",
+    "CBAED",
+    "CEDBA"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "51b5daf3767ec1b085868e9e67f9571e1bb55ddb0466fb61745b1f1f7dfdac44"
+  },
+  {
+   "question_number": 27,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. by the end of this century-- B. contributing up to C. Greenland may lose D. 13 inches of sea level rise E. 4.5 per cent of its ice",
+   "options": [
+    "ABCDE",
+    "DEABC",
+    "CEABD",
+    "EDCBA",
+    "DCBAE"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d0a46c3f26e43bb062f9aeb2b4dcaa3e95504fb1a9fb009a19208ed73eebab3f"
+  },
+  {
+   "question_number": 28,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sequence. Indicate the sequence which correctly assembles the segments and completes the sentence. A) and which were not B) children nowadays do not C) which are open to them D) available to their parents E) appreciate the opportunities",
+   "options": [
+    "EDACB",
+    "CBEDA",
+    "BECAD",
+    "EDABC",
+    "ABECD"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c14e179eb9e00d5c419eee94293606052a44881913605dcdcc86421dde9d4d9f"
+  },
+  {
+   "question_number": 29,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. of the migrant workers B. are still searching C. for work D. more than one-fourth E. in villages",
+   "options": [
+    "DABCE",
+    "ECABD",
+    "CEDBA",
+    "ABCDE",
+    "EDCBA"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "96d3a7b6f3c69d58237eddc22148ec8c30b3b354c2e78fc9e642a294823faa7c"
+  },
+  {
+   "question_number": 30,
+   "section": "english",
+   "stem_text": "The question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence. A. global warming is the term B. gradual increase in the C. average temperature of the D. used to describe a E. Earth's atmosphere and its oceans",
+   "options": [
+    "ADBCE",
+    "EDCBA",
+    "ABCDE",
+    "BCDAE",
+    "CABDE"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "2c8e3b49485d60b2fd2e4539503926f59324c9b5654138a6e85b059169e3cc41"
+  },
+  {
+   "question_number": 31,
+   "section": "numerical_ability",
+   "stem_text": "Directions: Read the given Line Graph carefully and answer the following questions. The line graph shows the number of (Boats + Ships) and Ships manufactured by 5 Different Companies: A, B, C, D and E in the year 2021. Find the average number of Boats manufactured by all the 5 companies.",
+   "options": [
+    "120",
+    "100",
+    "125",
+    "150",
+    "130"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "c26561f6f9cac5a05acc1efba96d99a4c17d170b6e682ac42d77d16850fdb463"
+  },
+  {
+   "question_number": 32,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio of Boats and Ships Manufactured by Company B.",
+   "options": [
+    "2 : 3",
+    "3 : 2",
+    "1 : 3",
+    "2 : 1",
+    "2 : 5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "20118a4f2c764e7292ba6b9c6e2186632227aef2e977d44a1b57eb9873504273"
+  },
+  {
+   "question_number": 33,
+   "section": "numerical_ability",
+   "stem_text": "The total number of boats manufactured by D and E is what percent of the total number of boats manufactured by A and B?",
+   "options": [
+    "125%",
+    "100%",
+    "50%",
+    "80%",
+    "75%"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d804509cfa3e369c3ff99c194eba00c1cc5691ecabdcf69f854c11fe21d537b6"
+  },
+  {
+   "question_number": 34,
+   "section": "numerical_ability",
+   "stem_text": "For E, total number of (Boats + Ships) manufactured in the year 2022 is 25% more than that of 2021 and the number of boat manufactured were same. Find the difference between the number of ships manufactured by Company E in both the years.",
+   "options": [
+    "95",
+    "75",
+    "100",
+    "120",
+    "70"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ca8d0a351e5f22b877b3251f84d8917a0231669b20ff4a4f65dec39fc4107eac"
+  },
+  {
+   "question_number": 35,
+   "section": "numerical_ability",
+   "stem_text": "Number of Boats manufactured by a New Company X is thrice the number of boats manufactured by Company D, while the total number of (Boats + Ships) manufactured by Company X is twice the number of (Boats + Ships) manufactured by Company C. What will the total number of Ships manufacture by Company X?",
+   "options": [
+    "450",
+    "350",
+    "300",
+    "250",
+    "200"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "f44d7f2a413cbb264cc6258730e300e3f32bd2d329ba6f6db24e91bf7422823e"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "Length of train A is half as that of train B. Train A and B crosses the platform of length 100 meters in 5 seconds and 6 seconds respectively. If the ratio of speed of train A and B is 2 : 3, Find the length of train B.",
+   "options": [
+    "450 m",
+    "800 m",
+    "600 m",
+    "900 m",
+    "750 m"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b143f2c507e981843453ce981fca777713066a1e6651b52512059c2c84196769"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "Two inlet Pipes A and B can fill the tank in 3 hours. C is the outlet Pipe. Together A, B and C can fill the tank in 4 hours. Find in how many hours, Pipe C can emptied the tank.",
+   "options": [
+    "8 hours",
+    "9 hours",
+    "15 hours",
+    "10 hours",
+    "12 hours"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "92ef5f122aecd0190f24cc4038c7ea631452b71cdbd2b87f25f4435671d99f03"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "A invested Rs. X and B invested Rs. (X + 10) in a partnership for 20 months and 16 months respectively. If their profit ratio after respective time period is 5 : 6, then find the investment of B?",
+   "options": [
+    "Rs. 20",
+    "Rs. 30",
+    "Rs. 25",
+    "Rs. 40",
+    "Rs. 50"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e90ef0072dc209adf9c919ae7de995911b4a49ec31a563d697e1c967384c10f6"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "6 years ago, the ratio of age of A and B is 7 : 6. A is 6 years older than C. If the sum of the present age of B and C is 32, then find the present age of C.",
+   "options": [
+    "21 years",
+    "14 years",
+    "18 years",
+    "28 years",
+    "12 years"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9d6b3bffd2ac7bc500498bf312d0194104d1e788945a946ec33359b64aae2106"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "A Vessel contains X litres of solution of milk and water in the ratio of 7 : 3. If 50 liter milk added to the mixture, then the milk becomes 80% of the resultant mixture. Find the difference between Milk and water in initial Mixture.",
+   "options": [
+    "28 litre",
+    "32 litre",
+    "40 litre",
+    "44 litre",
+    "52 litre"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "28e7a9f9d375731f28d752d9ba183e41f73d19d13202b33e5e2dd33e12e3d0e8"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "A sum ₹ 2,450 provide ₹ 441 at simple interest at the rate of interest x% in 3 years. If the new rate of interest x + 3%. Then what is the new interest for the same time?",
+   "options": [
+    "₹ 561.5",
+    "₹ 463.23",
+    "₹ 454.23",
+    "₹ 651.5",
+    "₹ 661.5"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1369ca179814630df4e092d1767c8c4495c65c043ed88ed1ea1c8214ce0267f1"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "The ratio of Marked Price and Selling Price of an article is 8 : 7 and the article is sold at 40% profit. If the Selling Price is Rs. 200 more than the Cost Price, then Find the Cost Price.",
+   "options": [
+    "Rs. 400",
+    "Rs. 300",
+    "Rs. 550",
+    "Rs. 600",
+    "Rs.500"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "cf579dc893320ca5e27ea8ddd3370b31359f4ab2efc95d3608f36ac53c10363a"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "A boat travels at a speed of 10 kmph in still water. The speed of the stream is 4 kmph. How much time will the boat take to travel 30 km upstream?",
+   "options": [
+    "3 hrs",
+    "6 hrs",
+    "5 hrs",
+    "7 hrs",
+    "10 hrs"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "41c0c39fc75e108dd54a0fe324134a5b0092533f09e0cdad21007e0e32b99644"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "Circumference of the semicircle is 36 cm and the radius of Semicircle and Breadth of a rectangle is same. If the area of Rectangle is 216cm2 Find the length of the rectangle. [Using π = 3]",
+   "options": [
+    "42 cm",
+    "28 cm",
+    "30 cm",
+    "25 cm",
+    "35 cm"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b96ff37c657a814ed33330cbd2fdd5b288bf1de3772b76c1710fce4f20335ba3"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "Rohit spends 30% of his salary on grocery shopping. Out of the remaining salary, he pays 20% for rent, spends 50% on loan payments, and saves Rs. 14700. What will be the salary of Rohit?",
+   "options": [
+    "Rs. 55000",
+    "Rs. 60000",
+    "Rs. 65000",
+    "Rs. 70000",
+    "Rs. 80000"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "34297c826cef7bd3347610fbca752f0ce0aa358c274686e3418cf5add11987e0"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following question? 2/7 of 504 ÷ 24 + 30 = (?)2",
+   "options": [
+    "7",
+    "6",
+    "9",
+    "10",
+    "11"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7bc27e4f58a3111687cd16c8c34a25f812deb1b729c5624388f9d7b8ce2b2cc9"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What should come at the place of ‘?’ in the following question? √14400 × √8100 - (60)2 = ? + (80)2",
+   "options": [
+    "1000",
+    "900",
+    "450",
+    "800",
+    "700"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "32af0a03ce62376b1871fd2ffa991753494d156c4b352e4afe0de2a731825bfc"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? √1225 × 12 + √4900 - (19)2 = ?",
+   "options": [
+    "129",
+    "139",
+    "141",
+    "213",
+    "175"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "10416d489c12d164c2bea1d740217e11db014e3edc54985b6208062352e8fcf1"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 621 ÷ (3)3 × 2 – 37 = √?",
+   "options": [
+    "9",
+    "27",
+    "51",
+    "81",
+    "72"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "47adf11be0681baa5f2082a958332e58bdc865c99a1c03ea88b13d6421efe86a"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 1/3 of 786 – 11/8 of 1032 = ? – 13/4 of 528",
+   "options": [
+    "623",
+    "581",
+    "559",
+    "597",
+    "607"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "cb6475467b147400410e3c907d1b0aab75ee528eee64c7e418b3867f610d6732"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 20% of 450 + ∛216 – 82 = ?",
+   "options": [
+    "32",
+    "28",
+    "42",
+    "24",
+    "18"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "a59fba84a11dac127bbf3bc97ae5391a8e9f334819e14cc2aa6b61cd213b5f0d"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? {45 – (26 – 56 ÷ 8 + 12)} = ?",
+   "options": [
+    "12",
+    "17",
+    "21",
+    "7",
+    "14"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d44e40b6c39592c0a3689f10a48c85beb2b456f65e97dcefaa13a9e2604af0e2"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 55% of 600 - ? = 8 × 180 ÷ 9",
+   "options": [
+    "150",
+    "170",
+    "120",
+    "140",
+    "190"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "0e11442524c59950230e796062f36e0e6cb5a16b117d7fff4e5c5a85db53af9b"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 24 × 45 ÷ 9 – 60 = ? – 120",
+   "options": [
+    "120",
+    "150",
+    "210",
+    "180",
+    "90"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c4d12c7148b205d86080c644b2289505f646cb4db914de969f20908f55ad1a5c"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 55% of 700 + ∛3375 – 122 = ?2",
+   "options": [
+    "4",
+    "18",
+    "16",
+    "22",
+    "12"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "276f57b8d5316399885980ffd585fc2ebb7423bc6aedbbb711d38d9c4497616b"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 486 ÷ 33 + ∛2197 - 6 × 5 = ?",
+   "options": [
+    "1",
+    "4",
+    "9",
+    "3",
+    "7"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "60f0de1ed1e94f4f864e58c51095de46916141854e55d3484390b492aa6a9206"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? 25% of 500 + 75% of 200 = ? + 140",
+   "options": [
+    "105",
+    "115",
+    "95",
+    "125",
+    "135"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b29960a29ff7248fad4648d992733e336d5b22e15dbbc1c23baffedca61babce"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? {95 - (125 - 64 ÷ 8 × 7)} = ?",
+   "options": [
+    "36",
+    "22",
+    "32",
+    "26",
+    "38"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "21581e6d3a3c92f61136bb3eac0654ebfbfb003502894ef8f967e922e0823625"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question mark (?) in the following question? 342 - 252 + 182 - 92 = ? - 152",
+   "options": [
+    "991",
+    "999",
+    "899",
+    "1099",
+    "1199"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e60377c27b13d7b94e55d9da3e0b94cb49e898a02609dcce7c97354c7472346a"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark (?) in the following equation? (13)2 - (4)3 - √676 + 4 = ?",
+   "options": [
+    "73",
+    "79",
+    "83",
+    "89",
+    "93"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "943d520fe92b0114f945b356759331e2667bf0178a095d48c74f6893f20aac02"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 15, 23, 30, 36, 41, ?",
+   "options": [
+    "43",
+    "44",
+    "45",
+    "46",
+    "47"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "32f9b4134148360be6f3c528103e872ffb421aac346a7fbb120176052ecceb9d"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 8, 22, 50, 92, 148, ?",
+   "options": [
+    "218",
+    "208",
+    "198",
+    "228",
+    "238"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "445dce2bb296d31ad01f369e33130307d476b5a0baa000ae4a7b6b566df17aa7"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 444, ?, 103, 39, 12, 4",
+   "options": [
+    "218",
+    "256",
+    "236",
+    "248",
+    "228"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1cace65e5a5ca3e8c68883b2a991bd3d416f607efc597a1ad23e7d168a70d377"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 10, 35, 135, 360, 760, ?",
+   "options": [
+    "1225",
+    "1275",
+    "1365",
+    "1385",
+    "1315"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "c4ecbcd7c4c82dccbc7ab4684152fef92029f97e0c06e196e7764a76fca95dec"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following number series? 4, 10, 22, 46, ?, 190",
+   "options": [
+    "92",
+    "94",
+    "96",
+    "102",
+    "104"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "04612b5c20a616c7efc694c6c10143e0c8bed8ccc3f538fd77aef7aa9e292bf7"
+  },
+  {
+   "question_number": 66,
+   "section": "reasoning",
+   "stem_text": "Directions: The questions are based on the following information: Three generations of people live together. There are 12 members in the family viz. M, N, O, P, Q, R, S, T, U, V, W and X who went out for a picnic. R and Q are kids of T and S. V, who is the father in law of W is the paternal uncle of R. T has a son and a daughter. P is the husband of O. O is the daughter of Q. M is the brother of N. R is married to U. Father of N is U who has only one daughter. S is the father in law of U. W is the wife of X. Four of the five are alike in a certain way and hence form a group. Which one the following doesn’t belong to the group?",
+   "options": [
+    "Q",
+    "P",
+    "O",
+    "M",
+    "N"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "d283ef7b345997b905768f4e1f77ef7ab40156a2540c893310e1d56270ff78e5"
+  },
+  {
+   "question_number": 67,
+   "section": "reasoning",
+   "stem_text": "Directions: The questions are based on the following information: Three generations of people live together. There are 12 members in the family viz. M, N, O, P, Q, R, S, T, U, V, W and X who went out for a picnic. R and Q are kids of T and S. V, who is the father in law of W is the paternal uncle of R. T has a son and a daughter. P is the husband of O. O is the daughter of Q. M is the brother of N. R is married to U. Father of N is U who has only one daughter. S is the father in law of U. W is the wife of X. Four of the five are alike in a certain way and hence form a group.\n\nHow is W related to T?",
+   "options": [
+    "Cousin",
+    "Granddaughter",
+    "Niece",
+    "Son in law",
+    "Daughter in law"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "dbcf1f96146ced2204e127efe855f08a98dba4bcaa7246f08babc100348168d7"
+  },
+  {
+   "question_number": 68,
+   "section": "reasoning",
+   "stem_text": "Directions: The questions are based on the following information: Three generations of people live together. There are 12 members in the family viz. M, N, O, P, Q, R, S, T, U, V, W and X who went out for a picnic. R and Q are kids of T and S. V, who is the father in law of W is the paternal uncle of R. T has a son and a daughter. P is the husband of O. O is the daughter of Q. M is the brother of N. R is married to U. Father of N is U who has only one daughter. S is the father in law of U. W is the wife of X. Four of the five are alike in a certain way and hence form a group.\n\nHow is N related to S?",
+   "options": [
+    "Grandson",
+    "Daughter’s cousin",
+    "Granddaughter",
+    "Son’s nephew.",
+    "Daughter"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "58068f8fbd81bd922ae1600c9d7db8ffd4b36360e788ed2c0e8efa3a8b87d4d2"
+  },
+  {
+   "question_number": 69,
+   "section": "reasoning",
+   "stem_text": "If it’s possible to make a meaningful word from 1st, 2nd, 7th, and 8th letters of the word 'ARCHITECT', then which will be the first letter of the word? Mark ‘X’ if no such word can be formed, ‘M’ if more than 1 such word can be formed.",
+   "options": [
+    "R",
+    "A",
+    "C",
+    "E",
+    "M"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "017d4ec9f3850639f09c26d4dd6013f3dd56c1e1c02cda425082395fcbd10c65"
+  },
+  {
+   "question_number": 70,
+   "section": "reasoning",
+   "stem_text": "In each question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer- Statements: Few N are G. All G are T. Conclusions: I. All N being T is a possibility. II. Some T are G.",
+   "options": [
+    "If only conclusion I follows.",
+    "If only conclusion II follows.",
+    "If either conclusion I or II follows.",
+    "If neither conclusion I nor II follows.",
+    "If both conclusions I and II follow."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d0303ccd8dd0e207872e47e1f4404abd8faedfa5c4f1432a36dc93a833d8cd9b"
+  },
+  {
+   "question_number": 71,
+   "section": "reasoning",
+   "stem_text": "In each question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer- Statements: No cap is a stool. Few stools are tables. Conclusions: I. Some tables are not caps. II. All caps being tables is a possibility",
+   "options": [
+    "If only conclusion I follows.",
+    "If only conclusion II follows.",
+    "If either conclusion I or II follows.",
+    "If neither conclusion I nor II follows.",
+    "If both conclusions I and II follow."
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ab448a26ad124a647051ad7ca56bf696044bc4ac6247b7a8f74137915d49ee10"
+  },
+  {
+   "question_number": 72,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II . You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements Only a few watches are electric No watches are ring Conclusions Some electric are ring Some electric can never be ring",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both i and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "ea687bdb2487b106b0fa1296d4b6e3fac98fee2970ce506d5d93ea1c6bd7afc6"
+  },
+  {
+   "question_number": 73,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given two statements followed by two conclusions. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Only a few Hairs are White Only a few White are Sky Conclusions: I. All Hair are Sky II. Some Hairs are not Sky",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follow",
+    "Neither I nor II follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9227edc0150479a0f288bb8618e466a1633702fd25996d308c8ccf96f53db6f9"
+  },
+  {
+   "question_number": 74,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question given below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: All doors are walls. Only a few floors are walls. Conclusions: I. All floors being doors is a possibility. II. No door is a floor.",
+   "options": [
+    "Both conclusions follow.",
+    "Neither conclusion I nor II follows.",
+    "Only conclusion II follows.",
+    "Only conclusion I follows.",
+    "Either conclusion I or II follows."
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "d6258396508fe5590350ca654611f88ae37f1ada1a58fd8626725fd0912bc433"
+  },
+  {
+   "question_number": 75,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following numeric sequence and answer the question given below. 4 3 1 5 7 8 3 1 6 2 9 7 1 2 1 3 5 2 6 8 6 5 4 3 2 1 3 8 7 How many odd numbers are there which are immediately preceded by a perfect square?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "2f03db6bccf67a28981048982edc2fa1c1d25c327cf38b1f855e823cf332eecd"
+  },
+  {
+   "question_number": 76,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following numeric sequence and answer the question given below.\n\nWhich of the following number will be seventh to the right of tenth number from the left?",
+   "options": [
+    "1",
+    "5",
+    "3",
+    "6",
+    "7"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "b09ebd5d37066611457175862675e9f1e603d3328f33348385ce8bb0993d8535"
+  },
+  {
+   "question_number": 77,
+   "section": "reasoning",
+   "stem_text": "If all the even numbers are dropped, which number will be ninth to the left of fifteenth number from the left?",
+   "options": [
+    "1",
+    "3",
+    "5",
+    "7",
+    "9"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "40e72410d606d24d3136ca9b8969a3162942bfcb34e810acf9942f2f3f25105f"
+  },
+  {
+   "question_number": 78,
+   "section": "reasoning",
+   "stem_text": "How many odd numbers are there which are immediately preceded by perfect cube and followed by perfect square?",
+   "options": [
+    "None",
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "09cdec547360a402820ee766132a26ad199487782e038a1a5cf0e7834101ede3"
+  },
+  {
+   "question_number": 79,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the table while four sit in the middle of each of the four sides. People who are sitting at the corner are facing the center while people sitting in the middle are facing outside the center. U is sitting second to left of W. S is sitting second to the right of P. T who is not facing inside is sitting third to the right of R, who is the immediate neighbour of both V and U. U is one of the immediate neighbour of Q. Two persons are sitting between U and P. Who is sitting exactly opposite to U?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "1e359956f8b2c042ab87ca82ac66d5aa861ab6b35c129ab72542de12b99c9f9f"
+  },
+  {
+   "question_number": 80,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the table while four sit in the middle of each of the four sides. People who are sitting at the corner are facing the center while people sitting in the middle are facing outside the center. U is sitting second to left of W. S is sitting second to the right of P. T who is not facing inside is sitting third to the right of R, who is the immediate neighbour of both V and U. U is one of the immediate neighbour of Q. Two persons are sitting between U and P.\n\nWho among the following are facing inside?",
+   "options": [
+    "P, V, R, U",
+    "W, P, T, R",
+    "T, W, U, V",
+    "S, Q, R, P",
+    "V, W, Q, R"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "564bafb03fc63e5c31af77621048516693f1062e2cf2466cb11e434340d1580d"
+  },
+  {
+   "question_number": 81,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the table while four sit in the middle of each of the four sides. People who are sitting at the corner are facing the center while people sitting in the middle are facing outside the center. U is sitting second to left of W. S is sitting second to the right of P. T who is not facing inside is sitting third to the right of R, who is the immediate neighbour of both V and U. U is one of the immediate neighbour of Q. Two persons are sitting between U and P.\n\nWho is sitting third to the right of V?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "W",
+    "T"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "49c9f60fbe4ecebbf26b79698028895e08465bb388069c83f0ec951a43b2af89"
+  },
+  {
+   "question_number": 82,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the table while four sit in the middle of each of the four sides. People who are sitting at the corner are facing the center while people sitting in the middle are facing outside the center. U is sitting second to left of W. S is sitting second to the right of P. T who is not facing inside is sitting third to the right of R, who is the immediate neighbour of both V and U. U is one of the immediate neighbour of Q. Two persons are sitting between U and P.\n\nWho are the immediate neighbours of Q?",
+   "options": [
+    "T and P",
+    "T and R",
+    "W and U",
+    "T and W",
+    "U and R"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "6784fe353258d042d8a228d7a61e7a65d8972e438d2544ee980bda1391bfff4d"
+  },
+  {
+   "question_number": 83,
+   "section": "reasoning",
+   "stem_text": "Eight people P, Q, R, S, T, U, V and W are sitting around a square table in such a way that four of them sit at four corners of the table while four sit in the middle of each of the four sides. People who are sitting at the corner are facing the center while people sitting in the middle are facing outside the center. U is sitting second to left of W. S is sitting second to the right of P. T who is not facing inside is sitting third to the right of R, who is the immediate neighbour of both V and U. U is one of the immediate neighbour of Q. Two persons are sitting between U and P.\n\nWho is to the immediate left of W?",
+   "options": [
+    "R",
+    "P",
+    "S",
+    "U",
+    "V"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "705b4f9eeb4a869e2ef15c5a3b70b98a721f0095436599b370690f11364facbe"
+  },
+  {
+   "question_number": 84,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information carefully and answer the questions given below. Seven persons are working in the same company on different designations. The person working on that designation is named P, Q, R, S, T, U, and V but not necessarily in the same order. They have different designations starting from the clerk, officer, Assistant Manager, manager, Assistant General manager, General manager, and Director. Director is the topmost post of the company and the clerk is the lowermost post of the company. Only four persons sit between P and Q. P is not working at a position of officer nor as a clerk. There are two designations between R and S. R is senior to S. R is a General manager or Director. More than two designations are there between T and U. U is working as a designation of clerk in the company. Which of the following person working as a Officer?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "V"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "23f13ba7f6eec40e9208602e8557e41017f94b6987cc9c51c48b32086b14647f"
+  },
+  {
+   "question_number": 85,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information carefully and answer the questions given below. Seven persons are working in the same company on different designations. The person working on that designation is named P, Q, R, S, T, U, and V but not necessarily in the same order. They have different designations starting from the clerk, officer, Assistant Manager, manager, Assistant General manager, General manager, and Director. Director is the topmost post of the company and the clerk is the lowermost post of the company. Only four persons sit between P and Q. P is not working at a position of officer nor as a clerk. There are two designations between R and S. R is senior to S. R is a General manager or Director. More than two designations are there between T and U. U is working as a designation of clerk in the company.\n\nWhose designation is just above the S's designation?",
+   "options": [
+    "Manager",
+    "Officer",
+    "V",
+    "Both Option 2 and 3",
+    "Both option 1 and 3"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "953d1c5d0fd7bc382addcab9e2bdbbd4156faf06afd071363bc70d1857251e06"
+  },
+  {
+   "question_number": 86,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information carefully and answer the questions given below. Seven persons are working in the same company on different designations. The person working on that designation is named P, Q, R, S, T, U, and V but not necessarily in the same order. They have different designations starting from the clerk, officer, Assistant Manager, manager, Assistant General manager, General manager, and Director. Director is the topmost post of the company and the clerk is the lowermost post of the company. Only four persons sit between P and Q. P is not working at a position of officer nor as a clerk. There are two designations between R and S. R is senior to S. R is a General manager or Director. More than two designations are there between T and U. U is working as a designation of clerk in the company.\n\nHow many designation between P and V?",
+   "options": [
+    "One",
+    "Three",
+    "More than three",
+    "Two",
+    "None of the above"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "20f28685933240cecfc57561a1eb8d93cdce4274e3326b7b934f433c1f858947"
+  },
+  {
+   "question_number": 87,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information carefully and answer the questions given below. Seven persons are working in the same company on different designations. The person working on that designation is named P, Q, R, S, T, U, and V but not necessarily in the same order. They have different designations starting from the clerk, officer, Assistant Manager, manager, Assistant General manager, General manager, and Director. Director is the topmost post of the company and the clerk is the lowermost post of the company. Only four persons sit between P and Q. P is not working at a position of officer nor as a clerk. There are two designations between R and S. R is senior to S. R is a General manager or Director. More than two designations are there between T and U. U is working as a designation of clerk in the company.\n\nWhich of the following statement is correct regarding V? I) V is a manager. II) The position which is just above V is T's position. III) Two designation between P and V.",
+   "options": [
+    "Only statement I is correct.",
+    "Only statement II is correct.",
+    "Only statement III is correct.",
+    "All are correct.",
+    "All are incorrect."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "8dfea32e46e6fedcc71f5ea6757e24e46aa324af565566eb9ba548ac75c2c5af"
+  },
+  {
+   "question_number": 88,
+   "section": "reasoning",
+   "stem_text": "On which position does R is working?",
+   "options": [
+    "Director",
+    "Assistant General manager",
+    "General manager",
+    "Manager",
+    "Assistant manager"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b82249884ab4faec2eba74995cc77df19a602df8c4acaa271c84f7fb1a7b8316"
+  },
+  {
+   "question_number": 89,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following questions, assuming the given statements to be true, find which of the two conclusions I and II given them is/are definitely follow. Statement: B > E ≤ L ; A = T ≥ S; K < L ≤ O ≤ A < I Conclusion: I. E = T II. E < T",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Either I or II follows",
+    "Neither I nor II follows",
+    "Both I and II are true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "586108b4fc177dac6e7c592cf542b20bfa40e6ae239907f60bd6ba9faec829e1"
+  },
+  {
+   "question_number": 90,
+   "section": "reasoning",
+   "stem_text": "Directions: In this question, relationship between different elements is shown in the statements. The statements are followed by two conclusions. Statements: G < I ≥ H = J, I < U = P Conclusions: I. G > P II. P > J",
+   "options": [
+    "Only conclusion I is True",
+    "Only conclusion II is True",
+    "Both conclusion I and II is True",
+    "None of the conclusion I and II is True",
+    "Either conclusion I or II is True"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "aac7644de4cc52d1b10d6acb4a4c60b1fb2db55b0f3958146b0c41ed6d0bdc2f"
+  },
+  {
+   "question_number": 91,
+   "section": "reasoning",
+   "stem_text": "Directions: In this question, relationship between different elements is shown in the statements. The statements are followed by two conclusions. Statements: K ≤ L = M < D ≤ T ≥ R > W = Q Conclusions I. D > W II. M < R",
+   "options": [
+    "Only conclusion II is True",
+    "Either conclusion I and II is True",
+    "Only conclusion I is True",
+    "None of the conclusion is True",
+    "Both the conclusion I and II is True"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b3c68361558645640f4e57726f55f04d72388c0beb86a8ec66aabe7c39065aa2"
+  },
+  {
+   "question_number": 92,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. A certain number of people are sitting in a row facing towards the north. X is sitting second from the right end of the row. Five persons are sitting between X and P. C is sitting immediate right of P. E is sitting third to the right of C. Seven persons are sitting to the left of E. A is sitting on one of the extreme ends but not sitting immediately right of X. T is sitting eighth to the right of A and immediately left of X. Y is sitting second to the right of T. Four persons are sitting between Y and R. Who is sitting at the extreme left end of the row?",
+   "options": [
+    "P",
+    "A",
+    "T",
+    "X",
+    "Y"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "2f19a8952443c24fd45726395fce96cef5b9c7bf56d9df7799162c249204cefe"
+  },
+  {
+   "question_number": 93,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. A certain number of people are sitting in a row facing towards the north. X is sitting second from the right end of the row. Five persons are sitting between X and P. C is sitting immediate right of P. E is sitting third to the right of C. Seven persons are sitting to the left of E. A is sitting on one of the extreme ends but not sitting immediately right of X. T is sitting eighth to the right of A and immediately left of X. Y is sitting second to the right of T. Four persons are sitting between Y and R.\n\nHow many seats are there in row?",
+   "options": [
+    "10",
+    "11",
+    "13",
+    "14",
+    "17"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "e286e0121b22769c2ffa1caf0426a256afb4d144766dd30ec4d39a64017402cb"
+  },
+  {
+   "question_number": 94,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. A certain number of people are sitting in a row facing towards the north. X is sitting second from the right end of the row. Five persons are sitting between X and P. C is sitting immediate right of P. E is sitting third to the right of C. Seven persons are sitting to the left of E. A is sitting on one of the extreme ends but not sitting immediately right of X. T is sitting eighth to the right of A and immediately left of X. Y is sitting second to the right of T. Four persons are sitting between Y and R.\n\nHow many persons are sitting between C and T?",
+   "options": [
+    "Two",
+    "Four",
+    "Three",
+    "Five",
+    "Six"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "f67295325c6994157574149dae403e770f149214cf9187ddbeca0d6599b3b376"
+  },
+  {
+   "question_number": 95,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. A certain number of people are sitting in a row facing towards the north. X is sitting second from the right end of the row. Five persons are sitting between X and P. C is sitting immediate right of P. E is sitting third to the right of C. Seven persons are sitting to the left of E. A is sitting on one of the extreme ends but not sitting immediately right of X. T is sitting eighth to the right of A and immediately left of X. Y is sitting second to the right of T. Four persons are sitting between Y and R.\n\nWho is sitting immediate left of R?",
+   "options": [
+    "C",
+    "P",
+    "T",
+    "Y",
+    "A"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "be0480ec1d6fb6bb9a94e960036ca33ec8590b2cdfb55ca7f8dc01472dad9d34"
+  },
+  {
+   "question_number": 96,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the following information carefully and answer the questions that follow. A certain number of people are sitting in a row facing towards the north. X is sitting second from the right end of the row. Five persons are sitting between X and P. C is sitting immediate right of P. E is sitting third to the right of C. Seven persons are sitting to the left of E. A is sitting on one of the extreme ends but not sitting immediately right of X. T is sitting eighth to the right of A and immediately left of X. Y is sitting second to the right of T. Four persons are sitting between Y and R.\n\nWhat is position of E from the right end of the line?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth",
+    "Fifth"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cd025e2af3715ee58793c71677d8877c26c237c181b3b28c6075f3a35e42e8d4"
+  },
+  {
+   "question_number": 97,
+   "section": "reasoning",
+   "stem_text": "How many such pairs of letters are there in the word ‘PAGINATE’, each of which has as many letters between them in the word (both forward and backward direction) as they have between them in the English Alphabet?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "More than four"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "dd621d4fa92f588530888391b7126a51b74d3745499a6134333791d992ad8124"
+  },
+  {
+   "question_number": 98,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given question. There are seven persons - A, B, C, D, E, F and G. They are going market to purchase some items. Only Three persons reach before D. E reach before F and G but F is not the last person. G reached before F. A reach before C but after D. C is not the last person. How many persons between F and C?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "1af1e8515bdad40ac27db698f220b2aade076419e4646d2b67c78f69a7544d30"
+  },
+  {
+   "question_number": 99,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given question. There are seven persons - A, B, C, D, E, F and G. They are going market to purchase some items. Only Three persons reach before D. E reach before F and G but F is not the last person. G reached before F. A reach before C but after D. C is not the last person.\n\nWho reaches market immediate after A?",
+   "options": [
+    "E",
+    "B",
+    "C",
+    "F",
+    "No one"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "75e2420c369d2a749aaf755ed054f025df226690e80c0b2ebe32680195c18028"
+  },
+  {
+   "question_number": 100,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the given question. There are seven persons - A, B, C, D, E, F and G. They are going market to purchase some items. Only Three persons reach before D. E reach before F and G but F is not the last person. G reached before F. A reach before C but after D. C is not the last person.\n\nHow many persons reaches market before F?",
+   "options": [
+    "One",
+    "Two",
+    "Theree",
+    "Four",
+    "No one"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "02b8ade0fbe20336fe9d27a3fdea0b0f60b00c84c2d565712552a1b56b65d685"
+  }
+ ],
+ "section_confidence": 0.973,
+ "section_order": [
+  "english",
+  "numerical_ability",
+  "reasoning"
+ ]
+}

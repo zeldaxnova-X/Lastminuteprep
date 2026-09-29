@@ -41,6 +41,16 @@ BLUEPRINTS = {
             {"key": "reasoning", "count": 35, "names": ["reasoning ability", "reasoning"]},
         ],
     },
+    # IBPS Clerk Prelims — identical blueprint shape to SBI Clerk Prelims.
+    "ibps-clerk-prelims": {
+        "optionsCount": 5,
+        "totalQuestions": 100,
+        "sections": [
+            {"key": "english", "count": 30, "names": ["english language", "english"]},
+            {"key": "numerical_ability", "count": 35, "names": ["numerical ability", "quantitative aptitude", "numerical"]},
+            {"key": "reasoning", "count": 35, "names": ["reasoning ability", "reasoning"]},
+        ],
+    },
 }
 
 # ---- Section keyword classifier (prepp fallback; content-based) -----------------
@@ -119,9 +129,69 @@ def full_text(path: str) -> str:
 def detect_format(text: str) -> str:
     if re.search(r"Que\.?\s*\d+", text) and "Correct Option" in text:
         return "prepp"
+    # adda_inline: "Q1." questions, "(a)".."(e)" options, inline "Ans.(x)" key
+    # (recent Adda247 memory-based solved papers).
+    if re.search(r"(?:^|\n)\s*Q\.?\s*\d+\.", text) and re.search(r"Ans\.?\s*\(([a-e])\)", text, re.I):
+        return "adda_inline"
     if re.search(r"Total\s+Marks", text) and re.search(r"^\s*[a-e]\.\s", text, re.M):
         return "adda247"
     return "unknown"
+
+# ---- adda_inline parser --------------------------------------------------------
+# "Directions (1-5): ..." set header → shared context for that question range.
+DIRN = re.compile(r"Directions?\s*\((\d+)\s*[-–—]\s*(\d+)\)\s*:?\s*", re.I)
+QUE_INLINE = re.compile(r"(?:^|\n)\s*Q\.?\s*(\d+)\.")
+ANS_INLINE = re.compile(r"Ans\.?\s*\(([a-eA-E1-5])\)", re.I)
+
+def _split_inline_options(bcut: str):
+    """Locate (a)..(e) IN ORDER (avoids stray '(a)' inside a stem). Returns
+    (stem, [5 options]) or (None, None) if the full a–e run isn't present."""
+    marks = []
+    pos = 0
+    for letter in "abcde":
+        m = re.compile(r"\(%s\)" % letter, re.I).search(bcut, pos)
+        if not m:
+            return None, None
+        marks.append(m.start())
+        pos = m.end()
+    stem = clean_text(bcut[: marks[0]])
+    opts = []
+    for idx in range(5):
+        s = marks[idx] + 3  # skip "(x)"
+        e = marks[idx + 1] if idx + 1 < 5 else len(bcut)
+        opts.append(clean_text(bcut[s:e]))
+    return stem, opts
+
+def parse_adda_inline(text: str):
+    # Map each question number in a "Directions (lo-hi)" set to its context text
+    # (from the header to the next question marker).
+    directions = {}
+    for m in DIRN.finditer(text):
+        lo, hi = int(m.group(1)), int(m.group(2))
+        qm = QUE_INLINE.search(text, m.end())
+        ctx = clean_text(text[m.end(): qm.start() if qm else len(text)])
+        if ctx:
+            for n in range(lo, hi + 1):
+                directions[n] = ctx
+
+    parts = QUE_INLINE.split(text)
+    out = []
+    for i in range(1, len(parts), 2):
+        num = int(parts[i]); body = parts[i + 1]
+        am = ANS_INLINE.search(body)
+        correct = None
+        if am:
+            g = am.group(1)
+            correct = int(g) if g.isdigit() else (ord(g.lower()) - 96)
+        bcut = body[: am.start()] if am else body
+        stem, opts = _split_inline_options(bcut)
+        if stem is None:
+            stem, opts = clean_text(bcut), ["", "", "", "", ""]
+        ctx = directions.get(num)
+        if ctx and ctx not in stem:
+            stem = ctx + "\n\n" + stem
+        out.append({"num": num, "stem": stem, "options": opts, "correct": correct})
+    return out
 
 # ---- prepp parser --------------------------------------------------------------
 QUE_SPLIT = re.compile(r"Que\.?\s*(\d+)")
@@ -191,11 +261,14 @@ def qc_paper(path, exam_code, meta):
     text = full_text(path)
     fmt = detect_format(text)
     report = {"file": os.path.basename(path), "format": fmt, "accepted": 0, "rejected": 0, "reasons": Counter(), "questions": []}
-    if fmt != "prepp":
+    if fmt not in ("prepp", "adda_inline"):
         report["reasons"][f"unsupported_format:{fmt}"] += 1
         return report
-    qs = parse_prepp(text)
-    attach_shared_context(qs)  # prepend puzzle/comprehension directions to bare sub-questions
+    if fmt == "adda_inline":
+        qs = parse_adda_inline(text)  # directions attached via "Directions (n-m)" headers
+    else:
+        qs = parse_prepp(text)
+        attach_shared_context(qs)  # prepend puzzle/comprehension directions to bare sub-questions
     filled, conf, order = assign_sections_prepp(qs, bp)
     SECTION_CONF_MIN = 0.75  # below this, sections are unresolved -> review
     sections_ok = conf >= SECTION_CONF_MIN and len(filled) == len(qs)

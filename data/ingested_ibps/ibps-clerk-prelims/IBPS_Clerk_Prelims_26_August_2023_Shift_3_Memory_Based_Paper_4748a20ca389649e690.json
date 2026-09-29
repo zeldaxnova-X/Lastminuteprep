@@ -1,0 +1,1515 @@
+{
+ "file": "IBPS_Clerk_Prelims_26_August_2023_Shift_3_Memory_Based_Paper_4748a20ca389649e690f4872c65fc655.pdf",
+ "format": "prepp",
+ "accepted": 100,
+ "rejected": 0,
+ "reasons": {},
+ "questions": [
+  {
+   "question_number": 1,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: 8 persons - A, B, C, D, E, F, G, and H go to market on 8 different months. Months are January, March, April, May, June, August, September, October but not necessarily in the same order. C goes to market in the month which has 31 days but goes before the month of August. The number of persons who go to market before D is the same as the number of persons who go to market after F. A goes to market on the month which has 30 days. E likes to go to the market in the month of May. H does not go to market immediately after D. There are two persons scheduled between D and B. A goes to the market after the month of March but before the month of May. G who goes to market in the month of August does not go immediately before H. On which month, Person F goes to market?",
+   "options": [
+    "January",
+    "March",
+    "September",
+    "October",
+    "May"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "98f446c9e5cacfcabae88bb0ea01f235f34928cec62e002fb1d791156a5ae42b"
+  },
+  {
+   "question_number": 2,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: 8 persons - A, B, C, D, E, F, G, and H go to market on 8 different months. Months are January, March, April, May, June, August, September, October but not necessarily in the same order. C goes to market in the month which has 31 days but goes before the month of August. The number of persons who go to market before D is the same as the number of persons who go to market after F. A goes to market on the month which has 30 days. E likes to go to the market in the month of May. H does not go to market immediately after D. There are two persons scheduled between D and B. A goes to the market after the month of March but before the month of May. G who goes to market in the month of August does not go immediately before H.\n\nHow many persons go to market between H and E?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "eab94fd36c108794b040e3da602134b5800e8ce3821916d32bd92b5ff2232257"
+  },
+  {
+   "question_number": 3,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: 8 persons - A, B, C, D, E, F, G, and H go to market on 8 different months. Months are January, March, April, May, June, August, September, October but not necessarily in the same order. C goes to market in the month which has 31 days but goes before the month of August. The number of persons who go to market before D is the same as the number of persons who go to market after F. A goes to market on the month which has 30 days. E likes to go to the market in the month of May. H does not go to market immediately after D. There are two persons scheduled between D and B. A goes to the market after the month of March but before the month of May. G who goes to market in the month of August does not go immediately before H.\n\nWho goes to market in the month of October?",
+   "options": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "H"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "ec537409806f33af87c7d2a97dda78721ded2375d21341aa822e87969c741236"
+  },
+  {
+   "question_number": 4,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: 8 persons - A, B, C, D, E, F, G, and H go to market on 8 different months. Months are January, March, April, May, June, August, September, October but not necessarily in the same order. C goes to market in the month which has 31 days but goes before the month of August. The number of persons who go to market before D is the same as the number of persons who go to market after F. A goes to market on the month which has 30 days. E likes to go to the market in the month of May. H does not go to market immediately after D. There are two persons scheduled between D and B. A goes to the market after the month of March but before the month of May. G who goes to market in the month of August does not go immediately before H.\n\nWhich of the following combination is incorrect?",
+   "options": [
+    "C - January",
+    "E - May",
+    "B - June",
+    "H - June",
+    "D - March"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b80e394c43044dbe451597320ca1ca8d402e141c26b8e100a10d0f2522b8cf43"
+  },
+  {
+   "question_number": 5,
+   "section": "reasoning",
+   "stem_text": "Direction: Read the following information carefully and answer the questions that follow: 8 persons - A, B, C, D, E, F, G, and H go to market on 8 different months. Months are January, March, April, May, June, August, September, October but not necessarily in the same order. C goes to market in the month which has 31 days but goes before the month of August. The number of persons who go to market before D is the same as the number of persons who go to market after F. A goes to market on the month which has 30 days. E likes to go to the market in the month of May. H does not go to market immediately after D. There are two persons scheduled between D and B. A goes to the market after the month of March but before the month of May. G who goes to market in the month of August does not go immediately before H.\n\nWho goes to market immdiately before D?",
+   "options": [
+    "C",
+    "B",
+    "A",
+    "F",
+    "G"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "513246e939cdc795daf8f8f5c1e930d2266b90db455e2997af0908deb46af2be"
+  },
+  {
+   "question_number": 6,
+   "section": "reasoning",
+   "stem_text": "Direction: Following questions are based on five words given below. TSR FKL FGO VQE HDB (The new words formed after performing the mentioned operations may or may not necessarily be meaningful English words) If the middle letter is changed to its next letter as in English alphabetical series then how many newly formed words have no vowel?",
+   "options": [
+    "One",
+    "Five",
+    "Four",
+    "Three",
+    "Two"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "a61ba49ee4d68e600e9f8b88060fa4547a9561c7c13006b4f5488e3fd5ea2a0f"
+  },
+  {
+   "question_number": 7,
+   "section": "reasoning",
+   "stem_text": "How many letters are there in between the third letter of the fourth word from the left end and first letter of the third word from the right end as per the alphabetical series?",
+   "options": [
+    "Five",
+    "Four",
+    "One",
+    "Three",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d11444e69fde789ab540a7a855a3184da212790b3902f13682420eab9b5ac983"
+  },
+  {
+   "question_number": 8,
+   "section": "reasoning",
+   "stem_text": "If each consonant of all the words is changed to its next letter and each vowel of all the words is changed to its previous letter of the English alphabetical series, then how many words will form with more than one consonant?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f3d7c7f030f9826326271f94661732a2d42d5597b7aff392d951dbfaadbb1f53"
+  },
+  {
+   "question_number": 9,
+   "section": "reasoning",
+   "stem_text": "If the last letter of each word is changed to its next letter as in English alphabetical series, then how many words are ending with vowel?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "42c93e3772eb5127de10394031d2fa5c71faf84d876e8e1519c38f85d7e37dc0"
+  },
+  {
+   "question_number": 10,
+   "section": "reasoning",
+   "stem_text": "If first and last letter of each word are interchanged, then how many words will start with a vowel?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "44b59af928a603b0c6d6df2eee7320b5c8cd3bb8f19eaff9c02568c62efce548"
+  },
+  {
+   "question_number": 11,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: A > C ≥ E = D; E > G < K = H Conclusions: I. C > D II. C = D",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "b61d54df775025f28bd295269f39a70f429cac8a220c8e6e61afdf2d71771e32"
+  },
+  {
+   "question_number": 12,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be true, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements: K > J < H; K = I > L; M > J Conclusions: I. K > H II. I > M",
+   "options": [
+    "Only I follow",
+    "Only II follow",
+    "Both I and II follow",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "40465f122d96ba386edc205d371a823cc995a956f07b8a889c277be2a6b44575"
+  },
+  {
+   "question_number": 13,
+   "section": "reasoning",
+   "stem_text": "Direction: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely True and then give your answers accordingly. Statements: L = O ≥ R, P > T, L = U Conclusion: I. U = R II. L > R",
+   "options": [
+    "None is True",
+    "Both I and II are True",
+    "Only II is True",
+    "Only I is True",
+    "Either I and II is True"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b57fadef2114a32c309f63fb9eb407a06fe24550dd0cf547edeae7cee02672e7"
+  },
+  {
+   "question_number": 14,
+   "section": "reasoning",
+   "stem_text": "Directions: In the following question assuming the given statements to be True, find which of the conclusion among given conclusions is/are definitely true and then give your answers accordingly. Statements : J ≤ S ; W < T > S ; F > W Conclusions : I. F > T II. J > T",
+   "options": [
+    "Only I Follows",
+    "Only II Follows",
+    "Either I or II Follows",
+    "Neither I nor II Follows",
+    "Both I and II Follow"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "a6c0b58ae239cc406391792cd27808e5436c46693ec99dc8691a6ae8ac3b4335"
+  },
+  {
+   "question_number": 15,
+   "section": "reasoning",
+   "stem_text": "In the given word \"COINCIDENCE\" if the vowels are changed to the next letter and the consonants are changed to the previous letters as per the alphabetical series and the letters are then arranged in alphabetical order from left to right which is the fourth letter from the right end?",
+   "options": [
+    "F",
+    "J",
+    "M",
+    "P",
+    "C"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "965821fe99c000d583fd03b8bed2eac62d64ecdd2a9014972ee834a0e893f128"
+  },
+  {
+   "question_number": 16,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question given below. There are seven house i.e. P, Q, R, S, T, U, and V in the city. P is 5m to the east of Q. R is 8m to the west of S. T is 4m to the west of R. P is 6m to the north of R. U is 8 m to the east of V. U is 6m to the south of S. What is the direction of U with respect to Q?",
+   "options": [
+    "West",
+    "South east",
+    "North east",
+    "North west",
+    "South"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "634b70fb63d125178870413e137f1aa8451b3f53327a7f86f12ae4823b925ea0"
+  },
+  {
+   "question_number": 17,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question given below. There are seven house i.e. P, Q, R, S, T, U, and V in the city. P is 5m to the east of Q. R is 8m to the west of S. T is 4m to the west of R. P is 6m to the north of R. U is 8 m to the east of V. U is 6m to the south of S.\n\nWhat is distance between P and V?",
+   "options": [
+    "6 m",
+    "12 m",
+    "10 m",
+    "14 m",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a692ec52c09b6e92d7425b41c5089a7f6dc80a4ab95c1055c296c77435ba4139"
+  },
+  {
+   "question_number": 18,
+   "section": "reasoning",
+   "stem_text": "Directions: Study the information given below carefully and answer the question given below. There are seven house i.e. P, Q, R, S, T, U, and V in the city. P is 5m to the east of Q. R is 8m to the west of S. T is 4m to the west of R. P is 6m to the north of R. U is 8 m to the east of V. U is 6m to the south of S.\n\nWhat is direction of P with respect to T?",
+   "options": [
+    "East",
+    "South west",
+    "North west",
+    "North east",
+    "South east"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3ad4320d550db8aa6e8207a7c2d4c408b0a91d5f6a127cf40d5790cf8eff92b0"
+  },
+  {
+   "question_number": 19,
+   "section": "reasoning",
+   "stem_text": "Six persons P, Q, R, S, T and U have different heights. Number of persons taller than P is equal to number of persons shorter than S. R is taller than only one person. Q is not taller than T. U is shorter than both P and S. Who among the following is the tallest?",
+   "options": [
+    "P",
+    "Q",
+    "T",
+    "R",
+    "Other than those given as option"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "3c051f27dd8164abe5d7cdaf117c07473a31daab86adbfea9781167e0cbc91d9"
+  },
+  {
+   "question_number": 20,
+   "section": "reasoning",
+   "stem_text": "Six persons P, Q, R, S, T and U have different heights. Number of persons taller than P is equal to number of persons shorter than S. R is taller than only one person. Q is not taller than T. U is shorter than both P and S.\n\nHow many persons are shorter than P if S is shorter than P?",
+   "options": [
+    "Three",
+    "Two",
+    "Four",
+    "Five",
+    "Other than those given as option"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "16286fa4690ac589918d9535b202c2d4f6ef81b6f88150f254c2c0b6ca7436d7"
+  },
+  {
+   "question_number": 21,
+   "section": "reasoning",
+   "stem_text": "____ is the shortest.",
+   "options": [
+    "R",
+    "S",
+    "T",
+    "U",
+    "Other than those given as option"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "db8664c8fa0527f052303fbc415fd580002c23d6697405a954efc3e5cbd3ef70"
+  },
+  {
+   "question_number": 22,
+   "section": "reasoning",
+   "stem_text": "In the given number '31756365842'. If '2' is added to each odd number and '1' is subtracted to each even number then how many digits are not repeated in the results thus obtained?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "None"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "24de3156b9415dafbfcb08ce7415a16cda3b0816fb6c9098766c021d19de9651"
+  },
+  {
+   "question_number": 23,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight different people – J, K, L, M, N, O, P and Q are sitting on a Square table but not necessarily in the same order. Four of them are sitting on the middle side of the table facing inside and the rest of them are sitting on the corners of the table facing outside. O is an immediate neighbour of J who is sitting at one of the corners. Q is sitting opposite to O. K is sitting third to the right of Q. P is not an immediate neighbour of K. J is not sitting second to the right of P who is an immediate neighbour of L. M is sitting second to the left of L. Who among the following is sitting second to the right of Q?",
+   "options": [
+    "O",
+    "N",
+    "J",
+    "K",
+    "Q"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "dafdf4e682017be6c4ce853e45397276450bfbb2089c2160e8654db54143d92e"
+  },
+  {
+   "question_number": 24,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight different people – J, K, L, M, N, O, P and Q are sitting on a Square table but not necessarily in the same order. Four of them are sitting on the middle side of the table facing inside and the rest of them are sitting on the corners of the table facing outside. O is an immediate neighbour of J who is sitting at one of the corners. Q is sitting opposite to O. K is sitting third to the right of Q. P is not an immediate neighbour of K. J is not sitting second to the right of P who is an immediate neighbour of L. M is sitting second to the left of L.\n\nWhat is the position of K with respect to M?",
+   "options": [
+    "Immediate left",
+    "Second to the left",
+    "Immediate right",
+    "Second to the right",
+    "Third to the right"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "f4f8909b70fb01980603eb799e7582600fcbc4a10fb0dc9b7331429e6c5e1524"
+  },
+  {
+   "question_number": 25,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully and answer the question given below. Eight different people – J, K, L, M, N, O, P and Q are sitting on a Square table but not necessarily in the same order. Four of them are sitting on the middle side of the table facing inside and the rest of them are sitting on the corners of the table facing outside. O is an immediate neighbour of J who is sitting at one of the corners. Q is sitting opposite to O. K is sitting third to the right of Q. P is not an immediate neighbour of K. J is not sitting second to the right of P who is an immediate neighbour of L. M is sitting second to the left of L.\n\nWho among the following is sitting sixth to the right of J?",
+   "options": [
+    "L",
+    "P",
+    "M",
+    "N",
+    "Q"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "645b35d47d669c6e55e564c72b31b4e8974b59f5797577e3d83a8ef08bac5316"
+  },
+  {
+   "question_number": 26,
+   "section": "reasoning",
+   "stem_text": "Four of the following five options are alike in a certain way and hence form a group. Which one doesn't belong to that group?",
+   "options": [
+    "J",
+    "P",
+    "L",
+    "K",
+    "M"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "fc60bac4f1f0273127f8e17c4886ee146ab1b81014823504e1bd204d1cc4f0c3"
+  },
+  {
+   "question_number": 27,
+   "section": "reasoning",
+   "stem_text": "Which of the following statement is correct?",
+   "options": [
+    "Q is not sitting on the middle side of the table",
+    "P is sitting immediate left of L",
+    "K and N are not immediate neighbours",
+    "N is sitting opposite to P",
+    "P and Q are immediate neighbours"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3160ef5dc6843104d67f267c0c59235863e5aa916a24d2691d425827289aab43"
+  },
+  {
+   "question_number": 28,
+   "section": "reasoning",
+   "stem_text": "Direction: In the question below are given two statements followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statements: Some Pen is Computer. All Computer is Paper. Conclusion: I. All Paper are Pen. II. Some Paper are not Pen.",
+   "options": [
+    "Only conclusion I follows",
+    "Only conclusion II follows",
+    "Both conclusion I and II follow",
+    "Either conclusion I or II follows",
+    "Neither conclusion I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "679319392956a18248418a75730913d4565b6cd4ad8c97002d296876ec5c74c9"
+  },
+  {
+   "question_number": 29,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: All child are students. Some students are bright. Only a few students are success. Conclusion: I. Some success is child. II. Some bright are success.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "f3305046172cfcd815bce64a774b384119e1c05f6bac56190970c27ced8538ff"
+  },
+  {
+   "question_number": 30,
+   "section": "reasoning",
+   "stem_text": "Directions: In the question below are given three statements followed by two conclusions I and II. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Statement: All mobiles are television. Some speakers are watch. Only few watch are mobiles. Conclusion: I. Some television is speaker. II. No speakers are television.",
+   "options": [
+    "Only I follows",
+    "Only II follows",
+    "Both I and II follows",
+    "Either I or II follows",
+    "Neither I nor II follows"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "5ee0e2460754a9dd46a8551a339bd25356e0231c069e5082aeb6ec3d170b88d8"
+  },
+  {
+   "question_number": 31,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight boxes – P, Q, R, S, T, U, W, and X are kept in a room in such a room as each box is stacked on top of each other. Box P is kept fifth from the bottom, below Box W. Box X is kept immediately above Box T. Q is kept immediately above Box W. Box S is kept four boxes above Box X. U is kept above Box R, which is not kept at the bottom. Four of the five options given below follow a certain logic and form a group, find the odd one out.",
+   "options": [
+    "Box T",
+    "Box U",
+    "Box R",
+    "Box P",
+    "Box W"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "283fc82e5486072540fabe6fedf0d9f7981e71e4631610bcb16f87a168757f11"
+  },
+  {
+   "question_number": 32,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight boxes – P, Q, R, S, T, U, W, and X are kept in a room in such a room as each box is stacked on top of each other. Box P is kept fifth from the bottom, below Box W. Box X is kept immediately above Box T. Q is kept immediately above Box W. Box S is kept four boxes above Box X. U is kept above Box R, which is not kept at the bottom. Four of the five options given below follow a certain logic and form a group, find the odd one out.\n\nHow many boxes are kept between the box kept second from the top and the one kept fourth from the bottom?",
+   "options": [
+    "5 boxes",
+    "4 boxes",
+    "3 boxes",
+    "2 boxes",
+    "1 box"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "bd2404641718151acf518bd3edd8e0fd5aef3139612561f3ab4b55d1f97468ca"
+  },
+  {
+   "question_number": 33,
+   "section": "reasoning",
+   "stem_text": "Direction: Study the following information carefully to answer the given questions. Eight boxes – P, Q, R, S, T, U, W, and X are kept in a room in such a room as each box is stacked on top of each other. Box P is kept fifth from the bottom, below Box W. Box X is kept immediately above Box T. Q is kept immediately above Box W. Box S is kept four boxes above Box X. U is kept above Box R, which is not kept at the bottom. Four of the five options given below follow a certain logic and form a group, find the odd one out.\n\nWhich among the following is true?",
+   "options": [
+    "Box S is kept immediately above Box U",
+    "Box P is kept third from the bottom",
+    "Box T is kept at the bottom",
+    "Box W is kept at the top",
+    "None of the above are true"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "5c71d28e68b185d9b7f9e85f35ada26094326222286bb3f7a886976d03758d2d"
+  },
+  {
+   "question_number": 34,
+   "section": "reasoning",
+   "stem_text": "If you rearrange the boxes in alphabetical order from the top to bottom, how many boxes will change their places?",
+   "options": [
+    "2 boxes",
+    "All the boxes",
+    "5 boxes",
+    "None of the boxes",
+    "1 box"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a7cc993eeef0a56e0353b2acc9abe85edd9816496a678454a44ea1fe6f89676a"
+  },
+  {
+   "question_number": 35,
+   "section": "reasoning",
+   "stem_text": "Which of the following statements is/are correct? I. Four boxes are kept between Boxes Q and U II. Box Q is kept at an odd position from the bottom III. Box R is kept three places above Box S IV. Box X is kept between Boxes P and R",
+   "options": [
+    "None of them are true",
+    "All of them are true",
+    "Only Statement III is true",
+    "Only Statements I and II are true",
+    "Only Statements II and IV are true"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "6bc62fa91d1b7efee891c89e5e616672062288042a70a7389ab74f2ae53944a7"
+  },
+  {
+   "question_number": 36,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The following caselet shows the number of males and females working in three different hospitals. Number of females working in hospital A is 40% more than the number of males working in the same hospital and the number of males working in hospital B is 100 less than the males working in hospital A. Number of females working in hospital B is 100 less than the number of females working in hospital A. Number females working in hospital C is 75% of the number of females working in hospital B. Total females working in all the hospitals is 1750. Ratio between the number of females to males in hospital C is 3: 2. Find the difference between 3/7 th and 3/4 th of females working in hospital A and B to the total males working in hospital C.",
+   "options": [
+    "600",
+    "650",
+    "450",
+    "500",
+    "550"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "7dd2fe81f77cbd684603e8dfca95b78d52bbbb1d27d8e7d9d3f8a7ad348015f6"
+  },
+  {
+   "question_number": 37,
+   "section": "numerical_ability",
+   "stem_text": "If 66.66% of the males working in hospital C are married and 40% of the females working in hospital C are unmarried. Find the number of married persons working in hospital C.",
+   "options": [
+    "580",
+    "470",
+    "560",
+    "320",
+    "600"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8e159f82b3aa780a4a6fc829ad8eec2989a59dfd777f0228f2556a0fa2a4e4fe"
+  },
+  {
+   "question_number": 38,
+   "section": "numerical_ability",
+   "stem_text": "If 40% , 25% and 33.33% of the males working in hospital A, B and C respectively are doctors and the remaining are nursing officers. Find the number of nursing officers working in hospital A, B and C.",
+   "options": [
+    "840",
+    "720",
+    "820",
+    "800",
+    "760"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "4145db5a65a4bed8f811e8bc19989a67fa7fbe5970b02696693a1391112d6fc9"
+  },
+  {
+   "question_number": 39,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 460 × 15 - 5 × 20 = ?",
+   "options": [
+    "9200",
+    "4600",
+    "1370",
+    "7000",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "54f3d37b4daa31709d36034528e363cc270cbce2a436639a4f4f816ccc9d836e"
+  },
+  {
+   "question_number": 40,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark (?) in the following question? 360 ÷ 18 + 25 × 5 = ? - 5",
+   "options": [
+    "150",
+    "140",
+    "145",
+    "155",
+    "50"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "7f19c716ca2c9f28d4316a06cad2353969db724f91517a0e6a40ea99a9d21aee"
+  },
+  {
+   "question_number": 41,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of question mark? −− √4 81 × 25% of 28 = 7 × ?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "5"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "bd8e1d3fa3c38fe94755f29ccac3e31ed0dc796046b6dbe6b4ff40d2b6b38beb"
+  },
+  {
+   "question_number": 42,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of question mark (?) in the following question? 65 + 77 + 4 5 + 3 = ? 3 6 12 4",
+   "options": [
+    "21",
+    "233/12",
+    "20",
+    "242/12",
+    "243/13"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "9bb729b83f0f785a78d297561bd50371c56da4442af4d969c8cc807be9b51af5"
+  },
+  {
+   "question_number": 43,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of (?) in the following question ?% of 550 + 1340 = 1560",
+   "options": [
+    "40",
+    "45",
+    "30",
+    "35",
+    "50"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "770bf19bdae5d2850f2c5efdf6efa2b4fb425a8ba0e65250580e977bac733618"
+  },
+  {
+   "question_number": 44,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? 2 3 20 – 50 ÷ 10 – ? = 270",
+   "options": [
+    "10",
+    "5",
+    "12",
+    "4",
+    "7"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "7ef33d012e8a6857608a1e25f3c3ac00d6160dcfa0c7bb8e2813373ac493283f"
+  },
+  {
+   "question_number": 45,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark (?) in the following question? 1/5 + 3/16 + 4/5 + 18/32 = ? - 1/4",
+   "options": [
+    "7/4",
+    "3/2",
+    "1",
+    "2",
+    "3/4"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cf31d8979cbc491dfde39e1de25ccbf006c07bda32c33d9965653959cf6dd44c"
+  },
+  {
+   "question_number": 46,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of question mark ‘?’ in the following question? ? 572 ÷ 26 × 15 - (2) = 74",
+   "options": [
+    "6",
+    "8",
+    "4",
+    "10",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "28391286f84514d4fafb318f846d5dbccfe86f3b820255d0a1c4028fdc75c5a5"
+  },
+  {
+   "question_number": 47,
+   "section": "numerical_ability",
+   "stem_text": "What will come in place of the question mark ‘?’ in the following question? 3/7 + 9/14 = ?/98",
+   "options": [
+    "115",
+    "215",
+    "105",
+    "205",
+    "235"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b7fd04aae9e39135efd0eaea86f4cd7087f8404a16e751971193cf4b88dbfb51"
+  },
+  {
+   "question_number": 48,
+   "section": "numerical_ability",
+   "stem_text": "A boat can row a certain km downstream at the speed of 24 kmph and while returning upstream the speed of the boat is reduced by 33.33% and the total time taken to cover the x km upstream and downstream is 25/3 hours. Find the value of x.",
+   "options": [
+    "86 km",
+    "78 km",
+    "80 km",
+    "76 km",
+    "64 km"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8b0886338ee40b781b2f9fe0203fde38709e87e5578e513d0e11767390029168"
+  },
+  {
+   "question_number": 49,
+   "section": "numerical_ability",
+   "stem_text": "The age of father to mother is in the ratio 5: 4. And the age of the son is equal to the age of the father after 25 years.difference between the age of the mother and the son is 19. Find the age of the son after 10 years.",
+   "options": [
+    "24 years",
+    "22 years",
+    "15 years",
+    "16 years",
+    "20 years"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "d53467913fe1e33ed9e4b5f134ee2aa4597928393d123a5215bfbbeceaa99794"
+  },
+  {
+   "question_number": 50,
+   "section": "numerical_ability",
+   "stem_text": "A and B started a business by investing Rs. 10000 and Rs. 12000. A got 10% of the annual profit amount for managing the business and the remaining profit amount is shared among them. If the annual profit share of B is Rs. 86400, Find the profit share of A including the cost of business management.",
+   "options": [
+    "Rs.78600",
+    "Rs.56800",
+    "Rs.67800",
+    "Rs.89600",
+    "Rs.78500"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "cc2ee6b641171b1c934ad1dbf1e96192f8561f0434baa8046726216bd4182f85"
+  },
+  {
+   "question_number": 51,
+   "section": "numerical_ability",
+   "stem_text": "If the difference between compound interest and simple interest on a sum of Rs. X at the rate of 35% for 2 years is 156.8, then find compound interest on the same sum at 15% rate of interest compounded annually for 2 years?",
+   "options": [
+    "456.8",
+    "432.8",
+    "412.8",
+    "378.9",
+    "689.6"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "996b8d1a7dbfe6f96a4b2b960d42ad6b7155198bbade8448a8ac5c2ed1b18a85"
+  },
+  {
+   "question_number": 52,
+   "section": "numerical_ability",
+   "stem_text": "Two containers A and B have an equal capacity of 51 liters of a mixture of juice and water in the ratio of 2:1 and 9:8 respectively. Containers A and B are mixed in container C which already has 8 liters of water in it. Find the percentage of water in container C.",
+   "options": [
+    "52 (5/4)%",
+    "56 (8/9)%",
+    "44 (6/11)%",
+    "32 (5/6)%",
+    "23 (7/8)%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "13135baf26c056a28dc8af11b8aec9a35fe0960e38f01dea654d8dfc51c5a2c6"
+  },
+  {
+   "question_number": 53,
+   "section": "numerical_ability",
+   "stem_text": "Two trains running in opposite directions cross a man standing on the platform in 27 seconds and 17 seconds respectively and they cross each other in 23 seconds. The ratio of their lengths is?",
+   "options": [
+    "1 : 3",
+    "3 : 2",
+    "3 : 4",
+    "3 : 1",
+    "None of these"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "d8a670dec85ae886491b4ac9b0b79c9cd34522245ea802dd940bdfdf79252a34"
+  },
+  {
+   "question_number": 54,
+   "section": "numerical_ability",
+   "stem_text": "A and B can fill a cistern in 24 min and 30 min respectively and a whole C can empty it in 45 minutes. If A and B be kept open alternatively for one minute each, and C is open throughout when A and B is kept open. how much time will it take to be filled?",
+   "options": [
+    "651 min 4",
+    "331 min 4",
+    "321 min 4",
+    "641 min 4",
+    "None of these"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "73d465873fd691d17f9fc7e97e8ab6790f0ccebb76200480bbc3b7e7f9f05a25"
+  },
+  {
+   "question_number": 55,
+   "section": "numerical_ability",
+   "stem_text": "The ratio between the number of purse and clutches is 4 : 9. The price of a clutch is Rs. 800 and price of a purse is 3/4 of the price of the clutch. Find the ratio of the total amount collected from the purse and clutches if all are sold out.",
+   "options": [
+    "3 : 4",
+    "1 : 3",
+    "3 : 1",
+    "1 : 2",
+    "3 : 2"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "60a2f7ff0d6aeed0824ec859650ef774c58c6831e419a1f91f962b00983ddbcd"
+  },
+  {
+   "question_number": 56,
+   "section": "numerical_ability",
+   "stem_text": "The dimensions of a rectangle are 24 cm and 16 cm. If the circumference of the circle is 110% of the perimeter of rectangle, then what will be the area of the circle?",
+   "options": [
+    "2 550 cm",
+    "2 792 cm",
+    "2 616 cm",
+    "2 921 cm",
+    "2 587 cm"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "12fadca8c75b213fa3c9055c1fd297e6644a8377fa99e5c377bd20469a17140e"
+  },
+  {
+   "question_number": 57,
+   "section": "numerical_ability",
+   "stem_text": "Average age of a group of 10 students is 12 years. If 5 new students join them, then the average age of the group increases by 1 years. The average age of the new students is",
+   "options": [
+    "13 years",
+    "15 years",
+    "16 years",
+    "18 years",
+    "17 years"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "821be27a6c38db96c08dd6dec60ccdbc38f10266486f4932671861fd8dc12bf1"
+  },
+  {
+   "question_number": 58,
+   "section": "numerical_ability",
+   "stem_text": "A shopkeeper gives a cash discount of 20% to make profit of 20% on a article after selling it.for his premium customer gives 4 more articles for free after purchase one dozen articles.How much percent above cost prize he must mark his articles?",
+   "options": [
+    "90%",
+    "95%",
+    "80%",
+    "60%",
+    "100%"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "34e22afbe0ed960fc88b7a7105f01452f985589657e8564482a317c7732d35ca"
+  },
+  {
+   "question_number": 59,
+   "section": "numerical_ability",
+   "stem_text": "Vikas’s monthly salary is 60,000. He spends 60% of the income and saves rest for the whole year to buy a second hand car which value exact same. He saved till the end of the year. If the current price of car he was planning to buy is 1,60,000. Find the percentage money he saved in the deal?",
+   "options": [
+    "18%",
+    "15.5%",
+    "44.44%",
+    "16%",
+    "75%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "b6f80148494e14f71fbad1986c5ae5ca098ad8bfe7c67495cfa22540bae661cd"
+  },
+  {
+   "question_number": 60,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark \"?\" in the following number series? 17, 19, 22, 27, 34, 45, ?",
+   "options": [
+    "66",
+    "68",
+    "58",
+    "56",
+    "60"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "0dc21e2f00a52c3aa751b45c3f1394842449d995d6d3968e1c69c59f33f39072"
+  },
+  {
+   "question_number": 61,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 137, 146, 159, 176, ?, 222.",
+   "options": [
+    "200",
+    "198",
+    "195",
+    "197",
+    "202"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "3d7e66ca700d8937b02d3f310e0a868c33a939c6208a4bdf002d6640f22f2792"
+  },
+  {
+   "question_number": 62,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 10, 11, 7, 34, 18, ?",
+   "options": [
+    "140",
+    "143",
+    "142",
+    "145",
+    "None of these"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "43e76038ce8b13e9ec16b41a950f80e8613303c5e5377ab8e71cfa8100e2c57d"
+  },
+  {
+   "question_number": 63,
+   "section": "numerical_ability",
+   "stem_text": "What should come in place of the question mark '?' in the following number series? 15, 14, 26, 75, ?",
+   "options": [
+    "256",
+    "316",
+    "244",
+    "296",
+    "274"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "888f08145e1f119f49d81d8d0341fe4dbf9e5ac43ece4fac4fbbb7fe2b372ea2"
+  },
+  {
+   "question_number": 64,
+   "section": "numerical_ability",
+   "stem_text": "What should come in the place of (?) in the given series? 80, 80, 160, 480, 1920, 9600, ?",
+   "options": [
+    "57600",
+    "61600",
+    "58960",
+    "59600",
+    "60600"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "009d4faa3debaed4b18a134a7e4f8ad4da6b55e916b6b16eca98ae1584b9fa6f"
+  },
+  {
+   "question_number": 65,
+   "section": "numerical_ability",
+   "stem_text": "Directions: The given table below shows the number of literate and illiterate in five different cities A, B, C, D and E. Cities Number of literate Number of Illiterate A 500 650 B 450 300 C 550 350 D 700 600 E 520 720 If 1/3rd and 4/13 of the number literate from city B and E respectively are males, the total number of males (Literate + Illiterate) in city B and E are 450. Find the total number of Illiterate males in city B and E.",
+   "options": [
+    "110",
+    "150",
+    "140",
+    "120",
+    "160"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "8bb6e1c584c62e93b5766a1a07baf2d1d64612e2df9c555dd7626c84d63516c3"
+  },
+  {
+   "question_number": 66,
+   "section": "numerical_ability",
+   "stem_text": "If 40% and 30% of the literate from city C and D respectively are unemployed, 3/7 th and 1/4 th of the illiterates from city C and D are unemployed.Find the total number of unemployed persons from city C and D.",
+   "options": [
+    "720",
+    "750",
+    "730",
+    "710",
+    "740"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "9ccdaea54bc1ee39003030a67d97841210446d5257df3a74fb4fa89301f02bd7"
+  },
+  {
+   "question_number": 67,
+   "section": "numerical_ability",
+   "stem_text": "Find the ratio between the number of literates from A and B to the number of Illiterates from A and C.",
+   "options": [
+    "13: 19",
+    "25: 31",
+    "19: 20",
+    "21: 23",
+    "31: 21"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "dc71a60a4a3f9f3e2cbbdd0ea297053849cbcf7fa109cf31cc83bd18e2b76613"
+  },
+  {
+   "question_number": 68,
+   "section": "numerical_ability",
+   "stem_text": "If 25%, 20% and 40% of the literate from city A, B and C is approximately what percentage of the number of illiterates in city E.",
+   "options": [
+    "62%",
+    "72%",
+    "60%",
+    "56%",
+    "64%"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "566dbde8c79011ff3e3842f6bd84372906f909902f304e47c37fce683120a8b9"
+  },
+  {
+   "question_number": 69,
+   "section": "numerical_ability",
+   "stem_text": "Find the difference between the average number of literates and the average number of illiterates from all the cities.",
+   "options": [
+    "32",
+    "24",
+    "20",
+    "25",
+    "28"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "18962cf42956c6d964370690da2b87c5082973a769e28ebfeef5fc4025b6262d"
+  },
+  {
+   "question_number": 70,
+   "section": "numerical_ability",
+   "stem_text": "What will come in the place of the question mark ‘?’ in the following question? ? = 91 + 61 + 21 2 6 6 6",
+   "options": [
+    "35",
+    "25",
+    "32",
+    "30",
+    "28"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "213c134a912c9b72af87837c15578376c426fb3dedaecbe87b906d5a7cfd02d1"
+  },
+  {
+   "question_number": 71,
+   "section": "english",
+   "stem_text": "Read the passage and answer the following questions. Mike and Morris lived in the same village. While Morris owned the largest jewelry shop in the village, Mike was a poor farmer. Both had large families with many sons, daughters-in-law and grandchildren. One fine day, Mike, tired of not being able to feed his family, decided to leave the village and move to the city where he was certain to earn enough to feed everyone. Along with his family, he left the village for the city. At night, they stopped under a large tree. There was a stream running nearby where they could freshen up themselves. He told his sons to clear the area below the tree. They didn’t know that in the branches of the tree, there was a thief hiding. He watched as Mike’s family worked together and also noticed that they had nothing to cook. Mike’s wife also thought the same and asked her husband ” Everything is ready but what shall we eat?”. Mike raised his hands to heaven and said ” Don’t worry. He is watching all of this from above. He will help us.” The thief got worried as he had seen that the family was large and worked well together. Taking advantage of the fact that they did not know he was hiding in the branches, he decided to make a quick escape. But, he left behind the bundle of stolen jewels and money which dropped into Mike’s lap. Mike opened it and jumped with joy when he saw the contents. The family gathered all their belongings and returned to the village. There was great excitement when they told everyone how they got rich. Morris thought that the tree was miraculous and this was a nice and quick way to earn some money. He ordered his family to pack some clothes and they set off as if on a journey. They also stopped under the same tree and Morris started commanding everyone as Mike had done. Being a rich family, they were used to having servants all around. So, the one who went to the river to fetch water enjoyed a nice bath. The one who went to get wood for fire went off to sleep. Morris’s wife said ” Everything is ready but what shall we eat?” Morris raised his hands and said, ”Don’t worry. He is watching all of this from above. He will help us.” As soon as he finished saying, the thief jumped down from the tree with a knife in hand. Seeing him, everyone started running around to save their lives. The thief stole everything they had and Morris and his family had to return to the village empty-handed, having lost all their valuables that they had taken with them. What does 'belongings' mean in the context of the passage?",
+   "options": [
+    "make (something) using creative skills",
+    "the state of having, owning, or controlling something.",
+    "an affinity for a place or situation.",
+    "something that is owned or possessed.",
+    "invent (something) in order to deceive."
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "37515a2f8a2ad2839ac833ba2df7b40b8a713026fbeaaef2bc67c519ffe71072"
+  },
+  {
+   "question_number": 72,
+   "section": "english",
+   "stem_text": "Why did Mike and his family decide to rest under the thief’s tree ?",
+   "options": [
+    "Being a large family, they knew that they could easily defeat the thief",
+    "They wanted to live near the stream.",
+    "It was a convenient spot for taking a halt at night",
+    "That was the only large tree that could shelter their large family",
+    "They wanted to live under the tree instead of the city."
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2954250c8cd01f799563670e378a15cf621d29b0eca252acfaf32cc55a097aac"
+  },
+  {
+   "question_number": 73,
+   "section": "english",
+   "stem_text": "What does 'commanding' mean in the context of the passage?",
+   "options": [
+    "giving an authoritative order.",
+    "ready to conform to the authority or will of others",
+    "willing to fit in with someone's wishes or needs.",
+    "involving mutual assistance in working towards a common goal.",
+    "owned and run jointly by its members"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4aa9795062e9134bbb6a1088aa8eb104bd8568c7d44015f3bdea3a4824beeab2"
+  },
+  {
+   "question_number": 74,
+   "section": "english",
+   "stem_text": "Which of the following best describes Morris?",
+   "options": [
+    "He was a rich businessman",
+    "He bullied his wife",
+    "He paid his servants well",
+    "He was greedy despite being very rich",
+    "He had a small family"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "eb18b1b0371a2fcfbac08341eabe3ebccc0133e5a6f9796ef4255fbda948e9d5"
+  },
+  {
+   "question_number": 75,
+   "section": "english",
+   "stem_text": "How did the fellow villagers react to Mike getting rich overnight?",
+   "options": [
+    "They were jealous of him",
+    "They were very excited",
+    "They envied him",
+    "They followed his example",
+    "They were angry"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "8a0dd3a395a679470c9b384516125c57c3b4109af81845ad6b72d30d6dd754eb"
+  },
+  {
+   "question_number": 76,
+   "section": "english",
+   "stem_text": "Why did the thief return to the tree?",
+   "options": [
+    "To wait for Mike to return",
+    "To set up a trap",
+    "To wait for Morris’s family",
+    "To spy on the family",
+    "Not mentioned in the passage"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "68826b8df1325d7fee8cdcd2a4eb67958ed21a334dfa18530be390bedc99f417"
+  },
+  {
+   "question_number": 77,
+   "section": "english",
+   "stem_text": "What does 'miraculous' mean in the context of the passage?",
+   "options": [
+    "not able to be solved",
+    "an unfortunate condition or event",
+    "of the nature of a miracle or having the power to work miracles.",
+    "unable to be explained or accounted for",
+    "beautiful or delightful in a way that seems removed from everyday life"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "a4c0f70505f1cd65385fcd4fd2bb2014774ea7a8ae46380ae1ad40e27492982a"
+  },
+  {
+   "question_number": 78,
+   "section": "english",
+   "stem_text": "Direction: In the following question a sentence is given with five words marked as (A), (B), (C), (D) and (E). These words may not be placed in their correct order, five options with different arrangements of these words are provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (E) as your answer. You might ask how a bizarre(A) oasis of quaint Americana came(B) to include a huge surface parking lot that leaves(C) a landmarked(D) no-man’s land.",
+   "options": [
+    "A-C",
+    "C-D",
+    "A-B",
+    "A-D",
+    "No rearrangement"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "1d56a8abe60fbe9c6e2b480d5e26a53a08e9d82cc10ee7ea2f06096f30781abd"
+  },
+  {
+   "question_number": 79,
+   "section": "english",
+   "stem_text": "Direction: In the following question a sentence is given with five words marked as (A), (B), (C), (D). These words may not be placed in their correct order, five options with different arrangements of these words are provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (E) as your answer. It would ensure(A) with local government authorities(B) and healthcare providers to collaborate(C) its service partners(D) are fully vaccinated over the next few months.",
+   "options": [
+    "B-C",
+    "A-C",
+    "B-D",
+    "A-D",
+    "No rearrangement"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "dc75437716ad83a224fc9577768866feb5edac9a25c357c701383fc23f1759fc"
+  },
+  {
+   "question_number": 80,
+   "section": "english",
+   "stem_text": "In the following question a sentence is given with five words marked as (A), (B), (C), (D). These words may or may not be placed in their correct order five options with different arrangements of these words are provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (E) as your answer. This education (A) has changed many lives, its impact (B) is on every sector (C), mostly on pandemic(D).",
+   "options": [
+    "A-D",
+    "B-C",
+    "C-D",
+    "D-B",
+    "No improvement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "49e82e90d4af51478f4ccbe0e48ea2deb4efcfc46c9cf2ed8f085225c71fd00f"
+  },
+  {
+   "question_number": 81,
+   "section": "english",
+   "stem_text": "Direction: In the following question a sentence is given with five words marked as (A), (B), (C), (D) and (E). These words may not be placed in their correct order, five options with different arrangements of these words are provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (E) as your answer. Three Australian players have opted out(A) of the home(B), worried(C) that they might not be able to return League(D) if the surge worsens in India.",
+   "options": [
+    "A-C",
+    "B-C",
+    "C-D",
+    "B-D",
+    "No rearrangement"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f0192c696fb3a9756c1e36d42201419b6b589581da2bfb79f8c3b4d1e1949091"
+  },
+  {
+   "question_number": 82,
+   "section": "english",
+   "stem_text": "Direction: In the following question a sentence is given with five words marked as (A), (B), (C), (D) and (E). These words may not be placed in their correct order, five options with different arrangements of these words are provided. Mark the option with the correct arrangement as the answer. If no rearrangement is required, mark option (E) as your answer. The US reference dictionary Merriam-Webster will change its suggestion(A) of the word racism at the definition(B) of a young black(C) woman, who wanted it to better reflect the oppression of people of colour(D).",
+   "options": [
+    "A-B",
+    "C-D",
+    "A-D",
+    "B-C",
+    "No rearrangement"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "4a8e564ed1e4f6e5de9d3e4b2212381715d7cea0a3c5af9077a637d1ab3eb34f"
+  },
+  {
+   "question_number": 83,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. India has a key __________ to play in the hyper-connected world.",
+   "options": [
+    "chain",
+    "place",
+    "text",
+    "finish",
+    "role"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "705ab9ee14a1ec8c1c5122735d88acce9a4bfcf990abfddb5a516c1e46a07967"
+  },
+  {
+   "question_number": 84,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. It’s been a year since I joined college, but I haven’t once _________ into my classroom.",
+   "options": [
+    "rejected",
+    "stepped",
+    "ejected",
+    "wrapped",
+    "omitted"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "42db7d5193559d027cdaf4d42efe35f00a49203d59950cd613ea63f91e9a0fa4"
+  },
+  {
+   "question_number": 85,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. The showers can be _________ at their peak tonight however their glow might be dim.",
+   "options": [
+    "believe",
+    "ignore",
+    "seen",
+    "neglect",
+    "disagree"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "16f34ba120c5d58e8dfeabd2113edf0115b5f85b460b7c6a27af9cfe21a70a90"
+  },
+  {
+   "question_number": 86,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. The German sports brand Puma ________ that it has signed a long-term partnership deal with two upcoming players, Washington Sundar and Devdutt Padikkal.",
+   "options": [
+    "announced",
+    "realized",
+    "refused",
+    "amended",
+    "aimed"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "63fc6317624f43186f65c6600bd97ccec718bcb5cd406c0014c4892428087fcf"
+  },
+  {
+   "question_number": 87,
+   "section": "english",
+   "stem_text": "The given question has one blank indicating that something has been omitted. Choose the word for the given options that could fit in the blank correctly. The tourism data _______ that Indian's are amongst the biggest spenders while on holidays.",
+   "options": [
+    "hide",
+    "reveal",
+    "cover",
+    "secret",
+    "conceal"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "9ff0fcc27a319d2d39b3b451d77117aa858a1de761f93598f29656f09a778958"
+  },
+  {
+   "question_number": 88,
+   "section": "english",
+   "stem_text": "Directions: Read the sentence given below to find out if it contains an error. The error, if any, will be in one part of the sentence. If the sentence is error-free, select No error or option 5. Ignore errors of punctuation if any. The diet (A)/ should not (B)/ contain (C)/ some bread. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "2b35a2cdc662ee41741ef2418bbac96f55db426d8c23b2501a87e8856991886a"
+  },
+  {
+   "question_number": 89,
+   "section": "english",
+   "stem_text": "Directions: Read the sentence given below to find out if it contains an error. The error, if any, will be in one part of the sentence. If the sentence is error-free, select No error or option 5. Ignore errors of punctuation if any. Nobody have ever (A)/ solved the (B)/ mystery of (C)/ the Lost Dutchman. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "042e9090e39ec1edaf143ab8cdf3f0a8581446dc33da5915155b8e2f272c9463"
+  },
+  {
+   "question_number": 90,
+   "section": "english",
+   "stem_text": "Directions: In this question, a sentence has been divided into five parts (A), (B), (C), (D), and (E). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. If there is no error, the answer is 'No error'. Ignore the error of punctuation if any. The king was prepared (A)/ to levy war upon (B)/ his neighbour after their (C)/ quarrel above the land. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "d7a87d46d53baec8fa2c495f7f7df24df5f332118d4dbf76d973ca208cc19e61"
+  },
+  {
+   "question_number": 91,
+   "section": "english",
+   "stem_text": "Directions: In this question, a sentence has been divided into five parts (A), (B), (C), (D), and (E). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. If there is no error, the answer is 'No error'. Ignore the error of punctuation if any. Many restaurants (A)/ serve complimentary (B)/ mocktails with (C)/ the meal. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "af0795d2d0ebc8226bb2b4cdd0a91010a4a621a9c045a14ecaa391b8165702d5"
+  },
+  {
+   "question_number": 92,
+   "section": "english",
+   "stem_text": "Directions: In this question, a sentence has been divided into five parts (A), (B), (C), (D), and (E). Read the sentence to find out whether there is any grammatical error in it. The error if any, will be in one part of the sentence. If there is no error, the answer is 'No error'. Ignore the error of punctuation if any. Optimists always (A)/ picture themselves (B)/ accomplishing (C)/ there goals. (D)/ No error (E)",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "9f082369695779cf8cdc96901c5d4eb093edb92bed46f5e65d30ed7022ac5bd2"
+  },
+  {
+   "question_number": 93,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. It is widespread all over the world. B. Children should be sent to schools, not to work. C. Several programs have been undertaken both at the national and international levels to check and stop child labor. D. Child labor is the worst form of child exploitation. E. Illiteracy of the parents, large families, need for additional income and poverty are the chief causes of the exploitation of child labor. Which of the following should be the FIRST sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 4,
+   "correct_letter": "D",
+   "hash": "f164531c47fa5987a6fe54a23379386507fdfc631a8e7018e653c4968dd904a8"
+  },
+  {
+   "question_number": 94,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. It is widespread all over the world. B. Children should be sent to schools, not to work. C. Several programs have been undertaken both at the national and international levels to check and stop child labor. D. Child labor is the worst form of child exploitation. E. Illiteracy of the parents, large families, need for additional income and poverty are the chief causes of the exploitation of child labor.\n\nWhich of the following should be the SECOND sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "1d647eaef2cb51027e580064f35e758fcb9c2691d180cbbf33814d567741b7c9"
+  },
+  {
+   "question_number": 95,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. It is widespread all over the world. B. Children should be sent to schools, not to work. C. Several programs have been undertaken both at the national and international levels to check and stop child labor. D. Child labor is the worst form of child exploitation. E. Illiteracy of the parents, large families, need for additional income and poverty are the chief causes of the exploitation of child labor.\n\nWhich of the following should be the THIRD sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 5,
+   "correct_letter": "E",
+   "hash": "b90937293417e0965a578da0a1b1c018120185bbc08b1162b9d49c1430c56929"
+  },
+  {
+   "question_number": 96,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. It is widespread all over the world. B. Children should be sent to schools, not to work. C. Several programs have been undertaken both at the national and international levels to check and stop child labor. D. Child labor is the worst form of child exploitation. E. Illiteracy of the parents, large families, need for additional income and poverty are the chief causes of the exploitation of child labor.\n\nWhich of the following should be the FOURTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 2,
+   "correct_letter": "B",
+   "hash": "a0a7ab1b19056b44df95371e3ab56128dcf2069d1db3cb9ece4c2c3505251910"
+  },
+  {
+   "question_number": 97,
+   "section": "english",
+   "stem_text": "Directions: Five sentences A, B, C, D, and E are given below, you need to rearrange the sentences so that the five sentences can together form a meaningful paragraph. A. It is widespread all over the world. B. Children should be sent to schools, not to work. C. Several programs have been undertaken both at the national and international levels to check and stop child labor. D. Child labor is the worst form of child exploitation. E. Illiteracy of the parents, large families, need for additional income and poverty are the chief causes of the exploitation of child labor.\n\nWhich of the following should be the FIFTH sentence after rearrangement?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2b7ef4125f94eb90dbfd40859077fa71c35cadde88d94280707d95cfd8ba12a1"
+  },
+  {
+   "question_number": 98,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. He ran for two kilometres, which are not a long distance.",
+   "options": [
+    "were not a",
+    "been not a",
+    "is not a",
+    "being not a",
+    "No correction required"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "2ad1d3538f91718be5db963268d1770fad06d1123193d05078ea36636b4ba166"
+  },
+  {
+   "question_number": 99,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. The choreographer as well as his entire dance crew were rewarded cash for their outstanding performance.",
+   "options": [
+    "was rewarded",
+    "is rewarded",
+    "are rewarded",
+    "had been rewarded",
+    "No correction required"
+   ],
+   "correct_index": 1,
+   "correct_letter": "A",
+   "hash": "beaf5afbeba95fa47b5263e08ab5ae9c6968195f2e9436940ff6b5a4c3971e49"
+  },
+  {
+   "question_number": 100,
+   "section": "english",
+   "stem_text": "Which of the phrases given in the options should replace the word phrase that is underlined in the sentence to make it grammatically correct? If the sentence is correct as it is and no correction is required, select 'No correction required' as the answer. For the sake of world peace, it is important that the countries don't fight with each other.",
+   "options": [
+    "none",
+    "either",
+    "one another",
+    "anyone",
+    "No correction required"
+   ],
+   "correct_index": 3,
+   "correct_letter": "C",
+   "hash": "33b4bc1be980c275c33e5c8d9354b445f498b9c3a4f512a740cbd2e9921a17f8"
+  }
+ ],
+ "section_confidence": 0.896,
+ "section_order": [
+  "reasoning",
+  "numerical_ability",
+  "english"
+ ]
+}
