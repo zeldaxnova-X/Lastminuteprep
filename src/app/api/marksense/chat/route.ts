@@ -14,7 +14,7 @@ const MAX_LEN = 1000; // per-message char cap
  * longitudinal profile. Strictly scoped to exam preparation (doubts, study
  * plans, scoring strategy); it declines anything off-topic. Mentor-gated.
  */
-function systemPrompt(signals: LearnerSignals | null, profile: LearnerProfile | null): string {
+function systemPrompt(signals: LearnerSignals | null, profile: LearnerProfile | null, examName: string, subjects: string): string {
   const ctx = signals
     ? `The student's profile (use it to personalise, cite only these numbers):
 - Mocks analysed: ${signals.attemptsAnalyzed}, net ${signals.score.firstNet} -> ${signals.score.latestNet} (best ${signals.score.bestNet}, trend ${signals.score.trendPerAttempt}/mock)
@@ -23,13 +23,13 @@ function systemPrompt(signals: LearnerSignals | null, profile: LearnerProfile | 
 - Strong topics: ${signals.topicStrengths.map((t) => `${t.topic} ${t.accuracyPct}%`).join(", ") || "none yet"}
 - Tendencies: ${signals.tendencies.calibration}, ${signals.tendencies.pacing}, avg ${signals.tendencies.avgMarksLostToBadGuessing} marks lost to bad guessing
 - Persona: ${profile?.persona ?? "n/a"}`
-    : "No mock history yet; give general SSC CGL guidance and encourage a first mock.";
+    : `No mock history yet; give general ${examName} guidance and encourage a first mock.`;
 
-  return `You are the MarksenseAI study coach for an SSC CGL aspirant on the LastMilePrep platform.
+  return `You are the MarksenseAI study coach for a ${examName} aspirant on the LastMilePrep platform.
 
 ${ctx}
 
-Scope, STRICT: only help with exam preparation, studying, this student's performance, study plans for their next exam, concept doubts (Quant, Reasoning, English, General Awareness), and strategies to score more marks. If the user asks about anything outside studying and exam prep (news, coding, relationships, general chit-chat, entertainment, anything unrelated), reply with exactly one short sentence declining and steering back to their prep, and nothing else.
+Scope, STRICT: only help with exam preparation, studying, this student's performance, study plans for their next exam, concept doubts (${subjects}), and strategies to score more marks. If the user asks about anything outside studying and exam prep (news, coding, relationships, general chit-chat, entertainment, anything unrelated), reply with exactly one short sentence declining and steering back to their prep, and nothing else.
 
 Style:
 - Warm, direct, encouraging but honest. Second person.
@@ -68,7 +68,10 @@ export async function POST(req: NextRequest) {
   }
 
   // Ground the coach in the user's stored profile for THIS exam (per-exam rows).
-  const examCode = getExamEntry(new URL(req.url).searchParams.get("exam")).code;
+  const examEntry = getExamEntry(new URL(req.url).searchParams.get("exam"));
+  const examCode = examEntry.code;
+  const examName = examEntry.builtinConfig.examName;
+  const subjects = examEntry.builtinConfig.sections.map((s) => s.name).join(", ");
   const db = serviceClient();
   const { data: row } = await db
     .from("learner_profiles")
@@ -78,7 +81,7 @@ export async function POST(req: NextRequest) {
     .maybeSingle();
 
   const messages: ChatMessage[] = [
-    { role: "system", content: systemPrompt((row?.signals as LearnerSignals) ?? null, (row?.profile as LearnerProfile) ?? null) },
+    { role: "system", content: systemPrompt((row?.signals as LearnerSignals) ?? null, (row?.profile as LearnerProfile) ?? null, examName, subjects) },
     ...history,
   ];
 

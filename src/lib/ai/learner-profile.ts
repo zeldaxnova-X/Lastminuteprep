@@ -12,12 +12,11 @@ import { deepseekJSON, sanitizeProse } from "./deepseek";
 import type { LearnerSignals } from "./learner-signals";
 
 /** The four canonical SSC CGL subjects a drill can target (or null). */
-export type DrillSubject =
-  | "General Intelligence & Reasoning"
-  | "General Awareness"
-  | "Quantitative Aptitude"
-  | "English Comprehension"
-  | null;
+/** A subject name the UI can deep-link a drill to. Exam-specific (SSC uses its
+ *  four subjects; SBI/IBPS use English Language / Numerical Ability / Reasoning
+ *  Ability), so this is a plain subject string validated at runtime against the
+ *  exam's own section names. */
+export type DrillSubject = string | null;
 
 export interface Weakpoint {
   area: string; // a topic/section name from the signals, or a strategy label
@@ -38,14 +37,31 @@ export interface LearnerProfile {
   projectedGain: number; // realistic extra marks reachable next, from the signals
 }
 
-const SUBJECTS: ReadonlyArray<Exclude<DrillSubject, null>> = [
+/** SSC CGL subjects — the default when no exam is supplied (back-compat). */
+const SSC_SUBJECTS: ReadonlyArray<string> = [
   "General Intelligence & Reasoning",
   "General Awareness",
   "Quantitative Aptitude",
   "English Comprehension",
 ];
 
-export const PROFILE_SYSTEM_PROMPT = `You are MarksenseAI, a longitudinal SSC CGL performance analyst. You are given a JSON of deterministic signals aggregated across ALL of one student's mock attempts. Build a durable learner profile.
+/** Per-exam grounding for the profile prompts. */
+export interface ProfileExam {
+  examName: string;
+  subjects: string[];
+  marksCorrect: number;
+  marksWrong: number;
+}
+const SSC_EXAM: ProfileExam = {
+  examName: "SSC CGL Tier 1",
+  subjects: [...SSC_SUBJECTS],
+  marksCorrect: 2,
+  marksWrong: -0.5,
+};
+
+export function profileSystemPrompt(exam: ProfileExam = SSC_EXAM): string {
+  const subjectEnum = exam.subjects.map((s) => `"${s}"`).join(", ");
+  return `You are MarksenseAI, a longitudinal ${exam.examName} performance analyst. You are given a JSON of deterministic signals aggregated across ALL of one student's mock attempts. Build a durable learner profile.
 
 Field meanings (read carefully, do not conflate):
 - "attemptsAnalyzed" and "appearedInAttempts" count MOCKS (whole tests).
@@ -75,19 +91,21 @@ Output ONLY a JSON object with this exact shape:
       "severity": "critical" | "high" | "moderate",
       "evidence": string,          // cite exact figures from the signals
       "drill": string,             // one concrete action
-      "drillSubject": string|null  // EXACTLY one of: "General Intelligence & Reasoning", "General Awareness", "Quantitative Aptitude", "English Comprehension", or null
+      "drillSubject": string|null  // EXACTLY one of: ${subjectEnum}, or null
     }
   ],
   "focusPlan": string[],           // exactly 3 ordered actions
   "projectedGain": number          // realistic extra net marks
 }`;
+}
 
-export function buildProfileUserMessage(signals: LearnerSignals): string {
-  return `Longitudinal signals across ${signals.attemptsAnalyzed} completed SSC CGL Tier 1 mocks (marking +2 correct / -0.5 wrong / 0 skipped). Build the learner profile as specified.\n\n\`\`\`json\n${JSON.stringify(signals, null, 2)}\n\`\`\``;
+export function buildProfileUserMessage(signals: LearnerSignals, exam: ProfileExam = SSC_EXAM): string {
+  const wrong = Math.abs(exam.marksWrong);
+  return `Longitudinal signals across ${signals.attemptsAnalyzed} completed ${exam.examName} mocks (marking +${exam.marksCorrect} correct / -${wrong} wrong / 0 skipped). Build the learner profile as specified.\n\n\`\`\`json\n${JSON.stringify(signals, null, 2)}\n\`\`\``;
 }
 
 /** Coerce/validate the model output into a safe LearnerProfile, or null. */
-function validate(raw: unknown): LearnerProfile | null {
+function validate(raw: unknown, validSubjects: ReadonlyArray<string> = SSC_SUBJECTS): LearnerProfile | null {
   if (!raw || typeof raw !== "object") return null;
   const o = raw as Record<string, unknown>;
   const asStr = (v: unknown): string => (typeof v === "string" ? v : "");
@@ -108,8 +126,8 @@ function validate(raw: unknown): LearnerProfile | null {
         r.severity === "critical" || r.severity === "moderate"
           ? r.severity
           : "high";
-      const ds = asStr(r.drillSubject) as Exclude<DrillSubject, null>;
-      const drillSubject: DrillSubject = SUBJECTS.includes(ds) ? ds : null;
+      const ds = asStr(r.drillSubject);
+      const drillSubject: DrillSubject = validSubjects.includes(ds) ? ds : null;
       const area = prose(r.area);
       if (!area) return null;
       return {
@@ -145,16 +163,17 @@ export interface ProfileResult {
 
 /** Generate the structured profile from longitudinal signals. */
 export async function generateLearnerProfile(
-  signals: LearnerSignals
+  signals: LearnerSignals,
+  exam: ProfileExam = SSC_EXAM
 ): Promise<ProfileResult> {
   const { data, degradedReason } = await deepseekJSON<unknown>({
-    system: PROFILE_SYSTEM_PROMPT,
-    user: buildProfileUserMessage(signals),
+    system: profileSystemPrompt(exam),
+    user: buildProfileUserMessage(signals, exam),
     maxTokens: 2200,
     temperature: 0.4,
   });
   if (!data) return { profile: null, degradedReason };
-  const profile = validate(data);
+  const profile = validate(data, exam.subjects);
   return profile
     ? { profile }
     : { profile: null, degradedReason: "bad_shape" };

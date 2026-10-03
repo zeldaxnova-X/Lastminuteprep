@@ -15,9 +15,9 @@ import {
   signalsHash,
   type LearnerSignals,
 } from "./learner-signals";
-import { generateLearnerProfile, type LearnerProfile } from "./learner-profile";
+import { generateLearnerProfile, type LearnerProfile, type ProfileExam } from "./learner-profile";
 import { aiEnabled } from "./deepseek";
-import { DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
+import { DEFAULT_EXAM_CODE, getExamEntry } from "@/lib/exam/registry";
 
 export interface LearnerProfileRow {
   signals: LearnerSignals | null;
@@ -135,7 +135,16 @@ export async function buildLearnerProfile(
   }
 
   // Regenerate the AI profile (or store signals-only if the provider is off).
-  const { profile } = await generateLearnerProfile(signals);
+  // Ground it in THIS exam's name, subjects and marking so the analysis and the
+  // drill-subject enum are correct per exam (not SSC-defaulted).
+  const cfg = getExamEntry(examCode).builtinConfig;
+  const exam: ProfileExam = {
+    examName: cfg.examName,
+    subjects: cfg.sections.map((s) => s.name),
+    marksCorrect: cfg.marksCorrect,
+    marksWrong: cfg.marksWrong,
+  };
+  const { profile } = await generateLearnerProfile(signals, exam);
   const now = new Date().toISOString();
 
   await supabase.from("learner_profiles").upsert(
