@@ -37,6 +37,27 @@ export const QuestionContent: React.FC<QuestionContentProps> = ({
   return (
     <div className={`space-y-3 ${className}`}>
       {blocks.map((block, i) => {
+        // Shared reference material (reading passage / sentences to rearrange /
+        // directions), set apart from the actual question in its own panel so the
+        // ask below reads on its own. Scrolls when a passage is long.
+        if (block.kind === "context" && block.text) {
+          return (
+            <div
+              key={i}
+              className="rounded-xl border border-slate-200 bg-slate-50/80 p-4 dark:border-slate-700 dark:bg-slate-800/40"
+            >
+              {block.label && (
+                <p className="mb-2 select-none text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                  {block.label}
+                </p>
+              )}
+              <div className="max-h-[42vh] overflow-y-auto pr-1 text-[14px] leading-relaxed text-slate-600 dark:text-slate-300">
+                <KaTeXRenderer content={sanitizeQuestionText(block.text)} />
+              </div>
+            </div>
+          );
+        }
+
         if (block.kind === "text" && block.text) {
           return (
             <div key={i} className={textClassName}>

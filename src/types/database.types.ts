@@ -9,8 +9,13 @@
  * options are arrays of these so figures, prose and tables keep their order.
  */
 export interface QuestionContentBlock {
-  kind: "text" | "image" | "table" | "math";
+  /** `context` = shared reference material (a reading passage, a set of sentences
+   *  to rearrange, or a directions preamble) rendered in a distinct panel ABOVE
+   *  the actual question, so the ask reads separately from what it refers to. */
+  kind: "text" | "image" | "table" | "math" | "context";
   text?: string;
+  /** For a `context` block: the panel label, e.g. "Passage" / "Directions". */
+  label?: string;
   /** Stable asset key from the ingestion pipeline. */
   assetId?: string;
   /** Resolvable public image URL (present for kind === "image"). */
