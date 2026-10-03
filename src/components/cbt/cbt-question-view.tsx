@@ -141,7 +141,11 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
 
   const stemBlocks = useStemBlocks(currentQuestion);
   const options = useOptions(currentQuestion);
-  const label = sectionLabel(currentQuestion.section || currentQuestion.subject);
+  // `subject` comes from the exam's validated_questions view already mapped to
+  // that exam's display name (IBPS/SBI "Reasoning Ability", SSC "General
+  // Intelligence & Reasoning"). Prefer it so the per-exam label is correct; fall
+  // back to the slug map only when it's absent.
+  const label = currentQuestion.subject?.trim() || sectionLabel(currentQuestion.section);
 
   // Bookmark is an extension point: local, optimistic, best-effort persistence.
   const [bookmarked, setBookmarked] = React.useState(false);
@@ -396,22 +400,37 @@ export const CBTQuestionView: React.FC<CBTQuestionViewProps> = ({
           </div>
 
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-            <ActionButton
-              onClick={() => saveAndNext(currentQuestion.id)}
-              variant="primary"
-              className="w-full sm:w-auto"
-            >
-              <span>Save &amp; Next</span>
-              <ChevronRight className="h-4 w-4" />
-            </ActionButton>
-            <ActionButton
-              onClick={() => setConfirmLock(true)}
-              variant="ghost"
-              className="w-full sm:w-auto"
-            >
-              <Lock className="h-3.5 w-3.5" />
-              <span>{isLastSection ? "Submit test" : "Submit section"}</span>
-            </ActionButton>
+            {isLastSection && currentQuestionIndex >= secEnd ? (
+              // Very last question of the test: "Save & Next" has nowhere to go —
+              // save the current response and transition straight to submit.
+              <ActionButton
+                onClick={() => { saveAndNext(currentQuestion.id); setConfirmLock(true); }}
+                variant="primary"
+                className="w-full sm:w-auto"
+              >
+                <Lock className="h-3.5 w-3.5" />
+                <span>Submit test</span>
+              </ActionButton>
+            ) : (
+              <>
+                <ActionButton
+                  onClick={() => saveAndNext(currentQuestion.id)}
+                  variant="primary"
+                  className="w-full sm:w-auto"
+                >
+                  <span>Save &amp; Next</span>
+                  <ChevronRight className="h-4 w-4" />
+                </ActionButton>
+                <ActionButton
+                  onClick={() => setConfirmLock(true)}
+                  variant="ghost"
+                  className="w-full sm:w-auto"
+                >
+                  <Lock className="h-3.5 w-3.5" />
+                  <span>{isLastSection ? "Submit test" : "Submit section"}</span>
+                </ActionButton>
+              </>
+            )}
           </div>
         </div>
       </div>

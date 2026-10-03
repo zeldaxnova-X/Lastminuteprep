@@ -3,6 +3,7 @@
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Zap,
   User,
@@ -299,11 +300,16 @@ export default function InstructionsPage() {
     <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col antialiased">
       <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-base sm:text-lg text-gray-900">
-            <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
-              <Zap className="w-3.5 h-3.5 text-white fill-white" />
-            </div>
-            <span className="truncate">Computer Based Test</span>
+          <div className="flex items-center gap-2.5 font-bold text-base sm:text-lg text-gray-900">
+            <Image
+              src="/images/lmp-mark.png"
+              alt="LastMilePrep"
+              width={862}
+              height={339}
+              priority
+              className="h-7 w-auto flex-shrink-0"
+            />
+            <span className="truncate">LastMile<span className="text-blue-600">Prep</span></span>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
             <Clock className="w-4 h-4" />
