@@ -12,7 +12,6 @@ import {
   Loader2,
 } from "lucide-react";
 import type { ExamType, PaperType } from "@/types/database.types";
-import { formatPaperDisplayName } from "@/lib/paper-formatter";
 import { getExamEntry, DEFAULT_EXAM_CODE } from "@/lib/exam/registry";
 import { getTotalQuestions } from "@/lib/exam/exam-config";
 
@@ -24,6 +23,8 @@ interface PaperItem {
   tier: string | null;
   paper_type: PaperType;
   validated_questions: number;
+  /** Clean, exam-aware label computed by /api/cbt/papers. */
+  display_name: string;
 }
 
 interface CoverageData {
@@ -124,7 +125,7 @@ function TestCreationForm() {
       params.set("paper_id", selectedPaperId);
       const paper = papersList.find((p) => p.paper_id === selectedPaperId);
       if (paper) {
-        params.set("title", formatPaperDisplayName(paper));
+        params.set("title", paper.display_name);
       }
     }
     if (examType === "subject_test") {
@@ -276,9 +277,9 @@ function TestCreationForm() {
                 onChange={(e) => setSelectedPaperId(e.target.value)}
                 className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-xs sm:text-sm text-gray-900 focus:outline-none focus:border-blue-500 font-medium min-h-[44px]"
               >
-                {papersList.map((p, idx) => (
+                {papersList.map((p) => (
                   <option key={p.paper_id} value={p.paper_id}>
-                    {formatPaperDisplayName(p, idx)} ({p.validated_questions} Qs)
+                    {p.display_name}
                   </option>
                 ))}
               </select>

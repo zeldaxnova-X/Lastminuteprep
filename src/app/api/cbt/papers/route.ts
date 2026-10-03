@@ -14,7 +14,9 @@ export async function GET(request: NextRequest) {
     const supabase = createServerSupabaseClient();
     const { searchParams } = new URL(request.url);
 
-    const examCode = getExamEntry(searchParams.get("exam")).code;
+    const examEntry = getExamEntry(searchParams.get("exam"));
+    const examCode = examEntry.code;
+    const examName = examEntry.builtinConfig.examName;
     const isDefaultExam = examCode === DEFAULT_EXAM_CODE;
     const paperType = searchParams.get("paper_type");
     const year = searchParams.get("year");
@@ -23,7 +25,7 @@ export async function GET(request: NextRequest) {
     let query = examContent(supabase, examCode)
       .papers()
       .select("*")
-      .order("year", { ascending: false })
+      .order("year", { ascending: false, nullsFirst: false }) // dated papers first
       .order("paper_name_canonical", { ascending: true });
 
     if (paperType) {
@@ -48,10 +50,18 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
-    const formattedPapers = (data || []).map((paper, idx) => ({
-      ...paper,
-      display_name: formatPaperDisplayName(paper, idx),
-    }));
+    // Undated memory-based papers get a sequential "Set N" (1..N) rather than a
+    // global index, so the dropdown reads cleanly.
+    let undated = 0;
+    const dateRe = /\d{1,2}(?:st|nd|rd|th)?[-_ ]?(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*[-_ ,]*20\d{2}/i;
+    const formattedPapers = (data || []).map((paper, idx) => {
+      const hay = [paper.paper_name_canonical, paper.paper_name_original, paper.source_document].filter(Boolean).join(" ");
+      const hasMeta = !!paper.year || !!paper.shift || dateRe.test(hay);
+      return {
+        ...paper,
+        display_name: formatPaperDisplayName(paper, hasMeta ? idx : undated++, examName),
+      };
+    });
 
     return NextResponse.json({
       papers: formattedPapers,
